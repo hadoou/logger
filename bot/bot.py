@@ -575,15 +575,13 @@ async def run_inject(in_path: Path, out_path: Path, bot_token: str, admin_id: st
         return False
     try:
         proc = await asyncio.create_subprocess_exec(
-            "cmd",
-            "/c",
-            "inject.bat",
+            "bash",
+            "inject.sh",
             str(in_path),
             str(out_path),
             bot_token,
             admin_id,
             "",
-            "nopause",
             cwd=str(INJECT_DIR),
             stdout=asyncio.subprocess.PIPE,
             stderr=asyncio.subprocess.STDOUT,
