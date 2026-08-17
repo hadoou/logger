@@ -4,7 +4,7 @@
   "channel_url": "https://t.me/HexLogger",
   "support_url": "https://t.me/doritos_8",
   "mod_version": "1.21.4",
-  "inject_dir": "root/logger/fabric-1.21.4",
+  "inject_dir": "/root/logger/fabric-1.21.4",
   "star_price": 25,
   "rub_price": 25,
   "admin_username": "doritos_8",
