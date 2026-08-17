@@ -1,0 +1,2758 @@
+{
+  "md5": "2156c02cb57aae6758222f3bc66409d8",
+  "sha2": "c6ff07c4ee3111b480fee577cb98c3671cf063b8",
+  "sha256": "6a7b6dad32da481891cde235ea8abd343733ccc5545b145de7bfa0670ae31d10",
+  "contents": {
+    "classes": {
+      "net/puffish/attributesmod/util/DeferredSetup.class": {
+        "ver": 61,
+        "acc": 33,
+        "nme": "net/puffish/attributesmod/util/DeferredSetup",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "createIdentifier",
+            "acc": 9,
+            "dsc": "(Ljava/lang/String;)Lnet/minecraft/resources/ResourceLocation;"
+          },
+          {
+            "nme": "createClampedAttribute",
+            "acc": 9,
+            "dsc": "(Lnet/minecraft/resources/ResourceLocation;DDD)Lnet/minecraft/world/entity/ai/attributes/Attribute;"
+          },
+          {
+            "nme": "createDynamicAttribute",
+            "acc": 9,
+            "dsc": "(Lnet/minecraft/resources/ResourceLocation;)Lnet/minecraft/world/entity/ai/attributes/Attribute;"
+          },
+          {
+            "nme": "setup",
+            "acc": 9,
+            "dsc": "(Lnet/puffish/attributesmod/util/Registrar;)V"
+          },
+          {
+            "nme": "<clinit>",
+            "acc": 8,
+            "dsc": "()V"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 25,
+            "nme": "MOD_ID",
+            "dsc": "Ljava/lang/String;",
+            "val": "puffish_attributes"
+          },
+          {
+            "acc": 26,
+            "nme": "ENTRIES",
+            "dsc": "Ljava/util/List;",
+            "sig": "Ljava/util/List<Ljava/util/Map$Entry<Lnet/minecraft/resources/ResourceLocation;Lnet/minecraft/world/entity/ai/attributes/Attribute;>;>;"
+          }
+        ]
+      },
+      "net/puffish/attributesmod/mixin/SimpleRegistryMixin.class": {
+        "ver": 61,
+        "acc": 33,
+        "nme": "net/puffish/attributesmod/mixin/SimpleRegistryMixin",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "modifyReturnValueAtGetIds",
+            "acc": 1,
+            "dsc": "(Ljava/util/Set;)Ljava/util/Set;",
+            "sig": "(Ljava/util/Set<Lnet/minecraft/resources/ResourceLocation;>;)Ljava/util/Set<Lnet/minecraft/resources/ResourceLocation;>;",
+            "vanns": [
+              {
+                "dsc": "Lcom/llamalad7/mixinextras/injector/ModifyReturnValue;",
+                "vals": [
+                  "method",
+                  [
+                    "getIds"
+                  ],
+                  "at",
+                  [
+                    {
+                      "desc": "Lorg/spongepowered/asm/mixin/injection/At;",
+                      "values": [
+                        "value",
+                        "RETURN"
+                      ],
+                      "api": 589824
+                    }
+                  ]
+                ]
+              }
+            ]
+          },
+          {
+            "nme": "lambda$modifyReturnValueAtGetIds$0",
+            "acc": 4106,
+            "dsc": "(Lnet/minecraft/resources/ResourceLocation;)Z"
+          }
+        ],
+        "flds": [],
+        "invanns": [
+          {
+            "dsc": "Lorg/spongepowered/asm/mixin/Mixin;",
+            "vals": [
+              "value",
+              [
+                {
+                  "itrlNme": "net/minecraft/core/MappedRegistry"
+                }
+              ]
+            ]
+          }
+        ]
+      },
+      "net/puffish/attributesmod/mixin/CrossbowItemMixin.class": {
+        "ver": 61,
+        "acc": 1057,
+        "nme": "net/puffish/attributesmod/mixin/CrossbowItemMixin",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "modifyArgAtSetVelocity",
+            "acc": 10,
+            "dsc": "(FLnet/minecraft/world/entity/LivingEntity;)F",
+            "vanns": [
+              {
+                "dsc": "Lorg/spongepowered/asm/mixin/injection/ModifyArg;",
+                "vals": [
+                  "method",
+                  [
+                    "shoot"
+                  ],
+                  "at",
+                  {
+                    "desc": "Lorg/spongepowered/asm/mixin/injection/At;",
+                    "values": [
+                      "value",
+                      "INVOKE",
+                      "target",
+                      "Lnet/minecraft/entity/projectile/ProjectileEntity;setVelocity(DDDFF)V"
+                    ],
+                    "api": 589824
+                  },
+                  "index",
+                  3
+                ]
+              }
+            ]
+          }
+        ],
+        "flds": [],
+        "invanns": [
+          {
+            "dsc": "Lorg/spongepowered/asm/mixin/Mixin;",
+            "vals": [
+              "value",
+              [
+                {
+                  "itrlNme": "net/minecraft/world/item/CrossbowItem"
+                }
+              ]
+            ]
+          }
+        ]
+      },
+      "net/puffish/attributesmod/mixin/EntityAttributeInstanceInvoker.class": {
+        "ver": 61,
+        "acc": 1537,
+        "nme": "net/puffish/attributesmod/mixin/EntityAttributeInstanceInvoker",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "invokeGetModifiersByOperation",
+            "acc": 1025,
+            "dsc": "(Lnet/minecraft/world/entity/ai/attributes/AttributeModifier$Operation;)Ljava/util/Collection;",
+            "sig": "(Lnet/minecraft/world/entity/ai/attributes/AttributeModifier$Operation;)Ljava/util/Collection<Lnet/minecraft/world/entity/ai/attributes/AttributeModifier;>;",
+            "vanns": [
+              {
+                "dsc": "Lorg/spongepowered/asm/mixin/gen/Invoker;",
+                "vals": [
+                  "value",
+                  "getModifiersByOperation"
+                ]
+              }
+            ]
+          }
+        ],
+        "flds": [],
+        "invanns": [
+          {
+            "dsc": "Lorg/spongepowered/asm/mixin/Mixin;",
+            "vals": [
+              "value",
+              [
+                {
+                  "itrlNme": "net/minecraft/world/entity/ai/attributes/AttributeInstance"
+                }
+              ]
+            ]
+          }
+        ]
+      },
+      "net/puffish/attributesmod/util/Sign.class": {
+        "ver": 61,
+        "acc": 16433,
+        "nme": "net/puffish/attributesmod/util/Sign",
+        "super": "java/lang/Enum",
+        "mthds": [
+          {
+            "nme": "values",
+            "acc": 9,
+            "dsc": "()[Lnet/puffish/attributesmod/util/Sign;"
+          },
+          {
+            "nme": "valueOf",
+            "acc": 9,
+            "dsc": "(Ljava/lang/String;)Lnet/puffish/attributesmod/util/Sign;"
+          },
+          {
+            "nme": "<init>",
+            "acc": 2,
+            "dsc": "(Ljava/lang/String;I)V",
+            "sig": "()V"
+          },
+          {
+            "nme": "wrap",
+            "acc": 1,
+            "dsc": "(Ljava/lang/Object;)Lnet/puffish/attributesmod/util/Signed;",
+            "sig": "<T:Ljava/lang/Object;>(TT;)Lnet/puffish/attributesmod/util/Signed<TT;>;"
+          },
+          {
+            "nme": "$values",
+            "acc": 4106,
+            "dsc": "()[Lnet/puffish/attributesmod/util/Sign;"
+          },
+          {
+            "nme": "<clinit>",
+            "acc": 8,
+            "dsc": "()V"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 16409,
+            "nme": "POSITIVE",
+            "dsc": "Lnet/puffish/attributesmod/util/Sign;"
+          },
+          {
+            "acc": 16409,
+            "nme": "NEGATIVE",
+            "dsc": "Lnet/puffish/attributesmod/util/Sign;"
+          },
+          {
+            "acc": 4122,
+            "nme": "$VALUES",
+            "dsc": "[Lnet/puffish/attributesmod/util/Sign;"
+          }
+        ]
+      },
+      "net/puffish/attributesmod/mixin/PlayerEntityMixin.class": {
+        "ver": 61,
+        "acc": 1057,
+        "nme": "net/puffish/attributesmod/mixin/PlayerEntityMixin",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "modifyExpressionValueAtCreateLivingAttributes",
+            "acc": 10,
+            "dsc": "(Lnet/minecraft/world/entity/ai/attributes/AttributeSupplier$Builder;)Lnet/minecraft/world/entity/ai/attributes/AttributeSupplier$Builder;",
+            "vanns": [
+              {
+                "dsc": "Lcom/llamalad7/mixinextras/injector/ModifyExpressionValue;",
+                "vals": [
+                  "method",
+                  [
+                    "createPlayerAttributes"
+                  ],
+                  "at",
+                  [
+                    {
+                      "desc": "Lorg/spongepowered/asm/mixin/injection/At;",
+                      "values": [
+                        "value",
+                        "INVOKE",
+                        "target",
+                        "Lnet/minecraft/entity/LivingEntity;createLivingAttributes()Lnet/minecraft/entity/attribute/DefaultAttributeContainer$Builder;"
+                      ],
+                      "api": 589824
+                    }
+                  ]
+                ]
+              }
+            ]
+          },
+          {
+            "nme": "injectAtAttack",
+            "acc": 2,
+            "dsc": "(Lnet/minecraft/world/entity/Entity;Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V",
+            "vanns": [
+              {
+                "dsc": "Lorg/spongepowered/asm/mixin/injection/Inject;",
+                "vals": [
+                  "method",
+                  [
+                    "attack"
+                  ],
+                  "at",
+                  [
+                    {
+                      "desc": "Lorg/spongepowered/asm/mixin/injection/At;",
+                      "values": [
+                        "value",
+                        "INVOKE",
+                        "target",
+                        "Lnet/minecraft/enchantment/EnchantmentHelper;onTargetDamaged(Lnet/minecraft/entity/LivingEntity;Lnet/minecraft/entity/Entity;)V"
+                      ],
+                      "api": 589824
+                    }
+                  ]
+                ]
+              }
+            ]
+          },
+          {
+            "nme": "injectAtGetMovementSpeed",
+            "acc": 2,
+            "dsc": "(F)F",
+            "vanns": [
+              {
+                "dsc": "Lcom/llamalad7/mixinextras/injector/ModifyReturnValue;",
+                "vals": [
+                  "method",
+                  [
+                    "getMovementSpeed()F"
+                  ],
+                  "at",
+                  [
+                    {
+                      "desc": "Lorg/spongepowered/asm/mixin/injection/At;",
+                      "values": [
+                        "value",
+                        "RETURN"
+                      ],
+                      "api": 589824
+                    }
+                  ]
+                ]
+              }
+            ]
+          },
+          {
+            "nme": "injectAtGetBlockBreakingSpeed",
+            "acc": 2,
+            "dsc": "(Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfoReturnable;Lcom/llamalad7/mixinextras/sugar/ref/LocalFloatRef;)V",
+            "sig": "(Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfoReturnable<Ljava/lang/Float;>;Lcom/llamalad7/mixinextras/sugar/ref/LocalFloatRef;)V",
+            "vanns": [
+              {
+                "dsc": "Lorg/spongepowered/asm/mixin/injection/Inject;",
+                "vals": [
+                  "method",
+                  [
+                    "getBlockBreakingSpeed",
+                    "getDigSpeed"
+                  ],
+                  "at",
+                  [
+                    {
+                      "desc": "Lorg/spongepowered/asm/mixin/injection/At;",
+                      "values": [
+                        "value",
+                        "INVOKE",
+                        "target",
+                        "Lnet/minecraft/entity/effect/StatusEffectUtil;hasHaste(Lnet/minecraft/entity/LivingEntity;)Z"
+                      ],
+                      "api": 589824
+                    }
+                  ]
+                ]
+              }
+            ]
+          }
+        ],
+        "flds": [
+          {
+            "acc": 26,
+            "nme": "VANILLA_KNOCKBACK",
+            "dsc": "D",
+            "val": 0.4
+          }
+        ],
+        "invanns": [
+          {
+            "dsc": "Lorg/spongepowered/asm/mixin/Mixin;",
+            "vals": [
+              "value",
+              [
+                {
+                  "itrlNme": "net/minecraft/world/entity/player/Player"
+                }
+              ],
+              "priority",
+              1100
+            ]
+          }
+        ]
+      },
+      "net/puffish/attributesmod/mixin/TargetPredicateMixin.class": {
+        "ver": 61,
+        "acc": 33,
+        "nme": "net/puffish/attributesmod/mixin/TargetPredicateMixin",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "modifyArgAtMax",
+            "acc": 2,
+            "dsc": "(DLnet/minecraft/world/entity/LivingEntity;)D",
+            "vanns": [
+              {
+                "dsc": "Lorg/spongepowered/asm/mixin/injection/ModifyArg;",
+                "vals": [
+                  "method",
+                  [
+                    "test"
+                  ],
+                  "at",
+                  {
+                    "desc": "Lorg/spongepowered/asm/mixin/injection/At;",
+                    "values": [
+                      "value",
+                      "INVOKE",
+                      "target",
+                      "Ljava/lang/Math;max(DD)D"
+                    ],
+                    "api": 589824
+                  },
+                  "index",
+                  0
+                ]
+              }
+            ]
+          }
+        ],
+        "flds": [],
+        "invanns": [
+          {
+            "dsc": "Lorg/spongepowered/asm/mixin/Mixin;",
+            "vals": [
+              "value",
+              [
+                {
+                  "itrlNme": "net/minecraft/world/entity/ai/targeting/TargetingConditions"
+                }
+              ]
+            ]
+          }
+        ]
+      },
+      "net/puffish/attributesmod/main/ForgeMain$RegistrarImpl.class": {
+        "ver": 61,
+        "acc": 32,
+        "nme": "net/puffish/attributesmod/main/ForgeMain$RegistrarImpl",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 2,
+            "dsc": "(Lnet/puffish/attributesmod/main/ForgeMain;)V"
+          },
+          {
+            "nme": "register",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/core/Registry;Lnet/minecraft/resources/ResourceLocation;Ljava/lang/Object;)V",
+            "sig": "<V:Ljava/lang/Object;T:TV;>(Lnet/minecraft/core/Registry<TV;>;Lnet/minecraft/resources/ResourceLocation;TT;)V"
+          },
+          {
+            "nme": "registerAlias",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/core/Registry;Lnet/minecraft/resources/ResourceLocation;Lnet/minecraft/resources/ResourceLocation;)V",
+            "sig": "<V:Ljava/lang/Object;>(Lnet/minecraft/core/Registry<TV;>;Lnet/minecraft/resources/ResourceLocation;Lnet/minecraft/resources/ResourceLocation;)V"
+          },
+          {
+            "nme": "lambda$register$0",
+            "acc": 4106,
+            "dsc": "(Ljava/lang/Object;)Ljava/lang/Object;"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 4112,
+            "nme": "this$0",
+            "dsc": "Lnet/puffish/attributesmod/main/ForgeMain;"
+          }
+        ]
+      },
+      "net/puffish/attributesmod/util/DynamicModificationImpl$1.class": {
+        "ver": 61,
+        "acc": 4128,
+        "nme": "net/puffish/attributesmod/util/DynamicModificationImpl$1",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<clinit>",
+            "acc": 8,
+            "dsc": "()V"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 4120,
+            "nme": "$SwitchMap$net$puffish$attributesmod$util$Sign",
+            "dsc": "[I"
+          }
+        ]
+      },
+      "net/puffish/attributesmod/mixin/EntityAttributeInstanceMixin.class": {
+        "ver": 61,
+        "acc": 33,
+        "nme": "net/puffish/attributesmod/mixin/EntityAttributeInstanceMixin",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "injectAtGetBaseValue",
+            "acc": 2,
+            "dsc": "(Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfoReturnable;)V",
+            "sig": "(Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfoReturnable<Ljava/lang/Double;>;)V",
+            "vanns": [
+              {
+                "dsc": "Lorg/spongepowered/asm/mixin/injection/Inject;",
+                "vals": [
+                  "method",
+                  [
+                    "getBaseValue"
+                  ],
+                  "at",
+                  [
+                    {
+                      "desc": "Lorg/spongepowered/asm/mixin/injection/At;",
+                      "values": [
+                        "value",
+                        "HEAD"
+                      ],
+                      "api": 589824
+                    }
+                  ],
+                  "cancellable",
+                  true
+                ]
+              }
+            ]
+          },
+          {
+            "nme": "injectAtComputeValue",
+            "acc": 2,
+            "dsc": "(Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfoReturnable;)V",
+            "sig": "(Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfoReturnable<Ljava/lang/Double;>;)V",
+            "vanns": [
+              {
+                "dsc": "Lorg/spongepowered/asm/mixin/injection/Inject;",
+                "vals": [
+                  "method",
+                  [
+                    "computeValue"
+                  ],
+                  "at",
+                  [
+                    {
+                      "desc": "Lorg/spongepowered/asm/mixin/injection/At;",
+                      "values": [
+                        "value",
+                        "HEAD"
+                      ],
+                      "api": 589824
+                    }
+                  ],
+                  "cancellable",
+                  true
+                ]
+              }
+            ]
+          },
+          {
+            "nme": "injectAtSetBaseValue",
+            "acc": 2,
+            "dsc": "(DLorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V",
+            "vanns": [
+              {
+                "dsc": "Lorg/spongepowered/asm/mixin/injection/Inject;",
+                "vals": [
+                  "method",
+                  [
+                    "setBaseValue"
+                  ],
+                  "at",
+                  [
+                    {
+                      "desc": "Lorg/spongepowered/asm/mixin/injection/At;",
+                      "values": [
+                        "value",
+                        "HEAD"
+                      ],
+                      "api": 589824
+                    }
+                  ],
+                  "cancellable",
+                  true
+                ]
+              }
+            ]
+          },
+          {
+            "nme": "modifyExpressionValueAtBaseValue",
+            "acc": 2,
+            "dsc": "(D)D",
+            "vanns": [
+              {
+                "dsc": "Lcom/llamalad7/mixinextras/injector/ModifyExpressionValue;",
+                "vals": [
+                  "method",
+                  [
+                    "toNbt"
+                  ],
+                  "at",
+                  [
+                    {
+                      "desc": "Lorg/spongepowered/asm/mixin/injection/At;",
+                      "values": [
+                        "value",
+                        "FIELD",
+                        "target",
+                        "Lnet/minecraft/entity/attribute/EntityAttributeInstance;baseValue:D",
+                        "opcode",
+                        180
+                      ],
+                      "api": 589824
+                    }
+                  ]
+                ]
+              }
+            ]
+          }
+        ],
+        "flds": [
+          {
+            "acc": 2,
+            "nme": "f_22088_",
+            "dsc": "Lnet/minecraft/world/entity/ai/attributes/Attribute;"
+          }
+        ],
+        "invanns": [
+          {
+            "dsc": "Lorg/spongepowered/asm/mixin/Mixin;",
+            "vals": [
+              "value",
+              [
+                {
+                  "itrlNme": "net/minecraft/world/entity/ai/attributes/AttributeInstance"
+                }
+              ]
+            ]
+          }
+        ]
+      },
+      "net/puffish/attributesmod/mixin/LivingEntityMixin.class": {
+        "ver": 61,
+        "acc": 1057,
+        "nme": "net/puffish/attributesmod/mixin/LivingEntityMixin",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "modifyExpressionValueAtBuilder",
+            "acc": 10,
+            "dsc": "(Lnet/minecraft/world/entity/ai/attributes/AttributeSupplier$Builder;)Lnet/minecraft/world/entity/ai/attributes/AttributeSupplier$Builder;",
+            "vanns": [
+              {
+                "dsc": "Lcom/llamalad7/mixinextras/injector/ModifyExpressionValue;",
+                "vals": [
+                  "method",
+                  [
+                    "createLivingAttributes"
+                  ],
+                  "at",
+                  [
+                    {
+                      "desc": "Lorg/spongepowered/asm/mixin/injection/At;",
+                      "values": [
+                        "value",
+                        "INVOKE",
+                        "target",
+                        "Lnet/minecraft/entity/attribute/DefaultAttributeContainer;builder()Lnet/minecraft/entity/attribute/DefaultAttributeContainer$Builder;"
+                      ],
+                      "api": 589824
+                    }
+                  ]
+                ]
+              }
+            ]
+          },
+          {
+            "nme": "modifyVariableAtDamage",
+            "acc": 2,
+            "dsc": "(FLnet/minecraft/world/damagesource/DamageSource;)F",
+            "vanns": [
+              {
+                "dsc": "Lorg/spongepowered/asm/mixin/injection/ModifyVariable;",
+                "vals": [
+                  "method",
+                  [
+                    "damage"
+                  ],
+                  "at",
+                  {
+                    "desc": "Lorg/spongepowered/asm/mixin/injection/At;",
+                    "values": [
+                      "value",
+                      "HEAD"
+                    ],
+                    "api": 589824
+                  },
+                  "argsOnly",
+                  true,
+                  "ordinal",
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "nme": "wrapOperationAtApplyArmorToDamage",
+            "acc": 2,
+            "dsc": "(FFFLcom/llamalad7/mixinextras/injector/wrapoperation/Operation;Lnet/minecraft/world/damagesource/DamageSource;)F",
+            "sig": "(FFFLcom/llamalad7/mixinextras/injector/wrapoperation/Operation<Ljava/lang/Float;>;Lnet/minecraft/world/damagesource/DamageSource;)F",
+            "vanns": [
+              {
+                "dsc": "Lcom/llamalad7/mixinextras/injector/wrapoperation/WrapOperation;",
+                "vals": [
+                  "method",
+                  [
+                    "applyArmorToDamage"
+                  ],
+                  "at",
+                  [
+                    {
+                      "desc": "Lorg/spongepowered/asm/mixin/injection/At;",
+                      "values": [
+                        "value",
+                        "INVOKE",
+                        "target",
+                        "Lnet/minecraft/entity/DamageUtil;getDamageLeft(FFF)F"
+                      ],
+                      "api": 589824
+                    }
+                  ]
+                ]
+              }
+            ]
+          },
+          {
+            "nme": "wrapOperationAtModifyAppliedDamage",
+            "acc": 2,
+            "dsc": "(FFLcom/llamalad7/mixinextras/injector/wrapoperation/Operation;Lnet/minecraft/world/damagesource/DamageSource;)F",
+            "sig": "(FFLcom/llamalad7/mixinextras/injector/wrapoperation/Operation<Ljava/lang/Float;>;Lnet/minecraft/world/damagesource/DamageSource;)F",
+            "vanns": [
+              {
+                "dsc": "Lcom/llamalad7/mixinextras/injector/wrapoperation/WrapOperation;",
+                "vals": [
+                  "method",
+                  [
+                    "modifyAppliedDamage"
+                  ],
+                  "at",
+                  [
+                    {
+                      "desc": "Lorg/spongepowered/asm/mixin/injection/At;",
+                      "values": [
+                        "value",
+                        "INVOKE",
+                        "target",
+                        "Lnet/minecraft/entity/DamageUtil;getInflictedDamage(FF)F"
+                      ],
+                      "api": 589824
+                    }
+                  ]
+                ]
+              }
+            ]
+          },
+          {
+            "nme": "modifyExpressionValueAtGetSaddledSpeed",
+            "acc": 2,
+            "dsc": "(FLnet/minecraft/world/entity/player/Player;)F",
+            "vanns": [
+              {
+                "dsc": "Lcom/llamalad7/mixinextras/injector/ModifyExpressionValue;",
+                "vals": [
+                  "method",
+                  [
+                    "travelControlled"
+                  ],
+                  "at",
+                  [
+                    {
+                      "desc": "Lorg/spongepowered/asm/mixin/injection/At;",
+                      "values": [
+                        "value",
+                        "INVOKE",
+                        "target",
+                        "Lnet/minecraft/entity/LivingEntity;getSaddledSpeed(Lnet/minecraft/entity/player/PlayerEntity;)F"
+                      ],
+                      "api": 589824
+                    }
+                  ]
+                ]
+              }
+            ]
+          },
+          {
+            "nme": "modifyVariableAtHeal",
+            "acc": 2,
+            "dsc": "(F)F",
+            "vanns": [
+              {
+                "dsc": "Lorg/spongepowered/asm/mixin/injection/ModifyVariable;",
+                "vals": [
+                  "method",
+                  [
+                    "heal"
+                  ],
+                  "at",
+                  {
+                    "desc": "Lorg/spongepowered/asm/mixin/injection/At;",
+                    "values": [
+                      "value",
+                      "HEAD"
+                    ],
+                    "api": 589824
+                  },
+                  "argsOnly",
+                  true,
+                  "ordinal",
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "nme": "injectAtGetJumpVelocity",
+            "acc": 2,
+            "dsc": "(F)F",
+            "vanns": [
+              {
+                "dsc": "Lcom/llamalad7/mixinextras/injector/ModifyReturnValue;",
+                "vals": [
+                  "method",
+                  [
+                    "getJumpVelocity"
+                  ],
+                  "at",
+                  [
+                    {
+                      "desc": "Lorg/spongepowered/asm/mixin/injection/At;",
+                      "values": [
+                        "value",
+                        "RETURN"
+                      ],
+                      "api": 589824
+                    }
+                  ]
+                ]
+              }
+            ]
+          },
+          {
+            "nme": "modifyVariableAtComputeFallDamage",
+            "acc": 2,
+            "dsc": "(F)F",
+            "vanns": [
+              {
+                "dsc": "Lorg/spongepowered/asm/mixin/injection/ModifyVariable;",
+                "vals": [
+                  "method",
+                  [
+                    "computeFallDamage"
+                  ],
+                  "at",
+                  {
+                    "desc": "Lorg/spongepowered/asm/mixin/injection/At;",
+                    "values": [
+                      "value",
+                      "HEAD"
+                    ],
+                    "api": 589824
+                  },
+                  "argsOnly",
+                  true,
+                  "ordinal",
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "nme": "wrapMethodApplyArmorToDamage",
+            "acc": 2,
+            "dsc": "(Lnet/minecraft/world/damagesource/DamageSource;FLcom/llamalad7/mixinextras/injector/wrapoperation/Operation;)F",
+            "sig": "(Lnet/minecraft/world/damagesource/DamageSource;FLcom/llamalad7/mixinextras/injector/wrapoperation/Operation<Ljava/lang/Float;>;)F",
+            "vanns": [
+              {
+                "dsc": "Lcom/llamalad7/mixinextras/injector/wrapmethod/WrapMethod;",
+                "vals": [
+                  "method",
+                  [
+                    "applyArmorToDamage"
+                  ]
+                ]
+              }
+            ]
+          },
+          {
+            "nme": "wrapOperationAtGetMaxUseTime",
+            "acc": 2,
+            "dsc": "(Lnet/minecraft/world/item/ItemStack;Lcom/llamalad7/mixinextras/injector/wrapoperation/Operation;)I",
+            "sig": "(Lnet/minecraft/world/item/ItemStack;Lcom/llamalad7/mixinextras/injector/wrapoperation/Operation<Ljava/lang/Integer;>;)I",
+            "vanns": [
+              {
+                "dsc": "Lcom/llamalad7/mixinextras/injector/wrapoperation/WrapOperation;",
+                "vals": [
+                  "method",
+                  [
+                    "setCurrentHand"
+                  ],
+                  "at",
+                  [
+                    {
+                      "desc": "Lorg/spongepowered/asm/mixin/injection/At;",
+                      "values": [
+                        "value",
+                        "INVOKE",
+                        "target",
+                        "Lnet/minecraft/item/ItemStack;getMaxUseTime()I"
+                      ],
+                      "api": 589824
+                    }
+                  ]
+                ]
+              }
+            ]
+          }
+        ],
+        "flds": [],
+        "invanns": [
+          {
+            "dsc": "Lorg/spongepowered/asm/mixin/Mixin;",
+            "vals": [
+              "value",
+              [
+                {
+                  "itrlNme": "net/minecraft/world/entity/LivingEntity"
+                }
+              ],
+              "priority",
+              1100
+            ]
+          }
+        ]
+      },
+      "net/puffish/attributesmod/mixin/BowItemMixin.class": {
+        "ver": 61,
+        "acc": 1057,
+        "nme": "net/puffish/attributesmod/mixin/BowItemMixin",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "modifyArgAtSetVelocity",
+            "acc": 2,
+            "dsc": "(FLnet/minecraft/world/entity/LivingEntity;)F",
+            "vanns": [
+              {
+                "dsc": "Lorg/spongepowered/asm/mixin/injection/ModifyArg;",
+                "vals": [
+                  "method",
+                  [
+                    "onStoppedUsing"
+                  ],
+                  "at",
+                  {
+                    "desc": "Lorg/spongepowered/asm/mixin/injection/At;",
+                    "values": [
+                      "value",
+                      "INVOKE",
+                      "target",
+                      "Lnet/minecraft/entity/projectile/PersistentProjectileEntity;setVelocity(Lnet/minecraft/entity/Entity;FFFFF)V"
+                    ],
+                    "api": 589824
+                  },
+                  "index",
+                  4
+                ]
+              }
+            ]
+          }
+        ],
+        "flds": [],
+        "invanns": [
+          {
+            "dsc": "Lorg/spongepowered/asm/mixin/Mixin;",
+            "vals": [
+              "value",
+              [
+                {
+                  "itrlNme": "net/minecraft/world/item/BowItem"
+                }
+              ]
+            ]
+          }
+        ]
+      },
+      "net/puffish/attributesmod/mixin/HungerManagerMixin.class": {
+        "ver": 61,
+        "acc": 1057,
+        "nme": "net/puffish/attributesmod/mixin/HungerManagerMixin",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "wrapOperationAtHeal",
+            "acc": 2,
+            "dsc": "(Lnet/minecraft/world/entity/player/Player;FLcom/llamalad7/mixinextras/injector/wrapoperation/Operation;)V",
+            "sig": "(Lnet/minecraft/world/entity/player/Player;FLcom/llamalad7/mixinextras/injector/wrapoperation/Operation<Ljava/lang/Void;>;)V",
+            "vanns": [
+              {
+                "dsc": "Lcom/llamalad7/mixinextras/injector/wrapoperation/WrapOperation;",
+                "vals": [
+                  "method",
+                  [
+                    "update"
+                  ],
+                  "at",
+                  [
+                    {
+                      "desc": "Lorg/spongepowered/asm/mixin/injection/At;",
+                      "values": [
+                        "value",
+                        "INVOKE",
+                        "target",
+                        "Lnet/minecraft/entity/player/PlayerEntity;heal(F)V"
+                      ],
+                      "api": 589824
+                    }
+                  ]
+                ]
+              }
+            ]
+          },
+          {
+            "nme": "modifyConstant0AtUpdate",
+            "acc": 2,
+            "dsc": "(FLnet/minecraft/world/entity/player/Player;)F",
+            "vanns": [
+              {
+                "dsc": "Lorg/spongepowered/asm/mixin/injection/ModifyConstant;",
+                "vals": [
+                  "method",
+                  [
+                    "update"
+                  ],
+                  "constant",
+                  [
+                    {
+                      "desc": "Lorg/spongepowered/asm/mixin/injection/Constant;",
+                      "values": [
+                        "floatValue",
+                        4.0,
+                        "ordinal",
+                        0
+                      ],
+                      "api": 589824
+                    }
+                  ],
+                  "require",
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "nme": "modifyConstant1AtUpdate",
+            "acc": 2,
+            "dsc": "(FLnet/minecraft/world/entity/player/Player;)F",
+            "vanns": [
+              {
+                "dsc": "Lorg/spongepowered/asm/mixin/injection/ModifyConstant;",
+                "vals": [
+                  "method",
+                  [
+                    "update"
+                  ],
+                  "constant",
+                  [
+                    {
+                      "desc": "Lorg/spongepowered/asm/mixin/injection/Constant;",
+                      "values": [
+                        "floatValue",
+                        4.0,
+                        "ordinal",
+                        1
+                      ],
+                      "api": 589824
+                    }
+                  ],
+                  "require",
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "nme": "getStamina",
+            "acc": 2,
+            "dsc": "(Lnet/minecraft/world/entity/player/Player;)F",
+            "vanns": [
+              {
+                "dsc": "Lorg/spongepowered/asm/mixin/Unique;"
+              }
+            ]
+          }
+        ],
+        "flds": [],
+        "invanns": [
+          {
+            "dsc": "Lorg/spongepowered/asm/mixin/Mixin;",
+            "vals": [
+              "value",
+              [
+                {
+                  "itrlNme": "net/minecraft/world/food/FoodData"
+                }
+              ],
+              "priority",
+              1100
+            ]
+          }
+        ]
+      },
+      "net/puffish/attributesmod/util/DamageKind.class": {
+        "ver": 61,
+        "acc": 33,
+        "nme": "net/puffish/attributesmod/util/DamageKind",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/world/damagesource/DamageSource;)V"
+          },
+          {
+            "nme": "of",
+            "acc": 9,
+            "dsc": "(Lnet/minecraft/world/damagesource/DamageSource;)Lnet/puffish/attributesmod/util/DamageKind;"
+          },
+          {
+            "nme": "isMagic",
+            "acc": 1,
+            "dsc": "()Z"
+          },
+          {
+            "nme": "isProjectile",
+            "acc": 1,
+            "dsc": "()Z"
+          },
+          {
+            "nme": "isMelee",
+            "acc": 1,
+            "dsc": "()Z"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 18,
+            "nme": "source",
+            "dsc": "Lnet/minecraft/world/damagesource/DamageSource;"
+          }
+        ]
+      },
+      "net/puffish/attributesmod/util/Signed.class": {
+        "ver": 61,
+        "acc": 65585,
+        "nme": "net/puffish/attributesmod/util/Signed",
+        "super": "java/lang/Record",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "(Lnet/puffish/attributesmod/util/Sign;Ljava/lang/Object;)V",
+            "sig": "(Lnet/puffish/attributesmod/util/Sign;TT;)V"
+          },
+          {
+            "nme": "toString",
+            "acc": 17,
+            "dsc": "()Ljava/lang/String;"
+          },
+          {
+            "nme": "hashCode",
+            "acc": 17,
+            "dsc": "()I"
+          },
+          {
+            "nme": "equals",
+            "acc": 17,
+            "dsc": "(Ljava/lang/Object;)Z"
+          },
+          {
+            "nme": "sign",
+            "acc": 1,
+            "dsc": "()Lnet/puffish/attributesmod/util/Sign;"
+          },
+          {
+            "nme": "value",
+            "acc": 1,
+            "dsc": "()Ljava/lang/Object;",
+            "sig": "()TT;"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 18,
+            "nme": "sign",
+            "dsc": "Lnet/puffish/attributesmod/util/Sign;"
+          },
+          {
+            "acc": 18,
+            "nme": "value",
+            "dsc": "Ljava/lang/Object;",
+            "sig": "TT;"
+          }
+        ]
+      },
+      "net/puffish/attributesmod/AttributesMod.class": {
+        "ver": 61,
+        "acc": 33,
+        "nme": "net/puffish/attributesmod/AttributesMod",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "setup",
+            "acc": 9,
+            "dsc": "(Lnet/puffish/attributesmod/util/Registrar;)V"
+          },
+          {
+            "nme": "createIdentifier",
+            "acc": 131081,
+            "dsc": "(Ljava/lang/String;)Lnet/minecraft/resources/ResourceLocation;",
+            "vanns": [
+              {
+                "dsc": "Ljava/lang/Deprecated;"
+              }
+            ]
+          },
+          {
+            "nme": "createClampedAttribute",
+            "acc": 131081,
+            "dsc": "(Lnet/minecraft/resources/ResourceLocation;DDD)Lnet/minecraft/world/entity/ai/attributes/Attribute;",
+            "vanns": [
+              {
+                "dsc": "Ljava/lang/Deprecated;"
+              }
+            ]
+          },
+          {
+            "nme": "applyAttributeModifiers",
+            "acc": 131209,
+            "dsc": "(D[Lnet/puffish/attributesmod/util/Signed;)D",
+            "sig": "(D[Lnet/puffish/attributesmod/util/Signed<Lnet/minecraft/world/entity/ai/attributes/AttributeInstance;>;)D",
+            "vanns": [
+              {
+                "dsc": "Ljava/lang/Deprecated;"
+              },
+              {
+                "dsc": "Ljava/lang/SafeVarargs;"
+              }
+            ]
+          },
+          {
+            "nme": "<clinit>",
+            "acc": 8,
+            "dsc": "()V"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 25,
+            "nme": "MOD_ID",
+            "dsc": "Ljava/lang/String;",
+            "val": "puffish_attributes"
+          },
+          {
+            "acc": 131097,
+            "nme": "STAMINA_ID",
+            "dsc": "Lnet/minecraft/resources/ResourceLocation;"
+          },
+          {
+            "acc": 131097,
+            "nme": "STAMINA",
+            "dsc": "Lnet/minecraft/world/entity/ai/attributes/Attribute;"
+          },
+          {
+            "acc": 131097,
+            "nme": "MAGIC_DAMAGE_ID",
+            "dsc": "Lnet/minecraft/resources/ResourceLocation;"
+          },
+          {
+            "acc": 131097,
+            "nme": "MAGIC_DAMAGE",
+            "dsc": "Lnet/minecraft/world/entity/ai/attributes/Attribute;"
+          },
+          {
+            "acc": 131097,
+            "nme": "MELEE_DAMAGE_ID",
+            "dsc": "Lnet/minecraft/resources/ResourceLocation;"
+          },
+          {
+            "acc": 131097,
+            "nme": "MELEE_DAMAGE",
+            "dsc": "Lnet/minecraft/world/entity/ai/attributes/Attribute;"
+          },
+          {
+            "acc": 131097,
+            "nme": "RANGED_DAMAGE_ID",
+            "dsc": "Lnet/minecraft/resources/ResourceLocation;"
+          },
+          {
+            "acc": 131097,
+            "nme": "RANGED_DAMAGE",
+            "dsc": "Lnet/minecraft/world/entity/ai/attributes/Attribute;"
+          },
+          {
+            "acc": 131097,
+            "nme": "TAMED_DAMAGE_ID",
+            "dsc": "Lnet/minecraft/resources/ResourceLocation;"
+          },
+          {
+            "acc": 131097,
+            "nme": "TAMED_DAMAGE",
+            "dsc": "Lnet/minecraft/world/entity/ai/attributes/Attribute;"
+          },
+          {
+            "acc": 131097,
+            "nme": "FORTUNE_ID",
+            "dsc": "Lnet/minecraft/resources/ResourceLocation;"
+          },
+          {
+            "acc": 131097,
+            "nme": "FORTUNE",
+            "dsc": "Lnet/minecraft/world/entity/ai/attributes/Attribute;"
+          },
+          {
+            "acc": 131097,
+            "nme": "HEALING_ID",
+            "dsc": "Lnet/minecraft/resources/ResourceLocation;"
+          },
+          {
+            "acc": 131097,
+            "nme": "HEALING",
+            "dsc": "Lnet/minecraft/world/entity/ai/attributes/Attribute;"
+          },
+          {
+            "acc": 131097,
+            "nme": "JUMP_ID",
+            "dsc": "Lnet/minecraft/resources/ResourceLocation;"
+          },
+          {
+            "acc": 131097,
+            "nme": "JUMP",
+            "dsc": "Lnet/minecraft/world/entity/ai/attributes/Attribute;"
+          },
+          {
+            "acc": 131097,
+            "nme": "RESISTANCE_ID",
+            "dsc": "Lnet/minecraft/resources/ResourceLocation;"
+          },
+          {
+            "acc": 131097,
+            "nme": "RESISTANCE",
+            "dsc": "Lnet/minecraft/world/entity/ai/attributes/Attribute;"
+          },
+          {
+            "acc": 131097,
+            "nme": "MAGIC_RESISTANCE_ID",
+            "dsc": "Lnet/minecraft/resources/ResourceLocation;"
+          },
+          {
+            "acc": 131097,
+            "nme": "MAGIC_RESISTANCE",
+            "dsc": "Lnet/minecraft/world/entity/ai/attributes/Attribute;"
+          },
+          {
+            "acc": 131097,
+            "nme": "MELEE_RESISTANCE_ID",
+            "dsc": "Lnet/minecraft/resources/ResourceLocation;"
+          },
+          {
+            "acc": 131097,
+            "nme": "MELEE_RESISTANCE",
+            "dsc": "Lnet/minecraft/world/entity/ai/attributes/Attribute;"
+          },
+          {
+            "acc": 131097,
+            "nme": "RANGED_RESISTANCE_ID",
+            "dsc": "Lnet/minecraft/resources/ResourceLocation;"
+          },
+          {
+            "acc": 131097,
+            "nme": "RANGED_RESISTANCE",
+            "dsc": "Lnet/minecraft/world/entity/ai/attributes/Attribute;"
+          },
+          {
+            "acc": 131097,
+            "nme": "TAMED_RESISTANCE_ID",
+            "dsc": "Lnet/minecraft/resources/ResourceLocation;"
+          },
+          {
+            "acc": 131097,
+            "nme": "TAMED_RESISTANCE",
+            "dsc": "Lnet/minecraft/world/entity/ai/attributes/Attribute;"
+          },
+          {
+            "acc": 131097,
+            "nme": "MINING_SPEED_ID",
+            "dsc": "Lnet/minecraft/resources/ResourceLocation;"
+          },
+          {
+            "acc": 131097,
+            "nme": "MINING_SPEED",
+            "dsc": "Lnet/minecraft/world/entity/ai/attributes/Attribute;"
+          },
+          {
+            "acc": 131097,
+            "nme": "PICKAXE_SPEED_ID",
+            "dsc": "Lnet/minecraft/resources/ResourceLocation;"
+          },
+          {
+            "acc": 131097,
+            "nme": "PICKAXE_SPEED",
+            "dsc": "Lnet/minecraft/world/entity/ai/attributes/Attribute;"
+          },
+          {
+            "acc": 131097,
+            "nme": "AXE_SPEED_ID",
+            "dsc": "Lnet/minecraft/resources/ResourceLocation;"
+          },
+          {
+            "acc": 131097,
+            "nme": "AXE_SPEED",
+            "dsc": "Lnet/minecraft/world/entity/ai/attributes/Attribute;"
+          },
+          {
+            "acc": 131097,
+            "nme": "SHOVEL_SPEED_ID",
+            "dsc": "Lnet/minecraft/resources/ResourceLocation;"
+          },
+          {
+            "acc": 131097,
+            "nme": "SHOVEL_SPEED",
+            "dsc": "Lnet/minecraft/world/entity/ai/attributes/Attribute;"
+          },
+          {
+            "acc": 131097,
+            "nme": "SPRINTING_SPEED_ID",
+            "dsc": "Lnet/minecraft/resources/ResourceLocation;"
+          },
+          {
+            "acc": 131097,
+            "nme": "SPRINTING_SPEED",
+            "dsc": "Lnet/minecraft/world/entity/ai/attributes/Attribute;"
+          },
+          {
+            "acc": 131097,
+            "nme": "KNOCKBACK_ID",
+            "dsc": "Lnet/minecraft/resources/ResourceLocation;"
+          },
+          {
+            "acc": 131097,
+            "nme": "KNOCKBACK",
+            "dsc": "Lnet/minecraft/world/entity/ai/attributes/Attribute;"
+          },
+          {
+            "acc": 131097,
+            "nme": "REPAIR_COST_ID",
+            "dsc": "Lnet/minecraft/resources/ResourceLocation;"
+          },
+          {
+            "acc": 131097,
+            "nme": "REPAIR_COST",
+            "dsc": "Lnet/minecraft/world/entity/ai/attributes/Attribute;"
+          },
+          {
+            "acc": 131097,
+            "nme": "ARMOR_SHRED_ID",
+            "dsc": "Lnet/minecraft/resources/ResourceLocation;"
+          },
+          {
+            "acc": 131097,
+            "nme": "ARMOR_SHRED",
+            "dsc": "Lnet/minecraft/world/entity/ai/attributes/Attribute;"
+          },
+          {
+            "acc": 131097,
+            "nme": "TOUGHNESS_SHRED_ID",
+            "dsc": "Lnet/minecraft/resources/ResourceLocation;"
+          },
+          {
+            "acc": 131097,
+            "nme": "TOUGHNESS_SHRED",
+            "dsc": "Lnet/minecraft/world/entity/ai/attributes/Attribute;"
+          },
+          {
+            "acc": 131097,
+            "nme": "PROTECTION_SHRED_ID",
+            "dsc": "Lnet/minecraft/resources/ResourceLocation;"
+          },
+          {
+            "acc": 131097,
+            "nme": "PROTECTION_SHRED",
+            "dsc": "Lnet/minecraft/world/entity/ai/attributes/Attribute;"
+          },
+          {
+            "acc": 131097,
+            "nme": "RESISTANCE_SHRED_ID",
+            "dsc": "Lnet/minecraft/resources/ResourceLocation;"
+          },
+          {
+            "acc": 131097,
+            "nme": "RESISTANCE_SHRED",
+            "dsc": "Lnet/minecraft/world/entity/ai/attributes/Attribute;"
+          },
+          {
+            "acc": 131097,
+            "nme": "MAGIC_RESISTANCE_SHRED_ID",
+            "dsc": "Lnet/minecraft/resources/ResourceLocation;"
+          },
+          {
+            "acc": 131097,
+            "nme": "MAGIC_RESISTANCE_SHRED",
+            "dsc": "Lnet/minecraft/world/entity/ai/attributes/Attribute;"
+          },
+          {
+            "acc": 131097,
+            "nme": "MELEE_RESISTANCE_SHRED_ID",
+            "dsc": "Lnet/minecraft/resources/ResourceLocation;"
+          },
+          {
+            "acc": 131097,
+            "nme": "MELEE_RESISTANCE_SHRED",
+            "dsc": "Lnet/minecraft/world/entity/ai/attributes/Attribute;"
+          },
+          {
+            "acc": 131097,
+            "nme": "RANGED_RESISTANCE_SHRED_ID",
+            "dsc": "Lnet/minecraft/resources/ResourceLocation;"
+          },
+          {
+            "acc": 131097,
+            "nme": "RANGED_RESISTANCE_SHRED",
+            "dsc": "Lnet/minecraft/world/entity/ai/attributes/Attribute;"
+          },
+          {
+            "acc": 131097,
+            "nme": "NATURAL_REGENERATION_ID",
+            "dsc": "Lnet/minecraft/resources/ResourceLocation;"
+          },
+          {
+            "acc": 131097,
+            "nme": "NATURAL_REGENERATION",
+            "dsc": "Lnet/minecraft/world/entity/ai/attributes/Attribute;"
+          },
+          {
+            "acc": 131097,
+            "nme": "STEALTH_ID",
+            "dsc": "Lnet/minecraft/resources/ResourceLocation;"
+          },
+          {
+            "acc": 131097,
+            "nme": "STEALTH",
+            "dsc": "Lnet/minecraft/world/entity/ai/attributes/Attribute;"
+          },
+          {
+            "acc": 131097,
+            "nme": "LIFE_STEAL_ID",
+            "dsc": "Lnet/minecraft/resources/ResourceLocation;"
+          },
+          {
+            "acc": 131097,
+            "nme": "LIFE_STEAL",
+            "dsc": "Lnet/minecraft/world/entity/ai/attributes/Attribute;"
+          },
+          {
+            "acc": 131097,
+            "nme": "FALL_REDUCTION_ID",
+            "dsc": "Lnet/minecraft/resources/ResourceLocation;"
+          },
+          {
+            "acc": 131097,
+            "nme": "FALL_REDUCTION",
+            "dsc": "Lnet/minecraft/world/entity/ai/attributes/Attribute;"
+          },
+          {
+            "acc": 131097,
+            "nme": "BOW_PROJECTILE_SPEED_ID",
+            "dsc": "Lnet/minecraft/resources/ResourceLocation;"
+          },
+          {
+            "acc": 131097,
+            "nme": "BOW_PROJECTILE_SPEED",
+            "dsc": "Lnet/minecraft/world/entity/ai/attributes/Attribute;"
+          },
+          {
+            "acc": 131097,
+            "nme": "CROSSBOW_PROJECTILE_SPEED_ID",
+            "dsc": "Lnet/minecraft/resources/ResourceLocation;"
+          },
+          {
+            "acc": 131097,
+            "nme": "CROSSBOW_PROJECTILE_SPEED",
+            "dsc": "Lnet/minecraft/world/entity/ai/attributes/Attribute;"
+          },
+          {
+            "acc": 131097,
+            "nme": "EXPERIENCE_ID",
+            "dsc": "Lnet/minecraft/resources/ResourceLocation;"
+          },
+          {
+            "acc": 131097,
+            "nme": "EXPERIENCE",
+            "dsc": "Lnet/minecraft/world/entity/ai/attributes/Attribute;"
+          }
+        ]
+      },
+      "net/puffish/attributesmod/util/Registrar.class": {
+        "ver": 61,
+        "acc": 1537,
+        "nme": "net/puffish/attributesmod/util/Registrar",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "register",
+            "acc": 1025,
+            "dsc": "(Lnet/minecraft/core/Registry;Lnet/minecraft/resources/ResourceLocation;Ljava/lang/Object;)V",
+            "sig": "<V:Ljava/lang/Object;T:TV;>(Lnet/minecraft/core/Registry<TV;>;Lnet/minecraft/resources/ResourceLocation;TT;)V"
+          },
+          {
+            "nme": "registerAlias",
+            "acc": 1025,
+            "dsc": "(Lnet/minecraft/core/Registry;Lnet/minecraft/resources/ResourceLocation;Lnet/minecraft/resources/ResourceLocation;)V",
+            "sig": "<V:Ljava/lang/Object;>(Lnet/minecraft/core/Registry<TV;>;Lnet/minecraft/resources/ResourceLocation;Lnet/minecraft/resources/ResourceLocation;)V"
+          }
+        ],
+        "flds": []
+      },
+      "net/puffish/attributesmod/main/ForgeMain.class": {
+        "ver": 61,
+        "acc": 33,
+        "nme": "net/puffish/attributesmod/main/ForgeMain",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "onIdMapping",
+            "acc": 2,
+            "dsc": "(Lnet/minecraftforge/registries/IdMappingEvent;)V"
+          },
+          {
+            "nme": "onRegister",
+            "acc": 2,
+            "dsc": "(Lnet/minecraftforge/registries/RegisterEvent;)V"
+          },
+          {
+            "nme": "lambda$onRegister$0",
+            "acc": 4106,
+            "dsc": "(Lnet/minecraftforge/registries/RegisterEvent;Lnet/puffish/attributesmod/main/ForgeMain$RegistryAlias;)V"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 18,
+            "nme": "registryAliases",
+            "dsc": "Ljava/util/List;",
+            "sig": "Ljava/util/List<Lnet/puffish/attributesmod/main/ForgeMain$RegistryAlias<*>;>;"
+          }
+        ],
+        "vanns": [
+          {
+            "dsc": "Lnet/minecraftforge/fml/common/Mod;",
+            "vals": [
+              "value",
+              "puffish_attributes"
+            ]
+          }
+        ]
+      },
+      "net/puffish/attributesmod/mixin/DamageTrackerMixin.class": {
+        "ver": 61,
+        "acc": 33,
+        "nme": "net/puffish/attributesmod/mixin/DamageTrackerMixin",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "injectAtAttack",
+            "acc": 2,
+            "dsc": "(Lnet/minecraft/world/damagesource/DamageSource;FLorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V",
+            "vanns": [
+              {
+                "dsc": "Lorg/spongepowered/asm/mixin/injection/Inject;",
+                "vals": [
+                  "method",
+                  [
+                    "onDamage"
+                  ],
+                  "at",
+                  [
+                    {
+                      "desc": "Lorg/spongepowered/asm/mixin/injection/At;",
+                      "values": [
+                        "value",
+                        "HEAD"
+                      ],
+                      "api": 589824
+                    }
+                  ]
+                ]
+              }
+            ]
+          }
+        ],
+        "flds": [
+          {
+            "acc": 2,
+            "nme": "f_19277_",
+            "dsc": "Lnet/minecraft/world/entity/LivingEntity;"
+          }
+        ],
+        "invanns": [
+          {
+            "dsc": "Lorg/spongepowered/asm/mixin/Mixin;",
+            "vals": [
+              "value",
+              [
+                {
+                  "itrlNme": "net/minecraft/world/damagesource/CombatTracker"
+                }
+              ]
+            ]
+          }
+        ]
+      },
+      "net/puffish/attributesmod/main/ForgeMain$RegistryAlias.class": {
+        "ver": 61,
+        "acc": 65584,
+        "nme": "net/puffish/attributesmod/main/ForgeMain$RegistryAlias",
+        "super": "java/lang/Record",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 2,
+            "dsc": "(Lnet/minecraft/core/Registry;Lnet/minecraft/resources/ResourceLocation;Lnet/minecraft/resources/ResourceLocation;)V",
+            "sig": "(Lnet/minecraft/core/Registry<TV;>;Lnet/minecraft/resources/ResourceLocation;Lnet/minecraft/resources/ResourceLocation;)V"
+          },
+          {
+            "nme": "applyFor",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/core/Registry;)V",
+            "sig": "(Lnet/minecraft/core/Registry<*>;)V"
+          },
+          {
+            "nme": "apply",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "toString",
+            "acc": 17,
+            "dsc": "()Ljava/lang/String;"
+          },
+          {
+            "nme": "hashCode",
+            "acc": 17,
+            "dsc": "()I"
+          },
+          {
+            "nme": "equals",
+            "acc": 17,
+            "dsc": "(Ljava/lang/Object;)Z"
+          },
+          {
+            "nme": "registry",
+            "acc": 1,
+            "dsc": "()Lnet/minecraft/core/Registry;",
+            "sig": "()Lnet/minecraft/core/Registry<TV;>;"
+          },
+          {
+            "nme": "aliasId",
+            "acc": 1,
+            "dsc": "()Lnet/minecraft/resources/ResourceLocation;"
+          },
+          {
+            "nme": "id",
+            "acc": 1,
+            "dsc": "()Lnet/minecraft/resources/ResourceLocation;"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 18,
+            "nme": "registry",
+            "dsc": "Lnet/minecraft/core/Registry;",
+            "sig": "Lnet/minecraft/core/Registry<TV;>;"
+          },
+          {
+            "acc": 18,
+            "nme": "aliasId",
+            "dsc": "Lnet/minecraft/resources/ResourceLocation;"
+          },
+          {
+            "acc": 18,
+            "nme": "id",
+            "dsc": "Lnet/minecraft/resources/ResourceLocation;"
+          }
+        ]
+      },
+      "net/puffish/attributesmod/api/DynamicModification.class": {
+        "ver": 61,
+        "acc": 1537,
+        "nme": "net/puffish/attributesmod/api/DynamicModification",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "create",
+            "acc": 9,
+            "dsc": "()Lnet/puffish/attributesmod/api/DynamicModification;"
+          },
+          {
+            "nme": "withPositive",
+            "acc": 1025,
+            "dsc": "(Lnet/minecraft/world/entity/ai/attributes/Attribute;Lnet/minecraft/world/entity/LivingEntity;)Lnet/puffish/attributesmod/api/DynamicModification;"
+          },
+          {
+            "nme": "withNegative",
+            "acc": 1025,
+            "dsc": "(Lnet/minecraft/world/entity/ai/attributes/Attribute;Lnet/minecraft/world/entity/LivingEntity;)Lnet/puffish/attributesmod/api/DynamicModification;"
+          },
+          {
+            "nme": "applyTo",
+            "acc": 1025,
+            "dsc": "(D)D"
+          },
+          {
+            "nme": "applyTo",
+            "acc": 1025,
+            "dsc": "(F)F"
+          },
+          {
+            "nme": "applyToReciprocal",
+            "acc": 1025,
+            "dsc": "(D)D"
+          },
+          {
+            "nme": "applyToReciprocal",
+            "acc": 1025,
+            "dsc": "(F)F"
+          },
+          {
+            "nme": "relativeTo",
+            "acc": 1025,
+            "dsc": "(D)D"
+          },
+          {
+            "nme": "relativeTo",
+            "acc": 1025,
+            "dsc": "(F)F"
+          }
+        ],
+        "flds": []
+      },
+      "net/puffish/attributesmod/mixin/SimpleRegistryAccessor.class": {
+        "ver": 61,
+        "acc": 1537,
+        "nme": "net/puffish/attributesmod/mixin/SimpleRegistryAccessor",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "getIdToEntry",
+            "acc": 1025,
+            "dsc": "()Ljava/util/Map;",
+            "sig": "()Ljava/util/Map<Lnet/minecraft/resources/ResourceLocation;Lnet/minecraft/core/Holder$Reference<TT;>;>;",
+            "vanns": [
+              {
+                "dsc": "Lorg/spongepowered/asm/mixin/gen/Accessor;"
+              }
+            ]
+          },
+          {
+            "nme": "getKeyToEntry",
+            "acc": 1025,
+            "dsc": "()Ljava/util/Map;",
+            "sig": "()Ljava/util/Map<Lnet/minecraft/resources/ResourceKey<TT;>;Lnet/minecraft/core/Holder$Reference<TT;>;>;",
+            "vanns": [
+              {
+                "dsc": "Lorg/spongepowered/asm/mixin/gen/Accessor;"
+              }
+            ]
+          }
+        ],
+        "flds": [],
+        "invanns": [
+          {
+            "dsc": "Lorg/spongepowered/asm/mixin/Mixin;",
+            "vals": [
+              "value",
+              [
+                {
+                  "itrlNme": "net/minecraft/core/MappedRegistry"
+                }
+              ]
+            ]
+          }
+        ]
+      },
+      "net/puffish/attributesmod/mixin/AnvilScreenHandlerMixin.class": {
+        "ver": 61,
+        "acc": 1057,
+        "nme": "net/puffish/attributesmod/mixin/AnvilScreenHandlerMixin",
+        "super": "net/minecraft/world/inventory/ItemCombinerMenu",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 2,
+            "dsc": "(Lnet/minecraft/world/inventory/MenuType;ILnet/minecraft/world/entity/player/Inventory;Lnet/minecraft/world/inventory/ContainerLevelAccess;)V",
+            "sig": "(Lnet/minecraft/world/inventory/MenuType<*>;ILnet/minecraft/world/entity/player/Inventory;Lnet/minecraft/world/inventory/ContainerLevelAccess;)V"
+          },
+          {
+            "nme": "wrapOperationAtSet",
+            "acc": 2,
+            "dsc": "(Lnet/minecraft/world/inventory/DataSlot;ILcom/llamalad7/mixinextras/injector/wrapoperation/Operation;)V",
+            "sig": "(Lnet/minecraft/world/inventory/DataSlot;ILcom/llamalad7/mixinextras/injector/wrapoperation/Operation<Ljava/lang/Void;>;)V",
+            "vanns": [
+              {
+                "dsc": "Lcom/llamalad7/mixinextras/injector/wrapoperation/WrapOperation;",
+                "vals": [
+                  "method",
+                  [
+                    "updateResult"
+                  ],
+                  "at",
+                  [
+                    {
+                      "desc": "Lorg/spongepowered/asm/mixin/injection/At;",
+                      "values": [
+                        "value",
+                        "INVOKE",
+                        "target",
+                        "Lnet/minecraft/screen/Property;set(I)V",
+                        "ordinal",
+                        5
+                      ],
+                      "api": 589824
+                    }
+                  ]
+                ]
+              }
+            ]
+          }
+        ],
+        "flds": [],
+        "invanns": [
+          {
+            "dsc": "Lorg/spongepowered/asm/mixin/Mixin;",
+            "vals": [
+              "value",
+              [
+                {
+                  "itrlNme": "net/minecraft/world/inventory/AnvilMenu"
+                }
+              ],
+              "priority",
+              1100
+            ]
+          }
+        ]
+      },
+      "net/puffish/attributesmod/api/PuffishAttributes.class": {
+        "ver": 61,
+        "acc": 33,
+        "nme": "net/puffish/attributesmod/api/PuffishAttributes",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 2,
+            "dsc": "()V"
+          },
+          {
+            "nme": "<clinit>",
+            "acc": 8,
+            "dsc": "()V"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 25,
+            "nme": "STAMINA_ID",
+            "dsc": "Lnet/minecraft/resources/ResourceLocation;"
+          },
+          {
+            "acc": 25,
+            "nme": "STAMINA",
+            "dsc": "Lnet/minecraft/world/entity/ai/attributes/Attribute;"
+          },
+          {
+            "acc": 25,
+            "nme": "MAGIC_DAMAGE_ID",
+            "dsc": "Lnet/minecraft/resources/ResourceLocation;"
+          },
+          {
+            "acc": 25,
+            "nme": "MELEE_DAMAGE_ID",
+            "dsc": "Lnet/minecraft/resources/ResourceLocation;"
+          },
+          {
+            "acc": 25,
+            "nme": "RANGED_DAMAGE_ID",
+            "dsc": "Lnet/minecraft/resources/ResourceLocation;"
+          },
+          {
+            "acc": 25,
+            "nme": "TAMED_DAMAGE_ID",
+            "dsc": "Lnet/minecraft/resources/ResourceLocation;"
+          },
+          {
+            "acc": 25,
+            "nme": "SWORD_DAMAGE_ID",
+            "dsc": "Lnet/minecraft/resources/ResourceLocation;"
+          },
+          {
+            "acc": 25,
+            "nme": "AXE_DAMAGE_ID",
+            "dsc": "Lnet/minecraft/resources/ResourceLocation;"
+          },
+          {
+            "acc": 25,
+            "nme": "TRIDENT_DAMAGE_ID",
+            "dsc": "Lnet/minecraft/resources/ResourceLocation;"
+          },
+          {
+            "acc": 25,
+            "nme": "FORTUNE_ID",
+            "dsc": "Lnet/minecraft/resources/ResourceLocation;"
+          },
+          {
+            "acc": 25,
+            "nme": "HEALING_ID",
+            "dsc": "Lnet/minecraft/resources/ResourceLocation;"
+          },
+          {
+            "acc": 25,
+            "nme": "JUMP_ID",
+            "dsc": "Lnet/minecraft/resources/ResourceLocation;"
+          },
+          {
+            "acc": 25,
+            "nme": "RESISTANCE_ID",
+            "dsc": "Lnet/minecraft/resources/ResourceLocation;"
+          },
+          {
+            "acc": 25,
+            "nme": "MAGIC_RESISTANCE_ID",
+            "dsc": "Lnet/minecraft/resources/ResourceLocation;"
+          },
+          {
+            "acc": 25,
+            "nme": "MELEE_RESISTANCE_ID",
+            "dsc": "Lnet/minecraft/resources/ResourceLocation;"
+          },
+          {
+            "acc": 25,
+            "nme": "RANGED_RESISTANCE_ID",
+            "dsc": "Lnet/minecraft/resources/ResourceLocation;"
+          },
+          {
+            "acc": 25,
+            "nme": "BREAKING_SPEED_ID",
+            "dsc": "Lnet/minecraft/resources/ResourceLocation;"
+          },
+          {
+            "acc": 25,
+            "nme": "MINING_SPEED_ID",
+            "dsc": "Lnet/minecraft/resources/ResourceLocation;"
+          },
+          {
+            "acc": 25,
+            "nme": "PICKAXE_SPEED_ID",
+            "dsc": "Lnet/minecraft/resources/ResourceLocation;"
+          },
+          {
+            "acc": 25,
+            "nme": "AXE_SPEED_ID",
+            "dsc": "Lnet/minecraft/resources/ResourceLocation;"
+          },
+          {
+            "acc": 25,
+            "nme": "SHOVEL_SPEED_ID",
+            "dsc": "Lnet/minecraft/resources/ResourceLocation;"
+          },
+          {
+            "acc": 25,
+            "nme": "SPRINTING_SPEED_ID",
+            "dsc": "Lnet/minecraft/resources/ResourceLocation;"
+          },
+          {
+            "acc": 25,
+            "nme": "MOUNT_SPEED_ID",
+            "dsc": "Lnet/minecraft/resources/ResourceLocation;"
+          },
+          {
+            "acc": 25,
+            "nme": "CONSUMING_SPEED_ID",
+            "dsc": "Lnet/minecraft/resources/ResourceLocation;"
+          },
+          {
+            "acc": 25,
+            "nme": "KNOCKBACK_ID",
+            "dsc": "Lnet/minecraft/resources/ResourceLocation;"
+          },
+          {
+            "acc": 25,
+            "nme": "REPAIR_COST_ID",
+            "dsc": "Lnet/minecraft/resources/ResourceLocation;"
+          },
+          {
+            "acc": 25,
+            "nme": "ARMOR_SHRED_ID",
+            "dsc": "Lnet/minecraft/resources/ResourceLocation;"
+          },
+          {
+            "acc": 25,
+            "nme": "TOUGHNESS_SHRED_ID",
+            "dsc": "Lnet/minecraft/resources/ResourceLocation;"
+          },
+          {
+            "acc": 25,
+            "nme": "PROTECTION_SHRED_ID",
+            "dsc": "Lnet/minecraft/resources/ResourceLocation;"
+          },
+          {
+            "acc": 25,
+            "nme": "RESISTANCE_SHRED_ID",
+            "dsc": "Lnet/minecraft/resources/ResourceLocation;"
+          },
+          {
+            "acc": 25,
+            "nme": "TAMED_RESISTANCE_ID",
+            "dsc": "Lnet/minecraft/resources/ResourceLocation;"
+          },
+          {
+            "acc": 25,
+            "nme": "MAGIC_RESISTANCE_SHRED_ID",
+            "dsc": "Lnet/minecraft/resources/ResourceLocation;"
+          },
+          {
+            "acc": 25,
+            "nme": "MELEE_RESISTANCE_SHRED_ID",
+            "dsc": "Lnet/minecraft/resources/ResourceLocation;"
+          },
+          {
+            "acc": 25,
+            "nme": "RANGED_RESISTANCE_SHRED_ID",
+            "dsc": "Lnet/minecraft/resources/ResourceLocation;"
+          },
+          {
+            "acc": 25,
+            "nme": "NATURAL_REGENERATION_ID",
+            "dsc": "Lnet/minecraft/resources/ResourceLocation;"
+          },
+          {
+            "acc": 25,
+            "nme": "DAMAGE_REFLECTION_ID",
+            "dsc": "Lnet/minecraft/resources/ResourceLocation;"
+          },
+          {
+            "acc": 25,
+            "nme": "STEALTH_ID",
+            "dsc": "Lnet/minecraft/resources/ResourceLocation;"
+          },
+          {
+            "acc": 25,
+            "nme": "LIFE_STEAL_ID",
+            "dsc": "Lnet/minecraft/resources/ResourceLocation;"
+          },
+          {
+            "acc": 25,
+            "nme": "FALL_REDUCTION_ID",
+            "dsc": "Lnet/minecraft/resources/ResourceLocation;"
+          },
+          {
+            "acc": 25,
+            "nme": "BOW_PROJECTILE_SPEED_ID",
+            "dsc": "Lnet/minecraft/resources/ResourceLocation;"
+          },
+          {
+            "acc": 25,
+            "nme": "CROSSBOW_PROJECTILE_SPEED_ID",
+            "dsc": "Lnet/minecraft/resources/ResourceLocation;"
+          },
+          {
+            "acc": 25,
+            "nme": "EXPERIENCE_ID",
+            "dsc": "Lnet/minecraft/resources/ResourceLocation;"
+          },
+          {
+            "acc": 25,
+            "nme": "MAGIC_DAMAGE",
+            "dsc": "Lnet/minecraft/world/entity/ai/attributes/Attribute;"
+          },
+          {
+            "acc": 25,
+            "nme": "MELEE_DAMAGE",
+            "dsc": "Lnet/minecraft/world/entity/ai/attributes/Attribute;"
+          },
+          {
+            "acc": 25,
+            "nme": "RANGED_DAMAGE",
+            "dsc": "Lnet/minecraft/world/entity/ai/attributes/Attribute;"
+          },
+          {
+            "acc": 25,
+            "nme": "TAMED_DAMAGE",
+            "dsc": "Lnet/minecraft/world/entity/ai/attributes/Attribute;"
+          },
+          {
+            "acc": 25,
+            "nme": "SWORD_DAMAGE",
+            "dsc": "Lnet/minecraft/world/entity/ai/attributes/Attribute;"
+          },
+          {
+            "acc": 25,
+            "nme": "AXE_DAMAGE",
+            "dsc": "Lnet/minecraft/world/entity/ai/attributes/Attribute;"
+          },
+          {
+            "acc": 25,
+            "nme": "TRIDENT_DAMAGE",
+            "dsc": "Lnet/minecraft/world/entity/ai/attributes/Attribute;"
+          },
+          {
+            "acc": 25,
+            "nme": "FORTUNE",
+            "dsc": "Lnet/minecraft/world/entity/ai/attributes/Attribute;"
+          },
+          {
+            "acc": 25,
+            "nme": "HEALING",
+            "dsc": "Lnet/minecraft/world/entity/ai/attributes/Attribute;"
+          },
+          {
+            "acc": 25,
+            "nme": "JUMP",
+            "dsc": "Lnet/minecraft/world/entity/ai/attributes/Attribute;"
+          },
+          {
+            "acc": 25,
+            "nme": "RESISTANCE",
+            "dsc": "Lnet/minecraft/world/entity/ai/attributes/Attribute;"
+          },
+          {
+            "acc": 25,
+            "nme": "MAGIC_RESISTANCE",
+            "dsc": "Lnet/minecraft/world/entity/ai/attributes/Attribute;"
+          },
+          {
+            "acc": 25,
+            "nme": "MELEE_RESISTANCE",
+            "dsc": "Lnet/minecraft/world/entity/ai/attributes/Attribute;"
+          },
+          {
+            "acc": 25,
+            "nme": "RANGED_RESISTANCE",
+            "dsc": "Lnet/minecraft/world/entity/ai/attributes/Attribute;"
+          },
+          {
+            "acc": 25,
+            "nme": "BREAKING_SPEED",
+            "dsc": "Lnet/minecraft/world/entity/ai/attributes/Attribute;"
+          },
+          {
+            "acc": 25,
+            "nme": "MINING_SPEED",
+            "dsc": "Lnet/minecraft/world/entity/ai/attributes/Attribute;"
+          },
+          {
+            "acc": 25,
+            "nme": "PICKAXE_SPEED",
+            "dsc": "Lnet/minecraft/world/entity/ai/attributes/Attribute;"
+          },
+          {
+            "acc": 25,
+            "nme": "AXE_SPEED",
+            "dsc": "Lnet/minecraft/world/entity/ai/attributes/Attribute;"
+          },
+          {
+            "acc": 25,
+            "nme": "SHOVEL_SPEED",
+            "dsc": "Lnet/minecraft/world/entity/ai/attributes/Attribute;"
+          },
+          {
+            "acc": 25,
+            "nme": "SPRINTING_SPEED",
+            "dsc": "Lnet/minecraft/world/entity/ai/attributes/Attribute;"
+          },
+          {
+            "acc": 25,
+            "nme": "MOUNT_SPEED",
+            "dsc": "Lnet/minecraft/world/entity/ai/attributes/Attribute;"
+          },
+          {
+            "acc": 25,
+            "nme": "CONSUMING_SPEED",
+            "dsc": "Lnet/minecraft/world/entity/ai/attributes/Attribute;"
+          },
+          {
+            "acc": 25,
+            "nme": "KNOCKBACK",
+            "dsc": "Lnet/minecraft/world/entity/ai/attributes/Attribute;"
+          },
+          {
+            "acc": 25,
+            "nme": "REPAIR_COST",
+            "dsc": "Lnet/minecraft/world/entity/ai/attributes/Attribute;"
+          },
+          {
+            "acc": 25,
+            "nme": "ARMOR_SHRED",
+            "dsc": "Lnet/minecraft/world/entity/ai/attributes/Attribute;"
+          },
+          {
+            "acc": 25,
+            "nme": "TOUGHNESS_SHRED",
+            "dsc": "Lnet/minecraft/world/entity/ai/attributes/Attribute;"
+          },
+          {
+            "acc": 25,
+            "nme": "PROTECTION_SHRED",
+            "dsc": "Lnet/minecraft/world/entity/ai/attributes/Attribute;"
+          },
+          {
+            "acc": 25,
+            "nme": "RESISTANCE_SHRED",
+            "dsc": "Lnet/minecraft/world/entity/ai/attributes/Attribute;"
+          },
+          {
+            "acc": 25,
+            "nme": "TAMED_RESISTANCE",
+            "dsc": "Lnet/minecraft/world/entity/ai/attributes/Attribute;"
+          },
+          {
+            "acc": 25,
+            "nme": "MAGIC_RESISTANCE_SHRED",
+            "dsc": "Lnet/minecraft/world/entity/ai/attributes/Attribute;"
+          },
+          {
+            "acc": 25,
+            "nme": "MELEE_RESISTANCE_SHRED",
+            "dsc": "Lnet/minecraft/world/entity/ai/attributes/Attribute;"
+          },
+          {
+            "acc": 25,
+            "nme": "RANGED_RESISTANCE_SHRED",
+            "dsc": "Lnet/minecraft/world/entity/ai/attributes/Attribute;"
+          },
+          {
+            "acc": 25,
+            "nme": "NATURAL_REGENERATION",
+            "dsc": "Lnet/minecraft/world/entity/ai/attributes/Attribute;"
+          },
+          {
+            "acc": 25,
+            "nme": "DAMAGE_REFLECTION",
+            "dsc": "Lnet/minecraft/world/entity/ai/attributes/Attribute;"
+          },
+          {
+            "acc": 25,
+            "nme": "STEALTH",
+            "dsc": "Lnet/minecraft/world/entity/ai/attributes/Attribute;"
+          },
+          {
+            "acc": 25,
+            "nme": "LIFE_STEAL",
+            "dsc": "Lnet/minecraft/world/entity/ai/attributes/Attribute;"
+          },
+          {
+            "acc": 25,
+            "nme": "FALL_REDUCTION",
+            "dsc": "Lnet/minecraft/world/entity/ai/attributes/Attribute;"
+          },
+          {
+            "acc": 25,
+            "nme": "BOW_PROJECTILE_SPEED",
+            "dsc": "Lnet/minecraft/world/entity/ai/attributes/Attribute;"
+          },
+          {
+            "acc": 25,
+            "nme": "CROSSBOW_PROJECTILE_SPEED",
+            "dsc": "Lnet/minecraft/world/entity/ai/attributes/Attribute;"
+          },
+          {
+            "acc": 25,
+            "nme": "EXPERIENCE",
+            "dsc": "Lnet/minecraft/world/entity/ai/attributes/Attribute;"
+          }
+        ]
+      },
+      "net/puffish/attributesmod/mixin/PlayerInventoryMixin.class": {
+        "ver": 61,
+        "acc": 33,
+        "nme": "net/puffish/attributesmod/mixin/PlayerInventoryMixin",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "injectAtGetBlockBreakingSpeed",
+            "acc": 2,
+            "dsc": "(F)F",
+            "vanns": [
+              {
+                "dsc": "Lcom/llamalad7/mixinextras/injector/ModifyReturnValue;",
+                "vals": [
+                  "method",
+                  [
+                    "getBlockBreakingSpeed"
+                  ],
+                  "at",
+                  [
+                    {
+                      "desc": "Lorg/spongepowered/asm/mixin/injection/At;",
+                      "values": [
+                        "value",
+                        "RETURN"
+                      ],
+                      "api": 589824
+                    }
+                  ]
+                ]
+              }
+            ]
+          }
+        ],
+        "flds": [],
+        "invanns": [
+          {
+            "dsc": "Lorg/spongepowered/asm/mixin/Mixin;",
+            "vals": [
+              "value",
+              [
+                {
+                  "itrlNme": "net/minecraft/world/entity/player/Inventory"
+                }
+              ]
+            ]
+          }
+        ]
+      },
+      "net/puffish/attributesmod/mixin/RegistryEntryReferenceInvoker.class": {
+        "ver": 61,
+        "acc": 1537,
+        "nme": "net/puffish/attributesmod/mixin/RegistryEntryReferenceInvoker",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "invokeSetValue",
+            "acc": 1025,
+            "dsc": "(Ljava/lang/Object;)V",
+            "sig": "(TT;)V",
+            "vanns": [
+              {
+                "dsc": "Lorg/spongepowered/asm/mixin/gen/Invoker;",
+                "vals": [
+                  "value",
+                  "setValue"
+                ]
+              }
+            ]
+          }
+        ],
+        "flds": [],
+        "invanns": [
+          {
+            "dsc": "Lorg/spongepowered/asm/mixin/Mixin;",
+            "vals": [
+              "value",
+              [
+                {
+                  "itrlNme": "net/minecraft/core/Holder$Reference"
+                }
+              ]
+            ]
+          }
+        ]
+      },
+      "net/puffish/attributesmod/api/DynamicEntityAttribute.class": {
+        "ver": 61,
+        "acc": 33,
+        "nme": "net/puffish/attributesmod/api/DynamicEntityAttribute",
+        "super": "net/minecraft/world/entity/ai/attributes/Attribute",
+        "mthds": [
+          {
+            "nme": "create",
+            "acc": 9,
+            "dsc": "(Lnet/minecraft/resources/ResourceLocation;)Lnet/puffish/attributesmod/api/DynamicEntityAttribute;"
+          },
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "(Ljava/lang/String;)V"
+          }
+        ],
+        "flds": []
+      },
+      "net/puffish/attributesmod/mixin/ApplyBonusLootFunctionMixin.class": {
+        "ver": 61,
+        "acc": 1057,
+        "nme": "net/puffish/attributesmod/mixin/ApplyBonusLootFunctionMixin",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "modifyVariableAtProcess",
+            "acc": 2,
+            "dsc": "(ILnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/level/storage/loot/LootContext;)I",
+            "vanns": [
+              {
+                "dsc": "Lorg/spongepowered/asm/mixin/injection/ModifyVariable;",
+                "vals": [
+                  "method",
+                  [
+                    "process"
+                  ],
+                  "at",
+                  {
+                    "desc": "Lorg/spongepowered/asm/mixin/injection/At;",
+                    "values": [
+                      "value",
+                      "STORE"
+                    ],
+                    "api": 589824
+                  },
+                  "ordinal",
+                  0
+                ]
+              }
+            ]
+          }
+        ],
+        "flds": [
+          {
+            "acc": 2,
+            "nme": "f_79899_",
+            "dsc": "Lnet/minecraft/world/item/enchantment/Enchantment;"
+          }
+        ],
+        "invanns": [
+          {
+            "dsc": "Lorg/spongepowered/asm/mixin/Mixin;",
+            "vals": [
+              "value",
+              [
+                {
+                  "itrlNme": "net/minecraft/world/level/storage/loot/functions/ApplyBonusCount"
+                }
+              ]
+            ]
+          }
+        ]
+      },
+      "net/puffish/attributesmod/util/DynamicModificationImpl.class": {
+        "ver": 61,
+        "acc": 33,
+        "nme": "net/puffish/attributesmod/util/DynamicModificationImpl",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "withPositive",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/world/entity/ai/attributes/Attribute;Lnet/minecraft/world/entity/LivingEntity;)Lnet/puffish/attributesmod/api/DynamicModification;"
+          },
+          {
+            "nme": "withNegative",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/world/entity/ai/attributes/Attribute;Lnet/minecraft/world/entity/LivingEntity;)Lnet/puffish/attributesmod/api/DynamicModification;"
+          },
+          {
+            "nme": "with",
+            "acc": 1,
+            "dsc": "(Lnet/puffish/attributesmod/util/Sign;Lnet/minecraft/world/entity/ai/attributes/Attribute;Lnet/minecraft/world/entity/LivingEntity;)Lnet/puffish/attributesmod/api/DynamicModification;"
+          },
+          {
+            "nme": "with",
+            "acc": 1,
+            "dsc": "(Lnet/puffish/attributesmod/util/Signed;)Lnet/puffish/attributesmod/api/DynamicModification;",
+            "sig": "(Lnet/puffish/attributesmod/util/Signed<Lnet/minecraft/world/entity/ai/attributes/AttributeInstance;>;)Lnet/puffish/attributesmod/api/DynamicModification;"
+          },
+          {
+            "nme": "applyTo",
+            "acc": 1,
+            "dsc": "(D)D"
+          },
+          {
+            "nme": "applyTo",
+            "acc": 1,
+            "dsc": "(F)F"
+          },
+          {
+            "nme": "applyToReciprocal",
+            "acc": 1,
+            "dsc": "(D)D"
+          },
+          {
+            "nme": "applyToReciprocal",
+            "acc": 1,
+            "dsc": "(F)F"
+          },
+          {
+            "nme": "relativeTo",
+            "acc": 1,
+            "dsc": "(D)D"
+          },
+          {
+            "nme": "relativeTo",
+            "acc": 1,
+            "dsc": "(F)F"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 18,
+            "nme": "attributes",
+            "dsc": "Ljava/util/List;",
+            "sig": "Ljava/util/List<Lnet/puffish/attributesmod/util/Signed<Lnet/minecraft/world/entity/ai/attributes/AttributeInstance;>;>;"
+          }
+        ]
+      },
+      "net/puffish/attributesmod/mixin/ExperienceOrbEntityMixin.class": {
+        "ver": 61,
+        "acc": 33,
+        "nme": "net/puffish/attributesmod/mixin/ExperienceOrbEntityMixin",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "wrapMethodOnPlayerCollision",
+            "acc": 2,
+            "dsc": "(Lnet/minecraft/world/entity/player/Player;Lcom/llamalad7/mixinextras/injector/wrapoperation/Operation;)V",
+            "sig": "(Lnet/minecraft/world/entity/player/Player;Lcom/llamalad7/mixinextras/injector/wrapoperation/Operation<Ljava/lang/Integer;>;)V",
+            "vanns": [
+              {
+                "dsc": "Lcom/llamalad7/mixinextras/injector/wrapmethod/WrapMethod;",
+                "vals": [
+                  "method",
+                  [
+                    "onPlayerCollision"
+                  ]
+                ]
+              }
+            ]
+          }
+        ],
+        "flds": [],
+        "invanns": [
+          {
+            "dsc": "Lorg/spongepowered/asm/mixin/Mixin;",
+            "vals": [
+              "value",
+              [
+                {
+                  "itrlNme": "net/minecraft/world/entity/ExperienceOrb"
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

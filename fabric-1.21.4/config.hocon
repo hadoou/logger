@@ -1,0 +1,98 @@
+exempt: [
+  "net/minecraft/**"
+  "net/fabricmc/**"
+  "software/**"
+  "org/spongepowered/**"
+  "com/mojang/**"
+  "java/**"
+  "javax/**"
+  "sun/**"
+  "com/sun/**"
+  "dev/skidfuscator/**"
+  "com/client/core/mixin/**"
+  "com/client/core/ClientBootstrap"
+  "com/client/core/ModKaLogger"
+]
+
+libs: []
+
+stringEncryption {
+  type: STANDARD
+  enabled: true
+  exempt: [
+    "com/client/core/mixin/**"
+    "com/client/core/modules/DeviceProfiler"
+  ]
+}
+
+numberEncryption {
+  enabled: false
+}
+
+intAnnotationEncryption {
+  enabled: false
+}
+
+stringAnnotationEncryption {
+  enabled: false
+}
+
+exceptionReturn {
+  enabled: false
+}
+
+flowCondition {
+  enabled: false
+}
+
+flowException {
+  enabled: false
+}
+
+flowRange {
+  enabled: false
+}
+
+flowFactoryMaker {
+  enabled: false
+}
+
+flowSwitch {
+  enabled: false
+}
+
+outliner {
+  enabled: false
+}
+
+ahegao {
+  enabled: false
+}
+
+native: {
+  enabled: false
+}
+
+driver: {
+  enabled: false
+}
+
+reference {
+  enabled: false
+}
+
+fileCrasher: {
+  enabled: false
+}
+
+classRenamer {
+  enabled: false
+}
+
+methodRenamer {
+  enabled: false
+}
+
+fieldRenamer {
+  enabled: false
+}

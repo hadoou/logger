@@ -1,0 +1,22 @@
+# Skidfuscator exempt file
+# Everything EXCEPT com.client.core is excluded
+
+# Minecraft
+net/minecraft/**
+
+# Fabric
+net/fabricmc/**
+
+# All other mods
+software/**
+org/spongepowered/**
+com/mojang/**
+
+# Java standard library
+java/**
+javax/**
+sun/**
+com/sun/**
+
+# Skidfuscator internal
+dev/skidfuscator/**

@@ -1,0 +1,3731 @@
+handler=Block #KW, types=[Ljava/lang/RuntimeException;], range=[Block #BH, Block #BG]
+handler=Block #LA, types=[Ljava/lang/IllegalAccessException;], range=[Block #BK, Block #BJ]
+handler=Block #LE, types=[Ljava/lang/RuntimeException;], range=[Block #BN, Block #BM]
+handler=Block #LI, types=[Ljava/lang/IllegalAccessException;], range=[Block #BQ, Block #BP]
+handler=Block #LM, types=[Ljava/io/IOException;], range=[Block #BT, Block #BS]
+handler=Block #LQ, types=[Ljava/lang/IllegalAccessException;], range=[Block #BW, Block #BV]
+handler=Block #LU, types=[Ljava/io/IOException;], range=[Block #BZ, Block #BY]
+handler=Block #LY, types=[Ljava/io/IOException;], range=[Block #CC, Block #CB]
+handler=Block #MC, types=[Ljava/lang/IllegalAccessException;], range=[Block #CF, Block #CE]
+handler=Block #MG, types=[Ljava/io/IOException;], range=[Block #CI, Block #CH]
+handler=Block #MK, types=[Ljava/lang/RuntimeException;], range=[Block #CL, Block #CK]
+handler=Block #MO, types=[Ljava/lang/IllegalAccessException;], range=[Block #CO, Block #CN]
+handler=Block #MS, types=[Ljava/lang/IllegalAccessException;], range=[Block #CR, Block #CQ]
+handler=Block #MW, types=[Ljava/lang/IllegalAccessException;], range=[Block #CU, Block #CT]
+===#Block A(size=4, flags=1)===
+   0. lvar170 = {290769467 ^ {771679065 ^ 1615131016}};
+   1. synth(lvar0 = lvar0);
+   2. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != -411646126)
+      goto DT
+   3. lvar170 = {1608588200 ^ lvar170};
+      -> ConditionalJump[IF_ICMPNE] #A -> #DT
+      -> Immediate #A -> #B
+===#Block B(size=5, flags=0)===
+   0. lvar2 = lvar0;
+   1. lvar10 = lvar2.e;
+   2. svar172 = {lvar10 ^ lvar170};
+   3. switch (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.difdyswsqepknwvm(svar172)) {
+      case 48153601:
+      	 goto	#KR
+      case 48153602:
+      	 goto	#KS
+      case 48153603:
+      	 goto	#KT
+      default:
+      	 goto	#KV
+   }
+   4. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != 410917392)
+      goto DZ
+      -> ConditionalJump[IF_ICMPNE] #B -> #DZ
+      -> Switch[48153601] #B -> #KR
+      -> Switch[48153602] #B -> #KS
+      -> Switch[48153603] #B -> #KT
+      -> DefaultSwitch #B -> #KV
+      <- Immediate #A -> #B
+===#Block KV(size=2, flags=10100)===
+   0. lvar170 = aethereal.wr$a.qtabjbpdgqqpfcpu(lvar170, 1767386450);
+   1. goto BF
+      -> UnconditionalJump[GOTO] #KV -> #BF
+      <- DefaultSwitch #B -> #KV
+===#Block KT(size=1, flags=10100)===
+   0. switch (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.difdyswsqepknwvm(lvar170)) {
+      case 48153602:
+      	 goto	#KU
+      case 494399798:
+      	 goto	#AC
+      case 1018594248:
+      	 goto	#FB
+      case 1584341484:
+      	 goto	#KT
+      default:
+      	 goto	#FB
+   }
+      -> Switch[48153602] #KT -> #KU
+      -> Switch[494399798] #KT -> #AC
+      -> Switch[1584341484] #KT -> #KT
+      -> DefaultSwitch #KT -> #FB
+      -> Switch[1018594248] #KT -> #FB
+      -> Immediate #KT -> #KU
+      <- Switch[1584341484] #KT -> #KT
+      <- Switch[48153603] #B -> #KT
+===#Block KU(size=2, flags=100)===
+   0. lvar170 = {998962781 ^ lvar170};
+   1. goto AC
+      -> UnconditionalJump[GOTO] #KU -> #AC
+      <- Switch[48153602] #KT -> #KU
+      <- Immediate #KT -> #KU
+===#Block AC(size=9, flags=0)===
+   0. // Frame: locals[0] [] stack[0] []
+   1. lvar44 = aethereal.wr$a.aM_;
+   2. lvar45 = lvar44.field_1755;
+   3. lvar167 = lvar45;
+   4. lvar46 = lvar167;
+   5. lvar47 = lvar46 instanceof net.minecraft.class_476;
+   6. if (lvar47 == {948253983 ^ lvar170})
+      goto KM
+   7. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != -1003902727)
+      goto FS
+   8. lvar170 = {235702013 ^ lvar170};
+      -> Immediate #AC -> #AD
+      -> ConditionalJump[IF_ICMPNE] #AC -> #FS
+      -> ConditionalJump[IF_ICMPEQ] #AC -> #KM
+      <- Switch[494399798] #KT -> #AC
+      <- UnconditionalJump[GOTO] #KU -> #AC
+===#Block KM(size=2, flags=10100)===
+   0. lvar170 = aethereal.wr$a.qtabjbpdgqqpfcpu(lvar170, 1943166651);
+   1. goto DQ
+      -> UnconditionalJump[GOTO] #KM -> #DQ
+      <- ConditionalJump[IF_ICMPEQ] #AC -> #KM
+===#Block DQ(size=3, flags=0)===
+   0. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) == 1522228514)
+      goto JT
+   1. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != 1522228514)
+      goto ED
+   2. goto GP
+      -> ConditionalJump[IF_ICMPNE] #DQ -> #ED
+      -> UnconditionalJump[GOTO] #DQ -> #GP
+      -> ConditionalJump[IF_ICMPEQ] #DQ -> #JT
+      <- UnconditionalJump[GOTO] #KM -> #DQ
+===#Block JT(size=2, flags=10100)===
+   0. lvar170 = {1233790213 ^ lvar170};
+   1. goto BD
+      -> UnconditionalJump[GOTO] #JT -> #BD
+      <- ConditionalJump[IF_ICMPEQ] #DQ -> #JT
+===#Block BD(size=8, flags=0)===
+   0. // Frame: locals[0] [] stack[0] []
+   1. lvar93 = lvar0;
+   2. lvar147 = lvar0;
+   3. lvar157 = {48058017 ^ lvar170};
+   4. lvar147.f = lvar157;
+   5. lvar93.e = lvar157;
+   6. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != 384464136)
+      goto DX
+   7. lvar170 = {1335419982 ^ lvar170};
+      -> ConditionalJump[IF_ICMPNE] #BD -> #DX
+      -> Immediate #BD -> #BE
+      <- UnconditionalJump[GOTO] #JT -> #BD
+===#Block BE(size=2, flags=0)===
+   0. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != 1781356410)
+      goto CX
+   1. goto FZ
+      -> UnconditionalJump[GOTO] #BE -> #FZ
+      -> ConditionalJump[IF_ICMPNE] #BE -> #CX
+      <- Immediate #BD -> #BE
+===#Block FZ(size=2, flags=10100)===
+   0. lvar170 = aethereal.wr$a.qtabjbpdgqqpfcpu(lvar170, 2113436395);
+   1. goto BH
+      -> UnconditionalJump[GOTO] #FZ -> #BH
+      <- UnconditionalJump[GOTO] #BE -> #FZ
+===#Block BH(size=3, flags=0)===
+   0. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.difdyswsqepknwvm(lvar170) == 242217914)
+      goto BG
+   1. throw nullconst;
+   2. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != -2047967199)
+      goto ED
+      -> ConditionalJump[IF_ICMPNE] #BH -> #ED
+      -> TryCatch range: [BH...BG] -> KW ([Ljava/lang/RuntimeException;])
+      -> ConditionalJump[IF_ICMPEQ] #BH -> #BG
+      <- UnconditionalJump[GOTO] #FZ -> #BH
+===#Block BG(size=2, flags=0)===
+   0. throw new java/lang/RuntimeException();
+   1. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != -2000105160)
+      goto EY
+      -> ConditionalJump[IF_ICMPNE] #BG -> #EY
+      -> TryCatch range: [BH...BG] -> KW ([Ljava/lang/RuntimeException;])
+      <- ConditionalJump[IF_ICMPEQ] #BH -> #BG
+===#Block KW(size=1, flags=0)===
+   0. switch (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.wrgesxfonvjqqpmi(lvar170)) {
+      case -2047967199:
+      	 goto	#KX
+      case -2000105160:
+      	 goto	#KY
+      default:
+      	 goto	#KZ
+   }
+      -> DefaultSwitch #KW -> #KZ
+      -> Switch[-2000105160] #KW -> #KY
+      -> Switch[-2047967199] #KW -> #KX
+      <- TryCatch range: [BH...BG] -> KW ([Ljava/lang/RuntimeException;])
+      <- TryCatch range: [BH...BG] -> KW ([Ljava/lang/RuntimeException;])
+===#Block KX(size=2, flags=10100)===
+   0. lvar170 = aethereal.wr$a.qtabjbpdgqqpfcpu(lvar170, 1370701753);
+   1. goto BI
+      -> UnconditionalJump[GOTO] #KX -> #BI
+      <- Switch[-2047967199] #KW -> #KX
+===#Block KY(size=2, flags=10100)===
+   0. lvar170 = {1880618394 ^ lvar170};
+   1. goto BI
+      -> UnconditionalJump[GOTO] #KY -> #BI
+      <- Switch[-2000105160] #KW -> #KY
+===#Block BI(size=3, flags=0)===
+   0. _consume(catch());
+   1. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != 142048747)
+      goto EU
+   2. goto HA
+      -> UnconditionalJump[GOTO] #BI -> #HA
+      -> ConditionalJump[IF_ICMPNE] #BI -> #EU
+      <- UnconditionalJump[GOTO] #KX -> #BI
+      <- UnconditionalJump[GOTO] #KY -> #BI
+===#Block HA(size=1, flags=10100)===
+   0. switch (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.difdyswsqepknwvm(lvar170)) {
+      case 202150256:
+      	 goto	#HB
+      case 337576898:
+      	 goto	#EU
+      case 810761625:
+      	 goto	#BF
+      case 1483558488:
+      	 goto	#HA
+      default:
+      	 goto	#EU
+   }
+      -> Switch[337576898] #HA -> #EU
+      -> Switch[810761625] #HA -> #BF
+      -> Immediate #HA -> #HB
+      -> Switch[1483558488] #HA -> #HA
+      -> Switch[202150256] #HA -> #HB
+      -> DefaultSwitch #HA -> #EU
+      <- Switch[1483558488] #HA -> #HA
+      <- UnconditionalJump[GOTO] #BI -> #HA
+===#Block HB(size=2, flags=100)===
+   0. lvar170 = {190382509 ^ lvar170};
+   1. goto BF
+      -> UnconditionalJump[GOTO] #HB -> #BF
+      <- Immediate #HA -> #HB
+      <- Switch[202150256] #HA -> #HB
+===#Block KZ(size=1, flags=0)===
+   0. throw new java/lang/IllegalAccessException("Error in hash");
+      <- DefaultSwitch #KW -> #KZ
+===#Block GP(size=2, flags=10100)===
+   0. lvar170 = {1174422491 ^ lvar170};
+   1. goto CX
+      -> UnconditionalJump[GOTO] #GP -> #CX
+      <- UnconditionalJump[GOTO] #DQ -> #GP
+===#Block FS(size=4, flags=0)===
+   0. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != -1003902727)
+      goto FS
+   1. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != {1408350396 ^ lvar170})
+      goto FS
+   2. _consume({655925154 ^ lvar170});
+   3. throw new java/io/IOException("double");
+      -> ConditionalJump[IF_ICMPNE] #FS -> #FS
+      <- ConditionalJump[IF_ICMPNE] #FS -> #FS
+      <- ConditionalJump[IF_ICMPNE] #AC -> #FS
+===#Block AD(size=5, flags=0)===
+   0. lvar48 = lvar167;
+   1. lvar49 = (net.minecraft.class_476)lvar48;
+   2. lvar6 = lvar49;
+   3. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != -1269981423)
+      goto EE
+   4. lvar170 = {1958771447 ^ lvar170};
+      -> Immediate #AD -> #AE
+      -> ConditionalJump[IF_ICMPNE] #AD -> #EE
+      <- Immediate #AC -> #AD
+===#Block AE(size=2, flags=0)===
+   0. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != 307120298)
+      goto EO
+   1. goto GS
+      -> ConditionalJump[IF_ICMPNE] #AE -> #EO
+      -> UnconditionalJump[GOTO] #AE -> #GS
+      <- Immediate #AD -> #AE
+===#Block GS(size=2, flags=10100)===
+   0. lvar170 = {224089110 ^ lvar170};
+   1. goto BZ
+      -> UnconditionalJump[GOTO] #GS -> #BZ
+      <- UnconditionalJump[GOTO] #AE -> #GS
+===#Block BZ(size=3, flags=0)===
+   0. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.difdyswsqepknwvm(lvar170) == 154427175)
+      goto BY
+   1. throw nullconst;
+   2. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != 2023024666)
+      goto EG
+      -> ConditionalJump[IF_ICMPEQ] #BZ -> #BY
+      -> ConditionalJump[IF_ICMPNE] #BZ -> #EG
+      -> TryCatch range: [BZ...BY] -> LU ([Ljava/io/IOException;])
+      <- UnconditionalJump[GOTO] #GS -> #BZ
+===#Block BY(size=2, flags=0)===
+   0. throw new java/io/IOException();
+   1. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != -877155846)
+      goto FC
+      -> TryCatch range: [BZ...BY] -> LU ([Ljava/io/IOException;])
+      -> ConditionalJump[IF_ICMPNE] #BY -> #FC
+      <- ConditionalJump[IF_ICMPEQ] #BZ -> #BY
+===#Block FC(size=4, flags=0)===
+   0. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != -877155846)
+      goto FC
+   1. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != {685152709 ^ lvar170})
+      goto FC
+   2. _consume({1497288268 ^ lvar170});
+   3. throw new java/io/IOException("double");
+      -> ConditionalJump[IF_ICMPNE] #FC -> #FC
+      <- ConditionalJump[IF_ICMPNE] #FC -> #FC
+      <- ConditionalJump[IF_ICMPNE] #BY -> #FC
+===#Block LU(size=1, flags=0)===
+   0. switch (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.wrgesxfonvjqqpmi(lvar170)) {
+      case -877155846:
+      	 goto	#LW
+      case 2023024666:
+      	 goto	#LV
+      default:
+      	 goto	#LX
+   }
+      -> Switch[-877155846] #LU -> #LW
+      -> DefaultSwitch #LU -> #LX
+      -> Switch[2023024666] #LU -> #LV
+      <- TryCatch range: [BZ...BY] -> LU ([Ljava/io/IOException;])
+      <- TryCatch range: [BZ...BY] -> LU ([Ljava/io/IOException;])
+===#Block LV(size=2, flags=10100)===
+   0. lvar170 = {1376496198 ^ lvar170};
+   1. goto CA
+      -> UnconditionalJump[GOTO] #LV -> #CA
+      <- Switch[2023024666] #LU -> #LV
+===#Block LX(size=1, flags=0)===
+   0. throw new java/lang/IllegalAccessException("Error in hash");
+      <- DefaultSwitch #LU -> #LX
+===#Block LW(size=2, flags=10100)===
+   0. lvar170 = {1148174970 ^ lvar170};
+   1. goto CA
+      -> UnconditionalJump[GOTO] #LW -> #CA
+      <- Switch[-877155846] #LU -> #LW
+===#Block CA(size=3, flags=0)===
+   0. _consume(catch());
+   1. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != -389432792)
+      goto FU
+   2. goto HZ
+      -> ConditionalJump[IF_ICMPNE] #CA -> #FU
+      -> UnconditionalJump[GOTO] #CA -> #HZ
+      <- UnconditionalJump[GOTO] #LW -> #CA
+      <- UnconditionalJump[GOTO] #LV -> #CA
+===#Block HZ(size=2, flags=10100)===
+   0. lvar170 = aethereal.wr$a.qtabjbpdgqqpfcpu(lvar170, 689287512);
+   1. goto AF
+      -> UnconditionalJump[GOTO] #HZ -> #AF
+      <- UnconditionalJump[GOTO] #CA -> #HZ
+===#Block AF(size=9, flags=0)===
+   0. // Frame: locals[2] [0, net/minecraft/class_476] stack[0] []
+   1. lvar50 = lvar0;
+   2. lvar51 = lvar50.b;
+   3. lvar52 = aethereal.tX.a(lvar51, 1786068424);
+   4. lvar118 = lvar0;
+   5. lvar119 = lvar118.c;
+   6. if (lvar52 < lvar119)
+      goto IP
+   7. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != -1604046615)
+      goto DR
+   8. lvar170 = {232670332 ^ lvar170};
+      -> Immediate #AF -> #BA
+      -> ConditionalJump[IF_ICMPNE] #AF -> #DR
+      -> ConditionalJump[IF_ICMPLT] #AF -> #IP
+      <- UnconditionalJump[GOTO] #HZ -> #AF
+===#Block IP(size=2, flags=10100)===
+   0. lvar170 = {290485950 ^ lvar170};
+   1. goto CZ
+      -> UnconditionalJump[GOTO] #IP -> #CZ
+      <- ConditionalJump[IF_ICMPLT] #AF -> #IP
+===#Block CZ(size=3, flags=0)===
+   0. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) == 719815961)
+      goto IL
+   1. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != 719815961)
+      goto DR
+   2. goto GE
+      -> ConditionalJump[IF_ICMPEQ] #CZ -> #IL
+      -> ConditionalJump[IF_ICMPNE] #CZ -> #DR
+      -> UnconditionalJump[GOTO] #CZ -> #GE
+      <- UnconditionalJump[GOTO] #IP -> #CZ
+===#Block GE(size=1, flags=10100)===
+   0. switch (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.difdyswsqepknwvm(lvar170)) {
+      case 140785511:
+      	 goto	#GF
+      case 173525813:
+      	 goto	#ET
+      case 500448324:
+      	 goto	#CX
+      case 1785428651:
+      	 goto	#GE
+      default:
+      	 goto	#ET
+   }
+      -> DefaultSwitch #GE -> #ET
+      -> Switch[140785511] #GE -> #GF
+      -> Switch[1785428651] #GE -> #GE
+      -> Switch[500448324] #GE -> #CX
+      -> Immediate #GE -> #GF
+      -> Switch[173525813] #GE -> #ET
+      <- UnconditionalJump[GOTO] #CZ -> #GE
+      <- Switch[1785428651] #GE -> #GE
+===#Block GF(size=2, flags=100)===
+   0. lvar170 = {671865052 ^ lvar170};
+   1. goto CX
+      -> UnconditionalJump[GOTO] #GF -> #CX
+      <- Switch[140785511] #GE -> #GF
+      <- Immediate #GE -> #GF
+===#Block IL(size=1, flags=10100)===
+   0. switch (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.difdyswsqepknwvm(lvar170)) {
+      case 140785511:
+      	 goto	#IM
+      case 471035047:
+      	 goto	#AG
+      case 934558231:
+      	 goto	#IL
+      case 1937007067:
+      	 goto	#FM
+      default:
+      	 goto	#FM
+   }
+      -> Immediate #IL -> #IM
+      -> Switch[471035047] #IL -> #AG
+      -> Switch[140785511] #IL -> #IM
+      -> Switch[934558231] #IL -> #IL
+      -> DefaultSwitch #IL -> #FM
+      -> Switch[1937007067] #IL -> #FM
+      <- ConditionalJump[IF_ICMPEQ] #CZ -> #IL
+      <- Switch[934558231] #IL -> #IL
+===#Block IM(size=2, flags=100)===
+   0. lvar170 = {1557198775 ^ lvar170};
+   1. goto AG
+      -> UnconditionalJump[GOTO] #IM -> #AG
+      <- Immediate #IL -> #IM
+      <- Switch[140785511] #IL -> #IM
+===#Block AG(size=6, flags=0)===
+   0. // Frame: locals[0] [] stack[0] []
+   1. lvar53 = lvar0;
+   2. lvar120 = {2039219988 ^ lvar170};
+   3. lvar53.f = lvar120;
+   4. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != -866109277)
+      goto DX
+   5. lvar170 = {1656144391 ^ lvar170};
+      -> Immediate #AG -> #AH
+      -> ConditionalJump[IF_ICMPNE] #AG -> #DX
+      <- Switch[471035047] #IL -> #AG
+      <- UnconditionalJump[GOTO] #IM -> #AG
+===#Block AH(size=8, flags=0)===
+   0. lvar54 = aethereal.wr$a.aM_;
+   1. lvar55 = lvar54.field_1724;
+   2. lvar56 = lvar55.field_6012;
+   3. lvar121 = {456836372 ^ lvar170};
+   4. lvar57 = {lvar56 % lvar121};
+   5. if (lvar57 == {456836371 ^ lvar170})
+      goto IU
+   6. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != -640276328)
+      goto EM
+   7. lvar170 = {299558188 ^ lvar170};
+      -> ConditionalJump[IF_ICMPNE] #AH -> #EM
+      -> Immediate #AH -> #AZ
+      -> ConditionalJump[IF_ICMPEQ] #AH -> #IU
+      <- Immediate #AG -> #AH
+===#Block IU(size=2, flags=10100)===
+   0. lvar170 = aethereal.wr$a.qtabjbpdgqqpfcpu(lvar170, 511830138);
+   1. goto DC
+      -> UnconditionalJump[GOTO] #IU -> #DC
+      <- ConditionalJump[IF_ICMPEQ] #AH -> #IU
+===#Block DC(size=3, flags=0)===
+   0. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) == 769223496)
+      goto JS
+   1. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != 769223496)
+      goto EK
+   2. goto GO
+      -> UnconditionalJump[GOTO] #DC -> #GO
+      -> ConditionalJump[IF_ICMPEQ] #DC -> #JS
+      -> ConditionalJump[IF_ICMPNE] #DC -> #EK
+      <- UnconditionalJump[GOTO] #IU -> #DC
+===#Block JS(size=2, flags=10100)===
+   0. lvar170 = aethereal.wr$a.qtabjbpdgqqpfcpu(lvar170, 468754057);
+   1. goto AI
+      -> UnconditionalJump[GOTO] #JS -> #AI
+      <- ConditionalJump[IF_ICMPEQ] #DC -> #JS
+===#Block AI(size=5, flags=0)===
+   0. // Frame: locals[0] [] stack[0] []
+   1. lvar58 = nullconst;
+   2. lvar168 = lvar58;
+   3. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != -228745472)
+      goto FP
+   4. lvar170 = {1754910924 ^ lvar170};
+      -> Immediate #AI -> #AJ
+      -> ConditionalJump[IF_ICMPNE] #AI -> #FP
+      <- UnconditionalJump[GOTO] #JS -> #AI
+===#Block AJ(size=4, flags=0)===
+   0. lvar59 = {1993499436 ^ lvar170};
+   1. lvar8 = lvar59;
+   2. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != -1231873693)
+      goto EQ
+   3. lvar170 = {729505201 ^ lvar170};
+      -> Immediate #AJ -> #AK
+      -> ConditionalJump[IF_ICMPNE] #AJ -> #EQ
+      <- Immediate #AI -> #AJ
+===#Block AK(size=12, flags=0)===
+   0. // Frame: locals[2] [net/minecraft/class_1735, 1] stack[0] []
+   1. lvar60 = lvar8;
+   2. lvar122 = lvar6;
+   3. lvar123 = lvar122.method_17577();
+   4. lvar124 = (net.minecraft.class_1707)lvar123;
+   5. lvar125 = lvar124.field_7761;
+   6. lvar126 = lvar125.size();
+   7. lvar152 = {1571372729 ^ lvar170};
+   8. lvar127 = {lvar126 - lvar152};
+   9. if (lvar60 >= lvar127)
+      goto JV
+   10. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != -313920278)
+      goto EQ
+   11. lvar170 = {1373891685 ^ lvar170};
+      -> ConditionalJump[IF_ICMPGE] #AK -> #JV
+      -> Immediate #AK -> #AL
+      -> ConditionalJump[IF_ICMPNE] #AK -> #EQ
+      <- Immediate #AJ -> #AK
+      <- UnconditionalJump[GOTO] #IJ -> #AK
+===#Block EQ(size=7, flags=0)===
+   0. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != -1231873693)
+      goto EQ
+   1. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != {24279307 ^ lvar170})
+      goto EQ
+   2. _consume({1442804049 ^ lvar170});
+   3. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != -313920278)
+      goto EQ
+   4. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != {1887275742 ^ lvar170})
+      goto EQ
+   5. _consume({636077311 ^ lvar170});
+   6. throw new java/io/IOException("double");
+      -> ConditionalJump[IF_ICMPNE] #EQ -> #EQ
+      <- ConditionalJump[IF_ICMPNE] #AJ -> #EQ
+      <- ConditionalJump[IF_ICMPNE] #AK -> #EQ
+      <- ConditionalJump[IF_ICMPNE] #EQ -> #EQ
+===#Block AL(size=10, flags=0)===
+   0. lvar61 = lvar6;
+   1. lvar62 = lvar61.method_17577();
+   2. lvar63 = (net.minecraft.class_1707)lvar62;
+   3. lvar64 = lvar63.field_7761;
+   4. lvar128 = lvar8;
+   5. lvar65 = lvar64.get(lvar128);
+   6. lvar66 = (net.minecraft.class_1735)lvar65;
+   7. lvar9 = lvar66;
+   8. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != 1649842112)
+      goto DU
+   9. lvar170 = {1169741059 ^ lvar170};
+      -> Immediate #AL -> #AM
+      -> ConditionalJump[IF_ICMPNE] #AL -> #DU
+      <- Immediate #AK -> #AL
+===#Block AM(size=6, flags=0)===
+   0. lvar67 = lvar9;
+   1. lvar68 = lvar67.method_7677();
+   2. lvar69 = lvar68.method_7960();
+   3. if (lvar69 != {1240598523 ^ lvar170})
+      goto KH
+   4. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != 1334853594)
+      goto DU
+   5. lvar170 = {751527297 ^ lvar170};
+      -> Immediate #AM -> #AN
+      -> ConditionalJump[IF_ICMPNE] #AM -> #DU
+      -> ConditionalJump[IF_ICMPNE] #AM -> #KH
+      <- Immediate #AL -> #AM
+===#Block KH(size=1, flags=10100)===
+   0. switch (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.difdyswsqepknwvm(lvar170)) {
+      case 256157316:
+      	 goto	#KI
+      case 1724986836:
+      	 goto	#DO
+      case 1804056732:
+      	 goto	#KH
+      case 1910683860:
+      	 goto	#FP
+      default:
+      	 goto	#FP
+   }
+      -> Immediate #KH -> #KI
+      -> Switch[1804056732] #KH -> #KH
+      -> Switch[1724986836] #KH -> #DO
+      -> Switch[1910683860] #KH -> #FP
+      -> DefaultSwitch #KH -> #FP
+      -> Switch[256157316] #KH -> #KI
+      <- Switch[1804056732] #KH -> #KH
+      <- ConditionalJump[IF_ICMPNE] #AM -> #KH
+===#Block FP(size=4, flags=0)===
+   0. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != -228745472)
+      goto FP
+   1. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != {511875783 ^ lvar170})
+      goto FP
+   2. _consume({1362544380 ^ lvar170});
+   3. throw new java/io/IOException("double");
+      -> ConditionalJump[IF_ICMPNE] #FP -> #FP
+      <- ConditionalJump[IF_ICMPNE] #AI -> #FP
+      <- Switch[1910683860] #KH -> #FP
+      <- ConditionalJump[IF_ICMPNE] #FP -> #FP
+      <- DefaultSwitch #KH -> #FP
+===#Block KI(size=2, flags=100)===
+   0. lvar170 = {66423816 ^ lvar170};
+   1. goto DO
+      -> UnconditionalJump[GOTO] #KI -> #DO
+      <- Immediate #KH -> #KI
+      <- Switch[256157316] #KH -> #KI
+===#Block DO(size=3, flags=0)===
+   0. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) == 1346133914)
+      goto IY
+   1. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != 1346133914)
+      goto EL
+   2. goto HE
+      -> UnconditionalJump[GOTO] #DO -> #HE
+      -> ConditionalJump[IF_ICMPEQ] #DO -> #IY
+      -> ConditionalJump[IF_ICMPNE] #DO -> #EL
+      <- UnconditionalJump[GOTO] #KI -> #DO
+      <- Switch[1724986836] #KH -> #DO
+===#Block IY(size=1, flags=10100)===
+   0. switch (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.difdyswsqepknwvm(lvar170)) {
+      case 258921761:
+      	 goto	#IZ
+      case 1672048785:
+      	 goto	#EE
+      case 2056662674:
+      	 goto	#IY
+      case 2094157077:
+      	 goto	#AT
+      default:
+      	 goto	#EE
+   }
+      -> Switch[1672048785] #IY -> #EE
+      -> DefaultSwitch #IY -> #EE
+      -> Switch[2094157077] #IY -> #AT
+      -> Switch[2056662674] #IY -> #IY
+      -> Immediate #IY -> #IZ
+      -> Switch[258921761] #IY -> #IZ
+      <- Switch[2056662674] #IY -> #IY
+      <- ConditionalJump[IF_ICMPEQ] #DO -> #IY
+===#Block IZ(size=2, flags=100)===
+   0. lvar170 = {1906538769 ^ lvar170};
+   1. goto AT
+      -> UnconditionalJump[GOTO] #IZ -> #AT
+      <- Immediate #IY -> #IZ
+      <- Switch[258921761] #IY -> #IZ
+===#Block HE(size=2, flags=10100)===
+   0. lvar170 = aethereal.wr$a.qtabjbpdgqqpfcpu(lvar170, 1196467084);
+   1. goto CX
+      -> UnconditionalJump[GOTO] #HE -> #CX
+      <- UnconditionalJump[GOTO] #DO -> #HE
+===#Block AN(size=8, flags=0)===
+   0. lvar70 = lvar9;
+   1. lvar71 = lvar70.method_7677();
+   2. lvar72 = lvar71.method_7909();
+   3. lvar129 = lvar0;
+   4. lvar130 = lvar129.b;
+   5. if (lvar72 != lvar130)
+      goto JI
+   6. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != 701174739)
+      goto EN
+   7. lvar170 = {529527499 ^ lvar170};
+      -> ConditionalJump[IF_ICMPNE] #AN -> #EN
+      -> Immediate #AN -> #AO
+      -> ConditionalJump[IF_ACMPNE] #AN -> #JI
+      <- Immediate #AM -> #AN
+===#Block JI(size=1, flags=10100)===
+   0. switch (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.difdyswsqepknwvm(lvar170)) {
+      case 69159925:
+      	 goto	#JJ
+      case 625139550:
+      	 goto	#DP
+      case 760334854:
+      	 goto	#JI
+      case 1384886161:
+      	 goto	#EM
+      default:
+      	 goto	#EM
+   }
+      -> Immediate #JI -> #JJ
+      -> Switch[760334854] #JI -> #JI
+      -> Switch[625139550] #JI -> #DP
+      -> Switch[69159925] #JI -> #JJ
+      -> Switch[1384886161] #JI -> #EM
+      -> DefaultSwitch #JI -> #EM
+      <- Switch[760334854] #JI -> #JI
+      <- ConditionalJump[IF_ACMPNE] #AN -> #JI
+===#Block JJ(size=2, flags=100)===
+   0. lvar170 = {498473618 ^ lvar170};
+   1. goto DP
+      -> UnconditionalJump[GOTO] #JJ -> #DP
+      <- Immediate #JI -> #JJ
+      <- Switch[69159925] #JI -> #JJ
+===#Block DP(size=3, flags=0)===
+   0. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) == -998521021)
+      goto KN
+   1. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != -998521021)
+      goto ER
+   2. goto ID
+      -> UnconditionalJump[GOTO] #DP -> #ID
+      -> ConditionalJump[IF_ICMPNE] #DP -> #ER
+      -> ConditionalJump[IF_ICMPEQ] #DP -> #KN
+      <- Switch[625139550] #JI -> #DP
+      <- UnconditionalJump[GOTO] #JJ -> #DP
+===#Block KN(size=1, flags=10100)===
+   0. switch (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.difdyswsqepknwvm(lvar170)) {
+      case 160793294:
+      	 goto	#KO
+      case 329655958:
+      	 goto	#EG
+      case 1588851310:
+      	 goto	#KN
+      case 2021580091:
+      	 goto	#AT
+      default:
+      	 goto	#EG
+   }
+      -> Switch[329655958] #KN -> #EG
+      -> Immediate #KN -> #KO
+      -> Switch[2021580091] #KN -> #AT
+      -> DefaultSwitch #KN -> #EG
+      -> Switch[1588851310] #KN -> #KN
+      -> Switch[160793294] #KN -> #KO
+      <- Switch[1588851310] #KN -> #KN
+      <- ConditionalJump[IF_ICMPEQ] #DP -> #KN
+===#Block KO(size=2, flags=100)===
+   0. lvar170 = {1126926858 ^ lvar170};
+   1. goto AT
+      -> UnconditionalJump[GOTO] #KO -> #AT
+      <- Immediate #KN -> #KO
+      <- Switch[160793294] #KN -> #KO
+===#Block ID(size=2, flags=10100)===
+   0. lvar170 = {1977110679 ^ lvar170};
+   1. goto CX
+      -> UnconditionalJump[GOTO] #ID -> #CX
+      <- UnconditionalJump[GOTO] #DP -> #ID
+===#Block AO(size=6, flags=0)===
+   0. lvar73 = lvar9;
+   1. lvar74 = lvar73.method_7677();
+   2. lvar75 = aethereal.ub$a.a(lvar74);
+   3. if (lvar75 <= {2058784945 ^ lvar170})
+      goto KG
+   4. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != -709589621)
+      goto FM
+   5. lvar170 = {451818389 ^ lvar170};
+      -> ConditionalJump[IF_ICMPNE] #AO -> #FM
+      -> Immediate #AO -> #AP
+      -> ConditionalJump[IF_ICMPLE] #AO -> #KG
+      <- Immediate #AN -> #AO
+===#Block KG(size=2, flags=10100)===
+   0. lvar170 = {1539002292 ^ lvar170};
+   1. goto DN
+      -> UnconditionalJump[GOTO] #KG -> #DN
+      <- ConditionalJump[IF_ICMPLE] #AO -> #KG
+===#Block DN(size=3, flags=0)===
+   0. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) == 141490217)
+      goto IR
+   1. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != 141490217)
+      goto EA
+   2. goto GM
+      -> ConditionalJump[IF_ICMPEQ] #DN -> #IR
+      -> UnconditionalJump[GOTO] #DN -> #GM
+      -> ConditionalJump[IF_ICMPNE] #DN -> #EA
+      <- UnconditionalJump[GOTO] #KG -> #DN
+===#Block GM(size=2, flags=10100)===
+   0. lvar170 = {744159098 ^ lvar170};
+   1. goto CX
+      -> UnconditionalJump[GOTO] #GM -> #CX
+      <- UnconditionalJump[GOTO] #DN -> #GM
+===#Block IR(size=1, flags=10100)===
+   0. switch (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.difdyswsqepknwvm(lvar170)) {
+      case 704788:
+      	 goto	#IS
+      case 550888121:
+      	 goto	#EX
+      case 1857777933:
+      	 goto	#AT
+      case 2074027395:
+      	 goto	#IR
+      default:
+      	 goto	#EX
+   }
+      -> Switch[550888121] #IR -> #EX
+      -> DefaultSwitch #IR -> #EX
+      -> Switch[1857777933] #IR -> #AT
+      -> Switch[2074027395] #IR -> #IR
+      -> Switch[704788] #IR -> #IS
+      -> Immediate #IR -> #IS
+      <- ConditionalJump[IF_ICMPEQ] #DN -> #IR
+      <- Switch[2074027395] #IR -> #IR
+===#Block IS(size=2, flags=100)===
+   0. lvar170 = {447294951 ^ lvar170};
+   1. goto AT
+      -> UnconditionalJump[GOTO] #IS -> #AT
+      <- Switch[704788] #IR -> #IS
+      <- Immediate #IR -> #IS
+===#Block AP(size=8, flags=0)===
+   0. lvar76 = lvar9;
+   1. lvar77 = lvar76.method_7677();
+   2. lvar78 = aethereal.ub$a.a(lvar77);
+   3. lvar131 = lvar0;
+   4. lvar132 = lvar131.d;
+   5. if (lvar78 > lvar132)
+      goto KF
+   6. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != 46471459)
+      goto DT
+   7. lvar170 = {562136060 ^ lvar170};
+      -> Immediate #AP -> #AQ
+      -> ConditionalJump[IF_ICMPGT] #AP -> #KF
+      -> ConditionalJump[IF_ICMPNE] #AP -> #DT
+      <- Immediate #AO -> #AP
+===#Block KF(size=2, flags=10100)===
+   0. lvar170 = aethereal.wr$a.qtabjbpdgqqpfcpu(lvar170, 110266922);
+   1. goto DL
+      -> UnconditionalJump[GOTO] #KF -> #DL
+      <- ConditionalJump[IF_ICMPGT] #AP -> #KF
+===#Block DL(size=3, flags=0)===
+   0. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) == 911296627)
+      goto IT
+   1. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != 911296627)
+      goto EL
+   2. goto GQ
+      -> ConditionalJump[IF_ICMPNE] #DL -> #EL
+      -> ConditionalJump[IF_ICMPEQ] #DL -> #IT
+      -> UnconditionalJump[GOTO] #DL -> #GQ
+      <- UnconditionalJump[GOTO] #KF -> #DL
+===#Block GQ(size=2, flags=10100)===
+   0. lvar170 = aethereal.wr$a.qtabjbpdgqqpfcpu(lvar170, 1805451633);
+   1. goto CX
+      -> UnconditionalJump[GOTO] #GQ -> #CX
+      <- UnconditionalJump[GOTO] #DL -> #GQ
+===#Block IT(size=2, flags=10100)===
+   0. lvar170 = {1567546348 ^ lvar170};
+   1. goto AT
+      -> UnconditionalJump[GOTO] #IT -> #AT
+      <- ConditionalJump[IF_ICMPEQ] #DL -> #IT
+===#Block AQ(size=4, flags=0)===
+   0. lvar79 = lvar168;
+   1. if (lvar79 == nullconst)
+      goto JX
+   2. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != 248055490)
+      goto DV
+   3. lvar170 = {4591652 ^ lvar170};
+      -> Immediate #AQ -> #AR
+      -> ConditionalJump[IF_ICMPNE] #AQ -> #DV
+      -> ConditionalJump[IFNULL] #AQ -> #JX
+      <- Immediate #AP -> #AQ
+===#Block JX(size=1, flags=10100)===
+   0. switch (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.difdyswsqepknwvm(lvar170)) {
+      case 261418619:
+      	 goto	#JY
+      case 412721133:
+      	 goto	#DE
+      case 1423832944:
+      	 goto	#FA
+      case 1891872875:
+      	 goto	#JX
+      default:
+      	 goto	#FA
+   }
+      -> Switch[261418619] #JX -> #JY
+      -> Switch[1891872875] #JX -> #JX
+      -> DefaultSwitch #JX -> #FA
+      -> Switch[412721133] #JX -> #DE
+      -> Switch[1423832944] #JX -> #FA
+      -> Immediate #JX -> #JY
+      <- Switch[1891872875] #JX -> #JX
+      <- ConditionalJump[IFNULL] #AQ -> #JX
+===#Block JY(size=2, flags=100)===
+   0. lvar170 = {1110046739 ^ lvar170};
+   1. goto DE
+      -> UnconditionalJump[GOTO] #JY -> #DE
+      <- Switch[261418619] #JX -> #JY
+      <- Immediate #JX -> #JY
+===#Block DE(size=3, flags=0)===
+   0. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) == 528926296)
+      goto JU
+   1. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != 528926296)
+      goto EN
+   2. goto GR
+      -> UnconditionalJump[GOTO] #DE -> #GR
+      -> ConditionalJump[IF_ICMPNE] #DE -> #EN
+      -> ConditionalJump[IF_ICMPEQ] #DE -> #JU
+      <- UnconditionalJump[GOTO] #JY -> #DE
+      <- Switch[412721133] #JX -> #DE
+===#Block JU(size=2, flags=10100)===
+   0. lvar170 = {1981223018 ^ lvar170};
+   1. goto AS
+      -> UnconditionalJump[GOTO] #JU -> #AS
+      <- ConditionalJump[IF_ICMPEQ] #DE -> #JU
+===#Block GR(size=2, flags=10100)===
+   0. lvar170 = aethereal.wr$a.qtabjbpdgqqpfcpu(lvar170, 245887156);
+   1. goto CX
+      -> UnconditionalJump[GOTO] #GR -> #CX
+      <- UnconditionalJump[GOTO] #DE -> #GR
+===#Block AR(size=9, flags=0)===
+   0. lvar80 = lvar9;
+   1. lvar81 = lvar80.method_7677();
+   2. lvar82 = aethereal.ub$a.a(lvar81);
+   3. lvar133 = lvar168;
+   4. lvar134 = lvar133.method_7677();
+   5. lvar135 = aethereal.ub$a.a(lvar134);
+   6. if (lvar82 >= lvar135)
+      goto JO
+   7. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != 217679842)
+      goto CX
+   8. lvar170 = {880343133 ^ lvar170};
+      -> ConditionalJump[IF_ICMPGE] #AR -> #JO
+      -> Immediate #AR -> #AS
+      -> ConditionalJump[IF_ICMPNE] #AR -> #CX
+      <- Immediate #AQ -> #AR
+===#Block AS(size=5, flags=0)===
+   0. // Frame: locals[6] [aethereal/wr$a, 0, net/minecraft/class_476, 0, 1, net/minecraft/class_1735] stack[0] []
+   1. lvar83 = lvar9;
+   2. lvar168 = lvar83;
+   3. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != -1354873589)
+      goto FF
+   4. lvar170 = {1313028675 ^ lvar170};
+      -> Immediate #AS -> #AT
+      -> ConditionalJump[IF_ICMPNE] #AS -> #FF
+      <- UnconditionalJump[GOTO] #JU -> #AS
+      <- Immediate #AR -> #AS
+===#Block JO(size=2, flags=10100)===
+   0. lvar170 = {1859968004 ^ lvar170};
+   1. goto CW
+      -> UnconditionalJump[GOTO] #JO -> #CW
+      <- ConditionalJump[IF_ICMPGE] #AR -> #JO
+===#Block CW(size=3, flags=0)===
+   0. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) == 2048878529)
+      goto JA
+   1. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != 2048878529)
+      goto FD
+   2. goto HG
+      -> UnconditionalJump[GOTO] #CW -> #HG
+      -> ConditionalJump[IF_ICMPNE] #CW -> #FD
+      -> ConditionalJump[IF_ICMPEQ] #CW -> #JA
+      <- UnconditionalJump[GOTO] #JO -> #CW
+===#Block JA(size=2, flags=10100)===
+   0. lvar170 = {350690842 ^ lvar170};
+   1. goto AT
+      -> UnconditionalJump[GOTO] #JA -> #AT
+      <- ConditionalJump[IF_ICMPEQ] #CW -> #JA
+===#Block AT(size=4, flags=0)===
+   0. // Frame: locals[5] [aethereal/wr$a, 0, net/minecraft/class_476, net/minecraft/class_1735, 1] stack[0] []
+   1. lvar8 = {lvar8 + ({1000665827 ^ lvar170})};
+   2. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != -584607983)
+      goto FA
+   3. goto HS
+      -> UnconditionalJump[GOTO] #AT -> #HS
+      -> ConditionalJump[IF_ICMPNE] #AT -> #FA
+      <- UnconditionalJump[GOTO] #JA -> #AT
+      <- UnconditionalJump[GOTO] #KO -> #AT
+      <- Switch[1857777933] #IR -> #AT
+      <- Switch[2021580091] #KN -> #AT
+      <- Switch[2094157077] #IY -> #AT
+      <- Immediate #AS -> #AT
+      <- UnconditionalJump[GOTO] #IZ -> #AT
+      <- UnconditionalJump[GOTO] #IT -> #AT
+      <- UnconditionalJump[GOTO] #IS -> #AT
+===#Block HS(size=2, flags=10100)===
+   0. lvar170 = aethereal.wr$a.qtabjbpdgqqpfcpu(lvar170, 64250584);
+   1. goto CI
+      -> UnconditionalJump[GOTO] #HS -> #CI
+      <- UnconditionalJump[GOTO] #AT -> #HS
+===#Block CI(size=3, flags=0)===
+   0. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.difdyswsqepknwvm(lvar170) == 224014080)
+      goto CH
+   1. throw nullconst;
+   2. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != -1014726191)
+      goto FE
+      -> ConditionalJump[IF_ICMPEQ] #CI -> #CH
+      -> TryCatch range: [CI...CH] -> MG ([Ljava/io/IOException;])
+      -> ConditionalJump[IF_ICMPNE] #CI -> #FE
+      <- UnconditionalJump[GOTO] #HS -> #CI
+===#Block CH(size=2, flags=0)===
+   0. throw new java/io/IOException();
+   1. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != 1965535928)
+      goto DY
+      -> ConditionalJump[IF_ICMPNE] #CH -> #DY
+      -> TryCatch range: [CI...CH] -> MG ([Ljava/io/IOException;])
+      <- ConditionalJump[IF_ICMPEQ] #CI -> #CH
+===#Block MG(size=1, flags=0)===
+   0. switch (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.wrgesxfonvjqqpmi(lvar170)) {
+      case -1014726191:
+      	 goto	#MH
+      case 1965535928:
+      	 goto	#MI
+      default:
+      	 goto	#MJ
+   }
+      -> Switch[1965535928] #MG -> #MI
+      -> DefaultSwitch #MG -> #MJ
+      -> Switch[-1014726191] #MG -> #MH
+      <- TryCatch range: [CI...CH] -> MG ([Ljava/io/IOException;])
+      <- TryCatch range: [CI...CH] -> MG ([Ljava/io/IOException;])
+===#Block MH(size=2, flags=10100)===
+   0. lvar170 = {1639642736 ^ lvar170};
+   1. goto CJ
+      -> UnconditionalJump[GOTO] #MH -> #CJ
+      <- Switch[-1014726191] #MG -> #MH
+===#Block MJ(size=1, flags=0)===
+   0. throw new java/lang/IllegalAccessException("Error in hash");
+      <- DefaultSwitch #MG -> #MJ
+===#Block MI(size=2, flags=10100)===
+   0. lvar170 = {1466863645 ^ lvar170};
+   1. goto CJ
+      -> UnconditionalJump[GOTO] #MI -> #CJ
+      <- Switch[1965535928] #MG -> #MI
+===#Block CJ(size=3, flags=0)===
+   0. _consume(catch());
+   1. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != -833408430)
+      goto DT
+   2. goto IJ
+      -> ConditionalJump[IF_ICMPNE] #CJ -> #DT
+      -> UnconditionalJump[GOTO] #CJ -> #IJ
+      <- UnconditionalJump[GOTO] #MI -> #CJ
+      <- UnconditionalJump[GOTO] #MH -> #CJ
+===#Block IJ(size=2, flags=10100)===
+   0. lvar170 = {73619671 ^ lvar170};
+   1. goto AK
+      -> UnconditionalJump[GOTO] #IJ -> #AK
+      <- UnconditionalJump[GOTO] #CJ -> #IJ
+===#Block FD(size=4, flags=0)===
+   0. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != 2048878529)
+      goto FD
+   1. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != {996034062 ^ lvar170})
+      goto FD
+   2. _consume({1748794274 ^ lvar170});
+   3. throw new java/lang/IllegalAccessException("double");
+      -> ConditionalJump[IF_ICMPNE] #FD -> #FD
+      <- ConditionalJump[IF_ICMPNE] #FD -> #FD
+      <- ConditionalJump[IF_ICMPNE] #CW -> #FD
+===#Block HG(size=1, flags=10100)===
+   0. switch (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.difdyswsqepknwvm(lvar170)) {
+      case 148839602:
+      	 goto	#HG
+      case 194229347:
+      	 goto	#HH
+      case 842251298:
+      	 goto	#DW
+      case 1139597478:
+      	 goto	#CX
+      default:
+      	 goto	#DW
+   }
+      -> Immediate #HG -> #HH
+      -> Switch[148839602] #HG -> #HG
+      -> Switch[194229347] #HG -> #HH
+      -> DefaultSwitch #HG -> #DW
+      -> Switch[1139597478] #HG -> #CX
+      -> Switch[842251298] #HG -> #DW
+      <- UnconditionalJump[GOTO] #CW -> #HG
+      <- Switch[148839602] #HG -> #HG
+===#Block HH(size=2, flags=100)===
+   0. lvar170 = {571786375 ^ lvar170};
+   1. goto CX
+      -> UnconditionalJump[GOTO] #HH -> #CX
+      <- Immediate #HG -> #HH
+      <- Switch[194229347] #HG -> #HH
+===#Block FM(size=4, flags=0)===
+   0. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != -709589621)
+      goto FM
+   1. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != {2081013687 ^ lvar170})
+      goto FM
+   2. _consume({923147713 ^ lvar170});
+   3. throw new java/lang/RuntimeException("double");
+      -> ConditionalJump[IF_ICMPNE] #FM -> #FM
+      <- DefaultSwitch #IL -> #FM
+      <- Switch[1937007067] #IL -> #FM
+      <- ConditionalJump[IF_ICMPNE] #AO -> #FM
+      <- ConditionalJump[IF_ICMPNE] #FM -> #FM
+===#Block JV(size=1, flags=10100)===
+   0. switch (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.difdyswsqepknwvm(lvar170)) {
+      case 91731193:
+      	 goto	#JW
+      case 887863087:
+      	 goto	#EN
+      case 1485443657:
+      	 goto	#DD
+      case 1658706218:
+      	 goto	#JV
+      default:
+      	 goto	#EN
+   }
+      -> Immediate #JV -> #JW
+      -> Switch[887863087] #JV -> #EN
+      -> DefaultSwitch #JV -> #EN
+      -> Switch[1485443657] #JV -> #DD
+      -> Switch[91731193] #JV -> #JW
+      -> Switch[1658706218] #JV -> #JV
+      <- ConditionalJump[IF_ICMPGE] #AK -> #JV
+      <- Switch[1658706218] #JV -> #JV
+===#Block EN(size=7, flags=0)===
+   0. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != 701174739)
+      goto EN
+   1. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != {1566777287 ^ lvar170})
+      goto EN
+   2. _consume({249128064 ^ lvar170});
+   3. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != 528926296)
+      goto EN
+   4. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != {221716940 ^ lvar170})
+      goto EN
+   5. _consume({88494625 ^ lvar170});
+   6. throw new java/io/IOException("double");
+      -> ConditionalJump[IF_ICMPNE] #EN -> #EN
+      <- Switch[887863087] #JV -> #EN
+      <- DefaultSwitch #JV -> #EN
+      <- ConditionalJump[IF_ICMPNE] #AN -> #EN
+      <- ConditionalJump[IF_ICMPNE] #EN -> #EN
+      <- ConditionalJump[IF_ICMPNE] #DE -> #EN
+===#Block JW(size=2, flags=100)===
+   0. lvar170 = {695267737 ^ lvar170};
+   1. goto DD
+      -> UnconditionalJump[GOTO] #JW -> #DD
+      <- Immediate #JV -> #JW
+      <- Switch[91731193] #JV -> #JW
+===#Block DD(size=3, flags=0)===
+   0. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) == -1496418269)
+      goto JP
+   1. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != -1496418269)
+      goto CX
+   2. goto GA
+      -> UnconditionalJump[GOTO] #DD -> #GA
+      -> ConditionalJump[IF_ICMPNE] #DD -> #CX
+      -> ConditionalJump[IF_ICMPEQ] #DD -> #JP
+      <- UnconditionalJump[GOTO] #JW -> #DD
+      <- Switch[1485443657] #JV -> #DD
+===#Block JP(size=1, flags=10100)===
+   0. switch (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.difdyswsqepknwvm(lvar170)) {
+      case 40269262:
+      	 goto	#JQ
+      case 965369358:
+      	 goto	#AU
+      case 966214130:
+      	 goto	#FO
+      case 1701880991:
+      	 goto	#JP
+      default:
+      	 goto	#FO
+   }
+      -> Switch[40269262] #JP -> #JQ
+      -> Switch[1701880991] #JP -> #JP
+      -> Switch[965369358] #JP -> #AU
+      -> DefaultSwitch #JP -> #FO
+      -> Switch[966214130] #JP -> #FO
+      -> Immediate #JP -> #JQ
+      <- Switch[1701880991] #JP -> #JP
+      <- ConditionalJump[IF_ICMPEQ] #DD -> #JP
+===#Block JQ(size=2, flags=100)===
+   0. lvar170 = {1882544209 ^ lvar170};
+   1. goto AU
+      -> UnconditionalJump[GOTO] #JQ -> #AU
+      <- Switch[40269262] #JP -> #JQ
+      <- Immediate #JP -> #JQ
+===#Block AU(size=5, flags=0)===
+   0. // Frame: locals[4] [0, 0, net/minecraft/class_476, net/minecraft/class_1735] stack[0] []
+   1. lvar84 = lvar168;
+   2. if (lvar84 != nullconst)
+      goto KE
+   3. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != 660912808)
+      goto EO
+   4. lvar170 = {1966021770 ^ lvar170};
+      -> Immediate #AU -> #AV
+      -> ConditionalJump[IFNONNULL] #AU -> #KE
+      -> ConditionalJump[IF_ICMPNE] #AU -> #EO
+      <- Switch[965369358] #JP -> #AU
+      <- UnconditionalJump[GOTO] #JQ -> #AU
+===#Block KE(size=2, flags=10100)===
+   0. lvar170 = aethereal.wr$a.qtabjbpdgqqpfcpu(lvar170, 1581079730);
+   1. goto DJ
+      -> UnconditionalJump[GOTO] #KE -> #DJ
+      <- ConditionalJump[IFNONNULL] #AU -> #KE
+===#Block DJ(size=3, flags=0)===
+   0. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) == -695312582)
+      goto JB
+   1. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != -695312582)
+      goto DV
+   2. goto HI
+      -> ConditionalJump[IF_ICMPEQ] #DJ -> #JB
+      -> ConditionalJump[IF_ICMPNE] #DJ -> #DV
+      -> UnconditionalJump[GOTO] #DJ -> #HI
+      <- UnconditionalJump[GOTO] #KE -> #DJ
+===#Block HI(size=2, flags=10100)===
+   0. lvar170 = {1468457880 ^ lvar170};
+   1. goto CX
+      -> UnconditionalJump[GOTO] #HI -> #CX
+      <- UnconditionalJump[GOTO] #DJ -> #HI
+===#Block JB(size=2, flags=10100)===
+   0. lvar170 = aethereal.wr$a.qtabjbpdgqqpfcpu(lvar170, 1496983209);
+   1. goto AX
+      -> UnconditionalJump[GOTO] #JB -> #AX
+      <- ConditionalJump[IF_ICMPEQ] #DJ -> #JB
+===#Block AX(size=16, flags=0)===
+   0. // Frame: locals[0] [] stack[0] []
+   1. lvar87 = aethereal.wr$a.aM_;
+   2. lvar88 = lvar87.field_1761;
+   3. lvar140 = lvar6;
+   4. lvar141 = lvar140.method_17577();
+   5. lvar142 = (net.minecraft.class_1707)lvar141;
+   6. lvar143 = lvar142.field_7763;
+   7. lvar154 = lvar168;
+   8. lvar155 = lvar154.field_7874;
+   9. lvar161 = {65793358 ^ lvar170};
+   10. lvar163 = net.minecraft.class_1713.field_7794;
+   11. lvar165 = aethereal.wr$a.aM_;
+   12. lvar166 = lvar165.field_1724;
+   13. _consume(lvar88.method_2906(lvar143, lvar155, lvar161, lvar163, lvar166));
+   14. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != 526346864)
+      goto FR
+   15. lvar170 = {1209828511 ^ lvar170};
+      -> ConditionalJump[IF_ICMPNE] #AX -> #FR
+      -> Immediate #AX -> #AY
+      <- UnconditionalJump[GOTO] #JB -> #AX
+===#Block AY(size=2, flags=0)===
+   0. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != 1606110858)
+      goto ES
+   1. goto GW
+      -> ConditionalJump[IF_ICMPNE] #AY -> #ES
+      -> UnconditionalJump[GOTO] #AY -> #GW
+      <- Immediate #AX -> #AY
+===#Block GW(size=2, flags=10100)===
+   0. lvar170 = {1103874328 ^ lvar170};
+   1. goto CL
+      -> UnconditionalJump[GOTO] #GW -> #CL
+      <- UnconditionalJump[GOTO] #AY -> #GW
+===#Block CL(size=3, flags=0)===
+   0. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.difdyswsqepknwvm(lvar170) == 64323001)
+      goto CK
+   1. throw nullconst;
+   2. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != 1373963848)
+      goto EV
+      -> TryCatch range: [CL...CK] -> MK ([Ljava/lang/RuntimeException;])
+      -> ConditionalJump[IF_ICMPEQ] #CL -> #CK
+      -> ConditionalJump[IF_ICMPNE] #CL -> #EV
+      <- UnconditionalJump[GOTO] #GW -> #CL
+===#Block CK(size=2, flags=0)===
+   0. throw new java/lang/RuntimeException();
+   1. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != -2087514270)
+      goto DW
+      -> TryCatch range: [CL...CK] -> MK ([Ljava/lang/RuntimeException;])
+      -> ConditionalJump[IF_ICMPNE] #CK -> #DW
+      <- ConditionalJump[IF_ICMPEQ] #CL -> #CK
+===#Block MK(size=1, flags=0)===
+   0. switch (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.wrgesxfonvjqqpmi(lvar170)) {
+      case -2087514270:
+      	 goto	#MM
+      case 1373963848:
+      	 goto	#ML
+      default:
+      	 goto	#MN
+   }
+      -> Switch[1373963848] #MK -> #ML
+      -> Switch[-2087514270] #MK -> #MM
+      -> DefaultSwitch #MK -> #MN
+      <- TryCatch range: [CL...CK] -> MK ([Ljava/lang/RuntimeException;])
+      <- TryCatch range: [CL...CK] -> MK ([Ljava/lang/RuntimeException;])
+===#Block MN(size=1, flags=0)===
+   0. throw new java/lang/IllegalAccessException("Error in hash");
+      <- DefaultSwitch #MK -> #MN
+===#Block MM(size=2, flags=10100)===
+   0. lvar170 = {2009217349 ^ lvar170};
+   1. goto CM
+      -> UnconditionalJump[GOTO] #MM -> #CM
+      <- Switch[-2087514270] #MK -> #MM
+===#Block ML(size=2, flags=10100)===
+   0. lvar170 = {764213344 ^ lvar170};
+   1. goto CM
+      -> UnconditionalJump[GOTO] #ML -> #CM
+      <- Switch[1373963848] #MK -> #ML
+===#Block CM(size=3, flags=0)===
+   0. _consume(catch());
+   1. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != 1031980361)
+      goto ET
+   2. goto GY
+      -> ConditionalJump[IF_ICMPNE] #CM -> #ET
+      -> UnconditionalJump[GOTO] #CM -> #GY
+      <- UnconditionalJump[GOTO] #ML -> #CM
+      <- UnconditionalJump[GOTO] #MM -> #CM
+===#Block GY(size=1, flags=10100)===
+   0. switch (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.difdyswsqepknwvm(lvar170)) {
+      case 113904769:
+      	 goto	#GY
+      case 216370295:
+      	 goto	#GZ
+      case 352196823:
+      	 goto	#BF
+      case 1826702453:
+      	 goto	#FJ
+      default:
+      	 goto	#FJ
+   }
+      -> Immediate #GY -> #GZ
+      -> DefaultSwitch #GY -> #FJ
+      -> Switch[113904769] #GY -> #GY
+      -> Switch[1826702453] #GY -> #FJ
+      -> Switch[352196823] #GY -> #BF
+      -> Switch[216370295] #GY -> #GZ
+      <- UnconditionalJump[GOTO] #CM -> #GY
+      <- Switch[113904769] #GY -> #GY
+===#Block GZ(size=2, flags=100)===
+   0. lvar170 = {1307031225 ^ lvar170};
+   1. goto BF
+      -> UnconditionalJump[GOTO] #GZ -> #BF
+      <- Immediate #GY -> #GZ
+      <- Switch[216370295] #GY -> #GZ
+===#Block ET(size=4, flags=0)===
+   0. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != 1031980361)
+      goto ET
+   1. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != {940379380 ^ lvar170})
+      goto ET
+   2. _consume({1617546278 ^ lvar170});
+   3. throw new java/lang/RuntimeException("double");
+      -> ConditionalJump[IF_ICMPNE] #ET -> #ET
+      <- DefaultSwitch #GE -> #ET
+      <- ConditionalJump[IF_ICMPNE] #CM -> #ET
+      <- ConditionalJump[IF_ICMPNE] #ET -> #ET
+      <- Switch[173525813] #GE -> #ET
+===#Block FR(size=4, flags=0)===
+   0. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != 526346864)
+      goto FR
+   1. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != {1521630776 ^ lvar170})
+      goto FR
+   2. _consume({896645799 ^ lvar170});
+   3. throw new java/io/IOException("double");
+      -> ConditionalJump[IF_ICMPNE] #FR -> #FR
+      <- ConditionalJump[IF_ICMPNE] #AX -> #FR
+      <- ConditionalJump[IF_ICMPNE] #FR -> #FR
+===#Block AV(size=14, flags=0)===
+   0. lvar85 = aethereal.wr$a.aM_;
+   1. lvar86 = lvar85.field_1761;
+   2. lvar136 = lvar6;
+   3. lvar137 = lvar136.method_17577();
+   4. lvar138 = (net.minecraft.class_1707)lvar137;
+   5. lvar139 = lvar138.field_7763;
+   6. lvar153 = {1908640749 ^ lvar170};
+   7. lvar160 = {1908640735 ^ lvar170};
+   8. lvar162 = net.minecraft.class_1713.field_7794;
+   9. lvar4 = aethereal.wr$a.aM_;
+   10. lvar164 = lvar4.field_1724;
+   11. _consume(lvar86.method_2906(lvar139, lvar153, lvar160, lvar162, lvar164));
+   12. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != -1910743301)
+      goto FW
+   13. lvar170 = {1604550606 ^ lvar170};
+      -> ConditionalJump[IF_ICMPNE] #AV -> #FW
+      -> Immediate #AV -> #AW
+      <- Immediate #AU -> #AV
+===#Block AW(size=2, flags=0)===
+   0. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != 1929879689)
+      goto ED
+   1. goto GK
+      -> UnconditionalJump[GOTO] #AW -> #GK
+      -> ConditionalJump[IF_ICMPNE] #AW -> #ED
+      <- Immediate #AV -> #AW
+===#Block GK(size=1, flags=10100)===
+   0. switch (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.difdyswsqepknwvm(lvar170)) {
+      case 165410432:
+      	 goto	#GL
+      case 1702545110:
+      	 goto	#EJ
+      case 1930724820:
+      	 goto	#BN
+      case 2051802687:
+      	 goto	#GK
+      default:
+      	 goto	#EJ
+   }
+      -> DefaultSwitch #GK -> #EJ
+      -> Switch[1930724820] #GK -> #BN
+      -> Switch[1702545110] #GK -> #EJ
+      -> Switch[2051802687] #GK -> #GK
+      -> Immediate #GK -> #GL
+      -> Switch[165410432] #GK -> #GL
+      <- UnconditionalJump[GOTO] #AW -> #GK
+      <- Switch[2051802687] #GK -> #GK
+===#Block GL(size=2, flags=100)===
+   0. lvar170 = {926914892 ^ lvar170};
+   1. goto BN
+      -> UnconditionalJump[GOTO] #GL -> #BN
+      <- Immediate #GK -> #GL
+      <- Switch[165410432] #GK -> #GL
+===#Block BN(size=3, flags=0)===
+   0. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.difdyswsqepknwvm(lvar170) == 19462843)
+      goto BM
+   1. throw nullconst;
+   2. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != -889492760)
+      goto EX
+      -> ConditionalJump[IF_ICMPEQ] #BN -> #BM
+      -> ConditionalJump[IF_ICMPNE] #BN -> #EX
+      -> TryCatch range: [BN...BM] -> LE ([Ljava/lang/RuntimeException;])
+      <- Switch[1930724820] #GK -> #BN
+      <- UnconditionalJump[GOTO] #GL -> #BN
+===#Block BM(size=2, flags=0)===
+   0. throw new java/lang/RuntimeException();
+   1. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != -269051078)
+      goto EZ
+      -> ConditionalJump[IF_ICMPNE] #BM -> #EZ
+      -> TryCatch range: [BN...BM] -> LE ([Ljava/lang/RuntimeException;])
+      <- ConditionalJump[IF_ICMPEQ] #BN -> #BM
+===#Block LE(size=1, flags=0)===
+   0. switch (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.wrgesxfonvjqqpmi(lvar170)) {
+      case -889492760:
+      	 goto	#LF
+      case -269051078:
+      	 goto	#LG
+      default:
+      	 goto	#LH
+   }
+      -> DefaultSwitch #LE -> #LH
+      -> Switch[-889492760] #LE -> #LF
+      -> Switch[-269051078] #LE -> #LG
+      <- TryCatch range: [BN...BM] -> LE ([Ljava/lang/RuntimeException;])
+      <- TryCatch range: [BN...BM] -> LE ([Ljava/lang/RuntimeException;])
+===#Block LG(size=2, flags=10100)===
+   0. lvar170 = aethereal.wr$a.qtabjbpdgqqpfcpu(lvar170, 1276949684);
+   1. goto BO
+      -> UnconditionalJump[GOTO] #LG -> #BO
+      <- Switch[-269051078] #LE -> #LG
+===#Block LF(size=2, flags=10100)===
+   0. lvar170 = {146606734 ^ lvar170};
+   1. goto BO
+      -> UnconditionalJump[GOTO] #LF -> #BO
+      <- Switch[-889492760] #LE -> #LF
+===#Block BO(size=3, flags=0)===
+   0. _consume(catch());
+   1. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != -1894564200)
+      goto FH
+   2. goto HL
+      -> ConditionalJump[IF_ICMPNE] #BO -> #FH
+      -> UnconditionalJump[GOTO] #BO -> #HL
+      <- UnconditionalJump[GOTO] #LF -> #BO
+      <- UnconditionalJump[GOTO] #LG -> #BO
+===#Block HL(size=1, flags=10100)===
+   0. switch (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.difdyswsqepknwvm(lvar170)) {
+      case 44480714:
+      	 goto	#HM
+      case 507106804:
+      	 goto	#HL
+      case 526699089:
+      	 goto	#BF
+      case 1690792131:
+      	 goto	#FK
+      default:
+      	 goto	#FK
+   }
+      -> Switch[507106804] #HL -> #HL
+      -> Switch[526699089] #HL -> #BF
+      -> Switch[44480714] #HL -> #HM
+      -> Immediate #HL -> #HM
+      -> Switch[1690792131] #HL -> #FK
+      -> DefaultSwitch #HL -> #FK
+      <- Switch[507106804] #HL -> #HL
+      <- UnconditionalJump[GOTO] #BO -> #HL
+===#Block HM(size=2, flags=100)===
+   0. lvar170 = {2075494851 ^ lvar170};
+   1. goto BF
+      -> UnconditionalJump[GOTO] #HM -> #BF
+      <- Switch[44480714] #HL -> #HM
+      <- Immediate #HL -> #HM
+===#Block FH(size=4, flags=0)===
+   0. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != -1894564200)
+      goto FH
+   1. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != {1686983861 ^ lvar170})
+      goto FH
+   2. _consume({1252539514 ^ lvar170});
+   3. throw new java/lang/RuntimeException("double");
+      -> ConditionalJump[IF_ICMPNE] #FH -> #FH
+      <- ConditionalJump[IF_ICMPNE] #BO -> #FH
+      <- DefaultSwitch #GC -> #FH
+      <- ConditionalJump[IF_ICMPNE] #FH -> #FH
+      <- Switch[1689720712] #GC -> #FH
+===#Block LH(size=1, flags=0)===
+   0. throw new java/io/IOException("Error in hash");
+      <- DefaultSwitch #LE -> #LH
+===#Block FW(size=4, flags=0)===
+   0. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != -1910743301)
+      goto FW
+   1. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != {335325095 ^ lvar170})
+      goto FW
+   2. _consume({1979899398 ^ lvar170});
+   3. throw new java/lang/IllegalAccessException("double");
+      -> ConditionalJump[IF_ICMPNE] #FW -> #FW
+      <- ConditionalJump[IF_ICMPNE] #AV -> #FW
+      <- ConditionalJump[IF_ICMPNE] #FW -> #FW
+===#Block GA(size=1, flags=10100)===
+   0. switch (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.difdyswsqepknwvm(lvar170)) {
+      case 40269262:
+      	 goto	#GB
+      case 195020234:
+      	 goto	#GA
+      case 1347106083:
+      	 goto	#CX
+      case 1918558153:
+      	 goto	#EC
+      default:
+      	 goto	#EC
+   }
+      -> Switch[1347106083] #GA -> #CX
+      -> Immediate #GA -> #GB
+      -> Switch[195020234] #GA -> #GA
+      -> Switch[1918558153] #GA -> #EC
+      -> DefaultSwitch #GA -> #EC
+      -> Switch[40269262] #GA -> #GB
+      <- Switch[195020234] #GA -> #GA
+      <- UnconditionalJump[GOTO] #DD -> #GA
+===#Block GB(size=2, flags=100)===
+   0. lvar170 = {2039408507 ^ lvar170};
+   1. goto CX
+      -> UnconditionalJump[GOTO] #GB -> #CX
+      <- Immediate #GA -> #GB
+      <- Switch[40269262] #GA -> #GB
+===#Block GO(size=2, flags=10100)===
+   0. lvar170 = aethereal.wr$a.qtabjbpdgqqpfcpu(lvar170, 149685526);
+   1. goto CX
+      -> UnconditionalJump[GOTO] #GO -> #CX
+      <- UnconditionalJump[GOTO] #DC -> #GO
+===#Block AZ(size=2, flags=0)===
+   0. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != 1459683832)
+      goto DT
+   1. goto GX
+      -> ConditionalJump[IF_ICMPNE] #AZ -> #DT
+      -> UnconditionalJump[GOTO] #AZ -> #GX
+      <- Immediate #AH -> #AZ
+===#Block GX(size=2, flags=10100)===
+   0. lvar170 = {1945743258 ^ lvar170};
+   1. goto CO
+      -> UnconditionalJump[GOTO] #GX -> #CO
+      <- UnconditionalJump[GOTO] #AZ -> #GX
+===#Block CO(size=3, flags=0)===
+   0. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.difdyswsqepknwvm(lvar170) == 178388822)
+      goto CN
+   1. throw nullconst;
+   2. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != -926122709)
+      goto EE
+      -> ConditionalJump[IF_ICMPEQ] #CO -> #CN
+      -> TryCatch range: [CO...CN] -> MO ([Ljava/lang/IllegalAccessException;])
+      -> ConditionalJump[IF_ICMPNE] #CO -> #EE
+      <- UnconditionalJump[GOTO] #GX -> #CO
+===#Block EE(size=7, flags=0)===
+   0. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != -1269981423)
+      goto EE
+   1. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != {158818464 ^ lvar170})
+      goto EE
+   2. _consume({2084648849 ^ lvar170});
+   3. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != -926122709)
+      goto EE
+   4. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != {1370772887 ^ lvar170})
+      goto EE
+   5. _consume({52784812 ^ lvar170});
+   6. throw new java/lang/RuntimeException("double");
+      -> ConditionalJump[IF_ICMPNE] #EE -> #EE
+      <- Switch[1672048785] #IY -> #EE
+      <- DefaultSwitch #IY -> #EE
+      <- ConditionalJump[IF_ICMPNE] #AD -> #EE
+      <- ConditionalJump[IF_ICMPNE] #CO -> #EE
+      <- ConditionalJump[IF_ICMPNE] #EE -> #EE
+===#Block CN(size=2, flags=0)===
+   0. throw new java/lang/IllegalAccessException();
+   1. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != -1275065758)
+      goto EU
+      -> ConditionalJump[IF_ICMPNE] #CN -> #EU
+      -> TryCatch range: [CO...CN] -> MO ([Ljava/lang/IllegalAccessException;])
+      <- ConditionalJump[IF_ICMPEQ] #CO -> #CN
+===#Block MO(size=1, flags=0)===
+   0. switch (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.wrgesxfonvjqqpmi(lvar170)) {
+      case -1275065758:
+      	 goto	#MQ
+      case -926122709:
+      	 goto	#MP
+      default:
+      	 goto	#MR
+   }
+      -> DefaultSwitch #MO -> #MR
+      -> Switch[-926122709] #MO -> #MP
+      -> Switch[-1275065758] #MO -> #MQ
+      <- TryCatch range: [CO...CN] -> MO ([Ljava/lang/IllegalAccessException;])
+      <- TryCatch range: [CO...CN] -> MO ([Ljava/lang/IllegalAccessException;])
+===#Block MQ(size=2, flags=10100)===
+   0. lvar170 = aethereal.wr$a.qtabjbpdgqqpfcpu(lvar170, 1117057716);
+   1. goto CP
+      -> UnconditionalJump[GOTO] #MQ -> #CP
+      <- Switch[-1275065758] #MO -> #MQ
+===#Block MP(size=2, flags=10100)===
+   0. lvar170 = aethereal.wr$a.qtabjbpdgqqpfcpu(lvar170, 1829600349);
+   1. goto CP
+      -> UnconditionalJump[GOTO] #MP -> #CP
+      <- Switch[-926122709] #MO -> #MP
+===#Block CP(size=3, flags=0)===
+   0. _consume(catch());
+   1. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != -1599627328)
+      goto DY
+   2. goto GH
+      -> ConditionalJump[IF_ICMPNE] #CP -> #DY
+      -> UnconditionalJump[GOTO] #CP -> #GH
+      <- UnconditionalJump[GOTO] #MP -> #CP
+      <- UnconditionalJump[GOTO] #MQ -> #CP
+===#Block GH(size=1, flags=10100)===
+   0. switch (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.difdyswsqepknwvm(lvar170)) {
+      case 115903652:
+      	 goto	#GI
+      case 496493640:
+      	 goto	#BF
+      case 655500775:
+      	 goto	#FI
+      case 1175313013:
+      	 goto	#GH
+      default:
+      	 goto	#FI
+   }
+      -> Switch[115903652] #GH -> #GI
+      -> DefaultSwitch #GH -> #FI
+      -> Immediate #GH -> #GI
+      -> Switch[496493640] #GH -> #BF
+      -> Switch[1175313013] #GH -> #GH
+      -> Switch[655500775] #GH -> #FI
+      <- UnconditionalJump[GOTO] #CP -> #GH
+      <- Switch[1175313013] #GH -> #GH
+===#Block FI(size=4, flags=0)===
+   0. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != 820914723)
+      goto FI
+   1. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != {1706608037 ^ lvar170})
+      goto FI
+   2. _consume({1393423034 ^ lvar170});
+   3. throw new java/io/IOException("double");
+      -> ConditionalJump[IF_ICMPNE] #FI -> #FI
+      <- DefaultSwitch #GH -> #FI
+      <- ConditionalJump[IF_ICMPNE] #FI -> #FI
+      <- Switch[655500775] #GH -> #FI
+      <- ConditionalJump[IF_ICMPNE] #BK -> #FI
+===#Block GI(size=2, flags=100)===
+   0. lvar170 = {2118327784 ^ lvar170};
+   1. goto BF
+      -> UnconditionalJump[GOTO] #GI -> #BF
+      <- Switch[115903652] #GH -> #GI
+      <- Immediate #GH -> #GI
+===#Block MR(size=1, flags=0)===
+   0. throw new java/lang/RuntimeException("Error in hash");
+      <- DefaultSwitch #MO -> #MR
+===#Block EU(size=7, flags=0)===
+   0. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != -1275065758)
+      goto EU
+   1. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != {46761872 ^ lvar170})
+      goto EU
+   2. _consume({1707467696 ^ lvar170});
+   3. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != 142048747)
+      goto EU
+   4. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != {1841673755 ^ lvar170})
+      goto EU
+   5. _consume({1329566568 ^ lvar170});
+   6. throw new java/lang/IllegalAccessException("double");
+      -> ConditionalJump[IF_ICMPNE] #EU -> #EU
+      <- Switch[337576898] #HA -> #EU
+      <- ConditionalJump[IF_ICMPNE] #CN -> #EU
+      <- ConditionalJump[IF_ICMPNE] #BI -> #EU
+      <- ConditionalJump[IF_ICMPNE] #EU -> #EU
+      <- DefaultSwitch #HA -> #EU
+===#Block BA(size=9, flags=0)===
+   0. lvar89 = lvar0;
+   1. lvar144 = lvar89.f;
+   2. lvar156 = {970113632 ^ lvar170};
+   3. lvar145 = {lvar144 + lvar156};
+   4. lvar89.f = lvar145;
+   5. lvar146 = {970113639 ^ lvar170};
+   6. if (lvar145 < lvar146)
+      goto IQ
+   7. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != -829025527)
+      goto EH
+   8. lvar170 = {1947831785 ^ lvar170};
+      -> Immediate #BA -> #BB
+      -> ConditionalJump[IF_ICMPNE] #BA -> #EH
+      -> ConditionalJump[IF_ICMPLT] #BA -> #IQ
+      <- Immediate #AF -> #BA
+===#Block IQ(size=2, flags=10100)===
+   0. lvar170 = aethereal.wr$a.qtabjbpdgqqpfcpu(lvar170, 425864344);
+   1. goto DA
+      -> UnconditionalJump[GOTO] #IQ -> #DA
+      <- ConditionalJump[IF_ICMPLT] #BA -> #IQ
+===#Block DA(size=3, flags=0)===
+   0. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) == 92764105)
+      goto IN
+   1. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != 92764105)
+      goto CX
+   2. goto GG
+      -> ConditionalJump[IF_ICMPEQ] #DA -> #IN
+      -> UnconditionalJump[GOTO] #DA -> #GG
+      -> ConditionalJump[IF_ICMPNE] #DA -> #CX
+      <- UnconditionalJump[GOTO] #IQ -> #DA
+===#Block GG(size=2, flags=10100)===
+   0. lvar170 = aethereal.wr$a.qtabjbpdgqqpfcpu(lvar170, 770164358);
+   1. goto CX
+      -> UnconditionalJump[GOTO] #GG -> #CX
+      <- UnconditionalJump[GOTO] #DA -> #GG
+===#Block IN(size=1, flags=10100)===
+   0. switch (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.difdyswsqepknwvm(lvar170)) {
+      case 257355698:
+      	 goto	#IO
+      case 943053704:
+      	 goto	#BF
+      case 1794559569:
+      	 goto	#DX
+      case 1906499159:
+      	 goto	#IN
+      default:
+      	 goto	#DX
+   }
+      -> DefaultSwitch #IN -> #DX
+      -> Switch[1906499159] #IN -> #IN
+      -> Switch[943053704] #IN -> #BF
+      -> Switch[1794559569] #IN -> #DX
+      -> Immediate #IN -> #IO
+      -> Switch[257355698] #IN -> #IO
+      <- ConditionalJump[IF_ICMPEQ] #DA -> #IN
+      <- Switch[1906499159] #IN -> #IN
+===#Block IO(size=2, flags=100)===
+   0. lvar170 = {1256653033 ^ lvar170};
+   1. goto BF
+      -> UnconditionalJump[GOTO] #IO -> #BF
+      <- Immediate #IN -> #IO
+      <- Switch[257355698] #IN -> #IO
+===#Block DX(size=7, flags=0)===
+   0. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != -866109277)
+      goto DX
+   1. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != {1077436056 ^ lvar170})
+      goto DX
+   2. _consume({1876966428 ^ lvar170});
+   3. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != 384464136)
+      goto DX
+   4. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != {1342040348 ^ lvar170})
+      goto DX
+   5. _consume({1648918899 ^ lvar170});
+   6. throw new java/lang/RuntimeException("double");
+      -> ConditionalJump[IF_ICMPNE] #DX -> #DX
+      <- DefaultSwitch #IN -> #DX
+      <- ConditionalJump[IF_ICMPNE] #BD -> #DX
+      <- Switch[1794559569] #IN -> #DX
+      <- ConditionalJump[IF_ICMPNE] #DX -> #DX
+      <- ConditionalJump[IF_ICMPNE] #AG -> #DX
+===#Block BB(size=5, flags=0)===
+   0. lvar90 = aethereal.wr$a.aM_;
+   1. lvar91 = lvar90.field_1755;
+   2. _consume(lvar91.method_25419());
+   3. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != 1851423810)
+      goto EB
+   4. lvar170 = {1671009766 ^ lvar170};
+      -> ConditionalJump[IF_ICMPNE] #BB -> #EB
+      -> Immediate #BB -> #BC
+      <- Immediate #BA -> #BB
+===#Block BC(size=3, flags=0)===
+   0. lvar92 = {777181807 ^ lvar170};
+   1. return lvar92;
+   2. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != 1922487153)
+      goto FE
+      -> ConditionalJump[IF_ICMPNE] #BC -> #FE
+      <- Immediate #BB -> #BC
+===#Block FE(size=7, flags=0)===
+   0. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != 1922487153)
+      goto FE
+   1. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != {1166241469 ^ lvar170})
+      goto FE
+   2. _consume({1945964889 ^ lvar170});
+   3. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != -1014726191)
+      goto FE
+   4. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != {623044712 ^ lvar170})
+      goto FE
+   5. _consume({91678440 ^ lvar170});
+   6. throw new java/io/IOException("double");
+      -> ConditionalJump[IF_ICMPNE] #FE -> #FE
+      <- ConditionalJump[IF_ICMPNE] #FE -> #FE
+      <- ConditionalJump[IF_ICMPNE] #BC -> #FE
+      <- ConditionalJump[IF_ICMPNE] #CI -> #FE
+===#Block FU(size=4, flags=0)===
+   0. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != -389432792)
+      goto FU
+   1. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != {233469918 ^ lvar170})
+      goto FU
+   2. _consume({734157363 ^ lvar170});
+   3. throw new java/io/IOException("double");
+      -> ConditionalJump[IF_ICMPNE] #FU -> #FU
+      <- ConditionalJump[IF_ICMPNE] #FU -> #FU
+      <- ConditionalJump[IF_ICMPNE] #CA -> #FU
+===#Block KS(size=2, flags=10100)===
+   0. lvar170 = aethereal.wr$a.qtabjbpdgqqpfcpu(lvar170, 1404325772);
+   1. goto H
+      -> UnconditionalJump[GOTO] #KS -> #H
+      <- Switch[48153602] #B -> #KS
+===#Block H(size=6, flags=0)===
+   0. // Frame: locals[0] [] stack[0] []
+   1. lvar15 = aethereal.wr$a.aM_;
+   2. lvar16 = lvar15.field_1755;
+   3. if (lvar16 == nullconst)
+      goto KD
+   4. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != -2049153422)
+      goto EW
+   5. lvar170 = {1625861702 ^ lvar170};
+      -> ConditionalJump[IFNULL] #H -> #KD
+      -> ConditionalJump[IF_ICMPNE] #H -> #EW
+      -> Immediate #H -> #I
+      <- UnconditionalJump[GOTO] #KS -> #H
+===#Block I(size=5, flags=0)===
+   0. lvar17 = aethereal.wr$a.aM_;
+   1. lvar18 = lvar17.field_1755;
+   2. _consume(lvar18.method_25419());
+   3. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != -2103897023)
+      goto FK
+   4. lvar170 = {1779178770 ^ lvar170};
+      -> Immediate #I -> #J
+      -> ConditionalJump[IF_ICMPNE] #I -> #FK
+      <- Immediate #H -> #I
+===#Block FK(size=4, flags=0)===
+   0. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != -2103897023)
+      goto FK
+   1. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != {2133069423 ^ lvar170})
+      goto FK
+   2. _consume({562627240 ^ lvar170});
+   3. throw new java/lang/RuntimeException("double");
+      -> ConditionalJump[IF_ICMPNE] #FK -> #FK
+      <- Switch[1690792131] #HL -> #FK
+      <- DefaultSwitch #HL -> #FK
+      <- ConditionalJump[IF_ICMPNE] #I -> #FK
+      <- ConditionalJump[IF_ICMPNE] #FK -> #FK
+===#Block KD(size=2, flags=10100)===
+   0. lvar170 = aethereal.wr$a.qtabjbpdgqqpfcpu(lvar170, 704584739);
+   1. goto DI
+      -> UnconditionalJump[GOTO] #KD -> #DI
+      <- ConditionalJump[IFNULL] #H -> #KD
+===#Block DI(size=3, flags=0)===
+   0. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) == -903575701)
+      goto JK
+   1. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != -903575701)
+      goto FQ
+   2. goto HV
+      -> ConditionalJump[IF_ICMPEQ] #DI -> #JK
+      -> UnconditionalJump[GOTO] #DI -> #HV
+      -> ConditionalJump[IF_ICMPNE] #DI -> #FQ
+      <- UnconditionalJump[GOTO] #KD -> #DI
+===#Block HV(size=2, flags=10100)===
+   0. lvar170 = {1947449490 ^ lvar170};
+   1. goto CX
+      -> UnconditionalJump[GOTO] #HV -> #CX
+      <- UnconditionalJump[GOTO] #DI -> #HV
+===#Block JK(size=1, flags=10100)===
+   0. switch (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.difdyswsqepknwvm(lvar170)) {
+      case 4160109:
+      	 goto	#J
+      case 183804303:
+      	 goto	#JL
+      case 200265979:
+      	 goto	#DU
+      case 546504486:
+      	 goto	#JK
+      default:
+      	 goto	#DU
+   }
+      -> Immediate #JK -> #JL
+      -> Switch[4160109] #JK -> #J
+      -> DefaultSwitch #JK -> #DU
+      -> Switch[183804303] #JK -> #JL
+      -> Switch[200265979] #JK -> #DU
+      -> Switch[546504486] #JK -> #JK
+      <- ConditionalJump[IF_ICMPEQ] #DI -> #JK
+      <- Switch[546504486] #JK -> #JK
+===#Block DU(size=7, flags=0)===
+   0. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != 1334853594)
+      goto DU
+   1. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != {1509586863 ^ lvar170})
+      goto DU
+   2. _consume({971332840 ^ lvar170});
+   3. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != 1649842112)
+      goto DU
+   4. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != {81139044 ^ lvar170})
+      goto DU
+   5. _consume({1177074935 ^ lvar170});
+   6. throw new java/io/IOException("double");
+      -> ConditionalJump[IF_ICMPNE] #DU -> #DU
+      <- ConditionalJump[IF_ICMPNE] #DU -> #DU
+      <- ConditionalJump[IF_ICMPNE] #AM -> #DU
+      <- DefaultSwitch #JK -> #DU
+      <- Switch[200265979] #JK -> #DU
+      <- ConditionalJump[IF_ICMPNE] #AL -> #DU
+===#Block JL(size=2, flags=100)===
+   0. lvar170 = {589016951 ^ lvar170};
+   1. goto J
+      -> UnconditionalJump[GOTO] #JL -> #J
+      <- Immediate #JK -> #JL
+      <- Switch[183804303] #JK -> #JL
+===#Block J(size=10, flags=0)===
+   0. // Frame: locals[0] [] stack[0] []
+   1. lvar19 = lvar0;
+   2. lvar99 = lvar19.f;
+   3. lvar148 = {1516191643 ^ lvar170};
+   4. lvar100 = {lvar99 + lvar148};
+   5. lvar19.f = lvar100;
+   6. lvar101 = {1516191641 ^ lvar170};
+   7. if (lvar100 >= lvar101)
+      goto JR
+   8. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != -755368750)
+      goto EJ
+   9. lvar170 = {738185206 ^ lvar170};
+      -> ConditionalJump[IF_ICMPGE] #J -> #JR
+      -> ConditionalJump[IF_ICMPNE] #J -> #EJ
+      -> Immediate #J -> #R
+      <- UnconditionalJump[GOTO] #JL -> #J
+      <- Switch[4160109] #JK -> #J
+      <- Immediate #I -> #J
+===#Block R(size=2, flags=0)===
+   0. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != -1928887453)
+      goto DW
+   1. goto HN
+      -> UnconditionalJump[GOTO] #R -> #HN
+      -> ConditionalJump[IF_ICMPNE] #R -> #DW
+      <- Immediate #J -> #R
+===#Block HN(size=2, flags=10100)===
+   0. lvar170 = aethereal.wr$a.qtabjbpdgqqpfcpu(lvar170, 1541569545);
+   1. goto BT
+      -> UnconditionalJump[GOTO] #HN -> #BT
+      <- UnconditionalJump[GOTO] #R -> #HN
+===#Block BT(size=3, flags=0)===
+   0. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.difdyswsqepknwvm(lvar170) == 31513153)
+      goto BS
+   1. throw nullconst;
+   2. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != 1377067817)
+      goto FG
+      -> ConditionalJump[IF_ICMPEQ] #BT -> #BS
+      -> ConditionalJump[IF_ICMPNE] #BT -> #FG
+      -> TryCatch range: [BT...BS] -> LM ([Ljava/io/IOException;])
+      <- UnconditionalJump[GOTO] #HN -> #BT
+===#Block BS(size=2, flags=0)===
+   0. throw new java/io/IOException();
+   1. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != 647238944)
+      goto EI
+      -> ConditionalJump[IF_ICMPNE] #BS -> #EI
+      -> TryCatch range: [BT...BS] -> LM ([Ljava/io/IOException;])
+      <- ConditionalJump[IF_ICMPEQ] #BT -> #BS
+===#Block LM(size=1, flags=0)===
+   0. switch (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.wrgesxfonvjqqpmi(lvar170)) {
+      case 647238944:
+      	 goto	#LO
+      case 1377067817:
+      	 goto	#LN
+      default:
+      	 goto	#LP
+   }
+      -> DefaultSwitch #LM -> #LP
+      -> Switch[1377067817] #LM -> #LN
+      -> Switch[647238944] #LM -> #LO
+      <- TryCatch range: [BT...BS] -> LM ([Ljava/io/IOException;])
+      <- TryCatch range: [BT...BS] -> LM ([Ljava/io/IOException;])
+===#Block LO(size=2, flags=10100)===
+   0. lvar170 = {948761447 ^ lvar170};
+   1. goto BU
+      -> UnconditionalJump[GOTO] #LO -> #BU
+      <- Switch[647238944] #LM -> #LO
+===#Block LN(size=2, flags=10100)===
+   0. lvar170 = aethereal.wr$a.qtabjbpdgqqpfcpu(lvar170, 370998694);
+   1. goto BU
+      -> UnconditionalJump[GOTO] #LN -> #BU
+      <- Switch[1377067817] #LM -> #LN
+===#Block BU(size=3, flags=0)===
+   0. _consume(catch());
+   1. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != -487354855)
+      goto ES
+   2. goto IG
+      -> ConditionalJump[IF_ICMPNE] #BU -> #ES
+      -> UnconditionalJump[GOTO] #BU -> #IG
+      <- UnconditionalJump[GOTO] #LN -> #BU
+      <- UnconditionalJump[GOTO] #LO -> #BU
+===#Block IG(size=2, flags=10100)===
+   0. lvar170 = aethereal.wr$a.qtabjbpdgqqpfcpu(lvar170, 1443471315);
+   1. goto BF
+      -> UnconditionalJump[GOTO] #IG -> #BF
+      <- UnconditionalJump[GOTO] #BU -> #IG
+===#Block ES(size=7, flags=0)===
+   0. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != -487354855)
+      goto ES
+   1. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != {59521816 ^ lvar170})
+      goto ES
+   2. _consume({2055161532 ^ lvar170});
+   3. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != 1606110858)
+      goto ES
+   4. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != {241312515 ^ lvar170})
+      goto ES
+   5. _consume({1100773516 ^ lvar170});
+   6. throw new java/io/IOException("double");
+      -> ConditionalJump[IF_ICMPNE] #ES -> #ES
+      <- ConditionalJump[IF_ICMPNE] #AY -> #ES
+      <- ConditionalJump[IF_ICMPNE] #BU -> #ES
+      <- ConditionalJump[IF_ICMPNE] #ES -> #ES
+===#Block LP(size=1, flags=0)===
+   0. throw new java/io/IOException("Error in hash");
+      <- DefaultSwitch #LM -> #LP
+===#Block EJ(size=4, flags=0)===
+   0. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != -755368750)
+      goto EJ
+   1. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != {2091277352 ^ lvar170})
+      goto EJ
+   2. _consume({608055171 ^ lvar170});
+   3. throw new java/io/IOException("double");
+      -> ConditionalJump[IF_ICMPNE] #EJ -> #EJ
+      <- DefaultSwitch #GK -> #EJ
+      <- Switch[1702545110] #GK -> #EJ
+      <- ConditionalJump[IF_ICMPNE] #J -> #EJ
+      <- ConditionalJump[IF_ICMPNE] #EJ -> #EJ
+===#Block JR(size=2, flags=10100)===
+   0. lvar170 = aethereal.wr$a.qtabjbpdgqqpfcpu(lvar170, 1662409854);
+   1. goto DB
+      -> UnconditionalJump[GOTO] #JR -> #DB
+      <- ConditionalJump[IF_ICMPGE] #J -> #JR
+===#Block DB(size=3, flags=0)===
+   0. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) == -901046495)
+      goto KP
+   1. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != -901046495)
+      goto FF
+   2. goto IH
+      -> ConditionalJump[IF_ICMPNE] #DB -> #FF
+      -> UnconditionalJump[GOTO] #DB -> #IH
+      -> ConditionalJump[IF_ICMPEQ] #DB -> #KP
+      <- UnconditionalJump[GOTO] #JR -> #DB
+===#Block KP(size=1, flags=10100)===
+   0. switch (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.difdyswsqepknwvm(lvar170)) {
+      case 251529408:
+      	 goto	#KQ
+      case 679208562:
+      	 goto	#K
+      case 882538317:
+      	 goto	#KP
+      case 1900307545:
+      	 goto	#FQ
+      default:
+      	 goto	#FQ
+   }
+      -> Immediate #KP -> #KQ
+      -> Switch[882538317] #KP -> #KP
+      -> Switch[679208562] #KP -> #K
+      -> Switch[251529408] #KP -> #KQ
+      -> Switch[1900307545] #KP -> #FQ
+      -> DefaultSwitch #KP -> #FQ
+      <- Switch[882538317] #KP -> #KP
+      <- ConditionalJump[IF_ICMPEQ] #DB -> #KP
+===#Block FQ(size=4, flags=0)===
+   0. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != -903575701)
+      goto FQ
+   1. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != {740412646 ^ lvar170})
+      goto FQ
+   2. _consume({442402349 ^ lvar170});
+   3. throw new java/lang/IllegalAccessException("double");
+      -> ConditionalJump[IF_ICMPNE] #FQ -> #FQ
+      <- ConditionalJump[IF_ICMPNE] #FQ -> #FQ
+      <- ConditionalJump[IF_ICMPNE] #DI -> #FQ
+      <- Switch[1900307545] #KP -> #FQ
+      <- DefaultSwitch #KP -> #FQ
+===#Block KQ(size=2, flags=100)===
+   0. lvar170 = {233940299 ^ lvar170};
+   1. goto K
+      -> UnconditionalJump[GOTO] #KQ -> #K
+      <- Immediate #KP -> #KQ
+      <- Switch[251529408] #KP -> #KQ
+===#Block K(size=10, flags=0)===
+   0. // Frame: locals[0] [] stack[0] []
+   1. lvar20 = aethereal.wr$a.aM_;
+   2. lvar21 = lvar20.field_1724;
+   3. lvar22 = lvar21.field_3944;
+   4. lvar102 = lvar0;
+   5. lvar103 = lvar102.b;
+   6. lvar149 = net.minecraft.class_1802.field_8287;
+   7. if (lvar103 != lvar149)
+      goto KB
+   8. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != -1513736839)
+      goto EI
+   9. lvar170 = {1335202828 ^ lvar170};
+      -> Immediate #K -> #M
+      -> ConditionalJump[IF_ACMPNE] #K -> #KB
+      -> ConditionalJump[IF_ICMPNE] #K -> #EI
+      <- Switch[679208562] #KP -> #K
+      <- UnconditionalJump[GOTO] #KQ -> #K
+===#Block EI(size=10, flags=0)===
+   0. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != 2021032913)
+      goto EI
+   1. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != {1025951661 ^ lvar170})
+      goto EI
+   2. _consume({2124323792 ^ lvar170});
+   3. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != -1513736839)
+      goto EI
+   4. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != {1052820166 ^ lvar170})
+      goto EI
+   5. _consume({1915223859 ^ lvar170});
+   6. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != 647238944)
+      goto EI
+   7. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != {1378345724 ^ lvar170})
+      goto EI
+   8. _consume({326374768 ^ lvar170});
+   9. throw new java/io/IOException("double");
+      -> ConditionalJump[IF_ICMPNE] #EI -> #EI
+      <- ConditionalJump[IF_ICMPNE] #BS -> #EI
+      <- ConditionalJump[IF_ICMPNE] #BJ -> #EI
+      <- ConditionalJump[IF_ICMPNE] #K -> #EI
+      <- ConditionalJump[IF_ICMPNE] #EI -> #EI
+===#Block KB(size=1, flags=10100)===
+   0. switch (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.difdyswsqepknwvm(lvar170)) {
+      case 103167051:
+      	 goto	#KC
+      case 1529590414:
+      	 goto	#DY
+      case 1735465963:
+      	 goto	#KB
+      case 1781375615:
+      	 goto	#DG
+      default:
+      	 goto	#DY
+   }
+      -> Switch[1735465963] #KB -> #KB
+      -> Immediate #KB -> #KC
+      -> Switch[1781375615] #KB -> #DG
+      -> Switch[1529590414] #KB -> #DY
+      -> Switch[103167051] #KB -> #KC
+      -> DefaultSwitch #KB -> #DY
+      <- Switch[1735465963] #KB -> #KB
+      <- ConditionalJump[IF_ACMPNE] #K -> #KB
+===#Block DY(size=7, flags=0)===
+   0. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != 1965535928)
+      goto DY
+   1. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != {655159401 ^ lvar170})
+      goto DY
+   2. _consume({1215719479 ^ lvar170});
+   3. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != -1599627328)
+      goto DY
+   4. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != {1150701387 ^ lvar170})
+      goto DY
+   5. _consume({117928172 ^ lvar170});
+   6. throw new java/io/IOException("double");
+      -> ConditionalJump[IF_ICMPNE] #DY -> #DY
+      <- ConditionalJump[IF_ICMPNE] #CP -> #DY
+      <- ConditionalJump[IF_ICMPNE] #CH -> #DY
+      <- ConditionalJump[IF_ICMPNE] #DY -> #DY
+      <- Switch[1529590414] #KB -> #DY
+      <- DefaultSwitch #KB -> #DY
+===#Block KC(size=2, flags=100)===
+   0. lvar170 = {1132707290 ^ lvar170};
+   1. goto DG
+      -> UnconditionalJump[GOTO] #KC -> #DG
+      <- Immediate #KB -> #KC
+      <- Switch[103167051] #KB -> #KC
+===#Block DG(size=3, flags=0)===
+   0. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) == -1176773717)
+      goto IX
+   1. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != -1176773717)
+      goto EX
+   2. goto HD
+      -> ConditionalJump[IF_ICMPEQ] #DG -> #IX
+      -> ConditionalJump[IF_ICMPNE] #DG -> #EX
+      -> UnconditionalJump[GOTO] #DG -> #HD
+      <- Switch[1781375615] #KB -> #DG
+      <- UnconditionalJump[GOTO] #KC -> #DG
+===#Block HD(size=2, flags=10100)===
+   0. lvar170 = {2053919498 ^ lvar170};
+   1. goto CX
+      -> UnconditionalJump[GOTO] #HD -> #CX
+      <- UnconditionalJump[GOTO] #DG -> #HD
+===#Block EX(size=7, flags=0)===
+   0. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != -889492760)
+      goto EX
+   1. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != {402336226 ^ lvar170})
+      goto EX
+   2. _consume({2015298490 ^ lvar170});
+   3. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != -1176773717)
+      goto EX
+   4. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != {1684862070 ^ lvar170})
+      goto EX
+   5. _consume({20652656 ^ lvar170});
+   6. throw new java/lang/IllegalAccessException("double");
+      -> ConditionalJump[IF_ICMPNE] #EX -> #EX
+      <- Switch[550888121] #IR -> #EX
+      <- ConditionalJump[IF_ICMPNE] #EX -> #EX
+      <- DefaultSwitch #IR -> #EX
+      <- ConditionalJump[IF_ICMPNE] #BN -> #EX
+      <- ConditionalJump[IF_ICMPNE] #DG -> #EX
+===#Block IX(size=2, flags=10100)===
+   0. lvar170 = aethereal.wr$a.qtabjbpdgqqpfcpu(lvar170, 1498335121);
+   1. goto L
+      -> UnconditionalJump[GOTO] #IX -> #L
+      <- ConditionalJump[IF_ICMPEQ] #DG -> #IX
+===#Block L(size=9, flags=0)===
+   0. // Frame: locals[0] [] stack[1] [net/minecraft/class_634]
+   1. lvar104 = new net.minecraft.class_1799;
+   2. lvar158 = lvar0;
+   3. lvar159 = lvar158.b;
+   4. _consume(lvar104.<init>(lvar159));
+   5. lvar105 = lvar104.method_7964();
+   6. lvar106 = lvar105.getString();
+   7. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != 1940776737)
+      goto EM
+   8. lvar170 = {1117441655 ^ lvar170};
+      -> Immediate #L -> #N
+      -> ConditionalJump[IF_ICMPNE] #L -> #EM
+      <- UnconditionalJump[GOTO] #IX -> #L
+===#Block M(size=3, flags=0)===
+   0. lvar106 = aethereal.wr$a.meyhktopyq(aethereal.wr$a.lneyrkksozxweft(), lvar170);
+   1. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != -647326437)
+      goto CX
+   2. goto GN
+      -> UnconditionalJump[GOTO] #M -> #GN
+      -> ConditionalJump[IF_ICMPNE] #M -> #CX
+      <- Immediate #K -> #M
+===#Block GN(size=2, flags=10100)===
+   0. lvar170 = {819659576 ^ lvar170};
+   1. goto BQ
+      -> UnconditionalJump[GOTO] #GN -> #BQ
+      <- UnconditionalJump[GOTO] #M -> #GN
+===#Block BQ(size=3, flags=0)===
+   0. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.difdyswsqepknwvm(lvar170) == 53310954)
+      goto BP
+   1. throw nullconst;
+   2. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != 1605536986)
+      goto EL
+      -> ConditionalJump[IF_ICMPEQ] #BQ -> #BP
+      -> ConditionalJump[IF_ICMPNE] #BQ -> #EL
+      -> TryCatch range: [BQ...BP] -> LI ([Ljava/lang/IllegalAccessException;])
+      <- UnconditionalJump[GOTO] #GN -> #BQ
+===#Block BP(size=2, flags=0)===
+   0. throw new java/lang/IllegalAccessException();
+   1. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != 60289274)
+      goto EC
+      -> TryCatch range: [BQ...BP] -> LI ([Ljava/lang/IllegalAccessException;])
+      -> ConditionalJump[IF_ICMPNE] #BP -> #EC
+      <- ConditionalJump[IF_ICMPEQ] #BQ -> #BP
+===#Block EC(size=4, flags=0)===
+   0. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != 60289274)
+      goto EC
+   1. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != {612435468 ^ lvar170})
+      goto EC
+   2. _consume({21448223 ^ lvar170});
+   3. throw new java/io/IOException("double");
+      -> ConditionalJump[IF_ICMPNE] #EC -> #EC
+      <- Switch[1918558153] #GA -> #EC
+      <- ConditionalJump[IF_ICMPNE] #EC -> #EC
+      <- DefaultSwitch #GA -> #EC
+      <- ConditionalJump[IF_ICMPNE] #BP -> #EC
+===#Block LI(size=1, flags=0)===
+   0. switch (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.wrgesxfonvjqqpmi(lvar170)) {
+      case 60289274:
+      	 goto	#LK
+      case 1605536986:
+      	 goto	#LJ
+      default:
+      	 goto	#LL
+   }
+      -> DefaultSwitch #LI -> #LL
+      -> Switch[60289274] #LI -> #LK
+      -> Switch[1605536986] #LI -> #LJ
+      <- TryCatch range: [BQ...BP] -> LI ([Ljava/lang/IllegalAccessException;])
+      <- TryCatch range: [BQ...BP] -> LI ([Ljava/lang/IllegalAccessException;])
+===#Block LJ(size=2, flags=10100)===
+   0. lvar170 = {1100696924 ^ lvar170};
+   1. goto BR
+      -> UnconditionalJump[GOTO] #LJ -> #BR
+      <- Switch[1605536986] #LI -> #LJ
+===#Block LK(size=2, flags=10100)===
+   0. lvar170 = {1243603672 ^ lvar170};
+   1. goto BR
+      -> UnconditionalJump[GOTO] #LK -> #BR
+      <- Switch[60289274] #LI -> #LK
+===#Block BR(size=3, flags=0)===
+   0. _consume(catch());
+   1. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != 1399383608)
+      goto EA
+   2. goto GJ
+      -> UnconditionalJump[GOTO] #BR -> #GJ
+      -> ConditionalJump[IF_ICMPNE] #BR -> #EA
+      <- UnconditionalJump[GOTO] #LJ -> #BR
+      <- UnconditionalJump[GOTO] #LK -> #BR
+===#Block GJ(size=2, flags=10100)===
+   0. lvar170 = aethereal.wr$a.qtabjbpdgqqpfcpu(lvar170, 1719823956);
+   1. goto N
+      -> UnconditionalJump[GOTO] #GJ -> #N
+      <- UnconditionalJump[GOTO] #BR -> #GJ
+===#Block N(size=5, flags=0)===
+   0. // Frame: locals[1] [aethereal/wr$a] stack[2] [net/minecraft/class_634, java/lang/String]
+   1. lvar107 = dynamic_invoke<java.lang.String>(java.lang.invoke.StringConcatFactory.makeConcatWithConstants("/ah search ", lvar106));
+   2. _consume(lvar22.method_45729(lvar107));
+   3. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != 1736152219)
+      goto EF
+   4. lvar170 = {521570500 ^ lvar170};
+      -> ConditionalJump[IF_ICMPNE] #N -> #EF
+      -> Immediate #N -> #O
+      <- Immediate #L -> #N
+      <- UnconditionalJump[GOTO] #GJ -> #N
+===#Block O(size=5, flags=0)===
+   0. lvar23 = lvar0;
+   1. lvar108 = {1945762390 ^ lvar170};
+   2. lvar23.e = lvar108;
+   3. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != -1613770053)
+      goto EF
+   4. lvar170 = {1002774939 ^ lvar170};
+      -> Immediate #O -> #P
+      -> ConditionalJump[IF_ICMPNE] #O -> #EF
+      <- Immediate #N -> #O
+===#Block P(size=5, flags=0)===
+   0. lvar24 = lvar0;
+   1. lvar109 = {1211947980 ^ lvar170};
+   2. lvar24.f = lvar109;
+   3. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != 1105649250)
+      goto DR
+   4. lvar170 = {342649442 ^ lvar170};
+      -> ConditionalJump[IF_ICMPNE] #P -> #DR
+      -> Immediate #P -> #Q
+      <- Immediate #O -> #P
+===#Block Q(size=2, flags=0)===
+   0. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != -494563982)
+      goto FX
+   1. goto IE
+      -> UnconditionalJump[GOTO] #Q -> #IE
+      -> ConditionalJump[IF_ICMPNE] #Q -> #FX
+      <- Immediate #P -> #Q
+===#Block FX(size=4, flags=0)===
+   0. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != -494563982)
+      goto FX
+   1. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != {1179474301 ^ lvar170})
+      goto FX
+   2. _consume({565885458 ^ lvar170});
+   3. throw new java/io/IOException("double");
+      -> ConditionalJump[IF_ICMPNE] #FX -> #FX
+      <- ConditionalJump[IF_ICMPNE] #FX -> #FX
+      <- ConditionalJump[IF_ICMPNE] #Q -> #FX
+===#Block IE(size=2, flags=10100)===
+   0. lvar170 = {694210232 ^ lvar170};
+   1. goto CU
+      -> UnconditionalJump[GOTO] #IE -> #CU
+      <- UnconditionalJump[GOTO] #Q -> #IE
+===#Block CU(size=3, flags=0)===
+   0. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.difdyswsqepknwvm(lvar170) == 51217162)
+      goto CT
+   1. throw nullconst;
+   2. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != -1450968909)
+      goto DR
+      -> ConditionalJump[IF_ICMPEQ] #CU -> #CT
+      -> TryCatch range: [CU...CT] -> MW ([Ljava/lang/IllegalAccessException;])
+      -> ConditionalJump[IF_ICMPNE] #CU -> #DR
+      <- UnconditionalJump[GOTO] #IE -> #CU
+===#Block CT(size=2, flags=0)===
+   0. throw new java/lang/IllegalAccessException();
+   1. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != -52630557)
+      goto EM
+      -> TryCatch range: [CU...CT] -> MW ([Ljava/lang/IllegalAccessException;])
+      -> ConditionalJump[IF_ICMPNE] #CT -> #EM
+      <- ConditionalJump[IF_ICMPEQ] #CU -> #CT
+===#Block EM(size=10, flags=0)===
+   0. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != -52630557)
+      goto EM
+   1. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != {870456270 ^ lvar170})
+      goto EM
+   2. _consume({499977560 ^ lvar170});
+   3. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != 1940776737)
+      goto EM
+   4. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != {1330834288 ^ lvar170})
+      goto EM
+   5. _consume({431522540 ^ lvar170});
+   6. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != -640276328)
+      goto EM
+   7. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != {26929833 ^ lvar170})
+      goto EM
+   8. _consume({792868695 ^ lvar170});
+   9. throw new java/lang/RuntimeException("double");
+      -> ConditionalJump[IF_ICMPNE] #EM -> #EM
+      <- ConditionalJump[IF_ICMPNE] #AH -> #EM
+      <- ConditionalJump[IF_ICMPNE] #L -> #EM
+      <- ConditionalJump[IF_ICMPNE] #CT -> #EM
+      <- Switch[1384886161] #JI -> #EM
+      <- ConditionalJump[IF_ICMPNE] #EM -> #EM
+      <- DefaultSwitch #JI -> #EM
+===#Block MW(size=1, flags=0)===
+   0. switch (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.wrgesxfonvjqqpmi(lvar170)) {
+      case -1450968909:
+      	 goto	#MX
+      case -52630557:
+      	 goto	#MY
+      default:
+      	 goto	#MZ
+   }
+      -> Switch[-52630557] #MW -> #MY
+      -> DefaultSwitch #MW -> #MZ
+      -> Switch[-1450968909] #MW -> #MX
+      <- TryCatch range: [CU...CT] -> MW ([Ljava/lang/IllegalAccessException;])
+      <- TryCatch range: [CU...CT] -> MW ([Ljava/lang/IllegalAccessException;])
+===#Block MX(size=2, flags=10100)===
+   0. lvar170 = aethereal.wr$a.qtabjbpdgqqpfcpu(lvar170, 1882014722);
+   1. goto CV
+      -> UnconditionalJump[GOTO] #MX -> #CV
+      <- Switch[-1450968909] #MW -> #MX
+===#Block MZ(size=1, flags=0)===
+   0. throw new java/lang/IllegalAccessException("Error in hash");
+      <- DefaultSwitch #MW -> #MZ
+===#Block MY(size=2, flags=10100)===
+   0. lvar170 = {2055644776 ^ lvar170};
+   1. goto CV
+      -> UnconditionalJump[GOTO] #MY -> #CV
+      <- Switch[-52630557] #MW -> #MY
+===#Block CV(size=3, flags=0)===
+   0. _consume(catch());
+   1. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != 686413984)
+      goto FY
+   2. goto IF
+      -> ConditionalJump[IF_ICMPNE] #CV -> #FY
+      -> UnconditionalJump[GOTO] #CV -> #IF
+      <- UnconditionalJump[GOTO] #MY -> #CV
+      <- UnconditionalJump[GOTO] #MX -> #CV
+===#Block IF(size=2, flags=10100)===
+   0. lvar170 = {1867175172 ^ lvar170};
+   1. goto BF
+      -> UnconditionalJump[GOTO] #IF -> #BF
+      <- UnconditionalJump[GOTO] #CV -> #IF
+===#Block FY(size=4, flags=0)===
+   0. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != 686413984)
+      goto FY
+   1. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != {342735846 ^ lvar170})
+      goto FY
+   2. _consume({851461377 ^ lvar170});
+   3. throw new java/lang/IllegalAccessException("double");
+      -> ConditionalJump[IF_ICMPNE] #FY -> #FY
+      <- ConditionalJump[IF_ICMPNE] #FY -> #FY
+      <- ConditionalJump[IF_ICMPNE] #CV -> #FY
+===#Block LL(size=1, flags=0)===
+   0. throw new java/lang/IllegalAccessException("Error in hash");
+      <- DefaultSwitch #LI -> #LL
+===#Block IH(size=1, flags=10100)===
+   0. switch (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.difdyswsqepknwvm(lvar170)) {
+      case 164914524:
+      	 goto	#CX
+      case 251529408:
+      	 goto	#II
+      case 481754726:
+      	 goto	#ED
+      case 2065888585:
+      	 goto	#IH
+      default:
+      	 goto	#ED
+   }
+      -> Switch[251529408] #IH -> #II
+      -> Switch[481754726] #IH -> #ED
+      -> Immediate #IH -> #II
+      -> DefaultSwitch #IH -> #ED
+      -> Switch[164914524] #IH -> #CX
+      -> Switch[2065888585] #IH -> #IH
+      <- UnconditionalJump[GOTO] #DB -> #IH
+      <- Switch[2065888585] #IH -> #IH
+===#Block ED(size=10, flags=0)===
+   0. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != -2047967199)
+      goto ED
+   1. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != {416991360 ^ lvar170})
+      goto ED
+   2. _consume({1567256336 ^ lvar170});
+   3. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != 1522228514)
+      goto ED
+   4. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != {397685729 ^ lvar170})
+      goto ED
+   5. _consume({1335328204 ^ lvar170});
+   6. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != 1929879689)
+      goto ED
+   7. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != {1613914941 ^ lvar170})
+      goto ED
+   8. _consume({1781062063 ^ lvar170});
+   9. throw new java/lang/RuntimeException("double");
+      -> ConditionalJump[IF_ICMPNE] #ED -> #ED
+      <- ConditionalJump[IF_ICMPNE] #BH -> #ED
+      <- ConditionalJump[IF_ICMPNE] #ED -> #ED
+      <- Switch[481754726] #IH -> #ED
+      <- DefaultSwitch #IH -> #ED
+      <- ConditionalJump[IF_ICMPNE] #DQ -> #ED
+      <- ConditionalJump[IF_ICMPNE] #AW -> #ED
+===#Block II(size=2, flags=100)===
+   0. lvar170 = {874400667 ^ lvar170};
+   1. goto CX
+      -> UnconditionalJump[GOTO] #II -> #CX
+      <- Switch[251529408] #IH -> #II
+      <- Immediate #IH -> #II
+===#Block FF(size=7, flags=0)===
+   0. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != -901046495)
+      goto FF
+   1. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != {1724404529 ^ lvar170})
+      goto FF
+   2. _consume({1727668576 ^ lvar170});
+   3. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != -1354873589)
+      goto FF
+   4. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != {2109588138 ^ lvar170})
+      goto FF
+   5. _consume({1090599680 ^ lvar170});
+   6. throw new java/lang/RuntimeException("double");
+      -> ConditionalJump[IF_ICMPNE] #FF -> #FF
+      <- ConditionalJump[IF_ICMPNE] #DB -> #FF
+      <- ConditionalJump[IF_ICMPNE] #AS -> #FF
+      <- ConditionalJump[IF_ICMPNE] #FF -> #FF
+===#Block KR(size=2, flags=10100)===
+   0. lvar170 = {1912041998 ^ lvar170};
+   1. goto S
+      -> UnconditionalJump[GOTO] #KR -> #S
+      <- Switch[48153601] #B -> #KR
+===#Block S(size=9, flags=0)===
+   0. // Frame: locals[0] [] stack[0] []
+   1. lvar25 = aethereal.wr$a.aM_;
+   2. lvar26 = lvar25.field_1755;
+   3. lvar7 = lvar26;
+   4. lvar27 = lvar7;
+   5. lvar28 = lvar27 instanceof net.minecraft.class_476;
+   6. if (lvar28 == {1928900940 ^ lvar170})
+      goto JZ
+   7. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != -1748661661)
+      goto CX
+   8. lvar170 = {542342688 ^ lvar170};
+      -> Immediate #S -> #W
+      -> ConditionalJump[IF_ICMPNE] #S -> #CX
+      -> ConditionalJump[IF_ICMPEQ] #S -> #JZ
+      <- UnconditionalJump[GOTO] #KR -> #S
+===#Block JZ(size=1, flags=10100)===
+   0. switch (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.difdyswsqepknwvm(lvar170)) {
+      case 247571835:
+      	 goto	#KA
+      case 880410566:
+      	 goto	#DF
+      case 1148040138:
+      	 goto	#JZ
+      case 1602421405:
+      	 goto	#EF
+      default:
+      	 goto	#EF
+   }
+      -> DefaultSwitch #JZ -> #EF
+      -> Switch[1602421405] #JZ -> #EF
+      -> Switch[880410566] #JZ -> #DF
+      -> Switch[247571835] #JZ -> #KA
+      -> Switch[1148040138] #JZ -> #JZ
+      -> Immediate #JZ -> #KA
+      <- Switch[1148040138] #JZ -> #JZ
+      <- ConditionalJump[IF_ICMPEQ] #S -> #JZ
+===#Block KA(size=2, flags=100)===
+   0. lvar170 = {1041302626 ^ lvar170};
+   1. goto DF
+      -> UnconditionalJump[GOTO] #KA -> #DF
+      <- Switch[247571835] #JZ -> #KA
+      <- Immediate #JZ -> #KA
+===#Block DF(size=3, flags=0)===
+   0. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) == 1733142898)
+      goto KK
+   1. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != 1733142898)
+      goto DR
+   2. goto HW
+      -> UnconditionalJump[GOTO] #DF -> #HW
+      -> ConditionalJump[IF_ICMPEQ] #DF -> #KK
+      -> ConditionalJump[IF_ICMPNE] #DF -> #DR
+      <- UnconditionalJump[GOTO] #KA -> #DF
+      <- Switch[880410566] #JZ -> #DF
+===#Block DR(size=19, flags=0)===
+   0. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != 1733142898)
+      goto DR
+   1. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != {1106860698 ^ lvar170})
+      goto DR
+   2. _consume({1132639056 ^ lvar170});
+   3. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != -1450968909)
+      goto DR
+   4. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != {319201925 ^ lvar170})
+      goto DR
+   5. _consume({1181791140 ^ lvar170});
+   6. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != -1604046615)
+      goto DR
+   7. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != {1894274049 ^ lvar170})
+      goto DR
+   8. _consume({1508968909 ^ lvar170});
+   9. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != 719815961)
+      goto DR
+   10. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != {567196735 ^ lvar170})
+      goto DR
+   11. _consume({1075612014 ^ lvar170});
+   12. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != -1383282823)
+      goto DR
+   13. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != {372781724 ^ lvar170})
+      goto DR
+   14. _consume({1262728210 ^ lvar170});
+   15. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != 1105649250)
+      goto DR
+   16. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != {217177916 ^ lvar170})
+      goto DR
+   17. _consume({598757254 ^ lvar170});
+   18. throw new java/io/IOException("double");
+      -> ConditionalJump[IF_ICMPNE] #DR -> #DR
+      <- ConditionalJump[IF_ICMPNE] #DR -> #DR
+      <- ConditionalJump[IF_ICMPNE] #AF -> #DR
+      <- ConditionalJump[IF_ICMPNE] #CZ -> #DR
+      <- ConditionalJump[IF_ICMPNE] #P -> #DR
+      <- ConditionalJump[IF_ICMPNE] #CU -> #DR
+      <- ConditionalJump[IF_ICMPNE] #C -> #DR
+      <- ConditionalJump[IF_ICMPNE] #DF -> #DR
+===#Block KK(size=1, flags=10100)===
+   0. switch (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.difdyswsqepknwvm(lvar170)) {
+      case 84181984:
+      	 goto	#KL
+      case 460351269:
+      	 goto	#EO
+      case 627226257:
+      	 goto	#T
+      case 2118440992:
+      	 goto	#KK
+      default:
+      	 goto	#EO
+   }
+      -> Switch[2118440992] #KK -> #KK
+      -> Switch[627226257] #KK -> #T
+      -> DefaultSwitch #KK -> #EO
+      -> Immediate #KK -> #KL
+      -> Switch[460351269] #KK -> #EO
+      -> Switch[84181984] #KK -> #KL
+      <- Switch[2118440992] #KK -> #KK
+      <- ConditionalJump[IF_ICMPEQ] #DF -> #KK
+===#Block KL(size=2, flags=100)===
+   0. lvar170 = {1897992266 ^ lvar170};
+   1. goto T
+      -> UnconditionalJump[GOTO] #KL -> #T
+      <- Immediate #KK -> #KL
+      <- Switch[84181984] #KK -> #KL
+===#Block EO(size=10, flags=0)===
+   0. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != -385119910)
+      goto EO
+   1. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != {190038465 ^ lvar170})
+      goto EO
+   2. _consume({618387663 ^ lvar170});
+   3. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != 660912808)
+      goto EO
+   4. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != {106202591 ^ lvar170})
+      goto EO
+   5. _consume({332760556 ^ lvar170});
+   6. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != 307120298)
+      goto EO
+   7. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != {1282439231 ^ lvar170})
+      goto EO
+   8. _consume({1309962673 ^ lvar170});
+   9. throw new java/io/IOException("double");
+      -> ConditionalJump[IF_ICMPNE] #EO -> #EO
+      <- ConditionalJump[IF_ICMPNE] #AE -> #EO
+      <- ConditionalJump[IF_ICMPNE] #AU -> #EO
+      <- DefaultSwitch #KK -> #EO
+      <- Switch[460351269] #KK -> #EO
+      <- ConditionalJump[IF_ICMPNE] #BL -> #EO
+      <- ConditionalJump[IF_ICMPNE] #EO -> #EO
+===#Block T(size=10, flags=0)===
+   0. // Frame: locals[0] [] stack[0] []
+   1. lvar29 = lvar0;
+   2. lvar110 = lvar29.f;
+   3. lvar150 = {1036559717 ^ lvar170};
+   4. lvar111 = {lvar110 + lvar150};
+   5. lvar29.f = lvar111;
+   6. lvar112 = {1036559728 ^ lvar170};
+   7. if (lvar111 <= lvar112)
+      goto JC
+   8. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != -297456863)
+      goto EB
+   9. lvar170 = {1224161180 ^ lvar170};
+      -> ConditionalJump[IF_ICMPNE] #T -> #EB
+      -> ConditionalJump[IF_ICMPLE] #T -> #JC
+      -> Immediate #T -> #U
+      <- Switch[627226257] #KK -> #T
+      <- UnconditionalJump[GOTO] #KL -> #T
+===#Block U(size=4, flags=0)===
+   0. lvar30 = aethereal.wr$a.meyhktopyq(aethereal.wr$a.bcddgennjrihkbm(), lvar170);
+   1. _consume(aethereal.tU.a(lvar30, 1809451029));
+   2. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != -1443063869)
+      goto EG
+   3. lvar170 = {1115276745 ^ lvar170};
+      -> Immediate #U -> #V
+      -> ConditionalJump[IF_ICMPNE] #U -> #EG
+      <- Immediate #T -> #U
+===#Block EG(size=7, flags=0)===
+   0. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != 2023024666)
+      goto EG
+   1. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != {391714899 ^ lvar170})
+      goto EG
+   2. _consume({2072981636 ^ lvar170});
+   3. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != -1443063869)
+      goto EG
+   4. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != {976335848 ^ lvar170})
+      goto EG
+   5. _consume({1849333089 ^ lvar170});
+   6. throw new java/io/IOException("double");
+      -> ConditionalJump[IF_ICMPNE] #EG -> #EG
+      <- Switch[329655958] #KN -> #EG
+      <- DefaultSwitch #KN -> #EG
+      <- ConditionalJump[IF_ICMPNE] #EG -> #EG
+      <- ConditionalJump[IF_ICMPNE] #BZ -> #EG
+      <- ConditionalJump[IF_ICMPNE] #U -> #EG
+===#Block V(size=7, flags=0)===
+   0. lvar31 = lvar0;
+   1. lvar113 = lvar0;
+   2. lvar151 = {927356721 ^ lvar170};
+   3. lvar113.f = lvar151;
+   4. lvar31.e = lvar151;
+   5. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != -1171080823)
+      goto DZ
+   6. goto GU
+      -> UnconditionalJump[GOTO] #V -> #GU
+      -> ConditionalJump[IF_ICMPNE] #V -> #DZ
+      <- Immediate #U -> #V
+===#Block GU(size=2, flags=10100)===
+   0. lvar170 = {1602450138 ^ lvar170};
+   1. goto CF
+      -> UnconditionalJump[GOTO] #GU -> #CF
+      <- UnconditionalJump[GOTO] #V -> #GU
+===#Block CF(size=3, flags=0)===
+   0. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.difdyswsqepknwvm(lvar170) == 184390066)
+      goto CE
+   1. throw nullconst;
+   2. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != 1177104219)
+      goto DV
+      -> TryCatch range: [CF...CE] -> MC ([Ljava/lang/IllegalAccessException;])
+      -> ConditionalJump[IF_ICMPNE] #CF -> #DV
+      -> ConditionalJump[IF_ICMPEQ] #CF -> #CE
+      <- UnconditionalJump[GOTO] #GU -> #CF
+===#Block CE(size=2, flags=0)===
+   0. throw new java/lang/IllegalAccessException();
+   1. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != -1091611686)
+      goto EH
+      -> ConditionalJump[IF_ICMPNE] #CE -> #EH
+      -> TryCatch range: [CF...CE] -> MC ([Ljava/lang/IllegalAccessException;])
+      <- ConditionalJump[IF_ICMPEQ] #CF -> #CE
+===#Block EH(size=7, flags=0)===
+   0. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != -1091611686)
+      goto EH
+   1. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != {324994773 ^ lvar170})
+      goto EH
+   2. _consume({1219256521 ^ lvar170});
+   3. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != -829025527)
+      goto EH
+   4. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != {459935694 ^ lvar170})
+      goto EH
+   5. _consume({1598948918 ^ lvar170});
+   6. throw new java/lang/RuntimeException("double");
+      -> ConditionalJump[IF_ICMPNE] #EH -> #EH
+      <- ConditionalJump[IF_ICMPNE] #EH -> #EH
+      <- ConditionalJump[IF_ICMPNE] #CE -> #EH
+      <- ConditionalJump[IF_ICMPNE] #BA -> #EH
+===#Block MC(size=1, flags=0)===
+   0. switch (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.wrgesxfonvjqqpmi(lvar170)) {
+      case -1091611686:
+      	 goto	#ME
+      case 1177104219:
+      	 goto	#MD
+      default:
+      	 goto	#MF
+   }
+      -> DefaultSwitch #MC -> #MF
+      -> Switch[-1091611686] #MC -> #ME
+      -> Switch[1177104219] #MC -> #MD
+      <- TryCatch range: [CF...CE] -> MC ([Ljava/lang/IllegalAccessException;])
+      <- TryCatch range: [CF...CE] -> MC ([Ljava/lang/IllegalAccessException;])
+===#Block MD(size=2, flags=10100)===
+   0. lvar170 = {1982373792 ^ lvar170};
+   1. goto CG
+      -> UnconditionalJump[GOTO] #MD -> #CG
+      <- Switch[1177104219] #MC -> #MD
+===#Block ME(size=2, flags=10100)===
+   0. lvar170 = {1227903024 ^ lvar170};
+   1. goto CG
+      -> UnconditionalJump[GOTO] #ME -> #CG
+      <- Switch[-1091611686] #MC -> #ME
+===#Block CG(size=3, flags=0)===
+   0. _consume(catch());
+   1. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != -143797672)
+      goto FB
+   2. goto HF
+      -> UnconditionalJump[GOTO] #CG -> #HF
+      -> ConditionalJump[IF_ICMPNE] #CG -> #FB
+      <- UnconditionalJump[GOTO] #MD -> #CG
+      <- UnconditionalJump[GOTO] #ME -> #CG
+===#Block FB(size=4, flags=0)===
+   0. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != -143797672)
+      goto FB
+   1. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != {1611687381 ^ lvar170})
+      goto FB
+   2. _consume({1518677282 ^ lvar170});
+   3. throw new java/io/IOException("double");
+      -> ConditionalJump[IF_ICMPNE] #FB -> #FB
+      <- ConditionalJump[IF_ICMPNE] #CG -> #FB
+      <- DefaultSwitch #KT -> #FB
+      <- Switch[1018594248] #KT -> #FB
+      <- ConditionalJump[IF_ICMPNE] #FB -> #FB
+===#Block HF(size=2, flags=10100)===
+   0. lvar170 = {1958368347 ^ lvar170};
+   1. goto BF
+      -> UnconditionalJump[GOTO] #HF -> #BF
+      <- UnconditionalJump[GOTO] #CG -> #HF
+===#Block MF(size=1, flags=0)===
+   0. throw new java/lang/IllegalAccessException("Error in hash");
+      <- DefaultSwitch #MC -> #MF
+===#Block JC(size=2, flags=10100)===
+   0. lvar170 = aethereal.wr$a.qtabjbpdgqqpfcpu(lvar170, 162850352);
+   1. goto DK
+      -> UnconditionalJump[GOTO] #JC -> #DK
+      <- ConditionalJump[IF_ICMPLE] #T -> #JC
+===#Block DK(size=3, flags=0)===
+   0. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) == -1545463135)
+      goto JD
+   1. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != -1545463135)
+      goto FG
+   2. goto HJ
+      -> UnconditionalJump[GOTO] #DK -> #HJ
+      -> ConditionalJump[IF_ICMPNE] #DK -> #FG
+      -> ConditionalJump[IF_ICMPEQ] #DK -> #JD
+      <- UnconditionalJump[GOTO] #JC -> #DK
+===#Block JD(size=1, flags=10100)===
+   0. switch (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.difdyswsqepknwvm(lvar170)) {
+      case 60320683:
+      	 goto	#JD
+      case 69345875:
+      	 goto	#BF
+      case 95483406:
+      	 goto	#JE
+      case 214012652:
+      	 goto	#EY
+      default:
+      	 goto	#EY
+   }
+      -> Switch[95483406] #JD -> #JE
+      -> Switch[214012652] #JD -> #EY
+      -> Switch[69345875] #JD -> #BF
+      -> DefaultSwitch #JD -> #EY
+      -> Switch[60320683] #JD -> #JD
+      -> Immediate #JD -> #JE
+      <- Switch[60320683] #JD -> #JD
+      <- ConditionalJump[IF_ICMPEQ] #DK -> #JD
+===#Block EY(size=4, flags=0)===
+   0. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != -2000105160)
+      goto EY
+   1. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != {1872755209 ^ lvar170})
+      goto EY
+   2. _consume({55966540 ^ lvar170});
+   3. throw new java/lang/RuntimeException("double");
+      -> ConditionalJump[IF_ICMPNE] #EY -> #EY
+      <- Switch[214012652] #JD -> #EY
+      <- ConditionalJump[IF_ICMPNE] #BG -> #EY
+      <- DefaultSwitch #JD -> #EY
+      <- ConditionalJump[IF_ICMPNE] #EY -> #EY
+===#Block JE(size=2, flags=100)===
+   0. lvar170 = {1579920708 ^ lvar170};
+   1. goto BF
+      -> UnconditionalJump[GOTO] #JE -> #BF
+      <- Switch[95483406] #JD -> #JE
+      <- Immediate #JD -> #JE
+===#Block FG(size=7, flags=0)===
+   0. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != 1377067817)
+      goto FG
+   1. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != {1311655718 ^ lvar170})
+      goto FG
+   2. _consume({1568872985 ^ lvar170});
+   3. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != -1545463135)
+      goto FG
+   4. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != {217777866 ^ lvar170})
+      goto FG
+   5. _consume({816188961 ^ lvar170});
+   6. throw new java/lang/IllegalAccessException("double");
+      -> ConditionalJump[IF_ICMPNE] #FG -> #FG
+      <- ConditionalJump[IF_ICMPNE] #FG -> #FG
+      <- ConditionalJump[IF_ICMPNE] #BT -> #FG
+      <- ConditionalJump[IF_ICMPNE] #DK -> #FG
+===#Block HJ(size=1, flags=10100)===
+   0. switch (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.difdyswsqepknwvm(lvar170)) {
+      case 95483406:
+      	 goto	#HK
+      case 1064040488:
+      	 goto	#CX
+      case 1732174245:
+      	 goto	#HJ
+      case 2108491043:
+      	 goto	#EK
+      default:
+      	 goto	#EK
+   }
+      -> Immediate #HJ -> #HK
+      -> DefaultSwitch #HJ -> #EK
+      -> Switch[1732174245] #HJ -> #HJ
+      -> Switch[95483406] #HJ -> #HK
+      -> Switch[1064040488] #HJ -> #CX
+      -> Switch[2108491043] #HJ -> #EK
+      <- UnconditionalJump[GOTO] #DK -> #HJ
+      <- Switch[1732174245] #HJ -> #HJ
+===#Block EK(size=4, flags=0)===
+   0. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != 769223496)
+      goto EK
+   1. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != {347030137 ^ lvar170})
+      goto EK
+   2. _consume({898739018 ^ lvar170});
+   3. throw new java/io/IOException("double");
+      -> ConditionalJump[IF_ICMPNE] #EK -> #EK
+      <- DefaultSwitch #HJ -> #EK
+      <- ConditionalJump[IF_ICMPNE] #DC -> #EK
+      <- ConditionalJump[IF_ICMPNE] #EK -> #EK
+      <- Switch[2108491043] #HJ -> #EK
+===#Block HK(size=2, flags=100)===
+   0. lvar170 = {959146795 ^ lvar170};
+   1. goto CX
+      -> UnconditionalJump[GOTO] #HK -> #CX
+      <- Immediate #HJ -> #HK
+      <- Switch[95483406] #HJ -> #HK
+===#Block EB(size=7, flags=0)===
+   0. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != -297456863)
+      goto EB
+   1. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != {1369874967 ^ lvar170})
+      goto EB
+   2. _consume({1226009521 ^ lvar170});
+   3. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != 1851423810)
+      goto EB
+   4. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != {1175035110 ^ lvar170})
+      goto EB
+   5. _consume({147028583 ^ lvar170});
+   6. throw new java/io/IOException("double");
+      -> ConditionalJump[IF_ICMPNE] #EB -> #EB
+      <- ConditionalJump[IF_ICMPNE] #BB -> #EB
+      <- ConditionalJump[IF_ICMPNE] #T -> #EB
+      <- ConditionalJump[IF_ICMPNE] #EB -> #EB
+===#Block HW(size=1, flags=10100)===
+   0. switch (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.difdyswsqepknwvm(lvar170)) {
+      case 84181984:
+      	 goto	#HX
+      case 1626918889:
+      	 goto	#FL
+      case 1852716406:
+      	 goto	#HW
+      case 1887156509:
+      	 goto	#CX
+      default:
+      	 goto	#FL
+   }
+      -> DefaultSwitch #HW -> #FL
+      -> Switch[1626918889] #HW -> #FL
+      -> Switch[1852716406] #HW -> #HW
+      -> Switch[1887156509] #HW -> #CX
+      -> Immediate #HW -> #HX
+      -> Switch[84181984] #HW -> #HX
+      <- UnconditionalJump[GOTO] #DF -> #HW
+      <- Switch[1852716406] #HW -> #HW
+===#Block HX(size=2, flags=100)===
+   0. lvar170 = {1103011153 ^ lvar170};
+   1. goto CX
+      -> UnconditionalJump[GOTO] #HX -> #CX
+      <- Immediate #HW -> #HX
+      <- Switch[84181984] #HW -> #HX
+===#Block FL(size=4, flags=0)===
+   0. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != 12181792)
+      goto FL
+   1. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != {894670367 ^ lvar170})
+      goto FL
+   2. _consume({1182812361 ^ lvar170});
+   3. throw new java/lang/IllegalAccessException("double");
+      -> ConditionalJump[IF_ICMPNE] #FL -> #FL
+      <- ConditionalJump[IF_ICMPNE] #FL -> #FL
+      <- ConditionalJump[IF_ICMPNE] #CY -> #FL
+      <- DefaultSwitch #HW -> #FL
+      <- Switch[1626918889] #HW -> #FL
+===#Block W(size=5, flags=0)===
+   0. lvar32 = lvar7;
+   1. lvar33 = (net.minecraft.class_476)lvar32;
+   2. lvar5 = lvar33;
+   3. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != -1788970142)
+      goto CX
+   4. lvar170 = {304228537 ^ lvar170};
+      -> ConditionalJump[IF_ICMPNE] #W -> #CX
+      -> Immediate #W -> #X
+      <- Immediate #S -> #W
+===#Block X(size=2, flags=0)===
+   0. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != 72302250)
+      goto EW
+   1. goto HQ
+      -> UnconditionalJump[GOTO] #X -> #HQ
+      -> ConditionalJump[IF_ICMPNE] #X -> #EW
+      <- Immediate #W -> #X
+===#Block HQ(size=1, flags=10100)===
+   0. switch (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.difdyswsqepknwvm(lvar170)) {
+      case 218853797:
+      	 goto	#HR
+      case 418973279:
+      	 goto	#HQ
+      case 1314497003:
+      	 goto	#DS
+      case 1759681605:
+      	 goto	#BW
+      default:
+      	 goto	#DS
+   }
+      -> Immediate #HQ -> #HR
+      -> DefaultSwitch #HQ -> #DS
+      -> Switch[1314497003] #HQ -> #DS
+      -> Switch[1759681605] #HQ -> #BW
+      -> Switch[418973279] #HQ -> #HQ
+      -> Switch[218853797] #HQ -> #HR
+      <- UnconditionalJump[GOTO] #X -> #HQ
+      <- Switch[418973279] #HQ -> #HQ
+===#Block HR(size=2, flags=100)===
+   0. lvar170 = {2017425904 ^ lvar170};
+   1. goto BW
+      -> UnconditionalJump[GOTO] #HR -> #BW
+      <- Immediate #HQ -> #HR
+      <- Switch[218853797] #HQ -> #HR
+===#Block BW(size=3, flags=0)===
+   0. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.difdyswsqepknwvm(lvar170) == 232909521)
+      goto BV
+   1. throw nullconst;
+   2. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != -977997527)
+      goto FA
+      -> TryCatch range: [BW...BV] -> LQ ([Ljava/lang/IllegalAccessException;])
+      -> ConditionalJump[IF_ICMPNE] #BW -> #FA
+      -> ConditionalJump[IF_ICMPEQ] #BW -> #BV
+      <- Switch[1759681605] #HQ -> #BW
+      <- UnconditionalJump[GOTO] #HR -> #BW
+===#Block BV(size=2, flags=0)===
+   0. throw new java/lang/IllegalAccessException();
+   1. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != -172439374)
+      goto DW
+      -> ConditionalJump[IF_ICMPNE] #BV -> #DW
+      -> TryCatch range: [BW...BV] -> LQ ([Ljava/lang/IllegalAccessException;])
+      <- ConditionalJump[IF_ICMPEQ] #BW -> #BV
+===#Block FA(size=7, flags=0)===
+   0. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != -584607983)
+      goto FA
+   1. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != {1052996384 ^ lvar170})
+      goto FA
+   2. _consume({1307651244 ^ lvar170});
+   3. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != -977997527)
+      goto FA
+   4. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != {84697823 ^ lvar170})
+      goto FA
+   5. _consume({1562462765 ^ lvar170});
+   6. throw new java/io/IOException("double");
+      -> ConditionalJump[IF_ICMPNE] #FA -> #FA
+      <- ConditionalJump[IF_ICMPNE] #AT -> #FA
+      <- DefaultSwitch #JX -> #FA
+      <- Switch[1423832944] #JX -> #FA
+      <- ConditionalJump[IF_ICMPNE] #BW -> #FA
+      <- ConditionalJump[IF_ICMPNE] #FA -> #FA
+===#Block LQ(size=1, flags=0)===
+   0. switch (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.wrgesxfonvjqqpmi(lvar170)) {
+      case -977997527:
+      	 goto	#LR
+      case -172439374:
+      	 goto	#LS
+      default:
+      	 goto	#LT
+   }
+      -> Switch[-172439374] #LQ -> #LS
+      -> Switch[-977997527] #LQ -> #LR
+      -> DefaultSwitch #LQ -> #LT
+      <- TryCatch range: [BW...BV] -> LQ ([Ljava/lang/IllegalAccessException;])
+      <- TryCatch range: [BW...BV] -> LQ ([Ljava/lang/IllegalAccessException;])
+===#Block LT(size=1, flags=0)===
+   0. throw new java/lang/IllegalAccessException("Error in hash");
+      <- DefaultSwitch #LQ -> #LT
+===#Block LR(size=2, flags=10100)===
+   0. lvar170 = {1476301490 ^ lvar170};
+   1. goto BX
+      -> UnconditionalJump[GOTO] #LR -> #BX
+      <- Switch[-977997527] #LQ -> #LR
+===#Block LS(size=2, flags=10100)===
+   0. lvar170 = aethereal.wr$a.qtabjbpdgqqpfcpu(lvar170, 838800769);
+   1. goto BX
+      -> UnconditionalJump[GOTO] #LS -> #BX
+      <- Switch[-172439374] #LQ -> #LS
+===#Block BX(size=3, flags=0)===
+   0. _consume(catch());
+   1. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != 2051040443)
+      goto ER
+   2. goto GV
+      -> UnconditionalJump[GOTO] #BX -> #GV
+      -> ConditionalJump[IF_ICMPNE] #BX -> #ER
+      <- UnconditionalJump[GOTO] #LR -> #BX
+      <- UnconditionalJump[GOTO] #LS -> #BX
+===#Block ER(size=10, flags=0)===
+   0. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != -998521021)
+      goto ER
+   1. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != {1542245670 ^ lvar170})
+      goto ER
+   2. _consume({1224605932 ^ lvar170});
+   3. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != 124512371)
+      goto ER
+   4. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != {1553722294 ^ lvar170})
+      goto ER
+   5. _consume({324927499 ^ lvar170});
+   6. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != 2051040443)
+      goto ER
+   7. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != {1192526975 ^ lvar170})
+      goto ER
+   8. _consume({163130171 ^ lvar170});
+   9. throw new java/lang/RuntimeException("double");
+      -> ConditionalJump[IF_ICMPNE] #ER -> #ER
+      <- ConditionalJump[IF_ICMPNE] #ER -> #ER
+      <- ConditionalJump[IF_ICMPNE] #CB -> #ER
+      <- ConditionalJump[IF_ICMPNE] #DP -> #ER
+      <- ConditionalJump[IF_ICMPNE] #BX -> #ER
+===#Block GV(size=2, flags=10100)===
+   0. lvar170 = aethereal.wr$a.qtabjbpdgqqpfcpu(lvar170, 280985113);
+   1. goto Y
+      -> UnconditionalJump[GOTO] #GV -> #Y
+      <- UnconditionalJump[GOTO] #BX -> #GV
+===#Block Y(size=9, flags=0)===
+   0. // Frame: locals[1] [net/minecraft/class_476] stack[0] []
+   1. lvar34 = lvar5;
+   2. lvar35 = lvar34.method_25440();
+   3. lvar36 = lvar35.getString();
+   4. lvar114 = aethereal.wr$a.meyhktopyq(aethereal.wr$a.pltwoherqhpavqg(), lvar170);
+   5. lvar37 = lvar36.startsWith(lvar114);
+   6. if (lvar37 != {2146923150 ^ lvar170})
+      goto IV
+   7. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != -4483981)
+      goto DW
+   8. lvar170 = {1854447272 ^ lvar170};
+      -> ConditionalJump[IF_ICMPNE] #Y -> #DW
+      -> Immediate #Y -> #Z
+      -> ConditionalJump[IF_ICMPNE] #Y -> #IV
+      <- UnconditionalJump[GOTO] #GV -> #Y
+===#Block IV(size=1, flags=10100)===
+   0. switch (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.difdyswsqepknwvm(lvar170)) {
+      case 133108228:
+      	 goto	#IW
+      case 301461993:
+      	 goto	#IV
+      case 1016573730:
+      	 goto	#DH
+      case 1105237576:
+      	 goto	#EL
+      default:
+      	 goto	#EL
+   }
+      -> DefaultSwitch #IV -> #EL
+      -> Switch[133108228] #IV -> #IW
+      -> Switch[301461993] #IV -> #IV
+      -> Switch[1105237576] #IV -> #EL
+      -> Immediate #IV -> #IW
+      -> Switch[1016573730] #IV -> #DH
+      <- Switch[301461993] #IV -> #IV
+      <- ConditionalJump[IF_ICMPNE] #Y -> #IV
+===#Block IW(size=2, flags=100)===
+   0. lvar170 = {1911002146 ^ lvar170};
+   1. goto DH
+      -> UnconditionalJump[GOTO] #IW -> #DH
+      <- Switch[133108228] #IV -> #IW
+      <- Immediate #IV -> #IW
+===#Block DH(size=3, flags=0)===
+   0. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) == 1887909216)
+      goto JM
+   1. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != 1887909216)
+      goto DV
+   2. goto IB
+      -> UnconditionalJump[GOTO] #DH -> #IB
+      -> ConditionalJump[IF_ICMPEQ] #DH -> #JM
+      -> ConditionalJump[IF_ICMPNE] #DH -> #DV
+      <- UnconditionalJump[GOTO] #IW -> #DH
+      <- Switch[1016573730] #IV -> #DH
+===#Block DV(size=16, flags=0)===
+   0. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != 1887909216)
+      goto DV
+   1. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != {2097561638 ^ lvar170})
+      goto DV
+   2. _consume({166217908 ^ lvar170});
+   3. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != -695312582)
+      goto DV
+   4. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != {833603278 ^ lvar170})
+      goto DV
+   5. _consume({542026720 ^ lvar170});
+   6. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != 248055490)
+      goto DV
+   7. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != {789171407 ^ lvar170})
+      goto DV
+   8. _consume({249510241 ^ lvar170});
+   9. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != -1426925693)
+      goto DV
+   10. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != {52632155 ^ lvar170})
+      goto DV
+   11. _consume({1754786947 ^ lvar170});
+   12. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != 1177104219)
+      goto DV
+   13. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != {1515663636 ^ lvar170})
+      goto DV
+   14. _consume({8313195 ^ lvar170});
+   15. throw new java/lang/RuntimeException("double");
+      -> ConditionalJump[IF_ICMPNE] #DV -> #DV
+      <- ConditionalJump[IF_ICMPNE] #DV -> #DV
+      <- ConditionalJump[IF_ICMPNE] #CC -> #DV
+      <- ConditionalJump[IF_ICMPNE] #DJ -> #DV
+      <- ConditionalJump[IF_ICMPNE] #DH -> #DV
+      <- ConditionalJump[IF_ICMPNE] #AQ -> #DV
+      <- ConditionalJump[IF_ICMPNE] #CF -> #DV
+===#Block JM(size=1, flags=10100)===
+   0. switch (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.difdyswsqepknwvm(lvar170)) {
+      case 188788989:
+      	 goto	#JN
+      case 212925421:
+      	 goto	#EZ
+      case 704504381:
+      	 goto	#JM
+      case 1102537974:
+      	 goto	#AA
+      default:
+      	 goto	#EZ
+   }
+      -> Switch[1102537974] #JM -> #AA
+      -> Switch[188788989] #JM -> #JN
+      -> Switch[212925421] #JM -> #EZ
+      -> DefaultSwitch #JM -> #EZ
+      -> Immediate #JM -> #JN
+      -> Switch[704504381] #JM -> #JM
+      <- ConditionalJump[IF_ICMPEQ] #DH -> #JM
+      <- Switch[704504381] #JM -> #JM
+===#Block EZ(size=4, flags=0)===
+   0. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != -269051078)
+      goto EZ
+   1. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != {1025733214 ^ lvar170})
+      goto EZ
+   2. _consume({1939548373 ^ lvar170});
+   3. throw new java/lang/RuntimeException("double");
+      -> ConditionalJump[IF_ICMPNE] #EZ -> #EZ
+      <- Switch[212925421] #JM -> #EZ
+      <- DefaultSwitch #JM -> #EZ
+      <- ConditionalJump[IF_ICMPNE] #BM -> #EZ
+      <- ConditionalJump[IF_ICMPNE] #EZ -> #EZ
+===#Block JN(size=2, flags=100)===
+   0. lvar170 = {780820055 ^ lvar170};
+   1. goto AA
+      -> UnconditionalJump[GOTO] #JN -> #AA
+      <- Switch[188788989] #JM -> #JN
+      <- Immediate #JM -> #JN
+===#Block IB(size=1, flags=10100)===
+   0. switch (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.difdyswsqepknwvm(lvar170)) {
+      case 188788989:
+      	 goto	#IC
+      case 382294542:
+      	 goto	#IB
+      case 790956154:
+      	 goto	#EW
+      case 1439834620:
+      	 goto	#CX
+      default:
+      	 goto	#EW
+   }
+      -> DefaultSwitch #IB -> #EW
+      -> Switch[1439834620] #IB -> #CX
+      -> Switch[382294542] #IB -> #IB
+      -> Switch[790956154] #IB -> #EW
+      -> Immediate #IB -> #IC
+      -> Switch[188788989] #IB -> #IC
+      <- UnconditionalJump[GOTO] #DH -> #IB
+      <- Switch[382294542] #IB -> #IB
+===#Block IC(size=2, flags=100)===
+   0. lvar170 = {55037651 ^ lvar170};
+   1. goto CX
+      -> UnconditionalJump[GOTO] #IC -> #CX
+      <- Immediate #IB -> #IC
+      <- Switch[188788989] #IB -> #IC
+===#Block EW(size=7, flags=0)===
+   0. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != 72302250)
+      goto EW
+   1. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != {2054837726 ^ lvar170})
+      goto EW
+   2. _consume({1089621790 ^ lvar170});
+   3. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != -2049153422)
+      goto EW
+   4. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != {1252340991 ^ lvar170})
+      goto EW
+   5. _consume({1325942006 ^ lvar170});
+   6. throw new java/io/IOException("double");
+      -> ConditionalJump[IF_ICMPNE] #EW -> #EW
+      <- DefaultSwitch #IB -> #EW
+      <- ConditionalJump[IF_ICMPNE] #X -> #EW
+      <- Switch[790956154] #IB -> #EW
+      <- ConditionalJump[IF_ICMPNE] #H -> #EW
+      <- ConditionalJump[IF_ICMPNE] #EW -> #EW
+===#Block EL(size=10, flags=0)===
+   0. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != 1605536986)
+      goto EL
+   1. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != {1515035200 ^ lvar170})
+      goto EL
+   2. _consume({1283715601 ^ lvar170});
+   3. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != 1346133914)
+      goto EL
+   4. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != {1178302911 ^ lvar170})
+      goto EL
+   5. _consume({2119637524 ^ lvar170});
+   6. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != 911296627)
+      goto EL
+   7. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != {568091232 ^ lvar170})
+      goto EL
+   8. _consume({596518787 ^ lvar170});
+   9. throw new java/lang/RuntimeException("double");
+      -> ConditionalJump[IF_ICMPNE] #EL -> #EL
+      <- ConditionalJump[IF_ICMPNE] #DL -> #EL
+      <- DefaultSwitch #IV -> #EL
+      <- Switch[1105237576] #IV -> #EL
+      <- ConditionalJump[IF_ICMPNE] #BQ -> #EL
+      <- ConditionalJump[IF_ICMPNE] #DO -> #EL
+      <- ConditionalJump[IF_ICMPNE] #EL -> #EL
+===#Block Z(size=8, flags=0)===
+   0. lvar38 = lvar5;
+   1. lvar39 = lvar38.method_25440();
+   2. lvar40 = lvar39.getString();
+   3. lvar115 = aethereal.wr$a.meyhktopyq(aethereal.wr$a.xwsogxyygdnnouv(), lvar170);
+   4. lvar41 = lvar40.startsWith(lvar115);
+   5. if (lvar41 == {293596198 ^ lvar170})
+      goto JF
+   6. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != -1946197712)
+      goto FJ
+   7. lvar170 = {837113053 ^ lvar170};
+      -> ConditionalJump[IF_ICMPNE] #Z -> #FJ
+      -> ConditionalJump[IF_ICMPEQ] #Z -> #JF
+      -> Immediate #Z -> #AA
+      <- Immediate #Y -> #Z
+===#Block AA(size=6, flags=0)===
+   0. // Frame: locals[1] [null] stack[0] []
+   1. lvar42 = lvar0;
+   2. lvar116 = {547010809 ^ lvar170};
+   3. lvar42.e = lvar116;
+   4. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != 81119193)
+      goto FN
+   5. lvar170 = {1103893931 ^ lvar170};
+      -> Immediate #AA -> #AB
+      -> ConditionalJump[IF_ICMPNE] #AA -> #FN
+      <- UnconditionalJump[GOTO] #JN -> #AA
+      <- Switch[1102537974] #JM -> #AA
+      <- Immediate #Z -> #AA
+===#Block AB(size=5, flags=0)===
+   0. lvar43 = lvar0;
+   1. lvar117 = {1633070416 ^ lvar170};
+   2. lvar43.f = lvar117;
+   3. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != 179661443)
+      goto EV
+   4. goto HC
+      -> ConditionalJump[IF_ICMPNE] #AB -> #EV
+      -> UnconditionalJump[GOTO] #AB -> #HC
+      <- Immediate #AA -> #AB
+===#Block HC(size=2, flags=10100)===
+   0. lvar170 = aethereal.wr$a.qtabjbpdgqqpfcpu(lvar170, 760349270);
+   1. goto CR
+      -> UnconditionalJump[GOTO] #HC -> #CR
+      <- UnconditionalJump[GOTO] #AB -> #HC
+===#Block CR(size=3, flags=0)===
+   0. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.difdyswsqepknwvm(lvar170) == 55140127)
+      goto CQ
+   1. throw nullconst;
+   2. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != 1613068338)
+      goto EF
+      -> ConditionalJump[IF_ICMPEQ] #CR -> #CQ
+      -> TryCatch range: [CR...CQ] -> MS ([Ljava/lang/IllegalAccessException;])
+      -> ConditionalJump[IF_ICMPNE] #CR -> #EF
+      <- UnconditionalJump[GOTO] #HC -> #CR
+===#Block CQ(size=2, flags=0)===
+   0. throw new java/lang/IllegalAccessException();
+   1. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != 102450577)
+      goto EA
+      -> TryCatch range: [CR...CQ] -> MS ([Ljava/lang/IllegalAccessException;])
+      -> ConditionalJump[IF_ICMPNE] #CQ -> #EA
+      <- ConditionalJump[IF_ICMPEQ] #CR -> #CQ
+===#Block EA(size=10, flags=0)===
+   0. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != 102450577)
+      goto EA
+   1. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != {211191162 ^ lvar170})
+      goto EA
+   2. _consume({425889486 ^ lvar170});
+   3. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != 141490217)
+      goto EA
+   4. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != {203625607 ^ lvar170})
+      goto EA
+   5. _consume({1676862709 ^ lvar170});
+   6. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != 1399383608)
+      goto EA
+   7. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != {504525159 ^ lvar170})
+      goto EA
+   8. _consume({445887120 ^ lvar170});
+   9. throw new java/lang/RuntimeException("double");
+      -> ConditionalJump[IF_ICMPNE] #EA -> #EA
+      <- ConditionalJump[IF_ICMPNE] #EA -> #EA
+      <- ConditionalJump[IF_ICMPNE] #BR -> #EA
+      <- ConditionalJump[IF_ICMPNE] #DN -> #EA
+      <- ConditionalJump[IF_ICMPNE] #CQ -> #EA
+===#Block MS(size=1, flags=0)===
+   0. switch (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.wrgesxfonvjqqpmi(lvar170)) {
+      case 102450577:
+      	 goto	#MU
+      case 1613068338:
+      	 goto	#MT
+      default:
+      	 goto	#MV
+   }
+      -> Switch[102450577] #MS -> #MU
+      -> Switch[1613068338] #MS -> #MT
+      -> DefaultSwitch #MS -> #MV
+      <- TryCatch range: [CR...CQ] -> MS ([Ljava/lang/IllegalAccessException;])
+      <- TryCatch range: [CR...CQ] -> MS ([Ljava/lang/IllegalAccessException;])
+===#Block MV(size=1, flags=0)===
+   0. throw new java/io/IOException("Error in hash");
+      <- DefaultSwitch #MS -> #MV
+===#Block MT(size=2, flags=10100)===
+   0. lvar170 = aethereal.wr$a.qtabjbpdgqqpfcpu(lvar170, 520267951);
+   1. goto CS
+      -> UnconditionalJump[GOTO] #MT -> #CS
+      <- Switch[1613068338] #MS -> #MT
+===#Block MU(size=2, flags=10100)===
+   0. lvar170 = aethereal.wr$a.qtabjbpdgqqpfcpu(lvar170, 1942318875);
+   1. goto CS
+      -> UnconditionalJump[GOTO] #MU -> #CS
+      <- Switch[102450577] #MS -> #MU
+===#Block CS(size=3, flags=0)===
+   0. _consume(catch());
+   1. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != -1741669046)
+      goto FT
+   2. goto HY
+      -> ConditionalJump[IF_ICMPNE] #CS -> #FT
+      -> UnconditionalJump[GOTO] #CS -> #HY
+      <- UnconditionalJump[GOTO] #MT -> #CS
+      <- UnconditionalJump[GOTO] #MU -> #CS
+===#Block HY(size=2, flags=10100)===
+   0. lvar170 = aethereal.wr$a.qtabjbpdgqqpfcpu(lvar170, 961669561);
+   1. goto BF
+      -> UnconditionalJump[GOTO] #HY -> #BF
+      <- UnconditionalJump[GOTO] #CS -> #HY
+===#Block FT(size=4, flags=0)===
+   0. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != -1741669046)
+      goto FT
+   1. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != {1184869155 ^ lvar170})
+      goto FT
+   2. _consume({1970095860 ^ lvar170});
+   3. throw new java/lang/IllegalAccessException("double");
+      -> ConditionalJump[IF_ICMPNE] #FT -> #FT
+      <- ConditionalJump[IF_ICMPNE] #CS -> #FT
+      <- ConditionalJump[IF_ICMPNE] #FT -> #FT
+===#Block EV(size=7, flags=0)===
+   0. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != 1373963848)
+      goto EV
+   1. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != {553284601 ^ lvar170})
+      goto EV
+   2. _consume({160624911 ^ lvar170});
+   3. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != 179661443)
+      goto EV
+   4. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != {1678009525 ^ lvar170})
+      goto EV
+   5. _consume({1958430657 ^ lvar170});
+   6. throw new java/lang/RuntimeException("double");
+      -> ConditionalJump[IF_ICMPNE] #EV -> #EV
+      <- ConditionalJump[IF_ICMPNE] #AB -> #EV
+      <- Switch[1881092599] #HO -> #EV
+      <- ConditionalJump[IF_ICMPNE] #EV -> #EV
+      <- ConditionalJump[IF_ICMPNE] #CL -> #EV
+      <- DefaultSwitch #HO -> #EV
+===#Block JF(size=1, flags=10100)===
+   0. switch (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.difdyswsqepknwvm(lvar170)) {
+      case 31967478:
+      	 goto	#JG
+      case 548208588:
+      	 goto	#FN
+      case 915788411:
+      	 goto	#JF
+      case 2125569972:
+      	 goto	#DM
+      default:
+      	 goto	#FN
+   }
+      -> Switch[2125569972] #JF -> #DM
+      -> DefaultSwitch #JF -> #FN
+      -> Switch[31967478] #JF -> #JG
+      -> Switch[915788411] #JF -> #JF
+      -> Switch[548208588] #JF -> #FN
+      -> Immediate #JF -> #JG
+      <- ConditionalJump[IF_ICMPEQ] #Z -> #JF
+      <- Switch[915788411] #JF -> #JF
+===#Block JG(size=2, flags=100)===
+   0. lvar170 = {393147030 ^ lvar170};
+   1. goto DM
+      -> UnconditionalJump[GOTO] #JG -> #DM
+      <- Switch[31967478] #JF -> #JG
+      <- Immediate #JF -> #JG
+===#Block FN(size=4, flags=0)===
+   0. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != 81119193)
+      goto FN
+   1. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != {719952158 ^ lvar170})
+      goto FN
+   2. _consume({277749687 ^ lvar170});
+   3. throw new java/lang/RuntimeException("double");
+      -> ConditionalJump[IF_ICMPNE] #FN -> #FN
+      <- ConditionalJump[IF_ICMPNE] #FN -> #FN
+      <- DefaultSwitch #JF -> #FN
+      <- Switch[548208588] #JF -> #FN
+      <- ConditionalJump[IF_ICMPNE] #AA -> #FN
+===#Block DM(size=3, flags=0)===
+   0. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) == 814282112)
+      goto KJ
+   1. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != 814282112)
+      goto EF
+   2. goto HT
+      -> UnconditionalJump[GOTO] #DM -> #HT
+      -> ConditionalJump[IF_ICMPEQ] #DM -> #KJ
+      -> ConditionalJump[IF_ICMPNE] #DM -> #EF
+      <- UnconditionalJump[GOTO] #JG -> #DM
+      <- Switch[2125569972] #JF -> #DM
+===#Block EF(size=13, flags=0)===
+   0. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != 814282112)
+      goto EF
+   1. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != {962256615 ^ lvar170})
+      goto EF
+   2. _consume({1178114800 ^ lvar170});
+   3. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != -1613770053)
+      goto EF
+   4. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != {1348215641 ^ lvar170})
+      goto EF
+   5. _consume({830943825 ^ lvar170});
+   6. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != 1736152219)
+      goto EF
+   7. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != {1032694979 ^ lvar170})
+      goto EF
+   8. _consume({2144503052 ^ lvar170});
+   9. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != 1613068338)
+      goto EF
+   10. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != {1112846663 ^ lvar170})
+      goto EF
+   11. _consume({1154669690 ^ lvar170});
+   12. throw new java/lang/RuntimeException("double");
+      -> ConditionalJump[IF_ICMPNE] #EF -> #EF
+      <- DefaultSwitch #JZ -> #EF
+      <- Switch[1602421405] #JZ -> #EF
+      <- ConditionalJump[IF_ICMPNE] #N -> #EF
+      <- ConditionalJump[IF_ICMPNE] #EF -> #EF
+      <- ConditionalJump[IF_ICMPNE] #DM -> #EF
+      <- ConditionalJump[IF_ICMPNE] #O -> #EF
+      <- ConditionalJump[IF_ICMPNE] #CR -> #EF
+===#Block KJ(size=2, flags=10100)===
+   0. lvar170 = {1816588448 ^ lvar170};
+   1. goto BF
+      -> UnconditionalJump[GOTO] #KJ -> #BF
+      <- ConditionalJump[IF_ICMPEQ] #DM -> #KJ
+===#Block BF(size=4, flags=0)===
+   0. // Frame: locals[0] [] stack[0] []
+   1. lvar14 = {1784147472 ^ lvar170};
+   2. return lvar14;
+   3. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != 1388277891)
+      goto DS
+      -> ConditionalJump[IF_ICMPNE] #BF -> #DS
+      <- UnconditionalJump[GOTO] #HU -> #BF
+      <- UnconditionalJump[GOTO] #KJ -> #BF
+      <- UnconditionalJump[GOTO] #IO -> #BF
+      <- Switch[69345875] #JD -> #BF
+      <- UnconditionalJump[GOTO] #GZ -> #BF
+      <- UnconditionalJump[GOTO] #IF -> #BF
+      <- UnconditionalJump[GOTO] #HF -> #BF
+      <- UnconditionalJump[GOTO] #IA -> #BF
+      <- UnconditionalJump[GOTO] #KV -> #BF
+      <- UnconditionalJump[GOTO] #HM -> #BF
+      <- Switch[810761625] #HA -> #BF
+      <- Switch[526699089] #HL -> #BF
+      <- UnconditionalJump[GOTO] #JE -> #BF
+      <- Switch[943053704] #IN -> #BF
+      <- Switch[496493640] #GH -> #BF
+      <- UnconditionalJump[GOTO] #IG -> #BF
+      <- UnconditionalJump[GOTO] #HB -> #BF
+      <- UnconditionalJump[GOTO] #HY -> #BF
+      <- Switch[352196823] #GY -> #BF
+      <- UnconditionalJump[GOTO] #GI -> #BF
+===#Block DS(size=7, flags=0)===
+   0. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != 1388277891)
+      goto DS
+   1. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != {1941012387 ^ lvar170})
+      goto DS
+   2. _consume({582714878 ^ lvar170});
+   3. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != -670718672)
+      goto DS
+   4. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != {1882639630 ^ lvar170})
+      goto DS
+   5. _consume({13841057 ^ lvar170});
+   6. throw new java/lang/IllegalAccessException("double");
+      -> ConditionalJump[IF_ICMPNE] #DS -> #DS
+      <- DefaultSwitch #HQ -> #DS
+      <- Switch[1314497003] #HQ -> #DS
+      <- ConditionalJump[IF_ICMPNE] #DS -> #DS
+      <- ConditionalJump[IF_ICMPNE] #F -> #DS
+      <- ConditionalJump[IF_ICMPNE] #BF -> #DS
+===#Block HT(size=2, flags=10100)===
+   0. lvar170 = aethereal.wr$a.qtabjbpdgqqpfcpu(lvar170, 189150927);
+   1. goto CX
+      -> UnconditionalJump[GOTO] #HT -> #CX
+      <- UnconditionalJump[GOTO] #DM -> #HT
+===#Block FJ(size=4, flags=0)===
+   0. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != -1946197712)
+      goto FJ
+   1. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != {965425450 ^ lvar170})
+      goto FJ
+   2. _consume({154066589 ^ lvar170});
+   3. throw new java/lang/IllegalAccessException("double");
+      -> ConditionalJump[IF_ICMPNE] #FJ -> #FJ
+      <- DefaultSwitch #GY -> #FJ
+      <- ConditionalJump[IF_ICMPNE] #Z -> #FJ
+      <- Switch[1826702453] #GY -> #FJ
+      <- ConditionalJump[IF_ICMPNE] #FJ -> #FJ
+===#Block DW(size=13, flags=0)===
+   0. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != -1928887453)
+      goto DW
+   1. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != {207904068 ^ lvar170})
+      goto DW
+   2. _consume({645385837 ^ lvar170});
+   3. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != -4483981)
+      goto DW
+   4. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != {1909932861 ^ lvar170})
+      goto DW
+   5. _consume({500065471 ^ lvar170});
+   6. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != -2087514270)
+      goto DW
+   7. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != {1666503848 ^ lvar170})
+      goto DW
+   8. _consume({1831763738 ^ lvar170});
+   9. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != -172439374)
+      goto DW
+   10. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != {2008417156 ^ lvar170})
+      goto DW
+   11. _consume({420536697 ^ lvar170});
+   12. throw new java/io/IOException("double");
+      -> ConditionalJump[IF_ICMPNE] #DW -> #DW
+      <- ConditionalJump[IF_ICMPNE] #BV -> #DW
+      <- ConditionalJump[IF_ICMPNE] #DW -> #DW
+      <- ConditionalJump[IF_ICMPNE] #Y -> #DW
+      <- ConditionalJump[IF_ICMPNE] #R -> #DW
+      <- ConditionalJump[IF_ICMPNE] #CK -> #DW
+      <- DefaultSwitch #HG -> #DW
+      <- Switch[842251298] #HG -> #DW
+===#Block CX(size=23, flags=0)===
+   0. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != -1788970142)
+      goto CX
+   1. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != {1679927822 ^ lvar170})
+      goto CX
+   2. _consume({1213665636 ^ lvar170});
+   3. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != -1748661661)
+      goto CX
+   4. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != {1117407000 ^ lvar170})
+      goto CX
+   5. _consume({967295872 ^ lvar170});
+   6. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != -647326437)
+      goto CX
+   7. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != {2105252767 ^ lvar170})
+      goto CX
+   8. _consume({2095058535 ^ lvar170});
+   9. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != 92764105)
+      goto CX
+   10. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != {812577047 ^ lvar170})
+      goto CX
+   11. _consume({1996040240 ^ lvar170});
+   12. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != -1496418269)
+      goto CX
+   13. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != {1931973209 ^ lvar170})
+      goto CX
+   14. _consume({1701355085 ^ lvar170});
+   15. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != 1781356410)
+      goto CX
+   16. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != {785106788 ^ lvar170})
+      goto CX
+   17. _consume({1459376233 ^ lvar170});
+   18. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != 217679842)
+      goto CX
+   19. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != {507716749 ^ lvar170})
+      goto CX
+   20. _consume({446979177 ^ lvar170});
+   21. throw new java/lang/RuntimeException();
+   22. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != 1790526456)
+      goto FO
+      -> ConditionalJump[IF_ICMPNE] #CX -> #FO
+      -> ConditionalJump[IF_ICMPNE] #CX -> #CX
+      <- Switch[1347106083] #GA -> #CX
+      <- UnconditionalJump[GOTO] #HP -> #CX
+      <- ConditionalJump[IF_ICMPNE] #DA -> #CX
+      <- UnconditionalJump[GOTO] #GB -> #CX
+      <- ConditionalJump[IF_ICMPNE] #CX -> #CX
+      <- ConditionalJump[IF_ICMPNE] #S -> #CX
+      <- UnconditionalJump[GOTO] #GQ -> #CX
+      <- ConditionalJump[IF_ICMPNE] #DD -> #CX
+      <- UnconditionalJump[GOTO] #ID -> #CX
+      <- Switch[1064040488] #HJ -> #CX
+      <- UnconditionalJump[GOTO] #II -> #CX
+      <- UnconditionalJump[GOTO] #HH -> #CX
+      <- ConditionalJump[IF_ICMPNE] #BE -> #CX
+      <- Switch[1187764722] #HO -> #CX
+      <- UnconditionalJump[GOTO] #GG -> #CX
+      <- UnconditionalJump[GOTO] #GP -> #CX
+      <- Switch[1439834620] #IB -> #CX
+      <- UnconditionalJump[GOTO] #GM -> #CX
+      <- Switch[164914524] #IH -> #CX
+      <- UnconditionalJump[GOTO] #GF -> #CX
+      <- ConditionalJump[IF_ICMPNE] #M -> #CX
+      <- UnconditionalJump[GOTO] #HD -> #CX
+      <- UnconditionalJump[GOTO] #IC -> #CX
+      <- Switch[1139597478] #HG -> #CX
+      <- UnconditionalJump[GOTO] #HX -> #CX
+      <- ConditionalJump[IF_ICMPNE] #W -> #CX
+      <- UnconditionalJump[GOTO] #HT -> #CX
+      <- UnconditionalJump[GOTO] #HV -> #CX
+      <- UnconditionalJump[GOTO] #HK -> #CX
+      <- UnconditionalJump[GOTO] #GR -> #CX
+      <- UnconditionalJump[GOTO] #HE -> #CX
+      <- UnconditionalJump[GOTO] #HI -> #CX
+      <- Switch[1887156509] #HW -> #CX
+      <- Switch[500448324] #GE -> #CX
+      <- UnconditionalJump[GOTO] #GO -> #CX
+      <- ConditionalJump[IF_ICMPNE] #AR -> #CX
+===#Block FO(size=4, flags=0)===
+   0. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != 1790526456)
+      goto FO
+   1. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != {1578450361 ^ lvar170})
+      goto FO
+   2. _consume({800347286 ^ lvar170});
+   3. throw new java/lang/RuntimeException("double");
+      -> ConditionalJump[IF_ICMPNE] #FO -> #FO
+      <- ConditionalJump[IF_ICMPNE] #CX -> #FO
+      <- DefaultSwitch #JP -> #FO
+      <- ConditionalJump[IF_ICMPNE] #FO -> #FO
+      <- Switch[966214130] #JP -> #FO
+===#Block DZ(size=10, flags=0)===
+   0. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != 410917392)
+      goto DZ
+   1. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != {380136176 ^ lvar170})
+      goto DZ
+   2. _consume({1559699894 ^ lvar170});
+   3. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != -1171080823)
+      goto DZ
+   4. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != {1341550201 ^ lvar170})
+      goto DZ
+   5. _consume({1724467554 ^ lvar170});
+   6. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != -783503048)
+      goto DZ
+   7. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != {1827650746 ^ lvar170})
+      goto DZ
+   8. _consume({245626746 ^ lvar170});
+   9. throw new java/lang/RuntimeException("double");
+      -> ConditionalJump[IF_ICMPNE] #DZ -> #DZ
+      <- ConditionalJump[IF_ICMPNE] #D -> #DZ
+      <- ConditionalJump[IF_ICMPNE] #B -> #DZ
+      <- ConditionalJump[IF_ICMPNE] #V -> #DZ
+      <- ConditionalJump[IF_ICMPNE] #DZ -> #DZ
+===#Block DT(size=16, flags=0)===
+   0. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != -833408430)
+      goto DT
+   1. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != {1493143636 ^ lvar170})
+      goto DT
+   2. _consume({1616252348 ^ lvar170});
+   3. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != 46471459)
+      goto DT
+   4. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != {2016432233 ^ lvar170})
+      goto DT
+   5. _consume({800709476 ^ lvar170});
+   6. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != 1459683832)
+      goto DT
+   7. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != {1090940427 ^ lvar170})
+      goto DT
+   8. _consume({1885611487 ^ lvar170});
+   9. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != -411646126)
+      goto DT
+   10. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != {1871530400 ^ lvar170})
+      goto DT
+   11. _consume({209451169 ^ lvar170});
+   12. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != -1287319861)
+      goto DT
+   13. if (scpnvsxrbavvwwey.cgsnmkutlmcawnbo.jpedqugchfqhlpkf(lvar170) != {743586116 ^ lvar170})
+      goto DT
+   14. _consume({1675527115 ^ lvar170});
+   15. throw new java/io/IOException("double");
+      -> ConditionalJump[IF_ICMPNE] #DT -> #DT
+      <- ConditionalJump[IF_ICMPNE] #AZ -> #DT
+      <- ConditionalJump[IF_ICMPNE] #A -> #DT
+      <- ConditionalJump[IF_ICMPNE] #E -> #DT
+      <- ConditionalJump[IF_ICMPNE] #CJ -> #DT
+      <- ConditionalJump[IF_ICMPNE] #DT -> #DT
+      <- ConditionalJump[IF_ICMPNE] #AP -> #DT

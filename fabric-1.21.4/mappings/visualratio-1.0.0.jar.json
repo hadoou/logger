@@ -1,0 +1,224 @@
+{
+  "md5": "b4aee0e53a36a43bd90febf3d90ad893",
+  "sha2": "72c85a1fcff956b18c368f4939d49a2fe045e47b",
+  "sha256": "fa97490bc8e73f9ae7bb26002a5a85ee1c1f8331fcfca325c7d84ee85e45dde8",
+  "contents": {
+    "classes": {
+      "ru/harimasa/visualratio/config/ModMenu.class": {
+        "ver": 65,
+        "acc": 33,
+        "nme": "ru/harimasa/visualratio/config/ModMenu",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "getModConfigScreenFactory",
+            "acc": 1,
+            "dsc": "()Lcom/terraformersmc/modmenu/api/ConfigScreenFactory;",
+            "sig": "()Lcom/terraformersmc/modmenu/api/ConfigScreenFactory<*>;"
+          }
+        ],
+        "flds": [],
+        "invanns": [
+          {
+            "dsc": "Lnet/fabricmc/api/Environment;",
+            "vals": [
+              "value",
+              [
+                "Lnet/fabricmc/api/EnvType;",
+                "CLIENT"
+              ]
+            ]
+          }
+        ]
+      },
+      "ru/harimasa/mixin/MixinGameRenderer.class": {
+        "ver": 65,
+        "acc": 1057,
+        "nme": "ru/harimasa/mixin/MixinGameRenderer",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "getBasicProjectionMatrixHook",
+            "acc": 1,
+            "dsc": "(FLorg/spongepowered/asm/mixin/injection/callback/CallbackInfoReturnable;)V",
+            "sig": "(FLorg/spongepowered/asm/mixin/injection/callback/CallbackInfoReturnable<Lorg/joml/Matrix4f;>;)V",
+            "vanns": [
+              {
+                "dsc": "Lorg/spongepowered/asm/mixin/injection/Inject;",
+                "vals": [
+                  "method",
+                  [
+                    "getBasicProjectionMatrix"
+                  ],
+                  "at",
+                  [
+                    {
+                      "desc": "Lorg/spongepowered/asm/mixin/injection/At;",
+                      "values": [
+                        "value",
+                        "TAIL"
+                      ],
+                      "api": 589824
+                    }
+                  ],
+                  "cancellable",
+                  true
+                ]
+              }
+            ]
+          }
+        ],
+        "flds": [
+          {
+            "acc": 2,
+            "nme": "field_4025",
+            "dsc": "F"
+          }
+        ],
+        "invanns": [
+          {
+            "dsc": "Lorg/spongepowered/asm/mixin/Mixin;",
+            "vals": [
+              "value",
+              [
+                {
+                  "itrlNme": "net/minecraft/class_757"
+                }
+              ]
+            ]
+          }
+        ]
+      },
+      "ru/harimasa/VisualRatio.class": {
+        "ver": 65,
+        "acc": 33,
+        "nme": "ru/harimasa/VisualRatio",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "onInitializeClient",
+            "acc": 1,
+            "dsc": "()V"
+          }
+        ],
+        "flds": []
+      },
+      "ru/harimasa/visualratio/config/ValueConfig.class": {
+        "ver": 65,
+        "acc": 33,
+        "nme": "ru/harimasa/visualratio/config/ValueConfig",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 1,
+            "nme": "enable",
+            "dsc": "Z"
+          },
+          {
+            "acc": 1,
+            "nme": "value",
+            "dsc": "F"
+          }
+        ]
+      },
+      "ru/harimasa/visualratio/config/ConfigScreen.class": {
+        "ver": 65,
+        "acc": 33,
+        "nme": "ru/harimasa/visualratio/config/ConfigScreen",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "configScreen",
+            "acc": 9,
+            "dsc": "(Lnet/minecraft/class_437;)Lnet/minecraft/class_437;"
+          },
+          {
+            "nme": "lambda$configScreen$7",
+            "acc": 4106,
+            "dsc": "(Lru/harimasa/visualratio/config/ValueConfig;Lru/harimasa/visualratio/config/ValueConfig;Ldev/isxander/yacl3/api/YetAnotherConfigLib$Builder;)Ldev/isxander/yacl3/api/YetAnotherConfigLib$Builder;"
+          },
+          {
+            "nme": "lambda$configScreen$6",
+            "acc": 4106,
+            "dsc": "(Ldev/isxander/yacl3/api/Option;)Ldev/isxander/yacl3/api/controller/ControllerBuilder;"
+          },
+          {
+            "nme": "lambda$configScreen$5",
+            "acc": 4106,
+            "dsc": "(Ljava/lang/Float;)Lnet/minecraft/class_2561;"
+          },
+          {
+            "nme": "lambda$configScreen$4",
+            "acc": 4106,
+            "dsc": "(Lru/harimasa/visualratio/config/ValueConfig;Ljava/lang/Float;)V"
+          },
+          {
+            "nme": "lambda$configScreen$3",
+            "acc": 4106,
+            "dsc": "(Lru/harimasa/visualratio/config/ValueConfig;)Ljava/lang/Float;"
+          },
+          {
+            "nme": "lambda$configScreen$2",
+            "acc": 4106,
+            "dsc": "(Lru/harimasa/visualratio/config/ValueConfig;Ljava/lang/Boolean;)V"
+          },
+          {
+            "nme": "lambda$configScreen$1",
+            "acc": 4106,
+            "dsc": "(Lru/harimasa/visualratio/config/ValueConfig;)Ljava/lang/Boolean;"
+          },
+          {
+            "nme": "lambda$static$0",
+            "acc": 4106,
+            "dsc": "(Ldev/isxander/yacl3/config/v2/api/ConfigClassHandler;)Ldev/isxander/yacl3/config/v2/api/ConfigSerializer;"
+          },
+          {
+            "nme": "<clinit>",
+            "acc": 8,
+            "dsc": "()V"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 25,
+            "nme": "FORMAT",
+            "dsc": "Ljava/text/DecimalFormat;"
+          },
+          {
+            "acc": 25,
+            "nme": "CONFIG",
+            "dsc": "Ldev/isxander/yacl3/config/v2/api/ConfigClassHandler;",
+            "sig": "Ldev/isxander/yacl3/config/v2/api/ConfigClassHandler<Lru/harimasa/visualratio/config/ValueConfig;>;"
+          }
+        ]
+      }
+    }
+  }
+}

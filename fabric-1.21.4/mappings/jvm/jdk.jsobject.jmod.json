@@ -1,0 +1,117 @@
+{
+  "md5": "b62671e4c6bb3088786892aa013a7d37",
+  "sha2": "52553e488573cdf65c94d1aa2b17338f1245ff08",
+  "sha256": "b9340b074c895a1048c4f8b3c3223c22be06b51f7c93b1fb1800da850f698b9d",
+  "contents": {
+    "classes": {
+      "classes/netscape/javascript/JSException.class": {
+        "ver": 65,
+        "acc": 33,
+        "nme": "netscape/javascript/JSException",
+        "super": "java/lang/RuntimeException",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "(Ljava/lang/String;)V"
+          },
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "(Ljava/lang/Throwable;)V"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 26,
+            "nme": "serialVersionUID",
+            "dsc": "J",
+            "val": 2778103758223661489
+          }
+        ]
+      },
+      "classes/module-info.class": {
+        "ver": 65,
+        "acc": 32768,
+        "nme": "module-info",
+        "mthds": [],
+        "flds": []
+      },
+      "classes/netscape/javascript/JSObject.class": {
+        "ver": 65,
+        "acc": 1057,
+        "nme": "netscape/javascript/JSObject",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 4,
+            "dsc": "()V"
+          },
+          {
+            "nme": "call",
+            "acc": 1153,
+            "dsc": "(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/Object;",
+            "exs": [
+              "netscape/javascript/JSException"
+            ]
+          },
+          {
+            "nme": "eval",
+            "acc": 1025,
+            "dsc": "(Ljava/lang/String;)Ljava/lang/Object;",
+            "exs": [
+              "netscape/javascript/JSException"
+            ]
+          },
+          {
+            "nme": "getMember",
+            "acc": 1025,
+            "dsc": "(Ljava/lang/String;)Ljava/lang/Object;",
+            "exs": [
+              "netscape/javascript/JSException"
+            ]
+          },
+          {
+            "nme": "setMember",
+            "acc": 1025,
+            "dsc": "(Ljava/lang/String;Ljava/lang/Object;)V",
+            "exs": [
+              "netscape/javascript/JSException"
+            ]
+          },
+          {
+            "nme": "removeMember",
+            "acc": 1025,
+            "dsc": "(Ljava/lang/String;)V",
+            "exs": [
+              "netscape/javascript/JSException"
+            ]
+          },
+          {
+            "nme": "getSlot",
+            "acc": 1025,
+            "dsc": "(I)Ljava/lang/Object;",
+            "exs": [
+              "netscape/javascript/JSException"
+            ]
+          },
+          {
+            "nme": "setSlot",
+            "acc": 1025,
+            "dsc": "(ILjava/lang/Object;)V",
+            "exs": [
+              "netscape/javascript/JSException"
+            ]
+          }
+        ],
+        "flds": []
+      }
+    }
+  }
+}

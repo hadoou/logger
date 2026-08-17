@@ -1,0 +1,3027 @@
+{
+  "md5": "d26448cfb903d54a99b3e3f7bd815147",
+  "sha2": "6b995312eda98e981a873a984ad05fe3ee51a8fa",
+  "sha256": "d309b239296f4791da48a040ae03abc285822baf2c60a07922e7eded79ce26ea",
+  "contents": {
+    "classes": {
+      "com/dannyandson/nutritionalbalance/effects/ModMobAffects$Nourished.class": {
+        "ver": 61,
+        "acc": 33,
+        "nme": "com/dannyandson/nutritionalbalance/effects/ModMobAffects$Nourished",
+        "super": "net/minecraft/world/effect/MobEffect",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "setAttributes",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "<clinit>",
+            "acc": 8,
+            "dsc": "()V"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 10,
+            "nme": "color",
+            "dsc": "I"
+          }
+        ]
+      },
+      "com/dannyandson/nutritionalbalance/Config.class": {
+        "ver": 61,
+        "acc": 33,
+        "nme": "com/dannyandson/nutritionalbalance/Config",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "onLoad",
+            "acc": 9,
+            "dsc": "(Lnet/minecraftforge/fml/event/config/ModConfigEvent$Loading;)V",
+            "vanns": [
+              {
+                "dsc": "Lnet/minecraftforge/eventbus/api/SubscribeEvent;"
+              }
+            ]
+          },
+          {
+            "nme": "onReload",
+            "acc": 9,
+            "dsc": "(Lnet/minecraftforge/fml/event/config/ModConfigEvent$Reloading;)V",
+            "vanns": [
+              {
+                "dsc": "Lnet/minecraftforge/eventbus/api/SubscribeEvent;"
+              }
+            ]
+          },
+          {
+            "nme": "<clinit>",
+            "acc": 8,
+            "dsc": "()V"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 9,
+            "nme": "SERVER_CONFIG",
+            "dsc": "Lnet/minecraftforge/common/ForgeConfigSpec;"
+          },
+          {
+            "acc": 9,
+            "nme": "CLIENT_CONFIG",
+            "dsc": "Lnet/minecraftforge/common/ForgeConfigSpec;"
+          },
+          {
+            "acc": 25,
+            "nme": "CATEGORY_GENERAL",
+            "dsc": "Ljava/lang/String;",
+            "val": "general"
+          },
+          {
+            "acc": 25,
+            "nme": "CATEGORY_NUTRIENT_LEVELS",
+            "dsc": "Ljava/lang/String;",
+            "val": "nutrient_levels"
+          },
+          {
+            "acc": 25,
+            "nme": "CATEGORY_EFFECTS",
+            "dsc": "Ljava/lang/String;",
+            "val": "nutrition_affects"
+          },
+          {
+            "acc": 25,
+            "nme": "CATEGORY_EFFECTS_NOURISHED",
+            "dsc": "Ljava/lang/String;",
+            "val": "nourished_affects"
+          },
+          {
+            "acc": 25,
+            "nme": "CATEGORY_EFFECTS_MALNOURISHED",
+            "dsc": "Ljava/lang/String;",
+            "val": "malnourished_affects"
+          },
+          {
+            "acc": 25,
+            "nme": "CATEGORY_EFFECTS_ENGORGED",
+            "dsc": "Ljava/lang/String;",
+            "val": "engorged_affects"
+          },
+          {
+            "acc": 25,
+            "nme": "CATEGORY_FOODS",
+            "dsc": "Ljava/lang/String;",
+            "val": "nutrient_foods"
+          },
+          {
+            "acc": 9,
+            "nme": "NUTRIENT_INITIAL",
+            "dsc": "Lnet/minecraftforge/common/ForgeConfigSpec$DoubleValue;"
+          },
+          {
+            "acc": 9,
+            "nme": "NUTRIENT_MALNOURISHED",
+            "dsc": "Lnet/minecraftforge/common/ForgeConfigSpec$DoubleValue;"
+          },
+          {
+            "acc": 9,
+            "nme": "NUTRIENT_LOW_TARGET",
+            "dsc": "Lnet/minecraftforge/common/ForgeConfigSpec$DoubleValue;"
+          },
+          {
+            "acc": 9,
+            "nme": "NUTRIENT_TARGET_HIGH",
+            "dsc": "Lnet/minecraftforge/common/ForgeConfigSpec$DoubleValue;"
+          },
+          {
+            "acc": 9,
+            "nme": "NUTRIENT_ENGORGED",
+            "dsc": "Lnet/minecraftforge/common/ForgeConfigSpec$DoubleValue;"
+          },
+          {
+            "acc": 9,
+            "nme": "NUTRIENT_MAX",
+            "dsc": "Lnet/minecraftforge/common/ForgeConfigSpec$DoubleValue;"
+          },
+          {
+            "acc": 9,
+            "nme": "NUTRIENT_INCREMENT_RATE",
+            "dsc": "Lnet/minecraftforge/common/ForgeConfigSpec$DoubleValue;"
+          },
+          {
+            "acc": 9,
+            "nme": "NUTRIENT_DECAY_RATE",
+            "dsc": "Lnet/minecraftforge/common/ForgeConfigSpec$DoubleValue;"
+          },
+          {
+            "acc": 9,
+            "nme": "NUTRIENT_DEATH_LOSS",
+            "dsc": "Lnet/minecraftforge/common/ForgeConfigSpec$DoubleValue;"
+          },
+          {
+            "acc": 9,
+            "nme": "NUTRIENT_MAX_FOOD_VALUE",
+            "dsc": "Lnet/minecraftforge/common/ForgeConfigSpec$DoubleValue;"
+          },
+          {
+            "acc": 9,
+            "nme": "BAD_NUTRIENTS",
+            "dsc": "Lnet/minecraftforge/common/ForgeConfigSpec$ConfigValue;",
+            "sig": "Lnet/minecraftforge/common/ForgeConfigSpec$ConfigValue<Ljava/util/List<Ljava/lang/String;>;>;"
+          },
+          {
+            "acc": 9,
+            "nme": "GOOD_NUTRIENTS",
+            "dsc": "Lnet/minecraftforge/common/ForgeConfigSpec$ConfigValue;",
+            "sig": "Lnet/minecraftforge/common/ForgeConfigSpec$ConfigValue<Ljava/util/List<Ljava/lang/String;>;>;"
+          },
+          {
+            "acc": 9,
+            "nme": "LIST_VEGETABLES",
+            "dsc": "Lnet/minecraftforge/common/ForgeConfigSpec$ConfigValue;",
+            "sig": "Lnet/minecraftforge/common/ForgeConfigSpec$ConfigValue<Ljava/util/List<Ljava/lang/String;>;>;"
+          },
+          {
+            "acc": 9,
+            "nme": "LIST_SUGARS",
+            "dsc": "Lnet/minecraftforge/common/ForgeConfigSpec$ConfigValue;",
+            "sig": "Lnet/minecraftforge/common/ForgeConfigSpec$ConfigValue<Ljava/util/List<Ljava/lang/String;>;>;"
+          },
+          {
+            "acc": 9,
+            "nme": "LIST_CARBS",
+            "dsc": "Lnet/minecraftforge/common/ForgeConfigSpec$ConfigValue;",
+            "sig": "Lnet/minecraftforge/common/ForgeConfigSpec$ConfigValue<Ljava/util/List<Ljava/lang/String;>;>;"
+          },
+          {
+            "acc": 9,
+            "nme": "LIST_PROTEINS",
+            "dsc": "Lnet/minecraftforge/common/ForgeConfigSpec$ConfigValue;",
+            "sig": "Lnet/minecraftforge/common/ForgeConfigSpec$ConfigValue<Ljava/util/List<Ljava/lang/String;>;>;"
+          },
+          {
+            "acc": 9,
+            "nme": "LIST_Fruits",
+            "dsc": "Lnet/minecraftforge/common/ForgeConfigSpec$ConfigValue;",
+            "sig": "Lnet/minecraftforge/common/ForgeConfigSpec$ConfigValue<Ljava/util/List<Ljava/lang/String;>;>;"
+          },
+          {
+            "acc": 9,
+            "nme": "NUTRIENT_BUTTON_X",
+            "dsc": "Lnet/minecraftforge/common/ForgeConfigSpec$IntValue;"
+          },
+          {
+            "acc": 9,
+            "nme": "NUTRIENT_BUTTON_Y",
+            "dsc": "Lnet/minecraftforge/common/ForgeConfigSpec$IntValue;"
+          },
+          {
+            "acc": 9,
+            "nme": "NUTRIENT_BUTTON_ENABLED",
+            "dsc": "Lnet/minecraftforge/common/ForgeConfigSpec$BooleanValue;"
+          },
+          {
+            "acc": 9,
+            "nme": "SHOW_THRESHOLD_TOAST",
+            "dsc": "Lnet/minecraftforge/common/ForgeConfigSpec$BooleanValue;"
+          },
+          {
+            "acc": 9,
+            "nme": "NOURISHED_MAX_HEALTH",
+            "dsc": "Lnet/minecraftforge/common/ForgeConfigSpec$DoubleValue;"
+          },
+          {
+            "acc": 9,
+            "nme": "NOURISHED_KNOCKBACK_RESISTANCE",
+            "dsc": "Lnet/minecraftforge/common/ForgeConfigSpec$DoubleValue;"
+          },
+          {
+            "acc": 9,
+            "nme": "NOURISHED_MOVEMENT_SPEED",
+            "dsc": "Lnet/minecraftforge/common/ForgeConfigSpec$DoubleValue;"
+          },
+          {
+            "acc": 9,
+            "nme": "NOURISHED_ATTACK_DAMAGE",
+            "dsc": "Lnet/minecraftforge/common/ForgeConfigSpec$DoubleValue;"
+          },
+          {
+            "acc": 9,
+            "nme": "NOURISHED_ATTACK_KNOCKBACK",
+            "dsc": "Lnet/minecraftforge/common/ForgeConfigSpec$DoubleValue;"
+          },
+          {
+            "acc": 9,
+            "nme": "NOURISHED_ATTACK_SPEED",
+            "dsc": "Lnet/minecraftforge/common/ForgeConfigSpec$DoubleValue;"
+          },
+          {
+            "acc": 9,
+            "nme": "MALNOURISHED_MAX_HEALTH",
+            "dsc": "Lnet/minecraftforge/common/ForgeConfigSpec$DoubleValue;"
+          },
+          {
+            "acc": 9,
+            "nme": "MALNOURISHED_KNOCKBACK_RESISTANCE",
+            "dsc": "Lnet/minecraftforge/common/ForgeConfigSpec$DoubleValue;"
+          },
+          {
+            "acc": 9,
+            "nme": "MALNOURISHED_MOVEMENT_SPEED",
+            "dsc": "Lnet/minecraftforge/common/ForgeConfigSpec$DoubleValue;"
+          },
+          {
+            "acc": 9,
+            "nme": "MALNOURISHED_ATTACK_DAMAGE",
+            "dsc": "Lnet/minecraftforge/common/ForgeConfigSpec$DoubleValue;"
+          },
+          {
+            "acc": 9,
+            "nme": "MALNOURISHED_ATTACK_KNOCKBACK",
+            "dsc": "Lnet/minecraftforge/common/ForgeConfigSpec$DoubleValue;"
+          },
+          {
+            "acc": 9,
+            "nme": "MALNOURISHED_ATTACK_SPEED",
+            "dsc": "Lnet/minecraftforge/common/ForgeConfigSpec$DoubleValue;"
+          },
+          {
+            "acc": 9,
+            "nme": "ENGORGED_MAX_HEALTH",
+            "dsc": "Lnet/minecraftforge/common/ForgeConfigSpec$DoubleValue;"
+          },
+          {
+            "acc": 9,
+            "nme": "ENGORGED_KNOCKBACK_RESISTANCE",
+            "dsc": "Lnet/minecraftforge/common/ForgeConfigSpec$DoubleValue;"
+          },
+          {
+            "acc": 9,
+            "nme": "ENGORGED_MOVEMENT_SPEED",
+            "dsc": "Lnet/minecraftforge/common/ForgeConfigSpec$DoubleValue;"
+          },
+          {
+            "acc": 9,
+            "nme": "ENGORGED_ATTACK_DAMAGE",
+            "dsc": "Lnet/minecraftforge/common/ForgeConfigSpec$DoubleValue;"
+          },
+          {
+            "acc": 9,
+            "nme": "ENGORGED_ATTACK_KNOCKBACK",
+            "dsc": "Lnet/minecraftforge/common/ForgeConfigSpec$DoubleValue;"
+          },
+          {
+            "acc": 9,
+            "nme": "ENGORGED_ATTACK_SPEED",
+            "dsc": "Lnet/minecraftforge/common/ForgeConfigSpec$DoubleValue;"
+          },
+          {
+            "acc": 9,
+            "nme": "LUNCHBOX_SLOT_COUNT",
+            "dsc": "Lnet/minecraftforge/common/ForgeConfigSpec$IntValue;"
+          }
+        ],
+        "vanns": [
+          {
+            "dsc": "Lnet/minecraftforge/fml/common/Mod$EventBusSubscriber;"
+          }
+        ]
+      },
+      "com/dannyandson/nutritionalbalance/commands/CommandSetNutrient$NutrientStringArgumentType$1.class": {
+        "ver": 61,
+        "acc": 32,
+        "nme": "com/dannyandson/nutritionalbalance/commands/CommandSetNutrient$NutrientStringArgumentType$1",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 0,
+            "dsc": "(Lcom/dannyandson/nutritionalbalance/commands/CommandSetNutrient$NutrientStringArgumentType;)V"
+          },
+          {
+            "nme": "getString",
+            "acc": 1,
+            "dsc": "()Ljava/lang/String;"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 4112,
+            "nme": "this$0",
+            "dsc": "Lcom/dannyandson/nutritionalbalance/commands/CommandSetNutrient$NutrientStringArgumentType;"
+          }
+        ]
+      },
+      "com/dannyandson/nutritionalbalance/commands/CommandSyncClient.class": {
+        "ver": 61,
+        "acc": 33,
+        "nme": "com/dannyandson/nutritionalbalance/commands/CommandSyncClient",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "run",
+            "acc": 1,
+            "dsc": "(Lcom/mojang/brigadier/context/CommandContext;)I",
+            "sig": "(Lcom/mojang/brigadier/context/CommandContext<Lnet/minecraft/commands/CommandSourceStack;>;)I",
+            "exs": [
+              "com/mojang/brigadier/exceptions/CommandSyntaxException"
+            ]
+          },
+          {
+            "nme": "register",
+            "acc": 9,
+            "dsc": "(Lcom/mojang/brigadier/CommandDispatcher;)Lcom/mojang/brigadier/builder/ArgumentBuilder;",
+            "sig": "(Lcom/mojang/brigadier/CommandDispatcher<Lnet/minecraft/commands/CommandSourceStack;>;)Lcom/mojang/brigadier/builder/ArgumentBuilder<Lnet/minecraft/commands/CommandSourceStack;*>;"
+          },
+          {
+            "nme": "lambda$register$0",
+            "acc": 4106,
+            "dsc": "(Lnet/minecraft/commands/CommandSourceStack;)Z"
+          },
+          {
+            "nme": "<clinit>",
+            "acc": 8,
+            "dsc": "()V"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 26,
+            "nme": "CMD",
+            "dsc": "Lcom/dannyandson/nutritionalbalance/commands/CommandSyncClient;"
+          }
+        ]
+      },
+      "com/dannyandson/nutritionalbalance/nutrients/PlayerNutritionData.class": {
+        "ver": 61,
+        "acc": 33,
+        "nme": "com/dannyandson/nutritionalbalance/nutrients/PlayerNutritionData",
+        "super": "net/minecraft/world/level/saveddata/SavedData",
+        "mthds": [
+          {
+            "nme": "init",
+            "acc": 9,
+            "dsc": "(Lnet/minecraft/server/level/ServerLevel;)V"
+          },
+          {
+            "nme": "getWorldNutritionData",
+            "acc": 9,
+            "dsc": "()Lcom/dannyandson/nutritionalbalance/nutrients/PlayerNutritionData;"
+          },
+          {
+            "nme": "<init>",
+            "acc": 0,
+            "dsc": "()V"
+          },
+          {
+            "nme": "<init>",
+            "acc": 0,
+            "dsc": "(Lnet/minecraft/nbt/CompoundTag;)V"
+          },
+          {
+            "nme": "m_7176_",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/nbt/CompoundTag;)Lnet/minecraft/nbt/CompoundTag;"
+          },
+          {
+            "nme": "getNutritionalBalancePlayer",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/world/entity/player/Player;)Lcom/dannyandson/nutritionalbalance/api/INutritionalBalancePlayer;"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 10,
+            "nme": "worldNutritionData",
+            "dsc": "Lcom/dannyandson/nutritionalbalance/nutrients/PlayerNutritionData;"
+          },
+          {
+            "acc": 0,
+            "nme": "playerUUIDDataMap",
+            "dsc": "Ljava/util/Map;",
+            "sig": "Ljava/util/Map<Ljava/lang/String;Lcom/dannyandson/nutritionalbalance/api/INutritionalBalancePlayer;>;"
+          }
+        ]
+      },
+      "com/dannyandson/nutritionalbalance/nutrients/WorldNutrients.class": {
+        "ver": 61,
+        "acc": 33,
+        "nme": "com/dannyandson/nutritionalbalance/nutrients/WorldNutrients",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "register",
+            "acc": 9,
+            "dsc": "()V"
+          },
+          {
+            "nme": "get",
+            "acc": 9,
+            "dsc": "()Ljava/util/List;",
+            "sig": "()Ljava/util/List<Lcom/dannyandson/nutritionalbalance/nutrients/Nutrient;>;"
+          },
+          {
+            "nme": "getByName",
+            "acc": 9,
+            "dsc": "(Ljava/lang/String;)Lcom/dannyandson/nutritionalbalance/nutrients/Nutrient;"
+          },
+          {
+            "nme": "getNutrients",
+            "acc": 9,
+            "dsc": "(Lnet/minecraft/world/item/Item;Lnet/minecraft/world/level/Level;)Ljava/util/List;",
+            "sig": "(Lnet/minecraft/world/item/Item;Lnet/minecraft/world/level/Level;)Ljava/util/List<Lcom/dannyandson/nutritionalbalance/nutrients/Nutrient;>;"
+          },
+          {
+            "nme": "getNutrients",
+            "acc": 9,
+            "dsc": "(Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/level/Level;)Ljava/util/List;",
+            "sig": "(Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/level/Level;)Ljava/util/List<Lcom/dannyandson/nutritionalbalance/nutrients/Nutrient;>;"
+          },
+          {
+            "nme": "getNutrients",
+            "acc": 10,
+            "dsc": "(Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/level/Level;I)Ljava/util/List;",
+            "sig": "(Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/level/Level;I)Ljava/util/List<Lcom/dannyandson/nutritionalbalance/nutrients/Nutrient;>;"
+          },
+          {
+            "nme": "getEffectiveFoodQuality",
+            "acc": 9,
+            "dsc": "(Lnet/minecraft/world/food/FoodProperties;I)F"
+          },
+          {
+            "nme": "getEffectiveFoodQuality",
+            "acc": 9,
+            "dsc": "(FFI)F"
+          },
+          {
+            "nme": "setItemNutrients",
+            "acc": 9,
+            "dsc": "(Lnet/minecraft/world/item/Item;Ljava/util/List;)V",
+            "sig": "(Lnet/minecraft/world/item/Item;Ljava/util/List<Lcom/dannyandson/nutritionalbalance/nutrients/Nutrient;>;)V"
+          },
+          {
+            "nme": "reset",
+            "acc": 9,
+            "dsc": "()V"
+          },
+          {
+            "nme": "lambda$getNutrients$2",
+            "acc": 4106,
+            "dsc": "(Lnet/minecraft/world/item/crafting/Recipe;Lnet/minecraft/world/item/crafting/Recipe;)I"
+          },
+          {
+            "nme": "lambda$getNutrients$1",
+            "acc": 4106,
+            "dsc": "(Lnet/minecraft/tags/TagKey;Lnet/minecraft/tags/TagKey;)I"
+          },
+          {
+            "nme": "lambda$register$0",
+            "acc": 4106,
+            "dsc": "(Lnet/minecraft/tags/TagKey;Lnet/minecraft/tags/TagKey;)I"
+          },
+          {
+            "nme": "<clinit>",
+            "acc": 8,
+            "dsc": "()V"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 26,
+            "nme": "nutrients",
+            "dsc": "Ljava/util/List;",
+            "sig": "Ljava/util/List<Lcom/dannyandson/nutritionalbalance/nutrients/Nutrient;>;"
+          },
+          {
+            "acc": 26,
+            "nme": "nutrientMap",
+            "dsc": "Ljava/util/Map;",
+            "sig": "Ljava/util/Map<Lnet/minecraft/world/item/Item;Ljava/util/List<Lcom/dannyandson/nutritionalbalance/nutrients/Nutrient;>;>;"
+          }
+        ]
+      },
+      "com/dannyandson/nutritionalbalance/commands/CommandGetNutrients.class": {
+        "ver": 61,
+        "acc": 33,
+        "nme": "com/dannyandson/nutritionalbalance/commands/CommandGetNutrients",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "run",
+            "acc": 1,
+            "dsc": "(Lcom/mojang/brigadier/context/CommandContext;)I",
+            "sig": "(Lcom/mojang/brigadier/context/CommandContext<Lnet/minecraft/commands/CommandSourceStack;>;)I"
+          },
+          {
+            "nme": "register",
+            "acc": 9,
+            "dsc": "(Lcom/mojang/brigadier/CommandDispatcher;)Lcom/mojang/brigadier/builder/ArgumentBuilder;",
+            "sig": "(Lcom/mojang/brigadier/CommandDispatcher<Lnet/minecraft/commands/CommandSourceStack;>;)Lcom/mojang/brigadier/builder/ArgumentBuilder<Lnet/minecraft/commands/CommandSourceStack;*>;"
+          },
+          {
+            "nme": "lambda$register$1",
+            "acc": 4106,
+            "dsc": "(Lnet/minecraft/commands/CommandSourceStack;)Z"
+          },
+          {
+            "nme": "lambda$run$0",
+            "acc": 4106,
+            "dsc": "(Ljava/util/StringJoiner;)Lnet/minecraft/network/chat/Component;"
+          },
+          {
+            "nme": "<clinit>",
+            "acc": 8,
+            "dsc": "()V"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 26,
+            "nme": "CMD",
+            "dsc": "Lcom/dannyandson/nutritionalbalance/commands/CommandGetNutrients;"
+          }
+        ]
+      },
+      "com/dannyandson/nutritionalbalance/network/NutrientDataSync.class": {
+        "ver": 61,
+        "acc": 33,
+        "nme": "com/dannyandson/nutritionalbalance/network/NutrientDataSync",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/world/item/Item;Ljava/util/List;)V",
+            "sig": "(Lnet/minecraft/world/item/Item;Ljava/util/List<Lcom/dannyandson/nutritionalbalance/nutrients/Nutrient;>;)V"
+          },
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/network/FriendlyByteBuf;)V"
+          },
+          {
+            "nme": "toBytes",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/network/FriendlyByteBuf;)V"
+          },
+          {
+            "nme": "handle",
+            "acc": 1,
+            "dsc": "(Ljava/util/function/Supplier;)Z",
+            "sig": "(Ljava/util/function/Supplier<Lnet/minecraftforge/network/NetworkEvent$Context;>;)Z"
+          },
+          {
+            "nme": "lambda$handle$0",
+            "acc": 4098,
+            "dsc": "(Ljava/util/function/Supplier;)V"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 2,
+            "nme": "item",
+            "dsc": "Lnet/minecraft/world/item/Item;"
+          },
+          {
+            "acc": 2,
+            "nme": "nutrients",
+            "dsc": "Ljava/util/List;",
+            "sig": "Ljava/util/List<Lcom/dannyandson/nutritionalbalance/nutrients/Nutrient;>;"
+          }
+        ]
+      },
+      "com/dannyandson/nutritionalbalance/lunchbox/LunchBoxItem$1.class": {
+        "ver": 61,
+        "acc": 32,
+        "nme": "com/dannyandson/nutritionalbalance/lunchbox/LunchBoxItem$1",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 0,
+            "dsc": "(Lcom/dannyandson/nutritionalbalance/lunchbox/LunchBoxItem;)V"
+          },
+          {
+            "nme": "getCustomRenderer",
+            "acc": 1,
+            "dsc": "()Lnet/minecraft/client/renderer/BlockEntityWithoutLevelRenderer;"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 4112,
+            "nme": "this$0",
+            "dsc": "Lcom/dannyandson/nutritionalbalance/lunchbox/LunchBoxItem;"
+          }
+        ]
+      },
+      "com/dannyandson/nutritionalbalance/gui/ModWidget.class": {
+        "ver": 61,
+        "acc": 33,
+        "nme": "com/dannyandson/nutritionalbalance/gui/ModWidget",
+        "super": "net/minecraft/client/gui/components/AbstractWidget",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "(IIIILnet/minecraft/network/chat/Component;II)V"
+          },
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "(IIIILnet/minecraft/network/chat/Component;I)V"
+          },
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "(IIIILnet/minecraft/network/chat/Component;)V"
+          },
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "(IIIII)V"
+          },
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "(IIIILnet/minecraft/resources/ResourceLocation;)V"
+          },
+          {
+            "nme": "setTextHAlignment",
+            "acc": 1,
+            "dsc": "(Lcom/dannyandson/nutritionalbalance/gui/ModWidget$HAlignment;)Lcom/dannyandson/nutritionalbalance/gui/ModWidget;"
+          },
+          {
+            "nme": "setTextVAlignment",
+            "acc": 1,
+            "dsc": "(Lcom/dannyandson/nutritionalbalance/gui/ModWidget$VAlignment;)Lcom/dannyandson/nutritionalbalance/gui/ModWidget;"
+          },
+          {
+            "nme": "setToolTip",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/network/chat/Component;)Lcom/dannyandson/nutritionalbalance/gui/ModWidget;"
+          },
+          {
+            "nme": "m_93680_",
+            "acc": 4,
+            "dsc": "(DD)Z"
+          },
+          {
+            "nme": "m_87963_",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/client/gui/GuiGraphics;IIF)V"
+          },
+          {
+            "nme": "renderHoverToolTip",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/client/gui/GuiGraphics;II)V"
+          },
+          {
+            "nme": "m_168797_",
+            "acc": 4,
+            "dsc": "(Lnet/minecraft/client/gui/narration/NarrationElementOutput;)V"
+          },
+          {
+            "nme": "buildButton",
+            "acc": 9,
+            "dsc": "(Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Integer;Lnet/minecraft/network/chat/Component;Lnet/minecraft/client/gui/components/Button$OnPress;)Lnet/minecraft/client/gui/components/Button;"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 2,
+            "nme": "halignment",
+            "dsc": "Lcom/dannyandson/nutritionalbalance/gui/ModWidget$HAlignment;"
+          },
+          {
+            "acc": 2,
+            "nme": "valignment",
+            "dsc": "Lcom/dannyandson/nutritionalbalance/gui/ModWidget$VAlignment;"
+          },
+          {
+            "acc": 2,
+            "nme": "scale",
+            "dsc": "F"
+          },
+          {
+            "acc": 2,
+            "nme": "color",
+            "dsc": "I"
+          },
+          {
+            "acc": 2,
+            "nme": "bgcolor",
+            "dsc": "I"
+          },
+          {
+            "acc": 2,
+            "nme": "textWidth",
+            "dsc": "I"
+          },
+          {
+            "acc": 2,
+            "nme": "textHeight",
+            "dsc": "I"
+          },
+          {
+            "acc": 2,
+            "nme": "toolTipTextComponent",
+            "dsc": "Lnet/minecraft/network/chat/Component;"
+          },
+          {
+            "acc": 2,
+            "nme": "texture",
+            "dsc": "Lnet/minecraft/resources/ResourceLocation;"
+          }
+        ]
+      },
+      "com/dannyandson/nutritionalbalance/commands/CommandSetNutrient$NutrientStringArgumentType$Serializer.class": {
+        "ver": 61,
+        "acc": 33,
+        "nme": "com/dannyandson/nutritionalbalance/commands/CommandSetNutrient$NutrientStringArgumentType$Serializer",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "serializeToNetwork",
+            "acc": 1,
+            "dsc": "(Lcom/dannyandson/nutritionalbalance/commands/CommandSetNutrient$NutrientStringArgumentType$Serializer$Template;Lnet/minecraft/network/FriendlyByteBuf;)V"
+          },
+          {
+            "nme": "serializeToJson",
+            "acc": 1,
+            "dsc": "(Lcom/dannyandson/nutritionalbalance/commands/CommandSetNutrient$NutrientStringArgumentType$Serializer$Template;Lcom/google/gson/JsonObject;)V"
+          },
+          {
+            "nme": "unpack",
+            "acc": 1,
+            "dsc": "(Lcom/dannyandson/nutritionalbalance/commands/CommandSetNutrient$NutrientStringArgumentType;)Lcom/dannyandson/nutritionalbalance/commands/CommandSetNutrient$NutrientStringArgumentType$Serializer$Template;"
+          },
+          {
+            "nme": "deserializeFromNetwork",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/network/FriendlyByteBuf;)Lcom/dannyandson/nutritionalbalance/commands/CommandSetNutrient$NutrientStringArgumentType$Serializer$Template;"
+          },
+          {
+            "nme": "m_214163_",
+            "acc": 4161,
+            "dsc": "(Lcom/mojang/brigadier/arguments/ArgumentType;)Lnet/minecraft/commands/synchronization/ArgumentTypeInfo$Template;"
+          },
+          {
+            "nme": "m_213719_",
+            "acc": 4161,
+            "dsc": "(Lnet/minecraft/commands/synchronization/ArgumentTypeInfo$Template;Lcom/google/gson/JsonObject;)V"
+          },
+          {
+            "nme": "m_213618_",
+            "acc": 4161,
+            "dsc": "(Lnet/minecraft/network/FriendlyByteBuf;)Lnet/minecraft/commands/synchronization/ArgumentTypeInfo$Template;"
+          },
+          {
+            "nme": "m_214155_",
+            "acc": 4161,
+            "dsc": "(Lnet/minecraft/commands/synchronization/ArgumentTypeInfo$Template;Lnet/minecraft/network/FriendlyByteBuf;)V"
+          }
+        ],
+        "flds": []
+      },
+      "com/dannyandson/nutritionalbalance/commands/CommandSetNutrient$NutrientStringArgumentType.class": {
+        "ver": 61,
+        "acc": 33,
+        "nme": "com/dannyandson/nutritionalbalance/commands/CommandSetNutrient$NutrientStringArgumentType",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "parse",
+            "acc": 1,
+            "dsc": "(Lcom/mojang/brigadier/StringReader;)Ljava/lang/String;",
+            "exs": [
+              "com/mojang/brigadier/exceptions/CommandSyntaxException"
+            ]
+          },
+          {
+            "nme": "listSuggestions",
+            "acc": 1,
+            "dsc": "(Lcom/mojang/brigadier/context/CommandContext;Lcom/mojang/brigadier/suggestion/SuggestionsBuilder;)Ljava/util/concurrent/CompletableFuture;",
+            "sig": "<S:Ljava/lang/Object;>(Lcom/mojang/brigadier/context/CommandContext<TS;>;Lcom/mojang/brigadier/suggestion/SuggestionsBuilder;)Ljava/util/concurrent/CompletableFuture<Lcom/mojang/brigadier/suggestion/Suggestions;>;"
+          },
+          {
+            "nme": "getExamples",
+            "acc": 1,
+            "dsc": "()Ljava/util/Collection;",
+            "sig": "()Ljava/util/Collection<Ljava/lang/String;>;"
+          },
+          {
+            "nme": "getNutrientList",
+            "acc": 2,
+            "dsc": "()Ljava/util/List;",
+            "sig": "()Ljava/util/List<Ljava/lang/String;>;"
+          },
+          {
+            "nme": "setNutrientList",
+            "acc": 2,
+            "dsc": "(Ljava/util/List;)V",
+            "sig": "(Ljava/util/List<Ljava/lang/String;>;)V"
+          },
+          {
+            "nme": "parse",
+            "acc": 4161,
+            "dsc": "(Lcom/mojang/brigadier/StringReader;)Ljava/lang/Object;",
+            "exs": [
+              "com/mojang/brigadier/exceptions/CommandSyntaxException"
+            ]
+          }
+        ],
+        "flds": [
+          {
+            "acc": 2,
+            "nme": "nutrientList",
+            "dsc": "Ljava/util/List;",
+            "sig": "Ljava/util/List<Ljava/lang/String;>;"
+          }
+        ]
+      },
+      "com/dannyandson/nutritionalbalance/events/EventRightClickBlock.class": {
+        "ver": 61,
+        "acc": 33,
+        "nme": "com/dannyandson/nutritionalbalance/events/EventRightClickBlock",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "rightClickBlock",
+            "acc": 1,
+            "dsc": "(Lnet/minecraftforge/event/entity/player/PlayerInteractEvent$RightClickBlock;)V",
+            "vanns": [
+              {
+                "dsc": "Lnet/minecraftforge/eventbus/api/SubscribeEvent;"
+              }
+            ]
+          }
+        ],
+        "flds": []
+      },
+      "com/dannyandson/nutritionalbalance/network/GUITrigger.class": {
+        "ver": 61,
+        "acc": 33,
+        "nme": "com/dannyandson/nutritionalbalance/network/GUITrigger",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/network/FriendlyByteBuf;)V"
+          },
+          {
+            "nme": "toBytes",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/network/FriendlyByteBuf;)V"
+          },
+          {
+            "nme": "handle",
+            "acc": 1,
+            "dsc": "(Ljava/util/function/Supplier;)Z",
+            "sig": "(Ljava/util/function/Supplier<Lnet/minecraftforge/network/NetworkEvent$Context;>;)Z"
+          },
+          {
+            "nme": "lambda$handle$0",
+            "acc": 4106,
+            "dsc": "(Ljava/util/function/Supplier;)V"
+          }
+        ],
+        "flds": []
+      },
+      "com/dannyandson/nutritionalbalance/keybinding/ModKeyBindings.class": {
+        "ver": 61,
+        "acc": 33,
+        "nme": "com/dannyandson/nutritionalbalance/keybinding/ModKeyBindings",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "register",
+            "acc": 9,
+            "dsc": "(Lnet/minecraftforge/client/event/RegisterKeyMappingsEvent;)V",
+            "vanns": [
+              {
+                "dsc": "Lnet/minecraftforge/eventbus/api/SubscribeEvent;"
+              }
+            ]
+          },
+          {
+            "nme": "<clinit>",
+            "acc": 8,
+            "dsc": "()V"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 9,
+            "nme": "keyBindings",
+            "dsc": "Ljava/util/Map;",
+            "sig": "Ljava/util/Map<Ljava/lang/String;Lnet/minecraft/client/KeyMapping;>;"
+          }
+        ],
+        "vanns": [
+          {
+            "dsc": "Lnet/minecraftforge/fml/common/Mod$EventBusSubscriber;",
+            "vals": [
+              "value",
+              [
+                [
+                  "Lnet/minecraftforge/api/distmarker/Dist;",
+                  "CLIENT"
+                ]
+              ],
+              "modid",
+              "nutritionalbalance",
+              "bus",
+              [
+                "Lnet/minecraftforge/fml/common/Mod$EventBusSubscriber$Bus;",
+                "MOD"
+              ]
+            ]
+          }
+        ]
+      },
+      "com/dannyandson/nutritionalbalance/setup/Registration.class": {
+        "ver": 61,
+        "acc": 33,
+        "nme": "com/dannyandson/nutritionalbalance/setup/Registration",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "register",
+            "acc": 9,
+            "dsc": "()V"
+          },
+          {
+            "nme": "lambda$static$1",
+            "acc": 4106,
+            "dsc": "()Lcom/dannyandson/nutritionalbalance/commands/CommandSetNutrient$NutrientStringArgumentType$Serializer;"
+          },
+          {
+            "nme": "lambda$static$0",
+            "acc": 4106,
+            "dsc": "()Lnet/minecraft/world/inventory/MenuType;"
+          },
+          {
+            "nme": "<clinit>",
+            "acc": 8,
+            "dsc": "()V"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 25,
+            "nme": "EFFECTS",
+            "dsc": "Lnet/minecraftforge/registries/DeferredRegister;",
+            "sig": "Lnet/minecraftforge/registries/DeferredRegister<Lnet/minecraft/world/effect/MobEffect;>;"
+          },
+          {
+            "acc": 25,
+            "nme": "ENGORGED_EFFECT",
+            "dsc": "Lnet/minecraftforge/registries/RegistryObject;",
+            "sig": "Lnet/minecraftforge/registries/RegistryObject<Lcom/dannyandson/nutritionalbalance/effects/ModMobAffects$Engorged;>;"
+          },
+          {
+            "acc": 25,
+            "nme": "MALNOURISHED_EFFECT",
+            "dsc": "Lnet/minecraftforge/registries/RegistryObject;",
+            "sig": "Lnet/minecraftforge/registries/RegistryObject<Lcom/dannyandson/nutritionalbalance/effects/ModMobAffects$MalNourished;>;"
+          },
+          {
+            "acc": 25,
+            "nme": "NOURISHED_EFFECT",
+            "dsc": "Lnet/minecraftforge/registries/RegistryObject;",
+            "sig": "Lnet/minecraftforge/registries/RegistryObject<Lcom/dannyandson/nutritionalbalance/effects/ModMobAffects$Nourished;>;"
+          },
+          {
+            "acc": 25,
+            "nme": "MENU_TYPES",
+            "dsc": "Lnet/minecraftforge/registries/DeferredRegister;",
+            "sig": "Lnet/minecraftforge/registries/DeferredRegister<Lnet/minecraft/world/inventory/MenuType<*>;>;"
+          },
+          {
+            "acc": 25,
+            "nme": "LUNCHBOX_MENU_TYPE",
+            "dsc": "Lnet/minecraftforge/registries/RegistryObject;",
+            "sig": "Lnet/minecraftforge/registries/RegistryObject<Lnet/minecraft/world/inventory/MenuType<Lcom/dannyandson/nutritionalbalance/lunchbox/LunchBoxMenu;>;>;"
+          },
+          {
+            "acc": 25,
+            "nme": "ITEMS",
+            "dsc": "Lnet/minecraftforge/registries/DeferredRegister;",
+            "sig": "Lnet/minecraftforge/registries/DeferredRegister<Lnet/minecraft/world/item/Item;>;"
+          },
+          {
+            "acc": 25,
+            "nme": "LUNCHBOX_ITEM",
+            "dsc": "Lnet/minecraftforge/registries/RegistryObject;",
+            "sig": "Lnet/minecraftforge/registries/RegistryObject<Lnet/minecraft/world/item/Item;>;"
+          },
+          {
+            "acc": 25,
+            "nme": "COMMAND_ARGUMENT_TYPES",
+            "dsc": "Lnet/minecraftforge/registries/DeferredRegister;",
+            "sig": "Lnet/minecraftforge/registries/DeferredRegister<Lnet/minecraft/commands/synchronization/ArgumentTypeInfo<**>;>;"
+          },
+          {
+            "acc": 25,
+            "nme": "NUTRIENT_STRING_ARGUMENT_TYPE",
+            "dsc": "Lnet/minecraftforge/registries/RegistryObject;",
+            "sig": "Lnet/minecraftforge/registries/RegistryObject<Lcom/dannyandson/nutritionalbalance/commands/CommandSetNutrient$NutrientStringArgumentType$Serializer;>;"
+          }
+        ]
+      },
+      "com/dannyandson/nutritionalbalance/network/NutrientDataSyncTrigger.class": {
+        "ver": 61,
+        "acc": 33,
+        "nme": "com/dannyandson/nutritionalbalance/network/NutrientDataSyncTrigger",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/world/item/Item;)V"
+          },
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/network/FriendlyByteBuf;)V"
+          },
+          {
+            "nme": "toBytes",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/network/FriendlyByteBuf;)V"
+          },
+          {
+            "nme": "handle",
+            "acc": 1,
+            "dsc": "(Ljava/util/function/Supplier;)Z",
+            "sig": "(Ljava/util/function/Supplier<Lnet/minecraftforge/network/NetworkEvent$Context;>;)Z"
+          },
+          {
+            "nme": "lambda$handle$0",
+            "acc": 4098,
+            "dsc": "(Ljava/util/function/Supplier;)V"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 2,
+            "nme": "item",
+            "dsc": "Lnet/minecraft/world/item/Item;"
+          }
+        ]
+      },
+      "com/dannyandson/nutritionalbalance/effects/ModMobAffects$MalNourished.class": {
+        "ver": 61,
+        "acc": 33,
+        "nme": "com/dannyandson/nutritionalbalance/effects/ModMobAffects$MalNourished",
+        "super": "net/minecraft/world/effect/MobEffect",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "setAttributes",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "<clinit>",
+            "acc": 8,
+            "dsc": "()V"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 10,
+            "nme": "color",
+            "dsc": "I"
+          }
+        ]
+      },
+      "com/dannyandson/nutritionalbalance/events/EventNutrientButton.class": {
+        "ver": 61,
+        "acc": 33,
+        "nme": "com/dannyandson/nutritionalbalance/events/EventNutrientButton",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "openGUI",
+            "acc": 1,
+            "dsc": "(Lnet/minecraftforge/client/event/ScreenEvent$Init$Post;)V",
+            "vanns": [
+              {
+                "dsc": "Lnet/minecraftforge/eventbus/api/SubscribeEvent;"
+              }
+            ]
+          }
+        ],
+        "flds": []
+      },
+      "com/dannyandson/nutritionalbalance/gui/ModWidget$1.class": {
+        "ver": 61,
+        "acc": 4128,
+        "nme": "com/dannyandson/nutritionalbalance/gui/ModWidget$1",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<clinit>",
+            "acc": 8,
+            "dsc": "()V"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 4120,
+            "nme": "$SwitchMap$com$dannyandson$nutritionalbalance$gui$ModWidget$HAlignment",
+            "dsc": "[I"
+          },
+          {
+            "acc": 4120,
+            "nme": "$SwitchMap$com$dannyandson$nutritionalbalance$gui$ModWidget$VAlignment",
+            "dsc": "[I"
+          }
+        ]
+      },
+      "com/dannyandson/nutritionalbalance/commands/ModCommands.class": {
+        "ver": 61,
+        "acc": 33,
+        "nme": "com/dannyandson/nutritionalbalance/commands/ModCommands",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "register",
+            "acc": 9,
+            "dsc": "(Lcom/mojang/brigadier/CommandDispatcher;)V",
+            "sig": "(Lcom/mojang/brigadier/CommandDispatcher<Lnet/minecraft/commands/CommandSourceStack;>;)V"
+          }
+        ],
+        "flds": []
+      },
+      "com/dannyandson/nutritionalbalance/lunchbox/LunchBoxItemRenderer.class": {
+        "ver": 61,
+        "acc": 33,
+        "nme": "com/dannyandson/nutritionalbalance/lunchbox/LunchBoxItemRenderer",
+        "super": "net/minecraft/client/renderer/BlockEntityWithoutLevelRenderer",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/client/renderer/blockentity/BlockEntityRenderDispatcher;Lnet/minecraft/client/model/geom/EntityModelSet;)V"
+          },
+          {
+            "nme": "m_108829_",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/item/ItemDisplayContext;Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/MultiBufferSource;II)V"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 2,
+            "nme": "LUNCHBOX",
+            "dsc": "Lnet/minecraft/resources/ResourceLocation;"
+          }
+        ]
+      },
+      "com/dannyandson/nutritionalbalance/events/ClientHelpers.class": {
+        "ver": 61,
+        "acc": 33,
+        "nme": "com/dannyandson/nutritionalbalance/events/ClientHelpers",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "showStatusToast",
+            "acc": 9,
+            "dsc": "(Ljava/lang/String;)V"
+          },
+          {
+            "nme": "getLocalPlayer",
+            "acc": 9,
+            "dsc": "()Lnet/minecraft/world/entity/player/Player;"
+          }
+        ],
+        "flds": []
+      },
+      "com/dannyandson/nutritionalbalance/gui/INutrientGUIScreen.class": {
+        "ver": 61,
+        "acc": 1537,
+        "nme": "com/dannyandson/nutritionalbalance/gui/INutrientGUIScreen",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "getWidth",
+            "acc": 1025,
+            "dsc": "()I"
+          },
+          {
+            "nme": "getHeight",
+            "acc": 1025,
+            "dsc": "()I"
+          },
+          {
+            "nme": "addModWidget",
+            "acc": 1025,
+            "dsc": "(Lcom/dannyandson/nutritionalbalance/gui/ModWidget;)Lcom/dannyandson/nutritionalbalance/gui/ModWidget;"
+          },
+          {
+            "nme": "getMinecraft",
+            "acc": 1025,
+            "dsc": "()Lnet/minecraft/client/Minecraft;"
+          }
+        ],
+        "flds": []
+      },
+      "com/dannyandson/nutritionalbalance/network/LunchBoxActiveItemSync.class": {
+        "ver": 61,
+        "acc": 33,
+        "nme": "com/dannyandson/nutritionalbalance/network/LunchBoxActiveItemSync",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "(Ljava/lang/String;)V"
+          },
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/network/FriendlyByteBuf;)V"
+          },
+          {
+            "nme": "toBytes",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/network/FriendlyByteBuf;)V"
+          },
+          {
+            "nme": "handle",
+            "acc": 1,
+            "dsc": "(Ljava/util/function/Supplier;)Z",
+            "sig": "(Ljava/util/function/Supplier<Lnet/minecraftforge/network/NetworkEvent$Context;>;)Z"
+          },
+          {
+            "nme": "lambda$handle$0",
+            "acc": 4098,
+            "dsc": "(Ljava/util/function/Supplier;)V"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 0,
+            "nme": "activeItemId",
+            "dsc": "Ljava/lang/String;"
+          }
+        ]
+      },
+      "com/dannyandson/nutritionalbalance/lunchbox/LunchBoxScreen.class": {
+        "ver": 61,
+        "acc": 33,
+        "nme": "com/dannyandson/nutritionalbalance/lunchbox/LunchBoxScreen",
+        "super": "net/minecraft/client/gui/screens/inventory/AbstractContainerScreen",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "(Lcom/dannyandson/nutritionalbalance/lunchbox/LunchBoxMenu;Lnet/minecraft/world/entity/player/Inventory;Lnet/minecraft/network/chat/Component;)V"
+          },
+          {
+            "nme": "m_7856_",
+            "acc": 4,
+            "dsc": "()V"
+          },
+          {
+            "nme": "m_181908_",
+            "acc": 4,
+            "dsc": "()V"
+          },
+          {
+            "nme": "m_6574_",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/client/Minecraft;II)V"
+          },
+          {
+            "nme": "m_88315_",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/client/gui/GuiGraphics;IIF)V"
+          },
+          {
+            "nme": "m_7286_",
+            "acc": 4,
+            "dsc": "(Lnet/minecraft/client/gui/GuiGraphics;FII)V"
+          },
+          {
+            "nme": "toggleActive",
+            "acc": 2,
+            "dsc": "(I)V"
+          },
+          {
+            "nme": "renderActiveOverlays",
+            "acc": 2,
+            "dsc": "()V"
+          },
+          {
+            "nme": "getWidth",
+            "acc": 1,
+            "dsc": "()I"
+          },
+          {
+            "nme": "getHeight",
+            "acc": 1,
+            "dsc": "()I"
+          },
+          {
+            "nme": "addModWidget",
+            "acc": 1,
+            "dsc": "(Lcom/dannyandson/nutritionalbalance/gui/ModWidget;)Lcom/dannyandson/nutritionalbalance/gui/ModWidget;"
+          },
+          {
+            "nme": "lambda$init$0",
+            "acc": 4098,
+            "dsc": "(ILnet/minecraft/client/gui/components/Button;)V"
+          },
+          {
+            "nme": "<clinit>",
+            "acc": 8,
+            "dsc": "()V"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 25,
+            "nme": "GUI",
+            "dsc": "Lnet/minecraft/resources/ResourceLocation;"
+          },
+          {
+            "acc": 25,
+            "nme": "GUI_SLOT",
+            "dsc": "Lnet/minecraft/resources/ResourceLocation;"
+          },
+          {
+            "acc": 18,
+            "nme": "lunchBoxMenu",
+            "dsc": "Lcom/dannyandson/nutritionalbalance/lunchbox/LunchBoxMenu;"
+          },
+          {
+            "acc": 18,
+            "nme": "widgets",
+            "dsc": "[Lcom/dannyandson/nutritionalbalance/gui/ModWidget;"
+          }
+        ]
+      },
+      "com/dannyandson/nutritionalbalance/network/ModNetworkHandler.class": {
+        "ver": 61,
+        "acc": 33,
+        "nme": "com/dannyandson/nutritionalbalance/network/ModNetworkHandler",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "nextID",
+            "acc": 10,
+            "dsc": "()I"
+          },
+          {
+            "nme": "registerMessages",
+            "acc": 9,
+            "dsc": "()V"
+          },
+          {
+            "nme": "sendToClient",
+            "acc": 9,
+            "dsc": "(Ljava/lang/Object;Lnet/minecraft/server/level/ServerPlayer;)V"
+          },
+          {
+            "nme": "sendToServer",
+            "acc": 9,
+            "dsc": "(Ljava/lang/Object;)V"
+          },
+          {
+            "nme": "lambda$registerMessages$2",
+            "acc": 4106,
+            "dsc": "(Lnet/minecraft/network/FriendlyByteBuf;)Lcom/dannyandson/nutritionalbalance/gui/PacketOpenGui;"
+          },
+          {
+            "nme": "lambda$registerMessages$1",
+            "acc": 4106,
+            "dsc": "(Lcom/dannyandson/nutritionalbalance/gui/PacketOpenGui;Lnet/minecraft/network/FriendlyByteBuf;)V"
+          },
+          {
+            "nme": "lambda$registerMessages$0",
+            "acc": 4106,
+            "dsc": "()Ljava/lang/String;"
+          },
+          {
+            "nme": "<clinit>",
+            "acc": 8,
+            "dsc": "()V"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 10,
+            "nme": "INSTANCE",
+            "dsc": "Lnet/minecraftforge/network/simple/SimpleChannel;"
+          },
+          {
+            "acc": 10,
+            "nme": "ID",
+            "dsc": "I"
+          },
+          {
+            "acc": 26,
+            "nme": "PROTOCOL_VERSION",
+            "dsc": "Ljava/lang/String;",
+            "val": "2.3"
+          },
+          {
+            "acc": 9,
+            "nme": "packetOpenGui",
+            "dsc": "Lcom/dannyandson/nutritionalbalance/gui/PacketOpenGui;"
+          }
+        ]
+      },
+      "com/dannyandson/nutritionalbalance/events/EventPlayerTick.class": {
+        "ver": 61,
+        "acc": 33,
+        "nme": "com/dannyandson/nutritionalbalance/events/EventPlayerTick",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "onPlayerTick",
+            "acc": 1,
+            "dsc": "(Lnet/minecraftforge/event/TickEvent$PlayerTickEvent;)V",
+            "vanns": [
+              {
+                "dsc": "Lnet/minecraftforge/eventbus/api/SubscribeEvent;"
+              }
+            ]
+          }
+        ],
+        "flds": []
+      },
+      "com/dannyandson/nutritionalbalance/keybinding/ModInputHandler.class": {
+        "ver": 61,
+        "acc": 33,
+        "nme": "com/dannyandson/nutritionalbalance/keybinding/ModInputHandler",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "onKeyInput",
+            "acc": 1,
+            "dsc": "(Lnet/minecraftforge/client/event/InputEvent$Key;)V",
+            "vanns": [
+              {
+                "dsc": "Lnet/minecraftforge/eventbus/api/SubscribeEvent;"
+              }
+            ]
+          }
+        ],
+        "flds": []
+      },
+      "com/dannyandson/nutritionalbalance/events/EventPlayerJoin.class": {
+        "ver": 61,
+        "acc": 33,
+        "nme": "com/dannyandson/nutritionalbalance/events/EventPlayerJoin",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "EntityJoinWorldEvent",
+            "acc": 1,
+            "dsc": "(Lnet/minecraftforge/event/entity/EntityJoinLevelEvent;)V",
+            "vanns": [
+              {
+                "dsc": "Lnet/minecraftforge/eventbus/api/SubscribeEvent;"
+              }
+            ]
+          }
+        ],
+        "flds": []
+      },
+      "com/dannyandson/nutritionalbalance/api/INutritionalBalancePlayer.class": {
+        "ver": 61,
+        "acc": 1537,
+        "nme": "com/dannyandson/nutritionalbalance/api/INutritionalBalancePlayer",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "getPlayerNutrients",
+            "acc": 1025,
+            "dsc": "()Ljava/util/List;",
+            "sig": "()Ljava/util/List<Lcom/dannyandson/nutritionalbalance/api/IPlayerNutrient;>;"
+          },
+          {
+            "nme": "getPlayerNutrientByName",
+            "acc": 1025,
+            "dsc": "(Ljava/lang/String;)Lcom/dannyandson/nutritionalbalance/api/IPlayerNutrient;"
+          },
+          {
+            "nme": "processSaturationChange",
+            "acc": 1025,
+            "dsc": "(F)V"
+          },
+          {
+            "nme": "resetSavedSaturation",
+            "acc": 1025,
+            "dsc": "(F)V"
+          },
+          {
+            "nme": "getStatus",
+            "acc": 1025,
+            "dsc": "()Lcom/dannyandson/nutritionalbalance/api/IPlayerNutrient$NutrientStatus;"
+          },
+          {
+            "nme": "getCachedStatus",
+            "acc": 1025,
+            "dsc": "()Lcom/dannyandson/nutritionalbalance/api/IPlayerNutrient$NutrientStatus;"
+          },
+          {
+            "nme": "consume",
+            "acc": 1025,
+            "dsc": "(Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/level/Level;)V"
+          },
+          {
+            "nme": "consume",
+            "acc": 1025,
+            "dsc": "(Ljava/util/List;FF)V",
+            "sig": "(Ljava/util/List<Lcom/dannyandson/nutritionalbalance/api/IPlayerNutrient;>;FF)V"
+          }
+        ],
+        "flds": []
+      },
+      "com/dannyandson/nutritionalbalance/gui/ModWidget$VAlignment.class": {
+        "ver": 61,
+        "acc": 16433,
+        "nme": "com/dannyandson/nutritionalbalance/gui/ModWidget$VAlignment",
+        "super": "java/lang/Enum",
+        "mthds": [
+          {
+            "nme": "values",
+            "acc": 9,
+            "dsc": "()[Lcom/dannyandson/nutritionalbalance/gui/ModWidget$VAlignment;"
+          },
+          {
+            "nme": "valueOf",
+            "acc": 9,
+            "dsc": "(Ljava/lang/String;)Lcom/dannyandson/nutritionalbalance/gui/ModWidget$VAlignment;"
+          },
+          {
+            "nme": "<init>",
+            "acc": 2,
+            "dsc": "(Ljava/lang/String;I)V",
+            "sig": "()V"
+          },
+          {
+            "nme": "$values",
+            "acc": 4106,
+            "dsc": "()[Lcom/dannyandson/nutritionalbalance/gui/ModWidget$VAlignment;"
+          },
+          {
+            "nme": "<clinit>",
+            "acc": 8,
+            "dsc": "()V"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 16409,
+            "nme": "TOP",
+            "dsc": "Lcom/dannyandson/nutritionalbalance/gui/ModWidget$VAlignment;"
+          },
+          {
+            "acc": 16409,
+            "nme": "MIDDLE",
+            "dsc": "Lcom/dannyandson/nutritionalbalance/gui/ModWidget$VAlignment;"
+          },
+          {
+            "acc": 16409,
+            "nme": "BOTTOM",
+            "dsc": "Lcom/dannyandson/nutritionalbalance/gui/ModWidget$VAlignment;"
+          },
+          {
+            "acc": 4122,
+            "nme": "$VALUES",
+            "dsc": "[Lcom/dannyandson/nutritionalbalance/gui/ModWidget$VAlignment;"
+          }
+        ]
+      },
+      "com/dannyandson/nutritionalbalance/events/EventUseItem.class": {
+        "ver": 61,
+        "acc": 33,
+        "nme": "com/dannyandson/nutritionalbalance/events/EventUseItem",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "onUseItemFinish",
+            "acc": 1,
+            "dsc": "(Lnet/minecraftforge/event/entity/living/LivingEntityUseItemEvent$Finish;)V",
+            "vanns": [
+              {
+                "dsc": "Lnet/minecraftforge/eventbus/api/SubscribeEvent;"
+              }
+            ]
+          }
+        ],
+        "flds": []
+      },
+      "com/dannyandson/nutritionalbalance/gui/NutrientButton.class": {
+        "ver": 61,
+        "acc": 33,
+        "nme": "com/dannyandson/nutritionalbalance/gui/NutrientButton",
+        "super": "net/minecraft/client/gui/components/AbstractWidget",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/client/gui/screens/inventory/InventoryScreen;Lnet/minecraft/network/chat/Component;)V"
+          },
+          {
+            "nme": "updateLocation",
+            "acc": 2,
+            "dsc": "()V"
+          },
+          {
+            "nme": "m_5716_",
+            "acc": 1,
+            "dsc": "(DD)V"
+          },
+          {
+            "nme": "m_87963_",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/client/gui/GuiGraphics;IIF)V"
+          },
+          {
+            "nme": "m_168797_",
+            "acc": 4,
+            "dsc": "(Lnet/minecraft/client/gui/narration/NarrationElementOutput;)V"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 2,
+            "nme": "buttonGUI",
+            "dsc": "Lnet/minecraft/resources/ResourceLocation;"
+          },
+          {
+            "acc": 2,
+            "nme": "buttonGUIHover",
+            "dsc": "Lnet/minecraft/resources/ResourceLocation;"
+          },
+          {
+            "acc": 2,
+            "nme": "gui",
+            "dsc": "Lnet/minecraft/client/gui/screens/inventory/InventoryScreen;"
+          }
+        ]
+      },
+      "com/dannyandson/nutritionalbalance/capabilities/DefaultPlayerNutrient.class": {
+        "ver": 61,
+        "acc": 33,
+        "nme": "com/dannyandson/nutritionalbalance/capabilities/DefaultPlayerNutrient",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "(Lcom/dannyandson/nutritionalbalance/nutrients/Nutrient;)V"
+          },
+          {
+            "nme": "getNutrient",
+            "acc": 1,
+            "dsc": "()Lcom/dannyandson/nutritionalbalance/nutrients/Nutrient;"
+          },
+          {
+            "nme": "getNutrientName",
+            "acc": 1,
+            "dsc": "()Ljava/lang/String;"
+          },
+          {
+            "nme": "getLocalizedName",
+            "acc": 1,
+            "dsc": "()Ljava/lang/String;"
+          },
+          {
+            "nme": "getValue",
+            "acc": 1,
+            "dsc": "()F"
+          },
+          {
+            "nme": "changeValue",
+            "acc": 1,
+            "dsc": "(F)V"
+          },
+          {
+            "nme": "setValue",
+            "acc": 1,
+            "dsc": "(F)V"
+          },
+          {
+            "nme": "getStatus",
+            "acc": 1,
+            "dsc": "()Lcom/dannyandson/nutritionalbalance/api/IPlayerNutrient$NutrientStatus;"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 18,
+            "nme": "nutrientname",
+            "dsc": "Ljava/lang/String;"
+          },
+          {
+            "acc": 2,
+            "nme": "value",
+            "dsc": "F"
+          }
+        ]
+      },
+      "com/dannyandson/nutritionalbalance/gui/PacketOpenGui.class": {
+        "ver": 61,
+        "acc": 33,
+        "nme": "com/dannyandson/nutritionalbalance/gui/PacketOpenGui",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "handle",
+            "acc": 1,
+            "dsc": "(Ljava/util/function/Supplier;)Z",
+            "sig": "(Ljava/util/function/Supplier<Lnet/minecraftforge/network/NetworkEvent$Context;>;)Z"
+          }
+        ],
+        "flds": []
+      },
+      "com/dannyandson/nutritionalbalance/setup/ClientBinding.class": {
+        "ver": 61,
+        "acc": 33,
+        "nme": "com/dannyandson/nutritionalbalance/setup/ClientBinding",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "wheelEvent",
+            "acc": 9,
+            "dsc": "(Lnet/minecraftforge/client/event/InputEvent$MouseScrollingEvent;)V",
+            "vanns": [
+              {
+                "dsc": "Lnet/minecraftforge/eventbus/api/SubscribeEvent;"
+              }
+            ]
+          }
+        ],
+        "flds": [],
+        "vanns": [
+          {
+            "dsc": "Lnet/minecraftforge/fml/common/Mod$EventBusSubscriber;",
+            "vals": [
+              "modid",
+              "nutritionalbalance",
+              "value",
+              [
+                [
+                  "Lnet/minecraftforge/api/distmarker/Dist;",
+                  "CLIENT"
+                ]
+              ]
+            ]
+          }
+        ]
+      },
+      "com/dannyandson/nutritionalbalance/lunchbox/LunchBoxMenu$1.class": {
+        "ver": 61,
+        "acc": 32,
+        "nme": "com/dannyandson/nutritionalbalance/lunchbox/LunchBoxMenu$1",
+        "super": "net/minecraft/world/inventory/Slot",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 0,
+            "dsc": "(Lcom/dannyandson/nutritionalbalance/lunchbox/LunchBoxMenu;Lnet/minecraft/world/Container;III)V"
+          },
+          {
+            "nme": "m_6654_",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "m_5857_",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/world/item/ItemStack;)Z"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 4112,
+            "nme": "this$0",
+            "dsc": "Lcom/dannyandson/nutritionalbalance/lunchbox/LunchBoxMenu;"
+          }
+        ]
+      },
+      "com/dannyandson/nutritionalbalance/gui/ModWidget$HAlignment.class": {
+        "ver": 61,
+        "acc": 16433,
+        "nme": "com/dannyandson/nutritionalbalance/gui/ModWidget$HAlignment",
+        "super": "java/lang/Enum",
+        "mthds": [
+          {
+            "nme": "values",
+            "acc": 9,
+            "dsc": "()[Lcom/dannyandson/nutritionalbalance/gui/ModWidget$HAlignment;"
+          },
+          {
+            "nme": "valueOf",
+            "acc": 9,
+            "dsc": "(Ljava/lang/String;)Lcom/dannyandson/nutritionalbalance/gui/ModWidget$HAlignment;"
+          },
+          {
+            "nme": "<init>",
+            "acc": 2,
+            "dsc": "(Ljava/lang/String;I)V",
+            "sig": "()V"
+          },
+          {
+            "nme": "$values",
+            "acc": 4106,
+            "dsc": "()[Lcom/dannyandson/nutritionalbalance/gui/ModWidget$HAlignment;"
+          },
+          {
+            "nme": "<clinit>",
+            "acc": 8,
+            "dsc": "()V"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 16409,
+            "nme": "LEFT",
+            "dsc": "Lcom/dannyandson/nutritionalbalance/gui/ModWidget$HAlignment;"
+          },
+          {
+            "acc": 16409,
+            "nme": "CENTER",
+            "dsc": "Lcom/dannyandson/nutritionalbalance/gui/ModWidget$HAlignment;"
+          },
+          {
+            "acc": 16409,
+            "nme": "RIGHT",
+            "dsc": "Lcom/dannyandson/nutritionalbalance/gui/ModWidget$HAlignment;"
+          },
+          {
+            "acc": 4122,
+            "nme": "$VALUES",
+            "dsc": "[Lcom/dannyandson/nutritionalbalance/gui/ModWidget$HAlignment;"
+          }
+        ]
+      },
+      "com/dannyandson/nutritionalbalance/lunchbox/LunchBoxItem.class": {
+        "ver": 61,
+        "acc": 33,
+        "nme": "com/dannyandson/nutritionalbalance/lunchbox/LunchBoxItem",
+        "super": "net/minecraft/world/item/Item",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "getFoodProperties",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/entity/LivingEntity;)Lnet/minecraft/world/food/FoodProperties;",
+            "invanns": [
+              {
+                "dsc": "Lorg/jetbrains/annotations/Nullable;"
+              }
+            ]
+          },
+          {
+            "nme": "m_7203_",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/world/level/Level;Lnet/minecraft/world/entity/player/Player;Lnet/minecraft/world/InteractionHand;)Lnet/minecraft/world/InteractionResultHolder;",
+            "sig": "(Lnet/minecraft/world/level/Level;Lnet/minecraft/world/entity/player/Player;Lnet/minecraft/world/InteractionHand;)Lnet/minecraft/world/InteractionResultHolder<Lnet/minecraft/world/item/ItemStack;>;",
+            "invanns": [
+              {
+                "dsc": "Lorg/jetbrains/annotations/NotNull;"
+              }
+            ]
+          },
+          {
+            "nme": "m_5922_",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/level/Level;Lnet/minecraft/world/entity/LivingEntity;)Lnet/minecraft/world/item/ItemStack;",
+            "invanns": [
+              {
+                "dsc": "Lorg/jetbrains/annotations/NotNull;"
+              }
+            ]
+          },
+          {
+            "nme": "m_8105_",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/world/item/ItemStack;)I"
+          },
+          {
+            "nme": "m_6164_",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/world/item/ItemStack;)Lnet/minecraft/world/item/UseAnim;",
+            "invanns": [
+              {
+                "dsc": "Lorg/jetbrains/annotations/NotNull;"
+              }
+            ]
+          },
+          {
+            "nme": "m_7626_",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/world/item/ItemStack;)Lnet/minecraft/network/chat/Component;",
+            "invanns": [
+              {
+                "dsc": "Lorg/jetbrains/annotations/NotNull;"
+              }
+            ]
+          },
+          {
+            "nme": "m_7373_",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/level/Level;Ljava/util/List;Lnet/minecraft/world/item/TooltipFlag;)V",
+            "sig": "(Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/level/Level;Ljava/util/List<Lnet/minecraft/network/chat/Component;>;Lnet/minecraft/world/item/TooltipFlag;)V"
+          },
+          {
+            "nme": "getMaxStackSize",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/world/item/ItemStack;)I"
+          },
+          {
+            "nme": "setActiveFood",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/item/ItemStack;)V"
+          },
+          {
+            "nme": "setActiveFood",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/item/ItemStack;Ljava/lang/Boolean;)V"
+          },
+          {
+            "nme": "setActiveFood",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/world/item/ItemStack;Ljava/lang/String;)V"
+          },
+          {
+            "nme": "getActiveFoodItemSlot",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/world/item/ItemStack;)Ljava/lang/Integer;",
+            "vanns": [
+              {
+                "dsc": "Ljavax/annotation/CheckForNull;"
+              }
+            ]
+          },
+          {
+            "nme": "getItemStack",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/world/item/ItemStack;I)Lnet/minecraft/world/item/ItemStack;",
+            "vanns": [
+              {
+                "dsc": "Ljavax/annotation/CheckForNull;"
+              }
+            ]
+          },
+          {
+            "nme": "getActiveFoodItemStack",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/world/item/ItemStack;)Lnet/minecraft/world/item/ItemStack;",
+            "vanns": [
+              {
+                "dsc": "Ljavax/annotation/CheckForNull;"
+              }
+            ]
+          },
+          {
+            "nme": "initializeClient",
+            "acc": 1,
+            "dsc": "(Ljava/util/function/Consumer;)V",
+            "sig": "(Ljava/util/function/Consumer<Lnet/minecraftforge/client/extensions/common/IClientItemExtensions;>;)V"
+          },
+          {
+            "nme": "lambda$use$0",
+            "acc": 4106,
+            "dsc": "(Lcom/dannyandson/nutritionalbalance/lunchbox/LunchBoxContainer;ILnet/minecraft/world/entity/player/Inventory;Lnet/minecraft/world/entity/player/Player;)Lnet/minecraft/world/inventory/AbstractContainerMenu;"
+          }
+        ],
+        "flds": []
+      },
+      "com/dannyandson/nutritionalbalance/events/EventTooltip.class": {
+        "ver": 61,
+        "acc": 33,
+        "nme": "com/dannyandson/nutritionalbalance/events/EventTooltip",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "onItemToolTipEvent",
+            "acc": 1,
+            "dsc": "(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V",
+            "vanns": [
+              {
+                "dsc": "Lnet/minecraftforge/eventbus/api/SubscribeEvent;"
+              }
+            ]
+          }
+        ],
+        "flds": []
+      },
+      "com/dannyandson/nutritionalbalance/network/PlayerSync.class": {
+        "ver": 61,
+        "acc": 33,
+        "nme": "com/dannyandson/nutritionalbalance/network/PlayerSync",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "(Lcom/dannyandson/nutritionalbalance/api/INutritionalBalancePlayer;)V"
+          },
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "(Lcom/dannyandson/nutritionalbalance/api/INutritionalBalancePlayer;Z)V"
+          },
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/network/FriendlyByteBuf;)V"
+          },
+          {
+            "nme": "toBytes",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/network/FriendlyByteBuf;)V"
+          },
+          {
+            "nme": "handle",
+            "acc": 1,
+            "dsc": "(Ljava/util/function/Supplier;)Z",
+            "sig": "(Ljava/util/function/Supplier<Lnet/minecraftforge/network/NetworkEvent$Context;>;)Z"
+          },
+          {
+            "nme": "lambda$handle$0",
+            "acc": 4098,
+            "dsc": "(Ljava/util/function/Supplier;)V"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 2,
+            "nme": "inutritionalbalancePlayerJson",
+            "dsc": "Lcom/google/gson/JsonObject;"
+          },
+          {
+            "acc": 2,
+            "nme": "openGUI",
+            "dsc": "Z"
+          }
+        ]
+      },
+      "com/dannyandson/nutritionalbalance/commands/CommandSetNutrient.class": {
+        "ver": 61,
+        "acc": 33,
+        "nme": "com/dannyandson/nutritionalbalance/commands/CommandSetNutrient",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "register",
+            "acc": 9,
+            "dsc": "(Lcom/mojang/brigadier/CommandDispatcher;)Lcom/mojang/brigadier/builder/ArgumentBuilder;",
+            "sig": "(Lcom/mojang/brigadier/CommandDispatcher<Lnet/minecraft/commands/CommandSourceStack;>;)Lcom/mojang/brigadier/builder/ArgumentBuilder<Lnet/minecraft/commands/CommandSourceStack;*>;"
+          },
+          {
+            "nme": "setNutrients",
+            "acc": 9,
+            "dsc": "(Lcom/mojang/brigadier/context/CommandContext;)I",
+            "sig": "(Lcom/mojang/brigadier/context/CommandContext<Lnet/minecraft/commands/CommandSourceStack;>;)I"
+          },
+          {
+            "nme": "lambda$register$1",
+            "acc": 4106,
+            "dsc": "(Lcom/mojang/brigadier/context/CommandContext;)I",
+            "exs": [
+              "com/mojang/brigadier/exceptions/CommandSyntaxException"
+            ]
+          },
+          {
+            "nme": "lambda$register$0",
+            "acc": 4106,
+            "dsc": "(Lnet/minecraft/commands/CommandSourceStack;)Z"
+          }
+        ],
+        "flds": []
+      },
+      "com/dannyandson/nutritionalbalance/api/IPlayerNutrient.class": {
+        "ver": 61,
+        "acc": 1537,
+        "nme": "com/dannyandson/nutritionalbalance/api/IPlayerNutrient",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "getNutrient",
+            "acc": 1025,
+            "dsc": "()Lcom/dannyandson/nutritionalbalance/nutrients/Nutrient;"
+          },
+          {
+            "nme": "getNutrientName",
+            "acc": 1025,
+            "dsc": "()Ljava/lang/String;"
+          },
+          {
+            "nme": "getValue",
+            "acc": 1025,
+            "dsc": "()F"
+          },
+          {
+            "nme": "changeValue",
+            "acc": 1025,
+            "dsc": "(F)V"
+          },
+          {
+            "nme": "setValue",
+            "acc": 1025,
+            "dsc": "(F)V"
+          },
+          {
+            "nme": "getStatus",
+            "acc": 1025,
+            "dsc": "()Lcom/dannyandson/nutritionalbalance/api/IPlayerNutrient$NutrientStatus;"
+          }
+        ],
+        "flds": []
+      },
+      "com/dannyandson/nutritionalbalance/effects/ModMobAffects.class": {
+        "ver": 61,
+        "acc": 33,
+        "nme": "com/dannyandson/nutritionalbalance/effects/ModMobAffects",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "resetPlayerEffects",
+            "acc": 9,
+            "dsc": "(Lnet/minecraft/world/entity/player/Player;)V"
+          },
+          {
+            "nme": "loadModEffects",
+            "acc": 9,
+            "dsc": "()V"
+          }
+        ],
+        "flds": []
+      },
+      "com/dannyandson/nutritionalbalance/capabilities/DefaultNutritionalBalancePlayer.class": {
+        "ver": 61,
+        "acc": 33,
+        "nme": "com/dannyandson/nutritionalbalance/capabilities/DefaultNutritionalBalancePlayer",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "getPlayerNutrients",
+            "acc": 1,
+            "dsc": "()Ljava/util/List;",
+            "sig": "()Ljava/util/List<Lcom/dannyandson/nutritionalbalance/api/IPlayerNutrient;>;"
+          },
+          {
+            "nme": "getPlayerNutrientByName",
+            "acc": 1,
+            "dsc": "(Ljava/lang/String;)Lcom/dannyandson/nutritionalbalance/api/IPlayerNutrient;"
+          },
+          {
+            "nme": "processSaturationChange",
+            "acc": 1,
+            "dsc": "(F)V"
+          },
+          {
+            "nme": "resetSavedSaturation",
+            "acc": 1,
+            "dsc": "(F)V"
+          },
+          {
+            "nme": "consume",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/level/Level;)V"
+          },
+          {
+            "nme": "consume",
+            "acc": 1,
+            "dsc": "(Ljava/util/List;FF)V",
+            "sig": "(Ljava/util/List<Lcom/dannyandson/nutritionalbalance/api/IPlayerNutrient;>;FF)V"
+          },
+          {
+            "nme": "getStatus",
+            "acc": 1,
+            "dsc": "()Lcom/dannyandson/nutritionalbalance/api/IPlayerNutrient$NutrientStatus;"
+          },
+          {
+            "nme": "getCachedStatus",
+            "acc": 1,
+            "dsc": "()Lcom/dannyandson/nutritionalbalance/api/IPlayerNutrient$NutrientStatus;"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 18,
+            "nme": "playerNutrients",
+            "dsc": "Ljava/util/List;",
+            "sig": "Ljava/util/List<Lcom/dannyandson/nutritionalbalance/api/IPlayerNutrient;>;"
+          },
+          {
+            "acc": 2,
+            "nme": "savedSaturation",
+            "dsc": "F"
+          },
+          {
+            "acc": 2,
+            "nme": "cachedStatus",
+            "dsc": "Lcom/dannyandson/nutritionalbalance/api/IPlayerNutrient$NutrientStatus;"
+          }
+        ]
+      },
+      "com/dannyandson/nutritionalbalance/nutrients/Nutrient.class": {
+        "ver": 61,
+        "acc": 33,
+        "nme": "com/dannyandson/nutritionalbalance/nutrients/Nutrient",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "(Ljava/lang/String;)V"
+          },
+          {
+            "nme": "getLocalizedName",
+            "acc": 1,
+            "dsc": "()Ljava/lang/String;"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 1,
+            "nme": "name",
+            "dsc": "Ljava/lang/String;"
+          }
+        ]
+      },
+      "com/dannyandson/nutritionalbalance/commands/CommandSetNutrient$NutrientStringArgumentType$Serializer$Template.class": {
+        "ver": 61,
+        "acc": 49,
+        "nme": "com/dannyandson/nutritionalbalance/commands/CommandSetNutrient$NutrientStringArgumentType$Serializer$Template",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 0,
+            "dsc": "(Lcom/dannyandson/nutritionalbalance/commands/CommandSetNutrient$NutrientStringArgumentType$Serializer;Lcom/dannyandson/nutritionalbalance/commands/CommandSetNutrient$NutrientStringArgumentType;)V"
+          },
+          {
+            "nme": "instantiate",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/commands/CommandBuildContext;)Lcom/dannyandson/nutritionalbalance/commands/CommandSetNutrient$NutrientStringArgumentType;"
+          },
+          {
+            "nme": "m_213709_",
+            "acc": 1,
+            "dsc": "()Lnet/minecraft/commands/synchronization/ArgumentTypeInfo;",
+            "sig": "()Lnet/minecraft/commands/synchronization/ArgumentTypeInfo<Lcom/dannyandson/nutritionalbalance/commands/CommandSetNutrient$NutrientStringArgumentType;*>;"
+          },
+          {
+            "nme": "getNutrientStringArgumentType",
+            "acc": 1,
+            "dsc": "()Lcom/dannyandson/nutritionalbalance/commands/CommandSetNutrient$NutrientStringArgumentType;"
+          },
+          {
+            "nme": "m_213879_",
+            "acc": 4161,
+            "dsc": "(Lnet/minecraft/commands/CommandBuildContext;)Lcom/mojang/brigadier/arguments/ArgumentType;"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 0,
+            "nme": "nutrientStringArgumentType",
+            "dsc": "Lcom/dannyandson/nutritionalbalance/commands/CommandSetNutrient$NutrientStringArgumentType;"
+          },
+          {
+            "acc": 4112,
+            "nme": "this$0",
+            "dsc": "Lcom/dannyandson/nutritionalbalance/commands/CommandSetNutrient$NutrientStringArgumentType$Serializer;"
+          }
+        ]
+      },
+      "com/dannyandson/nutritionalbalance/events/EventPlayerClone.class": {
+        "ver": 61,
+        "acc": 33,
+        "nme": "com/dannyandson/nutritionalbalance/events/EventPlayerClone",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "onPlayerClone",
+            "acc": 1,
+            "dsc": "(Lnet/minecraftforge/event/entity/player/PlayerEvent$Clone;)V",
+            "vanns": [
+              {
+                "dsc": "Lnet/minecraftforge/eventbus/api/SubscribeEvent;"
+              }
+            ]
+          }
+        ],
+        "flds": []
+      },
+      "com/dannyandson/nutritionalbalance/gui/NutrientGUI.class": {
+        "ver": 61,
+        "acc": 33,
+        "nme": "com/dannyandson/nutritionalbalance/gui/NutrientGUI",
+        "super": "net/minecraft/client/gui/screens/Screen",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "m_7856_",
+            "acc": 4,
+            "dsc": "()V"
+          },
+          {
+            "nme": "addModWidget",
+            "acc": 1,
+            "dsc": "(Lcom/dannyandson/nutritionalbalance/gui/ModWidget;)Lcom/dannyandson/nutritionalbalance/gui/ModWidget;"
+          },
+          {
+            "nme": "getWidth",
+            "acc": 1,
+            "dsc": "()I"
+          },
+          {
+            "nme": "getHeight",
+            "acc": 1,
+            "dsc": "()I"
+          },
+          {
+            "nme": "m_7043_",
+            "acc": 1,
+            "dsc": "()Z"
+          },
+          {
+            "nme": "m_7933_",
+            "acc": 1,
+            "dsc": "(III)Z"
+          },
+          {
+            "nme": "close",
+            "acc": 2,
+            "dsc": "()V"
+          },
+          {
+            "nme": "m_88315_",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/client/gui/GuiGraphics;IIF)V"
+          },
+          {
+            "nme": "open",
+            "acc": 9,
+            "dsc": "()V"
+          },
+          {
+            "nme": "lambda$init$0",
+            "acc": 4098,
+            "dsc": "(Lnet/minecraft/client/gui/components/Button;)V"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 26,
+            "nme": "WIDTH",
+            "dsc": "I",
+            "val": 250
+          },
+          {
+            "acc": 26,
+            "nme": "HEIGHT",
+            "dsc": "I",
+            "val": 155
+          },
+          {
+            "acc": 2,
+            "nme": "GUI",
+            "dsc": "Lnet/minecraft/resources/ResourceLocation;"
+          }
+        ]
+      },
+      "com/dannyandson/nutritionalbalance/setup/ClientSetup.class": {
+        "ver": 61,
+        "acc": 33,
+        "nme": "com/dannyandson/nutritionalbalance/setup/ClientSetup",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "init",
+            "acc": 9,
+            "dsc": "(Lnet/minecraftforge/fml/event/lifecycle/FMLClientSetupEvent;)V"
+          },
+          {
+            "nme": "addCreative",
+            "acc": 9,
+            "dsc": "(Lnet/minecraftforge/event/BuildCreativeModeTabContentsEvent;)V"
+          }
+        ],
+        "flds": [],
+        "vanns": [
+          {
+            "dsc": "Lnet/minecraftforge/fml/common/Mod$EventBusSubscriber;",
+            "vals": [
+              "modid",
+              "nutritionalbalance",
+              "value",
+              [
+                [
+                  "Lnet/minecraftforge/api/distmarker/Dist;",
+                  "CLIENT"
+                ]
+              ],
+              "bus",
+              [
+                "Lnet/minecraftforge/fml/common/Mod$EventBusSubscriber$Bus;",
+                "MOD"
+              ]
+            ]
+          }
+        ]
+      },
+      "com/dannyandson/nutritionalbalance/lunchbox/LunchBoxContainer.class": {
+        "ver": 61,
+        "acc": 33,
+        "nme": "com/dannyandson/nutritionalbalance/lunchbox/LunchBoxContainer",
+        "super": "net/minecraft/world/SimpleContainer",
+        "mthds": [
+          {
+            "nme": "get",
+            "acc": 9,
+            "dsc": "(Lnet/minecraft/world/item/ItemStack;)Lcom/dannyandson/nutritionalbalance/lunchbox/LunchBoxContainer;",
+            "vanns": [
+              {
+                "dsc": "Ljavax/annotation/CheckForNull;"
+              }
+            ]
+          },
+          {
+            "nme": "<init>",
+            "acc": 2,
+            "dsc": "(Lnet/minecraft/world/item/ItemStack;)V"
+          },
+          {
+            "nme": "save",
+            "acc": 1,
+            "dsc": "()V"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 17,
+            "nme": "lunchBox",
+            "dsc": "Lnet/minecraft/world/item/ItemStack;"
+          }
+        ]
+      },
+      "com/dannyandson/nutritionalbalance/api/IPlayerNutrient$NutrientStatus.class": {
+        "ver": 61,
+        "acc": 16433,
+        "nme": "com/dannyandson/nutritionalbalance/api/IPlayerNutrient$NutrientStatus",
+        "super": "java/lang/Enum",
+        "mthds": [
+          {
+            "nme": "values",
+            "acc": 9,
+            "dsc": "()[Lcom/dannyandson/nutritionalbalance/api/IPlayerNutrient$NutrientStatus;"
+          },
+          {
+            "nme": "valueOf",
+            "acc": 9,
+            "dsc": "(Ljava/lang/String;)Lcom/dannyandson/nutritionalbalance/api/IPlayerNutrient$NutrientStatus;"
+          },
+          {
+            "nme": "<init>",
+            "acc": 2,
+            "dsc": "(Ljava/lang/String;I)V",
+            "sig": "()V"
+          },
+          {
+            "nme": "$values",
+            "acc": 4106,
+            "dsc": "()[Lcom/dannyandson/nutritionalbalance/api/IPlayerNutrient$NutrientStatus;"
+          },
+          {
+            "nme": "<clinit>",
+            "acc": 8,
+            "dsc": "()V"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 16409,
+            "nme": "MALNOURISHED",
+            "dsc": "Lcom/dannyandson/nutritionalbalance/api/IPlayerNutrient$NutrientStatus;"
+          },
+          {
+            "acc": 16409,
+            "nme": "SAFE",
+            "dsc": "Lcom/dannyandson/nutritionalbalance/api/IPlayerNutrient$NutrientStatus;"
+          },
+          {
+            "acc": 16409,
+            "nme": "ON_TARGET",
+            "dsc": "Lcom/dannyandson/nutritionalbalance/api/IPlayerNutrient$NutrientStatus;"
+          },
+          {
+            "acc": 16409,
+            "nme": "ENGORGED",
+            "dsc": "Lcom/dannyandson/nutritionalbalance/api/IPlayerNutrient$NutrientStatus;"
+          },
+          {
+            "acc": 4122,
+            "nme": "$VALUES",
+            "dsc": "[Lcom/dannyandson/nutritionalbalance/api/IPlayerNutrient$NutrientStatus;"
+          }
+        ]
+      },
+      "com/dannyandson/nutritionalbalance/gui/NutrientGUIHelper.class": {
+        "ver": 61,
+        "acc": 33,
+        "nme": "com/dannyandson/nutritionalbalance/gui/NutrientGUIHelper",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "init",
+            "acc": 9,
+            "dsc": "(Lcom/dannyandson/nutritionalbalance/gui/INutrientGUIScreen;II)V"
+          },
+          {
+            "nme": "init",
+            "acc": 9,
+            "dsc": "(Lcom/dannyandson/nutritionalbalance/gui/INutrientGUIScreen;III)V"
+          }
+        ],
+        "flds": []
+      },
+      "com/dannyandson/nutritionalbalance/effects/ModMobAffects$Engorged.class": {
+        "ver": 61,
+        "acc": 33,
+        "nme": "com/dannyandson/nutritionalbalance/effects/ModMobAffects$Engorged",
+        "super": "net/minecraft/world/effect/MobEffect",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "setAttributes",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "<clinit>",
+            "acc": 8,
+            "dsc": "()V"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 10,
+            "nme": "color",
+            "dsc": "I"
+          }
+        ]
+      },
+      "com/dannyandson/nutritionalbalance/NutritionalBalance.class": {
+        "ver": 61,
+        "acc": 33,
+        "nme": "com/dannyandson/nutritionalbalance/NutritionalBalance",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "setup",
+            "acc": 2,
+            "dsc": "(Lnet/minecraftforge/fml/event/lifecycle/FMLCommonSetupEvent;)V"
+          },
+          {
+            "nme": "registerCommands",
+            "acc": 2,
+            "dsc": "(Lnet/minecraftforge/event/RegisterCommandsEvent;)V"
+          },
+          {
+            "nme": "doClientStuff",
+            "acc": 2,
+            "dsc": "(Lnet/minecraftforge/fml/event/lifecycle/FMLClientSetupEvent;)V"
+          },
+          {
+            "nme": "serverStarted",
+            "acc": 1,
+            "dsc": "(Lnet/minecraftforge/event/server/ServerStartedEvent;)V",
+            "vanns": [
+              {
+                "dsc": "Lnet/minecraftforge/eventbus/api/SubscribeEvent;"
+              }
+            ]
+          },
+          {
+            "nme": "onReload",
+            "acc": 1,
+            "dsc": "(Lnet/minecraftforge/event/AddReloadListenerEvent;)V",
+            "vanns": [
+              {
+                "dsc": "Lnet/minecraftforge/eventbus/api/SubscribeEvent;"
+              }
+            ]
+          },
+          {
+            "nme": "<clinit>",
+            "acc": 8,
+            "dsc": "()V"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 25,
+            "nme": "MODID",
+            "dsc": "Ljava/lang/String;",
+            "val": "nutritionalbalance"
+          },
+          {
+            "acc": 25,
+            "nme": "LOGGER",
+            "dsc": "Lorg/apache/logging/log4j/Logger;"
+          },
+          {
+            "acc": 9,
+            "nme": "modEffectsLoaded",
+            "dsc": "Z"
+          }
+        ],
+        "vanns": [
+          {
+            "dsc": "Lnet/minecraftforge/fml/common/Mod;",
+            "vals": [
+              "value",
+              "nutritionalbalance"
+            ]
+          }
+        ]
+      },
+      "com/dannyandson/nutritionalbalance/commands/CommandGetUnassignedFoods.class": {
+        "ver": 61,
+        "acc": 33,
+        "nme": "com/dannyandson/nutritionalbalance/commands/CommandGetUnassignedFoods",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "run",
+            "acc": 1,
+            "dsc": "(Lcom/mojang/brigadier/context/CommandContext;)I",
+            "sig": "(Lcom/mojang/brigadier/context/CommandContext<Lnet/minecraft/commands/CommandSourceStack;>;)I",
+            "exs": [
+              "com/mojang/brigadier/exceptions/CommandSyntaxException"
+            ]
+          },
+          {
+            "nme": "register",
+            "acc": 9,
+            "dsc": "(Lcom/mojang/brigadier/CommandDispatcher;)Lcom/mojang/brigadier/builder/ArgumentBuilder;",
+            "sig": "(Lcom/mojang/brigadier/CommandDispatcher<Lnet/minecraft/commands/CommandSourceStack;>;)Lcom/mojang/brigadier/builder/ArgumentBuilder<Lnet/minecraft/commands/CommandSourceStack;*>;"
+          },
+          {
+            "nme": "lambda$register$1",
+            "acc": 4106,
+            "dsc": "(Lnet/minecraft/commands/CommandSourceStack;)Z"
+          },
+          {
+            "nme": "lambda$run$0",
+            "acc": 4106,
+            "dsc": "(Ljava/util/StringJoiner;)Lnet/minecraft/network/chat/Component;"
+          },
+          {
+            "nme": "<clinit>",
+            "acc": 8,
+            "dsc": "()V"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 26,
+            "nme": "CMD",
+            "dsc": "Lcom/dannyandson/nutritionalbalance/commands/CommandGetUnassignedFoods;"
+          }
+        ]
+      },
+      "com/dannyandson/nutritionalbalance/lunchbox/LunchBoxMenu.class": {
+        "ver": 61,
+        "acc": 33,
+        "nme": "com/dannyandson/nutritionalbalance/lunchbox/LunchBoxMenu",
+        "super": "net/minecraft/world/inventory/AbstractContainerMenu",
+        "mthds": [
+          {
+            "nme": "createMenu",
+            "acc": 9,
+            "dsc": "(ILnet/minecraft/world/entity/player/Inventory;)Lcom/dannyandson/nutritionalbalance/lunchbox/LunchBoxMenu;",
+            "invanns": [
+              {
+                "dsc": "Lorg/jetbrains/annotations/NotNull;"
+              }
+            ]
+          },
+          {
+            "nme": "createMenu",
+            "acc": 9,
+            "dsc": "(ILnet/minecraft/world/entity/player/Inventory;Lnet/minecraft/world/Container;)Lcom/dannyandson/nutritionalbalance/lunchbox/LunchBoxMenu;"
+          },
+          {
+            "nme": "<init>",
+            "acc": 4,
+            "dsc": "(ILnet/minecraft/world/entity/player/Inventory;Lnet/minecraft/world/Container;)V"
+          },
+          {
+            "nme": "m_7648_",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/world/entity/player/Player;I)Lnet/minecraft/world/item/ItemStack;",
+            "invanns": [
+              {
+                "dsc": "Lorg/jetbrains/annotations/NotNull;"
+              }
+            ]
+          },
+          {
+            "nme": "m_6875_",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/world/entity/player/Player;)Z"
+          },
+          {
+            "nme": "m_6199_",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/world/Container;)V"
+          },
+          {
+            "nme": "setActiveSlot",
+            "acc": 1,
+            "dsc": "(I)V"
+          },
+          {
+            "nme": "getLunchBoxItemStack",
+            "acc": 1,
+            "dsc": "()Lnet/minecraft/world/item/ItemStack;"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 2,
+            "nme": "container",
+            "dsc": "Lnet/minecraft/world/Container;"
+          },
+          {
+            "acc": 2,
+            "nme": "playerInventory",
+            "dsc": "Lnet/minecraft/world/entity/player/Inventory;"
+          },
+          {
+            "acc": 2,
+            "nme": "lunchBox",
+            "dsc": "Lnet/minecraft/world/item/ItemStack;"
+          }
+        ]
+      },
+      "com/dannyandson/nutritionalbalance/commands/CommandResetPlayerEffects.class": {
+        "ver": 61,
+        "acc": 33,
+        "nme": "com/dannyandson/nutritionalbalance/commands/CommandResetPlayerEffects",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "run",
+            "acc": 1,
+            "dsc": "(Lcom/mojang/brigadier/context/CommandContext;)I",
+            "sig": "(Lcom/mojang/brigadier/context/CommandContext<Lnet/minecraft/commands/CommandSourceStack;>;)I"
+          },
+          {
+            "nme": "register",
+            "acc": 9,
+            "dsc": "(Lcom/mojang/brigadier/CommandDispatcher;)Lcom/mojang/brigadier/builder/ArgumentBuilder;",
+            "sig": "(Lcom/mojang/brigadier/CommandDispatcher<Lnet/minecraft/commands/CommandSourceStack;>;)Lcom/mojang/brigadier/builder/ArgumentBuilder<Lnet/minecraft/commands/CommandSourceStack;*>;"
+          },
+          {
+            "nme": "lambda$register$0",
+            "acc": 4106,
+            "dsc": "(Lnet/minecraft/commands/CommandSourceStack;)Z"
+          },
+          {
+            "nme": "<clinit>",
+            "acc": 8,
+            "dsc": "()V"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 26,
+            "nme": "CMD",
+            "dsc": "Lcom/dannyandson/nutritionalbalance/commands/CommandResetPlayerEffects;"
+          }
+        ]
+      }
+    }
+  }
+}

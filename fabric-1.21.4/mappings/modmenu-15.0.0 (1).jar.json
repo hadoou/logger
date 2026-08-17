@@ -1,0 +1,5574 @@
+{
+  "md5": "f8a86f5d8faf85c41150481d816b4adf",
+  "sha2": "b22a1a02a13642ec707d01bb8b14a21188d6d6fa",
+  "sha256": "5a6459c2760e35a0086c813fafe3fe61a964a5fddd94a331b2284a502ba1792f",
+  "contents": {
+    "classes": {
+      "com/terraformersmc/modmenu/event/ModMenuEventHandler.class": {
+        "ver": 65,
+        "acc": 33,
+        "nme": "com/terraformersmc/modmenu/event/ModMenuEventHandler",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "register",
+            "acc": 9,
+            "dsc": "()V"
+          },
+          {
+            "nme": "afterScreenInit",
+            "acc": 9,
+            "dsc": "(Lnet/minecraft/class_310;Lnet/minecraft/class_437;II)V"
+          },
+          {
+            "nme": "afterTitleScreenInit",
+            "acc": 10,
+            "dsc": "(Lnet/minecraft/class_437;)V"
+          },
+          {
+            "nme": "onClientEndTick",
+            "acc": 10,
+            "dsc": "(Lnet/minecraft/class_310;)V"
+          },
+          {
+            "nme": "buttonHasText",
+            "acc": 137,
+            "dsc": "(Lnet/minecraft/class_8021;[Ljava/lang/String;)Z"
+          },
+          {
+            "nme": "buttonHasTooltip",
+            "acc": 9,
+            "dsc": "(Lnet/minecraft/class_8021;Lnet/minecraft/class_7919;)Z"
+          },
+          {
+            "nme": "shiftButtons",
+            "acc": 9,
+            "dsc": "(Lnet/minecraft/class_8021;ZI)V"
+          },
+          {
+            "nme": "lambda$buttonHasText$1",
+            "acc": 4106,
+            "dsc": "(Lnet/minecraft/class_7417;Ljava/lang/String;)Z"
+          },
+          {
+            "nme": "lambda$afterTitleScreenInit$0",
+            "acc": 4106,
+            "dsc": "(Lnet/minecraft/class_437;Lnet/minecraft/class_4185;)V"
+          },
+          {
+            "nme": "<clinit>",
+            "acc": 8,
+            "dsc": "()V"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 25,
+            "nme": "MODS_BUTTON_TEXTURE",
+            "dsc": "Lnet/minecraft/class_2960;"
+          },
+          {
+            "acc": 10,
+            "nme": "MENU_KEY_BIND",
+            "dsc": "Lnet/minecraft/class_304;"
+          }
+        ]
+      },
+      "com/terraformersmc/modmenu/gui/widget/ModListWidget.class": {
+        "ver": 65,
+        "acc": 33,
+        "nme": "com/terraformersmc/modmenu/gui/widget/ModListWidget",
+        "super": "net/minecraft/class_4280",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/class_310;IIIILcom/terraformersmc/modmenu/gui/widget/ModListWidget;Lcom/terraformersmc/modmenu/gui/ModsScreen;)V"
+          },
+          {
+            "nme": "method_44382",
+            "acc": 1,
+            "dsc": "(D)V"
+          },
+          {
+            "nme": "method_25370",
+            "acc": 1,
+            "dsc": "()Z"
+          },
+          {
+            "nme": "select",
+            "acc": 1,
+            "dsc": "(Lcom/terraformersmc/modmenu/gui/widget/entries/ModListEntry;)V"
+          },
+          {
+            "nme": "setSelected",
+            "acc": 1,
+            "dsc": "(Lcom/terraformersmc/modmenu/gui/widget/entries/ModListEntry;)V"
+          },
+          {
+            "nme": "method_25332",
+            "acc": 4,
+            "dsc": "(I)Z"
+          },
+          {
+            "nme": "addEntry",
+            "acc": 1,
+            "dsc": "(Lcom/terraformersmc/modmenu/gui/widget/entries/ModListEntry;)I"
+          },
+          {
+            "nme": "removeEntry",
+            "acc": 4,
+            "dsc": "(Lcom/terraformersmc/modmenu/gui/widget/entries/ModListEntry;)Z"
+          },
+          {
+            "nme": "remove",
+            "acc": 4,
+            "dsc": "(I)Lcom/terraformersmc/modmenu/gui/widget/entries/ModListEntry;"
+          },
+          {
+            "nme": "finalizeInit",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "reloadFilters",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "filter",
+            "acc": 1,
+            "dsc": "(Ljava/lang/String;Z)V"
+          },
+          {
+            "nme": "hasVisibleChildMods",
+            "acc": 2,
+            "dsc": "(Lcom/terraformersmc/modmenu/util/mod/Mod;)Z"
+          },
+          {
+            "nme": "filter",
+            "acc": 2,
+            "dsc": "(Ljava/lang/String;ZZ)V"
+          },
+          {
+            "nme": "method_25311",
+            "acc": 4,
+            "dsc": "(Lnet/minecraft/class_332;IIF)V"
+          },
+          {
+            "nme": "drawSelectionHighlight",
+            "acc": 4,
+            "dsc": "(Lnet/minecraft/class_332;IIIIII)V"
+          },
+          {
+            "nme": "ensureVisible",
+            "acc": 1,
+            "dsc": "(Lcom/terraformersmc/modmenu/gui/widget/entries/ModListEntry;)V"
+          },
+          {
+            "nme": "method_25404",
+            "acc": 1,
+            "dsc": "(III)Z"
+          },
+          {
+            "nme": "getEntryAtPos",
+            "acc": 17,
+            "dsc": "(DD)Lcom/terraformersmc/modmenu/gui/widget/entries/ModListEntry;"
+          },
+          {
+            "nme": "method_65507",
+            "acc": 4,
+            "dsc": "()I"
+          },
+          {
+            "nme": "method_25322",
+            "acc": 1,
+            "dsc": "()I"
+          },
+          {
+            "nme": "method_25342",
+            "acc": 1,
+            "dsc": "()I"
+          },
+          {
+            "nme": "getParent",
+            "acc": 1,
+            "dsc": "()Lcom/terraformersmc/modmenu/gui/ModsScreen;"
+          },
+          {
+            "nme": "method_44395",
+            "acc": 4,
+            "dsc": "()I"
+          },
+          {
+            "nme": "getDisplayedCountFor",
+            "acc": 1,
+            "dsc": "(Ljava/util/Set;)I",
+            "sig": "(Ljava/util/Set<Ljava/lang/String;>;)I"
+          },
+          {
+            "nme": "close",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "getFabricIconHandler",
+            "acc": 1,
+            "dsc": "()Lcom/terraformersmc/modmenu/util/mod/fabric/FabricIconHandler;"
+          },
+          {
+            "nme": "method_25330",
+            "acc": 4164,
+            "dsc": "(Lnet/minecraft/class_350$class_351;)Z"
+          },
+          {
+            "nme": "method_25338",
+            "acc": 4164,
+            "dsc": "(I)Lnet/minecraft/class_350$class_351;"
+          },
+          {
+            "nme": "method_25328",
+            "acc": 4161,
+            "dsc": "(Lnet/minecraft/class_350$class_351;)V"
+          },
+          {
+            "nme": "method_25321",
+            "acc": 4161,
+            "dsc": "(Lnet/minecraft/class_350$class_351;)I"
+          },
+          {
+            "nme": "method_25313",
+            "acc": 4161,
+            "dsc": "(Lnet/minecraft/class_350$class_351;)V"
+          },
+          {
+            "nme": "method_25399",
+            "acc": 4161,
+            "dsc": "()Lnet/minecraft/class_364;",
+            "invanns": [
+              {
+                "dsc": "Lorg/jetbrains/annotations/Nullable;"
+              }
+            ]
+          },
+          {
+            "nme": "lambda$filter$1",
+            "acc": 4098,
+            "dsc": "(Lcom/terraformersmc/modmenu/util/mod/Mod;)Z"
+          },
+          {
+            "nme": "lambda$hasVisibleChildMods$0",
+            "acc": 4106,
+            "dsc": "(ZLcom/terraformersmc/modmenu/util/mod/Mod;)Z"
+          },
+          {
+            "nme": "<clinit>",
+            "acc": 8,
+            "dsc": "()V"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 25,
+            "nme": "DEBUG",
+            "dsc": "Z"
+          },
+          {
+            "acc": 18,
+            "nme": "parent",
+            "dsc": "Lcom/terraformersmc/modmenu/gui/ModsScreen;"
+          },
+          {
+            "acc": 2,
+            "nme": "mods",
+            "dsc": "Ljava/util/List;",
+            "sig": "Ljava/util/List<Lcom/terraformersmc/modmenu/util/mod/Mod;>;"
+          },
+          {
+            "acc": 18,
+            "nme": "addedMods",
+            "dsc": "Ljava/util/Set;",
+            "sig": "Ljava/util/Set<Lcom/terraformersmc/modmenu/util/mod/Mod;>;"
+          },
+          {
+            "acc": 2,
+            "nme": "selectedModId",
+            "dsc": "Ljava/lang/String;"
+          },
+          {
+            "acc": 18,
+            "nme": "iconHandler",
+            "dsc": "Lcom/terraformersmc/modmenu/util/mod/fabric/FabricIconHandler;"
+          },
+          {
+            "acc": 2,
+            "nme": "restoreScrollY",
+            "dsc": "Ljava/lang/Double;"
+          }
+        ]
+      },
+      "com/terraformersmc/modmenu/util/VersionUtil.class": {
+        "ver": 65,
+        "acc": 49,
+        "nme": "com/terraformersmc/modmenu/util/VersionUtil",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 2,
+            "dsc": "()V"
+          },
+          {
+            "nme": "stripPrefix",
+            "acc": 9,
+            "dsc": "(Ljava/lang/String;)Ljava/lang/String;"
+          },
+          {
+            "nme": "getPrefixedVersion",
+            "acc": 9,
+            "dsc": "(Ljava/lang/String;)Ljava/lang/String;"
+          },
+          {
+            "nme": "removeBuildMetadata",
+            "acc": 9,
+            "dsc": "(Ljava/lang/String;)Ljava/lang/String;"
+          },
+          {
+            "nme": "<clinit>",
+            "acc": 8,
+            "dsc": "()V"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 26,
+            "nme": "PREFIXES",
+            "dsc": "Ljava/util/List;",
+            "sig": "Ljava/util/List<Ljava/lang/String;>;"
+          }
+        ]
+      },
+      "com/terraformersmc/modmenu/util/HttpUtil.class": {
+        "ver": 65,
+        "acc": 33,
+        "nme": "com/terraformersmc/modmenu/util/HttpUtil",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 2,
+            "dsc": "()V"
+          },
+          {
+            "nme": "request",
+            "acc": 9,
+            "dsc": "(Ljava/net/http/HttpRequest$Builder;Ljava/net/http/HttpResponse$BodyHandler;)Ljava/net/http/HttpResponse;",
+            "sig": "<T:Ljava/lang/Object;>(Ljava/net/http/HttpRequest$Builder;Ljava/net/http/HttpResponse$BodyHandler<TT;>;)Ljava/net/http/HttpResponse<TT;>;",
+            "exs": [
+              "java/io/IOException",
+              "java/lang/InterruptedException"
+            ]
+          },
+          {
+            "nme": "buildUserAgent",
+            "acc": 10,
+            "dsc": "()Ljava/lang/String;"
+          },
+          {
+            "nme": "getModMenuVersion",
+            "acc": 10,
+            "dsc": "()Ljava/lang/String;"
+          },
+          {
+            "nme": "<clinit>",
+            "acc": 8,
+            "dsc": "()V"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 26,
+            "nme": "USER_AGENT",
+            "dsc": "Ljava/lang/String;"
+          },
+          {
+            "acc": 26,
+            "nme": "HTTP_CLIENT",
+            "dsc": "Ljava/net/http/HttpClient;"
+          }
+        ]
+      },
+      "com/terraformersmc/modmenu/util/UpdateCheckerUtil$LatestVersionsFromHashesBody.class": {
+        "ver": 65,
+        "acc": 33,
+        "nme": "com/terraformersmc/modmenu/util/UpdateCheckerUtil$LatestVersionsFromHashesBody",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "(Ljava/util/Collection;Ljava/util/Collection;Ljava/lang/String;Ljava/util/Collection;)V",
+            "sig": "(Ljava/util/Collection<Ljava/lang/String;>;Ljava/util/Collection<Ljava/lang/String;>;Ljava/lang/String;Ljava/util/Collection<Lcom/terraformersmc/modmenu/api/UpdateChannel;>;)V"
+          },
+          {
+            "nme": "lambda$new$0",
+            "acc": 4106,
+            "dsc": "(Lcom/terraformersmc/modmenu/api/UpdateChannel;)Ljava/lang/String;"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 1,
+            "nme": "hashes",
+            "dsc": "Ljava/util/Collection;",
+            "sig": "Ljava/util/Collection<Ljava/lang/String;>;"
+          },
+          {
+            "acc": 1,
+            "nme": "algorithm",
+            "dsc": "Ljava/lang/String;"
+          },
+          {
+            "acc": 1,
+            "nme": "loaders",
+            "dsc": "Ljava/util/Collection;",
+            "sig": "Ljava/util/Collection<Ljava/lang/String;>;"
+          },
+          {
+            "acc": 1,
+            "nme": "gameVersions",
+            "dsc": "Ljava/util/Collection;",
+            "sig": "Ljava/util/Collection<Ljava/lang/String;>;"
+          },
+          {
+            "acc": 1,
+            "nme": "versionTypes",
+            "dsc": "Ljava/util/Collection;",
+            "sig": "Ljava/util/Collection<Ljava/lang/String;>;"
+          }
+        ]
+      },
+      "com/terraformersmc/modmenu/util/mod/Mod$Badge.class": {
+        "ver": 65,
+        "acc": 16433,
+        "nme": "com/terraformersmc/modmenu/util/mod/Mod$Badge",
+        "super": "java/lang/Enum",
+        "mthds": [
+          {
+            "nme": "values",
+            "acc": 9,
+            "dsc": "()[Lcom/terraformersmc/modmenu/util/mod/Mod$Badge;"
+          },
+          {
+            "nme": "valueOf",
+            "acc": 9,
+            "dsc": "(Ljava/lang/String;)Lcom/terraformersmc/modmenu/util/mod/Mod$Badge;"
+          },
+          {
+            "nme": "<init>",
+            "acc": 2,
+            "dsc": "(Ljava/lang/String;ILjava/lang/String;IILjava/lang/String;)V",
+            "sig": "(Ljava/lang/String;IILjava/lang/String;)V"
+          },
+          {
+            "nme": "getText",
+            "acc": 1,
+            "dsc": "()Lnet/minecraft/class_2561;"
+          },
+          {
+            "nme": "getOutlineColor",
+            "acc": 1,
+            "dsc": "()I"
+          },
+          {
+            "nme": "getFillColor",
+            "acc": 1,
+            "dsc": "()I"
+          },
+          {
+            "nme": "convert",
+            "acc": 9,
+            "dsc": "(Ljava/util/Set;Ljava/lang/String;)Ljava/util/Set;",
+            "sig": "(Ljava/util/Set<Ljava/lang/String;>;Ljava/lang/String;)Ljava/util/Set<Lcom/terraformersmc/modmenu/util/mod/Mod$Badge;>;"
+          },
+          {
+            "nme": "lambda$static$1",
+            "acc": 4106,
+            "dsc": "(Lcom/terraformersmc/modmenu/util/mod/Mod$Badge;)V"
+          },
+          {
+            "nme": "lambda$convert$0",
+            "acc": 4106,
+            "dsc": "(Ljava/lang/String;Ljava/lang/String;)Lcom/terraformersmc/modmenu/util/mod/Mod$Badge;"
+          },
+          {
+            "nme": "$values",
+            "acc": 4106,
+            "dsc": "()[Lcom/terraformersmc/modmenu/util/mod/Mod$Badge;"
+          },
+          {
+            "nme": "<clinit>",
+            "acc": 8,
+            "dsc": "()V"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 16409,
+            "nme": "LIBRARY",
+            "dsc": "Lcom/terraformersmc/modmenu/util/mod/Mod$Badge;"
+          },
+          {
+            "acc": 16409,
+            "nme": "CLIENT",
+            "dsc": "Lcom/terraformersmc/modmenu/util/mod/Mod$Badge;"
+          },
+          {
+            "acc": 16409,
+            "nme": "DEPRECATED",
+            "dsc": "Lcom/terraformersmc/modmenu/util/mod/Mod$Badge;"
+          },
+          {
+            "acc": 16409,
+            "nme": "PATCHWORK_FORGE",
+            "dsc": "Lcom/terraformersmc/modmenu/util/mod/Mod$Badge;"
+          },
+          {
+            "acc": 16409,
+            "nme": "MODPACK",
+            "dsc": "Lcom/terraformersmc/modmenu/util/mod/Mod$Badge;"
+          },
+          {
+            "acc": 16409,
+            "nme": "MINECRAFT",
+            "dsc": "Lcom/terraformersmc/modmenu/util/mod/Mod$Badge;"
+          },
+          {
+            "acc": 18,
+            "nme": "text",
+            "dsc": "Lnet/minecraft/class_2561;"
+          },
+          {
+            "acc": 18,
+            "nme": "outlineColor",
+            "dsc": "I"
+          },
+          {
+            "acc": 18,
+            "nme": "fillColor",
+            "dsc": "I"
+          },
+          {
+            "acc": 18,
+            "nme": "key",
+            "dsc": "Ljava/lang/String;"
+          },
+          {
+            "acc": 26,
+            "nme": "KEY_MAP",
+            "dsc": "Ljava/util/Map;",
+            "sig": "Ljava/util/Map<Ljava/lang/String;Lcom/terraformersmc/modmenu/util/mod/Mod$Badge;>;"
+          },
+          {
+            "acc": 4122,
+            "nme": "$VALUES",
+            "dsc": "[Lcom/terraformersmc/modmenu/util/mod/Mod$Badge;"
+          }
+        ]
+      },
+      "com/terraformersmc/modmenu/util/mod/quilt/QuiltMod.class": {
+        "ver": 65,
+        "acc": 33,
+        "nme": "com/terraformersmc/modmenu/util/mod/quilt/QuiltMod",
+        "super": "com/terraformersmc/modmenu/util/mod/fabric/FabricMod",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "(Lnet/fabricmc/loader/api/ModContainer;Ljava/util/Set;)V",
+            "sig": "(Lnet/fabricmc/loader/api/ModContainer;Ljava/util/Set<Ljava/lang/String;>;)V"
+          },
+          {
+            "nme": "getAuthors",
+            "acc": 1,
+            "dsc": "()Ljava/util/List;",
+            "sig": "()Ljava/util/List<Ljava/lang/String;>;",
+            "invanns": [
+              {
+                "dsc": "Lorg/jetbrains/annotations/NotNull;"
+              }
+            ]
+          },
+          {
+            "nme": "getContributors",
+            "acc": 1,
+            "dsc": "()Ljava/util/Map;",
+            "sig": "()Ljava/util/Map<Ljava/lang/String;Ljava/util/Collection<Ljava/lang/String;>;>;",
+            "invanns": [
+              {
+                "dsc": "Lorg/jetbrains/annotations/NotNull;"
+              }
+            ]
+          },
+          {
+            "nme": "getCredits",
+            "acc": 1,
+            "dsc": "()Ljava/util/SortedMap;",
+            "sig": "()Ljava/util/SortedMap<Ljava/lang/String;Ljava/util/Set<Ljava/lang/String;>;>;",
+            "invanns": [
+              {
+                "dsc": "Lorg/jetbrains/annotations/NotNull;"
+              }
+            ]
+          },
+          {
+            "nme": "getSha512Hash",
+            "acc": 1,
+            "dsc": "()Ljava/lang/String;",
+            "exs": [
+              "java/io/IOException"
+            ],
+            "invanns": [
+              {
+                "dsc": "Lorg/jetbrains/annotations/Nullable;"
+              }
+            ]
+          },
+          {
+            "nme": "lambda$getSha512Hash$3",
+            "acc": 4106,
+            "dsc": "(Ljava/nio/file/Path;)Z"
+          },
+          {
+            "nme": "lambda$getCredits$2",
+            "acc": 4106,
+            "dsc": "(Ljava/lang/String;)Ljava/util/Set;"
+          },
+          {
+            "nme": "lambda$getAuthors$1",
+            "acc": 4106,
+            "dsc": "(Ljava/util/List;Lorg/quiltmc/loader/api/ModContributor;)V"
+          },
+          {
+            "nme": "lambda$getAuthors$0",
+            "acc": 4106,
+            "dsc": "(Lorg/quiltmc/loader/api/ModContributor;)Z"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 20,
+            "nme": "container",
+            "dsc": "Lorg/quiltmc/loader/api/ModContainer;"
+          },
+          {
+            "acc": 20,
+            "nme": "metadata",
+            "dsc": "Lorg/quiltmc/loader/api/ModMetadata;"
+          }
+        ]
+      },
+      "com/terraformersmc/modmenu/util/mod/fabric/FabricMod$ModMenuData.class": {
+        "ver": 65,
+        "acc": 32,
+        "nme": "com/terraformersmc/modmenu/util/mod/fabric/FabricMod$ModMenuData",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "(Ljava/util/Set;Ljava/util/Optional;Lcom/terraformersmc/modmenu/util/mod/fabric/FabricMod$ModMenuData$DummyParentData;Ljava/lang/String;)V",
+            "sig": "(Ljava/util/Set<Ljava/lang/String;>;Ljava/util/Optional<Ljava/lang/String;>;Lcom/terraformersmc/modmenu/util/mod/fabric/FabricMod$ModMenuData$DummyParentData;Ljava/lang/String;)V"
+          },
+          {
+            "nme": "getBadges",
+            "acc": 1,
+            "dsc": "()Ljava/util/Set;",
+            "sig": "()Ljava/util/Set<Lcom/terraformersmc/modmenu/util/mod/Mod$Badge;>;"
+          },
+          {
+            "nme": "getParent",
+            "acc": 1,
+            "dsc": "()Ljava/util/Optional;",
+            "sig": "()Ljava/util/Optional<Ljava/lang/String;>;"
+          },
+          {
+            "nme": "getDummyParentData",
+            "acc": 1,
+            "dsc": "()Lcom/terraformersmc/modmenu/util/mod/fabric/FabricMod$ModMenuData$DummyParentData;",
+            "invanns": [
+              {
+                "dsc": "Lorg/jetbrains/annotations/Nullable;"
+              }
+            ]
+          },
+          {
+            "nme": "addClientBadge",
+            "acc": 1,
+            "dsc": "(Z)V"
+          },
+          {
+            "nme": "addLibraryBadge",
+            "acc": 1,
+            "dsc": "(Z)V"
+          },
+          {
+            "nme": "fillParentIfEmpty",
+            "acc": 1,
+            "dsc": "(Ljava/lang/String;)V"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 18,
+            "nme": "badges",
+            "dsc": "Ljava/util/Set;",
+            "sig": "Ljava/util/Set<Lcom/terraformersmc/modmenu/util/mod/Mod$Badge;>;"
+          },
+          {
+            "acc": 2,
+            "nme": "parent",
+            "dsc": "Ljava/util/Optional;",
+            "sig": "Ljava/util/Optional<Ljava/lang/String;>;"
+          },
+          {
+            "acc": 18,
+            "nme": "dummyParentData",
+            "dsc": "Lcom/terraformersmc/modmenu/util/mod/fabric/FabricMod$ModMenuData$DummyParentData;"
+          }
+        ]
+      },
+      "com/terraformersmc/modmenu/util/mod/quilt/QuiltLoaderUpdateChecker$QuiltLoaderUpdateInfo.class": {
+        "ver": 65,
+        "acc": 65584,
+        "nme": "com/terraformersmc/modmenu/util/mod/quilt/QuiltLoaderUpdateChecker$QuiltLoaderUpdateInfo",
+        "super": "java/lang/Record",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 2,
+            "dsc": "(Lorg/quiltmc/loader/api/Version$Semantic;)V"
+          },
+          {
+            "nme": "isUpdateAvailable",
+            "acc": 1,
+            "dsc": "()Z"
+          },
+          {
+            "nme": "getUpdateMessage",
+            "acc": 1,
+            "dsc": "()Lnet/minecraft/class_2561;",
+            "invanns": [
+              {
+                "dsc": "Lorg/jetbrains/annotations/NotNull;"
+              }
+            ]
+          },
+          {
+            "nme": "getDownloadLink",
+            "acc": 1,
+            "dsc": "()Ljava/lang/String;"
+          },
+          {
+            "nme": "getUpdateChannel",
+            "acc": 1,
+            "dsc": "()Lcom/terraformersmc/modmenu/api/UpdateChannel;"
+          },
+          {
+            "nme": "toString",
+            "acc": 17,
+            "dsc": "()Ljava/lang/String;"
+          },
+          {
+            "nme": "hashCode",
+            "acc": 17,
+            "dsc": "()I"
+          },
+          {
+            "nme": "equals",
+            "acc": 17,
+            "dsc": "(Ljava/lang/Object;)Z"
+          },
+          {
+            "nme": "version",
+            "acc": 1,
+            "dsc": "()Lorg/quiltmc/loader/api/Version$Semantic;"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 18,
+            "nme": "version",
+            "dsc": "Lorg/quiltmc/loader/api/Version$Semantic;"
+          }
+        ]
+      },
+      "com/terraformersmc/modmenu/mixin/MixinGameMenu.class": {
+        "ver": 65,
+        "acc": 1057,
+        "nme": "com/terraformersmc/modmenu/mixin/MixinGameMenu",
+        "super": "net/minecraft/class_437",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 4,
+            "dsc": "(Lnet/minecraft/class_2561;)V"
+          },
+          {
+            "nme": "getCUSTOM_OPTIONS_TOOLTIP",
+            "acc": 10,
+            "dsc": "()Lnet/minecraft/class_7919;",
+            "vanns": [
+              {
+                "dsc": "Lorg/spongepowered/asm/mixin/gen/Accessor;"
+              }
+            ]
+          },
+          {
+            "nme": "onInitWidgets",
+            "acc": 2,
+            "dsc": "(Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;Lnet/minecraft/class_7845;)V",
+            "vanns": [
+              {
+                "dsc": "Lorg/spongepowered/asm/mixin/injection/Inject;",
+                "vals": [
+                  "method",
+                  [
+                    "initWidgets"
+                  ],
+                  "at",
+                  [
+                    {
+                      "desc": "Lorg/spongepowered/asm/mixin/injection/At;",
+                      "values": [
+                        "value",
+                        "INVOKE",
+                        "target",
+                        "Lnet/minecraft/client/gui/widget/GridWidget;forEachChild(Ljava/util/function/Consumer;)V"
+                      ],
+                      "api": 589824
+                    }
+                  ],
+                  "locals",
+                  [
+                    "Lorg/spongepowered/asm/mixin/injection/callback/LocalCapture;",
+                    "CAPTURE_FAILEXCEPTION"
+                  ]
+                ]
+              }
+            ]
+          },
+          {
+            "nme": "lambda$onInitWidgets$2",
+            "acc": 4098,
+            "dsc": "(Lnet/minecraft/class_4185;)V"
+          },
+          {
+            "nme": "lambda$onInitWidgets$1",
+            "acc": 4106,
+            "dsc": "(Lnet/minecraft/class_8021;)V"
+          },
+          {
+            "nme": "lambda$onInitWidgets$0",
+            "acc": 4106,
+            "dsc": "(Lnet/minecraft/class_8021;)Z"
+          }
+        ],
+        "flds": [],
+        "invanns": [
+          {
+            "dsc": "Lorg/spongepowered/asm/mixin/Mixin;",
+            "vals": [
+              "value",
+              [
+                {
+                  "itrlNme": "net/minecraft/class_433"
+                }
+              ]
+            ]
+          }
+        ]
+      },
+      "com/terraformersmc/modmenu/util/EnumToLowerCaseJsonConverter.class": {
+        "ver": 65,
+        "acc": 49,
+        "nme": "com/terraformersmc/modmenu/util/EnumToLowerCaseJsonConverter",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "serialize",
+            "acc": 1,
+            "dsc": "(Ljava/lang/Enum;Ljava/lang/reflect/Type;Lcom/google/gson/JsonSerializationContext;)Lcom/google/gson/JsonElement;",
+            "sig": "(Ljava/lang/Enum<*>;Ljava/lang/reflect/Type;Lcom/google/gson/JsonSerializationContext;)Lcom/google/gson/JsonElement;"
+          },
+          {
+            "nme": "deserialize",
+            "acc": 1,
+            "dsc": "(Lcom/google/gson/JsonElement;Ljava/lang/reflect/Type;Lcom/google/gson/JsonDeserializationContext;)Ljava/lang/Enum;",
+            "sig": "(Lcom/google/gson/JsonElement;Ljava/lang/reflect/Type;Lcom/google/gson/JsonDeserializationContext;)Ljava/lang/Enum<*>;",
+            "exs": [
+              "com/google/gson/JsonParseException"
+            ]
+          },
+          {
+            "nme": "serialize",
+            "acc": 4161,
+            "dsc": "(Ljava/lang/Object;Ljava/lang/reflect/Type;Lcom/google/gson/JsonSerializationContext;)Lcom/google/gson/JsonElement;"
+          },
+          {
+            "nme": "deserialize",
+            "acc": 4161,
+            "dsc": "(Lcom/google/gson/JsonElement;Ljava/lang/reflect/Type;Lcom/google/gson/JsonDeserializationContext;)Ljava/lang/Object;",
+            "exs": [
+              "com/google/gson/JsonParseException"
+            ]
+          },
+          {
+            "nme": "<clinit>",
+            "acc": 8,
+            "dsc": "()V"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 26,
+            "nme": "TYPE_CACHE",
+            "dsc": "Ljava/util/Map;",
+            "sig": "Ljava/util/Map<Ljava/lang/String;Ljava/lang/Class<+Ljava/lang/Enum<*>;>;>;"
+          }
+        ]
+      },
+      "com/terraformersmc/modmenu/gui/widget/DescriptionListWidget$MojangCreditsEntry.class": {
+        "ver": 65,
+        "acc": 33,
+        "nme": "com/terraformersmc/modmenu/gui/widget/DescriptionListWidget$MojangCreditsEntry",
+        "super": "com/terraformersmc/modmenu/gui/widget/DescriptionListWidget$DescriptionEntry",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "(Lcom/terraformersmc/modmenu/gui/widget/DescriptionListWidget;Lnet/minecraft/class_5481;)V"
+          },
+          {
+            "nme": "method_25402",
+            "acc": 1,
+            "dsc": "(DDI)Z"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 4112,
+            "nme": "this$0",
+            "dsc": "Lcom/terraformersmc/modmenu/gui/widget/DescriptionListWidget;"
+          }
+        ]
+      },
+      "com/terraformersmc/modmenu/config/option/OptionConvertible.class": {
+        "ver": 65,
+        "acc": 1537,
+        "nme": "com/terraformersmc/modmenu/config/option/OptionConvertible",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "asOption",
+            "acc": 1025,
+            "dsc": "()Lnet/minecraft/class_7172;",
+            "sig": "()Lnet/minecraft/class_7172<*>;"
+          }
+        ],
+        "flds": []
+      },
+      "com/terraformersmc/modmenu/gui/widget/entries/ModListEntry.class": {
+        "ver": 65,
+        "acc": 33,
+        "nme": "com/terraformersmc/modmenu/gui/widget/entries/ModListEntry",
+        "super": "net/minecraft/class_4280$class_4281",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "(Lcom/terraformersmc/modmenu/util/mod/Mod;Lcom/terraformersmc/modmenu/gui/widget/ModListWidget;)V"
+          },
+          {
+            "nme": "method_37006",
+            "acc": 1,
+            "dsc": "()Lnet/minecraft/class_2561;"
+          },
+          {
+            "nme": "method_25343",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/class_332;IIIIIIIZF)V"
+          },
+          {
+            "nme": "method_25402",
+            "acc": 1,
+            "dsc": "(DDI)Z"
+          },
+          {
+            "nme": "openConfig",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "getMod",
+            "acc": 1,
+            "dsc": "()Lcom/terraformersmc/modmenu/util/mod/Mod;"
+          },
+          {
+            "nme": "getIconTexture",
+            "acc": 1,
+            "dsc": "()Lnet/minecraft/class_2960;"
+          },
+          {
+            "nme": "getXOffset",
+            "acc": 1,
+            "dsc": "()I"
+          },
+          {
+            "nme": "<clinit>",
+            "acc": 8,
+            "dsc": "()V"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 25,
+            "nme": "UNKNOWN_ICON",
+            "dsc": "Lnet/minecraft/class_2960;"
+          },
+          {
+            "acc": 26,
+            "nme": "MOD_CONFIGURATION_ICON",
+            "dsc": "Lnet/minecraft/class_2960;"
+          },
+          {
+            "acc": 26,
+            "nme": "ERROR_ICON",
+            "dsc": "Lnet/minecraft/class_2960;"
+          },
+          {
+            "acc": 26,
+            "nme": "ERROR_HIGHLIGHTED_ICON",
+            "dsc": "Lnet/minecraft/class_2960;"
+          },
+          {
+            "acc": 20,
+            "nme": "client",
+            "dsc": "Lnet/minecraft/class_310;"
+          },
+          {
+            "acc": 17,
+            "nme": "mod",
+            "dsc": "Lcom/terraformersmc/modmenu/util/mod/Mod;"
+          },
+          {
+            "acc": 20,
+            "nme": "list",
+            "dsc": "Lcom/terraformersmc/modmenu/gui/widget/ModListWidget;"
+          },
+          {
+            "acc": 4,
+            "nme": "iconLocation",
+            "dsc": "Lnet/minecraft/class_2960;"
+          },
+          {
+            "acc": 28,
+            "nme": "FULL_ICON_SIZE",
+            "dsc": "I",
+            "val": 32
+          },
+          {
+            "acc": 28,
+            "nme": "COMPACT_ICON_SIZE",
+            "dsc": "I",
+            "val": 19
+          },
+          {
+            "acc": 4,
+            "nme": "sinceLastClick",
+            "dsc": "J"
+          }
+        ]
+      },
+      "com/terraformersmc/modmenu/mixin/AccessorGridWidget.class": {
+        "ver": 65,
+        "acc": 1537,
+        "nme": "com/terraformersmc/modmenu/mixin/AccessorGridWidget",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "getChildren",
+            "acc": 1025,
+            "dsc": "()Ljava/util/List;",
+            "sig": "()Ljava/util/List<Lnet/minecraft/class_8021;>;",
+            "vanns": [
+              {
+                "dsc": "Lorg/spongepowered/asm/mixin/gen/Accessor;"
+              }
+            ]
+          }
+        ],
+        "flds": [],
+        "invanns": [
+          {
+            "dsc": "Lorg/spongepowered/asm/mixin/Mixin;",
+            "vals": [
+              "value",
+              [
+                {
+                  "itrlNme": "net/minecraft/class_7845"
+                }
+              ]
+            ]
+          }
+        ]
+      },
+      "com/terraformersmc/modmenu/util/mod/fabric/FabricIconHandler.class": {
+        "ver": 65,
+        "acc": 33,
+        "nme": "com/terraformersmc/modmenu/util/mod/fabric/FabricIconHandler",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "createIcon",
+            "acc": 1,
+            "dsc": "(Lnet/fabricmc/loader/api/ModContainer;Ljava/lang/String;)Lnet/minecraft/class_1043;"
+          },
+          {
+            "nme": "close",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "getCachedModIcon",
+            "acc": 0,
+            "dsc": "(Ljava/nio/file/Path;)Lnet/minecraft/class_1043;"
+          },
+          {
+            "nme": "cacheModIcon",
+            "acc": 0,
+            "dsc": "(Ljava/nio/file/Path;Lnet/minecraft/class_1043;)V"
+          },
+          {
+            "nme": "lambda$createIcon$0",
+            "acc": 4106,
+            "dsc": "(Ljava/nio/file/Path;)Ljava/lang/String;"
+          },
+          {
+            "nme": "<clinit>",
+            "acc": 8,
+            "dsc": "()V"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 26,
+            "nme": "LOGGER",
+            "dsc": "Lorg/slf4j/Logger;"
+          },
+          {
+            "acc": 18,
+            "nme": "modIconCache",
+            "dsc": "Ljava/util/Map;",
+            "sig": "Ljava/util/Map<Ljava/nio/file/Path;Lnet/minecraft/class_1043;>;"
+          }
+        ]
+      },
+      "com/terraformersmc/modmenu/gui/widget/entries/ChildEntry.class": {
+        "ver": 65,
+        "acc": 33,
+        "nme": "com/terraformersmc/modmenu/gui/widget/entries/ChildEntry",
+        "super": "com/terraformersmc/modmenu/gui/widget/entries/ModListEntry",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "(Lcom/terraformersmc/modmenu/util/mod/Mod;Lcom/terraformersmc/modmenu/gui/widget/entries/ParentEntry;Lcom/terraformersmc/modmenu/gui/widget/ModListWidget;Z)V"
+          },
+          {
+            "nme": "method_25343",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/class_332;IIIIIIIZF)V"
+          },
+          {
+            "nme": "method_25404",
+            "acc": 1,
+            "dsc": "(III)Z"
+          },
+          {
+            "nme": "getXOffset",
+            "acc": 1,
+            "dsc": "()I"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 18,
+            "nme": "bottomChild",
+            "dsc": "Z"
+          },
+          {
+            "acc": 18,
+            "nme": "parent",
+            "dsc": "Lcom/terraformersmc/modmenu/gui/widget/entries/ParentEntry;"
+          }
+        ]
+      },
+      "com/terraformersmc/modmenu/config/ModMenuConfig.class": {
+        "ver": 65,
+        "acc": 33,
+        "nme": "com/terraformersmc/modmenu/config/ModMenuConfig",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "asOptions",
+            "acc": 9,
+            "dsc": "()[Lnet/minecraft/class_7172;",
+            "sig": "()[Lnet/minecraft/class_7172<*>;"
+          },
+          {
+            "nme": "lambda$asOptions$0",
+            "acc": 4106,
+            "dsc": "(I)[Lnet/minecraft/class_7172;"
+          },
+          {
+            "nme": "<clinit>",
+            "acc": 8,
+            "dsc": "()V"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 25,
+            "nme": "SORTING",
+            "dsc": "Lcom/terraformersmc/modmenu/config/option/EnumConfigOption;",
+            "sig": "Lcom/terraformersmc/modmenu/config/option/EnumConfigOption<Lcom/terraformersmc/modmenu/config/ModMenuConfig$Sorting;>;"
+          },
+          {
+            "acc": 25,
+            "nme": "COUNT_LIBRARIES",
+            "dsc": "Lcom/terraformersmc/modmenu/config/option/BooleanConfigOption;"
+          },
+          {
+            "acc": 25,
+            "nme": "COMPACT_LIST",
+            "dsc": "Lcom/terraformersmc/modmenu/config/option/BooleanConfigOption;"
+          },
+          {
+            "acc": 25,
+            "nme": "COUNT_CHILDREN",
+            "dsc": "Lcom/terraformersmc/modmenu/config/option/BooleanConfigOption;"
+          },
+          {
+            "acc": 25,
+            "nme": "MODS_BUTTON_STYLE",
+            "dsc": "Lcom/terraformersmc/modmenu/config/option/EnumConfigOption;",
+            "sig": "Lcom/terraformersmc/modmenu/config/option/EnumConfigOption<Lcom/terraformersmc/modmenu/config/ModMenuConfig$TitleMenuButtonStyle;>;"
+          },
+          {
+            "acc": 25,
+            "nme": "GAME_MENU_BUTTON_STYLE",
+            "dsc": "Lcom/terraformersmc/modmenu/config/option/EnumConfigOption;",
+            "sig": "Lcom/terraformersmc/modmenu/config/option/EnumConfigOption<Lcom/terraformersmc/modmenu/config/ModMenuConfig$GameMenuButtonStyle;>;"
+          },
+          {
+            "acc": 25,
+            "nme": "COUNT_HIDDEN_MODS",
+            "dsc": "Lcom/terraformersmc/modmenu/config/option/BooleanConfigOption;"
+          },
+          {
+            "acc": 25,
+            "nme": "MOD_COUNT_LOCATION",
+            "dsc": "Lcom/terraformersmc/modmenu/config/option/EnumConfigOption;",
+            "sig": "Lcom/terraformersmc/modmenu/config/option/EnumConfigOption<Lcom/terraformersmc/modmenu/config/ModMenuConfig$ModCountLocation;>;"
+          },
+          {
+            "acc": 25,
+            "nme": "HIDE_MOD_LINKS",
+            "dsc": "Lcom/terraformersmc/modmenu/config/option/BooleanConfigOption;"
+          },
+          {
+            "acc": 25,
+            "nme": "SHOW_LIBRARIES",
+            "dsc": "Lcom/terraformersmc/modmenu/config/option/BooleanConfigOption;"
+          },
+          {
+            "acc": 25,
+            "nme": "HIDE_MOD_LICENSE",
+            "dsc": "Lcom/terraformersmc/modmenu/config/option/BooleanConfigOption;"
+          },
+          {
+            "acc": 25,
+            "nme": "HIDE_BADGES",
+            "dsc": "Lcom/terraformersmc/modmenu/config/option/BooleanConfigOption;"
+          },
+          {
+            "acc": 25,
+            "nme": "HIDE_MOD_CREDITS",
+            "dsc": "Lcom/terraformersmc/modmenu/config/option/BooleanConfigOption;"
+          },
+          {
+            "acc": 25,
+            "nme": "EASTER_EGGS",
+            "dsc": "Lcom/terraformersmc/modmenu/config/option/BooleanConfigOption;"
+          },
+          {
+            "acc": 25,
+            "nme": "RANDOM_JAVA_COLORS",
+            "dsc": "Lcom/terraformersmc/modmenu/config/option/BooleanConfigOption;"
+          },
+          {
+            "acc": 25,
+            "nme": "TRANSLATE_NAMES",
+            "dsc": "Lcom/terraformersmc/modmenu/config/option/BooleanConfigOption;"
+          },
+          {
+            "acc": 25,
+            "nme": "TRANSLATE_DESCRIPTIONS",
+            "dsc": "Lcom/terraformersmc/modmenu/config/option/BooleanConfigOption;"
+          },
+          {
+            "acc": 25,
+            "nme": "UPDATE_CHECKER",
+            "dsc": "Lcom/terraformersmc/modmenu/config/option/BooleanConfigOption;"
+          },
+          {
+            "acc": 25,
+            "nme": "BUTTON_UPDATE_BADGE",
+            "dsc": "Lcom/terraformersmc/modmenu/config/option/BooleanConfigOption;"
+          },
+          {
+            "acc": 25,
+            "nme": "UPDATE_CHANNEL",
+            "dsc": "Lcom/terraformersmc/modmenu/config/option/EnumConfigOption;",
+            "sig": "Lcom/terraformersmc/modmenu/config/option/EnumConfigOption<Lcom/terraformersmc/modmenu/api/UpdateChannel;>;"
+          },
+          {
+            "acc": 25,
+            "nme": "QUICK_CONFIGURE",
+            "dsc": "Lcom/terraformersmc/modmenu/config/option/BooleanConfigOption;"
+          },
+          {
+            "acc": 25,
+            "nme": "MODIFY_TITLE_SCREEN",
+            "dsc": "Lcom/terraformersmc/modmenu/config/option/BooleanConfigOption;"
+          },
+          {
+            "acc": 25,
+            "nme": "MODIFY_GAME_MENU",
+            "dsc": "Lcom/terraformersmc/modmenu/config/option/BooleanConfigOption;"
+          },
+          {
+            "acc": 25,
+            "nme": "HIDE_CONFIG_BUTTONS",
+            "dsc": "Lcom/terraformersmc/modmenu/config/option/BooleanConfigOption;"
+          },
+          {
+            "acc": 25,
+            "nme": "CONFIG_MODE",
+            "dsc": "Lcom/terraformersmc/modmenu/config/option/BooleanConfigOption;"
+          },
+          {
+            "acc": 25,
+            "nme": "DISABLE_DRAG_AND_DROP",
+            "dsc": "Lcom/terraformersmc/modmenu/config/option/BooleanConfigOption;"
+          },
+          {
+            "acc": 25,
+            "nme": "HIDDEN_MODS",
+            "dsc": "Lcom/terraformersmc/modmenu/config/option/StringSetConfigOption;"
+          },
+          {
+            "acc": 25,
+            "nme": "HIDDEN_CONFIGS",
+            "dsc": "Lcom/terraformersmc/modmenu/config/option/StringSetConfigOption;"
+          },
+          {
+            "acc": 25,
+            "nme": "DISABLE_UPDATE_CHECKER",
+            "dsc": "Lcom/terraformersmc/modmenu/config/option/StringSetConfigOption;"
+          }
+        ]
+      },
+      "com/terraformersmc/modmenu/config/option/ConfigOptionStorage.class": {
+        "ver": 65,
+        "acc": 33,
+        "nme": "com/terraformersmc/modmenu/config/option/ConfigOptionStorage",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "setStringSet",
+            "acc": 9,
+            "dsc": "(Ljava/lang/String;Ljava/util/Set;)V",
+            "sig": "(Ljava/lang/String;Ljava/util/Set<Ljava/lang/String;>;)V"
+          },
+          {
+            "nme": "getStringSet",
+            "acc": 9,
+            "dsc": "(Ljava/lang/String;)Ljava/util/Set;",
+            "sig": "(Ljava/lang/String;)Ljava/util/Set<Ljava/lang/String;>;"
+          },
+          {
+            "nme": "setBoolean",
+            "acc": 9,
+            "dsc": "(Ljava/lang/String;Z)V"
+          },
+          {
+            "nme": "toggleBoolean",
+            "acc": 9,
+            "dsc": "(Ljava/lang/String;)V"
+          },
+          {
+            "nme": "getBoolean",
+            "acc": 9,
+            "dsc": "(Ljava/lang/String;)Z"
+          },
+          {
+            "nme": "getEnum",
+            "acc": 9,
+            "dsc": "(Ljava/lang/String;Ljava/lang/Class;)Ljava/lang/Enum;",
+            "sig": "<E:Ljava/lang/Enum<TE;>;>(Ljava/lang/String;Ljava/lang/Class<TE;>;)TE;"
+          },
+          {
+            "nme": "getEnumTypeless",
+            "acc": 9,
+            "dsc": "(Ljava/lang/String;Ljava/lang/Class;)Ljava/lang/Enum;",
+            "sig": "(Ljava/lang/String;Ljava/lang/Class<Ljava/lang/Enum<*>;>;)Ljava/lang/Enum<*>;"
+          },
+          {
+            "nme": "setEnum",
+            "acc": 9,
+            "dsc": "(Ljava/lang/String;Ljava/lang/Enum;)V",
+            "sig": "<E:Ljava/lang/Enum<TE;>;>(Ljava/lang/String;TE;)V"
+          },
+          {
+            "nme": "setEnumTypeless",
+            "acc": 9,
+            "dsc": "(Ljava/lang/String;Ljava/lang/Enum;)V",
+            "sig": "(Ljava/lang/String;Ljava/lang/Enum<*>;)V"
+          },
+          {
+            "nme": "cycleEnum",
+            "acc": 9,
+            "dsc": "(Ljava/lang/String;Ljava/lang/Class;)Ljava/lang/Enum;",
+            "sig": "<E:Ljava/lang/Enum<TE;>;>(Ljava/lang/String;Ljava/lang/Class<TE;>;)TE;"
+          },
+          {
+            "nme": "cycleEnum",
+            "acc": 9,
+            "dsc": "(Ljava/lang/String;Ljava/lang/Class;I)Ljava/lang/Enum;",
+            "sig": "<E:Ljava/lang/Enum<TE;>;>(Ljava/lang/String;Ljava/lang/Class<TE;>;I)TE;"
+          },
+          {
+            "nme": "<clinit>",
+            "acc": 8,
+            "dsc": "()V"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 26,
+            "nme": "BOOLEAN_OPTIONS",
+            "dsc": "Ljava/util/Map;",
+            "sig": "Ljava/util/Map<Ljava/lang/String;Ljava/lang/Boolean;>;"
+          },
+          {
+            "acc": 26,
+            "nme": "ENUM_OPTIONS",
+            "dsc": "Ljava/util/Map;",
+            "sig": "Ljava/util/Map<Ljava/lang/String;Ljava/lang/Enum<*>;>;"
+          },
+          {
+            "acc": 26,
+            "nme": "STRING_SET_OPTIONS",
+            "dsc": "Ljava/util/Map;",
+            "sig": "Ljava/util/Map<Ljava/lang/String;Ljava/util/Set<Ljava/lang/String;>;>;"
+          }
+        ]
+      },
+      "com/terraformersmc/modmenu/util/ModMenuScreenTexts.class": {
+        "ver": 65,
+        "acc": 49,
+        "nme": "com/terraformersmc/modmenu/util/ModMenuScreenTexts",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 2,
+            "dsc": "()V"
+          },
+          {
+            "nme": "modIdTooltip",
+            "acc": 9,
+            "dsc": "(Ljava/lang/String;)Lnet/minecraft/class_2561;"
+          },
+          {
+            "nme": "configureError",
+            "acc": 9,
+            "dsc": "(Ljava/lang/String;Ljava/lang/Throwable;)Lnet/minecraft/class_2561;"
+          },
+          {
+            "nme": "<clinit>",
+            "acc": 8,
+            "dsc": "()V"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 25,
+            "nme": "CONFIGURE",
+            "dsc": "Lnet/minecraft/class_2561;"
+          },
+          {
+            "acc": 25,
+            "nme": "DROP_CONFIRM",
+            "dsc": "Lnet/minecraft/class_2561;"
+          },
+          {
+            "acc": 25,
+            "nme": "DROP_INFO_LINE_1",
+            "dsc": "Lnet/minecraft/class_2561;"
+          },
+          {
+            "acc": 25,
+            "nme": "DROP_INFO_LINE_2",
+            "dsc": "Lnet/minecraft/class_2561;"
+          },
+          {
+            "acc": 25,
+            "nme": "DROP_SUCCESSFUL_LINE_1",
+            "dsc": "Lnet/minecraft/class_2561;"
+          },
+          {
+            "acc": 25,
+            "nme": "DROP_SUCCESSFUL_LINE_2",
+            "dsc": "Lnet/minecraft/class_2561;"
+          },
+          {
+            "acc": 25,
+            "nme": "ISSUES",
+            "dsc": "Lnet/minecraft/class_2561;"
+          },
+          {
+            "acc": 25,
+            "nme": "MODS_FOLDER",
+            "dsc": "Lnet/minecraft/class_2561;"
+          },
+          {
+            "acc": 25,
+            "nme": "SEARCH",
+            "dsc": "Lnet/minecraft/class_2561;"
+          },
+          {
+            "acc": 25,
+            "nme": "TITLE",
+            "dsc": "Lnet/minecraft/class_2561;"
+          },
+          {
+            "acc": 25,
+            "nme": "TOGGLE_FILTER_OPTIONS",
+            "dsc": "Lnet/minecraft/class_2561;"
+          },
+          {
+            "acc": 25,
+            "nme": "WEBSITE",
+            "dsc": "Lnet/minecraft/class_2561;"
+          }
+        ]
+      },
+      "com/terraformersmc/modmenu/util/mod/fabric/FabricLoaderUpdateChecker.class": {
+        "ver": 65,
+        "acc": 33,
+        "nme": "com/terraformersmc/modmenu/util/mod/fabric/FabricLoaderUpdateChecker",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "checkForUpdates",
+            "acc": 1,
+            "dsc": "()Lcom/terraformersmc/modmenu/api/UpdateInfo;"
+          },
+          {
+            "nme": "checkForUpdates0",
+            "acc": 10,
+            "dsc": "()Lcom/terraformersmc/modmenu/api/UpdateInfo;",
+            "exs": [
+              "java/io/IOException",
+              "java/lang/InterruptedException"
+            ]
+          },
+          {
+            "nme": "isNewer",
+            "acc": 10,
+            "dsc": "(Lnet/fabricmc/loader/api/Version;Lnet/fabricmc/loader/api/Version;)Z"
+          },
+          {
+            "nme": "getCurrentVersion",
+            "acc": 10,
+            "dsc": "()Lnet/fabricmc/loader/api/Version;"
+          },
+          {
+            "nme": "<clinit>",
+            "acc": 8,
+            "dsc": "()V"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 25,
+            "nme": "LOGGER",
+            "dsc": "Lorg/slf4j/Logger;"
+          },
+          {
+            "acc": 26,
+            "nme": "LOADER_VERSIONS",
+            "dsc": "Ljava/net/URI;"
+          }
+        ]
+      },
+      "com/terraformersmc/modmenu/util/mod/ModSearch.class": {
+        "ver": 65,
+        "acc": 33,
+        "nme": "com/terraformersmc/modmenu/util/mod/ModSearch",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "validSearchQuery",
+            "acc": 9,
+            "dsc": "(Ljava/lang/String;)Z"
+          },
+          {
+            "nme": "search",
+            "acc": 9,
+            "dsc": "(Lcom/terraformersmc/modmenu/gui/ModsScreen;Ljava/lang/String;Ljava/util/List;)Ljava/util/List;",
+            "sig": "(Lcom/terraformersmc/modmenu/gui/ModsScreen;Ljava/lang/String;Ljava/util/List<Lcom/terraformersmc/modmenu/util/mod/Mod;>;)Ljava/util/List<Lcom/terraformersmc/modmenu/util/mod/Mod;>;"
+          },
+          {
+            "nme": "passesFilters",
+            "acc": 10,
+            "dsc": "(Lcom/terraformersmc/modmenu/gui/ModsScreen;Lcom/terraformersmc/modmenu/util/mod/Mod;Ljava/lang/String;)I"
+          },
+          {
+            "nme": "authorMatches",
+            "acc": 10,
+            "dsc": "(Lcom/terraformersmc/modmenu/util/mod/Mod;Ljava/lang/String;)Z"
+          },
+          {
+            "nme": "lambda$authorMatches$4",
+            "acc": 4106,
+            "dsc": "(Ljava/lang/String;Ljava/lang/String;)Z"
+          },
+          {
+            "nme": "lambda$authorMatches$3",
+            "acc": 4106,
+            "dsc": "(Ljava/lang/String;)Ljava/lang/String;"
+          },
+          {
+            "nme": "lambda$search$2",
+            "acc": 4106,
+            "dsc": "(Lnet/minecraft/class_3545;Lnet/minecraft/class_3545;)I"
+          },
+          {
+            "nme": "lambda$search$1",
+            "acc": 4106,
+            "dsc": "(Lnet/minecraft/class_3545;)Z"
+          },
+          {
+            "nme": "lambda$search$0",
+            "acc": 4106,
+            "dsc": "(Lcom/terraformersmc/modmenu/gui/ModsScreen;Ljava/lang/String;Lcom/terraformersmc/modmenu/util/mod/Mod;)Lnet/minecraft/class_3545;"
+          }
+        ],
+        "flds": []
+      },
+      "com/terraformersmc/modmenu/gui/widget/ModMenuButtonWidget.class": {
+        "ver": 65,
+        "acc": 33,
+        "nme": "com/terraformersmc/modmenu/gui/widget/ModMenuButtonWidget",
+        "super": "net/minecraft/class_4185",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "(IIIILnet/minecraft/class_2561;Lnet/minecraft/class_437;)V"
+          },
+          {
+            "nme": "method_48579",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/class_332;IIF)V"
+          },
+          {
+            "nme": "lambda$new$0",
+            "acc": 4106,
+            "dsc": "(Lnet/minecraft/class_437;Lnet/minecraft/class_4185;)V"
+          }
+        ],
+        "flds": []
+      },
+      "com/terraformersmc/modmenu/api/ConfigScreenFactory.class": {
+        "ver": 65,
+        "acc": 1537,
+        "nme": "com/terraformersmc/modmenu/api/ConfigScreenFactory",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "create",
+            "acc": 1025,
+            "dsc": "(Lnet/minecraft/class_437;)Lnet/minecraft/class_437;",
+            "sig": "(Lnet/minecraft/class_437;)TS;"
+          }
+        ],
+        "flds": [],
+        "vanns": [
+          {
+            "dsc": "Ljava/lang/FunctionalInterface;"
+          }
+        ]
+      },
+      "com/terraformersmc/modmenu/config/ModMenuConfigManager.class": {
+        "ver": 65,
+        "acc": 33,
+        "nme": "com/terraformersmc/modmenu/config/ModMenuConfigManager",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "prepareConfigPath",
+            "acc": 10,
+            "dsc": "()V"
+          },
+          {
+            "nme": "initializeConfig",
+            "acc": 9,
+            "dsc": "()V"
+          },
+          {
+            "nme": "load",
+            "acc": 10,
+            "dsc": "()V"
+          },
+          {
+            "nme": "save",
+            "acc": 9,
+            "dsc": "()V"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 10,
+            "nme": "path",
+            "dsc": "Ljava/nio/file/Path;"
+          }
+        ]
+      },
+      "com/terraformersmc/modmenu/util/mod/ModrinthUpdateInfo.class": {
+        "ver": 65,
+        "acc": 65585,
+        "nme": "com/terraformersmc/modmenu/util/mod/ModrinthUpdateInfo",
+        "super": "java/lang/Record",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/terraformersmc/modmenu/api/UpdateChannel;)V"
+          },
+          {
+            "nme": "isUpdateAvailable",
+            "acc": 1,
+            "dsc": "()Z"
+          },
+          {
+            "nme": "getUpdateMessage",
+            "acc": 1,
+            "dsc": "()Lnet/minecraft/class_2561;",
+            "invanns": [
+              {
+                "dsc": "Lorg/jetbrains/annotations/NotNull;"
+              }
+            ]
+          },
+          {
+            "nme": "getDownloadLink",
+            "acc": 1,
+            "dsc": "()Ljava/lang/String;"
+          },
+          {
+            "nme": "toString",
+            "acc": 17,
+            "dsc": "()Ljava/lang/String;"
+          },
+          {
+            "nme": "hashCode",
+            "acc": 17,
+            "dsc": "()I"
+          },
+          {
+            "nme": "equals",
+            "acc": 17,
+            "dsc": "(Ljava/lang/Object;)Z"
+          },
+          {
+            "nme": "projectId",
+            "acc": 1,
+            "dsc": "()Ljava/lang/String;"
+          },
+          {
+            "nme": "versionId",
+            "acc": 1,
+            "dsc": "()Ljava/lang/String;"
+          },
+          {
+            "nme": "versionNumber",
+            "acc": 1,
+            "dsc": "()Ljava/lang/String;"
+          },
+          {
+            "nme": "getUpdateChannel",
+            "acc": 1,
+            "dsc": "()Lcom/terraformersmc/modmenu/api/UpdateChannel;"
+          },
+          {
+            "nme": "<clinit>",
+            "acc": 8,
+            "dsc": "()V"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 18,
+            "nme": "projectId",
+            "dsc": "Ljava/lang/String;"
+          },
+          {
+            "acc": 18,
+            "nme": "versionId",
+            "dsc": "Ljava/lang/String;"
+          },
+          {
+            "acc": 18,
+            "nme": "versionNumber",
+            "dsc": "Ljava/lang/String;"
+          },
+          {
+            "acc": 18,
+            "nme": "getUpdateChannel",
+            "dsc": "Lcom/terraformersmc/modmenu/api/UpdateChannel;"
+          },
+          {
+            "acc": 26,
+            "nme": "MODRINTH_TEXT",
+            "dsc": "Lnet/minecraft/class_2561;"
+          }
+        ]
+      },
+      "com/terraformersmc/modmenu/util/JsonUtil.class": {
+        "ver": 65,
+        "acc": 33,
+        "nme": "com/terraformersmc/modmenu/util/JsonUtil",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 2,
+            "dsc": "()V"
+          },
+          {
+            "nme": "getString",
+            "acc": 9,
+            "dsc": "(Lcom/google/gson/JsonObject;Ljava/lang/String;)Ljava/util/Optional;",
+            "sig": "(Lcom/google/gson/JsonObject;Ljava/lang/String;)Ljava/util/Optional<Ljava/lang/String;>;"
+          },
+          {
+            "nme": "getBoolean",
+            "acc": 9,
+            "dsc": "(Lcom/google/gson/JsonObject;Ljava/lang/String;)Ljava/util/Optional;",
+            "sig": "(Lcom/google/gson/JsonObject;Ljava/lang/String;)Ljava/util/Optional<Ljava/lang/Boolean;>;"
+          }
+        ],
+        "flds": []
+      },
+      "com/terraformersmc/modmenu/gui/ModMenuOptionsScreen.class": {
+        "ver": 65,
+        "acc": 33,
+        "nme": "com/terraformersmc/modmenu/gui/ModMenuOptionsScreen",
+        "super": "net/minecraft/class_4667",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/class_437;)V"
+          },
+          {
+            "nme": "method_60325",
+            "acc": 4,
+            "dsc": "()V"
+          },
+          {
+            "nme": "method_25432",
+            "acc": 1,
+            "dsc": "()V"
+          }
+        ],
+        "flds": []
+      },
+      "com/terraformersmc/modmenu/gui/widget/DescriptionListWidget$MojangCreditsEntry$MinecraftCredits.class": {
+        "ver": 65,
+        "acc": 32,
+        "nme": "com/terraformersmc/modmenu/gui/widget/DescriptionListWidget$MojangCreditsEntry$MinecraftCredits",
+        "super": "net/minecraft/class_8219",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "(Lcom/terraformersmc/modmenu/gui/widget/DescriptionListWidget$MojangCreditsEntry;)V"
+          }
+        ],
+        "flds": []
+      },
+      "com/terraformersmc/modmenu/util/DrawingUtil.class": {
+        "ver": 65,
+        "acc": 33,
+        "nme": "com/terraformersmc/modmenu/util/DrawingUtil",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "drawRandomVersionBackground",
+            "acc": 9,
+            "dsc": "(Lcom/terraformersmc/modmenu/util/mod/Mod;Lnet/minecraft/class_332;IIII)V"
+          },
+          {
+            "nme": "drawWrappedString",
+            "acc": 9,
+            "dsc": "(Lnet/minecraft/class_332;Ljava/lang/String;IIIII)V"
+          },
+          {
+            "nme": "drawBadge",
+            "acc": 9,
+            "dsc": "(Lnet/minecraft/class_332;IIILnet/minecraft/class_5481;III)V"
+          },
+          {
+            "nme": "<clinit>",
+            "acc": 8,
+            "dsc": "()V"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 26,
+            "nme": "CLIENT",
+            "dsc": "Lnet/minecraft/class_310;"
+          }
+        ],
+        "invanns": [
+          {
+            "dsc": "Lnet/fabricmc/api/Environment;",
+            "vals": [
+              "value",
+              [
+                "Lnet/fabricmc/api/EnvType;",
+                "CLIENT"
+              ]
+            ]
+          }
+        ]
+      },
+      "com/terraformersmc/modmenu/util/TranslationUtil.class": {
+        "ver": 65,
+        "acc": 33,
+        "nme": "com/terraformersmc/modmenu/util/TranslationUtil",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "translateNumeric",
+            "acc": 137,
+            "dsc": "(Ljava/lang/String;[[I)Lnet/minecraft/class_2561;"
+          },
+          {
+            "nme": "translationKeyOf",
+            "acc": 9,
+            "dsc": "(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;"
+          },
+          {
+            "nme": "<clinit>",
+            "acc": 8,
+            "dsc": "()V"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 4120,
+            "nme": "$assertionsDisabled",
+            "dsc": "Z"
+          }
+        ]
+      },
+      "com/terraformersmc/modmenu/api/UpdateInfo.class": {
+        "ver": 65,
+        "acc": 1537,
+        "nme": "com/terraformersmc/modmenu/api/UpdateInfo",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "isUpdateAvailable",
+            "acc": 1025,
+            "dsc": "()Z"
+          },
+          {
+            "nme": "getUpdateMessage",
+            "acc": 1,
+            "dsc": "()Lnet/minecraft/class_2561;",
+            "invanns": [
+              {
+                "dsc": "Lorg/jetbrains/annotations/Nullable;"
+              }
+            ]
+          },
+          {
+            "nme": "getDownloadLink",
+            "acc": 1025,
+            "dsc": "()Ljava/lang/String;"
+          },
+          {
+            "nme": "getUpdateChannel",
+            "acc": 1025,
+            "dsc": "()Lcom/terraformersmc/modmenu/api/UpdateChannel;"
+          }
+        ],
+        "flds": []
+      },
+      "com/terraformersmc/modmenu/gui/widget/entries/IndependentEntry.class": {
+        "ver": 65,
+        "acc": 33,
+        "nme": "com/terraformersmc/modmenu/gui/widget/entries/IndependentEntry",
+        "super": "com/terraformersmc/modmenu/gui/widget/entries/ModListEntry",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "(Lcom/terraformersmc/modmenu/util/mod/Mod;Lcom/terraformersmc/modmenu/gui/widget/ModListWidget;)V"
+          }
+        ],
+        "flds": []
+      },
+      "com/terraformersmc/modmenu/util/mod/ModBadgeRenderer.class": {
+        "ver": 65,
+        "acc": 33,
+        "nme": "com/terraformersmc/modmenu/util/mod/ModBadgeRenderer",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "(IIILcom/terraformersmc/modmenu/util/mod/Mod;Lcom/terraformersmc/modmenu/gui/ModsScreen;)V"
+          },
+          {
+            "nme": "draw",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/class_332;II)V"
+          },
+          {
+            "nme": "drawBadge",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/class_332;Lcom/terraformersmc/modmenu/util/mod/Mod$Badge;II)V"
+          },
+          {
+            "nme": "drawBadge",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/class_332;Lnet/minecraft/class_5481;IIII)V"
+          },
+          {
+            "nme": "getMod",
+            "acc": 1,
+            "dsc": "()Lcom/terraformersmc/modmenu/util/mod/Mod;"
+          },
+          {
+            "nme": "lambda$draw$0",
+            "acc": 4098,
+            "dsc": "(Lnet/minecraft/class_332;IILcom/terraformersmc/modmenu/util/mod/Mod$Badge;)V"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 4,
+            "nme": "startX",
+            "dsc": "I"
+          },
+          {
+            "acc": 4,
+            "nme": "startY",
+            "dsc": "I"
+          },
+          {
+            "acc": 4,
+            "nme": "badgeX",
+            "dsc": "I"
+          },
+          {
+            "acc": 4,
+            "nme": "badgeY",
+            "dsc": "I"
+          },
+          {
+            "acc": 4,
+            "nme": "badgeMax",
+            "dsc": "I"
+          },
+          {
+            "acc": 4,
+            "nme": "mod",
+            "dsc": "Lcom/terraformersmc/modmenu/util/mod/Mod;"
+          },
+          {
+            "acc": 4,
+            "nme": "client",
+            "dsc": "Lnet/minecraft/class_310;"
+          },
+          {
+            "acc": 20,
+            "nme": "screen",
+            "dsc": "Lcom/terraformersmc/modmenu/gui/ModsScreen;"
+          }
+        ]
+      },
+      "com/terraformersmc/modmenu/config/option/StringSetConfigOption.class": {
+        "ver": 65,
+        "acc": 33,
+        "nme": "com/terraformersmc/modmenu/config/option/StringSetConfigOption",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "(Ljava/lang/String;Ljava/util/Set;)V",
+            "sig": "(Ljava/lang/String;Ljava/util/Set<Ljava/lang/String;>;)V"
+          },
+          {
+            "nme": "getKey",
+            "acc": 1,
+            "dsc": "()Ljava/lang/String;"
+          },
+          {
+            "nme": "getValue",
+            "acc": 1,
+            "dsc": "()Ljava/util/Set;",
+            "sig": "()Ljava/util/Set<Ljava/lang/String;>;"
+          },
+          {
+            "nme": "setValue",
+            "acc": 1,
+            "dsc": "(Ljava/util/Set;)V",
+            "sig": "(Ljava/util/Set<Ljava/lang/String;>;)V"
+          },
+          {
+            "nme": "getMessage",
+            "acc": 1,
+            "dsc": "()Lnet/minecraft/class_2561;"
+          },
+          {
+            "nme": "getDefaultValue",
+            "acc": 1,
+            "dsc": "()Ljava/util/Set;",
+            "sig": "()Ljava/util/Set<Ljava/lang/String;>;"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 18,
+            "nme": "key",
+            "dsc": "Ljava/lang/String;"
+          },
+          {
+            "acc": 18,
+            "nme": "translationKey",
+            "dsc": "Ljava/lang/String;"
+          },
+          {
+            "acc": 18,
+            "nme": "defaultValue",
+            "dsc": "Ljava/util/Set;",
+            "sig": "Ljava/util/Set<Ljava/lang/String;>;"
+          }
+        ]
+      },
+      "com/terraformersmc/modmenu/ModMenuModMenuCompat.class": {
+        "ver": 65,
+        "acc": 33,
+        "nme": "com/terraformersmc/modmenu/ModMenuModMenuCompat",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "getModConfigScreenFactory",
+            "acc": 1,
+            "dsc": "()Lcom/terraformersmc/modmenu/api/ConfigScreenFactory;",
+            "sig": "()Lcom/terraformersmc/modmenu/api/ConfigScreenFactory<*>;"
+          },
+          {
+            "nme": "getProvidedConfigScreenFactories",
+            "acc": 1,
+            "dsc": "()Ljava/util/Map;",
+            "sig": "()Ljava/util/Map<Ljava/lang/String;Lcom/terraformersmc/modmenu/api/ConfigScreenFactory<*>;>;"
+          },
+          {
+            "nme": "getProvidedUpdateCheckers",
+            "acc": 1,
+            "dsc": "()Ljava/util/Map;",
+            "sig": "()Ljava/util/Map<Ljava/lang/String;Lcom/terraformersmc/modmenu/api/UpdateChecker;>;"
+          },
+          {
+            "nme": "lambda$getProvidedConfigScreenFactories$0",
+            "acc": 4106,
+            "dsc": "(Lnet/minecraft/class_437;)Lnet/minecraft/class_437;"
+          }
+        ],
+        "flds": []
+      },
+      "com/terraformersmc/modmenu/gui/widget/LegacyTexturedButtonWidget.class": {
+        "ver": 65,
+        "acc": 33,
+        "nme": "com/terraformersmc/modmenu/gui/widget/LegacyTexturedButtonWidget",
+        "super": "net/minecraft/class_344",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "(IIIIIIILnet/minecraft/class_2960;IILnet/minecraft/class_4185$class_4241;Lnet/minecraft/class_2561;)V"
+          },
+          {
+            "nme": "method_48579",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/class_332;IIF)V"
+          },
+          {
+            "nme": "legacyTexturedBuilder",
+            "acc": 9,
+            "dsc": "(Lnet/minecraft/class_2561;Lnet/minecraft/class_4185$class_4241;)Lcom/terraformersmc/modmenu/gui/widget/LegacyTexturedButtonWidget$Builder;"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 18,
+            "nme": "u",
+            "dsc": "I"
+          },
+          {
+            "acc": 18,
+            "nme": "v",
+            "dsc": "I"
+          },
+          {
+            "acc": 18,
+            "nme": "hoveredVOffset",
+            "dsc": "I"
+          },
+          {
+            "acc": 18,
+            "nme": "texture",
+            "dsc": "Lnet/minecraft/class_2960;"
+          },
+          {
+            "acc": 18,
+            "nme": "textureWidth",
+            "dsc": "I"
+          },
+          {
+            "acc": 18,
+            "nme": "textureHeight",
+            "dsc": "I"
+          }
+        ]
+      },
+      "com/terraformersmc/modmenu/util/UpdateCheckerThreadFactory.class": {
+        "ver": 65,
+        "acc": 33,
+        "nme": "com/terraformersmc/modmenu/util/UpdateCheckerThreadFactory",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "newThread",
+            "acc": 1,
+            "dsc": "(Ljava/lang/Runnable;)Ljava/lang/Thread;"
+          },
+          {
+            "nme": "<clinit>",
+            "acc": 8,
+            "dsc": "()V"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 24,
+            "nme": "COUNT",
+            "dsc": "Ljava/util/concurrent/atomic/AtomicInteger;"
+          }
+        ]
+      },
+      "com/terraformersmc/modmenu/TextPlaceholderApiCompat.class": {
+        "ver": 65,
+        "acc": 33,
+        "nme": "com/terraformersmc/modmenu/TextPlaceholderApiCompat",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "<clinit>",
+            "acc": 8,
+            "dsc": "()V"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 25,
+            "nme": "PARSER",
+            "dsc": "Leu/pb4/placeholders/api/parsers/NodeParser;"
+          }
+        ]
+      },
+      "com/terraformersmc/modmenu/api/UpdateChannel.class": {
+        "ver": 65,
+        "acc": 16433,
+        "nme": "com/terraformersmc/modmenu/api/UpdateChannel",
+        "super": "java/lang/Enum",
+        "mthds": [
+          {
+            "nme": "values",
+            "acc": 9,
+            "dsc": "()[Lcom/terraformersmc/modmenu/api/UpdateChannel;"
+          },
+          {
+            "nme": "valueOf",
+            "acc": 9,
+            "dsc": "(Ljava/lang/String;)Lcom/terraformersmc/modmenu/api/UpdateChannel;"
+          },
+          {
+            "nme": "<init>",
+            "acc": 2,
+            "dsc": "(Ljava/lang/String;I)V",
+            "sig": "()V"
+          },
+          {
+            "nme": "getUserPreference",
+            "acc": 9,
+            "dsc": "()Lcom/terraformersmc/modmenu/api/UpdateChannel;"
+          },
+          {
+            "nme": "$values",
+            "acc": 4106,
+            "dsc": "()[Lcom/terraformersmc/modmenu/api/UpdateChannel;"
+          },
+          {
+            "nme": "<clinit>",
+            "acc": 8,
+            "dsc": "()V"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 16409,
+            "nme": "ALPHA",
+            "dsc": "Lcom/terraformersmc/modmenu/api/UpdateChannel;"
+          },
+          {
+            "acc": 16409,
+            "nme": "BETA",
+            "dsc": "Lcom/terraformersmc/modmenu/api/UpdateChannel;"
+          },
+          {
+            "acc": 16409,
+            "nme": "RELEASE",
+            "dsc": "Lcom/terraformersmc/modmenu/api/UpdateChannel;"
+          },
+          {
+            "acc": 4122,
+            "nme": "$VALUES",
+            "dsc": "[Lcom/terraformersmc/modmenu/api/UpdateChannel;"
+          }
+        ]
+      },
+      "com/terraformersmc/modmenu/util/mod/fabric/FabricDummyParentMod.class": {
+        "ver": 65,
+        "acc": 33,
+        "nme": "com/terraformersmc/modmenu/util/mod/fabric/FabricDummyParentMod",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "(Lcom/terraformersmc/modmenu/util/mod/fabric/FabricMod;Ljava/lang/String;)V"
+          },
+          {
+            "nme": "getId",
+            "acc": 1,
+            "dsc": "()Ljava/lang/String;",
+            "invanns": [
+              {
+                "dsc": "Lorg/jetbrains/annotations/NotNull;"
+              }
+            ]
+          },
+          {
+            "nme": "getName",
+            "acc": 1,
+            "dsc": "()Ljava/lang/String;",
+            "invanns": [
+              {
+                "dsc": "Lorg/jetbrains/annotations/NotNull;"
+              }
+            ]
+          },
+          {
+            "nme": "getIcon",
+            "acc": 1,
+            "dsc": "(Lcom/terraformersmc/modmenu/util/mod/fabric/FabricIconHandler;I)Lnet/minecraft/class_1043;",
+            "invanns": [
+              {
+                "dsc": "Lorg/jetbrains/annotations/NotNull;"
+              }
+            ]
+          },
+          {
+            "nme": "getDescription",
+            "acc": 1,
+            "dsc": "()Ljava/lang/String;",
+            "invanns": [
+              {
+                "dsc": "Lorg/jetbrains/annotations/NotNull;"
+              }
+            ]
+          },
+          {
+            "nme": "getVersion",
+            "acc": 1,
+            "dsc": "()Ljava/lang/String;",
+            "invanns": [
+              {
+                "dsc": "Lorg/jetbrains/annotations/NotNull;"
+              }
+            ]
+          },
+          {
+            "nme": "getPrefixedVersion",
+            "acc": 1,
+            "dsc": "()Ljava/lang/String;",
+            "invanns": [
+              {
+                "dsc": "Lorg/jetbrains/annotations/NotNull;"
+              }
+            ]
+          },
+          {
+            "nme": "getAuthors",
+            "acc": 1,
+            "dsc": "()Ljava/util/List;",
+            "sig": "()Ljava/util/List<Ljava/lang/String;>;",
+            "invanns": [
+              {
+                "dsc": "Lorg/jetbrains/annotations/NotNull;"
+              }
+            ]
+          },
+          {
+            "nme": "getContributors",
+            "acc": 1,
+            "dsc": "()Ljava/util/Map;",
+            "sig": "()Ljava/util/Map<Ljava/lang/String;Ljava/util/Collection<Ljava/lang/String;>;>;",
+            "invanns": [
+              {
+                "dsc": "Lorg/jetbrains/annotations/NotNull;"
+              }
+            ]
+          },
+          {
+            "nme": "getCredits",
+            "acc": 1,
+            "dsc": "()Ljava/util/SortedMap;",
+            "sig": "()Ljava/util/SortedMap<Ljava/lang/String;Ljava/util/Set<Ljava/lang/String;>;>;",
+            "invanns": [
+              {
+                "dsc": "Lorg/jetbrains/annotations/NotNull;"
+              }
+            ]
+          },
+          {
+            "nme": "getBadges",
+            "acc": 1,
+            "dsc": "()Ljava/util/Set;",
+            "sig": "()Ljava/util/Set<Lcom/terraformersmc/modmenu/util/mod/Mod$Badge;>;",
+            "invanns": [
+              {
+                "dsc": "Lorg/jetbrains/annotations/NotNull;"
+              }
+            ]
+          },
+          {
+            "nme": "getWebsite",
+            "acc": 1,
+            "dsc": "()Ljava/lang/String;",
+            "invanns": [
+              {
+                "dsc": "Lorg/jetbrains/annotations/Nullable;"
+              }
+            ]
+          },
+          {
+            "nme": "getIssueTracker",
+            "acc": 1,
+            "dsc": "()Ljava/lang/String;",
+            "invanns": [
+              {
+                "dsc": "Lorg/jetbrains/annotations/Nullable;"
+              }
+            ]
+          },
+          {
+            "nme": "getSource",
+            "acc": 1,
+            "dsc": "()Ljava/lang/String;",
+            "invanns": [
+              {
+                "dsc": "Lorg/jetbrains/annotations/Nullable;"
+              }
+            ]
+          },
+          {
+            "nme": "getParent",
+            "acc": 1,
+            "dsc": "()Ljava/lang/String;",
+            "invanns": [
+              {
+                "dsc": "Lorg/jetbrains/annotations/Nullable;"
+              }
+            ]
+          },
+          {
+            "nme": "getLicense",
+            "acc": 1,
+            "dsc": "()Ljava/util/Set;",
+            "sig": "()Ljava/util/Set<Ljava/lang/String;>;",
+            "invanns": [
+              {
+                "dsc": "Lorg/jetbrains/annotations/NotNull;"
+              }
+            ]
+          },
+          {
+            "nme": "getLinks",
+            "acc": 1,
+            "dsc": "()Ljava/util/Map;",
+            "sig": "()Ljava/util/Map<Ljava/lang/String;Ljava/lang/String;>;",
+            "invanns": [
+              {
+                "dsc": "Lorg/jetbrains/annotations/NotNull;"
+              }
+            ]
+          },
+          {
+            "nme": "isReal",
+            "acc": 1,
+            "dsc": "()Z"
+          },
+          {
+            "nme": "allowsUpdateChecks",
+            "acc": 1,
+            "dsc": "()Z"
+          },
+          {
+            "nme": "getUpdateChecker",
+            "acc": 1,
+            "dsc": "()Lcom/terraformersmc/modmenu/api/UpdateChecker;",
+            "invanns": [
+              {
+                "dsc": "Lorg/jetbrains/annotations/Nullable;"
+              }
+            ]
+          },
+          {
+            "nme": "setUpdateChecker",
+            "acc": 1,
+            "dsc": "(Lcom/terraformersmc/modmenu/api/UpdateChecker;)V"
+          },
+          {
+            "nme": "getUpdateInfo",
+            "acc": 1,
+            "dsc": "()Lcom/terraformersmc/modmenu/api/UpdateInfo;",
+            "invanns": [
+              {
+                "dsc": "Lorg/jetbrains/annotations/Nullable;"
+              }
+            ]
+          },
+          {
+            "nme": "setUpdateInfo",
+            "acc": 1,
+            "dsc": "(Lcom/terraformersmc/modmenu/api/UpdateInfo;)V"
+          },
+          {
+            "nme": "getChildHasUpdate",
+            "acc": 1,
+            "dsc": "()Z"
+          },
+          {
+            "nme": "setChildHasUpdate",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "isHidden",
+            "acc": 1,
+            "dsc": "()Z"
+          },
+          {
+            "nme": "lambda$getIcon$0",
+            "acc": 4106,
+            "dsc": "(Ljava/lang/String;)Ljava/lang/RuntimeException;"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 18,
+            "nme": "id",
+            "dsc": "Ljava/lang/String;"
+          },
+          {
+            "acc": 18,
+            "nme": "host",
+            "dsc": "Lcom/terraformersmc/modmenu/util/mod/fabric/FabricMod;"
+          },
+          {
+            "acc": 2,
+            "nme": "childHasUpdate",
+            "dsc": "Z"
+          }
+        ]
+      },
+      "com/terraformersmc/modmenu/util/UpdateCheckerUtil$CurrentVersionsFromHashes.class": {
+        "ver": 65,
+        "acc": 33,
+        "nme": "com/terraformersmc/modmenu/util/UpdateCheckerUtil$CurrentVersionsFromHashes",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "(Ljava/util/Collection;)V",
+            "sig": "(Ljava/util/Collection<Ljava/lang/String;>;)V"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 1,
+            "nme": "hashes",
+            "dsc": "Ljava/util/Collection;",
+            "sig": "Ljava/util/Collection<Ljava/lang/String;>;"
+          },
+          {
+            "acc": 1,
+            "nme": "algorithm",
+            "dsc": "Ljava/lang/String;"
+          }
+        ]
+      },
+      "com/terraformersmc/modmenu/util/UpdateCheckerUtil$VersionUpdate.class": {
+        "ver": 65,
+        "acc": 65584,
+        "nme": "com/terraformersmc/modmenu/util/UpdateCheckerUtil$VersionUpdate",
+        "super": "java/lang/Record",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 2,
+            "dsc": "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/time/Instant;Lcom/terraformersmc/modmenu/api/UpdateChannel;Ljava/lang/String;)V"
+          },
+          {
+            "nme": "asUpdateInfo",
+            "acc": 2,
+            "dsc": "()Lcom/terraformersmc/modmenu/api/UpdateInfo;"
+          },
+          {
+            "nme": "toString",
+            "acc": 17,
+            "dsc": "()Ljava/lang/String;"
+          },
+          {
+            "nme": "hashCode",
+            "acc": 17,
+            "dsc": "()I"
+          },
+          {
+            "nme": "equals",
+            "acc": 17,
+            "dsc": "(Ljava/lang/Object;)Z"
+          },
+          {
+            "nme": "projectId",
+            "acc": 1,
+            "dsc": "()Ljava/lang/String;"
+          },
+          {
+            "nme": "versionId",
+            "acc": 1,
+            "dsc": "()Ljava/lang/String;"
+          },
+          {
+            "nme": "versionNumber",
+            "acc": 1,
+            "dsc": "()Ljava/lang/String;"
+          },
+          {
+            "nme": "releaseDate",
+            "acc": 1,
+            "dsc": "()Ljava/time/Instant;"
+          },
+          {
+            "nme": "updateChannel",
+            "acc": 1,
+            "dsc": "()Lcom/terraformersmc/modmenu/api/UpdateChannel;"
+          },
+          {
+            "nme": "hash",
+            "acc": 1,
+            "dsc": "()Ljava/lang/String;"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 18,
+            "nme": "projectId",
+            "dsc": "Ljava/lang/String;"
+          },
+          {
+            "acc": 18,
+            "nme": "versionId",
+            "dsc": "Ljava/lang/String;"
+          },
+          {
+            "acc": 18,
+            "nme": "versionNumber",
+            "dsc": "Ljava/lang/String;"
+          },
+          {
+            "acc": 18,
+            "nme": "releaseDate",
+            "dsc": "Ljava/time/Instant;"
+          },
+          {
+            "acc": 18,
+            "nme": "updateChannel",
+            "dsc": "Lcom/terraformersmc/modmenu/api/UpdateChannel;"
+          },
+          {
+            "acc": 18,
+            "nme": "hash",
+            "dsc": "Ljava/lang/String;"
+          }
+        ]
+      },
+      "com/terraformersmc/modmenu/gui/ModsScreen.class": {
+        "ver": 65,
+        "acc": 33,
+        "nme": "com/terraformersmc/modmenu/gui/ModsScreen",
+        "super": "net/minecraft/class_437",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/class_437;)V"
+          },
+          {
+            "nme": "method_25401",
+            "acc": 1,
+            "dsc": "(DDDD)Z"
+          },
+          {
+            "nme": "method_25426",
+            "acc": 4,
+            "dsc": "()V"
+          },
+          {
+            "nme": "method_25404",
+            "acc": 1,
+            "dsc": "(III)Z"
+          },
+          {
+            "nme": "method_25400",
+            "acc": 1,
+            "dsc": "(CI)Z"
+          },
+          {
+            "nme": "method_25394",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/class_332;IIF)V"
+          },
+          {
+            "nme": "computeModCountText",
+            "acc": 2,
+            "dsc": "(ZZ)Lnet/minecraft/class_2561;"
+          },
+          {
+            "nme": "computeLibraryCountText",
+            "acc": 2,
+            "dsc": "(Z)Lnet/minecraft/class_2561;"
+          },
+          {
+            "nme": "formatModCount",
+            "acc": 2,
+            "dsc": "(Ljava/util/Set;Z)[I",
+            "sig": "(Ljava/util/Set<Ljava/lang/String;>;Z)[I"
+          },
+          {
+            "nme": "method_25419",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "setFilterOptionsShown",
+            "acc": 2,
+            "dsc": "(Z)V"
+          },
+          {
+            "nme": "getSelectedEntry",
+            "acc": 1,
+            "dsc": "()Lcom/terraformersmc/modmenu/gui/widget/entries/ModListEntry;"
+          },
+          {
+            "nme": "updateSelectedEntry",
+            "acc": 1,
+            "dsc": "(Lcom/terraformersmc/modmenu/gui/widget/entries/ModListEntry;)V"
+          },
+          {
+            "nme": "updateScrollPercent",
+            "acc": 1,
+            "dsc": "(D)V"
+          },
+          {
+            "nme": "getSearchInput",
+            "acc": 1,
+            "dsc": "()Ljava/lang/String;"
+          },
+          {
+            "nme": "updateFiltersX",
+            "acc": 2,
+            "dsc": "(Z)Z"
+          },
+          {
+            "nme": "method_29638",
+            "acc": 1,
+            "dsc": "(Ljava/util/List;)V",
+            "sig": "(Ljava/util/List<Ljava/nio/file/Path;>;)V"
+          },
+          {
+            "nme": "isValidMod",
+            "acc": 10,
+            "dsc": "(Ljava/nio/file/Path;)Z"
+          },
+          {
+            "nme": "getModHasConfigScreen",
+            "acc": 1,
+            "dsc": "(Ljava/lang/String;)Z"
+          },
+          {
+            "nme": "safelyOpenConfigScreen",
+            "acc": 1,
+            "dsc": "(Ljava/lang/String;)V"
+          },
+          {
+            "nme": "lambda$onFilesDropped$12",
+            "acc": 4098,
+            "dsc": "(Ljava/util/List;Ljava/nio/file/Path;Z)V"
+          },
+          {
+            "nme": "lambda$computeLibraryCountText$11",
+            "acc": 4106,
+            "dsc": "(Lcom/terraformersmc/modmenu/util/mod/Mod;)Z"
+          },
+          {
+            "nme": "lambda$computeModCountText$10",
+            "acc": 4106,
+            "dsc": "(Lcom/terraformersmc/modmenu/util/mod/Mod;)Z"
+          },
+          {
+            "nme": "lambda$computeModCountText$9",
+            "acc": 4106,
+            "dsc": "(Lcom/terraformersmc/modmenu/util/mod/Mod;)Z"
+          },
+          {
+            "nme": "lambda$init$8",
+            "acc": 4098,
+            "dsc": "(Lnet/minecraft/class_4185;)V"
+          },
+          {
+            "nme": "lambda$init$7",
+            "acc": 4106,
+            "dsc": "(Lnet/minecraft/class_4185;)V"
+          },
+          {
+            "nme": "lambda$init$6",
+            "acc": 4098,
+            "dsc": "(Lnet/minecraft/class_4185;)V"
+          },
+          {
+            "nme": "lambda$init$5",
+            "acc": 4098,
+            "dsc": "(Lnet/minecraft/class_4185;)V"
+          },
+          {
+            "nme": "lambda$init$4",
+            "acc": 4098,
+            "dsc": "(Lnet/minecraft/class_4185;)V"
+          },
+          {
+            "nme": "lambda$init$3",
+            "acc": 4098,
+            "dsc": "(Lnet/minecraft/class_4185;)V"
+          },
+          {
+            "nme": "lambda$init$2",
+            "acc": 4098,
+            "dsc": "(Lnet/minecraft/class_4185;)V"
+          },
+          {
+            "nme": "lambda$init$1",
+            "acc": 4098,
+            "dsc": "(Lnet/minecraft/class_4185;)V"
+          },
+          {
+            "nme": "lambda$init$0",
+            "acc": 4098,
+            "dsc": "(Ljava/lang/String;)V"
+          },
+          {
+            "nme": "<clinit>",
+            "acc": 8,
+            "dsc": "()V"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 26,
+            "nme": "FILTERS_BUTTON_LOCATION",
+            "dsc": "Lnet/minecraft/class_2960;"
+          },
+          {
+            "acc": 26,
+            "nme": "CONFIGURE_BUTTON_LOCATION",
+            "dsc": "Lnet/minecraft/class_2960;"
+          },
+          {
+            "acc": 26,
+            "nme": "LOGGER",
+            "dsc": "Lorg/slf4j/Logger;"
+          },
+          {
+            "acc": 18,
+            "nme": "previousScreen",
+            "dsc": "Lnet/minecraft/class_437;"
+          },
+          {
+            "acc": 2,
+            "nme": "selected",
+            "dsc": "Lcom/terraformersmc/modmenu/gui/widget/entries/ModListEntry;"
+          },
+          {
+            "acc": 2,
+            "nme": "modBadgeRenderer",
+            "dsc": "Lcom/terraformersmc/modmenu/util/mod/ModBadgeRenderer;"
+          },
+          {
+            "acc": 2,
+            "nme": "scrollPercent",
+            "dsc": "D"
+          },
+          {
+            "acc": 2,
+            "nme": "keepFilterOptionsShown",
+            "dsc": "Z"
+          },
+          {
+            "acc": 2,
+            "nme": "init",
+            "dsc": "Z"
+          },
+          {
+            "acc": 2,
+            "nme": "filterOptionsShown",
+            "dsc": "Z"
+          },
+          {
+            "acc": 26,
+            "nme": "RIGHT_PANE_Y",
+            "dsc": "I",
+            "val": 48
+          },
+          {
+            "acc": 2,
+            "nme": "paneWidth",
+            "dsc": "I"
+          },
+          {
+            "acc": 2,
+            "nme": "rightPaneX",
+            "dsc": "I"
+          },
+          {
+            "acc": 2,
+            "nme": "searchBoxX",
+            "dsc": "I"
+          },
+          {
+            "acc": 2,
+            "nme": "filtersX",
+            "dsc": "I"
+          },
+          {
+            "acc": 2,
+            "nme": "filtersWidth",
+            "dsc": "I"
+          },
+          {
+            "acc": 2,
+            "nme": "searchRowWidth",
+            "dsc": "I"
+          },
+          {
+            "acc": 17,
+            "nme": "showModChildren",
+            "dsc": "Ljava/util/Set;",
+            "sig": "Ljava/util/Set<Ljava/lang/String;>;"
+          },
+          {
+            "acc": 2,
+            "nme": "searchBox",
+            "dsc": "Lnet/minecraft/class_342;"
+          },
+          {
+            "acc": 2,
+            "nme": "filtersButton",
+            "dsc": "Lnet/minecraft/class_339;"
+          },
+          {
+            "acc": 2,
+            "nme": "sortingButton",
+            "dsc": "Lnet/minecraft/class_339;"
+          },
+          {
+            "acc": 2,
+            "nme": "librariesButton",
+            "dsc": "Lnet/minecraft/class_339;"
+          },
+          {
+            "acc": 2,
+            "nme": "modList",
+            "dsc": "Lcom/terraformersmc/modmenu/gui/widget/ModListWidget;"
+          },
+          {
+            "acc": 2,
+            "nme": "configureButton",
+            "dsc": "Lnet/minecraft/class_339;"
+          },
+          {
+            "acc": 2,
+            "nme": "websiteButton",
+            "dsc": "Lnet/minecraft/class_339;"
+          },
+          {
+            "acc": 2,
+            "nme": "issuesButton",
+            "dsc": "Lnet/minecraft/class_339;"
+          },
+          {
+            "acc": 2,
+            "nme": "descriptionListWidget",
+            "dsc": "Lcom/terraformersmc/modmenu/gui/widget/DescriptionListWidget;"
+          },
+          {
+            "acc": 17,
+            "nme": "modHasConfigScreen",
+            "dsc": "Ljava/util/Map;",
+            "sig": "Ljava/util/Map<Ljava/lang/String;Ljava/lang/Boolean;>;"
+          },
+          {
+            "acc": 17,
+            "nme": "modScreenErrors",
+            "dsc": "Ljava/util/Map;",
+            "sig": "Ljava/util/Map<Ljava/lang/String;Ljava/lang/Throwable;>;"
+          },
+          {
+            "acc": 26,
+            "nme": "SEND_FEEDBACK_TEXT",
+            "dsc": "Lnet/minecraft/class_2561;"
+          },
+          {
+            "acc": 26,
+            "nme": "REPORT_BUGS_TEXT",
+            "dsc": "Lnet/minecraft/class_2561;"
+          },
+          {
+            "acc": 4120,
+            "nme": "$assertionsDisabled",
+            "dsc": "Z"
+          }
+        ]
+      },
+      "com/terraformersmc/modmenu/gui/widget/DescriptionListWidget.class": {
+        "ver": 65,
+        "acc": 33,
+        "nme": "com/terraformersmc/modmenu/gui/widget/DescriptionListWidget",
+        "super": "net/minecraft/class_350",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/class_310;IIIILcom/terraformersmc/modmenu/gui/widget/DescriptionListWidget;Lcom/terraformersmc/modmenu/gui/ModsScreen;)V"
+          },
+          {
+            "nme": "getSelectedOrNull",
+            "acc": 1,
+            "dsc": "()Lcom/terraformersmc/modmenu/gui/widget/DescriptionListWidget$DescriptionEntry;"
+          },
+          {
+            "nme": "method_25322",
+            "acc": 1,
+            "dsc": "()I"
+          },
+          {
+            "nme": "method_65507",
+            "acc": 4,
+            "dsc": "()I"
+          },
+          {
+            "nme": "method_47399",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/class_6382;)V"
+          },
+          {
+            "nme": "rebuildUI",
+            "acc": 2,
+            "dsc": "()V"
+          },
+          {
+            "nme": "updateSelectedModIfRequired",
+            "acc": 1,
+            "dsc": "(Lcom/terraformersmc/modmenu/util/mod/Mod;)V"
+          },
+          {
+            "nme": "method_25311",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/class_332;IIF)V"
+          },
+          {
+            "nme": "creditsRoleText",
+            "acc": 2,
+            "dsc": "(Ljava/lang/String;)Lnet/minecraft/class_2561;"
+          },
+          {
+            "nme": "method_25334",
+            "acc": 4161,
+            "dsc": "()Lnet/minecraft/class_350$class_351;"
+          },
+          {
+            "nme": "method_25399",
+            "acc": 4161,
+            "dsc": "()Lnet/minecraft/class_364;",
+            "invanns": [
+              {
+                "dsc": "Lorg/jetbrains/annotations/Nullable;"
+              }
+            ]
+          },
+          {
+            "nme": "lambda$rebuildUI$0",
+            "acc": 4098,
+            "dsc": "(ILjava/lang/String;Ljava/lang/String;)V"
+          },
+          {
+            "nme": "access$000",
+            "acc": 4104,
+            "dsc": "(Lcom/terraformersmc/modmenu/gui/widget/DescriptionListWidget;)Lnet/minecraft/class_310;"
+          },
+          {
+            "nme": "access$100",
+            "acc": 4104,
+            "dsc": "(Lcom/terraformersmc/modmenu/gui/widget/DescriptionListWidget;)Lnet/minecraft/class_310;"
+          },
+          {
+            "nme": "access$200",
+            "acc": 4104,
+            "dsc": "(Lcom/terraformersmc/modmenu/gui/widget/DescriptionListWidget;)Lnet/minecraft/class_310;"
+          },
+          {
+            "nme": "<clinit>",
+            "acc": 8,
+            "dsc": "()V"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 26,
+            "nme": "HAS_UPDATE_TEXT",
+            "dsc": "Lnet/minecraft/class_2561;"
+          },
+          {
+            "acc": 26,
+            "nme": "EXPERIMENTAL_TEXT",
+            "dsc": "Lnet/minecraft/class_2561;"
+          },
+          {
+            "acc": 26,
+            "nme": "DOWNLOAD_TEXT",
+            "dsc": "Lnet/minecraft/class_2561;"
+          },
+          {
+            "acc": 26,
+            "nme": "CHILD_HAS_UPDATE_TEXT",
+            "dsc": "Lnet/minecraft/class_2561;"
+          },
+          {
+            "acc": 26,
+            "nme": "LINKS_TEXT",
+            "dsc": "Lnet/minecraft/class_2561;"
+          },
+          {
+            "acc": 26,
+            "nme": "SOURCE_TEXT",
+            "dsc": "Lnet/minecraft/class_2561;"
+          },
+          {
+            "acc": 26,
+            "nme": "LICENSE_TEXT",
+            "dsc": "Lnet/minecraft/class_2561;"
+          },
+          {
+            "acc": 26,
+            "nme": "VIEW_CREDITS_TEXT",
+            "dsc": "Lnet/minecraft/class_2561;"
+          },
+          {
+            "acc": 26,
+            "nme": "CREDITS_TEXT",
+            "dsc": "Lnet/minecraft/class_2561;"
+          },
+          {
+            "acc": 18,
+            "nme": "parent",
+            "dsc": "Lcom/terraformersmc/modmenu/gui/ModsScreen;"
+          },
+          {
+            "acc": 18,
+            "nme": "textRenderer",
+            "dsc": "Lnet/minecraft/class_327;"
+          },
+          {
+            "acc": 2,
+            "nme": "selectedMod",
+            "dsc": "Lcom/terraformersmc/modmenu/util/mod/Mod;"
+          }
+        ]
+      },
+      "com/terraformersmc/modmenu/gui/widget/UpdateCheckerTexturedButtonWidget.class": {
+        "ver": 65,
+        "acc": 33,
+        "nme": "com/terraformersmc/modmenu/gui/widget/UpdateCheckerTexturedButtonWidget",
+        "super": "com/terraformersmc/modmenu/gui/widget/LegacyTexturedButtonWidget",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "(IIIIIIILnet/minecraft/class_2960;IILnet/minecraft/class_4185$class_4241;Lnet/minecraft/class_2561;)V"
+          },
+          {
+            "nme": "method_48579",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/class_332;IIF)V"
+          }
+        ],
+        "flds": []
+      },
+      "com/terraformersmc/modmenu/config/FileOnlyConfig.class": {
+        "ver": 65,
+        "acc": 9729,
+        "nme": "com/terraformersmc/modmenu/config/FileOnlyConfig",
+        "super": "java/lang/Object",
+        "mthds": [],
+        "flds": [],
+        "vanns": [
+          {
+            "dsc": "Ljava/lang/annotation/Retention;",
+            "vals": [
+              "value",
+              [
+                "Ljava/lang/annotation/RetentionPolicy;",
+                "RUNTIME"
+              ]
+            ]
+          },
+          {
+            "dsc": "Ljava/lang/annotation/Target;",
+            "vals": [
+              "value",
+              [
+                [
+                  "Ljava/lang/annotation/ElementType;",
+                  "FIELD"
+                ]
+              ]
+            ]
+          }
+        ]
+      },
+      "com/terraformersmc/modmenu/config/ModMenuConfig$ModCountLocation.class": {
+        "ver": 65,
+        "acc": 16433,
+        "nme": "com/terraformersmc/modmenu/config/ModMenuConfig$ModCountLocation",
+        "super": "java/lang/Enum",
+        "mthds": [
+          {
+            "nme": "values",
+            "acc": 9,
+            "dsc": "()[Lcom/terraformersmc/modmenu/config/ModMenuConfig$ModCountLocation;"
+          },
+          {
+            "nme": "valueOf",
+            "acc": 9,
+            "dsc": "(Ljava/lang/String;)Lcom/terraformersmc/modmenu/config/ModMenuConfig$ModCountLocation;"
+          },
+          {
+            "nme": "<init>",
+            "acc": 2,
+            "dsc": "(Ljava/lang/String;IZZ)V",
+            "sig": "(ZZ)V"
+          },
+          {
+            "nme": "isOnTitleScreen",
+            "acc": 1,
+            "dsc": "()Z"
+          },
+          {
+            "nme": "isOnModsButton",
+            "acc": 1,
+            "dsc": "()Z"
+          },
+          {
+            "nme": "$values",
+            "acc": 4106,
+            "dsc": "()[Lcom/terraformersmc/modmenu/config/ModMenuConfig$ModCountLocation;"
+          },
+          {
+            "nme": "<clinit>",
+            "acc": 8,
+            "dsc": "()V"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 16409,
+            "nme": "TITLE_SCREEN",
+            "dsc": "Lcom/terraformersmc/modmenu/config/ModMenuConfig$ModCountLocation;"
+          },
+          {
+            "acc": 16409,
+            "nme": "MODS_BUTTON",
+            "dsc": "Lcom/terraformersmc/modmenu/config/ModMenuConfig$ModCountLocation;"
+          },
+          {
+            "acc": 16409,
+            "nme": "TITLE_SCREEN_AND_MODS_BUTTON",
+            "dsc": "Lcom/terraformersmc/modmenu/config/ModMenuConfig$ModCountLocation;"
+          },
+          {
+            "acc": 16409,
+            "nme": "NONE",
+            "dsc": "Lcom/terraformersmc/modmenu/config/ModMenuConfig$ModCountLocation;"
+          },
+          {
+            "acc": 18,
+            "nme": "titleScreen",
+            "dsc": "Z"
+          },
+          {
+            "acc": 18,
+            "nme": "modsButton",
+            "dsc": "Z"
+          },
+          {
+            "acc": 4122,
+            "nme": "$VALUES",
+            "dsc": "[Lcom/terraformersmc/modmenu/config/ModMenuConfig$ModCountLocation;"
+          }
+        ]
+      },
+      "com/terraformersmc/modmenu/util/UpdateCheckerUtil.class": {
+        "ver": 65,
+        "acc": 33,
+        "nme": "com/terraformersmc/modmenu/util/UpdateCheckerUtil",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "allowsUpdateChecks",
+            "acc": 10,
+            "dsc": "(Lcom/terraformersmc/modmenu/util/mod/Mod;)Z"
+          },
+          {
+            "nme": "checkForUpdates",
+            "acc": 9,
+            "dsc": "()V"
+          },
+          {
+            "nme": "checkForUpdates0",
+            "acc": 10,
+            "dsc": "()V"
+          },
+          {
+            "nme": "getModHashes",
+            "acc": 10,
+            "dsc": "(Ljava/util/Collection;)Ljava/util/Map;",
+            "sig": "(Ljava/util/Collection<Lcom/terraformersmc/modmenu/util/mod/Mod;>;)Ljava/util/Map<Ljava/lang/String;Ljava/util/Set<Lcom/terraformersmc/modmenu/util/mod/Mod;>;>;"
+          },
+          {
+            "nme": "triggerV2DeprecatedToast",
+            "acc": 9,
+            "dsc": "()V"
+          },
+          {
+            "nme": "getCurrentVersions",
+            "acc": 10,
+            "dsc": "(Ljava/util/Collection;)Ljava/util/Map;",
+            "sig": "(Ljava/util/Collection<Ljava/lang/String;>;)Ljava/util/Map<Ljava/lang/String;Ljava/time/Instant;>;",
+            "invanns": [
+              {
+                "dsc": "Lorg/jetbrains/annotations/Nullable;"
+              }
+            ]
+          },
+          {
+            "nme": "getUpdateChannel",
+            "acc": 10,
+            "dsc": "(Ljava/lang/String;)Lcom/terraformersmc/modmenu/api/UpdateChannel;"
+          },
+          {
+            "nme": "getUpdatedVersions",
+            "acc": 10,
+            "dsc": "(Ljava/util/Collection;)Ljava/util/Map;",
+            "sig": "(Ljava/util/Collection<Ljava/lang/String;>;)Ljava/util/Map<Ljava/lang/String;Lcom/terraformersmc/modmenu/util/UpdateCheckerUtil$VersionUpdate;>;",
+            "invanns": [
+              {
+                "dsc": "Lorg/jetbrains/annotations/Nullable;"
+              }
+            ]
+          },
+          {
+            "nme": "lambda$getUpdatedVersions$5",
+            "acc": 4106,
+            "dsc": "(Ljava/util/Map;Ljava/lang/String;Lcom/google/gson/JsonElement;)V"
+          },
+          {
+            "nme": "lambda$getUpdatedVersions$4",
+            "acc": 4106,
+            "dsc": "(Lcom/google/gson/JsonElement;)Z"
+          },
+          {
+            "nme": "lambda$getCurrentVersions$3",
+            "acc": 4106,
+            "dsc": "(Ljava/util/Map;Ljava/lang/String;Lcom/google/gson/JsonElement;)V"
+          },
+          {
+            "nme": "lambda$checkForUpdates0$2",
+            "acc": 4106,
+            "dsc": "(Ljava/util/Map;)Ljava/util/Map;",
+            "exs": [
+              "java/lang/Exception"
+            ]
+          },
+          {
+            "nme": "lambda$checkForUpdates0$1",
+            "acc": 4106,
+            "dsc": "(Ljava/util/Map;)Ljava/util/Map;",
+            "exs": [
+              "java/lang/Exception"
+            ]
+          },
+          {
+            "nme": "lambda$checkForUpdates0$0",
+            "acc": 4106,
+            "dsc": "(Lcom/terraformersmc/modmenu/util/mod/Mod;Lcom/terraformersmc/modmenu/api/UpdateChecker;)V"
+          },
+          {
+            "nme": "<clinit>",
+            "acc": 8,
+            "dsc": "()V"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 25,
+            "nme": "LOGGER",
+            "dsc": "Lorg/slf4j/Logger;"
+          },
+          {
+            "acc": 10,
+            "nme": "modrinthApiV2Deprecated",
+            "dsc": "Z"
+          }
+        ]
+      },
+      "com/terraformersmc/modmenu/gui/widget/DescriptionListWidget$LinkEntry.class": {
+        "ver": 65,
+        "acc": 33,
+        "nme": "com/terraformersmc/modmenu/gui/widget/DescriptionListWidget$LinkEntry",
+        "super": "com/terraformersmc/modmenu/gui/widget/DescriptionListWidget$DescriptionEntry",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "(Lcom/terraformersmc/modmenu/gui/widget/DescriptionListWidget;Lnet/minecraft/class_5481;Ljava/lang/String;I)V"
+          },
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "(Lcom/terraformersmc/modmenu/gui/widget/DescriptionListWidget;Lnet/minecraft/class_5481;Ljava/lang/String;)V"
+          },
+          {
+            "nme": "method_25402",
+            "acc": 1,
+            "dsc": "(DDI)Z"
+          },
+          {
+            "nme": "lambda$mouseClicked$0",
+            "acc": 4098,
+            "dsc": "(Z)V"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 18,
+            "nme": "link",
+            "dsc": "Ljava/lang/String;"
+          },
+          {
+            "acc": 4112,
+            "nme": "this$0",
+            "dsc": "Lcom/terraformersmc/modmenu/gui/widget/DescriptionListWidget;"
+          }
+        ]
+      },
+      "com/terraformersmc/modmenu/api/UpdateChecker.class": {
+        "ver": 65,
+        "acc": 1537,
+        "nme": "com/terraformersmc/modmenu/api/UpdateChecker",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "checkForUpdates",
+            "acc": 1025,
+            "dsc": "()Lcom/terraformersmc/modmenu/api/UpdateInfo;"
+          }
+        ],
+        "flds": []
+      },
+      "com/terraformersmc/modmenu/util/mod/fabric/FabricLoaderUpdateChecker$FabricLoaderUpdateInfo.class": {
+        "ver": 65,
+        "acc": 32,
+        "nme": "com/terraformersmc/modmenu/util/mod/fabric/FabricLoaderUpdateChecker$FabricLoaderUpdateInfo",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 2,
+            "dsc": "(Ljava/lang/String;Z)V"
+          },
+          {
+            "nme": "isUpdateAvailable",
+            "acc": 1,
+            "dsc": "()Z"
+          },
+          {
+            "nme": "getUpdateMessage",
+            "acc": 1,
+            "dsc": "()Lnet/minecraft/class_2561;",
+            "invanns": [
+              {
+                "dsc": "Lorg/jetbrains/annotations/Nullable;"
+              }
+            ]
+          },
+          {
+            "nme": "getDownloadLink",
+            "acc": 1,
+            "dsc": "()Ljava/lang/String;"
+          },
+          {
+            "nme": "getUpdateChannel",
+            "acc": 1,
+            "dsc": "()Lcom/terraformersmc/modmenu/api/UpdateChannel;"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 18,
+            "nme": "version",
+            "dsc": "Ljava/lang/String;"
+          },
+          {
+            "acc": 18,
+            "nme": "isStable",
+            "dsc": "Z"
+          }
+        ]
+      },
+      "com/terraformersmc/modmenu/util/mod/fabric/FabricMod$ModMenuData$DummyParentData.class": {
+        "ver": 65,
+        "acc": 33,
+        "nme": "com/terraformersmc/modmenu/util/mod/fabric/FabricMod$ModMenuData$DummyParentData",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "(Ljava/lang/String;Ljava/util/Optional;Ljava/util/Optional;Ljava/util/Optional;Ljava/util/Set;)V",
+            "sig": "(Ljava/lang/String;Ljava/util/Optional<Ljava/lang/String;>;Ljava/util/Optional<Ljava/lang/String;>;Ljava/util/Optional<Ljava/lang/String;>;Ljava/util/Set<Ljava/lang/String;>;)V"
+          },
+          {
+            "nme": "getId",
+            "acc": 1,
+            "dsc": "()Ljava/lang/String;"
+          },
+          {
+            "nme": "getName",
+            "acc": 1,
+            "dsc": "()Ljava/util/Optional;",
+            "sig": "()Ljava/util/Optional<Ljava/lang/String;>;"
+          },
+          {
+            "nme": "getDescription",
+            "acc": 1,
+            "dsc": "()Ljava/util/Optional;",
+            "sig": "()Ljava/util/Optional<Ljava/lang/String;>;"
+          },
+          {
+            "nme": "getIcon",
+            "acc": 1,
+            "dsc": "()Ljava/util/Optional;",
+            "sig": "()Ljava/util/Optional<Ljava/lang/String;>;"
+          },
+          {
+            "nme": "getBadges",
+            "acc": 1,
+            "dsc": "()Ljava/util/Set;",
+            "sig": "()Ljava/util/Set<Lcom/terraformersmc/modmenu/util/mod/Mod$Badge;>;"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 18,
+            "nme": "id",
+            "dsc": "Ljava/lang/String;"
+          },
+          {
+            "acc": 18,
+            "nme": "name",
+            "dsc": "Ljava/util/Optional;",
+            "sig": "Ljava/util/Optional<Ljava/lang/String;>;"
+          },
+          {
+            "acc": 18,
+            "nme": "description",
+            "dsc": "Ljava/util/Optional;",
+            "sig": "Ljava/util/Optional<Ljava/lang/String;>;"
+          },
+          {
+            "acc": 18,
+            "nme": "icon",
+            "dsc": "Ljava/util/Optional;",
+            "sig": "Ljava/util/Optional<Ljava/lang/String;>;"
+          },
+          {
+            "acc": 18,
+            "nme": "badges",
+            "dsc": "Ljava/util/Set;",
+            "sig": "Ljava/util/Set<Lcom/terraformersmc/modmenu/util/mod/Mod$Badge;>;"
+          }
+        ]
+      },
+      "com/terraformersmc/modmenu/gui/widget/DescriptionListWidget$DescriptionEntry.class": {
+        "ver": 65,
+        "acc": 33,
+        "nme": "com/terraformersmc/modmenu/gui/widget/DescriptionListWidget$DescriptionEntry",
+        "super": "net/minecraft/class_4265$class_4266",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "(Lcom/terraformersmc/modmenu/gui/widget/DescriptionListWidget;Lnet/minecraft/class_5481;I)V"
+          },
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "(Lcom/terraformersmc/modmenu/gui/widget/DescriptionListWidget;Lnet/minecraft/class_5481;)V"
+          },
+          {
+            "nme": "setUpdateTextEntry",
+            "acc": 1,
+            "dsc": "()Lcom/terraformersmc/modmenu/gui/widget/DescriptionListWidget$DescriptionEntry;"
+          },
+          {
+            "nme": "method_25343",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/class_332;IIIIIIIZF)V"
+          },
+          {
+            "nme": "method_25405",
+            "acc": 1,
+            "dsc": "(DD)Z"
+          },
+          {
+            "nme": "method_25396",
+            "acc": 1,
+            "dsc": "()Ljava/util/List;",
+            "sig": "()Ljava/util/List<+Lnet/minecraft/class_364;>;"
+          },
+          {
+            "nme": "method_37025",
+            "acc": 1,
+            "dsc": "()Ljava/util/List;",
+            "sig": "()Ljava/util/List<+Lnet/minecraft/class_6379;>;"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 4,
+            "nme": "text",
+            "dsc": "Lnet/minecraft/class_5481;"
+          },
+          {
+            "acc": 4,
+            "nme": "indent",
+            "dsc": "I"
+          },
+          {
+            "acc": 1,
+            "nme": "updateTextEntry",
+            "dsc": "Z"
+          },
+          {
+            "acc": 4112,
+            "nme": "this$0",
+            "dsc": "Lcom/terraformersmc/modmenu/gui/widget/DescriptionListWidget;"
+          }
+        ]
+      },
+      "com/terraformersmc/modmenu/gui/widget/LegacyTexturedButtonWidget$Builder.class": {
+        "ver": 65,
+        "acc": 33,
+        "nme": "com/terraformersmc/modmenu/gui/widget/LegacyTexturedButtonWidget$Builder",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/class_2561;Lnet/minecraft/class_4185$class_4241;)V"
+          },
+          {
+            "nme": "position",
+            "acc": 1,
+            "dsc": "(II)Lcom/terraformersmc/modmenu/gui/widget/LegacyTexturedButtonWidget$Builder;"
+          },
+          {
+            "nme": "size",
+            "acc": 1,
+            "dsc": "(II)Lcom/terraformersmc/modmenu/gui/widget/LegacyTexturedButtonWidget$Builder;"
+          },
+          {
+            "nme": "uv",
+            "acc": 1,
+            "dsc": "(III)Lcom/terraformersmc/modmenu/gui/widget/LegacyTexturedButtonWidget$Builder;"
+          },
+          {
+            "nme": "texture",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/class_2960;II)Lcom/terraformersmc/modmenu/gui/widget/LegacyTexturedButtonWidget$Builder;"
+          },
+          {
+            "nme": "build",
+            "acc": 1,
+            "dsc": "()Lcom/terraformersmc/modmenu/gui/widget/LegacyTexturedButtonWidget;"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 18,
+            "nme": "message",
+            "dsc": "Lnet/minecraft/class_2561;"
+          },
+          {
+            "acc": 18,
+            "nme": "onPress",
+            "dsc": "Lnet/minecraft/class_4185$class_4241;"
+          },
+          {
+            "acc": 2,
+            "nme": "x",
+            "dsc": "I"
+          },
+          {
+            "acc": 2,
+            "nme": "y",
+            "dsc": "I"
+          },
+          {
+            "acc": 2,
+            "nme": "width",
+            "dsc": "I"
+          },
+          {
+            "acc": 2,
+            "nme": "height",
+            "dsc": "I"
+          },
+          {
+            "acc": 2,
+            "nme": "u",
+            "dsc": "I"
+          },
+          {
+            "acc": 2,
+            "nme": "v",
+            "dsc": "I"
+          },
+          {
+            "acc": 2,
+            "nme": "hoveredVOffset",
+            "dsc": "I"
+          },
+          {
+            "acc": 2,
+            "nme": "texture",
+            "dsc": "Lnet/minecraft/class_2960;"
+          },
+          {
+            "acc": 2,
+            "nme": "textureWidth",
+            "dsc": "I"
+          },
+          {
+            "acc": 2,
+            "nme": "textureHeight",
+            "dsc": "I"
+          }
+        ]
+      },
+      "com/terraformersmc/modmenu/util/mod/Mod.class": {
+        "ver": 65,
+        "acc": 1537,
+        "nme": "com/terraformersmc/modmenu/util/mod/Mod",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "getId",
+            "acc": 1025,
+            "dsc": "()Ljava/lang/String;",
+            "invanns": [
+              {
+                "dsc": "Lorg/jetbrains/annotations/NotNull;"
+              }
+            ]
+          },
+          {
+            "nme": "getName",
+            "acc": 1025,
+            "dsc": "()Ljava/lang/String;",
+            "invanns": [
+              {
+                "dsc": "Lorg/jetbrains/annotations/NotNull;"
+              }
+            ]
+          },
+          {
+            "nme": "getTranslatedName",
+            "acc": 1,
+            "dsc": "()Ljava/lang/String;",
+            "invanns": [
+              {
+                "dsc": "Lorg/jetbrains/annotations/NotNull;"
+              }
+            ]
+          },
+          {
+            "nme": "getIcon",
+            "acc": 1025,
+            "dsc": "(Lcom/terraformersmc/modmenu/util/mod/fabric/FabricIconHandler;I)Lnet/minecraft/class_1043;",
+            "invanns": [
+              {
+                "dsc": "Lorg/jetbrains/annotations/NotNull;"
+              }
+            ]
+          },
+          {
+            "nme": "getSummary",
+            "acc": 1,
+            "dsc": "()Ljava/lang/String;",
+            "invanns": [
+              {
+                "dsc": "Lorg/jetbrains/annotations/NotNull;"
+              }
+            ]
+          },
+          {
+            "nme": "getTranslatedSummary",
+            "acc": 1,
+            "dsc": "()Ljava/lang/String;",
+            "invanns": [
+              {
+                "dsc": "Lorg/jetbrains/annotations/NotNull;"
+              }
+            ]
+          },
+          {
+            "nme": "getDescription",
+            "acc": 1025,
+            "dsc": "()Ljava/lang/String;",
+            "invanns": [
+              {
+                "dsc": "Lorg/jetbrains/annotations/NotNull;"
+              }
+            ]
+          },
+          {
+            "nme": "getTranslatedDescription",
+            "acc": 1,
+            "dsc": "()Ljava/lang/String;",
+            "invanns": [
+              {
+                "dsc": "Lorg/jetbrains/annotations/NotNull;"
+              }
+            ]
+          },
+          {
+            "nme": "getFormattedDescription",
+            "acc": 1,
+            "dsc": "()Lnet/minecraft/class_2561;"
+          },
+          {
+            "nme": "getVersion",
+            "acc": 1025,
+            "dsc": "()Ljava/lang/String;",
+            "invanns": [
+              {
+                "dsc": "Lorg/jetbrains/annotations/NotNull;"
+              }
+            ]
+          },
+          {
+            "nme": "getPrefixedVersion",
+            "acc": 1025,
+            "dsc": "()Ljava/lang/String;",
+            "invanns": [
+              {
+                "dsc": "Lorg/jetbrains/annotations/NotNull;"
+              }
+            ]
+          },
+          {
+            "nme": "getAuthors",
+            "acc": 1025,
+            "dsc": "()Ljava/util/List;",
+            "sig": "()Ljava/util/List<Ljava/lang/String;>;",
+            "invanns": [
+              {
+                "dsc": "Lorg/jetbrains/annotations/NotNull;"
+              }
+            ]
+          },
+          {
+            "nme": "getContributors",
+            "acc": 1025,
+            "dsc": "()Ljava/util/Map;",
+            "sig": "()Ljava/util/Map<Ljava/lang/String;Ljava/util/Collection<Ljava/lang/String;>;>;",
+            "invanns": [
+              {
+                "dsc": "Lorg/jetbrains/annotations/NotNull;"
+              }
+            ]
+          },
+          {
+            "nme": "getCredits",
+            "acc": 1025,
+            "dsc": "()Ljava/util/SortedMap;",
+            "sig": "()Ljava/util/SortedMap<Ljava/lang/String;Ljava/util/Set<Ljava/lang/String;>;>;",
+            "invanns": [
+              {
+                "dsc": "Lorg/jetbrains/annotations/NotNull;"
+              }
+            ]
+          },
+          {
+            "nme": "getBadges",
+            "acc": 1025,
+            "dsc": "()Ljava/util/Set;",
+            "sig": "()Ljava/util/Set<Lcom/terraformersmc/modmenu/util/mod/Mod$Badge;>;",
+            "invanns": [
+              {
+                "dsc": "Lorg/jetbrains/annotations/NotNull;"
+              }
+            ]
+          },
+          {
+            "nme": "getWebsite",
+            "acc": 1025,
+            "dsc": "()Ljava/lang/String;",
+            "invanns": [
+              {
+                "dsc": "Lorg/jetbrains/annotations/Nullable;"
+              }
+            ]
+          },
+          {
+            "nme": "getIssueTracker",
+            "acc": 1025,
+            "dsc": "()Ljava/lang/String;",
+            "invanns": [
+              {
+                "dsc": "Lorg/jetbrains/annotations/Nullable;"
+              }
+            ]
+          },
+          {
+            "nme": "getSource",
+            "acc": 1025,
+            "dsc": "()Ljava/lang/String;",
+            "invanns": [
+              {
+                "dsc": "Lorg/jetbrains/annotations/Nullable;"
+              }
+            ]
+          },
+          {
+            "nme": "getParent",
+            "acc": 1025,
+            "dsc": "()Ljava/lang/String;",
+            "invanns": [
+              {
+                "dsc": "Lorg/jetbrains/annotations/Nullable;"
+              }
+            ]
+          },
+          {
+            "nme": "getLicense",
+            "acc": 1025,
+            "dsc": "()Ljava/util/Set;",
+            "sig": "()Ljava/util/Set<Ljava/lang/String;>;",
+            "invanns": [
+              {
+                "dsc": "Lorg/jetbrains/annotations/NotNull;"
+              }
+            ]
+          },
+          {
+            "nme": "getLinks",
+            "acc": 1025,
+            "dsc": "()Ljava/util/Map;",
+            "sig": "()Ljava/util/Map<Ljava/lang/String;Ljava/lang/String;>;",
+            "invanns": [
+              {
+                "dsc": "Lorg/jetbrains/annotations/NotNull;"
+              }
+            ]
+          },
+          {
+            "nme": "isReal",
+            "acc": 1025,
+            "dsc": "()Z"
+          },
+          {
+            "nme": "allowsUpdateChecks",
+            "acc": 1025,
+            "dsc": "()Z"
+          },
+          {
+            "nme": "getUpdateChecker",
+            "acc": 1025,
+            "dsc": "()Lcom/terraformersmc/modmenu/api/UpdateChecker;",
+            "invanns": [
+              {
+                "dsc": "Lorg/jetbrains/annotations/Nullable;"
+              }
+            ]
+          },
+          {
+            "nme": "setUpdateChecker",
+            "acc": 1025,
+            "dsc": "(Lcom/terraformersmc/modmenu/api/UpdateChecker;)V"
+          },
+          {
+            "nme": "getUpdateInfo",
+            "acc": 1025,
+            "dsc": "()Lcom/terraformersmc/modmenu/api/UpdateInfo;",
+            "invanns": [
+              {
+                "dsc": "Lorg/jetbrains/annotations/Nullable;"
+              }
+            ]
+          },
+          {
+            "nme": "setUpdateInfo",
+            "acc": 1025,
+            "dsc": "(Lcom/terraformersmc/modmenu/api/UpdateInfo;)V"
+          },
+          {
+            "nme": "hasUpdate",
+            "acc": 1,
+            "dsc": "()Z"
+          },
+          {
+            "nme": "getSha512Hash",
+            "acc": 1,
+            "dsc": "()Ljava/lang/String;",
+            "exs": [
+              "java/io/IOException"
+            ],
+            "invanns": [
+              {
+                "dsc": "Lorg/jetbrains/annotations/Nullable;"
+              }
+            ]
+          },
+          {
+            "nme": "setChildHasUpdate",
+            "acc": 1025,
+            "dsc": "()V"
+          },
+          {
+            "nme": "getChildHasUpdate",
+            "acc": 1025,
+            "dsc": "()Z"
+          },
+          {
+            "nme": "isHidden",
+            "acc": 1025,
+            "dsc": "()Z"
+          }
+        ],
+        "flds": []
+      },
+      "com/terraformersmc/modmenu/util/OptionalUtil.class": {
+        "ver": 65,
+        "acc": 33,
+        "nme": "com/terraformersmc/modmenu/util/OptionalUtil",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "isPresentAndTrue",
+            "acc": 9,
+            "dsc": "(Ljava/util/Optional;)Z",
+            "sig": "(Ljava/util/Optional<Ljava/lang/Boolean;>;)Z"
+          }
+        ],
+        "flds": []
+      },
+      "com/terraformersmc/modmenu/config/ModMenuConfig$Sorting.class": {
+        "ver": 65,
+        "acc": 16433,
+        "nme": "com/terraformersmc/modmenu/config/ModMenuConfig$Sorting",
+        "super": "java/lang/Enum",
+        "mthds": [
+          {
+            "nme": "values",
+            "acc": 9,
+            "dsc": "()[Lcom/terraformersmc/modmenu/config/ModMenuConfig$Sorting;"
+          },
+          {
+            "nme": "valueOf",
+            "acc": 9,
+            "dsc": "(Ljava/lang/String;)Lcom/terraformersmc/modmenu/config/ModMenuConfig$Sorting;"
+          },
+          {
+            "nme": "<init>",
+            "acc": 2,
+            "dsc": "(Ljava/lang/String;ILjava/util/Comparator;)V",
+            "sig": "(Ljava/util/Comparator<Lcom/terraformersmc/modmenu/util/mod/Mod;>;)V"
+          },
+          {
+            "nme": "getComparator",
+            "acc": 1,
+            "dsc": "()Ljava/util/Comparator;",
+            "sig": "()Ljava/util/Comparator<Lcom/terraformersmc/modmenu/util/mod/Mod;>;"
+          },
+          {
+            "nme": "lambda$static$0",
+            "acc": 4106,
+            "dsc": "(Lcom/terraformersmc/modmenu/util/mod/Mod;)Ljava/lang/String;"
+          },
+          {
+            "nme": "$values",
+            "acc": 4106,
+            "dsc": "()[Lcom/terraformersmc/modmenu/config/ModMenuConfig$Sorting;"
+          },
+          {
+            "nme": "<clinit>",
+            "acc": 8,
+            "dsc": "()V"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 16409,
+            "nme": "ASCENDING",
+            "dsc": "Lcom/terraformersmc/modmenu/config/ModMenuConfig$Sorting;"
+          },
+          {
+            "acc": 16409,
+            "nme": "DESCENDING",
+            "dsc": "Lcom/terraformersmc/modmenu/config/ModMenuConfig$Sorting;"
+          },
+          {
+            "acc": 16409,
+            "nme": "HAS_UPDATE",
+            "dsc": "Lcom/terraformersmc/modmenu/config/ModMenuConfig$Sorting;"
+          },
+          {
+            "acc": 18,
+            "nme": "comparator",
+            "dsc": "Ljava/util/Comparator;",
+            "sig": "Ljava/util/Comparator<Lcom/terraformersmc/modmenu/util/mod/Mod;>;"
+          },
+          {
+            "acc": 4122,
+            "nme": "$VALUES",
+            "dsc": "[Lcom/terraformersmc/modmenu/config/ModMenuConfig$Sorting;"
+          }
+        ]
+      },
+      "com/terraformersmc/modmenu/mixin/AccessorClickableWidget.class": {
+        "ver": 65,
+        "acc": 1537,
+        "nme": "com/terraformersmc/modmenu/mixin/AccessorClickableWidget",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "getTooltip",
+            "acc": 1025,
+            "dsc": "()Lnet/minecraft/class_9110;",
+            "vanns": [
+              {
+                "dsc": "Lorg/spongepowered/asm/mixin/gen/Accessor;"
+              }
+            ]
+          }
+        ],
+        "flds": [],
+        "invanns": [
+          {
+            "dsc": "Lorg/spongepowered/asm/mixin/Mixin;",
+            "vals": [
+              "value",
+              [
+                {
+                  "itrlNme": "net/minecraft/class_339"
+                }
+              ]
+            ]
+          }
+        ]
+      },
+      "com/terraformersmc/modmenu/config/ModMenuConfig$GameMenuButtonStyle.class": {
+        "ver": 65,
+        "acc": 16433,
+        "nme": "com/terraformersmc/modmenu/config/ModMenuConfig$GameMenuButtonStyle",
+        "super": "java/lang/Enum",
+        "mthds": [
+          {
+            "nme": "values",
+            "acc": 9,
+            "dsc": "()[Lcom/terraformersmc/modmenu/config/ModMenuConfig$GameMenuButtonStyle;"
+          },
+          {
+            "nme": "valueOf",
+            "acc": 9,
+            "dsc": "(Ljava/lang/String;)Lcom/terraformersmc/modmenu/config/ModMenuConfig$GameMenuButtonStyle;"
+          },
+          {
+            "nme": "<init>",
+            "acc": 2,
+            "dsc": "(Ljava/lang/String;I)V",
+            "sig": "()V"
+          },
+          {
+            "nme": "$values",
+            "acc": 4106,
+            "dsc": "()[Lcom/terraformersmc/modmenu/config/ModMenuConfig$GameMenuButtonStyle;"
+          },
+          {
+            "nme": "<clinit>",
+            "acc": 8,
+            "dsc": "()V"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 16409,
+            "nme": "REPLACE",
+            "dsc": "Lcom/terraformersmc/modmenu/config/ModMenuConfig$GameMenuButtonStyle;"
+          },
+          {
+            "acc": 16409,
+            "nme": "INSERT",
+            "dsc": "Lcom/terraformersmc/modmenu/config/ModMenuConfig$GameMenuButtonStyle;"
+          },
+          {
+            "acc": 16409,
+            "nme": "ICON",
+            "dsc": "Lcom/terraformersmc/modmenu/config/ModMenuConfig$GameMenuButtonStyle;"
+          },
+          {
+            "acc": 4122,
+            "nme": "$VALUES",
+            "dsc": "[Lcom/terraformersmc/modmenu/config/ModMenuConfig$GameMenuButtonStyle;"
+          }
+        ]
+      },
+      "com/terraformersmc/modmenu/util/mod/fabric/CustomValueUtil.class": {
+        "ver": 65,
+        "acc": 33,
+        "nme": "com/terraformersmc/modmenu/util/mod/fabric/CustomValueUtil",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "getBoolean",
+            "acc": 9,
+            "dsc": "(Ljava/lang/String;Lnet/fabricmc/loader/api/metadata/ModMetadata;)Ljava/util/Optional;",
+            "sig": "(Ljava/lang/String;Lnet/fabricmc/loader/api/metadata/ModMetadata;)Ljava/util/Optional<Ljava/lang/Boolean;>;"
+          },
+          {
+            "nme": "getString",
+            "acc": 9,
+            "dsc": "(Ljava/lang/String;Lnet/fabricmc/loader/api/metadata/ModMetadata;)Ljava/util/Optional;",
+            "sig": "(Ljava/lang/String;Lnet/fabricmc/loader/api/metadata/ModMetadata;)Ljava/util/Optional<Ljava/lang/String;>;"
+          },
+          {
+            "nme": "getStringSet",
+            "acc": 9,
+            "dsc": "(Ljava/lang/String;Lnet/fabricmc/loader/api/metadata/ModMetadata;)Ljava/util/Optional;",
+            "sig": "(Ljava/lang/String;Lnet/fabricmc/loader/api/metadata/ModMetadata;)Ljava/util/Optional<Ljava/util/Set<Ljava/lang/String;>;>;"
+          },
+          {
+            "nme": "getBoolean",
+            "acc": 9,
+            "dsc": "(Ljava/lang/String;Lnet/fabricmc/loader/api/metadata/CustomValue$CvObject;)Ljava/util/Optional;",
+            "sig": "(Ljava/lang/String;Lnet/fabricmc/loader/api/metadata/CustomValue$CvObject;)Ljava/util/Optional<Ljava/lang/Boolean;>;"
+          },
+          {
+            "nme": "getString",
+            "acc": 9,
+            "dsc": "(Ljava/lang/String;Lnet/fabricmc/loader/api/metadata/CustomValue$CvObject;)Ljava/util/Optional;",
+            "sig": "(Ljava/lang/String;Lnet/fabricmc/loader/api/metadata/CustomValue$CvObject;)Ljava/util/Optional<Ljava/lang/String;>;"
+          },
+          {
+            "nme": "getStringArray",
+            "acc": 9,
+            "dsc": "(Ljava/lang/String;Lnet/fabricmc/loader/api/metadata/CustomValue$CvObject;)Ljava/util/Optional;",
+            "sig": "(Ljava/lang/String;Lnet/fabricmc/loader/api/metadata/CustomValue$CvObject;)Ljava/util/Optional<[Ljava/lang/String;>;"
+          },
+          {
+            "nme": "getStringSet",
+            "acc": 9,
+            "dsc": "(Ljava/lang/String;Lnet/fabricmc/loader/api/metadata/CustomValue$CvObject;)Ljava/util/Optional;",
+            "sig": "(Ljava/lang/String;Lnet/fabricmc/loader/api/metadata/CustomValue$CvObject;)Ljava/util/Optional<Ljava/util/Set<Ljava/lang/String;>;>;"
+          },
+          {
+            "nme": "getStringMap",
+            "acc": 9,
+            "dsc": "(Ljava/lang/String;Lnet/fabricmc/loader/api/metadata/CustomValue$CvObject;)Ljava/util/Optional;",
+            "sig": "(Ljava/lang/String;Lnet/fabricmc/loader/api/metadata/CustomValue$CvObject;)Ljava/util/Optional<Ljava/util/Map<Ljava/lang/String;Ljava/lang/String;>;>;"
+          }
+        ],
+        "flds": []
+      },
+      "com/terraformersmc/modmenu/config/option/BooleanConfigOption.class": {
+        "ver": 65,
+        "acc": 33,
+        "nme": "com/terraformersmc/modmenu/config/option/BooleanConfigOption",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "(Ljava/lang/String;ZLjava/lang/String;Ljava/lang/String;)V"
+          },
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "(Ljava/lang/String;Z)V"
+          },
+          {
+            "nme": "getKey",
+            "acc": 1,
+            "dsc": "()Ljava/lang/String;"
+          },
+          {
+            "nme": "getValue",
+            "acc": 1,
+            "dsc": "()Z"
+          },
+          {
+            "nme": "setValue",
+            "acc": 1,
+            "dsc": "(Z)V"
+          },
+          {
+            "nme": "toggleValue",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "getDefaultValue",
+            "acc": 1,
+            "dsc": "()Z"
+          },
+          {
+            "nme": "getButtonText",
+            "acc": 1,
+            "dsc": "()Lnet/minecraft/class_2561;"
+          },
+          {
+            "nme": "asOption",
+            "acc": 1,
+            "dsc": "()Lnet/minecraft/class_7172;",
+            "sig": "()Lnet/minecraft/class_7172<Ljava/lang/Boolean;>;"
+          },
+          {
+            "nme": "lambda$asOption$2",
+            "acc": 4098,
+            "dsc": "(Ljava/lang/Boolean;)V"
+          },
+          {
+            "nme": "lambda$asOption$1",
+            "acc": 4098,
+            "dsc": "(Ljava/lang/Boolean;)V"
+          },
+          {
+            "nme": "lambda$asOption$0",
+            "acc": 4098,
+            "dsc": "(Lnet/minecraft/class_2561;Ljava/lang/Boolean;)Lnet/minecraft/class_2561;"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 18,
+            "nme": "key",
+            "dsc": "Ljava/lang/String;"
+          },
+          {
+            "acc": 18,
+            "nme": "translationKey",
+            "dsc": "Ljava/lang/String;"
+          },
+          {
+            "acc": 18,
+            "nme": "defaultValue",
+            "dsc": "Z"
+          },
+          {
+            "acc": 18,
+            "nme": "enabledText",
+            "dsc": "Lnet/minecraft/class_2561;"
+          },
+          {
+            "acc": 18,
+            "nme": "disabledText",
+            "dsc": "Lnet/minecraft/class_2561;"
+          }
+        ]
+      },
+      "com/terraformersmc/modmenu/gui/widget/UpdateAvailableBadge.class": {
+        "ver": 65,
+        "acc": 33,
+        "nme": "com/terraformersmc/modmenu/gui/widget/UpdateAvailableBadge",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "renderBadge",
+            "acc": 9,
+            "dsc": "(Lnet/minecraft/class_332;II)V"
+          },
+          {
+            "nme": "<clinit>",
+            "acc": 8,
+            "dsc": "()V"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 26,
+            "nme": "UPDATE_ICON",
+            "dsc": "Lnet/minecraft/class_2960;"
+          }
+        ]
+      },
+      "com/terraformersmc/modmenu/gui/widget/entries/ParentEntry.class": {
+        "ver": 65,
+        "acc": 33,
+        "nme": "com/terraformersmc/modmenu/gui/widget/entries/ParentEntry",
+        "super": "com/terraformersmc/modmenu/gui/widget/entries/ModListEntry",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "(Lcom/terraformersmc/modmenu/util/mod/Mod;Ljava/util/List;Lcom/terraformersmc/modmenu/gui/widget/ModListWidget;)V",
+            "sig": "(Lcom/terraformersmc/modmenu/util/mod/Mod;Ljava/util/List<Lcom/terraformersmc/modmenu/util/mod/Mod;>;Lcom/terraformersmc/modmenu/gui/widget/ModListWidget;)V"
+          },
+          {
+            "nme": "method_25343",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/class_332;IIIIIIIZF)V"
+          },
+          {
+            "nme": "method_25402",
+            "acc": 1,
+            "dsc": "(DDI)Z"
+          },
+          {
+            "nme": "toggleChildren",
+            "acc": 2,
+            "dsc": "()V"
+          },
+          {
+            "nme": "method_25404",
+            "acc": 1,
+            "dsc": "(III)Z"
+          },
+          {
+            "nme": "setChildren",
+            "acc": 1,
+            "dsc": "(Ljava/util/List;)V",
+            "sig": "(Ljava/util/List<Lcom/terraformersmc/modmenu/util/mod/Mod;>;)V"
+          },
+          {
+            "nme": "addChildren",
+            "acc": 1,
+            "dsc": "(Ljava/util/List;)V",
+            "sig": "(Ljava/util/List<Lcom/terraformersmc/modmenu/util/mod/Mod;>;)V"
+          },
+          {
+            "nme": "addChildren",
+            "acc": 129,
+            "dsc": "([Lcom/terraformersmc/modmenu/util/mod/Mod;)V"
+          },
+          {
+            "nme": "getChildren",
+            "acc": 1,
+            "dsc": "()Ljava/util/List;",
+            "sig": "()Ljava/util/List<Lcom/terraformersmc/modmenu/util/mod/Mod;>;"
+          },
+          {
+            "nme": "method_25405",
+            "acc": 1,
+            "dsc": "(DD)Z"
+          },
+          {
+            "nme": "<clinit>",
+            "acc": 8,
+            "dsc": "()V"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 26,
+            "nme": "PARENT_MOD_TEXTURE",
+            "dsc": "Lnet/minecraft/class_2960;"
+          },
+          {
+            "acc": 4,
+            "nme": "children",
+            "dsc": "Ljava/util/List;",
+            "sig": "Ljava/util/List<Lcom/terraformersmc/modmenu/util/mod/Mod;>;"
+          },
+          {
+            "acc": 4,
+            "nme": "list",
+            "dsc": "Lcom/terraformersmc/modmenu/gui/widget/ModListWidget;"
+          },
+          {
+            "acc": 4,
+            "nme": "hoveringIcon",
+            "dsc": "Z"
+          }
+        ]
+      },
+      "com/terraformersmc/modmenu/util/mod/quilt/QuiltLoaderUpdateChecker.class": {
+        "ver": 65,
+        "acc": 33,
+        "nme": "com/terraformersmc/modmenu/util/mod/quilt/QuiltLoaderUpdateChecker",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "checkForUpdates",
+            "acc": 1,
+            "dsc": "()Lcom/terraformersmc/modmenu/api/UpdateInfo;"
+          },
+          {
+            "nme": "checkForUpdates0",
+            "acc": 10,
+            "dsc": "()Lcom/terraformersmc/modmenu/api/UpdateInfo;",
+            "exs": [
+              "java/io/IOException",
+              "java/lang/InterruptedException"
+            ]
+          },
+          {
+            "nme": "isNewer",
+            "acc": 10,
+            "dsc": "(Lorg/quiltmc/loader/api/Version$Semantic;Lorg/quiltmc/loader/api/Version$Semantic;)Z"
+          },
+          {
+            "nme": "getCurrentVersion",
+            "acc": 10,
+            "dsc": "()Lorg/quiltmc/loader/api/Version$Semantic;"
+          },
+          {
+            "nme": "isStableOrBeta",
+            "acc": 10,
+            "dsc": "(Ljava/lang/String;)Z"
+          },
+          {
+            "nme": "<clinit>",
+            "acc": 8,
+            "dsc": "()V"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 25,
+            "nme": "LOGGER",
+            "dsc": "Lorg/slf4j/Logger;"
+          },
+          {
+            "acc": 26,
+            "nme": "LOADER_VERSIONS",
+            "dsc": "Ljava/net/URI;"
+          }
+        ]
+      },
+      "com/terraformersmc/modmenu/ModMenu.class": {
+        "ver": 65,
+        "acc": 33,
+        "nme": "com/terraformersmc/modmenu/ModMenu",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "hasConfigScreen",
+            "acc": 9,
+            "dsc": "(Ljava/lang/String;)Z"
+          },
+          {
+            "nme": "getConfigScreen",
+            "acc": 9,
+            "dsc": "(Ljava/lang/String;Lnet/minecraft/class_437;)Lnet/minecraft/class_437;",
+            "invanns": [
+              {
+                "dsc": "Lorg/jetbrains/annotations/Nullable;"
+              }
+            ]
+          },
+          {
+            "nme": "getConfigScreenFactory",
+            "acc": 10,
+            "dsc": "(Ljava/lang/String;)Lcom/terraformersmc/modmenu/api/ConfigScreenFactory;",
+            "sig": "(Ljava/lang/String;)Lcom/terraformersmc/modmenu/api/ConfigScreenFactory<*>;",
+            "invanns": [
+              {
+                "dsc": "Lorg/jetbrains/annotations/Nullable;"
+              }
+            ]
+          },
+          {
+            "nme": "onInitializeClient",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "clearModCountCache",
+            "acc": 9,
+            "dsc": "()V"
+          },
+          {
+            "nme": "checkForUpdates",
+            "acc": 9,
+            "dsc": "()V"
+          },
+          {
+            "nme": "areModUpdatesAvailable",
+            "acc": 9,
+            "dsc": "()Z"
+          },
+          {
+            "nme": "getDisplayedModCount",
+            "acc": 9,
+            "dsc": "()Ljava/lang/String;"
+          },
+          {
+            "nme": "createModsButtonText",
+            "acc": 9,
+            "dsc": "(Z)Lnet/minecraft/class_2561;"
+          },
+          {
+            "nme": "lambda$getDisplayedModCount$1",
+            "acc": 4106,
+            "dsc": "(ZZZLcom/terraformersmc/modmenu/util/mod/Mod;)Z"
+          },
+          {
+            "nme": "lambda$onInitializeClient$0",
+            "acc": 4106,
+            "dsc": "(Ljava/util/Map;Ljava/util/Map;Ljava/util/Set;Lnet/fabricmc/loader/api/entrypoint/EntrypointContainer;)V"
+          },
+          {
+            "nme": "<clinit>",
+            "acc": 8,
+            "dsc": "()V"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 25,
+            "nme": "MOD_ID",
+            "dsc": "Ljava/lang/String;",
+            "val": "modmenu"
+          },
+          {
+            "acc": 25,
+            "nme": "GITHUB_REF",
+            "dsc": "Ljava/lang/String;",
+            "val": "TerraformersMC/ModMenu"
+          },
+          {
+            "acc": 25,
+            "nme": "LOGGER",
+            "dsc": "Lorg/slf4j/Logger;"
+          },
+          {
+            "acc": 25,
+            "nme": "GSON",
+            "dsc": "Lcom/google/gson/Gson;"
+          },
+          {
+            "acc": 25,
+            "nme": "GSON_MINIFIED",
+            "dsc": "Lcom/google/gson/Gson;"
+          },
+          {
+            "acc": 25,
+            "nme": "MODS",
+            "dsc": "Ljava/util/Map;",
+            "sig": "Ljava/util/Map<Ljava/lang/String;Lcom/terraformersmc/modmenu/util/mod/Mod;>;"
+          },
+          {
+            "acc": 25,
+            "nme": "ROOT_MODS",
+            "dsc": "Ljava/util/Map;",
+            "sig": "Ljava/util/Map<Ljava/lang/String;Lcom/terraformersmc/modmenu/util/mod/Mod;>;"
+          },
+          {
+            "acc": 25,
+            "nme": "PARENT_MAP",
+            "dsc": "Lcom/google/common/collect/ListMultimap;",
+            "sig": "Lcom/google/common/collect/ListMultimap<Lcom/terraformersmc/modmenu/util/mod/Mod;Lcom/terraformersmc/modmenu/util/mod/Mod;>;"
+          },
+          {
+            "acc": 26,
+            "nme": "configScreenFactories",
+            "dsc": "Ljava/util/Map;",
+            "sig": "Ljava/util/Map<Ljava/lang/String;Lcom/terraformersmc/modmenu/api/ConfigScreenFactory<*>;>;"
+          },
+          {
+            "acc": 26,
+            "nme": "apiImplementations",
+            "dsc": "Ljava/util/List;",
+            "sig": "Ljava/util/List<Lcom/terraformersmc/modmenu/api/ModMenuApi;>;"
+          },
+          {
+            "acc": 10,
+            "nme": "cachedDisplayedModCount",
+            "dsc": "I"
+          },
+          {
+            "acc": 25,
+            "nme": "RUNNING_QUILT",
+            "dsc": "Z"
+          },
+          {
+            "acc": 25,
+            "nme": "DEV_ENVIRONMENT",
+            "dsc": "Z"
+          },
+          {
+            "acc": 25,
+            "nme": "TEXT_PLACEHOLDER_COMPAT",
+            "dsc": "Z"
+          }
+        ]
+      },
+      "com/terraformersmc/modmenu/api/ModMenuApi.class": {
+        "ver": 65,
+        "acc": 1537,
+        "nme": "com/terraformersmc/modmenu/api/ModMenuApi",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "createModsScreen",
+            "acc": 9,
+            "dsc": "(Lnet/minecraft/class_437;)Lnet/minecraft/class_437;"
+          },
+          {
+            "nme": "createModsButtonText",
+            "acc": 9,
+            "dsc": "()Lnet/minecraft/class_2561;"
+          },
+          {
+            "nme": "getModConfigScreenFactory",
+            "acc": 1,
+            "dsc": "()Lcom/terraformersmc/modmenu/api/ConfigScreenFactory;",
+            "sig": "()Lcom/terraformersmc/modmenu/api/ConfigScreenFactory<*>;"
+          },
+          {
+            "nme": "getUpdateChecker",
+            "acc": 1,
+            "dsc": "()Lcom/terraformersmc/modmenu/api/UpdateChecker;"
+          },
+          {
+            "nme": "getProvidedConfigScreenFactories",
+            "acc": 1,
+            "dsc": "()Ljava/util/Map;",
+            "sig": "()Ljava/util/Map<Ljava/lang/String;Lcom/terraformersmc/modmenu/api/ConfigScreenFactory<*>;>;"
+          },
+          {
+            "nme": "getProvidedUpdateCheckers",
+            "acc": 1,
+            "dsc": "()Ljava/util/Map;",
+            "sig": "()Ljava/util/Map<Ljava/lang/String;Lcom/terraformersmc/modmenu/api/UpdateChecker;>;"
+          },
+          {
+            "nme": "attachModpackBadges",
+            "acc": 1,
+            "dsc": "(Ljava/util/function/Consumer;)V",
+            "sig": "(Ljava/util/function/Consumer<Ljava/lang/String;>;)V"
+          },
+          {
+            "nme": "lambda$getModConfigScreenFactory$0",
+            "acc": 4106,
+            "dsc": "(Lnet/minecraft/class_437;)Lnet/minecraft/class_437;"
+          }
+        ],
+        "flds": []
+      },
+      "com/terraformersmc/modmenu/mixin/MixinTitleScreen.class": {
+        "ver": 65,
+        "acc": 33,
+        "nme": "com/terraformersmc/modmenu/mixin/MixinTitleScreen",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "adjustRealmsHeight",
+            "acc": 2,
+            "dsc": "(I)I",
+            "vanns": [
+              {
+                "dsc": "Lorg/spongepowered/asm/mixin/injection/ModifyArg;",
+                "vals": [
+                  "at",
+                  {
+                    "desc": "Lorg/spongepowered/asm/mixin/injection/At;",
+                    "values": [
+                      "value",
+                      "INVOKE",
+                      "target",
+                      "Lnet/minecraft/client/realms/gui/screen/RealmsNotificationsScreen;init(Lnet/minecraft/client/MinecraftClient;II)V"
+                    ],
+                    "api": 589824
+                  },
+                  "method",
+                  [
+                    "init"
+                  ],
+                  "index",
+                  2
+                ]
+              }
+            ]
+          },
+          {
+            "nme": "onRender",
+            "acc": 2,
+            "dsc": "(Ljava/lang/String;)Ljava/lang/String;",
+            "vanns": [
+              {
+                "dsc": "Lorg/spongepowered/asm/mixin/injection/ModifyArg;",
+                "vals": [
+                  "method",
+                  [
+                    "render"
+                  ],
+                  "at",
+                  {
+                    "desc": "Lorg/spongepowered/asm/mixin/injection/At;",
+                    "values": [
+                      "value",
+                      "INVOKE",
+                      "target",
+                      "Lnet/minecraft/client/gui/DrawContext;drawTextWithShadow(Lnet/minecraft/client/font/TextRenderer;Ljava/lang/String;III)V",
+                      "ordinal",
+                      0
+                    ],
+                    "api": 589824
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "flds": [],
+        "invanns": [
+          {
+            "dsc": "Lorg/spongepowered/asm/mixin/Mixin;",
+            "vals": [
+              "value",
+              [
+                {
+                  "itrlNme": "net/minecraft/class_442"
+                }
+              ]
+            ]
+          }
+        ]
+      },
+      "com/terraformersmc/modmenu/config/ModMenuConfig$TitleMenuButtonStyle.class": {
+        "ver": 65,
+        "acc": 16433,
+        "nme": "com/terraformersmc/modmenu/config/ModMenuConfig$TitleMenuButtonStyle",
+        "super": "java/lang/Enum",
+        "mthds": [
+          {
+            "nme": "values",
+            "acc": 9,
+            "dsc": "()[Lcom/terraformersmc/modmenu/config/ModMenuConfig$TitleMenuButtonStyle;"
+          },
+          {
+            "nme": "valueOf",
+            "acc": 9,
+            "dsc": "(Ljava/lang/String;)Lcom/terraformersmc/modmenu/config/ModMenuConfig$TitleMenuButtonStyle;"
+          },
+          {
+            "nme": "<init>",
+            "acc": 2,
+            "dsc": "(Ljava/lang/String;I)V",
+            "sig": "()V"
+          },
+          {
+            "nme": "$values",
+            "acc": 4106,
+            "dsc": "()[Lcom/terraformersmc/modmenu/config/ModMenuConfig$TitleMenuButtonStyle;"
+          },
+          {
+            "nme": "<clinit>",
+            "acc": 8,
+            "dsc": "()V"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 16409,
+            "nme": "CLASSIC",
+            "dsc": "Lcom/terraformersmc/modmenu/config/ModMenuConfig$TitleMenuButtonStyle;"
+          },
+          {
+            "acc": 16409,
+            "nme": "REPLACE_REALMS",
+            "dsc": "Lcom/terraformersmc/modmenu/config/ModMenuConfig$TitleMenuButtonStyle;"
+          },
+          {
+            "acc": 16409,
+            "nme": "SHRINK",
+            "dsc": "Lcom/terraformersmc/modmenu/config/ModMenuConfig$TitleMenuButtonStyle;"
+          },
+          {
+            "acc": 16409,
+            "nme": "ICON",
+            "dsc": "Lcom/terraformersmc/modmenu/config/ModMenuConfig$TitleMenuButtonStyle;"
+          },
+          {
+            "acc": 4122,
+            "nme": "$VALUES",
+            "dsc": "[Lcom/terraformersmc/modmenu/config/ModMenuConfig$TitleMenuButtonStyle;"
+          }
+        ]
+      },
+      "com/terraformersmc/modmenu/util/mod/fabric/FabricMod.class": {
+        "ver": 65,
+        "acc": 33,
+        "nme": "com/terraformersmc/modmenu/util/mod/fabric/FabricMod",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "(Lnet/fabricmc/loader/api/ModContainer;Ljava/util/Set;)V",
+            "sig": "(Lnet/fabricmc/loader/api/ModContainer;Ljava/util/Set<Ljava/lang/String;>;)V"
+          },
+          {
+            "nme": "getContainer",
+            "acc": 1,
+            "dsc": "()Lnet/fabricmc/loader/api/ModContainer;",
+            "invanns": [
+              {
+                "dsc": "Lorg/jetbrains/annotations/NotNull;"
+              }
+            ]
+          },
+          {
+            "nme": "getId",
+            "acc": 1,
+            "dsc": "()Ljava/lang/String;",
+            "invanns": [
+              {
+                "dsc": "Lorg/jetbrains/annotations/NotNull;"
+              }
+            ]
+          },
+          {
+            "nme": "getName",
+            "acc": 1,
+            "dsc": "()Ljava/lang/String;",
+            "invanns": [
+              {
+                "dsc": "Lorg/jetbrains/annotations/NotNull;"
+              }
+            ]
+          },
+          {
+            "nme": "getIcon",
+            "acc": 1,
+            "dsc": "(Lcom/terraformersmc/modmenu/util/mod/fabric/FabricIconHandler;I)Lnet/minecraft/class_1043;",
+            "invanns": [
+              {
+                "dsc": "Lorg/jetbrains/annotations/NotNull;"
+              }
+            ]
+          },
+          {
+            "nme": "getDescription",
+            "acc": 1,
+            "dsc": "()Ljava/lang/String;",
+            "invanns": [
+              {
+                "dsc": "Lorg/jetbrains/annotations/NotNull;"
+              }
+            ]
+          },
+          {
+            "nme": "getTranslatedDescription",
+            "acc": 1,
+            "dsc": "()Ljava/lang/String;",
+            "invanns": [
+              {
+                "dsc": "Lorg/jetbrains/annotations/NotNull;"
+              }
+            ]
+          },
+          {
+            "nme": "getVersion",
+            "acc": 1,
+            "dsc": "()Ljava/lang/String;",
+            "invanns": [
+              {
+                "dsc": "Lorg/jetbrains/annotations/NotNull;"
+              }
+            ]
+          },
+          {
+            "nme": "getPrefixedVersion",
+            "acc": 1,
+            "dsc": "()Ljava/lang/String;",
+            "invanns": [
+              {
+                "dsc": "Lorg/jetbrains/annotations/NotNull;"
+              }
+            ]
+          },
+          {
+            "nme": "getAuthors",
+            "acc": 1,
+            "dsc": "()Ljava/util/List;",
+            "sig": "()Ljava/util/List<Ljava/lang/String;>;",
+            "invanns": [
+              {
+                "dsc": "Lorg/jetbrains/annotations/NotNull;"
+              }
+            ]
+          },
+          {
+            "nme": "getContributors",
+            "acc": 1,
+            "dsc": "()Ljava/util/Map;",
+            "sig": "()Ljava/util/Map<Ljava/lang/String;Ljava/util/Collection<Ljava/lang/String;>;>;",
+            "invanns": [
+              {
+                "dsc": "Lorg/jetbrains/annotations/NotNull;"
+              }
+            ]
+          },
+          {
+            "nme": "getCredits",
+            "acc": 1,
+            "dsc": "()Ljava/util/SortedMap;",
+            "sig": "()Ljava/util/SortedMap<Ljava/lang/String;Ljava/util/Set<Ljava/lang/String;>;>;",
+            "invanns": [
+              {
+                "dsc": "Lorg/jetbrains/annotations/NotNull;"
+              }
+            ]
+          },
+          {
+            "nme": "getBadges",
+            "acc": 1,
+            "dsc": "()Ljava/util/Set;",
+            "sig": "()Ljava/util/Set<Lcom/terraformersmc/modmenu/util/mod/Mod$Badge;>;",
+            "invanns": [
+              {
+                "dsc": "Lorg/jetbrains/annotations/NotNull;"
+              }
+            ]
+          },
+          {
+            "nme": "getWebsite",
+            "acc": 1,
+            "dsc": "()Ljava/lang/String;",
+            "invanns": [
+              {
+                "dsc": "Lorg/jetbrains/annotations/Nullable;"
+              }
+            ]
+          },
+          {
+            "nme": "getIssueTracker",
+            "acc": 1,
+            "dsc": "()Ljava/lang/String;",
+            "invanns": [
+              {
+                "dsc": "Lorg/jetbrains/annotations/Nullable;"
+              }
+            ]
+          },
+          {
+            "nme": "getSource",
+            "acc": 1,
+            "dsc": "()Ljava/lang/String;",
+            "invanns": [
+              {
+                "dsc": "Lorg/jetbrains/annotations/Nullable;"
+              }
+            ]
+          },
+          {
+            "nme": "getParent",
+            "acc": 1,
+            "dsc": "()Ljava/lang/String;",
+            "invanns": [
+              {
+                "dsc": "Lorg/jetbrains/annotations/Nullable;"
+              }
+            ]
+          },
+          {
+            "nme": "getLicense",
+            "acc": 1,
+            "dsc": "()Ljava/util/Set;",
+            "sig": "()Ljava/util/Set<Ljava/lang/String;>;",
+            "invanns": [
+              {
+                "dsc": "Lorg/jetbrains/annotations/NotNull;"
+              }
+            ]
+          },
+          {
+            "nme": "getLinks",
+            "acc": 1,
+            "dsc": "()Ljava/util/Map;",
+            "sig": "()Ljava/util/Map<Ljava/lang/String;Ljava/lang/String;>;",
+            "invanns": [
+              {
+                "dsc": "Lorg/jetbrains/annotations/NotNull;"
+              }
+            ]
+          },
+          {
+            "nme": "isReal",
+            "acc": 1,
+            "dsc": "()Z"
+          },
+          {
+            "nme": "allowsUpdateChecks",
+            "acc": 1,
+            "dsc": "()Z"
+          },
+          {
+            "nme": "getUpdateChecker",
+            "acc": 1,
+            "dsc": "()Lcom/terraformersmc/modmenu/api/UpdateChecker;",
+            "invanns": [
+              {
+                "dsc": "Lorg/jetbrains/annotations/Nullable;"
+              }
+            ]
+          },
+          {
+            "nme": "setUpdateChecker",
+            "acc": 1,
+            "dsc": "(Lcom/terraformersmc/modmenu/api/UpdateChecker;)V"
+          },
+          {
+            "nme": "getUpdateInfo",
+            "acc": 1,
+            "dsc": "()Lcom/terraformersmc/modmenu/api/UpdateInfo;",
+            "invanns": [
+              {
+                "dsc": "Lorg/jetbrains/annotations/Nullable;"
+              }
+            ]
+          },
+          {
+            "nme": "setUpdateInfo",
+            "acc": 1,
+            "dsc": "(Lcom/terraformersmc/modmenu/api/UpdateInfo;)V"
+          },
+          {
+            "nme": "getModMenuData",
+            "acc": 1,
+            "dsc": "()Lcom/terraformersmc/modmenu/util/mod/fabric/FabricMod$ModMenuData;"
+          },
+          {
+            "nme": "getSha512Hash",
+            "acc": 1,
+            "dsc": "()Ljava/lang/String;",
+            "exs": [
+              "java/io/IOException"
+            ],
+            "invanns": [
+              {
+                "dsc": "Lorg/jetbrains/annotations/Nullable;"
+              }
+            ]
+          },
+          {
+            "nme": "getChildHasUpdate",
+            "acc": 1,
+            "dsc": "()Z"
+          },
+          {
+            "nme": "setChildHasUpdate",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "isHidden",
+            "acc": 1,
+            "dsc": "()Z"
+          },
+          {
+            "nme": "lambda$getSha512Hash$4",
+            "acc": 4106,
+            "dsc": "(Ljava/nio/file/Path;)Z"
+          },
+          {
+            "nme": "lambda$getCredits$3",
+            "acc": 4106,
+            "dsc": "(Ljava/lang/String;)Ljava/util/Set;"
+          },
+          {
+            "nme": "lambda$getIcon$2",
+            "acc": 4106,
+            "dsc": "()Ljava/lang/RuntimeException;"
+          },
+          {
+            "nme": "lambda$getIcon$1",
+            "acc": 4106,
+            "dsc": "(Ljava/lang/String;)Ljava/lang/RuntimeException;"
+          },
+          {
+            "nme": "lambda$new$0",
+            "acc": 4106,
+            "dsc": "()Ljava/lang/RuntimeException;"
+          },
+          {
+            "nme": "<clinit>",
+            "acc": 8,
+            "dsc": "()V"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 26,
+            "nme": "LOGGER",
+            "dsc": "Lorg/slf4j/Logger;"
+          },
+          {
+            "acc": 20,
+            "nme": "container",
+            "dsc": "Lnet/fabricmc/loader/api/ModContainer;"
+          },
+          {
+            "acc": 20,
+            "nme": "metadata",
+            "dsc": "Lnet/fabricmc/loader/api/metadata/ModMetadata;"
+          },
+          {
+            "acc": 20,
+            "nme": "modMenuData",
+            "dsc": "Lcom/terraformersmc/modmenu/util/mod/fabric/FabricMod$ModMenuData;"
+          },
+          {
+            "acc": 20,
+            "nme": "badges",
+            "dsc": "Ljava/util/Set;",
+            "sig": "Ljava/util/Set<Lcom/terraformersmc/modmenu/util/mod/Mod$Badge;>;"
+          },
+          {
+            "acc": 20,
+            "nme": "links",
+            "dsc": "Ljava/util/Map;",
+            "sig": "Ljava/util/Map<Ljava/lang/String;Ljava/lang/String;>;"
+          },
+          {
+            "acc": 4,
+            "nme": "updateChecker",
+            "dsc": "Lcom/terraformersmc/modmenu/api/UpdateChecker;"
+          },
+          {
+            "acc": 4,
+            "nme": "updateInfo",
+            "dsc": "Lcom/terraformersmc/modmenu/api/UpdateInfo;"
+          },
+          {
+            "acc": 4,
+            "nme": "defaultIconWarning",
+            "dsc": "Z"
+          },
+          {
+            "acc": 4,
+            "nme": "allowsUpdateChecks",
+            "dsc": "Z"
+          },
+          {
+            "acc": 4,
+            "nme": "childHasUpdate",
+            "dsc": "Z"
+          }
+        ]
+      },
+      "com/terraformersmc/modmenu/config/option/EnumConfigOption.class": {
+        "ver": 65,
+        "acc": 33,
+        "nme": "com/terraformersmc/modmenu/config/option/EnumConfigOption",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "(Ljava/lang/String;Ljava/lang/Enum;)V",
+            "sig": "(Ljava/lang/String;TE;)V"
+          },
+          {
+            "nme": "getKey",
+            "acc": 1,
+            "dsc": "()Ljava/lang/String;"
+          },
+          {
+            "nme": "getValue",
+            "acc": 1,
+            "dsc": "()Ljava/lang/Enum;",
+            "sig": "()TE;"
+          },
+          {
+            "nme": "setValue",
+            "acc": 1,
+            "dsc": "(Ljava/lang/Enum;)V",
+            "sig": "(TE;)V"
+          },
+          {
+            "nme": "cycleValue",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "cycleValue",
+            "acc": 1,
+            "dsc": "(I)V"
+          },
+          {
+            "nme": "getDefaultValue",
+            "acc": 1,
+            "dsc": "()Ljava/lang/Enum;",
+            "sig": "()TE;"
+          },
+          {
+            "nme": "getValueText",
+            "acc": 10,
+            "dsc": "(Lcom/terraformersmc/modmenu/config/option/EnumConfigOption;Ljava/lang/Enum;)Lnet/minecraft/class_2561;",
+            "sig": "<E:Ljava/lang/Enum<TE;>;>(Lcom/terraformersmc/modmenu/config/option/EnumConfigOption<TE;>;TE;)Lnet/minecraft/class_2561;"
+          },
+          {
+            "nme": "getButtonText",
+            "acc": 1,
+            "dsc": "()Lnet/minecraft/class_2561;"
+          },
+          {
+            "nme": "asOption",
+            "acc": 1,
+            "dsc": "()Lnet/minecraft/class_7172;",
+            "sig": "()Lnet/minecraft/class_7172<TE;>;"
+          },
+          {
+            "nme": "lambda$asOption$4",
+            "acc": 4098,
+            "dsc": "(Ljava/lang/Enum;)V"
+          },
+          {
+            "nme": "lambda$asOption$3",
+            "acc": 4106,
+            "dsc": "(Ljava/lang/Enum;)Ljava/lang/String;"
+          },
+          {
+            "nme": "lambda$asOption$2",
+            "acc": 4098,
+            "dsc": "(Ljava/lang/String;)Ljava/lang/Enum;"
+          },
+          {
+            "nme": "lambda$asOption$1",
+            "acc": 4106,
+            "dsc": "(Ljava/lang/String;Ljava/lang/Enum;)Z"
+          },
+          {
+            "nme": "lambda$asOption$0",
+            "acc": 4098,
+            "dsc": "(Lnet/minecraft/class_2561;Ljava/lang/Enum;)Lnet/minecraft/class_2561;"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 18,
+            "nme": "key",
+            "dsc": "Ljava/lang/String;"
+          },
+          {
+            "acc": 18,
+            "nme": "translationKey",
+            "dsc": "Ljava/lang/String;"
+          },
+          {
+            "acc": 18,
+            "nme": "enumClass",
+            "dsc": "Ljava/lang/Class;",
+            "sig": "Ljava/lang/Class<TE;>;"
+          },
+          {
+            "acc": 18,
+            "nme": "defaultValue",
+            "dsc": "Ljava/lang/Enum;",
+            "sig": "TE;"
+          }
+        ]
+      }
+    }
+  }
+}

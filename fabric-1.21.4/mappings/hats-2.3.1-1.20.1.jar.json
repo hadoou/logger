@@ -1,0 +1,3247 @@
+{
+  "md5": "b1268fcf7139cbf92f8b131d1b04701b",
+  "sha2": "f50eceee96b0f08e5a05d219bb50aa1cef87f52d",
+  "sha256": "e6b2f7d8de345d30bf717d77a18d602258564dbfeb288b0e980e3299f0bc4072",
+  "contents": {
+    "classes": {
+      "com/astryxion/hats/common/spawn/HatSpawnHandler.class": {
+        "ver": 61,
+        "acc": 33,
+        "nme": "com/astryxion/hats/common/spawn/HatSpawnHandler",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "onFirstTick",
+            "acc": 9,
+            "dsc": "(Lnet/minecraft/world/entity/LivingEntity;)V"
+          },
+          {
+            "nme": "onLivingTick",
+            "acc": 9,
+            "dsc": "(Lnet/minecraftforge/event/entity/living/LivingEvent$LivingTickEvent;)V",
+            "vanns": [
+              {
+                "dsc": "Lnet/minecraftforge/eventbus/api/SubscribeEvent;"
+              }
+            ]
+          },
+          {
+            "nme": "onEntitySpawn",
+            "acc": 9,
+            "dsc": "(Lnet/minecraftforge/event/entity/EntityJoinLevelEvent;)V",
+            "vanns": [
+              {
+                "dsc": "Lnet/minecraftforge/eventbus/api/SubscribeEvent;"
+              }
+            ]
+          },
+          {
+            "nme": "tryEquipRandomHat",
+            "acc": 10,
+            "dsc": "(Lnet/minecraft/world/entity/LivingEntity;)V"
+          },
+          {
+            "nme": "lambda$tryEquipRandomHat$0",
+            "acc": 4106,
+            "dsc": "(Lnet/minecraftforge/registries/RegistryObject;)Lnet/minecraft/world/item/Item;"
+          },
+          {
+            "nme": "<clinit>",
+            "acc": 8,
+            "dsc": "()V"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 26,
+            "nme": "RANDOM",
+            "dsc": "Ljava/util/Random;"
+          },
+          {
+            "acc": 26,
+            "nme": "HAT_ROLLED_KEY",
+            "dsc": "Ljava/lang/String;",
+            "val": "HatsModHatRolled"
+          }
+        ],
+        "vanns": [
+          {
+            "dsc": "Lnet/minecraftforge/fml/common/Mod$EventBusSubscriber;",
+            "vals": [
+              "modid",
+              "hats"
+            ]
+          }
+        ]
+      },
+      "com/astryxion/hats/client/render/helper/individual/PigHatHelper.class": {
+        "ver": 61,
+        "acc": 33,
+        "nme": "com/astryxion/hats/client/render/helper/individual/PigHatHelper",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "apply",
+            "acc": 9,
+            "dsc": "(Lnet/minecraft/world/entity/LivingEntity;Lcom/mojang/blaze3d/vertex/PoseStack;F)V"
+          }
+        ],
+        "flds": []
+      },
+      "com/astryxion/hats/common/hat/HatUnlockHandler.class": {
+        "ver": 61,
+        "acc": 33,
+        "nme": "com/astryxion/hats/common/hat/HatUnlockHandler",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "onMobKilled",
+            "acc": 9,
+            "dsc": "(Lnet/minecraftforge/event/entity/living/LivingDeathEvent;)V",
+            "vanns": [
+              {
+                "dsc": "Lnet/minecraftforge/eventbus/api/SubscribeEvent;",
+                "vals": [
+                  "priority",
+                  [
+                    "Lnet/minecraftforge/eventbus/api/EventPriority;",
+                    "HIGHEST"
+                  ]
+                ]
+              }
+            ]
+          },
+          {
+            "nme": "lambda$onMobKilled$0",
+            "acc": 4106,
+            "dsc": "(Lnet/minecraft/resources/ResourceLocation;Lnet/minecraft/server/level/ServerPlayer;Lnet/minecraft/world/item/ItemStack;Lcom/astryxion/hats/common/hat/PlayerHatData;)V"
+          }
+        ],
+        "flds": [],
+        "vanns": [
+          {
+            "dsc": "Lnet/minecraftforge/fml/common/Mod$EventBusSubscriber;",
+            "vals": [
+              "modid",
+              "hats"
+            ]
+          }
+        ]
+      },
+      "com/astryxion/hats/common/hat/HatRarityLoader$1.class": {
+        "ver": 61,
+        "acc": 32,
+        "nme": "com/astryxion/hats/common/hat/HatRarityLoader$1",
+        "super": "com/google/gson/reflect/TypeToken",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 0,
+            "dsc": "()V"
+          }
+        ],
+        "flds": []
+      },
+      "com/astryxion/hats/client/HatsClient.class": {
+        "ver": 61,
+        "acc": 33,
+        "nme": "com/astryxion/hats/client/HatsClient",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "registerClient",
+            "acc": 9,
+            "dsc": "(Lnet/minecraftforge/eventbus/api/IEventBus;)V"
+          },
+          {
+            "nme": "onRegisterKeyMappings",
+            "acc": 10,
+            "dsc": "(Lnet/minecraftforge/client/event/RegisterKeyMappingsEvent;)V"
+          },
+          {
+            "nme": "onClientTick",
+            "acc": 10,
+            "dsc": "(Lnet/minecraftforge/event/TickEvent$ClientTickEvent;)V"
+          },
+          {
+            "nme": "lambda$registerClient$0",
+            "acc": 4106,
+            "dsc": "(Lnet/minecraftforge/fml/event/lifecycle/FMLClientSetupEvent;)V"
+          }
+        ],
+        "flds": []
+      },
+      "com/astryxion/hats/common/events/HatWelcomeHandler.class": {
+        "ver": 61,
+        "acc": 33,
+        "nme": "com/astryxion/hats/common/events/HatWelcomeHandler",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "onPlayerJoin",
+            "acc": 9,
+            "dsc": "(Lnet/minecraftforge/event/entity/player/PlayerEvent$PlayerLoggedInEvent;)V",
+            "vanns": [
+              {
+                "dsc": "Lnet/minecraftforge/eventbus/api/SubscribeEvent;"
+              }
+            ]
+          },
+          {
+            "nme": "lambda$onPlayerJoin$0",
+            "acc": 4106,
+            "dsc": "(Lnet/minecraft/server/level/ServerPlayer;Lcom/astryxion/hats/common/hat/PlayerHatData;)V"
+          }
+        ],
+        "flds": [],
+        "vanns": [
+          {
+            "dsc": "Lnet/minecraftforge/fml/common/Mod$EventBusSubscriber;",
+            "vals": [
+              "modid",
+              "hats"
+            ]
+          }
+        ]
+      },
+      "com/astryxion/hats/client/render/helper/individual/WanderingTraderHatHelper.class": {
+        "ver": 61,
+        "acc": 33,
+        "nme": "com/astryxion/hats/client/render/helper/individual/WanderingTraderHatHelper",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "apply",
+            "acc": 9,
+            "dsc": "(Lnet/minecraft/world/entity/LivingEntity;Lcom/mojang/blaze3d/vertex/PoseStack;F)V"
+          }
+        ],
+        "flds": []
+      },
+      "com/astryxion/hats/client/render/helper/individual/SkeletonHatHelper.class": {
+        "ver": 61,
+        "acc": 33,
+        "nme": "com/astryxion/hats/client/render/helper/individual/SkeletonHatHelper",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "apply",
+            "acc": 9,
+            "dsc": "(Lnet/minecraft/world/entity/LivingEntity;Lcom/mojang/blaze3d/vertex/PoseStack;F)V"
+          }
+        ],
+        "flds": []
+      },
+      "com/astryxion/hats/client/render/helper/individual/ZombieHatHelper.class": {
+        "ver": 61,
+        "acc": 33,
+        "nme": "com/astryxion/hats/client/render/helper/individual/ZombieHatHelper",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "apply",
+            "acc": 9,
+            "dsc": "(Lnet/minecraft/world/entity/LivingEntity;Lcom/mojang/blaze3d/vertex/PoseStack;F)V"
+          }
+        ],
+        "flds": []
+      },
+      "com/astryxion/hats/client/keybinds/HatKeybinds$Register.class": {
+        "ver": 61,
+        "acc": 33,
+        "nme": "com/astryxion/hats/client/keybinds/HatKeybinds$Register",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "registerKeys",
+            "acc": 9,
+            "dsc": "(Lnet/minecraftforge/client/event/RegisterKeyMappingsEvent;)V",
+            "vanns": [
+              {
+                "dsc": "Lnet/minecraftforge/eventbus/api/SubscribeEvent;"
+              }
+            ]
+          }
+        ],
+        "flds": [],
+        "vanns": [
+          {
+            "dsc": "Lnet/minecraftforge/fml/common/Mod$EventBusSubscriber;",
+            "vals": [
+              "modid",
+              "hats",
+              "bus",
+              [
+                "Lnet/minecraftforge/fml/common/Mod$EventBusSubscriber$Bus;",
+                "MOD"
+              ],
+              "value",
+              [
+                [
+                  "Lnet/minecraftforge/api/distmarker/Dist;",
+                  "CLIENT"
+                ]
+              ]
+            ]
+          }
+        ]
+      },
+      "com/astryxion/hats/mixin/LivingEntityTickMixin.class": {
+        "ver": 61,
+        "acc": 33,
+        "nme": "com/astryxion/hats/mixin/LivingEntityTickMixin",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "hats$tick",
+            "acc": 2,
+            "dsc": "(Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V",
+            "vanns": [
+              {
+                "dsc": "Lorg/spongepowered/asm/mixin/injection/Inject;",
+                "vals": [
+                  "method",
+                  [
+                    "tick"
+                  ],
+                  "at",
+                  [
+                    {
+                      "desc": "Lorg/spongepowered/asm/mixin/injection/At;",
+                      "values": [
+                        "value",
+                        "HEAD"
+                      ],
+                      "api": 589824
+                    }
+                  ]
+                ]
+              }
+            ]
+          }
+        ],
+        "flds": [],
+        "invanns": [
+          {
+            "dsc": "Lorg/spongepowered/asm/mixin/Mixin;",
+            "vals": [
+              "value",
+              [
+                {
+                  "itrlNme": "net/minecraft/world/entity/LivingEntity"
+                }
+              ]
+            ]
+          }
+        ]
+      },
+      "com/astryxion/hats/client/render/helper/individual/SquidHatHelper.class": {
+        "ver": 61,
+        "acc": 33,
+        "nme": "com/astryxion/hats/client/render/helper/individual/SquidHatHelper",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "apply",
+            "acc": 9,
+            "dsc": "(Lnet/minecraft/world/entity/LivingEntity;Lcom/mojang/blaze3d/vertex/PoseStack;F)V"
+          }
+        ],
+        "flds": []
+      },
+      "com/astryxion/hats/mixin/LivingEntityRendererMixin.class": {
+        "ver": 61,
+        "acc": 1057,
+        "nme": "com/astryxion/hats/mixin/LivingEntityRendererMixin",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "hats$addHatLayer",
+            "acc": 2,
+            "dsc": "(Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V",
+            "vanns": [
+              {
+                "dsc": "Lorg/spongepowered/asm/mixin/injection/Inject;",
+                "vals": [
+                  "method",
+                  [
+                    "<init>"
+                  ],
+                  "at",
+                  [
+                    {
+                      "desc": "Lorg/spongepowered/asm/mixin/injection/At;",
+                      "values": [
+                        "value",
+                        "TAIL"
+                      ],
+                      "api": 589824
+                    }
+                  ]
+                ]
+              }
+            ]
+          }
+        ],
+        "flds": [],
+        "invanns": [
+          {
+            "dsc": "Lorg/spongepowered/asm/mixin/Mixin;",
+            "vals": [
+              "value",
+              [
+                {
+                  "itrlNme": "net/minecraft/client/renderer/entity/LivingEntityRenderer"
+                }
+              ]
+            ]
+          }
+        ]
+      },
+      "com/astryxion/hats/client/keybinds/HatKeybinds.class": {
+        "ver": 61,
+        "acc": 33,
+        "nme": "com/astryxion/hats/client/keybinds/HatKeybinds",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 9,
+            "nme": "OPEN_HATS",
+            "dsc": "Lnet/minecraft/client/KeyMapping;"
+          }
+        ]
+      },
+      "com/astryxion/hats/mixin/EntityRendererMixin.class": {
+        "ver": 61,
+        "acc": 1057,
+        "nme": "com/astryxion/hats/mixin/EntityRendererMixin",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "hats$hideNameForPreview",
+            "acc": 2,
+            "dsc": "(Lnet/minecraft/world/entity/Entity;Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfoReturnable;)V",
+            "sig": "(TT;Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfoReturnable<Ljava/lang/Boolean;>;)V",
+            "vanns": [
+              {
+                "dsc": "Lorg/spongepowered/asm/mixin/injection/Inject;",
+                "vals": [
+                  "method",
+                  [
+                    "shouldShowName"
+                  ],
+                  "at",
+                  [
+                    {
+                      "desc": "Lorg/spongepowered/asm/mixin/injection/At;",
+                      "values": [
+                        "value",
+                        "HEAD"
+                      ],
+                      "api": 589824
+                    }
+                  ],
+                  "cancellable",
+                  true
+                ]
+              }
+            ]
+          }
+        ],
+        "flds": [],
+        "invanns": [
+          {
+            "dsc": "Lorg/spongepowered/asm/mixin/Mixin;",
+            "vals": [
+              "value",
+              [
+                {
+                  "itrlNme": "net/minecraft/client/renderer/entity/EntityRenderer"
+                }
+              ]
+            ]
+          }
+        ]
+      },
+      "com/astryxion/hats/common/network/PacketOpenCosmeticMenu.class": {
+        "ver": 61,
+        "acc": 33,
+        "nme": "com/astryxion/hats/common/network/PacketOpenCosmeticMenu",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/network/FriendlyByteBuf;)V"
+          },
+          {
+            "nme": "toBytes",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/network/FriendlyByteBuf;)V"
+          },
+          {
+            "nme": "handle",
+            "acc": 1,
+            "dsc": "(Ljava/util/function/Supplier;)Z",
+            "sig": "(Ljava/util/function/Supplier<Lnet/minecraftforge/network/NetworkEvent$Context;>;)Z"
+          },
+          {
+            "nme": "lambda$handle$0",
+            "acc": 4106,
+            "dsc": "(Lnet/minecraftforge/network/NetworkEvent$Context;)V"
+          }
+        ],
+        "flds": []
+      },
+      "com/astryxion/hats/client/ClientSetup.class": {
+        "ver": 61,
+        "acc": 33,
+        "nme": "com/astryxion/hats/client/ClientSetup",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "addLayers",
+            "acc": 9,
+            "dsc": "(Lnet/minecraftforge/client/event/EntityRenderersEvent$AddLayers;)V",
+            "vanns": [
+              {
+                "dsc": "Lnet/minecraftforge/eventbus/api/SubscribeEvent;"
+              }
+            ]
+          }
+        ],
+        "flds": [],
+        "vanns": [
+          {
+            "dsc": "Lnet/minecraftforge/fml/common/Mod$EventBusSubscriber;",
+            "vals": [
+              "modid",
+              "hats",
+              "value",
+              [
+                [
+                  "Lnet/minecraftforge/api/distmarker/Dist;",
+                  "CLIENT"
+                ]
+              ],
+              "bus",
+              [
+                "Lnet/minecraftforge/fml/common/Mod$EventBusSubscriber$Bus;",
+                "MOD"
+              ]
+            ]
+          }
+        ]
+      },
+      "com/astryxion/hats/client/render/helper/HatRendererHelper.class": {
+        "ver": 61,
+        "acc": 33,
+        "nme": "com/astryxion/hats/client/render/helper/HatRendererHelper",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "applyTransforms",
+            "acc": 9,
+            "dsc": "(Lnet/minecraft/world/entity/LivingEntity;Lcom/mojang/blaze3d/vertex/PoseStack;F)V"
+          }
+        ],
+        "flds": []
+      },
+      "com/astryxion/hats/client/render/helper/individual/VindicatorHatHelper.class": {
+        "ver": 61,
+        "acc": 33,
+        "nme": "com/astryxion/hats/client/render/helper/individual/VindicatorHatHelper",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "apply",
+            "acc": 9,
+            "dsc": "(Lnet/minecraft/world/entity/LivingEntity;Lcom/mojang/blaze3d/vertex/PoseStack;F)V"
+          }
+        ],
+        "flds": []
+      },
+      "com/astryxion/hats/common/network/PacketHatUnlocked.class": {
+        "ver": 61,
+        "acc": 33,
+        "nme": "com/astryxion/hats/common/network/PacketHatUnlocked",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/world/item/ItemStack;)V"
+          },
+          {
+            "nme": "getHatStack",
+            "acc": 1,
+            "dsc": "()Lnet/minecraft/world/item/ItemStack;"
+          },
+          {
+            "nme": "encode",
+            "acc": 9,
+            "dsc": "(Lcom/astryxion/hats/common/network/PacketHatUnlocked;Lnet/minecraft/network/FriendlyByteBuf;)V"
+          },
+          {
+            "nme": "decode",
+            "acc": 9,
+            "dsc": "(Lnet/minecraft/network/FriendlyByteBuf;)Lcom/astryxion/hats/common/network/PacketHatUnlocked;"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 18,
+            "nme": "hatStack",
+            "dsc": "Lnet/minecraft/world/item/ItemStack;"
+          }
+        ]
+      },
+      "com/astryxion/hats/common/hat/HatItem$1.class": {
+        "ver": 61,
+        "acc": 4128,
+        "nme": "com/astryxion/hats/common/hat/HatItem$1",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<clinit>",
+            "acc": 8,
+            "dsc": "()V"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 4120,
+            "nme": "$SwitchMap$com$astryxion$hats$common$hat$HatRarity",
+            "dsc": "[I"
+          }
+        ]
+      },
+      "com/astryxion/hats/client/render/helper/individual/EndermanHatHelper.class": {
+        "ver": 61,
+        "acc": 33,
+        "nme": "com/astryxion/hats/client/render/helper/individual/EndermanHatHelper",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "apply",
+            "acc": 9,
+            "dsc": "(Lnet/minecraft/world/entity/LivingEntity;Lcom/mojang/blaze3d/vertex/PoseStack;F)V"
+          }
+        ],
+        "flds": []
+      },
+      "com/astryxion/hats/Config.class": {
+        "ver": 61,
+        "acc": 33,
+        "nme": "com/astryxion/hats/Config",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "onLoad",
+            "acc": 9,
+            "dsc": "(Lnet/minecraftforge/fml/event/config/ModConfigEvent$Loading;)V",
+            "vanns": [
+              {
+                "dsc": "Lnet/minecraftforge/eventbus/api/SubscribeEvent;"
+              }
+            ]
+          },
+          {
+            "nme": "onReload",
+            "acc": 9,
+            "dsc": "(Lnet/minecraftforge/fml/event/config/ModConfigEvent$Reloading;)V",
+            "vanns": [
+              {
+                "dsc": "Lnet/minecraftforge/eventbus/api/SubscribeEvent;"
+              }
+            ]
+          },
+          {
+            "nme": "updateConfig",
+            "acc": 10,
+            "dsc": "(Lnet/minecraftforge/fml/event/config/ModConfigEvent;)V"
+          },
+          {
+            "nme": "<clinit>",
+            "acc": 8,
+            "dsc": "()V"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 26,
+            "nme": "BUILDER",
+            "dsc": "Lnet/minecraftforge/common/ForgeConfigSpec$Builder;"
+          },
+          {
+            "acc": 25,
+            "nme": "ENABLE_HATS",
+            "dsc": "Lnet/minecraftforge/common/ForgeConfigSpec$BooleanValue;"
+          },
+          {
+            "acc": 25,
+            "nme": "ENABLE_MOBS",
+            "dsc": "Lnet/minecraftforge/common/ForgeConfigSpec$BooleanValue;"
+          },
+          {
+            "acc": 25,
+            "nme": "ENABLE_PLAYERS",
+            "dsc": "Lnet/minecraftforge/common/ForgeConfigSpec$BooleanValue;"
+          },
+          {
+            "acc": 25,
+            "nme": "MOB_HAT_SPAWN_CHANCE",
+            "dsc": "Lnet/minecraftforge/common/ForgeConfigSpec$DoubleValue;"
+          },
+          {
+            "acc": 25,
+            "nme": "HAT_MODE",
+            "dsc": "Lnet/minecraftforge/common/ForgeConfigSpec$EnumValue;",
+            "sig": "Lnet/minecraftforge/common/ForgeConfigSpec$EnumValue<Lcom/astryxion/hats/common/hat/HatMode;>;"
+          },
+          {
+            "acc": 25,
+            "nme": "SPEC",
+            "dsc": "Lnet/minecraftforge/common/ForgeConfigSpec;"
+          },
+          {
+            "acc": 9,
+            "nme": "enableHats",
+            "dsc": "Z"
+          },
+          {
+            "acc": 9,
+            "nme": "enableMobHats",
+            "dsc": "Z"
+          },
+          {
+            "acc": 9,
+            "nme": "enablePlayerHats",
+            "dsc": "Z"
+          },
+          {
+            "acc": 9,
+            "nme": "mobHatSpawnChance",
+            "dsc": "D"
+          },
+          {
+            "acc": 9,
+            "nme": "hatMode",
+            "dsc": "Lcom/astryxion/hats/common/hat/HatMode;"
+          }
+        ],
+        "vanns": [
+          {
+            "dsc": "Lnet/minecraftforge/fml/common/Mod$EventBusSubscriber;",
+            "vals": [
+              "modid",
+              "hats",
+              "bus",
+              [
+                "Lnet/minecraftforge/fml/common/Mod$EventBusSubscriber$Bus;",
+                "MOD"
+              ]
+            ]
+          }
+        ]
+      },
+      "com/astryxion/hats/client/render/helper/individual/WitherSkeletonHatHelper.class": {
+        "ver": 61,
+        "acc": 33,
+        "nme": "com/astryxion/hats/client/render/helper/individual/WitherSkeletonHatHelper",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "apply",
+            "acc": 9,
+            "dsc": "(Lnet/minecraft/world/entity/LivingEntity;Lcom/mojang/blaze3d/vertex/PoseStack;F)V"
+          }
+        ],
+        "flds": []
+      },
+      "com/astryxion/hats/client/render/helper/individual/ChickenHatHelper.class": {
+        "ver": 61,
+        "acc": 33,
+        "nme": "com/astryxion/hats/client/render/helper/individual/ChickenHatHelper",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "apply",
+            "acc": 9,
+            "dsc": "(Lnet/minecraft/world/entity/LivingEntity;Lcom/mojang/blaze3d/vertex/PoseStack;F)V"
+          }
+        ],
+        "flds": []
+      },
+      "com/astryxion/hats/common/hat/HatPart.class": {
+        "ver": 61,
+        "acc": 33,
+        "nme": "com/astryxion/hats/common/hat/HatPart",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "getHatStack",
+            "acc": 1,
+            "dsc": "()Lnet/minecraft/world/item/ItemStack;"
+          },
+          {
+            "nme": "setHat",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/world/item/Item;)V"
+          },
+          {
+            "nme": "setHatStack",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/world/item/ItemStack;)V"
+          },
+          {
+            "nme": "hasHat",
+            "acc": 1,
+            "dsc": "()Z"
+          },
+          {
+            "nme": "clear",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "serializeNBT",
+            "acc": 1,
+            "dsc": "()Lnet/minecraft/nbt/CompoundTag;"
+          },
+          {
+            "nme": "deserializeNBT",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/nbt/CompoundTag;)V"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 2,
+            "nme": "hat",
+            "dsc": "Lnet/minecraft/world/item/ItemStack;"
+          }
+        ]
+      },
+      "com/astryxion/hats/common/capability/HatCloneHandler.class": {
+        "ver": 61,
+        "acc": 33,
+        "nme": "com/astryxion/hats/common/capability/HatCloneHandler",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "onPlayerClone",
+            "acc": 9,
+            "dsc": "(Lnet/minecraftforge/event/entity/player/PlayerEvent$Clone;)V",
+            "vanns": [
+              {
+                "dsc": "Lnet/minecraftforge/eventbus/api/SubscribeEvent;"
+              }
+            ]
+          },
+          {
+            "nme": "onPlayerRespawn",
+            "acc": 9,
+            "dsc": "(Lnet/minecraftforge/event/entity/player/PlayerEvent$PlayerRespawnEvent;)V",
+            "vanns": [
+              {
+                "dsc": "Lnet/minecraftforge/eventbus/api/SubscribeEvent;"
+              }
+            ]
+          },
+          {
+            "nme": "onDimensionChange",
+            "acc": 9,
+            "dsc": "(Lnet/minecraftforge/event/entity/player/PlayerEvent$PlayerChangedDimensionEvent;)V",
+            "vanns": [
+              {
+                "dsc": "Lnet/minecraftforge/eventbus/api/SubscribeEvent;"
+              }
+            ]
+          },
+          {
+            "nme": "syncEverything",
+            "acc": 10,
+            "dsc": "(Lnet/minecraft/server/level/ServerPlayer;)V"
+          },
+          {
+            "nme": "lambda$syncEverything$4",
+            "acc": 4106,
+            "dsc": "(Lnet/minecraft/server/level/ServerPlayer;Lcom/astryxion/hats/common/hat/PlayerHatData;)V"
+          },
+          {
+            "nme": "lambda$onPlayerClone$3",
+            "acc": 4106,
+            "dsc": "(Lnet/minecraft/world/entity/player/Player;Lcom/astryxion/hats/common/hat/HatPart;)V"
+          },
+          {
+            "nme": "lambda$onPlayerClone$2",
+            "acc": 4106,
+            "dsc": "(Lcom/astryxion/hats/common/hat/HatPart;Lcom/astryxion/hats/common/hat/HatPart;)V"
+          },
+          {
+            "nme": "lambda$onPlayerClone$1",
+            "acc": 4106,
+            "dsc": "(Lnet/minecraft/world/entity/player/Player;Lcom/astryxion/hats/common/hat/PlayerHatData;)V"
+          },
+          {
+            "nme": "lambda$onPlayerClone$0",
+            "acc": 4106,
+            "dsc": "(Lcom/astryxion/hats/common/hat/PlayerHatData;Lcom/astryxion/hats/common/hat/PlayerHatData;)V"
+          }
+        ],
+        "flds": [],
+        "vanns": [
+          {
+            "dsc": "Lnet/minecraftforge/fml/common/Mod$EventBusSubscriber;",
+            "vals": [
+              "modid",
+              "hats"
+            ]
+          }
+        ]
+      },
+      "com/astryxion/hats/common/hat/HatPartProvider.class": {
+        "ver": 61,
+        "acc": 33,
+        "nme": "com/astryxion/hats/common/hat/HatPartProvider",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "getCapability",
+            "acc": 1,
+            "dsc": "(Lnet/minecraftforge/common/capabilities/Capability;Lnet/minecraft/core/Direction;)Lnet/minecraftforge/common/util/LazyOptional;",
+            "sig": "<T:Ljava/lang/Object;>(Lnet/minecraftforge/common/capabilities/Capability<TT;>;Lnet/minecraft/core/Direction;)Lnet/minecraftforge/common/util/LazyOptional<TT;>;",
+            "invanns": [
+              {
+                "dsc": "Lorg/jetbrains/annotations/NotNull;"
+              }
+            ]
+          },
+          {
+            "nme": "serializeNBT",
+            "acc": 1,
+            "dsc": "()Lnet/minecraft/nbt/CompoundTag;"
+          },
+          {
+            "nme": "deserializeNBT",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/nbt/CompoundTag;)V"
+          },
+          {
+            "nme": "deserializeNBT",
+            "acc": 4161,
+            "dsc": "(Lnet/minecraft/nbt/Tag;)V"
+          },
+          {
+            "nme": "serializeNBT",
+            "acc": 4161,
+            "dsc": "()Lnet/minecraft/nbt/Tag;"
+          },
+          {
+            "nme": "lambda$new$0",
+            "acc": 4098,
+            "dsc": "()Lcom/astryxion/hats/common/hat/HatPart;"
+          },
+          {
+            "nme": "<clinit>",
+            "acc": 8,
+            "dsc": "()V"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 25,
+            "nme": "ID",
+            "dsc": "Lnet/minecraft/resources/ResourceLocation;"
+          },
+          {
+            "acc": 18,
+            "nme": "hatPart",
+            "dsc": "Lcom/astryxion/hats/common/hat/HatPart;"
+          },
+          {
+            "acc": 18,
+            "nme": "optional",
+            "dsc": "Lnet/minecraftforge/common/util/LazyOptional;",
+            "sig": "Lnet/minecraftforge/common/util/LazyOptional<Lcom/astryxion/hats/common/hat/HatPart;>;"
+          }
+        ]
+      },
+      "com/astryxion/hats/client/gui/toast/HatToast.class": {
+        "ver": 61,
+        "acc": 33,
+        "nme": "com/astryxion/hats/client/gui/toast/HatToast",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/world/item/ItemStack;)V"
+          },
+          {
+            "nme": "m_7172_",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/client/gui/GuiGraphics;Lnet/minecraft/client/gui/components/toasts/ToastComponent;J)Lnet/minecraft/client/gui/components/toasts/Toast$Visibility;"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 18,
+            "nme": "hatStack",
+            "dsc": "Lnet/minecraft/world/item/ItemStack;"
+          }
+        ]
+      },
+      "com/astryxion/hats/common/data/PlayerHatInventory.class": {
+        "ver": 61,
+        "acc": 33,
+        "nme": "com/astryxion/hats/common/data/PlayerHatInventory",
+        "super": "net/minecraft/world/level/saveddata/SavedData",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "get",
+            "acc": 9,
+            "dsc": "(Lnet/minecraft/server/level/ServerLevel;)Lcom/astryxion/hats/common/data/PlayerHatInventory;"
+          },
+          {
+            "nme": "unlockHat",
+            "acc": 1,
+            "dsc": "(Ljava/util/UUID;Lnet/minecraft/world/item/Item;)V"
+          },
+          {
+            "nme": "hasHatUnlocked",
+            "acc": 1,
+            "dsc": "(Ljava/util/UUID;Lnet/minecraft/world/item/Item;)Z"
+          },
+          {
+            "nme": "getUnlockedHats",
+            "acc": 1,
+            "dsc": "(Ljava/util/UUID;)Ljava/util/Set;",
+            "sig": "(Ljava/util/UUID;)Ljava/util/Set<Lnet/minecraft/world/item/Item;>;"
+          },
+          {
+            "nme": "equipHat",
+            "acc": 1,
+            "dsc": "(Ljava/util/UUID;Lnet/minecraft/world/item/Item;)V"
+          },
+          {
+            "nme": "getEquippedHat",
+            "acc": 1,
+            "dsc": "(Ljava/util/UUID;)Lnet/minecraft/world/item/Item;"
+          },
+          {
+            "nme": "clearEquippedHat",
+            "acc": 1,
+            "dsc": "(Ljava/util/UUID;)V"
+          },
+          {
+            "nme": "m_7176_",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/nbt/CompoundTag;)Lnet/minecraft/nbt/CompoundTag;"
+          },
+          {
+            "nme": "load",
+            "acc": 9,
+            "dsc": "(Lnet/minecraft/nbt/CompoundTag;)Lcom/astryxion/hats/common/data/PlayerHatInventory;"
+          },
+          {
+            "nme": "lambda$unlockHat$0",
+            "acc": 4106,
+            "dsc": "(Ljava/util/UUID;)Ljava/util/Set;"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 26,
+            "nme": "DATA_NAME",
+            "dsc": "Ljava/lang/String;",
+            "val": "hats_inventory"
+          },
+          {
+            "acc": 18,
+            "nme": "unlockedHats",
+            "dsc": "Ljava/util/Map;",
+            "sig": "Ljava/util/Map<Ljava/util/UUID;Ljava/util/Set<Lnet/minecraft/world/item/Item;>;>;"
+          },
+          {
+            "acc": 18,
+            "nme": "equippedHat",
+            "dsc": "Ljava/util/Map;",
+            "sig": "Ljava/util/Map<Ljava/util/UUID;Lnet/minecraft/world/item/Item;>;"
+          }
+        ]
+      },
+      "com/astryxion/hats/client/network/HatClientPacketHandlers.class": {
+        "ver": 61,
+        "acc": 49,
+        "nme": "com/astryxion/hats/client/network/HatClientPacketHandlers",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 2,
+            "dsc": "()V"
+          },
+          {
+            "nme": "handleHatUnlocked",
+            "acc": 9,
+            "dsc": "(Lcom/astryxion/hats/common/network/PacketHatUnlocked;)V"
+          }
+        ],
+        "flds": []
+      },
+      "com/astryxion/hats/common/capability/HatDataCapability$1.class": {
+        "ver": 61,
+        "acc": 32,
+        "nme": "com/astryxion/hats/common/capability/HatDataCapability$1",
+        "super": "net/minecraftforge/common/capabilities/CapabilityToken",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 0,
+            "dsc": "()V"
+          }
+        ],
+        "flds": []
+      },
+      "com/astryxion/hats/common/capability/HatLoginHandler.class": {
+        "ver": 61,
+        "acc": 33,
+        "nme": "com/astryxion/hats/common/capability/HatLoginHandler",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "onPlayerLogin",
+            "acc": 9,
+            "dsc": "(Lnet/minecraftforge/event/entity/player/PlayerEvent$PlayerLoggedInEvent;)V",
+            "vanns": [
+              {
+                "dsc": "Lnet/minecraftforge/eventbus/api/SubscribeEvent;"
+              }
+            ]
+          }
+        ],
+        "flds": [],
+        "vanns": [
+          {
+            "dsc": "Lnet/minecraftforge/fml/common/Mod$EventBusSubscriber;",
+            "vals": [
+              "modid",
+              "hats"
+            ]
+          }
+        ]
+      },
+      "com/astryxion/hats/client/render/helper/individual/StrayHatHelper.class": {
+        "ver": 61,
+        "acc": 33,
+        "nme": "com/astryxion/hats/client/render/helper/individual/StrayHatHelper",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "apply",
+            "acc": 9,
+            "dsc": "(Lnet/minecraft/world/entity/LivingEntity;Lcom/mojang/blaze3d/vertex/PoseStack;F)V"
+          }
+        ],
+        "flds": []
+      },
+      "com/astryxion/hats/client/gui/StyledButton.class": {
+        "ver": 61,
+        "acc": 33,
+        "nme": "com/astryxion/hats/client/gui/StyledButton",
+        "super": "net/minecraft/client/gui/components/Button",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "(IIIILnet/minecraft/network/chat/Component;Lnet/minecraft/client/gui/components/Button$OnPress;)V"
+          },
+          {
+            "nme": "m_87963_",
+            "acc": 4,
+            "dsc": "(Lnet/minecraft/client/gui/GuiGraphics;IIF)V"
+          }
+        ],
+        "flds": []
+      },
+      "com/astryxion/hats/client/render/helper/individual/VillagerHatHelper.class": {
+        "ver": 61,
+        "acc": 33,
+        "nme": "com/astryxion/hats/client/render/helper/individual/VillagerHatHelper",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "apply",
+            "acc": 9,
+            "dsc": "(Lnet/minecraft/world/entity/LivingEntity;Lcom/mojang/blaze3d/vertex/PoseStack;F)V"
+          }
+        ],
+        "flds": []
+      },
+      "com/astryxion/hats/common/hat/HatItem.class": {
+        "ver": 61,
+        "acc": 33,
+        "nme": "com/astryxion/hats/common/hat/HatItem",
+        "super": "net/minecraft/world/item/Item",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "(Ljava/lang/String;)V"
+          },
+          {
+            "nme": "getRarity",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/level/Level;)Lnet/minecraft/world/item/Rarity;"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 18,
+            "nme": "hatId",
+            "dsc": "Ljava/lang/String;"
+          }
+        ]
+      },
+      "com/astryxion/hats/common/server/ServerHatHandler.class": {
+        "ver": 61,
+        "acc": 49,
+        "nme": "com/astryxion/hats/common/server/ServerHatHandler",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 2,
+            "dsc": "()V"
+          },
+          {
+            "nme": "handleEquip",
+            "acc": 9,
+            "dsc": "(Lnet/minecraft/server/level/ServerPlayer;Ljava/lang/String;)V"
+          },
+          {
+            "nme": "lambda$handleEquip$1",
+            "acc": 4106,
+            "dsc": "(Lnet/minecraft/resources/ResourceLocation;Lnet/minecraft/server/level/ServerPlayer;Lcom/astryxion/hats/common/hat/PlayerHatData;)V"
+          },
+          {
+            "nme": "lambda$handleEquip$0",
+            "acc": 4106,
+            "dsc": "(Lnet/minecraft/server/level/ServerPlayer;Lcom/astryxion/hats/common/hat/PlayerHatData;)V"
+          }
+        ],
+        "flds": []
+      },
+      "com/astryxion/hats/client/render/helper/individual/HuskHatHelper.class": {
+        "ver": 61,
+        "acc": 33,
+        "nme": "com/astryxion/hats/client/render/helper/individual/HuskHatHelper",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "apply",
+            "acc": 9,
+            "dsc": "(Lnet/minecraft/world/entity/LivingEntity;Lcom/mojang/blaze3d/vertex/PoseStack;F)V"
+          }
+        ],
+        "flds": []
+      },
+      "com/astryxion/hats/client/render/helper/individual/PiglinBruteHatHelper.class": {
+        "ver": 61,
+        "acc": 33,
+        "nme": "com/astryxion/hats/client/render/helper/individual/PiglinBruteHatHelper",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "apply",
+            "acc": 9,
+            "dsc": "(Lnet/minecraft/world/entity/LivingEntity;Lcom/mojang/blaze3d/vertex/PoseStack;F)V"
+          }
+        ],
+        "flds": []
+      },
+      "com/astryxion/hats/common/capability/HatDataCapability.class": {
+        "ver": 61,
+        "acc": 33,
+        "nme": "com/astryxion/hats/common/capability/HatDataCapability",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "<clinit>",
+            "acc": 8,
+            "dsc": "()V"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 25,
+            "nme": "HAT_DATA",
+            "dsc": "Lnet/minecraftforge/common/capabilities/Capability;",
+            "sig": "Lnet/minecraftforge/common/capabilities/Capability<Lcom/astryxion/hats/common/hat/PlayerHatData;>;"
+          }
+        ]
+      },
+      "com/astryxion/hats/client/render/helper/individual/EvokerHatHelper.class": {
+        "ver": 61,
+        "acc": 33,
+        "nme": "com/astryxion/hats/client/render/helper/individual/EvokerHatHelper",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "apply",
+            "acc": 9,
+            "dsc": "(Lnet/minecraft/world/entity/LivingEntity;Lcom/mojang/blaze3d/vertex/PoseStack;F)V"
+          }
+        ],
+        "flds": []
+      },
+      "com/astryxion/hats/common/hat/HatPartEvents.class": {
+        "ver": 61,
+        "acc": 33,
+        "nme": "com/astryxion/hats/common/hat/HatPartEvents",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "attachCapabilities",
+            "acc": 9,
+            "dsc": "(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V",
+            "sig": "(Lnet/minecraftforge/event/AttachCapabilitiesEvent<Lnet/minecraft/world/entity/Entity;>;)V",
+            "vanns": [
+              {
+                "dsc": "Lnet/minecraftforge/eventbus/api/SubscribeEvent;"
+              }
+            ]
+          },
+          {
+            "nme": "onPlayerJoin",
+            "acc": 9,
+            "dsc": "(Lnet/minecraftforge/event/entity/EntityJoinLevelEvent;)V",
+            "vanns": [
+              {
+                "dsc": "Lnet/minecraftforge/eventbus/api/SubscribeEvent;"
+              }
+            ]
+          },
+          {
+            "nme": "lambda$onPlayerJoin$0",
+            "acc": 4106,
+            "dsc": "(Lnet/minecraft/server/level/ServerPlayer;Lcom/astryxion/hats/common/hat/PlayerHatData;)V"
+          }
+        ],
+        "flds": [],
+        "vanns": [
+          {
+            "dsc": "Lnet/minecraftforge/fml/common/Mod$EventBusSubscriber;",
+            "vals": [
+              "modid",
+              "hats"
+            ]
+          }
+        ]
+      },
+      "com/astryxion/hats/common/slot/HumanoidHatSlot.class": {
+        "ver": 61,
+        "acc": 33,
+        "nme": "com/astryxion/hats/common/slot/HumanoidHatSlot",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "canUse",
+            "acc": 9,
+            "dsc": "(Lnet/minecraft/world/entity/LivingEntity;)Z"
+          },
+          {
+            "nme": "equip",
+            "acc": 9,
+            "dsc": "(Lnet/minecraft/world/entity/LivingEntity;Lnet/minecraft/world/item/ItemStack;)V"
+          },
+          {
+            "nme": "unequip",
+            "acc": 9,
+            "dsc": "(Lnet/minecraft/world/entity/LivingEntity;)V"
+          },
+          {
+            "nme": "get",
+            "acc": 9,
+            "dsc": "(Lnet/minecraft/world/entity/LivingEntity;)Lnet/minecraft/world/item/ItemStack;"
+          },
+          {
+            "nme": "has",
+            "acc": 9,
+            "dsc": "(Lnet/minecraft/world/entity/LivingEntity;)Z"
+          }
+        ],
+        "flds": []
+      },
+      "com/astryxion/hats/common/hat/HatMode.class": {
+        "ver": 61,
+        "acc": 16433,
+        "nme": "com/astryxion/hats/common/hat/HatMode",
+        "super": "java/lang/Enum",
+        "mthds": [
+          {
+            "nme": "values",
+            "acc": 9,
+            "dsc": "()[Lcom/astryxion/hats/common/hat/HatMode;"
+          },
+          {
+            "nme": "valueOf",
+            "acc": 9,
+            "dsc": "(Ljava/lang/String;)Lcom/astryxion/hats/common/hat/HatMode;"
+          },
+          {
+            "nme": "<init>",
+            "acc": 2,
+            "dsc": "(Ljava/lang/String;I)V",
+            "sig": "()V"
+          },
+          {
+            "nme": "$values",
+            "acc": 4106,
+            "dsc": "()[Lcom/astryxion/hats/common/hat/HatMode;"
+          },
+          {
+            "nme": "<clinit>",
+            "acc": 8,
+            "dsc": "()V"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 16409,
+            "nme": "COSMETIC",
+            "dsc": "Lcom/astryxion/hats/common/hat/HatMode;"
+          },
+          {
+            "acc": 16409,
+            "nme": "HUNTING",
+            "dsc": "Lcom/astryxion/hats/common/hat/HatMode;"
+          },
+          {
+            "acc": 4122,
+            "nme": "$VALUES",
+            "dsc": "[Lcom/astryxion/hats/common/hat/HatMode;"
+          }
+        ]
+      },
+      "com/astryxion/hats/common/hat/HatPartCapability.class": {
+        "ver": 61,
+        "acc": 33,
+        "nme": "com/astryxion/hats/common/hat/HatPartCapability",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "<clinit>",
+            "acc": 8,
+            "dsc": "()V"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 25,
+            "nme": "HAT_PART",
+            "dsc": "Lnet/minecraftforge/common/capabilities/Capability;",
+            "sig": "Lnet/minecraftforge/common/capabilities/Capability<Lcom/astryxion/hats/common/hat/HatPart;>;"
+          }
+        ]
+      },
+      "com/astryxion/hats/common/capability/HatDataAttachHandler.class": {
+        "ver": 61,
+        "acc": 33,
+        "nme": "com/astryxion/hats/common/capability/HatDataAttachHandler",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "attachCapabilities",
+            "acc": 9,
+            "dsc": "(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V",
+            "sig": "(Lnet/minecraftforge/event/AttachCapabilitiesEvent<Lnet/minecraft/world/entity/Entity;>;)V",
+            "vanns": [
+              {
+                "dsc": "Lnet/minecraftforge/eventbus/api/SubscribeEvent;"
+              }
+            ]
+          },
+          {
+            "nme": "<clinit>",
+            "acc": 8,
+            "dsc": "()V"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 26,
+            "nme": "HAT_DATA_ID",
+            "dsc": "Lnet/minecraft/resources/ResourceLocation;"
+          }
+        ],
+        "vanns": [
+          {
+            "dsc": "Lnet/minecraftforge/fml/common/Mod$EventBusSubscriber;",
+            "vals": [
+              "modid",
+              "hats"
+            ]
+          }
+        ]
+      },
+      "com/astryxion/hats/common/hat/HatRarityLoader.class": {
+        "ver": 61,
+        "acc": 49,
+        "nme": "com/astryxion/hats/common/hat/HatRarityLoader",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "load",
+            "acc": 9,
+            "dsc": "()V"
+          },
+          {
+            "nme": "get",
+            "acc": 9,
+            "dsc": "(Ljava/lang/String;)Lcom/astryxion/hats/common/hat/HatRarity;"
+          },
+          {
+            "nme": "<init>",
+            "acc": 2,
+            "dsc": "()V"
+          },
+          {
+            "nme": "lambda$load$0",
+            "acc": 4106,
+            "dsc": "(Ljava/lang/String;Ljava/lang/String;)V"
+          },
+          {
+            "nme": "<clinit>",
+            "acc": 8,
+            "dsc": "()V"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 26,
+            "nme": "RARITIES",
+            "dsc": "Ljava/util/Map;",
+            "sig": "Ljava/util/Map<Ljava/lang/String;Lcom/astryxion/hats/common/hat/HatRarity;>;"
+          }
+        ]
+      },
+      "com/astryxion/hats/client/render/helper/individual/GlowSquidHatHelper.class": {
+        "ver": 61,
+        "acc": 33,
+        "nme": "com/astryxion/hats/client/render/helper/individual/GlowSquidHatHelper",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "apply",
+            "acc": 9,
+            "dsc": "(Lnet/minecraft/world/entity/LivingEntity;Lcom/mojang/blaze3d/vertex/PoseStack;F)V"
+          }
+        ],
+        "flds": []
+      },
+      "com/astryxion/hats/common/capability/HatDataProvider.class": {
+        "ver": 61,
+        "acc": 33,
+        "nme": "com/astryxion/hats/common/capability/HatDataProvider",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "getCapability",
+            "acc": 1,
+            "dsc": "(Lnet/minecraftforge/common/capabilities/Capability;Lnet/minecraft/core/Direction;)Lnet/minecraftforge/common/util/LazyOptional;",
+            "sig": "<T:Ljava/lang/Object;>(Lnet/minecraftforge/common/capabilities/Capability<TT;>;Lnet/minecraft/core/Direction;)Lnet/minecraftforge/common/util/LazyOptional<TT;>;",
+            "vanns": [
+              {
+                "dsc": "Ljavax/annotation/Nonnull;"
+              }
+            ]
+          },
+          {
+            "nme": "serializeNBT",
+            "acc": 1,
+            "dsc": "()Lnet/minecraft/nbt/CompoundTag;"
+          },
+          {
+            "nme": "deserializeNBT",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/nbt/CompoundTag;)V"
+          },
+          {
+            "nme": "deserializeNBT",
+            "acc": 4161,
+            "dsc": "(Lnet/minecraft/nbt/Tag;)V"
+          },
+          {
+            "nme": "serializeNBT",
+            "acc": 4161,
+            "dsc": "()Lnet/minecraft/nbt/Tag;"
+          },
+          {
+            "nme": "lambda$new$0",
+            "acc": 4098,
+            "dsc": "()Lcom/astryxion/hats/common/hat/PlayerHatData;"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 18,
+            "nme": "data",
+            "dsc": "Lcom/astryxion/hats/common/hat/PlayerHatDataImpl;"
+          },
+          {
+            "acc": 18,
+            "nme": "optional",
+            "dsc": "Lnet/minecraftforge/common/util/LazyOptional;",
+            "sig": "Lnet/minecraftforge/common/util/LazyOptional<Lcom/astryxion/hats/common/hat/PlayerHatData;>;"
+          }
+        ]
+      },
+      "com/astryxion/hats/client/render/helper/individual/PillagerHatHelper.class": {
+        "ver": 61,
+        "acc": 33,
+        "nme": "com/astryxion/hats/client/render/helper/individual/PillagerHatHelper",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "apply",
+            "acc": 9,
+            "dsc": "(Lnet/minecraft/world/entity/LivingEntity;Lcom/mojang/blaze3d/vertex/PoseStack;F)V"
+          }
+        ],
+        "flds": []
+      },
+      "com/astryxion/hats/common/hat/HatManager.class": {
+        "ver": 61,
+        "acc": 49,
+        "nme": "com/astryxion/hats/common/hat/HatManager",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 2,
+            "dsc": "()V"
+          },
+          {
+            "nme": "isCustomOnly",
+            "acc": 9,
+            "dsc": "(Lnet/minecraft/world/entity/LivingEntity;)Z"
+          },
+          {
+            "nme": "get",
+            "acc": 9,
+            "dsc": "(Lnet/minecraft/world/entity/LivingEntity;)Lcom/astryxion/hats/common/hat/HatPart;"
+          },
+          {
+            "nme": "getHatStack",
+            "acc": 9,
+            "dsc": "(Lnet/minecraft/world/entity/LivingEntity;)Lnet/minecraft/world/item/ItemStack;"
+          },
+          {
+            "nme": "setHatStack",
+            "acc": 9,
+            "dsc": "(Lnet/minecraft/world/entity/LivingEntity;Lnet/minecraft/world/item/ItemStack;)V"
+          },
+          {
+            "nme": "clearHat",
+            "acc": 9,
+            "dsc": "(Lnet/minecraft/world/entity/LivingEntity;)V"
+          },
+          {
+            "nme": "setHat",
+            "acc": 9,
+            "dsc": "(Lnet/minecraft/world/entity/LivingEntity;Lnet/minecraft/world/item/Item;)V"
+          },
+          {
+            "nme": "getHat",
+            "acc": 9,
+            "dsc": "(Lnet/minecraft/world/entity/LivingEntity;)Lnet/minecraft/world/item/ItemStack;"
+          },
+          {
+            "nme": "hasHat",
+            "acc": 9,
+            "dsc": "(Lnet/minecraft/world/entity/LivingEntity;)Z"
+          },
+          {
+            "nme": "getEquippedHatId",
+            "acc": 9,
+            "dsc": "(Lnet/minecraft/world/entity/LivingEntity;)Lnet/minecraft/resources/ResourceLocation;"
+          },
+          {
+            "nme": "isModHat",
+            "acc": 9,
+            "dsc": "(Lnet/minecraft/world/item/ItemStack;)Z"
+          }
+        ],
+        "flds": []
+      },
+      "com/astryxion/hats/client/render/helper/individual/CowHatHelper.class": {
+        "ver": 61,
+        "acc": 33,
+        "nme": "com/astryxion/hats/client/render/helper/individual/CowHatHelper",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "apply",
+            "acc": 9,
+            "dsc": "(Lnet/minecraft/world/entity/LivingEntity;Lcom/mojang/blaze3d/vertex/PoseStack;F)V"
+          }
+        ],
+        "flds": []
+      },
+      "com/astryxion/hats/client/gui/HatScreen.class": {
+        "ver": 61,
+        "acc": 33,
+        "nme": "com/astryxion/hats/client/gui/HatScreen",
+        "super": "net/minecraft/client/gui/screens/Screen",
+        "mthds": [
+          {
+            "nme": "getPreviewEntityForRendering",
+            "acc": 9,
+            "dsc": "()Lnet/minecraft/world/entity/LivingEntity;"
+          },
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "m_7856_",
+            "acc": 4,
+            "dsc": "()V"
+          },
+          {
+            "nme": "refreshUnlockedHats",
+            "acc": 2,
+            "dsc": "()V"
+          },
+          {
+            "nme": "onSearchChanged",
+            "acc": 2,
+            "dsc": "(Ljava/lang/String;)V"
+          },
+          {
+            "nme": "updateFilteredHats",
+            "acc": 2,
+            "dsc": "()V"
+          },
+          {
+            "nme": "createMenuButtons",
+            "acc": 2,
+            "dsc": "()V"
+          },
+          {
+            "nme": "m_88315_",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/client/gui/GuiGraphics;IIF)V"
+          },
+          {
+            "nme": "lambda$createMenuButtons$14",
+            "acc": 4098,
+            "dsc": "(Lnet/minecraft/client/gui/components/Button;)V"
+          },
+          {
+            "nme": "lambda$createMenuButtons$13",
+            "acc": 4098,
+            "dsc": "(Lnet/minecraft/client/gui/components/Button;)V"
+          },
+          {
+            "nme": "lambda$createMenuButtons$12",
+            "acc": 4098,
+            "dsc": "(Lnet/minecraft/client/gui/components/Button;)V"
+          },
+          {
+            "nme": "lambda$createMenuButtons$11",
+            "acc": 4098,
+            "dsc": "(Lnet/minecraft/world/item/Item;Lnet/minecraft/client/gui/components/Button;)V"
+          },
+          {
+            "nme": "lambda$createMenuButtons$10",
+            "acc": 4106,
+            "dsc": "(Lnet/minecraft/resources/ResourceLocation;Lcom/astryxion/hats/common/hat/PlayerHatData;)V"
+          },
+          {
+            "nme": "lambda$createMenuButtons$9",
+            "acc": 4098,
+            "dsc": "(Ljava/lang/String;Lnet/minecraft/client/gui/components/Button;)V"
+          },
+          {
+            "nme": "lambda$createMenuButtons$8",
+            "acc": 4098,
+            "dsc": "(Lnet/minecraft/client/gui/components/Button;)V"
+          },
+          {
+            "nme": "lambda$createMenuButtons$7",
+            "acc": 4098,
+            "dsc": "(Lnet/minecraft/client/gui/components/Button;)V"
+          },
+          {
+            "nme": "lambda$createMenuButtons$6",
+            "acc": 4106,
+            "dsc": "(Lnet/minecraft/resources/ResourceLocation;Lcom/astryxion/hats/common/hat/PlayerHatData;)V"
+          },
+          {
+            "nme": "lambda$createMenuButtons$5",
+            "acc": 4098,
+            "dsc": "(Lnet/minecraft/client/gui/components/Button;)V"
+          },
+          {
+            "nme": "lambda$createMenuButtons$4",
+            "acc": 4106,
+            "dsc": "(Lcom/astryxion/hats/common/hat/PlayerHatData;)V"
+          },
+          {
+            "nme": "lambda$createMenuButtons$3",
+            "acc": 4098,
+            "dsc": "(Lnet/minecraft/client/gui/components/Button;)V"
+          },
+          {
+            "nme": "lambda$updateFilteredHats$2",
+            "acc": 4098,
+            "dsc": "(Ljava/lang/String;Lnet/minecraft/world/item/Item;)Z"
+          },
+          {
+            "nme": "lambda$refreshUnlockedHats$1",
+            "acc": 4098,
+            "dsc": "(ZLnet/minecraft/world/item/Item;)Z"
+          },
+          {
+            "nme": "lambda$refreshUnlockedHats$0",
+            "acc": 4106,
+            "dsc": "(Lnet/minecraft/resources/ResourceLocation;Lcom/astryxion/hats/common/hat/PlayerHatData;)Ljava/lang/Boolean;"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 18,
+            "nme": "unlockedHats",
+            "dsc": "Ljava/util/List;",
+            "sig": "Ljava/util/List<Lnet/minecraft/world/item/Item;>;"
+          },
+          {
+            "acc": 2,
+            "nme": "filteredHats",
+            "dsc": "Ljava/util/List;",
+            "sig": "Ljava/util/List<Lnet/minecraft/world/item/Item;>;"
+          },
+          {
+            "acc": 2,
+            "nme": "currentPage",
+            "dsc": "I"
+          },
+          {
+            "acc": 26,
+            "nme": "HATS_PER_PAGE",
+            "dsc": "I",
+            "val": 6
+          },
+          {
+            "acc": 2,
+            "nme": "selectedHat",
+            "dsc": "Lnet/minecraft/world/item/Item;"
+          },
+          {
+            "acc": 2,
+            "nme": "searchBox",
+            "dsc": "Lnet/minecraft/client/gui/components/EditBox;"
+          },
+          {
+            "acc": 2,
+            "nme": "isCategoryMenu",
+            "dsc": "Z"
+          },
+          {
+            "acc": 2,
+            "nme": "currentRarity",
+            "dsc": "Ljava/lang/String;"
+          }
+        ]
+      },
+      "com/astryxion/hats/client/render/helper/individual/ZombieVillagerHatHelper.class": {
+        "ver": 61,
+        "acc": 33,
+        "nme": "com/astryxion/hats/client/render/helper/individual/ZombieVillagerHatHelper",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "apply",
+            "acc": 9,
+            "dsc": "(Lnet/minecraft/world/entity/LivingEntity;Lcom/mojang/blaze3d/vertex/PoseStack;F)V"
+          }
+        ],
+        "flds": []
+      },
+      "com/astryxion/hats/common/registry/HatItemRegistry.class": {
+        "ver": 61,
+        "acc": 49,
+        "nme": "com/astryxion/hats/common/registry/HatItemRegistry",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 2,
+            "dsc": "()V"
+          },
+          {
+            "nme": "register",
+            "acc": 9,
+            "dsc": "(Lnet/minecraftforge/eventbus/api/IEventBus;)V"
+          },
+          {
+            "nme": "getAllHats",
+            "acc": 9,
+            "dsc": "()Ljava/util/List;",
+            "sig": "()Ljava/util/List<Lnet/minecraft/world/item/Item;>;"
+          },
+          {
+            "nme": "autoRegisterHats",
+            "acc": 10,
+            "dsc": "()V"
+          },
+          {
+            "nme": "getResourcePath",
+            "acc": 10,
+            "dsc": "(Ljava/lang/String;)Ljava/nio/file/Path;",
+            "exs": [
+              "java/io/IOException",
+              "java/net/URISyntaxException"
+            ]
+          },
+          {
+            "nme": "lambda$autoRegisterHats$2",
+            "acc": 4106,
+            "dsc": "(Ljava/nio/file/Path;)V"
+          },
+          {
+            "nme": "lambda$autoRegisterHats$1",
+            "acc": 4106,
+            "dsc": "()Lnet/minecraft/world/item/Item;"
+          },
+          {
+            "nme": "lambda$autoRegisterHats$0",
+            "acc": 4106,
+            "dsc": "(Ljava/nio/file/Path;)Z"
+          },
+          {
+            "nme": "<clinit>",
+            "acc": 8,
+            "dsc": "()V"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 25,
+            "nme": "ITEMS",
+            "dsc": "Lnet/minecraftforge/registries/DeferredRegister;",
+            "sig": "Lnet/minecraftforge/registries/DeferredRegister<Lnet/minecraft/world/item/Item;>;"
+          },
+          {
+            "acc": 25,
+            "nme": "ALL_HATS",
+            "dsc": "Ljava/util/List;",
+            "sig": "Ljava/util/List<Lnet/minecraftforge/registries/RegistryObject<Lnet/minecraft/world/item/Item;>;>;"
+          },
+          {
+            "acc": 26,
+            "nme": "BLACKLIST",
+            "dsc": "Ljava/util/Set;",
+            "sig": "Ljava/util/Set<Ljava/lang/String;>;"
+          }
+        ]
+      },
+      "com/astryxion/hats/Hats.class": {
+        "ver": 61,
+        "acc": 33,
+        "nme": "com/astryxion/hats/Hats",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "commonSetup",
+            "acc": 2,
+            "dsc": "(Lnet/minecraftforge/fml/event/lifecycle/FMLCommonSetupEvent;)V"
+          },
+          {
+            "nme": "onServerStarting",
+            "acc": 1,
+            "dsc": "(Lnet/minecraftforge/event/server/ServerStartingEvent;)V",
+            "vanns": [
+              {
+                "dsc": "Lnet/minecraftforge/eventbus/api/SubscribeEvent;"
+              }
+            ]
+          },
+          {
+            "nme": "<clinit>",
+            "acc": 8,
+            "dsc": "()V"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 25,
+            "nme": "MODID",
+            "dsc": "Ljava/lang/String;",
+            "val": "hats"
+          },
+          {
+            "acc": 25,
+            "nme": "LOGGER",
+            "dsc": "Lorg/slf4j/Logger;"
+          }
+        ],
+        "vanns": [
+          {
+            "dsc": "Lnet/minecraftforge/fml/common/Mod;",
+            "vals": [
+              "value",
+              "hats"
+            ]
+          }
+        ]
+      },
+      "com/astryxion/hats/common/hat/PlayerHatData.class": {
+        "ver": 61,
+        "acc": 1537,
+        "nme": "com/astryxion/hats/common/hat/PlayerHatData",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "unlockHat",
+            "acc": 1025,
+            "dsc": "(Lnet/minecraft/resources/ResourceLocation;)V"
+          },
+          {
+            "nme": "hasHat",
+            "acc": 1025,
+            "dsc": "(Lnet/minecraft/resources/ResourceLocation;)Z"
+          },
+          {
+            "nme": "getUnlockedHats",
+            "acc": 1025,
+            "dsc": "()Ljava/util/Set;",
+            "sig": "()Ljava/util/Set<Lnet/minecraft/resources/ResourceLocation;>;"
+          },
+          {
+            "nme": "getEquippedHat",
+            "acc": 1025,
+            "dsc": "()Lnet/minecraft/resources/ResourceLocation;"
+          },
+          {
+            "nme": "setEquippedHat",
+            "acc": 1025,
+            "dsc": "(Lnet/minecraft/resources/ResourceLocation;)V"
+          },
+          {
+            "nme": "hasSeenWelcome",
+            "acc": 1025,
+            "dsc": "()Z"
+          },
+          {
+            "nme": "setSeenWelcome",
+            "acc": 1025,
+            "dsc": "(Z)V"
+          },
+          {
+            "nme": "copyFrom",
+            "acc": 1025,
+            "dsc": "(Lcom/astryxion/hats/common/hat/PlayerHatData;)V"
+          },
+          {
+            "nme": "clear",
+            "acc": 1025,
+            "dsc": "()V"
+          },
+          {
+            "nme": "serializeNBT",
+            "acc": 1025,
+            "dsc": "()Lnet/minecraft/nbt/CompoundTag;"
+          },
+          {
+            "nme": "deserializeNBT",
+            "acc": 1025,
+            "dsc": "(Lnet/minecraft/nbt/CompoundTag;)V"
+          }
+        ],
+        "flds": []
+      },
+      "com/astryxion/hats/client/render/helper/individual/DrownedHatHelper.class": {
+        "ver": 61,
+        "acc": 33,
+        "nme": "com/astryxion/hats/client/render/helper/individual/DrownedHatHelper",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "apply",
+            "acc": 9,
+            "dsc": "(Lnet/minecraft/world/entity/LivingEntity;Lcom/mojang/blaze3d/vertex/PoseStack;F)V"
+          }
+        ],
+        "flds": []
+      },
+      "com/astryxion/hats/client/render/helper/individual/CreeperHatHelper.class": {
+        "ver": 61,
+        "acc": 33,
+        "nme": "com/astryxion/hats/client/render/helper/individual/CreeperHatHelper",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "apply",
+            "acc": 9,
+            "dsc": "(Lnet/minecraft/world/entity/LivingEntity;Lcom/mojang/blaze3d/vertex/PoseStack;F)V"
+          }
+        ],
+        "flds": []
+      },
+      "com/astryxion/hats/common/network/PacketSyncHatPart.class": {
+        "ver": 61,
+        "acc": 33,
+        "nme": "com/astryxion/hats/common/network/PacketSyncHatPart",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "(ILnet/minecraft/nbt/CompoundTag;)V"
+          },
+          {
+            "nme": "encode",
+            "acc": 9,
+            "dsc": "(Lcom/astryxion/hats/common/network/PacketSyncHatPart;Lnet/minecraft/network/FriendlyByteBuf;)V"
+          },
+          {
+            "nme": "decode",
+            "acc": 9,
+            "dsc": "(Lnet/minecraft/network/FriendlyByteBuf;)Lcom/astryxion/hats/common/network/PacketSyncHatPart;"
+          },
+          {
+            "nme": "handle",
+            "acc": 9,
+            "dsc": "(Lcom/astryxion/hats/common/network/PacketSyncHatPart;Ljava/util/function/Supplier;)V",
+            "sig": "(Lcom/astryxion/hats/common/network/PacketSyncHatPart;Ljava/util/function/Supplier<Lnet/minecraftforge/network/NetworkEvent$Context;>;)V"
+          },
+          {
+            "nme": "lambda$handle$3",
+            "acc": 4106,
+            "dsc": "(Lcom/astryxion/hats/common/network/PacketSyncHatPart;)V"
+          },
+          {
+            "nme": "lambda$handle$2",
+            "acc": 4106,
+            "dsc": "(Lcom/astryxion/hats/common/network/PacketSyncHatPart;)Ljava/lang/Runnable;"
+          },
+          {
+            "nme": "lambda$handle$1",
+            "acc": 4106,
+            "dsc": "(Lcom/astryxion/hats/common/network/PacketSyncHatPart;)V"
+          },
+          {
+            "nme": "lambda$handle$0",
+            "acc": 4106,
+            "dsc": "(Lcom/astryxion/hats/common/network/PacketSyncHatPart;Lcom/astryxion/hats/common/hat/HatPart;)V"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 18,
+            "nme": "playerId",
+            "dsc": "I"
+          },
+          {
+            "acc": 18,
+            "nme": "tag",
+            "dsc": "Lnet/minecraft/nbt/CompoundTag;"
+          }
+        ]
+      },
+      "com/astryxion/hats/client/render/helper/individual/PlayerHatHelper.class": {
+        "ver": 61,
+        "acc": 33,
+        "nme": "com/astryxion/hats/client/render/helper/individual/PlayerHatHelper",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "apply",
+            "acc": 9,
+            "dsc": "(Lnet/minecraft/world/entity/LivingEntity;Lcom/mojang/blaze3d/vertex/PoseStack;F)V"
+          }
+        ],
+        "flds": []
+      },
+      "com/astryxion/hats/common/hat/PlayerHatDataImpl.class": {
+        "ver": 61,
+        "acc": 33,
+        "nme": "com/astryxion/hats/common/hat/PlayerHatDataImpl",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "unlockHat",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/resources/ResourceLocation;)V"
+          },
+          {
+            "nme": "hasHat",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/resources/ResourceLocation;)Z"
+          },
+          {
+            "nme": "getUnlockedHats",
+            "acc": 1,
+            "dsc": "()Ljava/util/Set;",
+            "sig": "()Ljava/util/Set<Lnet/minecraft/resources/ResourceLocation;>;"
+          },
+          {
+            "nme": "getEquippedHat",
+            "acc": 1,
+            "dsc": "()Lnet/minecraft/resources/ResourceLocation;"
+          },
+          {
+            "nme": "setEquippedHat",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/resources/ResourceLocation;)V"
+          },
+          {
+            "nme": "hasSeenWelcome",
+            "acc": 1,
+            "dsc": "()Z"
+          },
+          {
+            "nme": "setSeenWelcome",
+            "acc": 1,
+            "dsc": "(Z)V"
+          },
+          {
+            "nme": "clear",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "copyFrom",
+            "acc": 1,
+            "dsc": "(Lcom/astryxion/hats/common/hat/PlayerHatData;)V"
+          },
+          {
+            "nme": "serializeNBT",
+            "acc": 1,
+            "dsc": "()Lnet/minecraft/nbt/CompoundTag;"
+          },
+          {
+            "nme": "deserializeNBT",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/nbt/CompoundTag;)V"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 18,
+            "nme": "unlockedHats",
+            "dsc": "Ljava/util/Set;",
+            "sig": "Ljava/util/Set<Lnet/minecraft/resources/ResourceLocation;>;"
+          },
+          {
+            "acc": 2,
+            "nme": "equippedHat",
+            "dsc": "Lnet/minecraft/resources/ResourceLocation;"
+          },
+          {
+            "acc": 2,
+            "nme": "seenWelcome",
+            "dsc": "Z"
+          }
+        ]
+      },
+      "com/astryxion/hats/common/network/PacketSyncHat.class": {
+        "ver": 61,
+        "acc": 33,
+        "nme": "com/astryxion/hats/common/network/PacketSyncHat",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/nbt/CompoundTag;)V"
+          },
+          {
+            "nme": "encode",
+            "acc": 9,
+            "dsc": "(Lcom/astryxion/hats/common/network/PacketSyncHat;Lnet/minecraft/network/FriendlyByteBuf;)V"
+          },
+          {
+            "nme": "decode",
+            "acc": 9,
+            "dsc": "(Lnet/minecraft/network/FriendlyByteBuf;)Lcom/astryxion/hats/common/network/PacketSyncHat;"
+          },
+          {
+            "nme": "handle",
+            "acc": 9,
+            "dsc": "(Lcom/astryxion/hats/common/network/PacketSyncHat;Ljava/util/function/Supplier;)V",
+            "sig": "(Lcom/astryxion/hats/common/network/PacketSyncHat;Ljava/util/function/Supplier<Lnet/minecraftforge/network/NetworkEvent$Context;>;)V"
+          },
+          {
+            "nme": "lambda$handle$3",
+            "acc": 4106,
+            "dsc": "(Lcom/astryxion/hats/common/network/PacketSyncHat;)V"
+          },
+          {
+            "nme": "lambda$handle$2",
+            "acc": 4106,
+            "dsc": "(Lcom/astryxion/hats/common/network/PacketSyncHat;)Ljava/lang/Runnable;"
+          },
+          {
+            "nme": "lambda$handle$1",
+            "acc": 4106,
+            "dsc": "(Lcom/astryxion/hats/common/network/PacketSyncHat;)V"
+          },
+          {
+            "nme": "lambda$handle$0",
+            "acc": 4106,
+            "dsc": "(Lcom/astryxion/hats/common/network/PacketSyncHat;Lcom/astryxion/hats/common/hat/PlayerHatData;)V"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 18,
+            "nme": "data",
+            "dsc": "Lnet/minecraft/nbt/CompoundTag;"
+          }
+        ]
+      },
+      "com/astryxion/hats/common/hat/HatRarity.class": {
+        "ver": 61,
+        "acc": 16433,
+        "nme": "com/astryxion/hats/common/hat/HatRarity",
+        "super": "java/lang/Enum",
+        "mthds": [
+          {
+            "nme": "values",
+            "acc": 9,
+            "dsc": "()[Lcom/astryxion/hats/common/hat/HatRarity;"
+          },
+          {
+            "nme": "valueOf",
+            "acc": 9,
+            "dsc": "(Ljava/lang/String;)Lcom/astryxion/hats/common/hat/HatRarity;"
+          },
+          {
+            "nme": "<init>",
+            "acc": 2,
+            "dsc": "(Ljava/lang/String;ILnet/minecraft/ChatFormatting;)V",
+            "sig": "(Lnet/minecraft/ChatFormatting;)V"
+          },
+          {
+            "nme": "getColor",
+            "acc": 1,
+            "dsc": "()Lnet/minecraft/ChatFormatting;"
+          },
+          {
+            "nme": "fromString",
+            "acc": 9,
+            "dsc": "(Ljava/lang/String;)Lcom/astryxion/hats/common/hat/HatRarity;"
+          },
+          {
+            "nme": "$values",
+            "acc": 4106,
+            "dsc": "()[Lcom/astryxion/hats/common/hat/HatRarity;"
+          },
+          {
+            "nme": "<clinit>",
+            "acc": 8,
+            "dsc": "()V"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 16409,
+            "nme": "COMMON",
+            "dsc": "Lcom/astryxion/hats/common/hat/HatRarity;"
+          },
+          {
+            "acc": 16409,
+            "nme": "UNCOMMON",
+            "dsc": "Lcom/astryxion/hats/common/hat/HatRarity;"
+          },
+          {
+            "acc": 16409,
+            "nme": "RARE",
+            "dsc": "Lcom/astryxion/hats/common/hat/HatRarity;"
+          },
+          {
+            "acc": 16409,
+            "nme": "EPIC",
+            "dsc": "Lcom/astryxion/hats/common/hat/HatRarity;"
+          },
+          {
+            "acc": 18,
+            "nme": "color",
+            "dsc": "Lnet/minecraft/ChatFormatting;"
+          },
+          {
+            "acc": 4122,
+            "nme": "$VALUES",
+            "dsc": "[Lcom/astryxion/hats/common/hat/HatRarity;"
+          }
+        ]
+      },
+      "com/astryxion/hats/client/render/helper/individual/ZombifiedPiglinHatHelper.class": {
+        "ver": 61,
+        "acc": 33,
+        "nme": "com/astryxion/hats/client/render/helper/individual/ZombifiedPiglinHatHelper",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "apply",
+            "acc": 9,
+            "dsc": "(Lnet/minecraft/world/entity/LivingEntity;Lcom/mojang/blaze3d/vertex/PoseStack;F)V"
+          }
+        ],
+        "flds": []
+      },
+      "com/astryxion/hats/common/network/PacketEquipHat.class": {
+        "ver": 61,
+        "acc": 33,
+        "nme": "com/astryxion/hats/common/network/PacketEquipHat",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "(Ljava/lang/String;)V"
+          },
+          {
+            "nme": "encode",
+            "acc": 9,
+            "dsc": "(Lcom/astryxion/hats/common/network/PacketEquipHat;Lnet/minecraft/network/FriendlyByteBuf;)V"
+          },
+          {
+            "nme": "decode",
+            "acc": 9,
+            "dsc": "(Lnet/minecraft/network/FriendlyByteBuf;)Lcom/astryxion/hats/common/network/PacketEquipHat;"
+          },
+          {
+            "nme": "handle",
+            "acc": 9,
+            "dsc": "(Lcom/astryxion/hats/common/network/PacketEquipHat;Ljava/util/function/Supplier;)V",
+            "sig": "(Lcom/astryxion/hats/common/network/PacketEquipHat;Ljava/util/function/Supplier<Lnet/minecraftforge/network/NetworkEvent$Context;>;)V"
+          },
+          {
+            "nme": "lambda$handle$0",
+            "acc": 4106,
+            "dsc": "(Ljava/util/function/Supplier;Lcom/astryxion/hats/common/network/PacketEquipHat;)V"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 18,
+            "nme": "hatId",
+            "dsc": "Ljava/lang/String;"
+          }
+        ]
+      },
+      "com/astryxion/hats/client/keybinds/HatKeybinds$Listener.class": {
+        "ver": 61,
+        "acc": 33,
+        "nme": "com/astryxion/hats/client/keybinds/HatKeybinds$Listener",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "onClientTick",
+            "acc": 9,
+            "dsc": "(Lnet/minecraftforge/event/TickEvent$ClientTickEvent;)V",
+            "vanns": [
+              {
+                "dsc": "Lnet/minecraftforge/eventbus/api/SubscribeEvent;"
+              }
+            ]
+          }
+        ],
+        "flds": [],
+        "vanns": [
+          {
+            "dsc": "Lnet/minecraftforge/fml/common/Mod$EventBusSubscriber;",
+            "vals": [
+              "modid",
+              "hats",
+              "bus",
+              [
+                "Lnet/minecraftforge/fml/common/Mod$EventBusSubscriber$Bus;",
+                "FORGE"
+              ],
+              "value",
+              [
+                [
+                  "Lnet/minecraftforge/api/distmarker/Dist;",
+                  "CLIENT"
+                ]
+              ]
+            ]
+          }
+        ]
+      },
+      "com/astryxion/hats/client/ClientEvents.class": {
+        "ver": 61,
+        "acc": 33,
+        "nme": "com/astryxion/hats/client/ClientEvents",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "onAddLayers",
+            "acc": 9,
+            "dsc": "(Lnet/minecraftforge/client/event/EntityRenderersEvent$AddLayers;)V",
+            "vanns": [
+              {
+                "dsc": "Lnet/minecraftforge/eventbus/api/SubscribeEvent;"
+              }
+            ]
+          },
+          {
+            "nme": "lambda$onAddLayers$0",
+            "acc": 4106,
+            "dsc": "(Lnet/minecraft/client/renderer/entity/EntityRenderer;)V"
+          }
+        ],
+        "flds": [],
+        "vanns": [
+          {
+            "dsc": "Lnet/minecraftforge/fml/common/Mod$EventBusSubscriber;",
+            "vals": [
+              "bus",
+              [
+                "Lnet/minecraftforge/fml/common/Mod$EventBusSubscriber$Bus;",
+                "MOD"
+              ],
+              "value",
+              [
+                [
+                  "Lnet/minecraftforge/api/distmarker/Dist;",
+                  "CLIENT"
+                ]
+              ]
+            ]
+          }
+        ]
+      },
+      "com/astryxion/hats/client/render/helper/individual/IronGolemHatHelper.class": {
+        "ver": 61,
+        "acc": 33,
+        "nme": "com/astryxion/hats/client/render/helper/individual/IronGolemHatHelper",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "apply",
+            "acc": 9,
+            "dsc": "(Lnet/minecraft/world/entity/LivingEntity;Lcom/mojang/blaze3d/vertex/PoseStack;F)V"
+          }
+        ],
+        "flds": []
+      },
+      "com/astryxion/hats/common/hat/HatPartCapability$1.class": {
+        "ver": 61,
+        "acc": 32,
+        "nme": "com/astryxion/hats/common/hat/HatPartCapability$1",
+        "super": "net/minecraftforge/common/capabilities/CapabilityToken",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 0,
+            "dsc": "()V"
+          }
+        ],
+        "flds": []
+      },
+      "com/astryxion/hats/client/compat/MoBendsHatCompat.class": {
+        "ver": 61,
+        "acc": 49,
+        "nme": "com/astryxion/hats/client/compat/MoBendsHatCompat",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 2,
+            "dsc": "()V"
+          },
+          {
+            "nme": "isMoBendsLoaded",
+            "acc": 9,
+            "dsc": "()Z"
+          },
+          {
+            "nme": "tryApplyAnimatedMobendsHead",
+            "acc": 9,
+            "dsc": "(Lcom/mojang/blaze3d/vertex/PoseStack;)Z"
+          },
+          {
+            "nme": "tryApplyAnimatedBipedHead",
+            "acc": 8,
+            "dsc": "(Lcom/mojang/blaze3d/vertex/PoseStack;)Z"
+          },
+          {
+            "nme": "tryApplyWolfHead",
+            "acc": 10,
+            "dsc": "(Lcom/mojang/blaze3d/vertex/PoseStack;)Z"
+          },
+          {
+            "nme": "tryApplySpiderHead",
+            "acc": 10,
+            "dsc": "(Lcom/mojang/blaze3d/vertex/PoseStack;)Z"
+          },
+          {
+            "nme": "tryApplySquidBody",
+            "acc": 10,
+            "dsc": "(Lcom/mojang/blaze3d/vertex/PoseStack;)Z"
+          },
+          {
+            "nme": "ensureCoreReflected",
+            "acc": 10,
+            "dsc": "()Z"
+          },
+          {
+            "nme": "ensureBipedReflected",
+            "acc": 10,
+            "dsc": "()Z"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 26,
+            "nme": "MOBENDS_MOD_ID",
+            "dsc": "Ljava/lang/String;",
+            "val": "mobends"
+          },
+          {
+            "acc": 26,
+            "nme": "RENDER_CONTEXT",
+            "dsc": "Ljava/lang/String;",
+            "val": "goblinbob.mobends.core.client.MoBendsRenderContext"
+          },
+          {
+            "acc": 10,
+            "nme": "mobendsPresent",
+            "dsc": "Ljava/lang/Boolean;"
+          },
+          {
+            "acc": 10,
+            "nme": "bipedReflectFailed",
+            "dsc": "Z"
+          },
+          {
+            "acc": 10,
+            "nme": "coreReflectFailed",
+            "dsc": "Z"
+          },
+          {
+            "acc": 10,
+            "nme": "getCurrentBipedMutator",
+            "dsc": "Ljava/lang/reflect/Method;"
+          },
+          {
+            "acc": 10,
+            "nme": "getCurrentWolfMutator",
+            "dsc": "Ljava/lang/reflect/Method;"
+          },
+          {
+            "acc": 10,
+            "nme": "getCurrentSpiderMutator",
+            "dsc": "Ljava/lang/reflect/Method;"
+          },
+          {
+            "acc": 10,
+            "nme": "getCurrentSquidMutator",
+            "dsc": "Ljava/lang/reflect/Method;"
+          },
+          {
+            "acc": 10,
+            "nme": "shouldRenderCustom",
+            "dsc": "Ljava/lang/reflect/Method;"
+          },
+          {
+            "acc": 10,
+            "nme": "getHead",
+            "dsc": "Ljava/lang/reflect/Method;"
+          },
+          {
+            "acc": 10,
+            "nme": "applyCharacterTransformPoseStack",
+            "dsc": "Ljava/lang/reflect/Method;"
+          }
+        ]
+      },
+      "com/astryxion/hats/client/render/helper/individual/SheepHatHelper.class": {
+        "ver": 61,
+        "acc": 33,
+        "nme": "com/astryxion/hats/client/render/helper/individual/SheepHatHelper",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "apply",
+            "acc": 9,
+            "dsc": "(Lnet/minecraft/world/entity/LivingEntity;Lcom/mojang/blaze3d/vertex/PoseStack;F)V"
+          }
+        ],
+        "flds": []
+      },
+      "com/astryxion/hats/common/equip/HatEquipController.class": {
+        "ver": 61,
+        "acc": 49,
+        "nme": "com/astryxion/hats/common/equip/HatEquipController",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 2,
+            "dsc": "()V"
+          },
+          {
+            "nme": "equip",
+            "acc": 9,
+            "dsc": "(Lnet/minecraft/world/entity/player/Player;Lnet/minecraft/world/item/Item;)V"
+          },
+          {
+            "nme": "equipStack",
+            "acc": 9,
+            "dsc": "(Lnet/minecraft/world/entity/player/Player;Lnet/minecraft/world/item/ItemStack;)V"
+          },
+          {
+            "nme": "unequip",
+            "acc": 9,
+            "dsc": "(Lnet/minecraft/world/entity/player/Player;)V"
+          },
+          {
+            "nme": "hasHat",
+            "acc": 9,
+            "dsc": "(Lnet/minecraft/world/entity/player/Player;)Z"
+          },
+          {
+            "nme": "getEquipped",
+            "acc": 9,
+            "dsc": "(Lnet/minecraft/world/entity/player/Player;)Lnet/minecraft/world/item/ItemStack;"
+          }
+        ],
+        "flds": []
+      },
+      "com/astryxion/hats/common/capability/PlayerHatTrackingSync.class": {
+        "ver": 61,
+        "acc": 49,
+        "nme": "com/astryxion/hats/common/capability/PlayerHatTrackingSync",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 2,
+            "dsc": "()V"
+          },
+          {
+            "nme": "onStartTracking",
+            "acc": 9,
+            "dsc": "(Lnet/minecraftforge/event/entity/player/PlayerEvent$StartTracking;)V",
+            "vanns": [
+              {
+                "dsc": "Lnet/minecraftforge/eventbus/api/SubscribeEvent;"
+              }
+            ]
+          }
+        ],
+        "flds": [],
+        "vanns": [
+          {
+            "dsc": "Lnet/minecraftforge/fml/common/Mod$EventBusSubscriber;",
+            "vals": [
+              "modid",
+              "hats"
+            ]
+          }
+        ]
+      },
+      "com/astryxion/hats/common/capability/HatCapabilityEvents.class": {
+        "ver": 61,
+        "acc": 33,
+        "nme": "com/astryxion/hats/common/capability/HatCapabilityEvents",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "onAttachCapabilities",
+            "acc": 9,
+            "dsc": "(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V",
+            "sig": "(Lnet/minecraftforge/event/AttachCapabilitiesEvent<*>;)V",
+            "vanns": [
+              {
+                "dsc": "Lnet/minecraftforge/eventbus/api/SubscribeEvent;"
+              }
+            ]
+          },
+          {
+            "nme": "<clinit>",
+            "acc": 8,
+            "dsc": "()V"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 26,
+            "nme": "HAT_DATA_ID",
+            "dsc": "Lnet/minecraft/resources/ResourceLocation;"
+          }
+        ],
+        "vanns": [
+          {
+            "dsc": "Lnet/minecraftforge/fml/common/Mod$EventBusSubscriber;",
+            "vals": [
+              "modid",
+              "hats"
+            ]
+          }
+        ]
+      },
+      "com/astryxion/hats/common/network/PacketOpenHuntingMenu.class": {
+        "ver": 61,
+        "acc": 33,
+        "nme": "com/astryxion/hats/common/network/PacketOpenHuntingMenu",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/network/FriendlyByteBuf;)V"
+          },
+          {
+            "nme": "toBytes",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/network/FriendlyByteBuf;)V"
+          },
+          {
+            "nme": "handle",
+            "acc": 1,
+            "dsc": "(Ljava/util/function/Supplier;)Z",
+            "sig": "(Ljava/util/function/Supplier<Lnet/minecraftforge/network/NetworkEvent$Context;>;)Z"
+          },
+          {
+            "nme": "lambda$handle$0",
+            "acc": 4106,
+            "dsc": "(Lnet/minecraftforge/network/NetworkEvent$Context;)V"
+          }
+        ],
+        "flds": []
+      },
+      "com/astryxion/hats/client/render/HatRenderLayer.class": {
+        "ver": 61,
+        "acc": 33,
+        "nme": "com/astryxion/hats/client/render/HatRenderLayer",
+        "super": "net/minecraft/client/renderer/entity/layers/RenderLayer",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/client/renderer/entity/LivingEntityRenderer;)V",
+            "sig": "(Lnet/minecraft/client/renderer/entity/LivingEntityRenderer<TT;TM;>;)V"
+          },
+          {
+            "nme": "render",
+            "acc": 1,
+            "dsc": "(Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/MultiBufferSource;ILnet/minecraft/world/entity/LivingEntity;FFFFFF)V",
+            "sig": "(Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/MultiBufferSource;ITT;FFFFFF)V"
+          },
+          {
+            "nme": "findHeadPart",
+            "acc": 2,
+            "dsc": "(Ljava/lang/Object;)Lnet/minecraft/client/model/geom/ModelPart;"
+          },
+          {
+            "nme": "m_6494_",
+            "acc": 4161,
+            "dsc": "(Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/MultiBufferSource;ILnet/minecraft/world/entity/Entity;FFFFFF)V"
+          }
+        ],
+        "flds": []
+      },
+      "com/astryxion/hats/common/network/HatPacketHandler.class": {
+        "ver": 61,
+        "acc": 33,
+        "nme": "com/astryxion/hats/common/network/HatPacketHandler",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "register",
+            "acc": 9,
+            "dsc": "()V"
+          },
+          {
+            "nme": "handleHatUnlocked",
+            "acc": 10,
+            "dsc": "(Lcom/astryxion/hats/common/network/PacketHatUnlocked;Ljava/util/function/Supplier;)V",
+            "sig": "(Lcom/astryxion/hats/common/network/PacketHatUnlocked;Ljava/util/function/Supplier<Lnet/minecraftforge/network/NetworkEvent$Context;>;)V"
+          },
+          {
+            "nme": "sendToPlayer",
+            "acc": 9,
+            "dsc": "(Lnet/minecraft/server/level/ServerPlayer;Ljava/lang/Object;)V"
+          },
+          {
+            "nme": "syncPlayerHatPartToTracking",
+            "acc": 9,
+            "dsc": "(Lnet/minecraft/server/level/ServerPlayer;)V"
+          },
+          {
+            "nme": "sendPlayerHatPartTo",
+            "acc": 9,
+            "dsc": "(Lnet/minecraft/server/level/ServerPlayer;Lnet/minecraft/world/entity/player/Player;)V"
+          },
+          {
+            "nme": "lambda$sendPlayerHatPartTo$5",
+            "acc": 4106,
+            "dsc": "(Lnet/minecraft/server/level/ServerPlayer;Lnet/minecraft/world/entity/player/Player;Lcom/astryxion/hats/common/hat/HatPart;)V"
+          },
+          {
+            "nme": "lambda$syncPlayerHatPartToTracking$4",
+            "acc": 4106,
+            "dsc": "(Lnet/minecraft/server/level/ServerPlayer;Lcom/astryxion/hats/common/hat/HatPart;)V"
+          },
+          {
+            "nme": "lambda$syncPlayerHatPartToTracking$3",
+            "acc": 4106,
+            "dsc": "(Lnet/minecraft/server/level/ServerPlayer;)Lnet/minecraft/world/entity/Entity;"
+          },
+          {
+            "nme": "lambda$sendToPlayer$2",
+            "acc": 4106,
+            "dsc": "(Lnet/minecraft/server/level/ServerPlayer;)Lnet/minecraft/server/level/ServerPlayer;"
+          },
+          {
+            "nme": "lambda$handleHatUnlocked$1",
+            "acc": 4106,
+            "dsc": "(Lcom/astryxion/hats/common/network/PacketHatUnlocked;)V"
+          },
+          {
+            "nme": "lambda$static$0",
+            "acc": 4106,
+            "dsc": "()Ljava/lang/String;"
+          },
+          {
+            "nme": "<clinit>",
+            "acc": 8,
+            "dsc": "()V"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 26,
+            "nme": "CLIENT_HAT_HANDLERS",
+            "dsc": "Ljava/lang/String;",
+            "val": "com.astryxion.hats.client.network.HatClientPacketHandlers"
+          },
+          {
+            "acc": 26,
+            "nme": "PROTOCOL",
+            "dsc": "Ljava/lang/String;",
+            "val": "1"
+          },
+          {
+            "acc": 10,
+            "nme": "id",
+            "dsc": "I"
+          },
+          {
+            "acc": 25,
+            "nme": "CHANNEL",
+            "dsc": "Lnet/minecraftforge/network/simple/SimpleChannel;"
+          }
+        ]
+      },
+      "com/astryxion/hats/client/render/helper/individual/PiglinHatHelper.class": {
+        "ver": 61,
+        "acc": 33,
+        "nme": "com/astryxion/hats/client/render/helper/individual/PiglinHatHelper",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "apply",
+            "acc": 9,
+            "dsc": "(Lnet/minecraft/world/entity/LivingEntity;Lcom/mojang/blaze3d/vertex/PoseStack;F)V"
+          }
+        ],
+        "flds": []
+      }
+    }
+  }
+}

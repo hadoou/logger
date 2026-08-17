@@ -1,0 +1,5990 @@
+{
+  "md5": "e650d0a9b44e1bdcdb767c05d4e91ea0",
+  "sha2": "4b435f61a23e3f5cead6e2314ce3689889d42572",
+  "sha256": "ed13c399a8e4bc2887972ac7794587ee61791ffa476d89352a06017f1d5601fc",
+  "contents": {
+    "classes": {
+      "ru/vidtu/ias/screen/LoginPopupScreen.class": {
+        "ver": 65,
+        "acc": 48,
+        "nme": "ru/vidtu/ias/screen/LoginPopupScreen",
+        "super": "net/minecraft/class_437",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 0,
+            "dsc": "(Lnet/minecraft/class_437;)V"
+          },
+          {
+            "nme": "cancelled",
+            "acc": 1,
+            "dsc": "()Z"
+          },
+          {
+            "nme": "method_25426",
+            "acc": 4,
+            "dsc": "()V"
+          },
+          {
+            "nme": "method_25419",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "method_25394",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/class_332;IIF)V"
+          },
+          {
+            "nme": "method_25420",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/class_332;IIF)V"
+          },
+          {
+            "nme": "stage",
+            "acc": 129,
+            "dsc": "(Ljava/lang/String;[Ljava/lang/Object;)V"
+          },
+          {
+            "nme": "password",
+            "acc": 1,
+            "dsc": "()Ljava/util/concurrent/CompletableFuture;",
+            "sig": "()Ljava/util/concurrent/CompletableFuture<Ljava/lang/String;>;"
+          },
+          {
+            "nme": "success",
+            "acc": 1,
+            "dsc": "(Lru/vidtu/ias/auth/LoginData;Z)V"
+          },
+          {
+            "nme": "error",
+            "acc": 1,
+            "dsc": "(Ljava/lang/Throwable;)V"
+          },
+          {
+            "nme": "toString",
+            "acc": 1,
+            "dsc": "()Ljava/lang/String;"
+          },
+          {
+            "nme": "lambda$success$9",
+            "acc": 4098,
+            "dsc": "(Ljava/lang/Throwable;)Ljava/lang/Void;"
+          },
+          {
+            "nme": "lambda$success$8",
+            "acc": 4098,
+            "dsc": "()V"
+          },
+          {
+            "nme": "lambda$success$7",
+            "acc": 4098,
+            "dsc": "()V"
+          },
+          {
+            "nme": "lambda$password$6",
+            "acc": 4098,
+            "dsc": "()V"
+          },
+          {
+            "nme": "lambda$password$5",
+            "acc": 4098,
+            "dsc": "(Ljava/lang/String;)V"
+          },
+          {
+            "nme": "lambda$init$4",
+            "acc": 4106,
+            "dsc": "(Lru/vidtu/ias/screen/PopupButton;Ljava/lang/String;)V"
+          },
+          {
+            "nme": "lambda$init$3",
+            "acc": 4098,
+            "dsc": "(Lnet/minecraft/class_4185;)V"
+          },
+          {
+            "nme": "lambda$init$2",
+            "acc": 4106,
+            "dsc": "(Ljava/lang/String;Ljava/lang/Integer;)Lnet/minecraft/class_5481;"
+          },
+          {
+            "nme": "lambda$init$1",
+            "acc": 4098,
+            "dsc": "()V"
+          },
+          {
+            "nme": "lambda$init$0",
+            "acc": 4098,
+            "dsc": "(Lnet/minecraft/class_4185;)V"
+          },
+          {
+            "nme": "<clinit>",
+            "acc": 8,
+            "dsc": "()V"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 26,
+            "nme": "LOGGER",
+            "dsc": "Lorg/slf4j/Logger;"
+          },
+          {
+            "acc": 18,
+            "nme": "parent",
+            "dsc": "Lnet/minecraft/class_437;"
+          },
+          {
+            "acc": 18,
+            "nme": "lock",
+            "dsc": "Ljava/lang/Object;"
+          },
+          {
+            "acc": 2,
+            "nme": "stage",
+            "dsc": "Lnet/minecraft/class_2561;"
+          },
+          {
+            "acc": 2,
+            "nme": "label",
+            "dsc": "Lnet/minecraft/class_5489;"
+          },
+          {
+            "acc": 2,
+            "nme": "password",
+            "dsc": "Lru/vidtu/ias/screen/PopupBox;"
+          },
+          {
+            "acc": 2,
+            "nme": "passFuture",
+            "dsc": "Ljava/util/concurrent/CompletableFuture;",
+            "sig": "Ljava/util/concurrent/CompletableFuture<Ljava/lang/String;>;"
+          },
+          {
+            "acc": 2,
+            "nme": "cryptPasswordTip",
+            "dsc": "Lnet/minecraft/class_5489;"
+          },
+          {
+            "acc": 2,
+            "nme": "error",
+            "dsc": "F"
+          },
+          {
+            "acc": 2,
+            "nme": "errorNote",
+            "dsc": "Lnet/minecraft/class_5489;"
+          },
+          {
+            "acc": 4120,
+            "nme": "$assertionsDisabled",
+            "dsc": "Z"
+          }
+        ]
+      },
+      "ru/vidtu/ias/screen/AccountScreen.class": {
+        "ver": 65,
+        "acc": 49,
+        "nme": "ru/vidtu/ias/screen/AccountScreen",
+        "super": "net/minecraft/class_437",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/class_437;)V"
+          },
+          {
+            "nme": "method_25426",
+            "acc": 4,
+            "dsc": "()V"
+          },
+          {
+            "nme": "method_25419",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "method_25394",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/class_332;IIF)V"
+          },
+          {
+            "nme": "search",
+            "acc": 0,
+            "dsc": "()Lnet/minecraft/class_342;"
+          },
+          {
+            "nme": "updateSelected",
+            "acc": 0,
+            "dsc": "()V"
+          },
+          {
+            "nme": "method_25404",
+            "acc": 1,
+            "dsc": "(III)Z"
+          },
+          {
+            "nme": "toString",
+            "acc": 1,
+            "dsc": "()Ljava/lang/String;"
+          },
+          {
+            "nme": "lambda$init$7",
+            "acc": 4098,
+            "dsc": "(Lnet/minecraft/class_4185;)V"
+          },
+          {
+            "nme": "lambda$init$6",
+            "acc": 4098,
+            "dsc": "(Lnet/minecraft/class_4185;)V"
+          },
+          {
+            "nme": "lambda$init$5",
+            "acc": 4098,
+            "dsc": "(Lnet/minecraft/class_4185;)V"
+          },
+          {
+            "nme": "lambda$init$4",
+            "acc": 4098,
+            "dsc": "(Lnet/minecraft/class_4185;)V"
+          },
+          {
+            "nme": "lambda$init$3",
+            "acc": 4098,
+            "dsc": "(Lnet/minecraft/class_4185;)V"
+          },
+          {
+            "nme": "lambda$init$2",
+            "acc": 4098,
+            "dsc": "(Lnet/minecraft/class_4185;)V"
+          },
+          {
+            "nme": "lambda$init$1",
+            "acc": 4098,
+            "dsc": "()Lnet/minecraft/class_8685;"
+          },
+          {
+            "nme": "lambda$init$0",
+            "acc": 4098,
+            "dsc": "()V"
+          },
+          {
+            "nme": "<clinit>",
+            "acc": 8,
+            "dsc": "()V"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 26,
+            "nme": "LOGGER",
+            "dsc": "Lorg/slf4j/Logger;"
+          },
+          {
+            "acc": 18,
+            "nme": "parent",
+            "dsc": "Lnet/minecraft/class_437;"
+          },
+          {
+            "acc": 2,
+            "nme": "search",
+            "dsc": "Lnet/minecraft/class_342;"
+          },
+          {
+            "acc": 2,
+            "nme": "list",
+            "dsc": "Lru/vidtu/ias/screen/AccountList;"
+          },
+          {
+            "acc": 2,
+            "nme": "skin",
+            "dsc": "Lnet/minecraft/class_8765;"
+          },
+          {
+            "acc": 2,
+            "nme": "login",
+            "dsc": "Lnet/minecraft/class_4185;"
+          },
+          {
+            "acc": 2,
+            "nme": "offlineLogin",
+            "dsc": "Lnet/minecraft/class_4185;"
+          },
+          {
+            "acc": 2,
+            "nme": "edit",
+            "dsc": "Lnet/minecraft/class_4185;"
+          },
+          {
+            "acc": 2,
+            "nme": "delete",
+            "dsc": "Lnet/minecraft/class_4185;"
+          },
+          {
+            "acc": 4120,
+            "nme": "$assertionsDisabled",
+            "dsc": "Z"
+          }
+        ]
+      },
+      "ru/vidtu/ias/auth/handlers/CreateHandler.class": {
+        "ver": 65,
+        "acc": 1537,
+        "nme": "ru/vidtu/ias/auth/handlers/CreateHandler",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "cancelled",
+            "acc": 1025,
+            "dsc": "()Z"
+          },
+          {
+            "nme": "stage",
+            "acc": 1153,
+            "dsc": "(Ljava/lang/String;[Ljava/lang/Object;)V"
+          },
+          {
+            "nme": "success",
+            "acc": 1025,
+            "dsc": "(Lru/vidtu/ias/account/MicrosoftAccount;)V"
+          },
+          {
+            "nme": "error",
+            "acc": 1025,
+            "dsc": "(Ljava/lang/Throwable;)V"
+          }
+        ],
+        "flds": []
+      },
+      "ru/vidtu/ias/screen/AccountEntry.class": {
+        "ver": 65,
+        "acc": 48,
+        "nme": "ru/vidtu/ias/screen/AccountEntry",
+        "super": "net/minecraft/class_4280$class_4281",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 0,
+            "dsc": "(Lnet/minecraft/class_310;Lru/vidtu/ias/screen/AccountList;Lru/vidtu/ias/account/Account;)V"
+          },
+          {
+            "nme": "method_25343",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/class_332;IIIIIIIZF)V"
+          },
+          {
+            "nme": "method_25402",
+            "acc": 1,
+            "dsc": "(DDI)Z"
+          },
+          {
+            "nme": "method_37006",
+            "acc": 1,
+            "dsc": "()Lnet/minecraft/class_2561;",
+            "invanns": [
+              {
+                "dsc": "Lorg/jetbrains/annotations/NotNull;"
+              }
+            ]
+          },
+          {
+            "nme": "account",
+            "acc": 0,
+            "dsc": "()Lru/vidtu/ias/account/Account;"
+          },
+          {
+            "nme": "equals",
+            "acc": 1,
+            "dsc": "(Ljava/lang/Object;)Z"
+          },
+          {
+            "nme": "hashCode",
+            "acc": 1,
+            "dsc": "()I"
+          },
+          {
+            "nme": "toString",
+            "acc": 1,
+            "dsc": "()Ljava/lang/String;"
+          },
+          {
+            "nme": "<clinit>",
+            "acc": 8,
+            "dsc": "()V"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 26,
+            "nme": "UP",
+            "dsc": "Lnet/minecraft/class_8666;"
+          },
+          {
+            "acc": 26,
+            "nme": "DOWN",
+            "dsc": "Lnet/minecraft/class_8666;"
+          },
+          {
+            "acc": 26,
+            "nme": "WARNING",
+            "dsc": "Lnet/minecraft/class_8666;"
+          },
+          {
+            "acc": 18,
+            "nme": "minecraft",
+            "dsc": "Lnet/minecraft/class_310;"
+          },
+          {
+            "acc": 18,
+            "nme": "list",
+            "dsc": "Lru/vidtu/ias/screen/AccountList;"
+          },
+          {
+            "acc": 18,
+            "nme": "account",
+            "dsc": "Lru/vidtu/ias/account/Account;"
+          },
+          {
+            "acc": 18,
+            "nme": "tooltip",
+            "dsc": "Ljava/util/List;",
+            "sig": "Ljava/util/List<Lnet/minecraft/class_5481;>;"
+          },
+          {
+            "acc": 2,
+            "nme": "clicked",
+            "dsc": "J"
+          },
+          {
+            "acc": 2,
+            "nme": "lastFree",
+            "dsc": "J"
+          }
+        ]
+      },
+      "ru/vidtu/ias/utils/Expression.class": {
+        "ver": 65,
+        "acc": 49,
+        "nme": "ru/vidtu/ias/utils/Expression",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "(Ljava/lang/String;)V",
+            "invanns": [
+              {
+                "dsc": "Lorg/jetbrains/annotations/Contract;",
+                "vals": [
+                  "pure",
+                  true
+                ]
+              }
+            ]
+          },
+          {
+            "nme": "parse",
+            "acc": 1,
+            "dsc": "()D",
+            "vanns": [
+              {
+                "dsc": "Lcom/google/errorprone/annotations/CheckReturnValue;"
+              }
+            ]
+          },
+          {
+            "nme": "parseExpression",
+            "acc": 2,
+            "dsc": "()D",
+            "vanns": [
+              {
+                "dsc": "Lcom/google/errorprone/annotations/CheckReturnValue;"
+              }
+            ]
+          },
+          {
+            "nme": "parseTerm",
+            "acc": 2,
+            "dsc": "()D",
+            "vanns": [
+              {
+                "dsc": "Lcom/google/errorprone/annotations/CheckReturnValue;"
+              }
+            ]
+          },
+          {
+            "nme": "parseFactor",
+            "acc": 2,
+            "dsc": "()D",
+            "vanns": [
+              {
+                "dsc": "Lcom/google/errorprone/annotations/CheckReturnValue;"
+              }
+            ]
+          },
+          {
+            "nme": "skipIf",
+            "acc": 2,
+            "dsc": "(I)Z",
+            "vanns": [
+              {
+                "dsc": "Lcom/google/errorprone/annotations/CheckReturnValue;"
+              }
+            ]
+          },
+          {
+            "nme": "next",
+            "acc": 2,
+            "dsc": "()V"
+          },
+          {
+            "nme": "toString",
+            "acc": 1,
+            "dsc": "()Ljava/lang/String;",
+            "invanns": [
+              {
+                "dsc": "Lorg/jetbrains/annotations/Contract;",
+                "vals": [
+                  "pure",
+                  true
+                ]
+              },
+              {
+                "dsc": "Lorg/jetbrains/annotations/NotNull;"
+              }
+            ]
+          },
+          {
+            "nme": "parse",
+            "acc": 9,
+            "dsc": "(Ljava/lang/String;)D",
+            "invanns": [
+              {
+                "dsc": "Lorg/jetbrains/annotations/Contract;",
+                "vals": [
+                  "pure",
+                  true
+                ]
+              }
+            ]
+          },
+          {
+            "nme": "parsePosition",
+            "acc": 9,
+            "dsc": "(Ljava/lang/String;II)Ljava/lang/Integer;",
+            "invanns": [
+              {
+                "dsc": "Lorg/jetbrains/annotations/Contract;",
+                "vals": [
+                  "pure",
+                  true
+                ]
+              },
+              {
+                "dsc": "Lorg/jetbrains/annotations/Nullable;"
+              }
+            ]
+          },
+          {
+            "nme": "positionValidityColor",
+            "acc": 9,
+            "dsc": "(Ljava/lang/String;IIZ)I",
+            "invanns": [
+              {
+                "dsc": "Lorg/jetbrains/annotations/Contract;",
+                "vals": [
+                  "pure",
+                  true
+                ]
+              }
+            ]
+          },
+          {
+            "nme": "<clinit>",
+            "acc": 8,
+            "dsc": "()V"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 25,
+            "nme": "SPACE_PATTERN",
+            "dsc": "Ljava/util/regex/Pattern;"
+          },
+          {
+            "acc": 18,
+            "nme": "expression",
+            "dsc": "Ljava/lang/String;"
+          },
+          {
+            "acc": 2,
+            "nme": "pos",
+            "dsc": "I"
+          },
+          {
+            "acc": 2,
+            "nme": "ch",
+            "dsc": "I"
+          }
+        ]
+      },
+      "ru/vidtu/ias/crypt/Crypt.class": {
+        "ver": 65,
+        "acc": 1537,
+        "nme": "ru/vidtu/ias/crypt/Crypt",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "insecure",
+            "acc": 1025,
+            "dsc": "()Z",
+            "invanns": [
+              {
+                "dsc": "Lorg/jetbrains/annotations/Contract;",
+                "vals": [
+                  "pure",
+                  true
+                ]
+              }
+            ]
+          },
+          {
+            "nme": "type",
+            "acc": 1025,
+            "dsc": "()Ljava/lang/String;",
+            "invanns": [
+              {
+                "dsc": "Lorg/jetbrains/annotations/Contract;",
+                "vals": [
+                  "pure",
+                  true
+                ]
+              },
+              {
+                "dsc": "Lorg/jetbrains/annotations/NotNull;"
+              }
+            ]
+          },
+          {
+            "nme": "migrate",
+            "acc": 1025,
+            "dsc": "()Lru/vidtu/ias/crypt/Crypt;",
+            "invanns": [
+              {
+                "dsc": "Lorg/jetbrains/annotations/Contract;",
+                "vals": [
+                  "pure",
+                  true
+                ]
+              },
+              {
+                "dsc": "Lorg/jetbrains/annotations/Nullable;"
+              }
+            ]
+          },
+          {
+            "nme": "encrypt",
+            "acc": 1025,
+            "dsc": "([B)[B",
+            "invanns": [
+              {
+                "dsc": "Lorg/jetbrains/annotations/Contract;",
+                "vals": [
+                  "pure",
+                  true
+                ]
+              }
+            ]
+          },
+          {
+            "nme": "decrypt",
+            "acc": 1025,
+            "dsc": "([B)[B",
+            "invanns": [
+              {
+                "dsc": "Lorg/jetbrains/annotations/Contract;",
+                "vals": [
+                  "pure",
+                  true
+                ]
+              }
+            ]
+          },
+          {
+            "nme": "readType",
+            "acc": 9,
+            "dsc": "(Ljava/io/DataInput;Ljava/util/function/Supplier;)Ljava/util/concurrent/CompletableFuture;",
+            "sig": "(Ljava/io/DataInput;Ljava/util/function/Supplier<Ljava/util/concurrent/CompletableFuture<Ljava/lang/String;>;>;)Ljava/util/concurrent/CompletableFuture<Lru/vidtu/ias/crypt/Crypt;>;",
+            "vanns": [
+              {
+                "dsc": "Lcom/google/errorprone/annotations/CheckReturnValue;"
+              }
+            ],
+            "invanns": [
+              {
+                "dsc": "Lorg/jetbrains/annotations/NotNull;"
+              }
+            ]
+          },
+          {
+            "nme": "pbkdfAesEncrypt",
+            "acc": 9,
+            "dsc": "([BLjava/lang/String;[B[B)[B",
+            "invanns": [
+              {
+                "dsc": "Lorg/jetbrains/annotations/Contract;",
+                "vals": [
+                  "pure",
+                  true
+                ]
+              }
+            ]
+          },
+          {
+            "nme": "pbkdfAesDecrypt",
+            "acc": 9,
+            "dsc": "([BLjava/lang/String;[B[B)[B",
+            "invanns": [
+              {
+                "dsc": "Lorg/jetbrains/annotations/Contract;",
+                "vals": [
+                  "pure",
+                  true
+                ]
+              }
+            ]
+          },
+          {
+            "nme": "lambda$readType$0",
+            "acc": 4106,
+            "dsc": "(Ljava/lang/String;)Lru/vidtu/ias/crypt/Crypt;"
+          }
+        ],
+        "flds": []
+      },
+      "ru/vidtu/ias/account/MicrosoftAccount.class": {
+        "ver": 65,
+        "acc": 49,
+        "nme": "ru/vidtu/ias/account/MicrosoftAccount",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "(ZLjava/util/UUID;Ljava/lang/String;[B)V",
+            "invanns": [
+              {
+                "dsc": "Lorg/jetbrains/annotations/Contract;",
+                "vals": [
+                  "pure",
+                  true
+                ]
+              }
+            ]
+          },
+          {
+            "nme": "type",
+            "acc": 1,
+            "dsc": "()Ljava/lang/String;",
+            "invanns": [
+              {
+                "dsc": "Lorg/jetbrains/annotations/Contract;",
+                "vals": [
+                  "pure",
+                  true
+                ]
+              },
+              {
+                "dsc": "Lorg/jetbrains/annotations/NotNull;"
+              }
+            ]
+          },
+          {
+            "nme": "typeTipKey",
+            "acc": 1,
+            "dsc": "()Ljava/lang/String;",
+            "invanns": [
+              {
+                "dsc": "Lorg/jetbrains/annotations/Contract;",
+                "vals": [
+                  "pure",
+                  true
+                ]
+              },
+              {
+                "dsc": "Lorg/jetbrains/annotations/NotNull;"
+              }
+            ]
+          },
+          {
+            "nme": "uuid",
+            "acc": 1,
+            "dsc": "()Ljava/util/UUID;",
+            "invanns": [
+              {
+                "dsc": "Lorg/jetbrains/annotations/Contract;",
+                "vals": [
+                  "pure",
+                  true
+                ]
+              },
+              {
+                "dsc": "Lorg/jetbrains/annotations/NotNull;"
+              }
+            ]
+          },
+          {
+            "nme": "name",
+            "acc": 1,
+            "dsc": "()Ljava/lang/String;",
+            "invanns": [
+              {
+                "dsc": "Lorg/jetbrains/annotations/Contract;",
+                "vals": [
+                  "pure",
+                  true
+                ]
+              },
+              {
+                "dsc": "Lorg/jetbrains/annotations/NotNull;"
+              }
+            ]
+          },
+          {
+            "nme": "canLogin",
+            "acc": 1,
+            "dsc": "()Z",
+            "invanns": [
+              {
+                "dsc": "Lorg/jetbrains/annotations/Contract;",
+                "vals": [
+                  "value",
+                  "-> true",
+                  "pure",
+                  true
+                ]
+              }
+            ]
+          },
+          {
+            "nme": "insecure",
+            "acc": 1,
+            "dsc": "()Z",
+            "invanns": [
+              {
+                "dsc": "Lorg/jetbrains/annotations/Contract;",
+                "vals": [
+                  "pure",
+                  true
+                ]
+              }
+            ]
+          },
+          {
+            "nme": "skin",
+            "acc": 1,
+            "dsc": "()Ljava/util/UUID;",
+            "invanns": [
+              {
+                "dsc": "Lorg/jetbrains/annotations/Contract;",
+                "vals": [
+                  "pure",
+                  true
+                ]
+              },
+              {
+                "dsc": "Lorg/jetbrains/annotations/NotNull;"
+              }
+            ]
+          },
+          {
+            "nme": "login",
+            "acc": 1,
+            "dsc": "(Lru/vidtu/ias/auth/handlers/LoginHandler;)V"
+          },
+          {
+            "nme": "equals",
+            "acc": 1,
+            "dsc": "(Ljava/lang/Object;)Z",
+            "invanns": [
+              {
+                "dsc": "Lorg/jetbrains/annotations/Contract;",
+                "vals": [
+                  "value",
+                  "null -> false",
+                  "pure",
+                  true
+                ]
+              }
+            ]
+          },
+          {
+            "nme": "hashCode",
+            "acc": 1,
+            "dsc": "()I",
+            "invanns": [
+              {
+                "dsc": "Lorg/jetbrains/annotations/Contract;",
+                "vals": [
+                  "pure",
+                  true
+                ]
+              }
+            ]
+          },
+          {
+            "nme": "toString",
+            "acc": 1,
+            "dsc": "()Ljava/lang/String;",
+            "invanns": [
+              {
+                "dsc": "Lorg/jetbrains/annotations/Contract;",
+                "vals": [
+                  "pure",
+                  true
+                ]
+              },
+              {
+                "dsc": "Lorg/jetbrains/annotations/NotNull;"
+              }
+            ]
+          },
+          {
+            "nme": "write",
+            "acc": 1,
+            "dsc": "(Ljava/io/DataOutput;)V",
+            "exs": [
+              "java/io/IOException"
+            ]
+          },
+          {
+            "nme": "read",
+            "acc": 9,
+            "dsc": "(Ljava/io/DataInput;)Lru/vidtu/ias/account/MicrosoftAccount;",
+            "exs": [
+              "java/io/IOException"
+            ],
+            "vanns": [
+              {
+                "dsc": "Lcom/google/errorprone/annotations/CheckReturnValue;"
+              }
+            ],
+            "invanns": [
+              {
+                "dsc": "Lorg/jetbrains/annotations/NotNull;"
+              }
+            ]
+          },
+          {
+            "nme": "lambda$login$12",
+            "acc": 4106,
+            "dsc": "(Lru/vidtu/ias/auth/handlers/LoginHandler;Ljava/lang/Throwable;)Ljava/lang/Void;"
+          },
+          {
+            "nme": "lambda$login$11",
+            "acc": 4098,
+            "dsc": "(Lru/vidtu/ias/auth/handlers/LoginHandler;Lru/vidtu/ias/utils/Holder;Lru/vidtu/ias/utils/Holder;Lru/vidtu/ias/utils/Holder;Lru/vidtu/ias/utils/Holder;Lru/vidtu/ias/auth/microsoft/fields/MCProfile;)V"
+          },
+          {
+            "nme": "lambda$login$10",
+            "acc": 4106,
+            "dsc": "(Lru/vidtu/ias/auth/handlers/LoginHandler;Lru/vidtu/ias/utils/Holder;Lru/vidtu/ias/utils/Holder;Lru/vidtu/ias/utils/Holder;Ljava/lang/Boolean;)Ljava/util/concurrent/CompletionStage;"
+          },
+          {
+            "nme": "lambda$login$9",
+            "acc": 4106,
+            "dsc": "(Lru/vidtu/ias/auth/handlers/LoginHandler;Lru/vidtu/ias/utils/Holder;Lru/vidtu/ias/utils/Holder;Lru/vidtu/ias/utils/Holder;Ljava/lang/Throwable;)Ljava/util/concurrent/CompletionStage;"
+          },
+          {
+            "nme": "lambda$login$8",
+            "acc": 4106,
+            "dsc": "(Ljava/lang/Throwable;Ljava/lang/Throwable;)Lru/vidtu/ias/auth/microsoft/fields/MCProfile;"
+          },
+          {
+            "nme": "lambda$login$7",
+            "acc": 4106,
+            "dsc": "(Ljava/lang/Throwable;Ljava/lang/Throwable;)Lru/vidtu/ias/auth/microsoft/fields/MCProfile;"
+          },
+          {
+            "nme": "lambda$login$6",
+            "acc": 4106,
+            "dsc": "(Ljava/lang/Throwable;)Z"
+          },
+          {
+            "nme": "lambda$login$5",
+            "acc": 4106,
+            "dsc": "(Lru/vidtu/ias/auth/handlers/LoginHandler;Lru/vidtu/ias/utils/Holder;Ljava/lang/String;)Ljava/util/concurrent/CompletionStage;"
+          },
+          {
+            "nme": "lambda$login$4",
+            "acc": 4106,
+            "dsc": "(Lru/vidtu/ias/auth/handlers/LoginHandler;Lru/vidtu/ias/auth/microsoft/fields/XHashedToken;)Ljava/util/concurrent/CompletionStage;"
+          },
+          {
+            "nme": "lambda$login$3",
+            "acc": 4106,
+            "dsc": "(Lru/vidtu/ias/auth/handlers/LoginHandler;Lru/vidtu/ias/auth/microsoft/fields/XHashedToken;)Ljava/util/concurrent/CompletionStage;"
+          },
+          {
+            "nme": "lambda$login$2",
+            "acc": 4106,
+            "dsc": "(Lru/vidtu/ias/auth/handlers/LoginHandler;Lru/vidtu/ias/utils/Holder;Lru/vidtu/ias/auth/microsoft/fields/MSTokens;)Ljava/util/concurrent/CompletionStage;"
+          },
+          {
+            "nme": "lambda$login$1",
+            "acc": 4106,
+            "dsc": "(Lru/vidtu/ias/auth/handlers/LoginHandler;Lru/vidtu/ias/utils/Holder;Lru/vidtu/ias/utils/Holder;[B)Ljava/lang/Boolean;"
+          },
+          {
+            "nme": "lambda$login$0",
+            "acc": 4106,
+            "dsc": "(Lru/vidtu/ias/auth/handlers/LoginHandler;[BLru/vidtu/ias/utils/Holder;Lru/vidtu/ias/utils/Holder;Lru/vidtu/ias/crypt/Crypt;)[B"
+          },
+          {
+            "nme": "<clinit>",
+            "acc": 8,
+            "dsc": "()V"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 25,
+            "nme": "INITIALIZING",
+            "dsc": "Ljava/lang/String;",
+            "val": "ias.login.initializing"
+          },
+          {
+            "acc": 25,
+            "nme": "SERVER",
+            "dsc": "Ljava/lang/String;",
+            "val": "ias.login.server"
+          },
+          {
+            "acc": 25,
+            "nme": "BROWSER",
+            "dsc": "Ljava/lang/String;",
+            "val": "ias.login.link"
+          },
+          {
+            "acc": 25,
+            "nme": "CLIENT_BROWSER",
+            "dsc": "Ljava/lang/String;",
+            "val": "ias.login.linkClient"
+          },
+          {
+            "acc": 25,
+            "nme": "PROCESSING",
+            "dsc": "Ljava/lang/String;",
+            "val": "ias.login.processing"
+          },
+          {
+            "acc": 25,
+            "nme": "DECRYPTING",
+            "dsc": "Ljava/lang/String;",
+            "val": "ias.login.decrypting"
+          },
+          {
+            "acc": 25,
+            "nme": "ENCRYPTING",
+            "dsc": "Ljava/lang/String;",
+            "val": "ias.login.encrypting"
+          },
+          {
+            "acc": 25,
+            "nme": "SERVICES",
+            "dsc": "Ljava/lang/String;",
+            "val": "ias.login.services"
+          },
+          {
+            "acc": 25,
+            "nme": "MSAC_TO_MSA_MSR",
+            "dsc": "Ljava/lang/String;",
+            "val": "ias.login.msacToMsaMsr"
+          },
+          {
+            "acc": 25,
+            "nme": "MSR_TO_MSA_MSR",
+            "dsc": "Ljava/lang/String;",
+            "val": "ias.login.msrToMsaMsr"
+          },
+          {
+            "acc": 25,
+            "nme": "MSA_TO_XBL",
+            "dsc": "Ljava/lang/String;",
+            "val": "ias.login.msaToXbl"
+          },
+          {
+            "acc": 25,
+            "nme": "XBL_TO_XSTS",
+            "dsc": "Ljava/lang/String;",
+            "val": "ias.login.xblToXsts"
+          },
+          {
+            "acc": 25,
+            "nme": "XSTS_TO_MCA",
+            "dsc": "Ljava/lang/String;",
+            "val": "ias.login.xstsToMca"
+          },
+          {
+            "acc": 25,
+            "nme": "MCA_TO_MCP",
+            "dsc": "Ljava/lang/String;",
+            "val": "ias.login.mcaToMcp"
+          },
+          {
+            "acc": 25,
+            "nme": "FINALIZING",
+            "dsc": "Ljava/lang/String;",
+            "val": "ias.login.finalizing"
+          },
+          {
+            "acc": 25,
+            "nme": "LOGGER",
+            "dsc": "Lorg/slf4j/Logger;"
+          },
+          {
+            "acc": 18,
+            "nme": "insecure",
+            "dsc": "Z"
+          },
+          {
+            "acc": 2,
+            "nme": "uuid",
+            "dsc": "Ljava/util/UUID;"
+          },
+          {
+            "acc": 2,
+            "nme": "name",
+            "dsc": "Ljava/lang/String;"
+          },
+          {
+            "acc": 2,
+            "nme": "data",
+            "dsc": "[B"
+          }
+        ]
+      },
+      "ru/vidtu/ias/config/ServerMode.class": {
+        "ver": 65,
+        "acc": 16433,
+        "nme": "ru/vidtu/ias/config/ServerMode",
+        "super": "java/lang/Enum",
+        "mthds": [
+          {
+            "nme": "values",
+            "acc": 9,
+            "dsc": "()[Lru/vidtu/ias/config/ServerMode;"
+          },
+          {
+            "nme": "valueOf",
+            "acc": 9,
+            "dsc": "(Ljava/lang/String;)Lru/vidtu/ias/config/ServerMode;"
+          },
+          {
+            "nme": "<init>",
+            "acc": 2,
+            "dsc": "(Ljava/lang/String;ILjava/lang/String;)V",
+            "sig": "(Ljava/lang/String;)V",
+            "invanns": [
+              {
+                "dsc": "Lorg/jetbrains/annotations/Contract;",
+                "vals": [
+                  "pure",
+                  true
+                ]
+              }
+            ]
+          },
+          {
+            "nme": "toString",
+            "acc": 1,
+            "dsc": "()Ljava/lang/String;",
+            "invanns": [
+              {
+                "dsc": "Lorg/jetbrains/annotations/Contract;",
+                "vals": [
+                  "pure",
+                  true
+                ]
+              },
+              {
+                "dsc": "Lorg/jetbrains/annotations/NotNull;"
+              }
+            ]
+          },
+          {
+            "nme": "$values",
+            "acc": 4106,
+            "dsc": "()[Lru/vidtu/ias/config/ServerMode;"
+          },
+          {
+            "nme": "<clinit>",
+            "acc": 8,
+            "dsc": "()V"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 16409,
+            "nme": "ALWAYS",
+            "dsc": "Lru/vidtu/ias/config/ServerMode;"
+          },
+          {
+            "acc": 16409,
+            "nme": "AVAILABLE",
+            "dsc": "Lru/vidtu/ias/config/ServerMode;"
+          },
+          {
+            "acc": 16409,
+            "nme": "NEVER",
+            "dsc": "Lru/vidtu/ias/config/ServerMode;"
+          },
+          {
+            "acc": 18,
+            "nme": "key",
+            "dsc": "Ljava/lang/String;"
+          },
+          {
+            "acc": 4122,
+            "nme": "$VALUES",
+            "dsc": "[Lru/vidtu/ias/config/ServerMode;"
+          }
+        ]
+      },
+      "ru/vidtu/ias/utils/exceptions/DevicePendingException.class": {
+        "ver": 65,
+        "acc": 49,
+        "nme": "ru/vidtu/ias/utils/exceptions/DevicePendingException",
+        "super": "java/lang/RuntimeException",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "(Ljava/lang/String;)V",
+            "invanns": [
+              {
+                "dsc": "Lorg/jetbrains/annotations/Contract;",
+                "vals": [
+                  "pure",
+                  true
+                ]
+              }
+            ]
+          },
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "(Ljava/lang/String;Ljava/lang/Throwable;)V",
+            "invanns": [
+              {
+                "dsc": "Lorg/jetbrains/annotations/Contract;",
+                "vals": [
+                  "pure",
+                  true
+                ]
+              }
+            ]
+          }
+        ],
+        "flds": []
+      },
+      "ru/vidtu/ias/crypt/PasswordCrypt.class": {
+        "ver": 65,
+        "acc": 49,
+        "nme": "ru/vidtu/ias/crypt/PasswordCrypt",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "(Ljava/lang/String;)V",
+            "invanns": [
+              {
+                "dsc": "Lorg/jetbrains/annotations/Contract;",
+                "vals": [
+                  "pure",
+                  true
+                ]
+              }
+            ]
+          },
+          {
+            "nme": "type",
+            "acc": 1,
+            "dsc": "()Ljava/lang/String;",
+            "invanns": [
+              {
+                "dsc": "Lorg/jetbrains/annotations/Contract;",
+                "vals": [
+                  "pure",
+                  true
+                ]
+              },
+              {
+                "dsc": "Lorg/jetbrains/annotations/NotNull;"
+              }
+            ]
+          },
+          {
+            "nme": "migrate",
+            "acc": 1,
+            "dsc": "()Lru/vidtu/ias/crypt/Crypt;",
+            "invanns": [
+              {
+                "dsc": "Lorg/jetbrains/annotations/Contract;",
+                "vals": [
+                  "value",
+                  "-> null",
+                  "pure",
+                  true
+                ]
+              },
+              {
+                "dsc": "Lorg/jetbrains/annotations/Nullable;"
+              }
+            ]
+          },
+          {
+            "nme": "insecure",
+            "acc": 1,
+            "dsc": "()Z",
+            "invanns": [
+              {
+                "dsc": "Lorg/jetbrains/annotations/Contract;",
+                "vals": [
+                  "value",
+                  "-> false",
+                  "pure",
+                  true
+                ]
+              }
+            ]
+          },
+          {
+            "nme": "encrypt",
+            "acc": 1,
+            "dsc": "([B)[B",
+            "invanns": [
+              {
+                "dsc": "Lorg/jetbrains/annotations/Contract;",
+                "vals": [
+                  "pure",
+                  true
+                ]
+              }
+            ]
+          },
+          {
+            "nme": "decrypt",
+            "acc": 1,
+            "dsc": "([B)[B",
+            "invanns": [
+              {
+                "dsc": "Lorg/jetbrains/annotations/Contract;",
+                "vals": [
+                  "pure",
+                  true
+                ]
+              }
+            ]
+          },
+          {
+            "nme": "toString",
+            "acc": 1,
+            "dsc": "()Ljava/lang/String;",
+            "invanns": [
+              {
+                "dsc": "Lorg/jetbrains/annotations/Contract;",
+                "vals": [
+                  "pure",
+                  true
+                ]
+              },
+              {
+                "dsc": "Lorg/jetbrains/annotations/NotNull;"
+              }
+            ]
+          }
+        ],
+        "flds": [
+          {
+            "acc": 18,
+            "nme": "password",
+            "dsc": "Ljava/lang/String;"
+          }
+        ]
+      },
+      "ru/vidtu/ias/utils/IUtils.class": {
+        "ver": 65,
+        "acc": 49,
+        "nme": "ru/vidtu/ias/utils/IUtils",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 2,
+            "dsc": "()V",
+            "invanns": [
+              {
+                "dsc": "Lorg/jetbrains/annotations/Contract;",
+                "vals": [
+                  "value",
+                  "-> fail",
+                  "pure",
+                  true
+                ]
+              }
+            ]
+          },
+          {
+            "nme": "warnKey",
+            "acc": 9,
+            "dsc": "(Ljava/lang/String;)Ljava/lang/String;",
+            "invanns": [
+              {
+                "dsc": "Lorg/jetbrains/annotations/Contract;",
+                "vals": [
+                  "pure",
+                  true
+                ]
+              },
+              {
+                "dsc": "Lorg/jetbrains/annotations/Nullable;"
+              }
+            ]
+          },
+          {
+            "nme": "anyInCausalChain",
+            "acc": 9,
+            "dsc": "(Ljava/lang/Throwable;Ljava/util/function/Predicate;)Z",
+            "sig": "(Ljava/lang/Throwable;Ljava/util/function/Predicate<Ljava/lang/Throwable;>;)Z",
+            "invanns": [
+              {
+                "dsc": "Lorg/jetbrains/annotations/Contract;",
+                "vals": [
+                  "pure",
+                  true
+                ]
+              }
+            ]
+          },
+          {
+            "nme": "canUseSunServer",
+            "acc": 9,
+            "dsc": "()Z",
+            "vanns": [
+              {
+                "dsc": "Lcom/google/errorprone/annotations/CheckReturnValue;"
+              }
+            ]
+          },
+          {
+            "nme": "tryBindPorts",
+            "acc": 9,
+            "dsc": "()[I",
+            "invanns": [
+              {
+                "dsc": "Lorg/jetbrains/annotations/Contract;",
+                "vals": [
+                  "pure",
+                  true
+                ]
+              }
+            ]
+          },
+          {
+            "nme": "<clinit>",
+            "acc": 8,
+            "dsc": "()V"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 26,
+            "nme": "TRY_BIND_PORTS",
+            "dsc": "[I"
+          }
+        ]
+      },
+      "ru/vidtu/ias/auth/handlers/LoginHandler.class": {
+        "ver": 65,
+        "acc": 1537,
+        "nme": "ru/vidtu/ias/auth/handlers/LoginHandler",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "cancelled",
+            "acc": 1025,
+            "dsc": "()Z"
+          },
+          {
+            "nme": "stage",
+            "acc": 1153,
+            "dsc": "(Ljava/lang/String;[Ljava/lang/Object;)V"
+          },
+          {
+            "nme": "password",
+            "acc": 1025,
+            "dsc": "()Ljava/util/concurrent/CompletableFuture;",
+            "sig": "()Ljava/util/concurrent/CompletableFuture<Ljava/lang/String;>;",
+            "vanns": [
+              {
+                "dsc": "Lcom/google/errorprone/annotations/CheckReturnValue;"
+              }
+            ],
+            "invanns": [
+              {
+                "dsc": "Lorg/jetbrains/annotations/NotNull;"
+              }
+            ]
+          },
+          {
+            "nme": "success",
+            "acc": 1025,
+            "dsc": "(Lru/vidtu/ias/auth/LoginData;Z)V"
+          },
+          {
+            "nme": "error",
+            "acc": 1025,
+            "dsc": "(Ljava/lang/Throwable;)V"
+          }
+        ],
+        "flds": []
+      },
+      "ru/vidtu/ias/auth/microsoft/MSAuthServer.class": {
+        "ver": 65,
+        "acc": 49,
+        "nme": "ru/vidtu/ias/auth/microsoft/MSAuthServer",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "(Ljava/lang/String;Lru/vidtu/ias/crypt/Crypt;Lru/vidtu/ias/auth/handlers/CreateHandler;)V"
+          },
+          {
+            "nme": "run",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "bindToSupportedPort",
+            "acc": 2,
+            "dsc": "()V"
+          },
+          {
+            "nme": "authUrl",
+            "acc": 1,
+            "dsc": "()Ljava/lang/String;",
+            "invanns": [
+              {
+                "dsc": "Lorg/jetbrains/annotations/Contract;",
+                "vals": [
+                  "pure",
+                  true
+                ]
+              },
+              {
+                "dsc": "Lorg/jetbrains/annotations/NotNull;"
+              }
+            ]
+          },
+          {
+            "nme": "auth",
+            "acc": 2,
+            "dsc": "(Ljava/net/URI;)V"
+          },
+          {
+            "nme": "close",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "toString",
+            "acc": 1,
+            "dsc": "()Ljava/lang/String;",
+            "invanns": [
+              {
+                "dsc": "Lorg/jetbrains/annotations/Contract;",
+                "vals": [
+                  "pure",
+                  true
+                ]
+              },
+              {
+                "dsc": "Lorg/jetbrains/annotations/NotNull;"
+              }
+            ]
+          },
+          {
+            "nme": "lambda$auth$12",
+            "acc": 4098,
+            "dsc": "(Ljava/lang/Throwable;)Ljava/lang/Void;"
+          },
+          {
+            "nme": "lambda$auth$11",
+            "acc": 4098,
+            "dsc": "(Lru/vidtu/ias/utils/Holder;Lru/vidtu/ias/auth/microsoft/fields/MCProfile;)V"
+          },
+          {
+            "nme": "lambda$auth$10",
+            "acc": 4098,
+            "dsc": "(Lru/vidtu/ias/utils/Holder;Lru/vidtu/ias/utils/Holder;Lru/vidtu/ias/utils/Holder;Lru/vidtu/ias/auth/microsoft/fields/MCProfile;)Lru/vidtu/ias/auth/microsoft/fields/MCProfile;"
+          },
+          {
+            "nme": "lambda$auth$9",
+            "acc": 4106,
+            "dsc": "(Ljava/lang/Throwable;)Lru/vidtu/ias/auth/microsoft/fields/MCProfile;"
+          },
+          {
+            "nme": "lambda$auth$8",
+            "acc": 4106,
+            "dsc": "(Ljava/lang/Throwable;)Z"
+          },
+          {
+            "nme": "lambda$auth$7",
+            "acc": 4098,
+            "dsc": "(Lru/vidtu/ias/utils/Holder;Ljava/lang/String;)Ljava/util/concurrent/CompletionStage;"
+          },
+          {
+            "nme": "lambda$auth$6",
+            "acc": 4098,
+            "dsc": "(Lru/vidtu/ias/auth/microsoft/fields/XHashedToken;)Ljava/util/concurrent/CompletionStage;"
+          },
+          {
+            "nme": "lambda$auth$5",
+            "acc": 4098,
+            "dsc": "(Lru/vidtu/ias/auth/microsoft/fields/XHashedToken;)Ljava/util/concurrent/CompletionStage;"
+          },
+          {
+            "nme": "lambda$auth$4",
+            "acc": 4098,
+            "dsc": "(Lru/vidtu/ias/utils/Holder;Lru/vidtu/ias/auth/microsoft/fields/MSTokens;)Ljava/util/concurrent/CompletionStage;"
+          },
+          {
+            "nme": "lambda$auth$3",
+            "acc": 4098,
+            "dsc": "(Ljava/lang/String;)Ljava/util/concurrent/CompletionStage;"
+          },
+          {
+            "nme": "lambda$auth$2",
+            "acc": 4098,
+            "dsc": "(Ljava/lang/String;)Ljava/lang/String;"
+          },
+          {
+            "nme": "lambda$run$1",
+            "acc": 4098,
+            "dsc": "(Lcom/sun/net/httpserver/HttpExchange;)V",
+            "exs": [
+              "java/io/IOException"
+            ]
+          },
+          {
+            "nme": "lambda$run$0",
+            "acc": 4098,
+            "dsc": "(Lcom/sun/net/httpserver/HttpExchange;)V",
+            "exs": [
+              "java/io/IOException"
+            ]
+          },
+          {
+            "nme": "<clinit>",
+            "acc": 8,
+            "dsc": "()V"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 26,
+            "nme": "MICROSOFT_AUTH_URL",
+            "dsc": "Ljava/lang/String;",
+            "val": "https://login.live.com/oauth20_authorize.srf?client_id=54fd49e4-2103-4044-9603-2b028c814ec3&response_type=code&scope=XboxLive.signin%20XboxLive.offline_access&redirect_uri=http://localhost:%%port%%/in_game_account_switcher_long_enough_uri_to_prevent_accidental_leaks_on_screensharing_even_if_you_have_like_extremely_big_screen_though_it_might_not_mork_but_we_will_try_it_anyway_to_prevent_funny_things_from_happening_or_something&prompt=select_account&state=%%state%%"
+          },
+          {
+            "acc": 26,
+            "nme": "REDIRECT_URI",
+            "dsc": "Ljava/lang/String;",
+            "val": "http://localhost:%s/in_game_account_switcher_long_enough_uri_to_prevent_accidental_leaks_on_screensharing_even_if_you_have_like_extremely_big_screen_though_it_might_not_mork_but_we_will_try_it_anyway_to_prevent_funny_things_from_happening_or_something"
+          },
+          {
+            "acc": 26,
+            "nme": "END_URI",
+            "dsc": "Ljava/lang/String;",
+            "val": "http://localhost:%s/end"
+          },
+          {
+            "acc": 26,
+            "nme": "STATE_CHARACTERS",
+            "dsc": "Ljava/lang/String;",
+            "val": "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789.-_"
+          },
+          {
+            "acc": 26,
+            "nme": "DATA_EXTRACT_PATTERN",
+            "dsc": "Ljava/util/regex/Pattern;"
+          },
+          {
+            "acc": 26,
+            "nme": "CODE_OBFUSCATE_PATTERN",
+            "dsc": "Ljava/util/regex/Pattern;"
+          },
+          {
+            "acc": 25,
+            "nme": "LOGGER",
+            "dsc": "Lorg/slf4j/Logger;"
+          },
+          {
+            "acc": 18,
+            "nme": "doneMessage",
+            "dsc": "Ljava/lang/String;"
+          },
+          {
+            "acc": 18,
+            "nme": "crypt",
+            "dsc": "Lru/vidtu/ias/crypt/Crypt;"
+          },
+          {
+            "acc": 18,
+            "nme": "handler",
+            "dsc": "Lru/vidtu/ias/auth/handlers/CreateHandler;"
+          },
+          {
+            "acc": 18,
+            "nme": "server",
+            "dsc": "Lcom/sun/net/httpserver/HttpServer;"
+          },
+          {
+            "acc": 18,
+            "nme": "state",
+            "dsc": "Ljava/lang/String;"
+          },
+          {
+            "acc": 2,
+            "nme": "port",
+            "dsc": "I"
+          },
+          {
+            "acc": 2,
+            "nme": "once",
+            "dsc": "Z"
+          }
+        ]
+      },
+      "ru/vidtu/ias/auth/microsoft/fields/XHashedToken.class": {
+        "ver": 65,
+        "acc": 65585,
+        "nme": "ru/vidtu/ias/auth/microsoft/fields/XHashedToken",
+        "super": "java/lang/Record",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "(Ljava/lang/String;Ljava/lang/String;)V"
+          },
+          {
+            "nme": "fromJson",
+            "acc": 9,
+            "dsc": "(Lcom/google/gson/JsonObject;)Lru/vidtu/ias/auth/microsoft/fields/XHashedToken;",
+            "invanns": [
+              {
+                "dsc": "Lorg/jetbrains/annotations/Contract;",
+                "vals": [
+                  "value",
+                  "_ -> new",
+                  "pure",
+                  true
+                ]
+              },
+              {
+                "dsc": "Lorg/jetbrains/annotations/NotNull;"
+              }
+            ]
+          },
+          {
+            "nme": "toString",
+            "acc": 17,
+            "dsc": "()Ljava/lang/String;"
+          },
+          {
+            "nme": "hashCode",
+            "acc": 17,
+            "dsc": "()I"
+          },
+          {
+            "nme": "equals",
+            "acc": 17,
+            "dsc": "(Ljava/lang/Object;)Z"
+          },
+          {
+            "nme": "token",
+            "acc": 1,
+            "dsc": "()Ljava/lang/String;",
+            "invanns": [
+              {
+                "dsc": "Lorg/jetbrains/annotations/NotNull;"
+              }
+            ]
+          },
+          {
+            "nme": "hash",
+            "acc": 1,
+            "dsc": "()Ljava/lang/String;",
+            "invanns": [
+              {
+                "dsc": "Lorg/jetbrains/annotations/NotNull;"
+              }
+            ]
+          }
+        ],
+        "flds": [
+          {
+            "acc": 18,
+            "nme": "token",
+            "dsc": "Ljava/lang/String;"
+          },
+          {
+            "acc": 18,
+            "nme": "hash",
+            "dsc": "Ljava/lang/String;"
+          }
+        ]
+      },
+      "ru/vidtu/ias/utils/Holder.class": {
+        "ver": 65,
+        "acc": 49,
+        "nme": "ru/vidtu/ias/utils/Holder",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V",
+            "invanns": [
+              {
+                "dsc": "Lorg/jetbrains/annotations/Contract;",
+                "vals": [
+                  "pure",
+                  true
+                ]
+              }
+            ]
+          },
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "(Ljava/lang/Object;)V",
+            "sig": "(TT;)V",
+            "invanns": [
+              {
+                "dsc": "Lorg/jetbrains/annotations/Contract;",
+                "vals": [
+                  "pure",
+                  true
+                ]
+              }
+            ]
+          },
+          {
+            "nme": "get",
+            "acc": 1,
+            "dsc": "()Ljava/lang/Object;",
+            "sig": "()TT;",
+            "invanns": [
+              {
+                "dsc": "Lorg/jetbrains/annotations/Contract;",
+                "vals": [
+                  "pure",
+                  true
+                ]
+              }
+            ]
+          },
+          {
+            "nme": "set",
+            "acc": 1,
+            "dsc": "(Ljava/lang/Object;)V",
+            "sig": "(TT;)V"
+          },
+          {
+            "nme": "equals",
+            "acc": 1,
+            "dsc": "(Ljava/lang/Object;)Z",
+            "invanns": [
+              {
+                "dsc": "Lorg/jetbrains/annotations/Contract;",
+                "vals": [
+                  "value",
+                  "null -> false",
+                  "pure",
+                  true
+                ]
+              }
+            ]
+          },
+          {
+            "nme": "hashCode",
+            "acc": 1,
+            "dsc": "()I",
+            "invanns": [
+              {
+                "dsc": "Lorg/jetbrains/annotations/Contract;",
+                "vals": [
+                  "pure",
+                  true
+                ]
+              }
+            ]
+          },
+          {
+            "nme": "toString",
+            "acc": 1,
+            "dsc": "()Ljava/lang/String;",
+            "invanns": [
+              {
+                "dsc": "Lorg/jetbrains/annotations/Contract;",
+                "vals": [
+                  "pure",
+                  true
+                ]
+              },
+              {
+                "dsc": "Lorg/jetbrains/annotations/NotNull;"
+              }
+            ]
+          }
+        ],
+        "flds": [
+          {
+            "acc": 2,
+            "nme": "value",
+            "dsc": "Ljava/lang/Object;",
+            "sig": "TT;"
+          }
+        ]
+      },
+      "ru/vidtu/ias/config/TextAlign.class": {
+        "ver": 65,
+        "acc": 16433,
+        "nme": "ru/vidtu/ias/config/TextAlign",
+        "super": "java/lang/Enum",
+        "mthds": [
+          {
+            "nme": "values",
+            "acc": 9,
+            "dsc": "()[Lru/vidtu/ias/config/TextAlign;"
+          },
+          {
+            "nme": "valueOf",
+            "acc": 9,
+            "dsc": "(Ljava/lang/String;)Lru/vidtu/ias/config/TextAlign;"
+          },
+          {
+            "nme": "<init>",
+            "acc": 2,
+            "dsc": "(Ljava/lang/String;ILjava/lang/String;)V",
+            "sig": "(Ljava/lang/String;)V",
+            "invanns": [
+              {
+                "dsc": "Lorg/jetbrains/annotations/Contract;",
+                "vals": [
+                  "pure",
+                  true
+                ]
+              }
+            ]
+          },
+          {
+            "nme": "toString",
+            "acc": 1,
+            "dsc": "()Ljava/lang/String;",
+            "invanns": [
+              {
+                "dsc": "Lorg/jetbrains/annotations/Contract;",
+                "vals": [
+                  "pure",
+                  true
+                ]
+              },
+              {
+                "dsc": "Lorg/jetbrains/annotations/NotNull;"
+              }
+            ]
+          },
+          {
+            "nme": "$values",
+            "acc": 4106,
+            "dsc": "()[Lru/vidtu/ias/config/TextAlign;"
+          },
+          {
+            "nme": "<clinit>",
+            "acc": 8,
+            "dsc": "()V"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 16409,
+            "nme": "LEFT",
+            "dsc": "Lru/vidtu/ias/config/TextAlign;"
+          },
+          {
+            "acc": 16409,
+            "nme": "CENTER",
+            "dsc": "Lru/vidtu/ias/config/TextAlign;"
+          },
+          {
+            "acc": 16409,
+            "nme": "RIGHT",
+            "dsc": "Lru/vidtu/ias/config/TextAlign;"
+          },
+          {
+            "acc": 18,
+            "nme": "key",
+            "dsc": "Ljava/lang/String;"
+          },
+          {
+            "acc": 4122,
+            "nme": "$VALUES",
+            "dsc": "[Lru/vidtu/ias/config/TextAlign;"
+          }
+        ]
+      },
+      "ru/vidtu/ias/screen/AddPopupScreen.class": {
+        "ver": 65,
+        "acc": 48,
+        "nme": "ru/vidtu/ias/screen/AddPopupScreen",
+        "super": "net/minecraft/class_437",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 0,
+            "dsc": "(Lnet/minecraft/class_437;ZLjava/util/function/Consumer;)V",
+            "sig": "(Lnet/minecraft/class_437;ZLjava/util/function/Consumer<Lru/vidtu/ias/account/Account;>;)V"
+          },
+          {
+            "nme": "method_25426",
+            "acc": 4,
+            "dsc": "()V"
+          },
+          {
+            "nme": "method_25394",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/class_332;IIF)V"
+          },
+          {
+            "nme": "method_25420",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/class_332;IIF)V"
+          },
+          {
+            "nme": "method_25419",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "toString",
+            "acc": 1,
+            "dsc": "()Ljava/lang/String;"
+          },
+          {
+            "nme": "lambda$init$2",
+            "acc": 4098,
+            "dsc": "(Lnet/minecraft/class_4185;)V"
+          },
+          {
+            "nme": "lambda$init$1",
+            "acc": 4098,
+            "dsc": "(Lnet/minecraft/class_4185;)V"
+          },
+          {
+            "nme": "lambda$init$0",
+            "acc": 4098,
+            "dsc": "(Lnet/minecraft/class_4185;)V"
+          },
+          {
+            "nme": "<clinit>",
+            "acc": 8,
+            "dsc": "()V"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 18,
+            "nme": "parent",
+            "dsc": "Lnet/minecraft/class_437;"
+          },
+          {
+            "acc": 18,
+            "nme": "handler",
+            "dsc": "Ljava/util/function/Consumer;",
+            "sig": "Ljava/util/function/Consumer<Lru/vidtu/ias/account/Account;>;"
+          },
+          {
+            "acc": 4120,
+            "nme": "$assertionsDisabled",
+            "dsc": "Z"
+          }
+        ]
+      },
+      "ru/vidtu/ias/auth/microsoft/fields/MCProfile.class": {
+        "ver": 65,
+        "acc": 65585,
+        "nme": "ru/vidtu/ias/auth/microsoft/fields/MCProfile",
+        "super": "java/lang/Record",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "(Ljava/util/UUID;Ljava/lang/String;)V"
+          },
+          {
+            "nme": "fromJson",
+            "acc": 9,
+            "dsc": "(Lcom/google/gson/JsonObject;)Lru/vidtu/ias/auth/microsoft/fields/MCProfile;",
+            "invanns": [
+              {
+                "dsc": "Lorg/jetbrains/annotations/Contract;",
+                "vals": [
+                  "value",
+                  "_ -> new",
+                  "pure",
+                  true
+                ]
+              },
+              {
+                "dsc": "Lorg/jetbrains/annotations/NotNull;"
+              }
+            ]
+          },
+          {
+            "nme": "toString",
+            "acc": 17,
+            "dsc": "()Ljava/lang/String;"
+          },
+          {
+            "nme": "hashCode",
+            "acc": 17,
+            "dsc": "()I"
+          },
+          {
+            "nme": "equals",
+            "acc": 17,
+            "dsc": "(Ljava/lang/Object;)Z"
+          },
+          {
+            "nme": "uuid",
+            "acc": 1,
+            "dsc": "()Ljava/util/UUID;",
+            "invanns": [
+              {
+                "dsc": "Lorg/jetbrains/annotations/NotNull;"
+              }
+            ]
+          },
+          {
+            "nme": "name",
+            "acc": 1,
+            "dsc": "()Ljava/lang/String;",
+            "invanns": [
+              {
+                "dsc": "Lorg/jetbrains/annotations/NotNull;"
+              }
+            ]
+          },
+          {
+            "nme": "<clinit>",
+            "acc": 8,
+            "dsc": "()V"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 18,
+            "nme": "uuid",
+            "dsc": "Ljava/util/UUID;"
+          },
+          {
+            "acc": 18,
+            "nme": "name",
+            "dsc": "Ljava/lang/String;"
+          },
+          {
+            "acc": 26,
+            "nme": "UUID_DASHLESS",
+            "dsc": "Ljava/util/regex/Pattern;"
+          },
+          {
+            "acc": 26,
+            "nme": "UUID_DASHED",
+            "dsc": "Ljava/lang/String;",
+            "val": "$1-$2-$3-$4-$5"
+          }
+        ]
+      },
+      "ru/vidtu/ias/screen/AccountList.class": {
+        "ver": 65,
+        "acc": 48,
+        "nme": "ru/vidtu/ias/screen/AccountList",
+        "super": "net/minecraft/class_4280",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 0,
+            "dsc": "(Lru/vidtu/ias/screen/AccountScreen;Lnet/minecraft/class_310;IIII)V"
+          },
+          {
+            "nme": "method_25322",
+            "acc": 1,
+            "dsc": "()I"
+          },
+          {
+            "nme": "setSelected",
+            "acc": 1,
+            "dsc": "(Lru/vidtu/ias/screen/AccountEntry;)V"
+          },
+          {
+            "nme": "update",
+            "acc": 0,
+            "dsc": "(Ljava/lang/String;)V"
+          },
+          {
+            "nme": "login",
+            "acc": 0,
+            "dsc": "(Z)V"
+          },
+          {
+            "nme": "edit",
+            "acc": 0,
+            "dsc": "()V"
+          },
+          {
+            "nme": "delete",
+            "acc": 0,
+            "dsc": "(Z)V"
+          },
+          {
+            "nme": "add",
+            "acc": 0,
+            "dsc": "()V"
+          },
+          {
+            "nme": "skin",
+            "acc": 0,
+            "dsc": "(Lru/vidtu/ias/screen/AccountEntry;)Lnet/minecraft/class_8685;"
+          },
+          {
+            "nme": "swapUp",
+            "acc": 0,
+            "dsc": "(Lru/vidtu/ias/screen/AccountEntry;)V"
+          },
+          {
+            "nme": "swapDown",
+            "acc": 0,
+            "dsc": "(Lru/vidtu/ias/screen/AccountEntry;)V"
+          },
+          {
+            "nme": "screen",
+            "acc": 0,
+            "dsc": "()Lru/vidtu/ias/screen/AccountScreen;"
+          },
+          {
+            "nme": "toString",
+            "acc": 1,
+            "dsc": "()Ljava/lang/String;"
+          },
+          {
+            "nme": "method_25313",
+            "acc": 4161,
+            "dsc": "(Lnet/minecraft/class_350$class_351;)V"
+          },
+          {
+            "nme": "method_25399",
+            "acc": 4161,
+            "dsc": "()Lnet/minecraft/class_364;",
+            "invanns": [
+              {
+                "dsc": "Lorg/jetbrains/annotations/Nullable;"
+              }
+            ]
+          },
+          {
+            "nme": "lambda$skin$12",
+            "acc": 4106,
+            "dsc": "(Lru/vidtu/ias/screen/AccountEntry;Ljava/lang/Throwable;)Ljava/lang/Void;"
+          },
+          {
+            "nme": "lambda$skin$11",
+            "acc": 4106,
+            "dsc": "(Ljava/util/UUID;Ljava/util/Optional;)V"
+          },
+          {
+            "nme": "lambda$skin$10",
+            "acc": 4106,
+            "dsc": "(Ljava/util/UUID;Lnet/minecraft/class_8685;)V"
+          },
+          {
+            "nme": "lambda$skin$9",
+            "acc": 4098,
+            "dsc": "(Lcom/mojang/authlib/GameProfile;)Ljava/util/concurrent/CompletionStage;"
+          },
+          {
+            "nme": "lambda$skin$8",
+            "acc": 4098,
+            "dsc": "(Ljava/util/UUID;)Lcom/mojang/authlib/GameProfile;"
+          },
+          {
+            "nme": "lambda$add$7",
+            "acc": 4098,
+            "dsc": "(Lru/vidtu/ias/account/Account;)V"
+          },
+          {
+            "nme": "lambda$delete$6",
+            "acc": 4098,
+            "dsc": "(Lru/vidtu/ias/account/Account;)V"
+          },
+          {
+            "nme": "lambda$edit$5",
+            "acc": 4098,
+            "dsc": "(ILru/vidtu/ias/account/Account;)V"
+          },
+          {
+            "nme": "lambda$login$4",
+            "acc": 4106,
+            "dsc": "(Lru/vidtu/ias/account/Account;Lru/vidtu/ias/screen/LoginPopupScreen;)V"
+          },
+          {
+            "nme": "lambda$update$3",
+            "acc": 4098,
+            "dsc": "(Lru/vidtu/ias/account/Account;)Lru/vidtu/ias/screen/AccountEntry;"
+          },
+          {
+            "nme": "lambda$update$2",
+            "acc": 4106,
+            "dsc": "(Ljava/lang/String;Lru/vidtu/ias/account/Account;Lru/vidtu/ias/account/Account;)I"
+          },
+          {
+            "nme": "lambda$update$1",
+            "acc": 4106,
+            "dsc": "(Ljava/lang/String;Lru/vidtu/ias/account/Account;)Z"
+          },
+          {
+            "nme": "lambda$update$0",
+            "acc": 4098,
+            "dsc": "(Lru/vidtu/ias/account/Account;)Lru/vidtu/ias/screen/AccountEntry;"
+          },
+          {
+            "nme": "<clinit>",
+            "acc": 8,
+            "dsc": "()V"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 26,
+            "nme": "SKINS",
+            "dsc": "Ljava/util/Map;",
+            "sig": "Ljava/util/Map<Ljava/util/UUID;Lnet/minecraft/class_8685;>;"
+          },
+          {
+            "acc": 26,
+            "nme": "LOGGER",
+            "dsc": "Lorg/slf4j/Logger;"
+          },
+          {
+            "acc": 18,
+            "nme": "screen",
+            "dsc": "Lru/vidtu/ias/screen/AccountScreen;"
+          }
+        ]
+      },
+      "ru/vidtu/ias/config/IASConfig.class": {
+        "ver": 65,
+        "acc": 49,
+        "nme": "ru/vidtu/ias/config/IASConfig",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 2,
+            "dsc": "()V",
+            "invanns": [
+              {
+                "dsc": "Lorg/jetbrains/annotations/Contract;",
+                "vals": [
+                  "pure",
+                  true
+                ]
+              }
+            ]
+          },
+          {
+            "nme": "load",
+            "acc": 9,
+            "dsc": "(Ljava/nio/file/Path;)V"
+          },
+          {
+            "nme": "save",
+            "acc": 9,
+            "dsc": "(Ljava/nio/file/Path;)V"
+          },
+          {
+            "nme": "useServerAuth",
+            "acc": 9,
+            "dsc": "()Z"
+          },
+          {
+            "nme": "<clinit>",
+            "acc": 8,
+            "dsc": "()V"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 26,
+            "nme": "GSON",
+            "dsc": "Lcom/google/gson/Gson;"
+          },
+          {
+            "acc": 25,
+            "nme": "LOGGER",
+            "dsc": "Lorg/slf4j/Logger;"
+          },
+          {
+            "acc": 9,
+            "nme": "titleText",
+            "dsc": "Z"
+          },
+          {
+            "acc": 9,
+            "nme": "titleTextX",
+            "dsc": "Ljava/lang/String;"
+          },
+          {
+            "acc": 9,
+            "nme": "titleTextY",
+            "dsc": "Ljava/lang/String;"
+          },
+          {
+            "acc": 9,
+            "nme": "titleTextAlign",
+            "dsc": "Lru/vidtu/ias/config/TextAlign;"
+          },
+          {
+            "acc": 9,
+            "nme": "titleButton",
+            "dsc": "Z"
+          },
+          {
+            "acc": 9,
+            "nme": "titleButtonX",
+            "dsc": "Ljava/lang/String;"
+          },
+          {
+            "acc": 9,
+            "nme": "titleButtonY",
+            "dsc": "Ljava/lang/String;"
+          },
+          {
+            "acc": 9,
+            "nme": "serversText",
+            "dsc": "Z"
+          },
+          {
+            "acc": 9,
+            "nme": "serversTextX",
+            "dsc": "Ljava/lang/String;"
+          },
+          {
+            "acc": 9,
+            "nme": "serversTextY",
+            "dsc": "Ljava/lang/String;"
+          },
+          {
+            "acc": 9,
+            "nme": "serversTextAlign",
+            "dsc": "Lru/vidtu/ias/config/TextAlign;"
+          },
+          {
+            "acc": 9,
+            "nme": "serversButton",
+            "dsc": "Z"
+          },
+          {
+            "acc": 9,
+            "nme": "serversButtonX",
+            "dsc": "Ljava/lang/String;"
+          },
+          {
+            "acc": 9,
+            "nme": "serversButtonY",
+            "dsc": "Ljava/lang/String;"
+          },
+          {
+            "acc": 9,
+            "nme": "allowNoCrypt",
+            "dsc": "Z"
+          },
+          {
+            "acc": 9,
+            "nme": "nickWarns",
+            "dsc": "Z"
+          },
+          {
+            "acc": 9,
+            "nme": "unexpectedPigs",
+            "dsc": "Z"
+          },
+          {
+            "acc": 9,
+            "nme": "barNick",
+            "dsc": "Z"
+          },
+          {
+            "acc": 9,
+            "nme": "server",
+            "dsc": "Lru/vidtu/ias/config/ServerMode;"
+          },
+          {
+            "acc": 9,
+            "nme": "passwordEchoing",
+            "dsc": "Z"
+          }
+        ]
+      },
+      "ru/vidtu/ias/account/OfflineAccount.class": {
+        "ver": 65,
+        "acc": 49,
+        "nme": "ru/vidtu/ias/account/OfflineAccount",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "(Ljava/lang/String;Ljava/util/UUID;)V",
+            "invanns": [
+              {
+                "dsc": "Lorg/jetbrains/annotations/Contract;",
+                "vals": [
+                  "pure",
+                  true
+                ]
+              }
+            ]
+          },
+          {
+            "nme": "uuid",
+            "acc": 1,
+            "dsc": "()Ljava/util/UUID;",
+            "invanns": [
+              {
+                "dsc": "Lorg/jetbrains/annotations/Contract;",
+                "vals": [
+                  "pure",
+                  true
+                ]
+              },
+              {
+                "dsc": "Lorg/jetbrains/annotations/NotNull;"
+              }
+            ]
+          },
+          {
+            "nme": "name",
+            "acc": 1,
+            "dsc": "()Ljava/lang/String;",
+            "invanns": [
+              {
+                "dsc": "Lorg/jetbrains/annotations/Contract;",
+                "vals": [
+                  "pure",
+                  true
+                ]
+              },
+              {
+                "dsc": "Lorg/jetbrains/annotations/NotNull;"
+              }
+            ]
+          },
+          {
+            "nme": "type",
+            "acc": 1,
+            "dsc": "()Ljava/lang/String;",
+            "invanns": [
+              {
+                "dsc": "Lorg/jetbrains/annotations/Contract;",
+                "vals": [
+                  "pure",
+                  true
+                ]
+              },
+              {
+                "dsc": "Lorg/jetbrains/annotations/NotNull;"
+              }
+            ]
+          },
+          {
+            "nme": "typeTipKey",
+            "acc": 1,
+            "dsc": "()Ljava/lang/String;",
+            "invanns": [
+              {
+                "dsc": "Lorg/jetbrains/annotations/Contract;",
+                "vals": [
+                  "pure",
+                  true
+                ]
+              },
+              {
+                "dsc": "Lorg/jetbrains/annotations/NotNull;"
+              }
+            ]
+          },
+          {
+            "nme": "canLogin",
+            "acc": 1,
+            "dsc": "()Z",
+            "invanns": [
+              {
+                "dsc": "Lorg/jetbrains/annotations/Contract;",
+                "vals": [
+                  "value",
+                  "-> false",
+                  "pure",
+                  true
+                ]
+              }
+            ]
+          },
+          {
+            "nme": "insecure",
+            "acc": 1,
+            "dsc": "()Z",
+            "invanns": [
+              {
+                "dsc": "Lorg/jetbrains/annotations/Contract;",
+                "vals": [
+                  "value",
+                  "-> false",
+                  "pure",
+                  true
+                ]
+              }
+            ]
+          },
+          {
+            "nme": "skin",
+            "acc": 1,
+            "dsc": "()Ljava/util/UUID;",
+            "invanns": [
+              {
+                "dsc": "Lorg/jetbrains/annotations/Contract;",
+                "vals": [
+                  "pure",
+                  true
+                ]
+              },
+              {
+                "dsc": "Lorg/jetbrains/annotations/NotNull;"
+              }
+            ]
+          },
+          {
+            "nme": "login",
+            "acc": 1,
+            "dsc": "(Lru/vidtu/ias/auth/handlers/LoginHandler;)V"
+          },
+          {
+            "nme": "write",
+            "acc": 1,
+            "dsc": "(Ljava/io/DataOutput;)V",
+            "exs": [
+              "java/io/IOException"
+            ]
+          },
+          {
+            "nme": "equals",
+            "acc": 1,
+            "dsc": "(Ljava/lang/Object;)Z",
+            "invanns": [
+              {
+                "dsc": "Lorg/jetbrains/annotations/Contract;",
+                "vals": [
+                  "value",
+                  "null -> false",
+                  "pure",
+                  true
+                ]
+              }
+            ]
+          },
+          {
+            "nme": "hashCode",
+            "acc": 1,
+            "dsc": "()I",
+            "invanns": [
+              {
+                "dsc": "Lorg/jetbrains/annotations/Contract;",
+                "vals": [
+                  "pure",
+                  true
+                ]
+              }
+            ]
+          },
+          {
+            "nme": "toString",
+            "acc": 1,
+            "dsc": "()Ljava/lang/String;",
+            "invanns": [
+              {
+                "dsc": "Lorg/jetbrains/annotations/Contract;",
+                "vals": [
+                  "pure",
+                  true
+                ]
+              },
+              {
+                "dsc": "Lorg/jetbrains/annotations/NotNull;"
+              }
+            ]
+          },
+          {
+            "nme": "readV1",
+            "acc": 9,
+            "dsc": "(Ljava/io/DataInput;)Lru/vidtu/ias/account/OfflineAccount;",
+            "exs": [
+              "java/io/IOException"
+            ],
+            "vanns": [
+              {
+                "dsc": "Lcom/google/errorprone/annotations/CheckReturnValue;"
+              }
+            ],
+            "invanns": [
+              {
+                "dsc": "Lorg/jetbrains/annotations/NotNull;"
+              }
+            ]
+          },
+          {
+            "nme": "readV2",
+            "acc": 9,
+            "dsc": "(Ljava/io/DataInput;)Lru/vidtu/ias/account/OfflineAccount;",
+            "exs": [
+              "java/io/IOException"
+            ],
+            "vanns": [
+              {
+                "dsc": "Lcom/google/errorprone/annotations/CheckReturnValue;"
+              }
+            ],
+            "invanns": [
+              {
+                "dsc": "Lorg/jetbrains/annotations/NotNull;"
+              }
+            ]
+          },
+          {
+            "nme": "uuid",
+            "acc": 9,
+            "dsc": "(Ljava/lang/String;)Ljava/util/UUID;",
+            "invanns": [
+              {
+                "dsc": "Lorg/jetbrains/annotations/Contract;",
+                "vals": [
+                  "pure",
+                  true
+                ]
+              },
+              {
+                "dsc": "Lorg/jetbrains/annotations/NotNull;"
+              }
+            ]
+          }
+        ],
+        "flds": [
+          {
+            "acc": 18,
+            "nme": "name",
+            "dsc": "Ljava/lang/String;"
+          },
+          {
+            "acc": 18,
+            "nme": "uuid",
+            "dsc": "Ljava/util/UUID;"
+          },
+          {
+            "acc": 18,
+            "nme": "skin",
+            "dsc": "Ljava/util/UUID;"
+          }
+        ]
+      },
+      "ru/vidtu/ias/config/IASStorage.class": {
+        "ver": 65,
+        "acc": 49,
+        "nme": "ru/vidtu/ias/config/IASStorage",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 2,
+            "dsc": "()V",
+            "invanns": [
+              {
+                "dsc": "Lorg/jetbrains/annotations/Contract;",
+                "vals": [
+                  "value",
+                  "-> fail",
+                  "pure",
+                  true
+                ]
+              }
+            ]
+          },
+          {
+            "nme": "disclaimers",
+            "acc": 9,
+            "dsc": "(Ljava/nio/file/Path;)V"
+          },
+          {
+            "nme": "load",
+            "acc": 9,
+            "dsc": "(Ljava/nio/file/Path;)V"
+          },
+          {
+            "nme": "save",
+            "acc": 9,
+            "dsc": "(Ljava/nio/file/Path;)V"
+          },
+          {
+            "nme": "gameDisclaimerShown",
+            "acc": 9,
+            "dsc": "(Ljava/nio/file/Path;)V"
+          },
+          {
+            "nme": "lambda$save$0",
+            "acc": 4106,
+            "dsc": "(I)[Lru/vidtu/ias/account/Account;"
+          },
+          {
+            "nme": "<clinit>",
+            "acc": 8,
+            "dsc": "()V"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 26,
+            "nme": "DISCLAIMER",
+            "dsc": "Ljava/lang/String;",
+            "val": "> ENGLISH\nNotification about security of accounts stored in the \"In-Game Account Switcher\" mod:\nUNDER NO CIRCUMSTANCES SHOULD YOU SEND THIS FOLDER TO *ANYONE* (INCLUDING DEVELOPERS OF THIS MOD),\nEVEN IF IT APPEARS THAT THIS FOLDER IS FULLY EMPTY.\nIF YOU ACCIDENTALLY SENT THIS FOLDER TO ANYONE, PLEASE, VISIT THE FOLLOWING WEBSITE:\nhttps://account.microsoft.com/security\nAND CHANGE YOUR PASSWORD, THEN VISIT THE FOLLOWING WEBSITE:\nhttps://account.live.com/consent/manage\nAND REVOKE THE PERMISSIONS (ACCESS) TO THE \"In-Game Account Switcher\" APPLICATION,\nAND/OR ANY OTHER THAT YOU DO CAN'T RECOGNIZE OR YOU SUSPECT IT COULD ACCESS YOUR GAME ACCOUNT.\nAFTER REVOKING ACCESS YOU SHOULD *NOT* USE THIS MODIFICATION FOR 31 DAYS.\n(If you suspect someone has got access to your game account, revoke ALL permissions\nfor ALL applications and do *NOT* launch the game for 31 days at all)\n\n\n\n> РУССКИЙ (RUSSIAN)\nУведомление о безопасности аккаунтов из мода \"In-Game Account Switcher\":\nНИ ПРИ КАКИХ ОБСТОЯТЕЛЬСТВАХ НЕ ОТПРАВЛЯЙТЕ ЭТУ ПАПКУ *КОМУ-ЛИБО* (В ТОМ ЧИСЛЕ И РАЗРАБОТЧИКАМ ЭТОГО МОДА),\nДАЖЕ ЕСЛИ ВАМ КАЖЕТСЯ, ЧТО ЭТА ПАПКА ПОЛНОСТЬЮ ПУСТАЯ.\nЕСЛИ ВЫ СЛУЧАЙНО ОТПРАВИЛИ ЭТУ ПАПКУ КОМУ-ЛИБО, ПОЖАЛУЙСТА, ЗАЙДИТЕ НА СЛЕДУЮЩИЙ ВЕБСАЙТ:\nhttps://account.microsoft.com/security\nИ СМЕНИТЕ СВОЙ ПАРОЛЬ, ПОТОМ ЗАЙДИТЕ НА СЛЕДУЮЩИЙ ВЕБСАЙТ:\nhttps://account.live.com/consent/manage\nИ ОТЗОВИТЕ РАЗРЕШЕНИЯ (ДОСТУП) К ПРИЛОЖЕНИЮ \"In-Game Account Switcher\"\nИ/ИЛИ ЛЮБОМУ ДРУГОМУ, КОТОРОЕ ВЫ НЕ МОЖЕТЕ ОПОЗНАТЬ ИЛИ ПОДОЗРЕВАЕТЕ, ЧТО ОНО МОЖЕТ\nПОЛУЧИТЬ ДОСТУП К ВАШЕМУ ИГРОВОМУ АККАУНТУ.\nПОСЛЕ ОТЗЫВА ДОСТУПА ВЫ *НЕ* ДОЛЖНЫ ИСПОЛЬЗОВАТЬ ЭТУ МОДИФИКАЦИЮ КАК МИНИМУМ 31 ДЕНЬ.\n(Если вы подозреваете, что кто-то получил доступ к вашему игровому аккаунту, отзовите ВСЕ разрешения\nдля ВСЕХ приложений и *НЕ* запускайте игру вообще как минимум 31 день)\n"
+          },
+          {
+            "acc": 26,
+            "nme": "DISCLAIMER_FILE_NAMES",
+            "dsc": "Ljava/util/List;",
+            "sig": "Ljava/util/List<Ljava/lang/String;>;"
+          },
+          {
+            "acc": 25,
+            "nme": "LOGGER",
+            "dsc": "Lorg/slf4j/Logger;"
+          },
+          {
+            "acc": 25,
+            "nme": "ACCOUNTS",
+            "dsc": "Ljava/util/List;",
+            "sig": "Ljava/util/List<Lru/vidtu/ias/account/Account;>;"
+          },
+          {
+            "acc": 9,
+            "nme": "gameDisclaimerShown",
+            "dsc": "Z"
+          }
+        ]
+      },
+      "ru/vidtu/ias/screen/PopupBox.class": {
+        "ver": 65,
+        "acc": 48,
+        "nme": "ru/vidtu/ias/screen/PopupBox",
+        "super": "net/minecraft/class_342",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 0,
+            "dsc": "(Lnet/minecraft/class_327;IIIILru/vidtu/ias/screen/PopupBox;Lnet/minecraft/class_2561;Ljava/lang/Runnable;Z)V"
+          },
+          {
+            "nme": "method_48579",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/class_332;IIF)V"
+          },
+          {
+            "nme": "method_25404",
+            "acc": 1,
+            "dsc": "(III)Z"
+          },
+          {
+            "nme": "method_25360",
+            "acc": 4,
+            "dsc": "()Lnet/minecraft/class_5250;",
+            "invanns": [
+              {
+                "dsc": "Lorg/jetbrains/annotations/NotNull;"
+              }
+            ]
+          },
+          {
+            "nme": "method_1851",
+            "acc": 1,
+            "dsc": "()Z"
+          },
+          {
+            "nme": "toString",
+            "acc": 1,
+            "dsc": "()Ljava/lang/String;"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 18,
+            "nme": "enterAction",
+            "dsc": "Ljava/lang/Runnable;"
+          },
+          {
+            "acc": 18,
+            "nme": "secure",
+            "dsc": "Z"
+          }
+        ]
+      },
+      "ru/vidtu/ias/utils/IUtils$SunServerAvailability.class": {
+        "ver": 65,
+        "acc": 48,
+        "nme": "ru/vidtu/ias/utils/IUtils$SunServerAvailability",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "bindToSupportedPort",
+            "acc": 10,
+            "dsc": "(Ljava/net/ServerSocket;)V"
+          },
+          {
+            "nme": "<init>",
+            "acc": 2,
+            "dsc": "()V",
+            "invanns": [
+              {
+                "dsc": "Lorg/jetbrains/annotations/Contract;",
+                "vals": [
+                  "value",
+                  "-> fail",
+                  "pure",
+                  true
+                ]
+              }
+            ]
+          },
+          {
+            "nme": "<clinit>",
+            "acc": 8,
+            "dsc": "()V"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 26,
+            "nme": "AVAILABLE",
+            "dsc": "Z"
+          }
+        ]
+      },
+      "ru/vidtu/ias/IAS.class": {
+        "ver": 65,
+        "acc": 49,
+        "nme": "ru/vidtu/ias/IAS",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 2,
+            "dsc": "()V",
+            "invanns": [
+              {
+                "dsc": "Lorg/jetbrains/annotations/Contract;",
+                "vals": [
+                  "value",
+                  "-> fail",
+                  "pure",
+                  true
+                ]
+              }
+            ]
+          },
+          {
+            "nme": "init",
+            "acc": 9,
+            "dsc": "(Ljava/nio/file/Path;Ljava/nio/file/Path;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V"
+          },
+          {
+            "nme": "close",
+            "acc": 9,
+            "dsc": "()V"
+          },
+          {
+            "nme": "executor",
+            "acc": 9,
+            "dsc": "()Ljava/util/concurrent/ScheduledExecutorService;",
+            "invanns": [
+              {
+                "dsc": "Lorg/jetbrains/annotations/Contract;",
+                "vals": [
+                  "pure",
+                  true
+                ]
+              },
+              {
+                "dsc": "Lorg/jetbrains/annotations/NotNull;"
+              }
+            ]
+          },
+          {
+            "nme": "userAgent",
+            "acc": 9,
+            "dsc": "()Ljava/lang/String;",
+            "invanns": [
+              {
+                "dsc": "Lorg/jetbrains/annotations/Contract;",
+                "vals": [
+                  "pure",
+                  true
+                ]
+              },
+              {
+                "dsc": "Lorg/jetbrains/annotations/NotNull;"
+              }
+            ]
+          },
+          {
+            "nme": "disabled",
+            "acc": 9,
+            "dsc": "()Z",
+            "invanns": [
+              {
+                "dsc": "Lorg/jetbrains/annotations/Contract;",
+                "vals": [
+                  "pure",
+                  true
+                ]
+              }
+            ]
+          },
+          {
+            "nme": "loadConfig",
+            "acc": 9,
+            "dsc": "()V"
+          },
+          {
+            "nme": "saveConfig",
+            "acc": 9,
+            "dsc": "()V"
+          },
+          {
+            "nme": "loadStorage",
+            "acc": 9,
+            "dsc": "()V"
+          },
+          {
+            "nme": "saveStorage",
+            "acc": 9,
+            "dsc": "()V"
+          },
+          {
+            "nme": "disclaimersStorage",
+            "acc": 9,
+            "dsc": "()V"
+          },
+          {
+            "nme": "gameDisclaimerShownStorage",
+            "acc": 9,
+            "dsc": "()V"
+          },
+          {
+            "nme": "lambda$init$2",
+            "acc": 4106,
+            "dsc": "(Ljava/lang/String;Lru/vidtu/ias/utils/Holder;)V"
+          },
+          {
+            "nme": "lambda$init$1",
+            "acc": 4106,
+            "dsc": "(Ljava/lang/String;Ljava/lang/String;)Z"
+          },
+          {
+            "nme": "lambda$init$0",
+            "acc": 4106,
+            "dsc": "(Ljava/lang/Runnable;)Ljava/lang/Thread;"
+          },
+          {
+            "nme": "<clinit>",
+            "acc": 8,
+            "dsc": "()V"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 25,
+            "nme": "CLIENT_ID",
+            "dsc": "Ljava/lang/String;",
+            "val": "54fd49e4-2103-4044-9603-2b028c814ec3"
+          },
+          {
+            "acc": 25,
+            "nme": "TIMEOUT",
+            "dsc": "Ljava/time/Duration;"
+          },
+          {
+            "acc": 26,
+            "nme": "LOGGER",
+            "dsc": "Lorg/slf4j/Logger;"
+          },
+          {
+            "acc": 26,
+            "nme": "USER_AGENT_TEMPLATE",
+            "dsc": "Ljava/lang/String;",
+            "val": "IAS/%s (https://github.com/The-Fireplace-Minecraft-Mods/In-Game-Account-Switcher; %s; %s/%s; Minecraft/%s; Java/%s)"
+          },
+          {
+            "acc": 10,
+            "nme": "executor",
+            "dsc": "Ljava/util/concurrent/ScheduledExecutorService;"
+          },
+          {
+            "acc": 10,
+            "nme": "userAgent",
+            "dsc": "Ljava/lang/String;"
+          },
+          {
+            "acc": 10,
+            "nme": "gameDirectory",
+            "dsc": "Ljava/nio/file/Path;"
+          },
+          {
+            "acc": 10,
+            "nme": "configDirectory",
+            "dsc": "Ljava/nio/file/Path;"
+          },
+          {
+            "acc": 10,
+            "nme": "disabled",
+            "dsc": "Z"
+          }
+        ]
+      },
+      "ru/vidtu/ias/auth/microsoft/MSAuth.class": {
+        "ver": 65,
+        "acc": 49,
+        "nme": "ru/vidtu/ias/auth/microsoft/MSAuth",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 2,
+            "dsc": "()V",
+            "invanns": [
+              {
+                "dsc": "Lorg/jetbrains/annotations/Contract;",
+                "vals": [
+                  "value",
+                  "-> fail",
+                  "pure",
+                  true
+                ]
+              }
+            ]
+          },
+          {
+            "nme": "requestDac",
+            "acc": 9,
+            "dsc": "()Ljava/util/concurrent/CompletableFuture;",
+            "sig": "()Ljava/util/concurrent/CompletableFuture<Lru/vidtu/ias/auth/microsoft/fields/DeviceAuth;>;",
+            "vanns": [
+              {
+                "dsc": "Lcom/google/errorprone/annotations/CheckReturnValue;"
+              }
+            ],
+            "invanns": [
+              {
+                "dsc": "Lorg/jetbrains/annotations/NotNull;"
+              }
+            ]
+          },
+          {
+            "nme": "dacToMsaMsr",
+            "acc": 9,
+            "dsc": "(Ljava/lang/String;)Lru/vidtu/ias/auth/microsoft/fields/MSTokens;",
+            "vanns": [
+              {
+                "dsc": "Lcom/google/errorprone/annotations/CheckReturnValue;"
+              }
+            ],
+            "invanns": [
+              {
+                "dsc": "Lorg/jetbrains/annotations/NotNull;"
+              }
+            ]
+          },
+          {
+            "nme": "msacToMsaMsr",
+            "acc": 9,
+            "dsc": "(Ljava/lang/String;Ljava/lang/String;)Ljava/util/concurrent/CompletableFuture;",
+            "sig": "(Ljava/lang/String;Ljava/lang/String;)Ljava/util/concurrent/CompletableFuture<Lru/vidtu/ias/auth/microsoft/fields/MSTokens;>;",
+            "vanns": [
+              {
+                "dsc": "Lcom/google/errorprone/annotations/CheckReturnValue;"
+              }
+            ],
+            "invanns": [
+              {
+                "dsc": "Lorg/jetbrains/annotations/NotNull;"
+              }
+            ]
+          },
+          {
+            "nme": "msrToMsaMsr",
+            "acc": 9,
+            "dsc": "(Ljava/lang/String;)Ljava/util/concurrent/CompletableFuture;",
+            "sig": "(Ljava/lang/String;)Ljava/util/concurrent/CompletableFuture<Lru/vidtu/ias/auth/microsoft/fields/MSTokens;>;",
+            "vanns": [
+              {
+                "dsc": "Lcom/google/errorprone/annotations/CheckReturnValue;"
+              }
+            ],
+            "invanns": [
+              {
+                "dsc": "Lorg/jetbrains/annotations/NotNull;"
+              }
+            ]
+          },
+          {
+            "nme": "msaToXbl",
+            "acc": 9,
+            "dsc": "(Ljava/lang/String;)Ljava/util/concurrent/CompletableFuture;",
+            "sig": "(Ljava/lang/String;)Ljava/util/concurrent/CompletableFuture<Lru/vidtu/ias/auth/microsoft/fields/XHashedToken;>;",
+            "vanns": [
+              {
+                "dsc": "Lcom/google/errorprone/annotations/CheckReturnValue;"
+              }
+            ],
+            "invanns": [
+              {
+                "dsc": "Lorg/jetbrains/annotations/NotNull;"
+              }
+            ]
+          },
+          {
+            "nme": "xblToXsts",
+            "acc": 9,
+            "dsc": "(Ljava/lang/String;Ljava/lang/String;)Ljava/util/concurrent/CompletableFuture;",
+            "sig": "(Ljava/lang/String;Ljava/lang/String;)Ljava/util/concurrent/CompletableFuture<Lru/vidtu/ias/auth/microsoft/fields/XHashedToken;>;",
+            "vanns": [
+              {
+                "dsc": "Lcom/google/errorprone/annotations/CheckReturnValue;"
+              }
+            ],
+            "invanns": [
+              {
+                "dsc": "Lorg/jetbrains/annotations/NotNull;"
+              }
+            ]
+          },
+          {
+            "nme": "xstsToMca",
+            "acc": 9,
+            "dsc": "(Ljava/lang/String;Ljava/lang/String;)Ljava/util/concurrent/CompletableFuture;",
+            "sig": "(Ljava/lang/String;Ljava/lang/String;)Ljava/util/concurrent/CompletableFuture<Ljava/lang/String;>;",
+            "vanns": [
+              {
+                "dsc": "Lcom/google/errorprone/annotations/CheckReturnValue;"
+              }
+            ],
+            "invanns": [
+              {
+                "dsc": "Lorg/jetbrains/annotations/NotNull;"
+              }
+            ]
+          },
+          {
+            "nme": "mcaToMcp",
+            "acc": 9,
+            "dsc": "(Ljava/lang/String;)Ljava/util/concurrent/CompletableFuture;",
+            "sig": "(Ljava/lang/String;)Ljava/util/concurrent/CompletableFuture<Lru/vidtu/ias/auth/microsoft/fields/MCProfile;>;",
+            "vanns": [
+              {
+                "dsc": "Lcom/google/errorprone/annotations/CheckReturnValue;"
+              }
+            ],
+            "invanns": [
+              {
+                "dsc": "Lorg/jetbrains/annotations/NotNull;"
+              }
+            ]
+          },
+          {
+            "nme": "nameToMcp",
+            "acc": 9,
+            "dsc": "(Ljava/lang/String;)Ljava/util/concurrent/CompletableFuture;",
+            "sig": "(Ljava/lang/String;)Ljava/util/concurrent/CompletableFuture<Lru/vidtu/ias/auth/microsoft/fields/MCProfile;>;",
+            "vanns": [
+              {
+                "dsc": "Lcom/google/errorprone/annotations/CheckReturnValue;"
+              }
+            ],
+            "invanns": [
+              {
+                "dsc": "Lorg/jetbrains/annotations/NotNull;"
+              }
+            ]
+          },
+          {
+            "nme": "lambda$nameToMcp$7",
+            "acc": 4106,
+            "dsc": "(Ljava/lang/String;Ljava/net/http/HttpResponse;)Lru/vidtu/ias/auth/microsoft/fields/MCProfile;"
+          },
+          {
+            "nme": "lambda$mcaToMcp$6",
+            "acc": 4106,
+            "dsc": "(Ljava/lang/String;Ljava/net/http/HttpResponse;)Lru/vidtu/ias/auth/microsoft/fields/MCProfile;"
+          },
+          {
+            "nme": "lambda$xstsToMca$5",
+            "acc": 4106,
+            "dsc": "(Ljava/lang/String;Ljava/lang/String;Ljava/net/http/HttpResponse;)Ljava/lang/String;"
+          },
+          {
+            "nme": "lambda$xblToXsts$4",
+            "acc": 4106,
+            "dsc": "(Ljava/lang/String;Ljava/lang/String;Ljava/net/http/HttpResponse;)Lru/vidtu/ias/auth/microsoft/fields/XHashedToken;"
+          },
+          {
+            "nme": "lambda$msaToXbl$3",
+            "acc": 4106,
+            "dsc": "(Ljava/lang/String;Ljava/net/http/HttpResponse;)Lru/vidtu/ias/auth/microsoft/fields/XHashedToken;"
+          },
+          {
+            "nme": "lambda$msrToMsaMsr$2",
+            "acc": 4106,
+            "dsc": "(Ljava/lang/String;Ljava/net/http/HttpResponse;)Lru/vidtu/ias/auth/microsoft/fields/MSTokens;"
+          },
+          {
+            "nme": "lambda$msacToMsaMsr$1",
+            "acc": 4106,
+            "dsc": "(Ljava/lang/String;Ljava/net/http/HttpResponse;)Lru/vidtu/ias/auth/microsoft/fields/MSTokens;"
+          },
+          {
+            "nme": "lambda$requestDac$0",
+            "acc": 4106,
+            "dsc": "(Ljava/net/http/HttpResponse;)Lru/vidtu/ias/auth/microsoft/fields/DeviceAuth;"
+          },
+          {
+            "nme": "<clinit>",
+            "acc": 8,
+            "dsc": "()V"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 26,
+            "nme": "CLIENT",
+            "dsc": "Ljava/net/http/HttpClient;"
+          },
+          {
+            "acc": 26,
+            "nme": "CLIENT_SYNC",
+            "dsc": "Ljava/net/http/HttpClient;"
+          }
+        ]
+      },
+      "ru/vidtu/ias/screen/ConfigScreen$1.class": {
+        "ver": 65,
+        "acc": 4128,
+        "nme": "ru/vidtu/ias/screen/ConfigScreen$1",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<clinit>",
+            "acc": 8,
+            "dsc": "()V"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 4120,
+            "nme": "$SwitchMap$ru$vidtu$ias$config$ServerMode",
+            "dsc": "[I"
+          },
+          {
+            "acc": 4120,
+            "nme": "$SwitchMap$ru$vidtu$ias$config$TextAlign",
+            "dsc": "[I"
+          }
+        ]
+      },
+      "ru/vidtu/ias/crypt/HardwareCrypt.class": {
+        "ver": 65,
+        "acc": 49,
+        "nme": "ru/vidtu/ias/crypt/HardwareCrypt",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 2,
+            "dsc": "(ILjava/lang/String;Lru/vidtu/ias/crypt/HardwareCrypt;)V",
+            "invanns": [
+              {
+                "dsc": "Lorg/jetbrains/annotations/Contract;",
+                "vals": [
+                  "pure",
+                  true
+                ]
+              }
+            ]
+          },
+          {
+            "nme": "type",
+            "acc": 1,
+            "dsc": "()Ljava/lang/String;",
+            "invanns": [
+              {
+                "dsc": "Lorg/jetbrains/annotations/Contract;",
+                "vals": [
+                  "pure",
+                  true
+                ]
+              },
+              {
+                "dsc": "Lorg/jetbrains/annotations/NotNull;"
+              }
+            ]
+          },
+          {
+            "nme": "migrate",
+            "acc": 1,
+            "dsc": "()Lru/vidtu/ias/crypt/HardwareCrypt;",
+            "invanns": [
+              {
+                "dsc": "Lorg/jetbrains/annotations/Contract;",
+                "vals": [
+                  "pure",
+                  true
+                ]
+              },
+              {
+                "dsc": "Lorg/jetbrains/annotations/Nullable;"
+              }
+            ]
+          },
+          {
+            "nme": "insecure",
+            "acc": 1,
+            "dsc": "()Z",
+            "invanns": [
+              {
+                "dsc": "Lorg/jetbrains/annotations/Contract;",
+                "vals": [
+                  "pure",
+                  true
+                ]
+              }
+            ]
+          },
+          {
+            "nme": "encrypt",
+            "acc": 1,
+            "dsc": "([B)[B",
+            "invanns": [
+              {
+                "dsc": "Lorg/jetbrains/annotations/Contract;",
+                "vals": [
+                  "pure",
+                  true
+                ]
+              }
+            ]
+          },
+          {
+            "nme": "decrypt",
+            "acc": 1,
+            "dsc": "([B)[B",
+            "invanns": [
+              {
+                "dsc": "Lorg/jetbrains/annotations/Contract;",
+                "vals": [
+                  "pure",
+                  true
+                ]
+              }
+            ]
+          },
+          {
+            "nme": "equals",
+            "acc": 1,
+            "dsc": "(Ljava/lang/Object;)Z",
+            "invanns": [
+              {
+                "dsc": "Lorg/jetbrains/annotations/Contract;",
+                "vals": [
+                  "value",
+                  "null -> false",
+                  "pure",
+                  true
+                ]
+              }
+            ]
+          },
+          {
+            "nme": "hashCode",
+            "acc": 1,
+            "dsc": "()I",
+            "invanns": [
+              {
+                "dsc": "Lorg/jetbrains/annotations/Contract;",
+                "vals": [
+                  "pure",
+                  true
+                ]
+              }
+            ]
+          },
+          {
+            "nme": "toString",
+            "acc": 1,
+            "dsc": "()Ljava/lang/String;",
+            "invanns": [
+              {
+                "dsc": "Lorg/jetbrains/annotations/Contract;",
+                "vals": [
+                  "pure",
+                  true
+                ]
+              },
+              {
+                "dsc": "Lorg/jetbrains/annotations/NotNull;"
+              }
+            ]
+          },
+          {
+            "nme": "hardwarePassword",
+            "acc": 2,
+            "dsc": "()Ljava/lang/String;",
+            "invanns": [
+              {
+                "dsc": "Lorg/jetbrains/annotations/Contract;",
+                "vals": [
+                  "pure",
+                  true
+                ]
+              },
+              {
+                "dsc": "Lorg/jetbrains/annotations/NotNull;"
+              }
+            ]
+          },
+          {
+            "nme": "migrate",
+            "acc": 4161,
+            "dsc": "()Lru/vidtu/ias/crypt/Crypt;",
+            "invanns": [
+              {
+                "dsc": "Lorg/jetbrains/annotations/Contract;",
+                "vals": [
+                  "pure",
+                  true
+                ]
+              },
+              {
+                "dsc": "Lorg/jetbrains/annotations/Nullable;"
+              }
+            ]
+          },
+          {
+            "nme": "<clinit>",
+            "acc": 8,
+            "dsc": "()V"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 25,
+            "nme": "INSTANCE_V2",
+            "dsc": "Lru/vidtu/ias/crypt/HardwareCrypt;"
+          },
+          {
+            "acc": 25,
+            "nme": "INSTANCE_V1",
+            "dsc": "Lru/vidtu/ias/crypt/HardwareCrypt;"
+          },
+          {
+            "acc": 26,
+            "nme": "LOGGER",
+            "dsc": "Lorg/slf4j/Logger;"
+          },
+          {
+            "acc": 26,
+            "nme": "EMPTY_MAC",
+            "dsc": "[B"
+          },
+          {
+            "acc": 26,
+            "nme": "ENV",
+            "dsc": "Ljava/util/List;",
+            "sig": "Ljava/util/List<Ljava/lang/String;>;"
+          },
+          {
+            "acc": 26,
+            "nme": "PROPS",
+            "dsc": "Ljava/util/List;",
+            "sig": "Ljava/util/List<Ljava/lang/String;>;"
+          },
+          {
+            "acc": 18,
+            "nme": "version",
+            "dsc": "I"
+          },
+          {
+            "acc": 18,
+            "nme": "type",
+            "dsc": "Ljava/lang/String;"
+          },
+          {
+            "acc": 18,
+            "nme": "migrate",
+            "dsc": "Lru/vidtu/ias/crypt/HardwareCrypt;"
+          }
+        ]
+      },
+      "ru/vidtu/ias/crypt/DummyCrypt.class": {
+        "ver": 65,
+        "acc": 49,
+        "nme": "ru/vidtu/ias/crypt/DummyCrypt",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 2,
+            "dsc": "()V",
+            "invanns": [
+              {
+                "dsc": "Lorg/jetbrains/annotations/Contract;",
+                "vals": [
+                  "pure",
+                  true
+                ]
+              }
+            ]
+          },
+          {
+            "nme": "type",
+            "acc": 1,
+            "dsc": "()Ljava/lang/String;",
+            "invanns": [
+              {
+                "dsc": "Lorg/jetbrains/annotations/Contract;",
+                "vals": [
+                  "pure",
+                  true
+                ]
+              },
+              {
+                "dsc": "Lorg/jetbrains/annotations/NotNull;"
+              }
+            ]
+          },
+          {
+            "nme": "migrate",
+            "acc": 1,
+            "dsc": "()Lru/vidtu/ias/crypt/Crypt;",
+            "invanns": [
+              {
+                "dsc": "Lorg/jetbrains/annotations/Contract;",
+                "vals": [
+                  "value",
+                  "-> null",
+                  "pure",
+                  true
+                ]
+              },
+              {
+                "dsc": "Lorg/jetbrains/annotations/Nullable;"
+              }
+            ]
+          },
+          {
+            "nme": "insecure",
+            "acc": 1,
+            "dsc": "()Z",
+            "invanns": [
+              {
+                "dsc": "Lorg/jetbrains/annotations/Contract;",
+                "vals": [
+                  "value",
+                  "-> true",
+                  "pure",
+                  true
+                ]
+              }
+            ]
+          },
+          {
+            "nme": "encrypt",
+            "acc": 1,
+            "dsc": "([B)[B",
+            "invanns": [
+              {
+                "dsc": "Lorg/jetbrains/annotations/Contract;",
+                "vals": [
+                  "value",
+                  "_ -> param1",
+                  "pure",
+                  true
+                ]
+              }
+            ]
+          },
+          {
+            "nme": "decrypt",
+            "acc": 1,
+            "dsc": "([B)[B",
+            "invanns": [
+              {
+                "dsc": "Lorg/jetbrains/annotations/Contract;",
+                "vals": [
+                  "value",
+                  "_ -> param1",
+                  "pure",
+                  true
+                ]
+              }
+            ]
+          },
+          {
+            "nme": "equals",
+            "acc": 1,
+            "dsc": "(Ljava/lang/Object;)Z",
+            "invanns": [
+              {
+                "dsc": "Lorg/jetbrains/annotations/Contract;",
+                "vals": [
+                  "value",
+                  "null -> false",
+                  "pure",
+                  true
+                ]
+              }
+            ]
+          },
+          {
+            "nme": "hashCode",
+            "acc": 1,
+            "dsc": "()I",
+            "invanns": [
+              {
+                "dsc": "Lorg/jetbrains/annotations/Contract;",
+                "vals": [
+                  "pure",
+                  true
+                ]
+              }
+            ]
+          },
+          {
+            "nme": "toString",
+            "acc": 1,
+            "dsc": "()Ljava/lang/String;",
+            "invanns": [
+              {
+                "dsc": "Lorg/jetbrains/annotations/Contract;",
+                "vals": [
+                  "pure",
+                  true
+                ]
+              },
+              {
+                "dsc": "Lorg/jetbrains/annotations/NotNull;"
+              }
+            ]
+          },
+          {
+            "nme": "<clinit>",
+            "acc": 8,
+            "dsc": "()V"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 25,
+            "nme": "INSTANCE",
+            "dsc": "Lru/vidtu/ias/crypt/DummyCrypt;"
+          }
+        ]
+      },
+      "ru/vidtu/ias/mixins/MinecraftAccessor.class": {
+        "ver": 65,
+        "acc": 1537,
+        "nme": "ru/vidtu/ias/mixins/MinecraftAccessor",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "ias$user",
+            "acc": 1025,
+            "dsc": "(Lnet/minecraft/class_320;)V",
+            "vanns": [
+              {
+                "dsc": "Lorg/spongepowered/asm/mixin/gen/Accessor;",
+                "vals": [
+                  "value",
+                  "user"
+                ]
+              },
+              {
+                "dsc": "Lorg/spongepowered/asm/mixin/Mutable;"
+              }
+            ]
+          },
+          {
+            "nme": "ias$profileFuture",
+            "acc": 1025,
+            "dsc": "(Ljava/util/concurrent/CompletableFuture;)V",
+            "sig": "(Ljava/util/concurrent/CompletableFuture<Lcom/mojang/authlib/yggdrasil/ProfileResult;>;)V",
+            "vanns": [
+              {
+                "dsc": "Lorg/spongepowered/asm/mixin/gen/Accessor;",
+                "vals": [
+                  "value",
+                  "profileFuture"
+                ]
+              },
+              {
+                "dsc": "Lorg/spongepowered/asm/mixin/Mutable;"
+              }
+            ]
+          },
+          {
+            "nme": "ias$authenticationService",
+            "acc": 1025,
+            "dsc": "()Lcom/mojang/authlib/yggdrasil/YggdrasilAuthenticationService;",
+            "vanns": [
+              {
+                "dsc": "Lorg/spongepowered/asm/mixin/gen/Accessor;",
+                "vals": [
+                  "value",
+                  "authenticationService"
+                ]
+              }
+            ]
+          },
+          {
+            "nme": "ias$userApiService",
+            "acc": 1025,
+            "dsc": "(Lcom/mojang/authlib/minecraft/UserApiService;)V",
+            "vanns": [
+              {
+                "dsc": "Lorg/spongepowered/asm/mixin/gen/Accessor;",
+                "vals": [
+                  "value",
+                  "userApiService"
+                ]
+              },
+              {
+                "dsc": "Lorg/spongepowered/asm/mixin/Mutable;"
+              }
+            ]
+          },
+          {
+            "nme": "ias$userPropertiesFuture",
+            "acc": 1025,
+            "dsc": "(Ljava/util/concurrent/CompletableFuture;)V",
+            "sig": "(Ljava/util/concurrent/CompletableFuture<Lcom/mojang/authlib/minecraft/UserApiService$UserProperties;>;)V",
+            "vanns": [
+              {
+                "dsc": "Lorg/spongepowered/asm/mixin/gen/Accessor;",
+                "vals": [
+                  "value",
+                  "userPropertiesFuture"
+                ]
+              },
+              {
+                "dsc": "Lorg/spongepowered/asm/mixin/Mutable;"
+              }
+            ]
+          },
+          {
+            "nme": "ias$playerSocialManager",
+            "acc": 1025,
+            "dsc": "(Lnet/minecraft/class_5520;)V",
+            "vanns": [
+              {
+                "dsc": "Lorg/spongepowered/asm/mixin/gen/Accessor;",
+                "vals": [
+                  "value",
+                  "playerSocialManager"
+                ]
+              },
+              {
+                "dsc": "Lorg/spongepowered/asm/mixin/Mutable;"
+              }
+            ]
+          },
+          {
+            "nme": "ias$telemetryManager",
+            "acc": 1025,
+            "dsc": "(Lnet/minecraft/class_6628;)V",
+            "vanns": [
+              {
+                "dsc": "Lorg/spongepowered/asm/mixin/gen/Accessor;",
+                "vals": [
+                  "value",
+                  "telemetryManager"
+                ]
+              },
+              {
+                "dsc": "Lorg/spongepowered/asm/mixin/Mutable;"
+              }
+            ]
+          },
+          {
+            "nme": "ias$profileKeyPairManager",
+            "acc": 1025,
+            "dsc": "(Lnet/minecraft/class_7853;)V",
+            "vanns": [
+              {
+                "dsc": "Lorg/spongepowered/asm/mixin/gen/Accessor;",
+                "vals": [
+                  "value",
+                  "profileKeyPairManager"
+                ]
+              },
+              {
+                "dsc": "Lorg/spongepowered/asm/mixin/Mutable;"
+              }
+            ]
+          },
+          {
+            "nme": "ias$reportingContext",
+            "acc": 1025,
+            "dsc": "(Lnet/minecraft/class_7574;)V",
+            "vanns": [
+              {
+                "dsc": "Lorg/spongepowered/asm/mixin/gen/Accessor;",
+                "vals": [
+                  "value",
+                  "reportingContext"
+                ]
+              },
+              {
+                "dsc": "Lorg/spongepowered/asm/mixin/Mutable;"
+              }
+            ]
+          }
+        ],
+        "flds": [],
+        "invanns": [
+          {
+            "dsc": "Lorg/spongepowered/asm/mixin/Mixin;",
+            "vals": [
+              "value",
+              [
+                {
+                  "itrlNme": "net/minecraft/class_310"
+                }
+              ]
+            ]
+          }
+        ]
+      },
+      "ru/vidtu/ias/IASMinecraft.class": {
+        "ver": 65,
+        "acc": 49,
+        "nme": "ru/vidtu/ias/IASMinecraft",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 2,
+            "dsc": "()V"
+          },
+          {
+            "nme": "init",
+            "acc": 9,
+            "dsc": "(Ljava/nio/file/Path;Ljava/nio/file/Path;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V"
+          },
+          {
+            "nme": "onInit",
+            "acc": 9,
+            "dsc": "(Lnet/minecraft/class_310;Lnet/minecraft/class_437;Ljava/util/function/Consumer;)V",
+            "sig": "(Lnet/minecraft/class_310;Lnet/minecraft/class_437;Ljava/util/function/Consumer<Lnet/minecraft/class_4185;>;)V"
+          },
+          {
+            "nme": "onDraw",
+            "acc": 9,
+            "dsc": "(Lnet/minecraft/class_437;Lnet/minecraft/class_327;Lnet/minecraft/class_332;)V"
+          },
+          {
+            "nme": "account",
+            "acc": 9,
+            "dsc": "(Lnet/minecraft/class_310;Lru/vidtu/ias/auth/LoginData;)Ljava/util/concurrent/CompletableFuture;",
+            "sig": "(Lnet/minecraft/class_310;Lru/vidtu/ias/auth/LoginData;)Ljava/util/concurrent/CompletableFuture<Ljava/lang/Void;>;"
+          },
+          {
+            "nme": "lambda$account$4",
+            "acc": 4106,
+            "dsc": "(Lru/vidtu/ias/auth/LoginData;Ljava/lang/Throwable;)Ljava/lang/Void;"
+          },
+          {
+            "nme": "lambda$account$3",
+            "acc": 4106,
+            "dsc": "(Lru/vidtu/ias/auth/LoginData;Lnet/minecraft/class_310;)V"
+          },
+          {
+            "nme": "lambda$account$2",
+            "acc": 4106,
+            "dsc": "(Lru/vidtu/ias/mixins/MinecraftAccessor;Lnet/minecraft/class_320;Ljava/util/concurrent/CompletableFuture;Lcom/mojang/authlib/minecraft/UserApiService;Ljava/util/concurrent/CompletableFuture;Lnet/minecraft/class_5520;Lnet/minecraft/class_6628;Lnet/minecraft/class_7853;Lnet/minecraft/class_7574;Lnet/minecraft/class_310;)V"
+          },
+          {
+            "nme": "lambda$onInit$1",
+            "acc": 4106,
+            "dsc": "(Lnet/minecraft/class_310;Lnet/minecraft/class_437;Lnet/minecraft/class_4185;)V"
+          },
+          {
+            "nme": "lambda$onInit$0",
+            "acc": 4106,
+            "dsc": "(Lnet/minecraft/class_310;Lnet/minecraft/class_437;Lnet/minecraft/class_4185;)V"
+          },
+          {
+            "nme": "<clinit>",
+            "acc": 8,
+            "dsc": "()V"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 25,
+            "nme": "NICK_WARN",
+            "dsc": "Lnet/minecraft/class_370$class_9037;"
+          },
+          {
+            "acc": 26,
+            "nme": "LOGGER",
+            "dsc": "Lorg/slf4j/Logger;"
+          },
+          {
+            "acc": 26,
+            "nme": "BUTTON",
+            "dsc": "Lnet/minecraft/class_8666;"
+          },
+          {
+            "acc": 10,
+            "nme": "textX",
+            "dsc": "I"
+          },
+          {
+            "acc": 10,
+            "nme": "textY",
+            "dsc": "I"
+          },
+          {
+            "acc": 10,
+            "nme": "text",
+            "dsc": "Lnet/minecraft/class_2561;"
+          }
+        ]
+      },
+      "ru/vidtu/ias/mixins/MinecraftMixin.class": {
+        "ver": 65,
+        "acc": 49,
+        "nme": "ru/vidtu/ias/mixins/MinecraftMixin",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 2,
+            "dsc": "()V"
+          },
+          {
+            "nme": "ias$createTitle$return",
+            "acc": 2,
+            "dsc": "(Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfoReturnable;)V",
+            "sig": "(Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfoReturnable<Ljava/lang/String;>;)V",
+            "vanns": [
+              {
+                "dsc": "Lorg/spongepowered/asm/mixin/injection/Inject;",
+                "vals": [
+                  "method",
+                  [
+                    "createTitle"
+                  ],
+                  "at",
+                  [
+                    {
+                      "desc": "Lorg/spongepowered/asm/mixin/injection/At;",
+                      "values": [
+                        "value",
+                        "RETURN"
+                      ],
+                      "api": 589824
+                    }
+                  ],
+                  "cancellable",
+                  true
+                ]
+              }
+            ]
+          }
+        ],
+        "flds": [
+          {
+            "acc": 2,
+            "nme": "field_1726",
+            "dsc": "Lnet/minecraft/class_320;"
+          }
+        ],
+        "invanns": [
+          {
+            "dsc": "Lorg/spongepowered/asm/mixin/Mixin;",
+            "vals": [
+              "value",
+              [
+                {
+                  "itrlNme": "net/minecraft/class_310"
+                }
+              ]
+            ]
+          }
+        ]
+      },
+      "ru/vidtu/ias/utils/exceptions/FriendlyException.class": {
+        "ver": 65,
+        "acc": 49,
+        "nme": "ru/vidtu/ias/utils/exceptions/FriendlyException",
+        "super": "java/lang/RuntimeException",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "(Ljava/lang/String;Ljava/lang/String;)V",
+            "invanns": [
+              {
+                "dsc": "Lorg/jetbrains/annotations/Contract;",
+                "vals": [
+                  "pure",
+                  true
+                ]
+              }
+            ]
+          },
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "(Ljava/lang/String;Ljava/lang/Throwable;Ljava/lang/String;)V",
+            "invanns": [
+              {
+                "dsc": "Lorg/jetbrains/annotations/Contract;",
+                "vals": [
+                  "pure",
+                  true
+                ]
+              }
+            ]
+          },
+          {
+            "nme": "key",
+            "acc": 1,
+            "dsc": "()Ljava/lang/String;",
+            "invanns": [
+              {
+                "dsc": "Lorg/jetbrains/annotations/Contract;",
+                "vals": [
+                  "pure",
+                  true
+                ]
+              },
+              {
+                "dsc": "Lorg/jetbrains/annotations/NotNull;"
+              }
+            ]
+          },
+          {
+            "nme": "friendlyInChain",
+            "acc": 9,
+            "dsc": "(Ljava/lang/Throwable;)Lru/vidtu/ias/utils/exceptions/FriendlyException;",
+            "invanns": [
+              {
+                "dsc": "Lorg/jetbrains/annotations/Contract;",
+                "vals": [
+                  "pure",
+                  true
+                ]
+              },
+              {
+                "dsc": "Lorg/jetbrains/annotations/Nullable;"
+              }
+            ]
+          }
+        ],
+        "flds": [
+          {
+            "acc": 18,
+            "nme": "key",
+            "dsc": "Ljava/lang/String;"
+          }
+        ]
+      },
+      "ru/vidtu/ias/screen/DeletePopupScreen.class": {
+        "ver": 65,
+        "acc": 48,
+        "nme": "ru/vidtu/ias/screen/DeletePopupScreen",
+        "super": "net/minecraft/class_437",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 0,
+            "dsc": "(Lnet/minecraft/class_437;Lru/vidtu/ias/account/Account;Ljava/lang/Runnable;)V"
+          },
+          {
+            "nme": "method_25426",
+            "acc": 4,
+            "dsc": "()V"
+          },
+          {
+            "nme": "method_25394",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/class_332;IIF)V"
+          },
+          {
+            "nme": "method_25420",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/class_332;IIF)V"
+          },
+          {
+            "nme": "method_25404",
+            "acc": 1,
+            "dsc": "(III)Z"
+          },
+          {
+            "nme": "method_25419",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "toString",
+            "acc": 1,
+            "dsc": "()Ljava/lang/String;"
+          },
+          {
+            "nme": "lambda$init$1",
+            "acc": 4098,
+            "dsc": "(Lnet/minecraft/class_4185;)V"
+          },
+          {
+            "nme": "lambda$init$0",
+            "acc": 4098,
+            "dsc": "(Lnet/minecraft/class_4185;)V"
+          },
+          {
+            "nme": "<clinit>",
+            "acc": 8,
+            "dsc": "()V"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 18,
+            "nme": "parent",
+            "dsc": "Lnet/minecraft/class_437;"
+          },
+          {
+            "acc": 18,
+            "nme": "prompt",
+            "dsc": "Lnet/minecraft/class_2561;"
+          },
+          {
+            "acc": 18,
+            "nme": "handler",
+            "dsc": "Ljava/lang/Runnable;"
+          },
+          {
+            "acc": 2,
+            "nme": "label",
+            "dsc": "Lnet/minecraft/class_5489;"
+          },
+          {
+            "acc": 4120,
+            "nme": "$assertionsDisabled",
+            "dsc": "Z"
+          }
+        ]
+      },
+      "ru/vidtu/ias/account/Account.class": {
+        "ver": 65,
+        "acc": 1537,
+        "nme": "ru/vidtu/ias/account/Account",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "type",
+            "acc": 1025,
+            "dsc": "()Ljava/lang/String;",
+            "invanns": [
+              {
+                "dsc": "Lorg/jetbrains/annotations/Contract;",
+                "vals": [
+                  "pure",
+                  true
+                ]
+              },
+              {
+                "dsc": "Lorg/jetbrains/annotations/NotNull;"
+              }
+            ]
+          },
+          {
+            "nme": "typeTipKey",
+            "acc": 1025,
+            "dsc": "()Ljava/lang/String;",
+            "invanns": [
+              {
+                "dsc": "Lorg/jetbrains/annotations/Contract;",
+                "vals": [
+                  "pure",
+                  true
+                ]
+              },
+              {
+                "dsc": "Lorg/jetbrains/annotations/NotNull;"
+              }
+            ]
+          },
+          {
+            "nme": "uuid",
+            "acc": 1025,
+            "dsc": "()Ljava/util/UUID;",
+            "invanns": [
+              {
+                "dsc": "Lorg/jetbrains/annotations/Contract;",
+                "vals": [
+                  "pure",
+                  true
+                ]
+              },
+              {
+                "dsc": "Lorg/jetbrains/annotations/NotNull;"
+              }
+            ]
+          },
+          {
+            "nme": "name",
+            "acc": 1025,
+            "dsc": "()Ljava/lang/String;",
+            "invanns": [
+              {
+                "dsc": "Lorg/jetbrains/annotations/Contract;",
+                "vals": [
+                  "pure",
+                  true
+                ]
+              },
+              {
+                "dsc": "Lorg/jetbrains/annotations/NotNull;"
+              }
+            ]
+          },
+          {
+            "nme": "canLogin",
+            "acc": 1025,
+            "dsc": "()Z",
+            "invanns": [
+              {
+                "dsc": "Lorg/jetbrains/annotations/Contract;",
+                "vals": [
+                  "pure",
+                  true
+                ]
+              }
+            ]
+          },
+          {
+            "nme": "insecure",
+            "acc": 1025,
+            "dsc": "()Z",
+            "invanns": [
+              {
+                "dsc": "Lorg/jetbrains/annotations/Contract;",
+                "vals": [
+                  "pure",
+                  true
+                ]
+              }
+            ]
+          },
+          {
+            "nme": "skin",
+            "acc": 1025,
+            "dsc": "()Ljava/util/UUID;",
+            "invanns": [
+              {
+                "dsc": "Lorg/jetbrains/annotations/Contract;",
+                "vals": [
+                  "pure",
+                  true
+                ]
+              },
+              {
+                "dsc": "Lorg/jetbrains/annotations/NotNull;"
+              }
+            ]
+          },
+          {
+            "nme": "login",
+            "acc": 1025,
+            "dsc": "(Lru/vidtu/ias/auth/handlers/LoginHandler;)V"
+          },
+          {
+            "nme": "write",
+            "acc": 1025,
+            "dsc": "(Ljava/io/DataOutput;)V",
+            "exs": [
+              "java/io/IOException"
+            ]
+          },
+          {
+            "nme": "writeTyped",
+            "acc": 9,
+            "dsc": "(Ljava/io/DataOutput;Lru/vidtu/ias/account/Account;)V",
+            "exs": [
+              "java/io/IOException"
+            ]
+          },
+          {
+            "nme": "readTyped",
+            "acc": 9,
+            "dsc": "(Ljava/io/DataInput;)Lru/vidtu/ias/account/Account;",
+            "exs": [
+              "java/io/IOException"
+            ],
+            "vanns": [
+              {
+                "dsc": "Lcom/google/errorprone/annotations/CheckReturnValue;"
+              }
+            ],
+            "invanns": [
+              {
+                "dsc": "Lorg/jetbrains/annotations/NotNull;"
+              }
+            ]
+          }
+        ],
+        "flds": []
+      },
+      "ru/vidtu/ias/config/IASConfig$1.class": {
+        "ver": 65,
+        "acc": 4128,
+        "nme": "ru/vidtu/ias/config/IASConfig$1",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<clinit>",
+            "acc": 8,
+            "dsc": "()V"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 4120,
+            "nme": "$SwitchMap$ru$vidtu$ias$config$ServerMode",
+            "dsc": "[I"
+          }
+        ]
+      },
+      "ru/vidtu/ias/config/migrator/Migrator.class": {
+        "ver": 65,
+        "acc": 1537,
+        "nme": "ru/vidtu/ias/config/migrator/Migrator",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "load",
+            "acc": 1025,
+            "dsc": "(Lcom/google/gson/JsonObject;)V"
+          },
+          {
+            "nme": "fromVersion",
+            "acc": 9,
+            "dsc": "(I)Lru/vidtu/ias/config/migrator/Migrator;",
+            "invanns": [
+              {
+                "dsc": "Lorg/jetbrains/annotations/Contract;",
+                "vals": [
+                  "pure",
+                  true
+                ]
+              },
+              {
+                "dsc": "Lorg/jetbrains/annotations/Nullable;"
+              }
+            ]
+          },
+          {
+            "nme": "<clinit>",
+            "acc": 8,
+            "dsc": "()V"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 25,
+            "nme": "OBFUSCATE_LOGS",
+            "dsc": "Ljava/util/regex/Pattern;"
+          }
+        ]
+      },
+      "ru/vidtu/ias/auth/microsoft/MSAuthClient.class": {
+        "ver": 65,
+        "acc": 49,
+        "nme": "ru/vidtu/ias/auth/microsoft/MSAuthClient",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "(Lru/vidtu/ias/crypt/Crypt;Lru/vidtu/ias/auth/handlers/CreateHandler;)V",
+            "invanns": [
+              {
+                "dsc": "Lorg/jetbrains/annotations/Contract;",
+                "vals": [
+                  "pure",
+                  true
+                ]
+              }
+            ]
+          },
+          {
+            "nme": "start",
+            "acc": 1,
+            "dsc": "()Ljava/util/concurrent/CompletableFuture;",
+            "sig": "()Ljava/util/concurrent/CompletableFuture<Lru/vidtu/ias/auth/microsoft/fields/DeviceAuth;>;",
+            "vanns": [
+              {
+                "dsc": "Lcom/google/errorprone/annotations/CheckReturnValue;"
+              }
+            ],
+            "invanns": [
+              {
+                "dsc": "Lorg/jetbrains/annotations/NotNull;"
+              }
+            ]
+          },
+          {
+            "nme": "tick",
+            "acc": 2,
+            "dsc": "()V"
+          },
+          {
+            "nme": "close",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "toString",
+            "acc": 1,
+            "dsc": "()Ljava/lang/String;",
+            "invanns": [
+              {
+                "dsc": "Lorg/jetbrains/annotations/Contract;",
+                "vals": [
+                  "pure",
+                  true
+                ]
+              },
+              {
+                "dsc": "Lorg/jetbrains/annotations/NotNull;"
+              }
+            ]
+          },
+          {
+            "nme": "lambda$tick$9",
+            "acc": 4098,
+            "dsc": "(Ljava/lang/Throwable;)Ljava/lang/Void;"
+          },
+          {
+            "nme": "lambda$tick$8",
+            "acc": 4098,
+            "dsc": "(Lru/vidtu/ias/utils/Holder;Lru/vidtu/ias/auth/microsoft/fields/MCProfile;)V"
+          },
+          {
+            "nme": "lambda$tick$7",
+            "acc": 4098,
+            "dsc": "(Lru/vidtu/ias/utils/Holder;Lru/vidtu/ias/auth/microsoft/fields/MSTokens;Lru/vidtu/ias/utils/Holder;Lru/vidtu/ias/auth/microsoft/fields/MCProfile;)Lru/vidtu/ias/auth/microsoft/fields/MCProfile;"
+          },
+          {
+            "nme": "lambda$tick$6",
+            "acc": 4106,
+            "dsc": "(Ljava/lang/Throwable;)Lru/vidtu/ias/auth/microsoft/fields/MCProfile;"
+          },
+          {
+            "nme": "lambda$tick$5",
+            "acc": 4106,
+            "dsc": "(Ljava/lang/Throwable;)Z"
+          },
+          {
+            "nme": "lambda$tick$4",
+            "acc": 4098,
+            "dsc": "(Lru/vidtu/ias/utils/Holder;Ljava/lang/String;)Ljava/util/concurrent/CompletionStage;"
+          },
+          {
+            "nme": "lambda$tick$3",
+            "acc": 4098,
+            "dsc": "(Lru/vidtu/ias/auth/microsoft/fields/XHashedToken;)Ljava/util/concurrent/CompletionStage;"
+          },
+          {
+            "nme": "lambda$tick$2",
+            "acc": 4098,
+            "dsc": "(Lru/vidtu/ias/auth/microsoft/fields/XHashedToken;)Ljava/util/concurrent/CompletionStage;"
+          },
+          {
+            "nme": "lambda$tick$1",
+            "acc": 4098,
+            "dsc": "(Lru/vidtu/ias/auth/microsoft/fields/MSTokens;Ljava/lang/Object;)Ljava/util/concurrent/CompletionStage;"
+          },
+          {
+            "nme": "lambda$start$0",
+            "acc": 4098,
+            "dsc": "(Lru/vidtu/ias/auth/microsoft/fields/DeviceAuth;)Lru/vidtu/ias/auth/microsoft/fields/DeviceAuth;"
+          },
+          {
+            "nme": "<clinit>",
+            "acc": 8,
+            "dsc": "()V"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 25,
+            "nme": "LOGGER",
+            "dsc": "Lorg/slf4j/Logger;"
+          },
+          {
+            "acc": 18,
+            "nme": "crypt",
+            "dsc": "Lru/vidtu/ias/crypt/Crypt;"
+          },
+          {
+            "acc": 18,
+            "nme": "handler",
+            "dsc": "Lru/vidtu/ias/auth/handlers/CreateHandler;"
+          },
+          {
+            "acc": 2,
+            "nme": "auth",
+            "dsc": "Lru/vidtu/ias/auth/microsoft/fields/DeviceAuth;"
+          },
+          {
+            "acc": 2,
+            "nme": "expire",
+            "dsc": "Ljava/time/Instant;"
+          },
+          {
+            "acc": 2,
+            "nme": "poll",
+            "dsc": "Ljava/time/Instant;"
+          },
+          {
+            "acc": 2,
+            "nme": "task",
+            "dsc": "Ljava/util/concurrent/ScheduledFuture;",
+            "sig": "Ljava/util/concurrent/ScheduledFuture<*>;"
+          }
+        ]
+      },
+      "ru/vidtu/ias/config/migrator/MigratorV2.class": {
+        "ver": 65,
+        "acc": 48,
+        "nme": "ru/vidtu/ias/config/migrator/MigratorV2",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 0,
+            "dsc": "()V"
+          },
+          {
+            "nme": "load",
+            "acc": 1,
+            "dsc": "(Lcom/google/gson/JsonObject;)V"
+          },
+          {
+            "nme": "toString",
+            "acc": 1,
+            "dsc": "()Ljava/lang/String;",
+            "invanns": [
+              {
+                "dsc": "Lorg/jetbrains/annotations/Contract;",
+                "vals": [
+                  "pure",
+                  true
+                ]
+              },
+              {
+                "dsc": "Lorg/jetbrains/annotations/NotNull;"
+              }
+            ]
+          }
+        ],
+        "flds": []
+      },
+      "ru/vidtu/ias/screen/ConfigScreen.class": {
+        "ver": 65,
+        "acc": 49,
+        "nme": "ru/vidtu/ias/screen/ConfigScreen",
+        "super": "net/minecraft/class_437",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/class_437;)V"
+          },
+          {
+            "nme": "method_25426",
+            "acc": 4,
+            "dsc": "()V"
+          },
+          {
+            "nme": "method_25419",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "method_25394",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/class_332;IIF)V"
+          },
+          {
+            "nme": "toString",
+            "acc": 1,
+            "dsc": "()Ljava/lang/String;"
+          },
+          {
+            "nme": "lambda$init$20",
+            "acc": 4098,
+            "dsc": "(Lnet/minecraft/class_4185;)V"
+          },
+          {
+            "nme": "lambda$init$19",
+            "acc": 4098,
+            "dsc": "(Lnet/minecraft/class_4286;Z)V"
+          },
+          {
+            "nme": "lambda$init$18",
+            "acc": 4098,
+            "dsc": "(Lnet/minecraft/class_4286;Z)V"
+          },
+          {
+            "nme": "lambda$init$17",
+            "acc": 4106,
+            "dsc": "(Lnet/minecraft/class_4286;Z)V"
+          },
+          {
+            "nme": "lambda$init$16",
+            "acc": 4106,
+            "dsc": "(Lnet/minecraft/class_4286;Z)V"
+          },
+          {
+            "nme": "lambda$init$15",
+            "acc": 4106,
+            "dsc": "(Lnet/minecraft/class_4185;)V"
+          },
+          {
+            "nme": "lambda$init$14",
+            "acc": 4106,
+            "dsc": "(Lnet/minecraft/class_4286;Z)V"
+          },
+          {
+            "nme": "lambda$init$13",
+            "acc": 4098,
+            "dsc": "(Ljava/lang/String;)V"
+          },
+          {
+            "nme": "lambda$init$12",
+            "acc": 4098,
+            "dsc": "(Ljava/lang/String;)V"
+          },
+          {
+            "nme": "lambda$init$11",
+            "acc": 4098,
+            "dsc": "(Lnet/minecraft/class_4286;Z)V"
+          },
+          {
+            "nme": "lambda$init$10",
+            "acc": 4106,
+            "dsc": "(Lnet/minecraft/class_4185;)V"
+          },
+          {
+            "nme": "lambda$init$9",
+            "acc": 4098,
+            "dsc": "(Ljava/lang/String;)V"
+          },
+          {
+            "nme": "lambda$init$8",
+            "acc": 4098,
+            "dsc": "(Ljava/lang/String;)V"
+          },
+          {
+            "nme": "lambda$init$7",
+            "acc": 4098,
+            "dsc": "(Lnet/minecraft/class_4286;Z)V"
+          },
+          {
+            "nme": "lambda$init$6",
+            "acc": 4098,
+            "dsc": "(Ljava/lang/String;)V"
+          },
+          {
+            "nme": "lambda$init$5",
+            "acc": 4098,
+            "dsc": "(Ljava/lang/String;)V"
+          },
+          {
+            "nme": "lambda$init$4",
+            "acc": 4098,
+            "dsc": "(Lnet/minecraft/class_4286;Z)V"
+          },
+          {
+            "nme": "lambda$init$3",
+            "acc": 4106,
+            "dsc": "(Lnet/minecraft/class_4185;)V"
+          },
+          {
+            "nme": "lambda$init$2",
+            "acc": 4098,
+            "dsc": "(Ljava/lang/String;)V"
+          },
+          {
+            "nme": "lambda$init$1",
+            "acc": 4098,
+            "dsc": "(Ljava/lang/String;)V"
+          },
+          {
+            "nme": "lambda$init$0",
+            "acc": 4098,
+            "dsc": "(Lnet/minecraft/class_4286;Z)V"
+          },
+          {
+            "nme": "<clinit>",
+            "acc": 8,
+            "dsc": "()V"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 26,
+            "nme": "LOGGER",
+            "dsc": "Lorg/slf4j/Logger;"
+          },
+          {
+            "acc": 18,
+            "nme": "parent",
+            "dsc": "Lnet/minecraft/class_437;"
+          },
+          {
+            "acc": 2,
+            "nme": "titleTextX",
+            "dsc": "Lnet/minecraft/class_342;"
+          },
+          {
+            "acc": 2,
+            "nme": "titleTextY",
+            "dsc": "Lnet/minecraft/class_342;"
+          },
+          {
+            "acc": 2,
+            "nme": "titleTextAlign",
+            "dsc": "Lnet/minecraft/class_4185;"
+          },
+          {
+            "acc": 2,
+            "nme": "titleButtonX",
+            "dsc": "Lnet/minecraft/class_342;"
+          },
+          {
+            "acc": 2,
+            "nme": "titleButtonY",
+            "dsc": "Lnet/minecraft/class_342;"
+          },
+          {
+            "acc": 2,
+            "nme": "serversTextX",
+            "dsc": "Lnet/minecraft/class_342;"
+          },
+          {
+            "acc": 2,
+            "nme": "serversTextY",
+            "dsc": "Lnet/minecraft/class_342;"
+          },
+          {
+            "acc": 2,
+            "nme": "serversTextAlign",
+            "dsc": "Lnet/minecraft/class_4185;"
+          },
+          {
+            "acc": 2,
+            "nme": "serversButtonX",
+            "dsc": "Lnet/minecraft/class_342;"
+          },
+          {
+            "acc": 2,
+            "nme": "serversButtonY",
+            "dsc": "Lnet/minecraft/class_342;"
+          },
+          {
+            "acc": 4120,
+            "nme": "$assertionsDisabled",
+            "dsc": "Z"
+          }
+        ]
+      },
+      "ru/vidtu/ias/screen/MicrosoftPopupScreen.class": {
+        "ver": 65,
+        "acc": 48,
+        "nme": "ru/vidtu/ias/screen/MicrosoftPopupScreen",
+        "super": "net/minecraft/class_437",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 0,
+            "dsc": "(Lnet/minecraft/class_437;Ljava/util/function/Consumer;Lru/vidtu/ias/crypt/Crypt;)V",
+            "sig": "(Lnet/minecraft/class_437;Ljava/util/function/Consumer<Lru/vidtu/ias/account/Account;>;Lru/vidtu/ias/crypt/Crypt;)V"
+          },
+          {
+            "nme": "cancelled",
+            "acc": 1,
+            "dsc": "()Z"
+          },
+          {
+            "nme": "method_25426",
+            "acc": 4,
+            "dsc": "()V"
+          },
+          {
+            "nme": "client",
+            "acc": 2,
+            "dsc": "()V"
+          },
+          {
+            "nme": "server",
+            "acc": 2,
+            "dsc": "()V"
+          },
+          {
+            "nme": "method_25419",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "method_25432",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "method_25394",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/class_332;IIF)V"
+          },
+          {
+            "nme": "method_25420",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/class_332;IIF)V"
+          },
+          {
+            "nme": "stage",
+            "acc": 129,
+            "dsc": "(Ljava/lang/String;[Ljava/lang/Object;)V"
+          },
+          {
+            "nme": "success",
+            "acc": 1,
+            "dsc": "(Lru/vidtu/ias/account/MicrosoftAccount;)V"
+          },
+          {
+            "nme": "error",
+            "acc": 1,
+            "dsc": "(Ljava/lang/Throwable;)V"
+          },
+          {
+            "nme": "toString",
+            "acc": 1,
+            "dsc": "()Ljava/lang/String;"
+          },
+          {
+            "nme": "lambda$success$13",
+            "acc": 4098,
+            "dsc": "(Lru/vidtu/ias/account/MicrosoftAccount;)V"
+          },
+          {
+            "nme": "lambda$stage$12",
+            "acc": 4098,
+            "dsc": "()V"
+          },
+          {
+            "nme": "lambda$removed$11",
+            "acc": 4098,
+            "dsc": "()V"
+          },
+          {
+            "nme": "lambda$server$10",
+            "acc": 4098,
+            "dsc": "(Ljava/lang/Throwable;)Ljava/lang/Void;"
+          },
+          {
+            "nme": "lambda$server$9",
+            "acc": 4098,
+            "dsc": "()V"
+          },
+          {
+            "nme": "lambda$server$8",
+            "acc": 4098,
+            "dsc": "()V"
+          },
+          {
+            "nme": "lambda$client$7",
+            "acc": 4098,
+            "dsc": "(Ljava/lang/Throwable;)Ljava/lang/Void;"
+          },
+          {
+            "nme": "lambda$client$6",
+            "acc": 4098,
+            "dsc": "(Lru/vidtu/ias/auth/microsoft/fields/DeviceAuth;)V"
+          },
+          {
+            "nme": "lambda$init$5",
+            "acc": 4098,
+            "dsc": "()V"
+          },
+          {
+            "nme": "lambda$init$4",
+            "acc": 4106,
+            "dsc": "(Lnet/minecraft/class_4185;Ljava/lang/String;)V"
+          },
+          {
+            "nme": "lambda$init$3",
+            "acc": 4098,
+            "dsc": "(Lnet/minecraft/class_4185;)V"
+          },
+          {
+            "nme": "lambda$init$2",
+            "acc": 4106,
+            "dsc": "(Ljava/lang/String;Ljava/lang/Integer;)Lnet/minecraft/class_5481;"
+          },
+          {
+            "nme": "lambda$init$1",
+            "acc": 4098,
+            "dsc": "()V"
+          },
+          {
+            "nme": "lambda$init$0",
+            "acc": 4098,
+            "dsc": "(Lnet/minecraft/class_4185;)V"
+          },
+          {
+            "nme": "<clinit>",
+            "acc": 8,
+            "dsc": "()V"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 26,
+            "nme": "LOGGER",
+            "dsc": "Lorg/slf4j/Logger;"
+          },
+          {
+            "acc": 18,
+            "nme": "parent",
+            "dsc": "Lnet/minecraft/class_437;"
+          },
+          {
+            "acc": 18,
+            "nme": "lock",
+            "dsc": "Ljava/lang/Object;"
+          },
+          {
+            "acc": 18,
+            "nme": "handler",
+            "dsc": "Ljava/util/function/Consumer;",
+            "sig": "Ljava/util/function/Consumer<Lru/vidtu/ias/account/Account;>;"
+          },
+          {
+            "acc": 2,
+            "nme": "crypt",
+            "dsc": "Lru/vidtu/ias/crypt/Crypt;"
+          },
+          {
+            "acc": 2,
+            "nme": "client",
+            "dsc": "Lru/vidtu/ias/auth/microsoft/MSAuthClient;"
+          },
+          {
+            "acc": 2,
+            "nme": "server",
+            "dsc": "Lru/vidtu/ias/auth/microsoft/MSAuthServer;"
+          },
+          {
+            "acc": 2,
+            "nme": "stage",
+            "dsc": "Lnet/minecraft/class_2561;"
+          },
+          {
+            "acc": 2,
+            "nme": "label",
+            "dsc": "Lnet/minecraft/class_5489;"
+          },
+          {
+            "acc": 2,
+            "nme": "password",
+            "dsc": "Lru/vidtu/ias/screen/PopupBox;"
+          },
+          {
+            "acc": 2,
+            "nme": "cryptPasswordTip",
+            "dsc": "Lnet/minecraft/class_5489;"
+          },
+          {
+            "acc": 2,
+            "nme": "error",
+            "dsc": "F"
+          },
+          {
+            "acc": 2,
+            "nme": "errorNote",
+            "dsc": "Lnet/minecraft/class_5489;"
+          },
+          {
+            "acc": 4120,
+            "nme": "$assertionsDisabled",
+            "dsc": "Z"
+          }
+        ]
+      },
+      "ru/vidtu/ias/screen/MicrosoftCryptPopupScreen.class": {
+        "ver": 65,
+        "acc": 48,
+        "nme": "ru/vidtu/ias/screen/MicrosoftCryptPopupScreen",
+        "super": "net/minecraft/class_437",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 0,
+            "dsc": "(Lnet/minecraft/class_437;Ljava/util/function/Consumer;)V",
+            "sig": "(Lnet/minecraft/class_437;Ljava/util/function/Consumer<Lru/vidtu/ias/account/Account;>;)V"
+          },
+          {
+            "nme": "method_25426",
+            "acc": 4,
+            "dsc": "()V"
+          },
+          {
+            "nme": "method_25394",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/class_332;IIF)V"
+          },
+          {
+            "nme": "method_25420",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/class_332;IIF)V"
+          },
+          {
+            "nme": "method_25419",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "method_25404",
+            "acc": 1,
+            "dsc": "(III)Z"
+          },
+          {
+            "nme": "toString",
+            "acc": 1,
+            "dsc": "()Ljava/lang/String;"
+          },
+          {
+            "nme": "lambda$init$3",
+            "acc": 4098,
+            "dsc": "(Lnet/minecraft/class_4185;)V"
+          },
+          {
+            "nme": "lambda$init$2",
+            "acc": 4098,
+            "dsc": "(Lnet/minecraft/class_4185;)V"
+          },
+          {
+            "nme": "lambda$init$1",
+            "acc": 4098,
+            "dsc": "(Lnet/minecraft/class_4185;)V"
+          },
+          {
+            "nme": "lambda$init$0",
+            "acc": 4098,
+            "dsc": "(Lnet/minecraft/class_4185;)V"
+          },
+          {
+            "nme": "<clinit>",
+            "acc": 8,
+            "dsc": "()V"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 18,
+            "nme": "parent",
+            "dsc": "Lnet/minecraft/class_437;"
+          },
+          {
+            "acc": 18,
+            "nme": "handler",
+            "dsc": "Ljava/util/function/Consumer;",
+            "sig": "Ljava/util/function/Consumer<Lru/vidtu/ias/account/Account;>;"
+          },
+          {
+            "acc": 2,
+            "nme": "plain",
+            "dsc": "Lru/vidtu/ias/screen/PopupButton;"
+          },
+          {
+            "acc": 4120,
+            "nme": "$assertionsDisabled",
+            "dsc": "Z"
+          }
+        ]
+      },
+      "ru/vidtu/ias/auth/LoginData.class": {
+        "ver": 65,
+        "acc": 65585,
+        "nme": "ru/vidtu/ias/auth/LoginData",
+        "super": "java/lang/Record",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "(Ljava/lang/String;Ljava/util/UUID;Ljava/lang/String;Z)V"
+          },
+          {
+            "nme": "toString",
+            "acc": 1,
+            "dsc": "()Ljava/lang/String;",
+            "invanns": [
+              {
+                "dsc": "Lorg/jetbrains/annotations/Contract;",
+                "vals": [
+                  "pure",
+                  true
+                ]
+              },
+              {
+                "dsc": "Lorg/jetbrains/annotations/NotNull;"
+              }
+            ]
+          },
+          {
+            "nme": "hashCode",
+            "acc": 17,
+            "dsc": "()I"
+          },
+          {
+            "nme": "equals",
+            "acc": 17,
+            "dsc": "(Ljava/lang/Object;)Z"
+          },
+          {
+            "nme": "name",
+            "acc": 1,
+            "dsc": "()Ljava/lang/String;",
+            "invanns": [
+              {
+                "dsc": "Lorg/jetbrains/annotations/NotNull;"
+              }
+            ]
+          },
+          {
+            "nme": "uuid",
+            "acc": 1,
+            "dsc": "()Ljava/util/UUID;",
+            "invanns": [
+              {
+                "dsc": "Lorg/jetbrains/annotations/NotNull;"
+              }
+            ]
+          },
+          {
+            "nme": "token",
+            "acc": 1,
+            "dsc": "()Ljava/lang/String;",
+            "invanns": [
+              {
+                "dsc": "Lorg/jetbrains/annotations/NotNull;"
+              }
+            ]
+          },
+          {
+            "nme": "online",
+            "acc": 1,
+            "dsc": "()Z"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 18,
+            "nme": "name",
+            "dsc": "Ljava/lang/String;"
+          },
+          {
+            "acc": 18,
+            "nme": "uuid",
+            "dsc": "Ljava/util/UUID;"
+          },
+          {
+            "acc": 18,
+            "nme": "token",
+            "dsc": "Ljava/lang/String;"
+          },
+          {
+            "acc": 18,
+            "nme": "online",
+            "dsc": "Z"
+          }
+        ]
+      },
+      "ru/vidtu/ias/auth/microsoft/fields/DeviceAuth.class": {
+        "ver": 65,
+        "acc": 65585,
+        "nme": "ru/vidtu/ias/auth/microsoft/fields/DeviceAuth",
+        "super": "java/lang/Record",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "(Ljava/lang/String;Ljava/lang/String;Ljava/net/URI;Ljava/time/Duration;Ljava/time/Duration;)V"
+          },
+          {
+            "nme": "fromJson",
+            "acc": 9,
+            "dsc": "(Lcom/google/gson/JsonObject;)Lru/vidtu/ias/auth/microsoft/fields/DeviceAuth;",
+            "invanns": [
+              {
+                "dsc": "Lorg/jetbrains/annotations/Contract;",
+                "vals": [
+                  "value",
+                  "_ -> new",
+                  "pure",
+                  true
+                ]
+              },
+              {
+                "dsc": "Lorg/jetbrains/annotations/NotNull;"
+              }
+            ]
+          },
+          {
+            "nme": "toString",
+            "acc": 17,
+            "dsc": "()Ljava/lang/String;"
+          },
+          {
+            "nme": "hashCode",
+            "acc": 17,
+            "dsc": "()I"
+          },
+          {
+            "nme": "equals",
+            "acc": 17,
+            "dsc": "(Ljava/lang/Object;)Z"
+          },
+          {
+            "nme": "device",
+            "acc": 1,
+            "dsc": "()Ljava/lang/String;",
+            "invanns": [
+              {
+                "dsc": "Lorg/jetbrains/annotations/NotNull;"
+              }
+            ]
+          },
+          {
+            "nme": "user",
+            "acc": 1,
+            "dsc": "()Ljava/lang/String;",
+            "invanns": [
+              {
+                "dsc": "Lorg/jetbrains/annotations/NotNull;"
+              }
+            ]
+          },
+          {
+            "nme": "uri",
+            "acc": 1,
+            "dsc": "()Ljava/net/URI;",
+            "invanns": [
+              {
+                "dsc": "Lorg/jetbrains/annotations/NotNull;"
+              }
+            ]
+          },
+          {
+            "nme": "expire",
+            "acc": 1,
+            "dsc": "()Ljava/time/Duration;",
+            "invanns": [
+              {
+                "dsc": "Lorg/jetbrains/annotations/NotNull;"
+              }
+            ]
+          },
+          {
+            "nme": "interval",
+            "acc": 1,
+            "dsc": "()Ljava/time/Duration;",
+            "invanns": [
+              {
+                "dsc": "Lorg/jetbrains/annotations/NotNull;"
+              }
+            ]
+          }
+        ],
+        "flds": [
+          {
+            "acc": 18,
+            "nme": "device",
+            "dsc": "Ljava/lang/String;"
+          },
+          {
+            "acc": 18,
+            "nme": "user",
+            "dsc": "Ljava/lang/String;"
+          },
+          {
+            "acc": 18,
+            "nme": "uri",
+            "dsc": "Ljava/net/URI;"
+          },
+          {
+            "acc": 18,
+            "nme": "expire",
+            "dsc": "Ljava/time/Duration;"
+          },
+          {
+            "acc": 18,
+            "nme": "interval",
+            "dsc": "Ljava/time/Duration;"
+          }
+        ]
+      },
+      "ru/vidtu/ias/screen/OfflinePopupScreen.class": {
+        "ver": 65,
+        "acc": 49,
+        "nme": "ru/vidtu/ias/screen/OfflinePopupScreen",
+        "super": "net/minecraft/class_437",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 0,
+            "dsc": "(Lnet/minecraft/class_437;Ljava/util/function/Consumer;)V",
+            "sig": "(Lnet/minecraft/class_437;Ljava/util/function/Consumer<Lru/vidtu/ias/account/Account;>;)V"
+          },
+          {
+            "nme": "method_25426",
+            "acc": 4,
+            "dsc": "()V"
+          },
+          {
+            "nme": "done",
+            "acc": 2,
+            "dsc": "()V"
+          },
+          {
+            "nme": "type",
+            "acc": 2,
+            "dsc": "(Z)V"
+          },
+          {
+            "nme": "method_25404",
+            "acc": 1,
+            "dsc": "(III)Z"
+          },
+          {
+            "nme": "method_16803",
+            "acc": 1,
+            "dsc": "(III)Z"
+          },
+          {
+            "nme": "method_25394",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/class_332;IIF)V"
+          },
+          {
+            "nme": "method_25420",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/class_332;IIF)V"
+          },
+          {
+            "nme": "method_25419",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "toString",
+            "acc": 1,
+            "dsc": "()Ljava/lang/String;"
+          },
+          {
+            "nme": "lambda$done$3",
+            "acc": 4098,
+            "dsc": "(Ljava/lang/String;Lru/vidtu/ias/auth/microsoft/fields/MCProfile;Ljava/lang/Throwable;)V"
+          },
+          {
+            "nme": "lambda$init$2",
+            "acc": 4098,
+            "dsc": "(Ljava/lang/String;)V"
+          },
+          {
+            "nme": "lambda$init$1",
+            "acc": 4098,
+            "dsc": "(Lnet/minecraft/class_4185;)V"
+          },
+          {
+            "nme": "lambda$init$0",
+            "acc": 4098,
+            "dsc": "(Lnet/minecraft/class_4185;)V"
+          },
+          {
+            "nme": "<clinit>",
+            "acc": 8,
+            "dsc": "()V"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 18,
+            "nme": "parent",
+            "dsc": "Lnet/minecraft/class_437;"
+          },
+          {
+            "acc": 18,
+            "nme": "handler",
+            "dsc": "Ljava/util/function/Consumer;",
+            "sig": "Ljava/util/function/Consumer<Lru/vidtu/ias/account/Account;>;"
+          },
+          {
+            "acc": 2,
+            "nme": "name",
+            "dsc": "Lru/vidtu/ias/screen/PopupBox;"
+          },
+          {
+            "acc": 2,
+            "nme": "done",
+            "dsc": "Lru/vidtu/ias/screen/PopupButton;"
+          },
+          {
+            "acc": 2,
+            "nme": "locked",
+            "dsc": "Z"
+          },
+          {
+            "acc": 4120,
+            "nme": "$assertionsDisabled",
+            "dsc": "Z"
+          }
+        ]
+      },
+      "ru/vidtu/ias/utils/GSONUtils.class": {
+        "ver": 65,
+        "acc": 49,
+        "nme": "ru/vidtu/ias/utils/GSONUtils",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 2,
+            "dsc": "()V",
+            "invanns": [
+              {
+                "dsc": "Lorg/jetbrains/annotations/Contract;",
+                "vals": [
+                  "value",
+                  "-> fail",
+                  "pure",
+                  true
+                ]
+              }
+            ]
+          },
+          {
+            "nme": "getBooleanOrThrow",
+            "acc": 9,
+            "dsc": "(Lcom/google/gson/JsonObject;Ljava/lang/String;)Z",
+            "invanns": [
+              {
+                "dsc": "Lorg/jetbrains/annotations/Contract;",
+                "vals": [
+                  "pure",
+                  true
+                ]
+              }
+            ]
+          },
+          {
+            "nme": "getIntOrThrow",
+            "acc": 9,
+            "dsc": "(Lcom/google/gson/JsonObject;Ljava/lang/String;)I",
+            "invanns": [
+              {
+                "dsc": "Lorg/jetbrains/annotations/Contract;",
+                "vals": [
+                  "pure",
+                  true
+                ]
+              }
+            ]
+          },
+          {
+            "nme": "getLongOrThrow",
+            "acc": 9,
+            "dsc": "(Lcom/google/gson/JsonObject;Ljava/lang/String;)J",
+            "invanns": [
+              {
+                "dsc": "Lorg/jetbrains/annotations/Contract;",
+                "vals": [
+                  "pure",
+                  true
+                ]
+              }
+            ]
+          },
+          {
+            "nme": "getStringOrThrow",
+            "acc": 9,
+            "dsc": "(Lcom/google/gson/JsonObject;Ljava/lang/String;)Ljava/lang/String;",
+            "invanns": [
+              {
+                "dsc": "Lorg/jetbrains/annotations/Contract;",
+                "vals": [
+                  "pure",
+                  true
+                ]
+              },
+              {
+                "dsc": "Lorg/jetbrains/annotations/NotNull;"
+              }
+            ]
+          },
+          {
+            "nme": "getObjectOrThrow",
+            "acc": 9,
+            "dsc": "(Lcom/google/gson/JsonObject;Ljava/lang/String;)Lcom/google/gson/JsonObject;",
+            "invanns": [
+              {
+                "dsc": "Lorg/jetbrains/annotations/Contract;",
+                "vals": [
+                  "pure",
+                  true
+                ]
+              },
+              {
+                "dsc": "Lorg/jetbrains/annotations/NotNull;"
+              }
+            ]
+          },
+          {
+            "nme": "getArrayOrThrow",
+            "acc": 9,
+            "dsc": "(Lcom/google/gson/JsonObject;Ljava/lang/String;)Lcom/google/gson/JsonArray;",
+            "invanns": [
+              {
+                "dsc": "Lorg/jetbrains/annotations/Contract;",
+                "vals": [
+                  "pure",
+                  true
+                ]
+              },
+              {
+                "dsc": "Lorg/jetbrains/annotations/NotNull;"
+              }
+            ]
+          },
+          {
+            "nme": "<clinit>",
+            "acc": 8,
+            "dsc": "()V"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 25,
+            "nme": "GSON",
+            "dsc": "Lcom/google/gson/Gson;"
+          }
+        ]
+      },
+      "ru/vidtu/ias/IASFabric.class": {
+        "ver": 65,
+        "acc": 49,
+        "nme": "ru/vidtu/ias/IASFabric",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "onInitializeClient",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "lambda$onInitializeClient$2",
+            "acc": 4106,
+            "dsc": "(Lnet/minecraft/class_310;Lnet/minecraft/class_437;II)V"
+          },
+          {
+            "nme": "lambda$onInitializeClient$1",
+            "acc": 4106,
+            "dsc": "(Lnet/minecraft/class_327;Lnet/minecraft/class_437;Lnet/minecraft/class_332;IIF)V"
+          },
+          {
+            "nme": "lambda$onInitializeClient$0",
+            "acc": 4106,
+            "dsc": "(Lnet/minecraft/class_310;)V"
+          }
+        ],
+        "flds": []
+      },
+      "ru/vidtu/ias/IASModMenu.class": {
+        "ver": 65,
+        "acc": 49,
+        "nme": "ru/vidtu/ias/IASModMenu",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "getModConfigScreenFactory",
+            "acc": 1,
+            "dsc": "()Lcom/terraformersmc/modmenu/api/ConfigScreenFactory;",
+            "sig": "()Lcom/terraformersmc/modmenu/api/ConfigScreenFactory<*>;"
+          }
+        ],
+        "flds": []
+      },
+      "ru/vidtu/ias/config/migrator/MigratorV1.class": {
+        "ver": 65,
+        "acc": 48,
+        "nme": "ru/vidtu/ias/config/migrator/MigratorV1",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 0,
+            "dsc": "()V"
+          },
+          {
+            "nme": "load",
+            "acc": 1,
+            "dsc": "(Lcom/google/gson/JsonObject;)V"
+          },
+          {
+            "nme": "toString",
+            "acc": 1,
+            "dsc": "()Ljava/lang/String;",
+            "invanns": [
+              {
+                "dsc": "Lorg/jetbrains/annotations/Contract;",
+                "vals": [
+                  "pure",
+                  true
+                ]
+              },
+              {
+                "dsc": "Lorg/jetbrains/annotations/NotNull;"
+              }
+            ]
+          }
+        ],
+        "flds": []
+      },
+      "ru/vidtu/ias/screen/PopupButton.class": {
+        "ver": 65,
+        "acc": 48,
+        "nme": "ru/vidtu/ias/screen/PopupButton",
+        "super": "net/minecraft/class_4185",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 0,
+            "dsc": "(IIIILnet/minecraft/class_2561;Lnet/minecraft/class_4185$class_4241;Lnet/minecraft/class_4185$class_7841;)V"
+          },
+          {
+            "nme": "color",
+            "acc": 0,
+            "dsc": "(FFFZ)V"
+          },
+          {
+            "nme": "method_48579",
+            "acc": 4,
+            "dsc": "(Lnet/minecraft/class_332;IIF)V"
+          },
+          {
+            "nme": "toString",
+            "acc": 1,
+            "dsc": "()Ljava/lang/String;"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 2,
+            "nme": "red",
+            "dsc": "F"
+          },
+          {
+            "acc": 2,
+            "nme": "green",
+            "dsc": "F"
+          },
+          {
+            "acc": 2,
+            "nme": "blue",
+            "dsc": "F"
+          },
+          {
+            "acc": 2,
+            "nme": "currentRed",
+            "dsc": "F"
+          },
+          {
+            "acc": 2,
+            "nme": "currentGreen",
+            "dsc": "F"
+          },
+          {
+            "acc": 2,
+            "nme": "currentBlue",
+            "dsc": "F"
+          },
+          {
+            "acc": 2,
+            "nme": "multiplier",
+            "dsc": "F"
+          }
+        ]
+      },
+      "ru/vidtu/ias/IASMinecraft$1.class": {
+        "ver": 65,
+        "acc": 4128,
+        "nme": "ru/vidtu/ias/IASMinecraft$1",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<clinit>",
+            "acc": 8,
+            "dsc": "()V"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 4120,
+            "nme": "$SwitchMap$ru$vidtu$ias$config$TextAlign",
+            "dsc": "[I"
+          }
+        ]
+      },
+      "ru/vidtu/ias/auth/microsoft/fields/MSTokens.class": {
+        "ver": 65,
+        "acc": 65585,
+        "nme": "ru/vidtu/ias/auth/microsoft/fields/MSTokens",
+        "super": "java/lang/Record",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "(Ljava/lang/String;Ljava/lang/String;)V"
+          },
+          {
+            "nme": "fromJson",
+            "acc": 9,
+            "dsc": "(Lcom/google/gson/JsonObject;)Lru/vidtu/ias/auth/microsoft/fields/MSTokens;",
+            "invanns": [
+              {
+                "dsc": "Lorg/jetbrains/annotations/Contract;",
+                "vals": [
+                  "value",
+                  "_ -> new",
+                  "pure",
+                  true
+                ]
+              },
+              {
+                "dsc": "Lorg/jetbrains/annotations/NotNull;"
+              }
+            ]
+          },
+          {
+            "nme": "toString",
+            "acc": 17,
+            "dsc": "()Ljava/lang/String;"
+          },
+          {
+            "nme": "hashCode",
+            "acc": 17,
+            "dsc": "()I"
+          },
+          {
+            "nme": "equals",
+            "acc": 17,
+            "dsc": "(Ljava/lang/Object;)Z"
+          },
+          {
+            "nme": "access",
+            "acc": 1,
+            "dsc": "()Ljava/lang/String;",
+            "invanns": [
+              {
+                "dsc": "Lorg/jetbrains/annotations/NotNull;"
+              }
+            ]
+          },
+          {
+            "nme": "refresh",
+            "acc": 1,
+            "dsc": "()Ljava/lang/String;",
+            "invanns": [
+              {
+                "dsc": "Lorg/jetbrains/annotations/NotNull;"
+              }
+            ]
+          }
+        ],
+        "flds": [
+          {
+            "acc": 18,
+            "nme": "access",
+            "dsc": "Ljava/lang/String;"
+          },
+          {
+            "acc": 18,
+            "nme": "refresh",
+            "dsc": "Ljava/lang/String;"
+          }
+        ]
+      }
+    }
+  }
+}

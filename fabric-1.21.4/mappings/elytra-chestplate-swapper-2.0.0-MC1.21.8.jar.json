@@ -1,0 +1,403 @@
+{
+  "md5": "3cdb22b869e5c99399847f8557e1b9db",
+  "sha2": "6338c4b703255388f0dcf711dc8906373c36ee82",
+  "sha256": "5de167ce0fd17ba7f510494639c4428ebe1c2f72c1896a72dc5338676cfcc76b",
+  "contents": {
+    "classes": {
+      "saphjyr/ecs/SwapKeyBinding.class": {
+        "ver": 65,
+        "acc": 33,
+        "nme": "saphjyr/ecs/SwapKeyBinding",
+        "super": "net/minecraft/class_304",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "(Ljava/lang/String;ILjava/lang/String;)V"
+          },
+          {
+            "nme": "method_1422",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/class_3675$class_306;)V"
+          },
+          {
+            "nme": "getKey",
+            "acc": 1,
+            "dsc": "()Lnet/minecraft/class_3675$class_306;"
+          },
+          {
+            "nme": "method_23481",
+            "acc": 1,
+            "dsc": "(Z)V"
+          },
+          {
+            "nme": "onPressed",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "isPressedBypass",
+            "acc": 1,
+            "dsc": "()Z"
+          },
+          {
+            "nme": "setPressedBypass",
+            "acc": 1,
+            "dsc": "(Z)V"
+          },
+          {
+            "nme": "onPressBypass",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "compareTo",
+            "acc": 4161,
+            "dsc": "(Ljava/lang/Object;)I"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 2,
+            "nme": "key",
+            "dsc": "Lnet/minecraft/class_3675$class_306;"
+          },
+          {
+            "acc": 2,
+            "nme": "pressedBypass",
+            "dsc": "Z"
+          }
+        ],
+        "vanns": [
+          {
+            "dsc": "Lnet/fabricmc/api/Environment;",
+            "vals": [
+              "value",
+              [
+                "Lnet/fabricmc/api/EnvType;",
+                "CLIENT"
+              ]
+            ]
+          }
+        ]
+      },
+      "saphjyr/ecs/ElytraChestplateSwapper.class": {
+        "ver": 65,
+        "acc": 33,
+        "nme": "saphjyr/ecs/ElytraChestplateSwapper",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "onInitialize",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "<clinit>",
+            "acc": 8,
+            "dsc": "()V"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 25,
+            "nme": "MOD_ID",
+            "dsc": "Ljava/lang/String;",
+            "val": "elytra-chestplate-swapper"
+          },
+          {
+            "acc": 25,
+            "nme": "LOGGER",
+            "dsc": "Lorg/slf4j/Logger;"
+          }
+        ]
+      },
+      "saphjyr/ecs/mixin/client/ExampleClientMixin.class": {
+        "ver": 65,
+        "acc": 33,
+        "nme": "saphjyr/ecs/mixin/client/ExampleClientMixin",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "init",
+            "acc": 2,
+            "dsc": "(Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V",
+            "vanns": [
+              {
+                "dsc": "Lorg/spongepowered/asm/mixin/injection/Inject;",
+                "vals": [
+                  "at",
+                  [
+                    {
+                      "desc": "Lorg/spongepowered/asm/mixin/injection/At;",
+                      "values": [
+                        "value",
+                        "HEAD"
+                      ],
+                      "api": 589824
+                    }
+                  ],
+                  "method",
+                  [
+                    "run"
+                  ]
+                ]
+              }
+            ]
+          }
+        ],
+        "flds": [],
+        "vanns": [
+          {
+            "dsc": "Lnet/fabricmc/api/Environment;",
+            "vals": [
+              "value",
+              [
+                "Lnet/fabricmc/api/EnvType;",
+                "CLIENT"
+              ]
+            ]
+          }
+        ],
+        "invanns": [
+          {
+            "dsc": "Lorg/spongepowered/asm/mixin/Mixin;",
+            "vals": [
+              "value",
+              [
+                {
+                  "itrlNme": "net/minecraft/class_310"
+                }
+              ]
+            ]
+          }
+        ]
+      },
+      "saphjyr/ecs/ElytraChestplateSwapperClient.class": {
+        "ver": 65,
+        "acc": 33,
+        "nme": "saphjyr/ecs/ElytraChestplateSwapperClient",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "onInitializeClient",
+            "acc": 1,
+            "dsc": "()V"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 9,
+            "nme": "keyBinding",
+            "dsc": "Lsaphjyr/ecs/SwapKeyBinding;"
+          }
+        ],
+        "vanns": [
+          {
+            "dsc": "Lnet/fabricmc/api/Environment;",
+            "vals": [
+              "value",
+              [
+                "Lnet/fabricmc/api/EnvType;",
+                "CLIENT"
+              ]
+            ]
+          }
+        ]
+      },
+      "saphjyr/ecs/InventoryUtils.class": {
+        "ver": 65,
+        "acc": 33,
+        "nme": "saphjyr/ecs/InventoryUtils",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "swapChestplate",
+            "acc": 9,
+            "dsc": "(Lnet/minecraft/class_310;)V",
+            "invanns": [
+              {
+                "dsc": "Lnet/fabricmc/api/Environment;",
+                "vals": [
+                  "value",
+                  [
+                    "Lnet/fabricmc/api/EnvType;",
+                    "CLIENT"
+                  ]
+                ]
+              }
+            ]
+          },
+          {
+            "nme": "isElytra",
+            "acc": 10,
+            "dsc": "(Lnet/minecraft/class_1799;)Z"
+          },
+          {
+            "nme": "isChestplate",
+            "acc": 10,
+            "dsc": "(Lnet/minecraft/class_1799;)Z"
+          },
+          {
+            "nme": "sendSwapPackets",
+            "acc": 10,
+            "dsc": "(ILnet/minecraft/class_310;)V"
+          }
+        ],
+        "flds": [],
+        "vanns": [
+          {
+            "dsc": "Lnet/fabricmc/api/Environment;",
+            "vals": [
+              "value",
+              [
+                "Lnet/fabricmc/api/EnvType;",
+                "CLIENT"
+              ]
+            ]
+          }
+        ]
+      },
+      "saphjyr/ecs/mixin/client/KeyboardMixin.class": {
+        "ver": 65,
+        "acc": 33,
+        "nme": "saphjyr/ecs/mixin/client/KeyboardMixin",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "onKey",
+            "acc": 2,
+            "dsc": "(JIIIILorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V",
+            "vanns": [
+              {
+                "dsc": "Lorg/spongepowered/asm/mixin/injection/Inject;",
+                "vals": [
+                  "method",
+                  [
+                    "onKey"
+                  ],
+                  "at",
+                  [
+                    {
+                      "desc": "Lorg/spongepowered/asm/mixin/injection/At;",
+                      "values": [
+                        "value",
+                        "HEAD"
+                      ],
+                      "api": 589824
+                    }
+                  ]
+                ]
+              }
+            ]
+          }
+        ],
+        "flds": [],
+        "vanns": [
+          {
+            "dsc": "Lnet/fabricmc/api/Environment;",
+            "vals": [
+              "value",
+              [
+                "Lnet/fabricmc/api/EnvType;",
+                "CLIENT"
+              ]
+            ]
+          }
+        ],
+        "invanns": [
+          {
+            "dsc": "Lorg/spongepowered/asm/mixin/Mixin;",
+            "vals": [
+              "value",
+              [
+                {
+                  "itrlNme": "net/minecraft/class_309"
+                }
+              ]
+            ]
+          }
+        ]
+      },
+      "saphjyr/ecs/mixin/ExampleMixin.class": {
+        "ver": 65,
+        "acc": 33,
+        "nme": "saphjyr/ecs/mixin/ExampleMixin",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "init",
+            "acc": 2,
+            "dsc": "(Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V",
+            "vanns": [
+              {
+                "dsc": "Lorg/spongepowered/asm/mixin/injection/Inject;",
+                "vals": [
+                  "at",
+                  [
+                    {
+                      "desc": "Lorg/spongepowered/asm/mixin/injection/At;",
+                      "values": [
+                        "value",
+                        "HEAD"
+                      ],
+                      "api": 589824
+                    }
+                  ],
+                  "method",
+                  [
+                    "loadWorld"
+                  ]
+                ]
+              }
+            ]
+          }
+        ],
+        "flds": [],
+        "invanns": [
+          {
+            "dsc": "Lorg/spongepowered/asm/mixin/Mixin;",
+            "vals": [
+              "value",
+              [
+                {
+                  "itrlNme": "net/minecraft/server/MinecraftServer"
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

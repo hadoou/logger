@@ -1,0 +1,213 @@
+{
+  "md5": "d6185836d348535391abf3e467e779c8",
+  "sha2": "c23a449797d34c248293cc26d68ef7f8682dc089",
+  "sha256": "2e24124d5d197ea5883f0083149f8dd1e095e44c4688d789d2366e091870a0ef",
+  "contents": {
+    "classes": {
+      "net/fabricmc/fabric/impl/crash/report/info/ThreadPrinting$1.class": {
+        "ver": 65,
+        "acc": 4128,
+        "nme": "net/fabricmc/fabric/impl/crash/report/info/ThreadPrinting$1",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<clinit>",
+            "acc": 8,
+            "dsc": "()V"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 4120,
+            "nme": "$SwitchMap$java$lang$Thread$State",
+            "dsc": "[I"
+          }
+        ]
+      },
+      "net/fabricmc/fabric/impl/crash/report/info/ThreadPrinting.class": {
+        "ver": 65,
+        "acc": 33,
+        "nme": "net/fabricmc/fabric/impl/crash/report/info/ThreadPrinting",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "fullThreadInfoToString",
+            "acc": 9,
+            "dsc": "(Ljava/lang/management/ThreadInfo;)Ljava/lang/String;"
+          }
+        ],
+        "flds": []
+      },
+      "net/fabricmc/fabric/impl/crash/report/info/package-info.class": {
+        "ver": 65,
+        "acc": 5632,
+        "nme": "net/fabricmc/fabric/impl/crash/report/info/package-info",
+        "super": "java/lang/Object",
+        "mthds": [],
+        "flds": [],
+        "invanns": [
+          {
+            "dsc": "Lorg/jetbrains/annotations/ApiStatus$Internal;"
+          }
+        ]
+      },
+      "net/fabricmc/fabric/mixin/crash/report/info/DedicatedServerWatchdogMixin.class": {
+        "ver": 65,
+        "acc": 33,
+        "nme": "net/fabricmc/fabric/mixin/crash/report/info/DedicatedServerWatchdogMixin",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "printEntireThreadDump",
+            "acc": 10,
+            "dsc": "(Ljava/lang/Object;)Ljava/lang/Object;",
+            "vanns": [
+              {
+                "dsc": "Lorg/spongepowered/asm/mixin/injection/ModifyArg;",
+                "vals": [
+                  "method",
+                  [
+                    "createCrashReport(Ljava/lang/String;J)Lnet/minecraft/util/crash/CrashReport;"
+                  ],
+                  "at",
+                  {
+                    "desc": "Lorg/spongepowered/asm/mixin/injection/At;",
+                    "values": [
+                      "value",
+                      "INVOKE",
+                      "target",
+                      "Ljava/lang/StringBuilder;append(Ljava/lang/Object;)Ljava/lang/StringBuilder;",
+                      "ordinal",
+                      0,
+                      "remap",
+                      false
+                    ],
+                    "api": 589824
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "flds": [],
+        "invanns": [
+          {
+            "dsc": "Lorg/spongepowered/asm/mixin/Mixin;",
+            "vals": [
+              "value",
+              [
+                {
+                  "itrlNme": "net/minecraft/class_3178"
+                }
+              ]
+            ]
+          }
+        ]
+      },
+      "net/fabricmc/fabric/mixin/crash/report/info/SystemDetailsMixin.class": {
+        "ver": 65,
+        "acc": 1057,
+        "nme": "net/fabricmc/fabric/mixin/crash/report/info/SystemDetailsMixin",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "method_37123",
+            "acc": 1025,
+            "dsc": "(Ljava/lang/String;Ljava/util/function/Supplier;)V",
+            "sig": "(Ljava/lang/String;Ljava/util/function/Supplier<Ljava/lang/String;>;)V",
+            "vanns": [
+              {
+                "dsc": "Lorg/spongepowered/asm/mixin/Shadow;"
+              }
+            ]
+          },
+          {
+            "nme": "fillSystemDetails",
+            "acc": 2,
+            "dsc": "(Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V",
+            "vanns": [
+              {
+                "dsc": "Lorg/spongepowered/asm/mixin/injection/Inject;",
+                "vals": [
+                  "at",
+                  [
+                    {
+                      "desc": "Lorg/spongepowered/asm/mixin/injection/At;",
+                      "values": [
+                        "value",
+                        "RETURN"
+                      ],
+                      "api": 589824
+                    }
+                  ],
+                  "method",
+                  [
+                    "<init>"
+                  ]
+                ]
+              }
+            ]
+          },
+          {
+            "nme": "appendMods",
+            "acc": 10,
+            "dsc": "(Ljava/lang/StringBuilder;ILjava/util/ArrayList;)V",
+            "sig": "(Ljava/lang/StringBuilder;ILjava/util/ArrayList<Lnet/fabricmc/loader/api/ModContainer;>;)V"
+          },
+          {
+            "nme": "lambda$appendMods$1",
+            "acc": 4106,
+            "dsc": "(Lnet/fabricmc/loader/api/ModContainer;)Ljava/lang/String;"
+          },
+          {
+            "nme": "lambda$fillSystemDetails$0",
+            "acc": 4106,
+            "dsc": "()Ljava/lang/String;"
+          }
+        ],
+        "flds": [],
+        "invanns": [
+          {
+            "dsc": "Lorg/spongepowered/asm/mixin/Mixin;",
+            "vals": [
+              "value",
+              [
+                {
+                  "itrlNme": "net/minecraft/class_6396"
+                }
+              ]
+            ]
+          }
+        ]
+      },
+      "net/fabricmc/fabric/mixin/crash/report/info/package-info.class": {
+        "ver": 65,
+        "acc": 5632,
+        "nme": "net/fabricmc/fabric/mixin/crash/report/info/package-info",
+        "super": "java/lang/Object",
+        "mthds": [],
+        "flds": [],
+        "invanns": [
+          {
+            "dsc": "Lorg/jetbrains/annotations/ApiStatus$Internal;"
+          }
+        ]
+      }
+    }
+  }
+}

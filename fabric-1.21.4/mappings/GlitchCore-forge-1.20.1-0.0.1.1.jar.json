@@ -1,0 +1,3705 @@
+{
+  "md5": "6d24b09db12acdab40437a1929259352",
+  "sha2": "1a0aaf7c33b9acb26bf75899a43e8941cac1f6e7",
+  "sha256": "e42a8b513da08a910c133caeafad9fc2fcc22fdaaa2eb3e2516e9112a5a0db61",
+  "contents": {
+    "classes": {
+      "glitchcore/event/TickEvent$Phase.class": {
+        "ver": 61,
+        "acc": 16433,
+        "nme": "glitchcore/event/TickEvent$Phase",
+        "super": "java/lang/Enum",
+        "mthds": [
+          {
+            "nme": "values",
+            "acc": 9,
+            "dsc": "()[Lglitchcore/event/TickEvent$Phase;"
+          },
+          {
+            "nme": "valueOf",
+            "acc": 9,
+            "dsc": "(Ljava/lang/String;)Lglitchcore/event/TickEvent$Phase;"
+          },
+          {
+            "nme": "<init>",
+            "acc": 2,
+            "dsc": "(Ljava/lang/String;I)V",
+            "sig": "()V"
+          },
+          {
+            "nme": "$values",
+            "acc": 4106,
+            "dsc": "()[Lglitchcore/event/TickEvent$Phase;"
+          },
+          {
+            "nme": "<clinit>",
+            "acc": 8,
+            "dsc": "()V"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 16409,
+            "nme": "START",
+            "dsc": "Lglitchcore/event/TickEvent$Phase;"
+          },
+          {
+            "acc": 16409,
+            "nme": "END",
+            "dsc": "Lglitchcore/event/TickEvent$Phase;"
+          },
+          {
+            "acc": 4122,
+            "nme": "$VALUES",
+            "dsc": "[Lglitchcore/event/TickEvent$Phase;"
+          }
+        ]
+      },
+      "glitchcore/forge/mixin/impl/MixinPacketHandler.class": {
+        "ver": 61,
+        "acc": 1057,
+        "nme": "glitchcore/forge/mixin/impl/MixinPacketHandler",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "register",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/resources/ResourceLocation;Lglitchcore/network/CustomPacket;)V",
+            "sig": "<T::Lglitchcore/network/CustomPacket<TT;>;>(Lnet/minecraft/resources/ResourceLocation;Lglitchcore/network/CustomPacket<TT;>;)V",
+            "vanns": [
+              {
+                "dsc": "Lorg/spongepowered/asm/mixin/Overwrite;"
+              }
+            ]
+          },
+          {
+            "nme": "sendToPlayer",
+            "acc": 1,
+            "dsc": "(Lglitchcore/network/CustomPacket;Lnet/minecraft/server/level/ServerPlayer;)V",
+            "sig": "<T::Lglitchcore/network/CustomPacket<TT;>;>(TT;Lnet/minecraft/server/level/ServerPlayer;)V",
+            "vanns": [
+              {
+                "dsc": "Lorg/spongepowered/asm/mixin/Overwrite;"
+              }
+            ]
+          },
+          {
+            "nme": "sendToAll",
+            "acc": 1,
+            "dsc": "(Lglitchcore/network/CustomPacket;Lnet/minecraft/server/MinecraftServer;)V",
+            "sig": "<T::Lglitchcore/network/CustomPacket<TT;>;>(TT;Lnet/minecraft/server/MinecraftServer;)V",
+            "vanns": [
+              {
+                "dsc": "Lorg/spongepowered/asm/mixin/Overwrite;"
+              }
+            ]
+          },
+          {
+            "nme": "sendToServer",
+            "acc": 1,
+            "dsc": "(Lglitchcore/network/CustomPacket;)V",
+            "sig": "<T::Lglitchcore/network/CustomPacket<TT;>;>(TT;)V",
+            "vanns": [
+              {
+                "dsc": "Lorg/spongepowered/asm/mixin/Overwrite;"
+              }
+            ]
+          },
+          {
+            "nme": "init",
+            "acc": 2,
+            "dsc": "()V",
+            "vanns": [
+              {
+                "dsc": "Lorg/spongepowered/asm/mixin/Overwrite;"
+              }
+            ]
+          },
+          {
+            "nme": "lambda$init$3",
+            "acc": 4106,
+            "dsc": "(Ljava/lang/String;)Ljava/lang/String;"
+          },
+          {
+            "nme": "lambda$sendToPlayer$2",
+            "acc": 4106,
+            "dsc": "(Lnet/minecraft/server/level/ServerPlayer;)Lnet/minecraft/server/level/ServerPlayer;"
+          },
+          {
+            "nme": "lambda$register$1",
+            "acc": 4098,
+            "dsc": "(Lglitchcore/network/CustomPacket;Lglitchcore/network/CustomPacket;Ljava/util/function/Supplier;)V"
+          },
+          {
+            "nme": "lambda$register$0",
+            "acc": 4098,
+            "dsc": "(Lglitchcore/network/CustomPacket;Lglitchcore/network/CustomPacket;Ljava/util/function/Supplier;)V"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 2,
+            "nme": "channelName",
+            "dsc": "Lnet/minecraft/resources/ResourceLocation;"
+          },
+          {
+            "acc": 2,
+            "nme": "channel",
+            "dsc": "Lnet/minecraftforge/network/simple/SimpleChannel;"
+          },
+          {
+            "acc": 2,
+            "nme": "messageId",
+            "dsc": "Ljava/util/concurrent/atomic/AtomicInteger;"
+          }
+        ],
+        "invanns": [
+          {
+            "dsc": "Lorg/spongepowered/asm/mixin/Mixin;",
+            "vals": [
+              "value",
+              [
+                {
+                  "itrlNme": "glitchcore/network/PacketHandler"
+                }
+              ],
+              "remap",
+              false
+            ]
+          }
+        ]
+      },
+      "glitchcore/util/BlockHelper.class": {
+        "ver": 61,
+        "acc": 33,
+        "nme": "glitchcore/util/BlockHelper",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "registerStrippable",
+            "acc": 9,
+            "dsc": "(Lnet/minecraft/world/level/block/Block;Lnet/minecraft/world/level/block/Block;)V"
+          },
+          {
+            "nme": "registerFlattenable",
+            "acc": 9,
+            "dsc": "(Lnet/minecraft/world/level/block/Block;Lnet/minecraft/world/level/block/state/BlockState;)V"
+          },
+          {
+            "nme": "registerCompostable",
+            "acc": 9,
+            "dsc": "(FLnet/minecraft/world/level/ItemLike;)V"
+          },
+          {
+            "nme": "registerFlammable",
+            "acc": 9,
+            "dsc": "(Lnet/minecraft/world/level/block/Block;II)V"
+          },
+          {
+            "nme": "registerTillable",
+            "acc": 9,
+            "dsc": "(Lnet/minecraft/world/level/block/Block;Ljava/util/function/Predicate;Lnet/minecraft/world/level/block/state/BlockState;)V",
+            "sig": "(Lnet/minecraft/world/level/block/Block;Ljava/util/function/Predicate<Lnet/minecraft/world/item/context/UseOnContext;>;Lnet/minecraft/world/level/block/state/BlockState;)V"
+          }
+        ],
+        "flds": []
+      },
+      "glitchcore/event/client/LevelRenderEvent.class": {
+        "ver": 61,
+        "acc": 33,
+        "nme": "glitchcore/event/client/LevelRenderEvent",
+        "super": "glitchcore/event/Event",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "(Lglitchcore/event/client/LevelRenderEvent$Stage;Lnet/minecraft/client/renderer/LevelRenderer;Lcom/mojang/blaze3d/vertex/PoseStack;Lorg/joml/Matrix4f;IFLnet/minecraft/client/Camera;Lnet/minecraft/client/renderer/culling/Frustum;)V"
+          },
+          {
+            "nme": "getStage",
+            "acc": 1,
+            "dsc": "()Lglitchcore/event/client/LevelRenderEvent$Stage;"
+          },
+          {
+            "nme": "getLevelRenderer",
+            "acc": 1,
+            "dsc": "()Lnet/minecraft/client/renderer/LevelRenderer;"
+          },
+          {
+            "nme": "getPoseStack",
+            "acc": 1,
+            "dsc": "()Lcom/mojang/blaze3d/vertex/PoseStack;"
+          },
+          {
+            "nme": "getProjectionMatrix",
+            "acc": 1,
+            "dsc": "()Lorg/joml/Matrix4f;"
+          },
+          {
+            "nme": "getRenderTick",
+            "acc": 1,
+            "dsc": "()I"
+          },
+          {
+            "nme": "getPartialTick",
+            "acc": 1,
+            "dsc": "()F"
+          },
+          {
+            "nme": "getCamera",
+            "acc": 1,
+            "dsc": "()Lnet/minecraft/client/Camera;"
+          },
+          {
+            "nme": "getFrustum",
+            "acc": 1,
+            "dsc": "()Lnet/minecraft/client/renderer/culling/Frustum;"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 18,
+            "nme": "stage",
+            "dsc": "Lglitchcore/event/client/LevelRenderEvent$Stage;"
+          },
+          {
+            "acc": 18,
+            "nme": "levelRenderer",
+            "dsc": "Lnet/minecraft/client/renderer/LevelRenderer;"
+          },
+          {
+            "acc": 18,
+            "nme": "poseStack",
+            "dsc": "Lcom/mojang/blaze3d/vertex/PoseStack;"
+          },
+          {
+            "acc": 18,
+            "nme": "projectionMatrix",
+            "dsc": "Lorg/joml/Matrix4f;"
+          },
+          {
+            "acc": 18,
+            "nme": "renderTick",
+            "dsc": "I"
+          },
+          {
+            "acc": 18,
+            "nme": "partialTick",
+            "dsc": "F"
+          },
+          {
+            "acc": 18,
+            "nme": "camera",
+            "dsc": "Lnet/minecraft/client/Camera;"
+          },
+          {
+            "acc": 18,
+            "nme": "frustum",
+            "dsc": "Lnet/minecraft/client/renderer/culling/Frustum;"
+          }
+        ]
+      },
+      "glitchcore/config/ConfigSync.class": {
+        "ver": 61,
+        "acc": 33,
+        "nme": "glitchcore/config/ConfigSync",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "register",
+            "acc": 9,
+            "dsc": "(Lglitchcore/config/Config;)V"
+          },
+          {
+            "nme": "initFabric",
+            "acc": 10,
+            "dsc": "()V"
+          },
+          {
+            "nme": "reload",
+            "acc": 9,
+            "dsc": "(Ljava/lang/String;Ljava/lang/String;)V"
+          },
+          {
+            "nme": "<clinit>",
+            "acc": 8,
+            "dsc": "()V"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 10,
+            "nme": "configSyncChannel",
+            "dsc": "Lnet/minecraft/resources/ResourceLocation;"
+          },
+          {
+            "acc": 9,
+            "nme": "packetHandler",
+            "dsc": "Lglitchcore/network/PacketHandler;"
+          },
+          {
+            "acc": 25,
+            "nme": "CONFIGS_BY_PATH",
+            "dsc": "Ljava/util/Map;",
+            "sig": "Ljava/util/Map<Ljava/lang/String;Lglitchcore/config/Config;>;"
+          },
+          {
+            "acc": 10,
+            "nme": "inited",
+            "dsc": "Ljava/util/concurrent/atomic/AtomicBoolean;"
+          }
+        ]
+      },
+      "glitchcore/event/client/ItemTooltipEvent.class": {
+        "ver": 61,
+        "acc": 33,
+        "nme": "glitchcore/event/client/ItemTooltipEvent",
+        "super": "glitchcore/event/Event",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/world/item/ItemStack;Ljava/util/List;)V",
+            "sig": "(Lnet/minecraft/world/item/ItemStack;Ljava/util/List<Lnet/minecraft/network/chat/Component;>;)V"
+          },
+          {
+            "nme": "getStack",
+            "acc": 1,
+            "dsc": "()Lnet/minecraft/world/item/ItemStack;"
+          },
+          {
+            "nme": "getTooltip",
+            "acc": 1,
+            "dsc": "()Ljava/util/List;",
+            "sig": "()Ljava/util/List<Lnet/minecraft/network/chat/Component;>;"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 18,
+            "nme": "stack",
+            "dsc": "Lnet/minecraft/world/item/ItemStack;"
+          },
+          {
+            "acc": 18,
+            "nme": "tooltip",
+            "dsc": "Ljava/util/List;",
+            "sig": "Ljava/util/List<Lnet/minecraft/network/chat/Component;>;"
+          }
+        ]
+      },
+      "glitchcore/mixin/MixinItemStack.class": {
+        "ver": 61,
+        "acc": 1057,
+        "nme": "glitchcore/mixin/MixinItemStack",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "m_41777_",
+            "acc": 1025,
+            "dsc": "()Lnet/minecraft/world/item/ItemStack;",
+            "vanns": [
+              {
+                "dsc": "Lorg/spongepowered/asm/mixin/Shadow;"
+              }
+            ]
+          },
+          {
+            "nme": "onUse",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/world/level/Level;Lnet/minecraft/world/entity/player/Player;Lnet/minecraft/world/InteractionHand;Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfoReturnable;)V",
+            "sig": "(Lnet/minecraft/world/level/Level;Lnet/minecraft/world/entity/player/Player;Lnet/minecraft/world/InteractionHand;Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfoReturnable<Lnet/minecraft/world/InteractionResultHolder<Lnet/minecraft/world/item/ItemStack;>;>;)V",
+            "vanns": [
+              {
+                "dsc": "Lorg/spongepowered/asm/mixin/injection/Inject;",
+                "vals": [
+                  "method",
+                  [
+                    "use"
+                  ],
+                  "at",
+                  [
+                    {
+                      "desc": "Lorg/spongepowered/asm/mixin/injection/At;",
+                      "values": [
+                        "value",
+                        "HEAD"
+                      ],
+                      "api": 589824
+                    }
+                  ],
+                  "cancellable",
+                  true
+                ]
+              }
+            ]
+          },
+          {
+            "nme": "onFinishUsingItemBegin",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/world/level/Level;Lnet/minecraft/world/entity/LivingEntity;Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfoReturnable;)V",
+            "sig": "(Lnet/minecraft/world/level/Level;Lnet/minecraft/world/entity/LivingEntity;Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfoReturnable<Lnet/minecraft/world/item/ItemStack;>;)V",
+            "vanns": [
+              {
+                "dsc": "Lorg/spongepowered/asm/mixin/injection/Inject;",
+                "vals": [
+                  "method",
+                  [
+                    "finishUsingItem"
+                  ],
+                  "at",
+                  [
+                    {
+                      "desc": "Lorg/spongepowered/asm/mixin/injection/At;",
+                      "values": [
+                        "value",
+                        "HEAD"
+                      ],
+                      "api": 589824
+                    }
+                  ]
+                ]
+              }
+            ]
+          },
+          {
+            "nme": "onFinishUsingItem",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/world/level/Level;Lnet/minecraft/world/entity/LivingEntity;Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfoReturnable;)V",
+            "sig": "(Lnet/minecraft/world/level/Level;Lnet/minecraft/world/entity/LivingEntity;Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfoReturnable<Lnet/minecraft/world/item/ItemStack;>;)V",
+            "vanns": [
+              {
+                "dsc": "Lorg/spongepowered/asm/mixin/injection/Inject;",
+                "vals": [
+                  "method",
+                  [
+                    "finishUsingItem"
+                  ],
+                  "at",
+                  [
+                    {
+                      "desc": "Lorg/spongepowered/asm/mixin/injection/At;",
+                      "values": [
+                        "value",
+                        "TAIL"
+                      ],
+                      "api": 589824
+                    }
+                  ],
+                  "cancellable",
+                  true
+                ]
+              }
+            ]
+          }
+        ],
+        "flds": [
+          {
+            "acc": 2,
+            "nme": "finishUsingItemCopy",
+            "dsc": "Lnet/minecraft/world/item/ItemStack;"
+          }
+        ],
+        "invanns": [
+          {
+            "dsc": "Lorg/spongepowered/asm/mixin/Mixin;",
+            "vals": [
+              "value",
+              [
+                {
+                  "itrlNme": "net/minecraft/world/item/ItemStack"
+                }
+              ]
+            ]
+          }
+        ]
+      },
+      "glitchcore/forge/mixin/client/MixinGuiGraphics.class": {
+        "ver": 61,
+        "acc": 1057,
+        "nme": "glitchcore/forge/mixin/client/MixinGuiGraphics",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "m_280182_",
+            "acc": 1025,
+            "dsc": "()I",
+            "vanns": [
+              {
+                "dsc": "Lorg/spongepowered/asm/mixin/Shadow;"
+              }
+            ]
+          },
+          {
+            "nme": "m_280206_",
+            "acc": 1025,
+            "dsc": "()I",
+            "vanns": [
+              {
+                "dsc": "Lorg/spongepowered/asm/mixin/Shadow;"
+              }
+            ]
+          },
+          {
+            "nme": "modifyRenderTooltipComponents",
+            "acc": 2,
+            "dsc": "(Ljava/util/List;Lnet/minecraft/client/gui/Font;Ljava/util/List;IILnet/minecraft/client/gui/screens/inventory/tooltip/ClientTooltipPositioner;)Ljava/util/List;",
+            "sig": "(Ljava/util/List<Lnet/minecraft/client/gui/screens/inventory/tooltip/ClientTooltipComponent;>;Lnet/minecraft/client/gui/Font;Ljava/util/List<Lnet/minecraft/client/gui/screens/inventory/tooltip/ClientTooltipComponent;>;IILnet/minecraft/client/gui/screens/inventory/tooltip/ClientTooltipPositioner;)Ljava/util/List<Lnet/minecraft/client/gui/screens/inventory/tooltip/ClientTooltipComponent;>;",
+            "vanns": [
+              {
+                "dsc": "Lorg/spongepowered/asm/mixin/injection/ModifyVariable;",
+                "vals": [
+                  "method",
+                  [
+                    "renderTooltipInternal"
+                  ],
+                  "at",
+                  {
+                    "desc": "Lorg/spongepowered/asm/mixin/injection/At;",
+                    "values": [
+                      "value",
+                      "LOAD",
+                      "ordinal",
+                      0
+                    ],
+                    "api": 589824
+                  },
+                  "ordinal",
+                  0,
+                  "argsOnly",
+                  true
+                ]
+              }
+            ]
+          }
+        ],
+        "flds": [
+          {
+            "acc": 2,
+            "nme": "tooltipStack",
+            "dsc": "Lnet/minecraft/world/item/ItemStack;"
+          }
+        ],
+        "invanns": [
+          {
+            "dsc": "Lorg/spongepowered/asm/mixin/Mixin;",
+            "vals": [
+              "value",
+              [
+                {
+                  "itrlNme": "net/minecraft/client/gui/GuiGraphics"
+                }
+              ]
+            ]
+          }
+        ]
+      },
+      "glitchcore/event/client/RenderGuiEvent$Pre.class": {
+        "ver": 61,
+        "acc": 33,
+        "nme": "glitchcore/event/client/RenderGuiEvent$Pre",
+        "super": "glitchcore/event/client/RenderGuiEvent",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "(Lglitchcore/event/client/RenderGuiEvent$Type;Lnet/minecraft/client/gui/Gui;Lnet/minecraft/client/gui/GuiGraphics;FIII)V"
+          },
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "(Lglitchcore/event/client/RenderGuiEvent$Type;Lnet/minecraft/client/gui/Gui;Lnet/minecraft/client/gui/GuiGraphics;FII)V"
+          }
+        ],
+        "flds": []
+      },
+      "glitchcore/util/RenderHelper.class": {
+        "ver": 61,
+        "acc": 33,
+        "nme": "glitchcore/util/RenderHelper",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "setRenderType",
+            "acc": 9,
+            "dsc": "(Lnet/minecraft/world/level/block/Block;Lnet/minecraft/client/renderer/RenderType;)V"
+          },
+          {
+            "nme": "setRenderType",
+            "acc": 9,
+            "dsc": "(Lnet/minecraft/world/level/material/Fluid;Lnet/minecraft/client/renderer/RenderType;)V"
+          },
+          {
+            "nme": "registerBlockEntityRenderer",
+            "acc": 9,
+            "dsc": "(Lnet/minecraft/world/level/block/entity/BlockEntityType;Lnet/minecraft/client/renderer/blockentity/BlockEntityRendererProvider;)V",
+            "sig": "<T:Lnet/minecraft/world/level/block/entity/BlockEntity;>(Lnet/minecraft/world/level/block/entity/BlockEntityType<+TT;>;Lnet/minecraft/client/renderer/blockentity/BlockEntityRendererProvider<TT;>;)V"
+          },
+          {
+            "nme": "registerEntityRenderer",
+            "acc": 9,
+            "dsc": "(Lnet/minecraft/world/entity/EntityType;Lnet/minecraft/client/renderer/entity/EntityRendererProvider;)V",
+            "sig": "<T:Lnet/minecraft/world/entity/Entity;>(Lnet/minecraft/world/entity/EntityType<+TT;>;Lnet/minecraft/client/renderer/entity/EntityRendererProvider<TT;>;)V"
+          },
+          {
+            "nme": "registerLayerDefinition",
+            "acc": 9,
+            "dsc": "(Lnet/minecraft/client/model/geom/ModelLayerLocation;Ljava/util/function/Supplier;)V",
+            "sig": "(Lnet/minecraft/client/model/geom/ModelLayerLocation;Ljava/util/function/Supplier<Lnet/minecraft/client/model/geom/builders/LayerDefinition;>;)V"
+          }
+        ],
+        "flds": []
+      },
+      "glitchcore/event/client/RegisterColorsEvent$Block.class": {
+        "ver": 61,
+        "acc": 33,
+        "nme": "glitchcore/event/client/RegisterColorsEvent$Block",
+        "super": "glitchcore/event/client/RegisterColorsEvent",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "(Ljava/util/function/BiConsumer;)V",
+            "sig": "(Ljava/util/function/BiConsumer<Lnet/minecraft/client/color/block/BlockColor;Lnet/minecraft/world/level/block/Block;>;)V"
+          }
+        ],
+        "flds": []
+      },
+      "glitchcore/forge/handlers/RegisterCommandsEventHandler.class": {
+        "ver": 61,
+        "acc": 33,
+        "nme": "glitchcore/forge/handlers/RegisterCommandsEventHandler",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "onRegisterCommands",
+            "acc": 9,
+            "dsc": "(Lnet/minecraftforge/event/RegisterCommandsEvent;)V",
+            "vanns": [
+              {
+                "dsc": "Lnet/minecraftforge/eventbus/api/SubscribeEvent;"
+              }
+            ]
+          }
+        ],
+        "flds": [],
+        "vanns": [
+          {
+            "dsc": "Lnet/minecraftforge/fml/common/Mod$EventBusSubscriber;",
+            "vals": [
+              "bus",
+              [
+                "Lnet/minecraftforge/fml/common/Mod$EventBusSubscriber$Bus;",
+                "FORGE"
+              ]
+            ]
+          }
+        ]
+      },
+      "glitchcore/event/Event.class": {
+        "ver": 61,
+        "acc": 1057,
+        "nme": "glitchcore/event/Event",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "isCancellable",
+            "acc": 1,
+            "dsc": "()Z"
+          },
+          {
+            "nme": "isCancelled",
+            "acc": 1,
+            "dsc": "()Z"
+          },
+          {
+            "nme": "setCancelled",
+            "acc": 1,
+            "dsc": "(Z)V"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 2,
+            "nme": "cancelled",
+            "dsc": "Z"
+          }
+        ]
+      },
+      "glitchcore/event/player/PlayerEvent.class": {
+        "ver": 61,
+        "acc": 1057,
+        "nme": "glitchcore/event/player/PlayerEvent",
+        "super": "glitchcore/event/Event",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/world/entity/player/Player;)V"
+          },
+          {
+            "nme": "getPlayer",
+            "acc": 1,
+            "dsc": "()Lnet/minecraft/world/entity/player/Player;"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 20,
+            "nme": "player",
+            "dsc": "Lnet/minecraft/world/entity/player/Player;"
+          }
+        ]
+      },
+      "glitchcore/event/client/RenderGuiEvent$Type.class": {
+        "ver": 61,
+        "acc": 16433,
+        "nme": "glitchcore/event/client/RenderGuiEvent$Type",
+        "super": "java/lang/Enum",
+        "mthds": [
+          {
+            "nme": "values",
+            "acc": 9,
+            "dsc": "()[Lglitchcore/event/client/RenderGuiEvent$Type;"
+          },
+          {
+            "nme": "valueOf",
+            "acc": 9,
+            "dsc": "(Ljava/lang/String;)Lglitchcore/event/client/RenderGuiEvent$Type;"
+          },
+          {
+            "nme": "<init>",
+            "acc": 2,
+            "dsc": "(Ljava/lang/String;I)V",
+            "sig": "()V"
+          },
+          {
+            "nme": "$values",
+            "acc": 4106,
+            "dsc": "()[Lglitchcore/event/client/RenderGuiEvent$Type;"
+          },
+          {
+            "nme": "<clinit>",
+            "acc": 8,
+            "dsc": "()V"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 16409,
+            "nme": "AIR",
+            "dsc": "Lglitchcore/event/client/RenderGuiEvent$Type;"
+          },
+          {
+            "acc": 16409,
+            "nme": "FOOD",
+            "dsc": "Lglitchcore/event/client/RenderGuiEvent$Type;"
+          },
+          {
+            "acc": 16409,
+            "nme": "FROSTBITE",
+            "dsc": "Lglitchcore/event/client/RenderGuiEvent$Type;"
+          },
+          {
+            "acc": 4122,
+            "nme": "$VALUES",
+            "dsc": "[Lglitchcore/event/client/RenderGuiEvent$Type;"
+          }
+        ]
+      },
+      "glitchcore/event/player/PlayerEvent$JoinLevel.class": {
+        "ver": 61,
+        "acc": 33,
+        "nme": "glitchcore/event/player/PlayerEvent$JoinLevel",
+        "super": "glitchcore/event/player/PlayerEvent",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/world/entity/player/Player;)V"
+          }
+        ],
+        "flds": []
+      },
+      "glitchcore/network/SyncConfigPacket.class": {
+        "ver": 61,
+        "acc": 33,
+        "nme": "glitchcore/network/SyncConfigPacket",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "(Ljava/lang/String;[B)V"
+          },
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "encode",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/network/FriendlyByteBuf;)V"
+          },
+          {
+            "nme": "decode",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/network/FriendlyByteBuf;)Lglitchcore/network/SyncConfigPacket;"
+          },
+          {
+            "nme": "handle",
+            "acc": 1,
+            "dsc": "(Lglitchcore/network/SyncConfigPacket;Lglitchcore/network/CustomPacket$Context;)V"
+          },
+          {
+            "nme": "handle",
+            "acc": 4161,
+            "dsc": "(Lglitchcore/network/CustomPacket;Lglitchcore/network/CustomPacket$Context;)V"
+          },
+          {
+            "nme": "decode",
+            "acc": 4161,
+            "dsc": "(Lnet/minecraft/network/FriendlyByteBuf;)Lglitchcore/network/CustomPacket;"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 2,
+            "nme": "path",
+            "dsc": "Ljava/lang/String;"
+          },
+          {
+            "acc": 2,
+            "nme": "data",
+            "dsc": "[B"
+          }
+        ]
+      },
+      "glitchcore/event/entity/LivingEntityUseItemEvent.class": {
+        "ver": 61,
+        "acc": 1057,
+        "nme": "glitchcore/event/entity/LivingEntityUseItemEvent",
+        "super": "glitchcore/event/Event",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/world/entity/LivingEntity;Lnet/minecraft/world/item/ItemStack;)V"
+          },
+          {
+            "nme": "getEntity",
+            "acc": 1,
+            "dsc": "()Lnet/minecraft/world/entity/LivingEntity;"
+          },
+          {
+            "nme": "getItem",
+            "acc": 1,
+            "dsc": "()Lnet/minecraft/world/item/ItemStack;"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 18,
+            "nme": "entity",
+            "dsc": "Lnet/minecraft/world/entity/LivingEntity;"
+          },
+          {
+            "acc": 18,
+            "nme": "item",
+            "dsc": "Lnet/minecraft/world/item/ItemStack;"
+          }
+        ]
+      },
+      "glitchcore/network/CustomPacket.class": {
+        "ver": 61,
+        "acc": 1537,
+        "nme": "glitchcore/network/CustomPacket",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "encode",
+            "acc": 1025,
+            "dsc": "(Lnet/minecraft/network/FriendlyByteBuf;)V"
+          },
+          {
+            "nme": "decode",
+            "acc": 1025,
+            "dsc": "(Lnet/minecraft/network/FriendlyByteBuf;)Lglitchcore/network/CustomPacket;",
+            "sig": "(Lnet/minecraft/network/FriendlyByteBuf;)TT;"
+          },
+          {
+            "nme": "handle",
+            "acc": 1025,
+            "dsc": "(Lglitchcore/network/CustomPacket;Lglitchcore/network/CustomPacket$Context;)V",
+            "sig": "(TT;Lglitchcore/network/CustomPacket$Context;)V"
+          }
+        ],
+        "flds": []
+      },
+      "glitchcore/event/client/RenderTooltipEvent.class": {
+        "ver": 61,
+        "acc": 33,
+        "nme": "glitchcore/event/client/RenderTooltipEvent",
+        "super": "glitchcore/event/Event",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/client/gui/GuiGraphics;IIIILjava/util/List;Lnet/minecraft/client/gui/Font;Lnet/minecraft/client/gui/screens/inventory/tooltip/ClientTooltipPositioner;)V",
+            "sig": "(Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/client/gui/GuiGraphics;IIIILjava/util/List<Lnet/minecraft/client/gui/screens/inventory/tooltip/ClientTooltipComponent;>;Lnet/minecraft/client/gui/Font;Lnet/minecraft/client/gui/screens/inventory/tooltip/ClientTooltipPositioner;)V"
+          },
+          {
+            "nme": "getStack",
+            "acc": 1,
+            "dsc": "()Lnet/minecraft/world/item/ItemStack;"
+          },
+          {
+            "nme": "getGraphics",
+            "acc": 1,
+            "dsc": "()Lnet/minecraft/client/gui/GuiGraphics;"
+          },
+          {
+            "nme": "getX",
+            "acc": 1,
+            "dsc": "()I"
+          },
+          {
+            "nme": "getY",
+            "acc": 1,
+            "dsc": "()I"
+          },
+          {
+            "nme": "getScreenWidth",
+            "acc": 1,
+            "dsc": "()I"
+          },
+          {
+            "nme": "getScreenHeight",
+            "acc": 1,
+            "dsc": "()I"
+          },
+          {
+            "nme": "getComponents",
+            "acc": 1,
+            "dsc": "()Ljava/util/List;",
+            "sig": "()Ljava/util/List<Lnet/minecraft/client/gui/screens/inventory/tooltip/ClientTooltipComponent;>;"
+          },
+          {
+            "nme": "getFallbackFont",
+            "acc": 1,
+            "dsc": "()Lnet/minecraft/client/gui/Font;"
+          },
+          {
+            "nme": "getPositioner",
+            "acc": 1,
+            "dsc": "()Lnet/minecraft/client/gui/screens/inventory/tooltip/ClientTooltipPositioner;"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 18,
+            "nme": "stack",
+            "dsc": "Lnet/minecraft/world/item/ItemStack;"
+          },
+          {
+            "acc": 18,
+            "nme": "graphics",
+            "dsc": "Lnet/minecraft/client/gui/GuiGraphics;"
+          },
+          {
+            "acc": 18,
+            "nme": "x",
+            "dsc": "I"
+          },
+          {
+            "acc": 18,
+            "nme": "y",
+            "dsc": "I"
+          },
+          {
+            "acc": 18,
+            "nme": "screenWidth",
+            "dsc": "I"
+          },
+          {
+            "acc": 18,
+            "nme": "screenHeight",
+            "dsc": "I"
+          },
+          {
+            "acc": 18,
+            "nme": "components",
+            "dsc": "Ljava/util/List;",
+            "sig": "Ljava/util/List<Lnet/minecraft/client/gui/screens/inventory/tooltip/ClientTooltipComponent;>;"
+          },
+          {
+            "acc": 18,
+            "nme": "fallbackFont",
+            "dsc": "Lnet/minecraft/client/gui/Font;"
+          },
+          {
+            "acc": 18,
+            "nme": "positioner",
+            "dsc": "Lnet/minecraft/client/gui/screens/inventory/tooltip/ClientTooltipPositioner;"
+          }
+        ]
+      },
+      "glitchcore/forge/handlers/TagsUpdatedEventHandler.class": {
+        "ver": 61,
+        "acc": 33,
+        "nme": "glitchcore/forge/handlers/TagsUpdatedEventHandler",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "onTagsUpdated",
+            "acc": 9,
+            "dsc": "(Lnet/minecraftforge/event/TagsUpdatedEvent;)V",
+            "vanns": [
+              {
+                "dsc": "Lnet/minecraftforge/eventbus/api/SubscribeEvent;"
+              }
+            ]
+          }
+        ],
+        "flds": [],
+        "vanns": [
+          {
+            "dsc": "Lnet/minecraftforge/fml/common/Mod$EventBusSubscriber;",
+            "vals": [
+              "bus",
+              [
+                "Lnet/minecraftforge/fml/common/Mod$EventBusSubscriber$Bus;",
+                "FORGE"
+              ]
+            ]
+          }
+        ]
+      },
+      "glitchcore/util/Environment.class": {
+        "ver": 61,
+        "acc": 49,
+        "nme": "glitchcore/util/Environment",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "isClient",
+            "acc": 9,
+            "dsc": "()Z"
+          },
+          {
+            "nme": "getConfigPath",
+            "acc": 9,
+            "dsc": "()Ljava/nio/file/Path;"
+          },
+          {
+            "nme": "isModLoaded",
+            "acc": 9,
+            "dsc": "(Ljava/lang/String;)Z"
+          }
+        ],
+        "flds": []
+      },
+      "glitchcore/forge/handlers/VillagerTradesEventHandler.class": {
+        "ver": 61,
+        "acc": 33,
+        "nme": "glitchcore/forge/handlers/VillagerTradesEventHandler",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "onWandererTrades",
+            "acc": 9,
+            "dsc": "(Lnet/minecraftforge/event/village/WandererTradesEvent;)V",
+            "vanns": [
+              {
+                "dsc": "Lnet/minecraftforge/eventbus/api/SubscribeEvent;"
+              }
+            ]
+          },
+          {
+            "nme": "onVillagerTrades",
+            "acc": 9,
+            "dsc": "(Lnet/minecraftforge/event/village/VillagerTradesEvent;)V",
+            "vanns": [
+              {
+                "dsc": "Lnet/minecraftforge/eventbus/api/SubscribeEvent;"
+              }
+            ]
+          }
+        ],
+        "flds": [],
+        "vanns": [
+          {
+            "dsc": "Lnet/minecraftforge/fml/common/Mod$EventBusSubscriber;",
+            "vals": [
+              "bus",
+              [
+                "Lnet/minecraftforge/fml/common/Mod$EventBusSubscriber$Bus;",
+                "FORGE"
+              ]
+            ]
+          }
+        ]
+      },
+      "glitchcore/forge/handlers/TagsUpdatedEventHandler$1.class": {
+        "ver": 61,
+        "acc": 4128,
+        "nme": "glitchcore/forge/handlers/TagsUpdatedEventHandler$1",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<clinit>",
+            "acc": 8,
+            "dsc": "()V"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 4120,
+            "nme": "$SwitchMap$net$minecraftforge$event$TagsUpdatedEvent$UpdateCause",
+            "dsc": "[I"
+          }
+        ]
+      },
+      "glitchcore/forge/mixin/client/MixinVanillaGuiOverlay.class": {
+        "ver": 61,
+        "acc": 1057,
+        "nme": "glitchcore/forge/mixin/client/MixinVanillaGuiOverlay",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "onInit",
+            "acc": 2,
+            "dsc": "(Ljava/lang/String;ILjava/lang/String;Lnet/minecraftforge/client/gui/overlay/IGuiOverlay;Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V",
+            "vanns": [
+              {
+                "dsc": "Lorg/spongepowered/asm/mixin/injection/Inject;",
+                "vals": [
+                  "method",
+                  [
+                    "<init>"
+                  ],
+                  "at",
+                  [
+                    {
+                      "desc": "Lorg/spongepowered/asm/mixin/injection/At;",
+                      "values": [
+                        "value",
+                        "RETURN"
+                      ],
+                      "api": 589824
+                    }
+                  ]
+                ]
+              }
+            ]
+          },
+          {
+            "nme": "wrapRenderer",
+            "acc": 10,
+            "dsc": "(Lnet/minecraftforge/client/gui/overlay/IGuiOverlay;Lglitchcore/event/client/RenderGuiEvent$Type;)Lnet/minecraftforge/client/gui/overlay/IGuiOverlay;",
+            "vanns": [
+              {
+                "dsc": "Lorg/spongepowered/asm/mixin/Unique;"
+              }
+            ]
+          },
+          {
+            "nme": "wrapRendererWithRightModification",
+            "acc": 10,
+            "dsc": "(Lnet/minecraftforge/client/gui/overlay/IGuiOverlay;Lglitchcore/event/client/RenderGuiEvent$Type;)Lnet/minecraftforge/client/gui/overlay/IGuiOverlay;",
+            "vanns": [
+              {
+                "dsc": "Lorg/spongepowered/asm/mixin/Unique;"
+              }
+            ]
+          },
+          {
+            "nme": "lambda$wrapRendererWithRightModification$1",
+            "acc": 4106,
+            "dsc": "(Lglitchcore/event/client/RenderGuiEvent$Type;Lnet/minecraftforge/client/gui/overlay/IGuiOverlay;Lnet/minecraftforge/client/gui/overlay/ForgeGui;Lnet/minecraft/client/gui/GuiGraphics;FII)V"
+          },
+          {
+            "nme": "lambda$wrapRenderer$0",
+            "acc": 4106,
+            "dsc": "(Lglitchcore/event/client/RenderGuiEvent$Type;Lnet/minecraftforge/client/gui/overlay/IGuiOverlay;Lnet/minecraftforge/client/gui/overlay/ForgeGui;Lnet/minecraft/client/gui/GuiGraphics;FII)V"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 0,
+            "nme": "overlay",
+            "dsc": "Lnet/minecraftforge/client/gui/overlay/IGuiOverlay;"
+          }
+        ],
+        "invanns": [
+          {
+            "dsc": "Lorg/spongepowered/asm/mixin/Mixin;",
+            "vals": [
+              "value",
+              [
+                {
+                  "itrlNme": "net/minecraftforge/client/gui/overlay/VanillaGuiOverlay"
+                }
+              ],
+              "remap",
+              false
+            ]
+          }
+        ]
+      },
+      "glitchcore/mixin/MixinServerLevel.class": {
+        "ver": 61,
+        "acc": 33,
+        "nme": "glitchcore/mixin/MixinServerLevel",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "onAddPlayer",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/server/level/ServerPlayer;Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V",
+            "vanns": [
+              {
+                "dsc": "Lorg/spongepowered/asm/mixin/injection/Inject;",
+                "vals": [
+                  "method",
+                  [
+                    "addPlayer"
+                  ],
+                  "at",
+                  [
+                    {
+                      "desc": "Lorg/spongepowered/asm/mixin/injection/At;",
+                      "values": [
+                        "value",
+                        "HEAD"
+                      ],
+                      "api": 589824
+                    }
+                  ]
+                ]
+              }
+            ]
+          }
+        ],
+        "flds": [],
+        "invanns": [
+          {
+            "dsc": "Lorg/spongepowered/asm/mixin/Mixin;",
+            "vals": [
+              "value",
+              [
+                {
+                  "itrlNme": "net/minecraft/server/level/ServerLevel"
+                }
+              ]
+            ]
+          }
+        ]
+      },
+      "glitchcore/event/player/PlayerEvent$ChangeDimension.class": {
+        "ver": 61,
+        "acc": 33,
+        "nme": "glitchcore/event/player/PlayerEvent$ChangeDimension",
+        "super": "glitchcore/event/player/PlayerEvent",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/world/entity/player/Player;)V"
+          }
+        ],
+        "flds": []
+      },
+      "glitchcore/event/player/PlayerInteractEvent$UseEmpty.class": {
+        "ver": 61,
+        "acc": 33,
+        "nme": "glitchcore/event/player/PlayerInteractEvent$UseEmpty",
+        "super": "glitchcore/event/player/PlayerInteractEvent",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/world/entity/player/Player;Lnet/minecraft/world/InteractionHand;)V"
+          },
+          {
+            "nme": "isCancellable",
+            "acc": 1,
+            "dsc": "()Z"
+          }
+        ],
+        "flds": []
+      },
+      "glitchcore/forge/handlers/TooltipEventHandler.class": {
+        "ver": 61,
+        "acc": 33,
+        "nme": "glitchcore/forge/handlers/TooltipEventHandler",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "onItemTooltip",
+            "acc": 9,
+            "dsc": "(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V",
+            "vanns": [
+              {
+                "dsc": "Lnet/minecraftforge/eventbus/api/SubscribeEvent;"
+              }
+            ]
+          }
+        ],
+        "flds": [],
+        "vanns": [
+          {
+            "dsc": "Lnet/minecraftforge/fml/common/Mod$EventBusSubscriber;"
+          }
+        ]
+      },
+      "glitchcore/event/TickEvent$Level.class": {
+        "ver": 61,
+        "acc": 33,
+        "nme": "glitchcore/event/TickEvent$Level",
+        "super": "glitchcore/event/TickEvent",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "(Lglitchcore/event/TickEvent$Phase;Lnet/minecraft/world/level/Level;)V"
+          },
+          {
+            "nme": "getLevel",
+            "acc": 1,
+            "dsc": "()Lnet/minecraft/world/level/Level;"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 18,
+            "nme": "level",
+            "dsc": "Lnet/minecraft/world/level/Level;"
+          }
+        ]
+      },
+      "glitchcore/event/client/RenderGuiEvent.class": {
+        "ver": 61,
+        "acc": 1057,
+        "nme": "glitchcore/event/client/RenderGuiEvent",
+        "super": "glitchcore/event/Event",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "(Lglitchcore/event/client/RenderGuiEvent$Type;Lnet/minecraft/client/gui/Gui;Lnet/minecraft/client/gui/GuiGraphics;FIII)V"
+          },
+          {
+            "nme": "getType",
+            "acc": 1,
+            "dsc": "()Lglitchcore/event/client/RenderGuiEvent$Type;"
+          },
+          {
+            "nme": "getGui",
+            "acc": 1,
+            "dsc": "()Lnet/minecraft/client/gui/Gui;"
+          },
+          {
+            "nme": "getGuiGraphics",
+            "acc": 1,
+            "dsc": "()Lnet/minecraft/client/gui/GuiGraphics;"
+          },
+          {
+            "nme": "getPartialTicks",
+            "acc": 1,
+            "dsc": "()F"
+          },
+          {
+            "nme": "getScreenWidth",
+            "acc": 1,
+            "dsc": "()I"
+          },
+          {
+            "nme": "getScreenHeight",
+            "acc": 1,
+            "dsc": "()I"
+          },
+          {
+            "nme": "getRowTop",
+            "acc": 1,
+            "dsc": "()I"
+          },
+          {
+            "nme": "setRowTop",
+            "acc": 1,
+            "dsc": "(I)V"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 18,
+            "nme": "type",
+            "dsc": "Lglitchcore/event/client/RenderGuiEvent$Type;"
+          },
+          {
+            "acc": 18,
+            "nme": "gui",
+            "dsc": "Lnet/minecraft/client/gui/Gui;"
+          },
+          {
+            "acc": 18,
+            "nme": "guiGraphics",
+            "dsc": "Lnet/minecraft/client/gui/GuiGraphics;"
+          },
+          {
+            "acc": 18,
+            "nme": "partialTicks",
+            "dsc": "F"
+          },
+          {
+            "acc": 18,
+            "nme": "screenWidth",
+            "dsc": "I"
+          },
+          {
+            "acc": 18,
+            "nme": "screenHeight",
+            "dsc": "I"
+          },
+          {
+            "acc": 2,
+            "nme": "rowTop",
+            "dsc": "I"
+          }
+        ]
+      },
+      "glitchcore/event/EventManager.class": {
+        "ver": 61,
+        "acc": 33,
+        "nme": "glitchcore/event/EventManager",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "addListener",
+            "acc": 9,
+            "dsc": "(Ljava/util/function/Consumer;)V",
+            "sig": "<T:Lglitchcore/event/Event;>(Ljava/util/function/Consumer<TT;>;)V"
+          },
+          {
+            "nme": "fire",
+            "acc": 9,
+            "dsc": "(Lglitchcore/event/Event;)V",
+            "sig": "<T:Lglitchcore/event/Event;>(TT;)V"
+          },
+          {
+            "nme": "getRequiredEvents",
+            "acc": 9,
+            "dsc": "()Lcom/google/common/collect/ImmutableSet;",
+            "sig": "()Lcom/google/common/collect/ImmutableSet<Ljava/lang/Class<+Lglitchcore/event/Event;>;>;"
+          },
+          {
+            "nme": "getEventClass",
+            "acc": 10,
+            "dsc": "(Ljava/util/function/Consumer;)Ljava/lang/Class;",
+            "sig": "<T:Lglitchcore/event/Event;>(Ljava/util/function/Consumer<TT;>;)Ljava/lang/Class<TT;>;"
+          },
+          {
+            "nme": "lambda$addListener$0",
+            "acc": 4106,
+            "dsc": "(Ljava/util/function/Consumer;Ljava/lang/Class;)[Ljava/util/function/Consumer;"
+          },
+          {
+            "nme": "<clinit>",
+            "acc": 8,
+            "dsc": "()V"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 10,
+            "nme": "listeners",
+            "dsc": "Ljava/util/Map;",
+            "sig": "Ljava/util/Map<Ljava/lang/Class<+Lglitchcore/event/Event;>;[Ljava/util/function/Consumer<+Lglitchcore/event/Event;>;>;"
+          },
+          {
+            "acc": 26,
+            "nme": "lock",
+            "dsc": "Ljava/lang/Object;"
+          }
+        ]
+      },
+      "glitchcore/mixin/client/MixinMinecraft.class": {
+        "ver": 61,
+        "acc": 33,
+        "nme": "glitchcore/mixin/client/MixinMinecraft",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "onBeginTick",
+            "acc": 1,
+            "dsc": "(Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V",
+            "vanns": [
+              {
+                "dsc": "Lorg/spongepowered/asm/mixin/injection/Inject;",
+                "vals": [
+                  "method",
+                  [
+                    "tick"
+                  ],
+                  "at",
+                  [
+                    {
+                      "desc": "Lorg/spongepowered/asm/mixin/injection/At;",
+                      "values": [
+                        "value",
+                        "HEAD"
+                      ],
+                      "api": 589824
+                    }
+                  ]
+                ]
+              }
+            ]
+          },
+          {
+            "nme": "onEndTick",
+            "acc": 1,
+            "dsc": "(Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V",
+            "vanns": [
+              {
+                "dsc": "Lorg/spongepowered/asm/mixin/injection/Inject;",
+                "vals": [
+                  "method",
+                  [
+                    "tick"
+                  ],
+                  "at",
+                  [
+                    {
+                      "desc": "Lorg/spongepowered/asm/mixin/injection/At;",
+                      "values": [
+                        "value",
+                        "TAIL"
+                      ],
+                      "api": 589824
+                    }
+                  ]
+                ]
+              }
+            ]
+          },
+          {
+            "nme": "startUseItem_getItemInHand",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/client/player/LocalPlayer;Lnet/minecraft/world/InteractionHand;)Lnet/minecraft/world/item/ItemStack;",
+            "vanns": [
+              {
+                "dsc": "Lorg/spongepowered/asm/mixin/injection/Redirect;",
+                "vals": [
+                  "method",
+                  [
+                    "startUseItem"
+                  ],
+                  "at",
+                  {
+                    "desc": "Lorg/spongepowered/asm/mixin/injection/At;",
+                    "values": [
+                      "value",
+                      "INVOKE",
+                      "target",
+                      "net/minecraft/client/player/LocalPlayer.getItemInHand (Lnet/minecraft/world/InteractionHand;)Lnet/minecraft/world/item/ItemStack;",
+                      "ordinal",
+                      0
+                    ],
+                    "api": 589824
+                  },
+                  "require",
+                  1
+                ]
+              }
+            ]
+          },
+          {
+            "nme": "onStartUseItem",
+            "acc": 1,
+            "dsc": "(Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V",
+            "vanns": [
+              {
+                "dsc": "Lorg/spongepowered/asm/mixin/injection/Inject;",
+                "vals": [
+                  "method",
+                  [
+                    "startUseItem"
+                  ],
+                  "slice",
+                  [
+                    {
+                      "desc": "Lorg/spongepowered/asm/mixin/injection/Slice;",
+                      "values": [
+                        "from",
+                        {
+                          "desc": "Lorg/spongepowered/asm/mixin/injection/At;",
+                          "values": [
+                            "value",
+                            "INVOKE",
+                            "target",
+                            "net/minecraft/client/renderer/ItemInHandRenderer.itemUsed (Lnet/minecraft/world/InteractionHand;)V",
+                            "ordinal",
+                            0
+                          ],
+                          "api": 589824
+                        }
+                      ],
+                      "api": 589824
+                    }
+                  ],
+                  "at",
+                  [
+                    {
+                      "desc": "Lorg/spongepowered/asm/mixin/injection/At;",
+                      "values": [
+                        "value",
+                        "INVOKE",
+                        "target",
+                        "net/minecraft/world/item/ItemStack.isEmpty()Z",
+                        "ordinal",
+                        0
+                      ],
+                      "api": 589824
+                    }
+                  ]
+                ]
+              }
+            ]
+          }
+        ],
+        "flds": [
+          {
+            "acc": 1,
+            "nme": "f_91077_",
+            "dsc": "Lnet/minecraft/world/phys/HitResult;"
+          },
+          {
+            "acc": 1,
+            "nme": "f_91074_",
+            "dsc": "Lnet/minecraft/client/player/LocalPlayer;"
+          },
+          {
+            "acc": 2,
+            "nme": "startUseItem_stack",
+            "dsc": "Lnet/minecraft/world/item/ItemStack;"
+          },
+          {
+            "acc": 2,
+            "nme": "startUseItem_hand",
+            "dsc": "Lnet/minecraft/world/InteractionHand;"
+          }
+        ],
+        "invanns": [
+          {
+            "dsc": "Lorg/spongepowered/asm/mixin/Mixin;",
+            "vals": [
+              "value",
+              [
+                {
+                  "itrlNme": "net/minecraft/client/Minecraft"
+                }
+              ]
+            ]
+          }
+        ]
+      },
+      "glitchcore/util/RegistryHelper.class": {
+        "ver": 61,
+        "acc": 33,
+        "nme": "glitchcore/util/RegistryHelper",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 2,
+            "dsc": "()V"
+          },
+          {
+            "nme": "create",
+            "acc": 9,
+            "dsc": "()Lglitchcore/util/RegistryHelper;"
+          },
+          {
+            "nme": "addRegistrar",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/resources/ResourceKey;Lglitchcore/util/RegistryHelper$Registrar;)V",
+            "sig": "<T:Ljava/lang/Object;>(Lnet/minecraft/resources/ResourceKey<+Lnet/minecraft/core/Registry<TT;>;>;Lglitchcore/util/RegistryHelper$Registrar<TT;>;)V"
+          },
+          {
+            "nme": "accept",
+            "acc": 1,
+            "dsc": "(Lglitchcore/event/RegistryEvent;)V"
+          },
+          {
+            "nme": "accept",
+            "acc": 4161,
+            "dsc": "(Ljava/lang/Object;)V"
+          },
+          {
+            "nme": "lambda$accept$0",
+            "acc": 4106,
+            "dsc": "(Lglitchcore/event/RegistryEvent;Lglitchcore/util/RegistryHelper$Registrar;)V"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 18,
+            "nme": "registrars",
+            "dsc": "Lcom/google/common/collect/Multimap;",
+            "sig": "Lcom/google/common/collect/Multimap<Lnet/minecraft/resources/ResourceKey<+Lnet/minecraft/core/Registry<*>;>;Lglitchcore/util/RegistryHelper$Registrar<*>;>;"
+          }
+        ]
+      },
+      "glitchcore/forge/mixin/MixinServerPlayer.class": {
+        "ver": 61,
+        "acc": 1057,
+        "nme": "glitchcore/forge/mixin/MixinServerPlayer",
+        "super": "net/minecraft/world/entity/player/Player",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/world/level/Level;Lnet/minecraft/core/BlockPos;FLcom/mojang/authlib/GameProfile;)V"
+          },
+          {
+            "nme": "onChangeDimension",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/server/level/ServerLevel;Lnet/minecraftforge/common/util/ITeleporter;Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfoReturnable;)V",
+            "sig": "(Lnet/minecraft/server/level/ServerLevel;Lnet/minecraftforge/common/util/ITeleporter;Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfoReturnable<Lnet/minecraft/world/entity/Entity;>;)V",
+            "vanns": [
+              {
+                "dsc": "Lorg/spongepowered/asm/mixin/injection/Inject;",
+                "vals": [
+                  "method",
+                  [
+                    "changeDimension"
+                  ],
+                  "at",
+                  [
+                    {
+                      "desc": "Lorg/spongepowered/asm/mixin/injection/At;",
+                      "values": [
+                        "value",
+                        "TAIL"
+                      ],
+                      "api": 589824
+                    }
+                  ],
+                  "remap",
+                  false
+                ]
+              }
+            ]
+          }
+        ],
+        "flds": [],
+        "invanns": [
+          {
+            "dsc": "Lorg/spongepowered/asm/mixin/Mixin;",
+            "vals": [
+              "value",
+              [
+                {
+                  "itrlNme": "net/minecraft/server/level/ServerPlayer"
+                }
+              ]
+            ]
+          }
+        ]
+      },
+      "glitchcore/forge/handlers/TickEventHandler.class": {
+        "ver": 61,
+        "acc": 33,
+        "nme": "glitchcore/forge/handlers/TickEventHandler",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "onLevelTick",
+            "acc": 9,
+            "dsc": "(Lnet/minecraftforge/event/TickEvent$LevelTickEvent;)V",
+            "vanns": [
+              {
+                "dsc": "Lnet/minecraftforge/eventbus/api/SubscribeEvent;"
+              }
+            ]
+          }
+        ],
+        "flds": [],
+        "vanns": [
+          {
+            "dsc": "Lnet/minecraftforge/fml/common/Mod$EventBusSubscriber;",
+            "vals": [
+              "bus",
+              [
+                "Lnet/minecraftforge/fml/common/Mod$EventBusSubscriber$Bus;",
+                "FORGE"
+              ]
+            ]
+          }
+        ]
+      },
+      "glitchcore/network/CustomPacket$Context.class": {
+        "ver": 61,
+        "acc": 1537,
+        "nme": "glitchcore/network/CustomPacket$Context",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "isClientSide",
+            "acc": 1025,
+            "dsc": "()Z"
+          },
+          {
+            "nme": "isServerSide",
+            "acc": 1,
+            "dsc": "()Z"
+          },
+          {
+            "nme": "getPlayer",
+            "acc": 1025,
+            "dsc": "()Ljava/util/Optional;",
+            "sig": "()Ljava/util/Optional<Lnet/minecraft/world/entity/player/Player;>;"
+          }
+        ],
+        "flds": []
+      },
+      "glitchcore/event/client/InputEvent.class": {
+        "ver": 61,
+        "acc": 1057,
+        "nme": "glitchcore/event/client/InputEvent",
+        "super": "glitchcore/event/Event",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          }
+        ],
+        "flds": []
+      },
+      "glitchcore/forge/handlers/InteractionEventHandler.class": {
+        "ver": 61,
+        "acc": 33,
+        "nme": "glitchcore/forge/handlers/InteractionEventHandler",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "onRightClickBlock",
+            "acc": 9,
+            "dsc": "(Lnet/minecraftforge/event/entity/player/PlayerInteractEvent$RightClickBlock;)V",
+            "vanns": [
+              {
+                "dsc": "Lnet/minecraftforge/eventbus/api/SubscribeEvent;"
+              }
+            ]
+          }
+        ],
+        "flds": [],
+        "vanns": [
+          {
+            "dsc": "Lnet/minecraftforge/fml/common/Mod$EventBusSubscriber;",
+            "vals": [
+              "bus",
+              [
+                "Lnet/minecraftforge/fml/common/Mod$EventBusSubscriber$Bus;",
+                "FORGE"
+              ]
+            ]
+          }
+        ]
+      },
+      "glitchcore/event/server/RegisterCommandsEvent.class": {
+        "ver": 61,
+        "acc": 33,
+        "nme": "glitchcore/event/server/RegisterCommandsEvent",
+        "super": "glitchcore/event/Event",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "(Lcom/mojang/brigadier/CommandDispatcher;Lnet/minecraft/commands/Commands$CommandSelection;Lnet/minecraft/commands/CommandBuildContext;)V",
+            "sig": "(Lcom/mojang/brigadier/CommandDispatcher<Lnet/minecraft/commands/CommandSourceStack;>;Lnet/minecraft/commands/Commands$CommandSelection;Lnet/minecraft/commands/CommandBuildContext;)V"
+          },
+          {
+            "nme": "getDispatcher",
+            "acc": 1,
+            "dsc": "()Lcom/mojang/brigadier/CommandDispatcher;",
+            "sig": "()Lcom/mojang/brigadier/CommandDispatcher<Lnet/minecraft/commands/CommandSourceStack;>;"
+          },
+          {
+            "nme": "getCommandSelection",
+            "acc": 1,
+            "dsc": "()Lnet/minecraft/commands/Commands$CommandSelection;"
+          },
+          {
+            "nme": "getBuildContext",
+            "acc": 1,
+            "dsc": "()Lnet/minecraft/commands/CommandBuildContext;"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 18,
+            "nme": "dispatcher",
+            "dsc": "Lcom/mojang/brigadier/CommandDispatcher;",
+            "sig": "Lcom/mojang/brigadier/CommandDispatcher<Lnet/minecraft/commands/CommandSourceStack;>;"
+          },
+          {
+            "acc": 18,
+            "nme": "selection",
+            "dsc": "Lnet/minecraft/commands/Commands$CommandSelection;"
+          },
+          {
+            "acc": 18,
+            "nme": "context",
+            "dsc": "Lnet/minecraft/commands/CommandBuildContext;"
+          }
+        ]
+      },
+      "glitchcore/util/SheetHelper.class": {
+        "ver": 61,
+        "acc": 33,
+        "nme": "glitchcore/util/SheetHelper",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "createSignMaterial",
+            "acc": 10,
+            "dsc": "(Lnet/minecraft/world/level/block/state/properties/WoodType;)Lnet/minecraft/client/resources/model/Material;"
+          },
+          {
+            "nme": "createHangingSignMaterial",
+            "acc": 10,
+            "dsc": "(Lnet/minecraft/world/level/block/state/properties/WoodType;)Lnet/minecraft/client/resources/model/Material;"
+          },
+          {
+            "nme": "addWoodType",
+            "acc": 9,
+            "dsc": "(Lnet/minecraft/world/level/block/state/properties/WoodType;)V"
+          }
+        ],
+        "flds": []
+      },
+      "glitchcore/event/client/RegisterColorsEvent$Item.class": {
+        "ver": 61,
+        "acc": 33,
+        "nme": "glitchcore/event/client/RegisterColorsEvent$Item",
+        "super": "glitchcore/event/client/RegisterColorsEvent",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "(Ljava/util/function/BiConsumer;)V",
+            "sig": "(Ljava/util/function/BiConsumer<Lnet/minecraft/client/color/item/ItemColor;Lnet/minecraft/world/level/ItemLike;>;)V"
+          }
+        ],
+        "flds": []
+      },
+      "glitchcore/event/entity/LivingEntityUseItemEvent$Finish.class": {
+        "ver": 61,
+        "acc": 33,
+        "nme": "glitchcore/event/entity/LivingEntityUseItemEvent$Finish",
+        "super": "glitchcore/event/entity/LivingEntityUseItemEvent",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/world/entity/LivingEntity;Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/item/ItemStack;)V"
+          },
+          {
+            "nme": "setResult",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/world/item/ItemStack;)V"
+          },
+          {
+            "nme": "getResult",
+            "acc": 1,
+            "dsc": "()Lnet/minecraft/world/item/ItemStack;"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 2,
+            "nme": "result",
+            "dsc": "Lnet/minecraft/world/item/ItemStack;"
+          }
+        ]
+      },
+      "glitchcore/forge/GlitchCoreForge.class": {
+        "ver": 61,
+        "acc": 33,
+        "nme": "glitchcore/forge/GlitchCoreForge",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "prepareModEventHandlers",
+            "acc": 131081,
+            "dsc": "(Lnet/minecraftforge/eventbus/api/IEventBus;)V",
+            "vanns": [
+              {
+                "dsc": "Ljava/lang/Deprecated;"
+              }
+            ]
+          }
+        ],
+        "flds": [],
+        "vanns": [
+          {
+            "dsc": "Lnet/minecraftforge/fml/common/Mod;",
+            "vals": [
+              "value",
+              "glitchcore"
+            ]
+          }
+        ]
+      },
+      "glitchcore/mixin/client/MixinKeyboardHandler.class": {
+        "ver": 61,
+        "acc": 1057,
+        "nme": "glitchcore/mixin/client/MixinKeyboardHandler",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "onKeyInput",
+            "acc": 1,
+            "dsc": "(JIIIILorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V",
+            "vanns": [
+              {
+                "dsc": "Lorg/spongepowered/asm/mixin/injection/Inject;",
+                "vals": [
+                  "method",
+                  [
+                    "keyPress"
+                  ],
+                  "at",
+                  [
+                    {
+                      "desc": "Lorg/spongepowered/asm/mixin/injection/At;",
+                      "values": [
+                        "value",
+                        "TAIL"
+                      ],
+                      "api": 589824
+                    }
+                  ]
+                ]
+              }
+            ]
+          }
+        ],
+        "flds": [
+          {
+            "acc": 2,
+            "nme": "f_90867_",
+            "dsc": "Lnet/minecraft/client/Minecraft;"
+          },
+          {
+            "acc": 2,
+            "nme": "f_90873_",
+            "dsc": "Z"
+          }
+        ],
+        "invanns": [
+          {
+            "dsc": "Lorg/spongepowered/asm/mixin/Mixin;",
+            "vals": [
+              "value",
+              [
+                {
+                  "itrlNme": "net/minecraft/client/KeyboardHandler"
+                }
+              ]
+            ]
+          }
+        ]
+      },
+      "glitchcore/util/GuiUtils.class": {
+        "ver": 61,
+        "acc": 33,
+        "nme": "glitchcore/util/GuiUtils",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "setupOverlayRenderState",
+            "acc": 9,
+            "dsc": "(ZZ)V"
+          },
+          {
+            "nme": "shouldDrawSurvivalElements",
+            "acc": 9,
+            "dsc": "()Z"
+          }
+        ],
+        "flds": []
+      },
+      "glitchcore/forge/handlers/PlayerLoggedInEventHandler.class": {
+        "ver": 61,
+        "acc": 33,
+        "nme": "glitchcore/forge/handlers/PlayerLoggedInEventHandler",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "onJoin",
+            "acc": 9,
+            "dsc": "(Lnet/minecraftforge/event/entity/player/PlayerEvent$PlayerLoggedInEvent;)V",
+            "vanns": [
+              {
+                "dsc": "Lnet/minecraftforge/eventbus/api/SubscribeEvent;"
+              }
+            ]
+          },
+          {
+            "nme": "lambda$onJoin$0",
+            "acc": 4106,
+            "dsc": "(Lnet/minecraftforge/event/entity/player/PlayerEvent$PlayerLoggedInEvent;Ljava/lang/String;Lglitchcore/config/Config;)V"
+          }
+        ],
+        "flds": [],
+        "vanns": [
+          {
+            "dsc": "Lnet/minecraftforge/fml/common/Mod$EventBusSubscriber;",
+            "vals": [
+              "bus",
+              [
+                "Lnet/minecraftforge/fml/common/Mod$EventBusSubscriber$Bus;",
+                "FORGE"
+              ]
+            ]
+          }
+        ]
+      },
+      "glitchcore/forge/handlers/TickEventHandler$1.class": {
+        "ver": 61,
+        "acc": 4128,
+        "nme": "glitchcore/forge/handlers/TickEventHandler$1",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<clinit>",
+            "acc": 8,
+            "dsc": "()V"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 4120,
+            "nme": "$SwitchMap$net$minecraftforge$event$TickEvent$Phase",
+            "dsc": "[I"
+          }
+        ]
+      },
+      "glitchcore/event/client/RegisterColorsEvent.class": {
+        "ver": 61,
+        "acc": 1057,
+        "nme": "glitchcore/event/client/RegisterColorsEvent",
+        "super": "glitchcore/event/Event",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "(Ljava/util/function/BiConsumer;)V",
+            "sig": "(Ljava/util/function/BiConsumer<TObjColor;TObj;>;)V"
+          },
+          {
+            "nme": "register",
+            "acc": 129,
+            "dsc": "(Ljava/lang/Object;[Ljava/lang/Object;)V",
+            "sig": "(TObjColor;[TObj;)V"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 18,
+            "nme": "register",
+            "dsc": "Ljava/util/function/BiConsumer;",
+            "sig": "Ljava/util/function/BiConsumer<TObjColor;TObj;>;"
+          }
+        ]
+      },
+      "glitchcore/event/client/InputEvent$Key.class": {
+        "ver": 61,
+        "acc": 33,
+        "nme": "glitchcore/event/client/InputEvent$Key",
+        "super": "glitchcore/event/client/InputEvent",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "(IIIIZ)V"
+          },
+          {
+            "nme": "getKey",
+            "acc": 1,
+            "dsc": "()I"
+          },
+          {
+            "nme": "getScanCode",
+            "acc": 1,
+            "dsc": "()I"
+          },
+          {
+            "nme": "getAction",
+            "acc": 1,
+            "dsc": "()I"
+          },
+          {
+            "nme": "getModifiers",
+            "acc": 1,
+            "dsc": "()I"
+          },
+          {
+            "nme": "getHandledDebugKey",
+            "acc": 1,
+            "dsc": "()Z"
+          },
+          {
+            "nme": "setHandledDebugKey",
+            "acc": 1,
+            "dsc": "(Z)V"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 18,
+            "nme": "key",
+            "dsc": "I"
+          },
+          {
+            "acc": 18,
+            "nme": "scanCode",
+            "dsc": "I"
+          },
+          {
+            "acc": 18,
+            "nme": "action",
+            "dsc": "I"
+          },
+          {
+            "acc": 18,
+            "nme": "modifiers",
+            "dsc": "I"
+          },
+          {
+            "acc": 2,
+            "nme": "handledDebugKey",
+            "dsc": "Z"
+          }
+        ]
+      },
+      "glitchcore/event/village/VillagerTradesEvent.class": {
+        "ver": 61,
+        "acc": 33,
+        "nme": "glitchcore/event/village/VillagerTradesEvent",
+        "super": "glitchcore/event/Event",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/world/entity/npc/VillagerProfession;ILjava/util/List;)V",
+            "sig": "(Lnet/minecraft/world/entity/npc/VillagerProfession;ILjava/util/List<Lnet/minecraft/world/entity/npc/VillagerTrades$ItemListing;>;)V"
+          },
+          {
+            "nme": "getProfession",
+            "acc": 1,
+            "dsc": "()Lnet/minecraft/world/entity/npc/VillagerProfession;"
+          },
+          {
+            "nme": "getLevel",
+            "acc": 1,
+            "dsc": "()I"
+          },
+          {
+            "nme": "getTrades",
+            "acc": 1,
+            "dsc": "()Ljava/util/List;",
+            "sig": "()Ljava/util/List<Lnet/minecraft/world/entity/npc/VillagerTrades$ItemListing;>;"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 18,
+            "nme": "profession",
+            "dsc": "Lnet/minecraft/world/entity/npc/VillagerProfession;"
+          },
+          {
+            "acc": 18,
+            "nme": "level",
+            "dsc": "I"
+          },
+          {
+            "acc": 18,
+            "nme": "trades",
+            "dsc": "Ljava/util/List;",
+            "sig": "Ljava/util/List<Lnet/minecraft/world/entity/npc/VillagerTrades$ItemListing;>;"
+          }
+        ]
+      },
+      "glitchcore/forge/handlers/RegistryEventHandler.class": {
+        "ver": 61,
+        "acc": 33,
+        "nme": "glitchcore/forge/handlers/RegistryEventHandler",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "onRegister",
+            "acc": 9,
+            "dsc": "(Lnet/minecraftforge/registries/RegisterEvent;)V",
+            "vanns": [
+              {
+                "dsc": "Lnet/minecraftforge/eventbus/api/SubscribeEvent;"
+              }
+            ]
+          },
+          {
+            "nme": "lambda$onRegister$1",
+            "acc": 4106,
+            "dsc": "(Lnet/minecraftforge/registries/RegisterEvent;Lnet/minecraft/resources/ResourceKey;Lnet/minecraft/resources/ResourceLocation;Ljava/lang/Object;)V"
+          },
+          {
+            "nme": "lambda$onRegister$0",
+            "acc": 4106,
+            "dsc": "(Ljava/lang/Object;)Ljava/lang/Object;"
+          }
+        ],
+        "flds": [],
+        "vanns": [
+          {
+            "dsc": "Lnet/minecraftforge/fml/common/Mod$EventBusSubscriber;",
+            "vals": [
+              "bus",
+              [
+                "Lnet/minecraftforge/fml/common/Mod$EventBusSubscriber$Bus;",
+                "MOD"
+              ]
+            ]
+          }
+        ]
+      },
+      "glitchcore/core/GlitchCore.class": {
+        "ver": 61,
+        "acc": 33,
+        "nme": "glitchcore/core/GlitchCore",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "init",
+            "acc": 131081,
+            "dsc": "()V",
+            "vanns": [
+              {
+                "dsc": "Ljava/lang/Deprecated;"
+              }
+            ]
+          },
+          {
+            "nme": "<clinit>",
+            "acc": 8,
+            "dsc": "()V"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 25,
+            "nme": "MOD_ID",
+            "dsc": "Ljava/lang/String;",
+            "val": "glitchcore"
+          },
+          {
+            "acc": 25,
+            "nme": "LOGGER",
+            "dsc": "Lorg/apache/logging/log4j/Logger;"
+          }
+        ]
+      },
+      "glitchcore/event/client/RegisterParticleSpritesEvent.class": {
+        "ver": 61,
+        "acc": 33,
+        "nme": "glitchcore/event/client/RegisterParticleSpritesEvent",
+        "super": "glitchcore/event/Event",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "(Ljava/util/function/BiConsumer;)V",
+            "sig": "(Ljava/util/function/BiConsumer<Lnet/minecraft/core/particles/ParticleType<*>;Lnet/minecraft/client/particle/ParticleEngine$SpriteParticleRegistration<*>;>;)V"
+          },
+          {
+            "nme": "registerSpriteSet",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/core/particles/ParticleType;Lnet/minecraft/client/particle/ParticleEngine$SpriteParticleRegistration;)V",
+            "sig": "<T::Lnet/minecraft/core/particles/ParticleOptions;>(Lnet/minecraft/core/particles/ParticleType<TT;>;Lnet/minecraft/client/particle/ParticleEngine$SpriteParticleRegistration<TT;>;)V"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 18,
+            "nme": "registerSpriteSetFunc",
+            "dsc": "Ljava/util/function/BiConsumer;",
+            "sig": "Ljava/util/function/BiConsumer<Lnet/minecraft/core/particles/ParticleType<*>;Lnet/minecraft/client/particle/ParticleEngine$SpriteParticleRegistration<*>;>;"
+          }
+        ]
+      },
+      "glitchcore/event/player/PlayerInteractEvent$UseBlock.class": {
+        "ver": 61,
+        "acc": 33,
+        "nme": "glitchcore/event/player/PlayerInteractEvent$UseBlock",
+        "super": "glitchcore/event/player/PlayerInteractEvent",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/world/entity/player/Player;Lnet/minecraft/world/InteractionHand;Lnet/minecraft/world/phys/BlockHitResult;)V"
+          },
+          {
+            "nme": "getHitResult",
+            "acc": 1,
+            "dsc": "()Lnet/minecraft/world/phys/BlockHitResult;"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 18,
+            "nme": "hitResult",
+            "dsc": "Lnet/minecraft/world/phys/BlockHitResult;"
+          }
+        ]
+      },
+      "glitchcore/forge/mixin/impl/MixinRenderHelper.class": {
+        "ver": 61,
+        "acc": 33,
+        "nme": "glitchcore/forge/mixin/impl/MixinRenderHelper",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "setRenderType",
+            "acc": 9,
+            "dsc": "(Lnet/minecraft/world/level/block/Block;Lnet/minecraft/client/renderer/RenderType;)V",
+            "vanns": [
+              {
+                "dsc": "Lorg/spongepowered/asm/mixin/Overwrite;"
+              }
+            ]
+          },
+          {
+            "nme": "setRenderType",
+            "acc": 9,
+            "dsc": "(Lnet/minecraft/world/level/material/Fluid;Lnet/minecraft/client/renderer/RenderType;)V",
+            "vanns": [
+              {
+                "dsc": "Lorg/spongepowered/asm/mixin/Overwrite;"
+              }
+            ]
+          },
+          {
+            "nme": "registerBlockEntityRenderer",
+            "acc": 9,
+            "dsc": "(Lnet/minecraft/world/level/block/entity/BlockEntityType;Lnet/minecraft/client/renderer/blockentity/BlockEntityRendererProvider;)V",
+            "sig": "<T:Lnet/minecraft/world/level/block/entity/BlockEntity;>(Lnet/minecraft/world/level/block/entity/BlockEntityType<+TT;>;Lnet/minecraft/client/renderer/blockentity/BlockEntityRendererProvider<TT;>;)V",
+            "vanns": [
+              {
+                "dsc": "Lorg/spongepowered/asm/mixin/Overwrite;"
+              }
+            ]
+          },
+          {
+            "nme": "registerEntityRenderer",
+            "acc": 9,
+            "dsc": "(Lnet/minecraft/world/entity/EntityType;Lnet/minecraft/client/renderer/entity/EntityRendererProvider;)V",
+            "sig": "<T:Lnet/minecraft/world/entity/Entity;>(Lnet/minecraft/world/entity/EntityType<+TT;>;Lnet/minecraft/client/renderer/entity/EntityRendererProvider<TT;>;)V",
+            "vanns": [
+              {
+                "dsc": "Lorg/spongepowered/asm/mixin/Overwrite;"
+              }
+            ]
+          },
+          {
+            "nme": "registerLayerDefinition",
+            "acc": 9,
+            "dsc": "(Lnet/minecraft/client/model/geom/ModelLayerLocation;Ljava/util/function/Supplier;)V",
+            "sig": "(Lnet/minecraft/client/model/geom/ModelLayerLocation;Ljava/util/function/Supplier<Lnet/minecraft/client/model/geom/builders/LayerDefinition;>;)V",
+            "vanns": [
+              {
+                "dsc": "Lorg/spongepowered/asm/mixin/Overwrite;"
+              }
+            ]
+          }
+        ],
+        "flds": [],
+        "invanns": [
+          {
+            "dsc": "Lorg/spongepowered/asm/mixin/Mixin;",
+            "vals": [
+              "value",
+              [
+                {
+                  "itrlNme": "glitchcore/util/RenderHelper"
+                }
+              ],
+              "remap",
+              false
+            ]
+          }
+        ]
+      },
+      "glitchcore/forge/mixin/impl/MixinPacketHandler$1.class": {
+        "ver": 61,
+        "acc": 32,
+        "nme": "glitchcore/forge/mixin/impl/MixinPacketHandler$1",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 0,
+            "dsc": "(Lglitchcore/forge/mixin/impl/MixinPacketHandler;Ljava/util/function/Supplier;)V",
+            "sig": "()V"
+          },
+          {
+            "nme": "isClientSide",
+            "acc": 1,
+            "dsc": "()Z"
+          },
+          {
+            "nme": "getPlayer",
+            "acc": 1,
+            "dsc": "()Ljava/util/Optional;",
+            "sig": "()Ljava/util/Optional<Lnet/minecraft/world/entity/player/Player;>;"
+          },
+          {
+            "nme": "lambda$getPlayer$0",
+            "acc": 4098,
+            "dsc": "()Ljava/util/Optional;"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 4112,
+            "nme": "val$forgeContext",
+            "dsc": "Ljava/util/function/Supplier;"
+          },
+          {
+            "acc": 4112,
+            "nme": "this$0",
+            "dsc": "Lglitchcore/forge/mixin/impl/MixinPacketHandler;"
+          }
+        ]
+      },
+      "glitchcore/event/client/LevelRenderEvent$Stage.class": {
+        "ver": 61,
+        "acc": 16433,
+        "nme": "glitchcore/event/client/LevelRenderEvent$Stage",
+        "super": "java/lang/Enum",
+        "mthds": [
+          {
+            "nme": "values",
+            "acc": 9,
+            "dsc": "()[Lglitchcore/event/client/LevelRenderEvent$Stage;"
+          },
+          {
+            "nme": "valueOf",
+            "acc": 9,
+            "dsc": "(Ljava/lang/String;)Lglitchcore/event/client/LevelRenderEvent$Stage;"
+          },
+          {
+            "nme": "<init>",
+            "acc": 2,
+            "dsc": "(Ljava/lang/String;I)V",
+            "sig": "()V"
+          },
+          {
+            "nme": "$values",
+            "acc": 4106,
+            "dsc": "()[Lglitchcore/event/client/LevelRenderEvent$Stage;"
+          },
+          {
+            "nme": "<clinit>",
+            "acc": 8,
+            "dsc": "()V"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 16409,
+            "nme": "AFTER_PARTICLES",
+            "dsc": "Lglitchcore/event/client/LevelRenderEvent$Stage;"
+          },
+          {
+            "acc": 4122,
+            "nme": "$VALUES",
+            "dsc": "[Lglitchcore/event/client/LevelRenderEvent$Stage;"
+          }
+        ]
+      },
+      "glitchcore/util/RegistryHelper$Registrar.class": {
+        "ver": 61,
+        "acc": 1537,
+        "nme": "glitchcore/util/RegistryHelper$Registrar",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "registerAll",
+            "acc": 1025,
+            "dsc": "(Ljava/util/function/BiConsumer;)V",
+            "sig": "(Ljava/util/function/BiConsumer<Lnet/minecraft/resources/ResourceLocation;TT;>;)V"
+          }
+        ],
+        "flds": []
+      },
+      "glitchcore/event/TickEvent.class": {
+        "ver": 61,
+        "acc": 1057,
+        "nme": "glitchcore/event/TickEvent",
+        "super": "glitchcore/event/Event",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "(Lglitchcore/event/TickEvent$Phase;)V"
+          },
+          {
+            "nme": "getPhase",
+            "acc": 1,
+            "dsc": "()Lglitchcore/event/TickEvent$Phase;"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 18,
+            "nme": "phase",
+            "dsc": "Lglitchcore/event/TickEvent$Phase;"
+          }
+        ]
+      },
+      "glitchcore/event/player/PlayerInteractEvent.class": {
+        "ver": 61,
+        "acc": 1057,
+        "nme": "glitchcore/event/player/PlayerInteractEvent",
+        "super": "glitchcore/event/player/PlayerEvent",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/world/entity/player/Player;Lnet/minecraft/world/InteractionHand;)V"
+          },
+          {
+            "nme": "isCancellable",
+            "acc": 1,
+            "dsc": "()Z"
+          },
+          {
+            "nme": "getHand",
+            "acc": 1,
+            "dsc": "()Lnet/minecraft/world/InteractionHand;"
+          },
+          {
+            "nme": "getItemStack",
+            "acc": 1,
+            "dsc": "()Lnet/minecraft/world/item/ItemStack;"
+          },
+          {
+            "nme": "getCancelResult",
+            "acc": 1,
+            "dsc": "()Lnet/minecraft/world/InteractionResultHolder;",
+            "sig": "()Lnet/minecraft/world/InteractionResultHolder<Lnet/minecraft/world/item/ItemStack;>;"
+          },
+          {
+            "nme": "setCancelResult",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/world/InteractionResultHolder;)V",
+            "sig": "(Lnet/minecraft/world/InteractionResultHolder<Lnet/minecraft/world/item/ItemStack;>;)V"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 18,
+            "nme": "hand",
+            "dsc": "Lnet/minecraft/world/InteractionHand;"
+          },
+          {
+            "acc": 2,
+            "nme": "cancelResult",
+            "dsc": "Lnet/minecraft/world/InteractionResultHolder;",
+            "sig": "Lnet/minecraft/world/InteractionResultHolder<Lnet/minecraft/world/item/ItemStack;>;"
+          }
+        ]
+      },
+      "glitchcore/event/RegistryEvent.class": {
+        "ver": 61,
+        "acc": 49,
+        "nme": "glitchcore/event/RegistryEvent",
+        "super": "glitchcore/event/Event",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/resources/ResourceKey;Ljava/util/function/BiConsumer;)V",
+            "sig": "(Lnet/minecraft/resources/ResourceKey<+Lnet/minecraft/core/Registry<*>;>;Ljava/util/function/BiConsumer<Lnet/minecraft/resources/ResourceLocation;*>;)V"
+          },
+          {
+            "nme": "register",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/resources/ResourceLocation;Ljava/lang/Object;)Ljava/lang/Object;",
+            "sig": "<T:Ljava/lang/Object;>(Lnet/minecraft/resources/ResourceLocation;TT;)TT;"
+          },
+          {
+            "nme": "getRegistryKey",
+            "acc": 1,
+            "dsc": "()Lnet/minecraft/resources/ResourceKey;",
+            "sig": "()Lnet/minecraft/resources/ResourceKey<+Lnet/minecraft/core/Registry<*>;>;"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 20,
+            "nme": "registryKey",
+            "dsc": "Lnet/minecraft/resources/ResourceKey;",
+            "sig": "Lnet/minecraft/resources/ResourceKey<+Lnet/minecraft/core/Registry<*>;>;"
+          },
+          {
+            "acc": 18,
+            "nme": "doRegister",
+            "dsc": "Ljava/util/function/BiConsumer;",
+            "sig": "Ljava/util/function/BiConsumer<Lnet/minecraft/resources/ResourceLocation;*>;"
+          }
+        ]
+      },
+      "glitchcore/network/PacketHandler.class": {
+        "ver": 61,
+        "acc": 49,
+        "nme": "glitchcore/network/PacketHandler",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/resources/ResourceLocation;)V"
+          },
+          {
+            "nme": "register",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/resources/ResourceLocation;Lglitchcore/network/CustomPacket;)V",
+            "sig": "(Lnet/minecraft/resources/ResourceLocation;Lglitchcore/network/CustomPacket<*>;)V"
+          },
+          {
+            "nme": "sendToPlayer",
+            "acc": 1,
+            "dsc": "(Lglitchcore/network/CustomPacket;Lnet/minecraft/server/level/ServerPlayer;)V",
+            "sig": "<T::Lglitchcore/network/CustomPacket<TT;>;>(TT;Lnet/minecraft/server/level/ServerPlayer;)V"
+          },
+          {
+            "nme": "sendToAll",
+            "acc": 1,
+            "dsc": "(Lglitchcore/network/CustomPacket;Lnet/minecraft/server/MinecraftServer;)V",
+            "sig": "<T::Lglitchcore/network/CustomPacket<TT;>;>(TT;Lnet/minecraft/server/MinecraftServer;)V"
+          },
+          {
+            "nme": "sendToServer",
+            "acc": 1,
+            "dsc": "(Lglitchcore/network/CustomPacket;)V",
+            "sig": "<T::Lglitchcore/network/CustomPacket<TT;>;>(TT;)V"
+          },
+          {
+            "nme": "init",
+            "acc": 2,
+            "dsc": "()V"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 18,
+            "nme": "channelName",
+            "dsc": "Lnet/minecraft/resources/ResourceLocation;"
+          }
+        ]
+      },
+      "glitchcore/forge/mixin/impl/MixinBlockHelper.class": {
+        "ver": 61,
+        "acc": 33,
+        "nme": "glitchcore/forge/mixin/impl/MixinBlockHelper",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "registerTillable",
+            "acc": 9,
+            "dsc": "(Lnet/minecraft/world/level/block/Block;Ljava/util/function/Predicate;Lnet/minecraft/world/level/block/state/BlockState;)V",
+            "sig": "(Lnet/minecraft/world/level/block/Block;Ljava/util/function/Predicate<Lnet/minecraft/world/item/context/UseOnContext;>;Lnet/minecraft/world/level/block/state/BlockState;)V",
+            "vanns": [
+              {
+                "dsc": "Lorg/spongepowered/asm/mixin/Overwrite;"
+              }
+            ]
+          }
+        ],
+        "flds": [],
+        "invanns": [
+          {
+            "dsc": "Lorg/spongepowered/asm/mixin/Mixin;",
+            "vals": [
+              "value",
+              [
+                {
+                  "itrlNme": "glitchcore/util/BlockHelper"
+                }
+              ],
+              "remap",
+              false
+            ]
+          }
+        ]
+      },
+      "glitchcore/config/Config.class": {
+        "ver": 61,
+        "acc": 1057,
+        "nme": "glitchcore/config/Config",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 4,
+            "dsc": "(Ljava/nio/file/Path;)V"
+          },
+          {
+            "nme": "<init>",
+            "acc": 4,
+            "dsc": "(Ljava/nio/file/Path;Ljava/lang/String;)V"
+          },
+          {
+            "nme": "add",
+            "acc": 1,
+            "dsc": "(Ljava/lang/String;Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;",
+            "sig": "<T:Ljava/lang/Object;>(Ljava/lang/String;TT;Ljava/lang/String;)TT;"
+          },
+          {
+            "nme": "add",
+            "acc": 1,
+            "dsc": "(Ljava/lang/String;Ljava/lang/Object;Ljava/lang/String;Ljava/util/function/Predicate;)Ljava/lang/Object;",
+            "sig": "<T:Ljava/lang/Object;>(Ljava/lang/String;TT;Ljava/lang/String;Ljava/util/function/Predicate<TT;>;)TT;"
+          },
+          {
+            "nme": "addNumber",
+            "acc": 1,
+            "dsc": "(Ljava/lang/String;Ljava/lang/Number;Ljava/lang/Number;Ljava/lang/Number;Ljava/lang/String;)Ljava/lang/Number;",
+            "sig": "<T:Ljava/lang/Number;:Ljava/lang/Comparable<TT;>;>(Ljava/lang/String;TT;TT;TT;Ljava/lang/String;)TT;"
+          },
+          {
+            "nme": "load",
+            "acc": 1025,
+            "dsc": "()V"
+          },
+          {
+            "nme": "parse",
+            "acc": 1,
+            "dsc": "(Ljava/lang/String;)V"
+          },
+          {
+            "nme": "read",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "write",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "encode",
+            "acc": 1,
+            "dsc": "()Ljava/lang/String;"
+          },
+          {
+            "nme": "getPath",
+            "acc": 1,
+            "dsc": "()Ljava/nio/file/Path;"
+          },
+          {
+            "nme": "readToml",
+            "acc": 9,
+            "dsc": "(Ljava/nio/file/Path;)Ljava/lang/String;"
+          },
+          {
+            "nme": "getRaw",
+            "acc": 1,
+            "dsc": "(Ljava/util/List;)Ljava/lang/Object;",
+            "sig": "<T:Ljava/lang/Object;>(Ljava/util/List<Ljava/lang/String;>;)TT;"
+          },
+          {
+            "nme": "valueMap",
+            "acc": 1,
+            "dsc": "()Ljava/util/Map;",
+            "sig": "()Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;"
+          },
+          {
+            "nme": "contains",
+            "acc": 1,
+            "dsc": "(Ljava/util/List;)Z",
+            "sig": "(Ljava/util/List<Ljava/lang/String;>;)Z"
+          },
+          {
+            "nme": "size",
+            "acc": 1,
+            "dsc": "()I"
+          },
+          {
+            "nme": "isEmpty",
+            "acc": 1,
+            "dsc": "()Z"
+          },
+          {
+            "nme": "equals",
+            "acc": 1,
+            "dsc": "(Ljava/lang/Object;)Z"
+          },
+          {
+            "nme": "hashCode",
+            "acc": 1,
+            "dsc": "()I"
+          },
+          {
+            "nme": "configFormat",
+            "acc": 1,
+            "dsc": "()Lcom/electronwill/nightconfig/core/ConfigFormat;",
+            "sig": "()Lcom/electronwill/nightconfig/core/ConfigFormat<*>;"
+          },
+          {
+            "nme": "set",
+            "acc": 1,
+            "dsc": "(Ljava/util/List;Ljava/lang/Object;)Ljava/lang/Object;",
+            "sig": "<T:Ljava/lang/Object;>(Ljava/util/List<Ljava/lang/String;>;Ljava/lang/Object;)TT;"
+          },
+          {
+            "nme": "add",
+            "acc": 1,
+            "dsc": "(Ljava/util/List;Ljava/lang/Object;)Z",
+            "sig": "(Ljava/util/List<Ljava/lang/String;>;Ljava/lang/Object;)Z"
+          },
+          {
+            "nme": "remove",
+            "acc": 1,
+            "dsc": "(Ljava/util/List;)Ljava/lang/Object;",
+            "sig": "<T:Ljava/lang/Object;>(Ljava/util/List<Ljava/lang/String;>;)TT;"
+          },
+          {
+            "nme": "clear",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "getComment",
+            "acc": 1,
+            "dsc": "(Ljava/util/List;)Ljava/lang/String;",
+            "sig": "(Ljava/util/List<Ljava/lang/String;>;)Ljava/lang/String;"
+          },
+          {
+            "nme": "containsComment",
+            "acc": 1,
+            "dsc": "(Ljava/util/List;)Z",
+            "sig": "(Ljava/util/List<Ljava/lang/String;>;)Z"
+          },
+          {
+            "nme": "setComment",
+            "acc": 1,
+            "dsc": "(Ljava/util/List;Ljava/lang/String;)Ljava/lang/String;",
+            "sig": "(Ljava/util/List<Ljava/lang/String;>;Ljava/lang/String;)Ljava/lang/String;"
+          },
+          {
+            "nme": "removeComment",
+            "acc": 1,
+            "dsc": "(Ljava/util/List;)Ljava/lang/String;",
+            "sig": "(Ljava/util/List<Ljava/lang/String;>;)Ljava/lang/String;"
+          },
+          {
+            "nme": "commentMap",
+            "acc": 1,
+            "dsc": "()Ljava/util/Map;",
+            "sig": "()Ljava/util/Map<Ljava/lang/String;Ljava/lang/String;>;"
+          },
+          {
+            "nme": "entrySet",
+            "acc": 1,
+            "dsc": "()Ljava/util/Set;",
+            "sig": "()Ljava/util/Set<+Lcom/electronwill/nightconfig/core/CommentedConfig$Entry;>;"
+          },
+          {
+            "nme": "clearComments",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "putAllComments",
+            "acc": 1,
+            "dsc": "(Ljava/util/Map;)V",
+            "sig": "(Ljava/util/Map<Ljava/lang/String;Lcom/electronwill/nightconfig/core/UnmodifiableCommentedConfig$CommentNode;>;)V"
+          },
+          {
+            "nme": "putAllComments",
+            "acc": 1,
+            "dsc": "(Lcom/electronwill/nightconfig/core/UnmodifiableCommentedConfig;)V"
+          },
+          {
+            "nme": "getComments",
+            "acc": 1,
+            "dsc": "()Ljava/util/Map;",
+            "sig": "()Ljava/util/Map<Ljava/lang/String;Lcom/electronwill/nightconfig/core/UnmodifiableCommentedConfig$CommentNode;>;"
+          },
+          {
+            "nme": "createSubConfig",
+            "acc": 1,
+            "dsc": "()Lcom/electronwill/nightconfig/core/CommentedConfig;"
+          },
+          {
+            "nme": "toString",
+            "acc": 1,
+            "dsc": "()Ljava/lang/String;"
+          },
+          {
+            "nme": "createSubConfig",
+            "acc": 4161,
+            "dsc": "()Lcom/electronwill/nightconfig/core/Config;"
+          },
+          {
+            "nme": "lambda$addNumber$0",
+            "acc": 4106,
+            "dsc": "(Ljava/lang/Number;Ljava/lang/Number;Ljava/lang/Number;)Z"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 2,
+            "nme": "config",
+            "dsc": "Lcom/electronwill/nightconfig/core/CommentedConfig;"
+          },
+          {
+            "acc": 18,
+            "nme": "path",
+            "dsc": "Ljava/nio/file/Path;"
+          }
+        ]
+      },
+      "glitchcore/event/TickEvent$Client.class": {
+        "ver": 61,
+        "acc": 33,
+        "nme": "glitchcore/event/TickEvent$Client",
+        "super": "glitchcore/event/TickEvent",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "(Lglitchcore/event/TickEvent$Phase;)V"
+          }
+        ],
+        "flds": []
+      },
+      "glitchcore/event/village/WandererTradesEvent.class": {
+        "ver": 61,
+        "acc": 33,
+        "nme": "glitchcore/event/village/WandererTradesEvent",
+        "super": "glitchcore/event/Event",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "addGenericTrade",
+            "acc": 129,
+            "dsc": "([Lnet/minecraft/world/entity/npc/VillagerTrades$ItemListing;)V"
+          },
+          {
+            "nme": "addGenericTrades",
+            "acc": 1,
+            "dsc": "(Ljava/util/List;)V",
+            "sig": "(Ljava/util/List<Lnet/minecraft/world/entity/npc/VillagerTrades$ItemListing;>;)V"
+          },
+          {
+            "nme": "addRareTrade",
+            "acc": 129,
+            "dsc": "([Lnet/minecraft/world/entity/npc/VillagerTrades$ItemListing;)V"
+          },
+          {
+            "nme": "addRareTrades",
+            "acc": 1,
+            "dsc": "(Ljava/util/List;)V",
+            "sig": "(Ljava/util/List<Lnet/minecraft/world/entity/npc/VillagerTrades$ItemListing;>;)V"
+          },
+          {
+            "nme": "getGenericTrades",
+            "acc": 1,
+            "dsc": "()Lcom/google/common/collect/ImmutableList;",
+            "sig": "()Lcom/google/common/collect/ImmutableList<Lnet/minecraft/world/entity/npc/VillagerTrades$ItemListing;>;"
+          },
+          {
+            "nme": "getRareTrades",
+            "acc": 1,
+            "dsc": "()Lcom/google/common/collect/ImmutableList;",
+            "sig": "()Lcom/google/common/collect/ImmutableList<Lnet/minecraft/world/entity/npc/VillagerTrades$ItemListing;>;"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 4,
+            "nme": "generic",
+            "dsc": "Ljava/util/List;",
+            "sig": "Ljava/util/List<Lnet/minecraft/world/entity/npc/VillagerTrades$ItemListing;>;"
+          },
+          {
+            "acc": 4,
+            "nme": "rare",
+            "dsc": "Ljava/util/List;",
+            "sig": "Ljava/util/List<Lnet/minecraft/world/entity/npc/VillagerTrades$ItemListing;>;"
+          }
+        ]
+      },
+      "glitchcore/event/TagsUpdatedEvent$UpdateCause.class": {
+        "ver": 61,
+        "acc": 16433,
+        "nme": "glitchcore/event/TagsUpdatedEvent$UpdateCause",
+        "super": "java/lang/Enum",
+        "mthds": [
+          {
+            "nme": "values",
+            "acc": 9,
+            "dsc": "()[Lglitchcore/event/TagsUpdatedEvent$UpdateCause;"
+          },
+          {
+            "nme": "valueOf",
+            "acc": 9,
+            "dsc": "(Ljava/lang/String;)Lglitchcore/event/TagsUpdatedEvent$UpdateCause;"
+          },
+          {
+            "nme": "<init>",
+            "acc": 2,
+            "dsc": "(Ljava/lang/String;I)V",
+            "sig": "()V"
+          },
+          {
+            "nme": "$values",
+            "acc": 4106,
+            "dsc": "()[Lglitchcore/event/TagsUpdatedEvent$UpdateCause;"
+          },
+          {
+            "nme": "<clinit>",
+            "acc": 8,
+            "dsc": "()V"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 16409,
+            "nme": "SERVER_DATA_LOAD",
+            "dsc": "Lglitchcore/event/TagsUpdatedEvent$UpdateCause;"
+          },
+          {
+            "acc": 16409,
+            "nme": "CLIENT_PACKET_RECEIVED",
+            "dsc": "Lglitchcore/event/TagsUpdatedEvent$UpdateCause;"
+          },
+          {
+            "acc": 4122,
+            "nme": "$VALUES",
+            "dsc": "[Lglitchcore/event/TagsUpdatedEvent$UpdateCause;"
+          }
+        ]
+      },
+      "glitchcore/forge/handlers/RegisterParticleProvidersEventHandler.class": {
+        "ver": 61,
+        "acc": 33,
+        "nme": "glitchcore/forge/handlers/RegisterParticleProvidersEventHandler",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "onRegisterParticleProviders",
+            "acc": 9,
+            "dsc": "(Lnet/minecraftforge/client/event/RegisterParticleProvidersEvent;)V",
+            "vanns": [
+              {
+                "dsc": "Lnet/minecraftforge/eventbus/api/SubscribeEvent;"
+              }
+            ]
+          },
+          {
+            "nme": "lambda$onRegisterParticleProviders$0",
+            "acc": 4106,
+            "dsc": "(Lnet/minecraftforge/client/event/RegisterParticleProvidersEvent;Lnet/minecraft/core/particles/ParticleType;Lnet/minecraft/client/particle/ParticleEngine$SpriteParticleRegistration;)V"
+          }
+        ],
+        "flds": [],
+        "vanns": [
+          {
+            "dsc": "Lnet/minecraftforge/fml/common/Mod$EventBusSubscriber;",
+            "vals": [
+              "value",
+              [
+                [
+                  "Lnet/minecraftforge/api/distmarker/Dist;",
+                  "CLIENT"
+                ]
+              ],
+              "bus",
+              [
+                "Lnet/minecraftforge/fml/common/Mod$EventBusSubscriber$Bus;",
+                "MOD"
+              ]
+            ]
+          }
+        ]
+      },
+      "glitchcore/forge/mixin/impl/MixinEnvironment.class": {
+        "ver": 61,
+        "acc": 1057,
+        "nme": "glitchcore/forge/mixin/impl/MixinEnvironment",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "isClient",
+            "acc": 9,
+            "dsc": "()Z",
+            "vanns": [
+              {
+                "dsc": "Lorg/spongepowered/asm/mixin/Overwrite;"
+              }
+            ]
+          },
+          {
+            "nme": "getConfigPath",
+            "acc": 9,
+            "dsc": "()Ljava/nio/file/Path;",
+            "vanns": [
+              {
+                "dsc": "Lorg/spongepowered/asm/mixin/Overwrite;"
+              }
+            ]
+          },
+          {
+            "nme": "isModLoaded",
+            "acc": 9,
+            "dsc": "(Ljava/lang/String;)Z",
+            "vanns": [
+              {
+                "dsc": "Lorg/spongepowered/asm/mixin/Overwrite;"
+              }
+            ]
+          }
+        ],
+        "flds": [],
+        "invanns": [
+          {
+            "dsc": "Lorg/spongepowered/asm/mixin/Mixin;",
+            "vals": [
+              "value",
+              [
+                {
+                  "itrlNme": "glitchcore/util/Environment"
+                }
+              ],
+              "remap",
+              false
+            ]
+          }
+        ]
+      },
+      "glitchcore/forge/handlers/ToolModificationEventHandler.class": {
+        "ver": 61,
+        "acc": 33,
+        "nme": "glitchcore/forge/handlers/ToolModificationEventHandler",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "onToolModification",
+            "acc": 9,
+            "dsc": "(Lnet/minecraftforge/event/level/BlockEvent$BlockToolModificationEvent;)V",
+            "vanns": [
+              {
+                "dsc": "Lnet/minecraftforge/eventbus/api/SubscribeEvent;"
+              }
+            ]
+          },
+          {
+            "nme": "<clinit>",
+            "acc": 8,
+            "dsc": "()V"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 25,
+            "nme": "tillables",
+            "dsc": "Lcom/google/common/collect/Multimap;",
+            "sig": "Lcom/google/common/collect/Multimap<Lnet/minecraft/world/level/block/Block;Lcom/mojang/datafixers/util/Pair<Ljava/util/function/Predicate<Lnet/minecraft/world/item/context/UseOnContext;>;Lnet/minecraft/world/level/block/state/BlockState;>;>;"
+          }
+        ],
+        "vanns": [
+          {
+            "dsc": "Lnet/minecraftforge/fml/common/Mod$EventBusSubscriber;",
+            "vals": [
+              "bus",
+              [
+                "Lnet/minecraftforge/fml/common/Mod$EventBusSubscriber$Bus;",
+                "FORGE"
+              ]
+            ]
+          }
+        ]
+      },
+      "glitchcore/event/player/PlayerInteractEvent$UseItem.class": {
+        "ver": 61,
+        "acc": 33,
+        "nme": "glitchcore/event/player/PlayerInteractEvent$UseItem",
+        "super": "glitchcore/event/player/PlayerInteractEvent",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/world/entity/player/Player;Lnet/minecraft/world/InteractionHand;)V"
+          }
+        ],
+        "flds": []
+      },
+      "glitchcore/forge/handlers/PlayerQuitClientEventHandler.class": {
+        "ver": 61,
+        "acc": 33,
+        "nme": "glitchcore/forge/handlers/PlayerQuitClientEventHandler",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "onQuit",
+            "acc": 9,
+            "dsc": "(Lnet/minecraftforge/client/event/ClientPlayerNetworkEvent$LoggingOut;)V",
+            "vanns": [
+              {
+                "dsc": "Lnet/minecraftforge/eventbus/api/SubscribeEvent;"
+              }
+            ]
+          },
+          {
+            "nme": "lambda$onQuit$0",
+            "acc": 4106,
+            "dsc": "(Ljava/lang/String;Lglitchcore/config/Config;)V"
+          }
+        ],
+        "flds": [],
+        "vanns": [
+          {
+            "dsc": "Lnet/minecraftforge/fml/common/Mod$EventBusSubscriber;",
+            "vals": [
+              "bus",
+              [
+                "Lnet/minecraftforge/fml/common/Mod$EventBusSubscriber$Bus;",
+                "FORGE"
+              ],
+              "value",
+              [
+                [
+                  "Lnet/minecraftforge/api/distmarker/Dist;",
+                  "CLIENT"
+                ]
+              ]
+            ]
+          }
+        ]
+      },
+      "glitchcore/forge/handlers/ColorsEventHandler.class": {
+        "ver": 61,
+        "acc": 33,
+        "nme": "glitchcore/forge/handlers/ColorsEventHandler",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "onRegisterBlockColors",
+            "acc": 9,
+            "dsc": "(Lnet/minecraftforge/client/event/RegisterColorHandlersEvent$Block;)V",
+            "vanns": [
+              {
+                "dsc": "Lnet/minecraftforge/eventbus/api/SubscribeEvent;"
+              }
+            ]
+          },
+          {
+            "nme": "onRegisterItemColors",
+            "acc": 9,
+            "dsc": "(Lnet/minecraftforge/client/event/RegisterColorHandlersEvent$Item;)V",
+            "vanns": [
+              {
+                "dsc": "Lnet/minecraftforge/eventbus/api/SubscribeEvent;"
+              }
+            ]
+          },
+          {
+            "nme": "lambda$onRegisterItemColors$1",
+            "acc": 4106,
+            "dsc": "(Lnet/minecraftforge/client/event/RegisterColorHandlersEvent$Item;Lnet/minecraft/client/color/item/ItemColor;Lnet/minecraft/world/level/ItemLike;)V"
+          },
+          {
+            "nme": "lambda$onRegisterBlockColors$0",
+            "acc": 4106,
+            "dsc": "(Lnet/minecraftforge/client/event/RegisterColorHandlersEvent$Block;Lnet/minecraft/client/color/block/BlockColor;Lnet/minecraft/world/level/block/Block;)V"
+          }
+        ],
+        "flds": [],
+        "vanns": [
+          {
+            "dsc": "Lnet/minecraftforge/fml/common/Mod$EventBusSubscriber;",
+            "vals": [
+              "bus",
+              [
+                "Lnet/minecraftforge/fml/common/Mod$EventBusSubscriber$Bus;",
+                "MOD"
+              ],
+              "value",
+              [
+                [
+                  "Lnet/minecraftforge/api/distmarker/Dist;",
+                  "CLIENT"
+                ]
+              ]
+            ]
+          }
+        ]
+      },
+      "glitchcore/event/TagsUpdatedEvent.class": {
+        "ver": 61,
+        "acc": 33,
+        "nme": "glitchcore/event/TagsUpdatedEvent",
+        "super": "glitchcore/event/Event",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/core/RegistryAccess;Lglitchcore/event/TagsUpdatedEvent$UpdateCause;)V"
+          },
+          {
+            "nme": "getRegistryAccess",
+            "acc": 1,
+            "dsc": "()Lnet/minecraft/core/RegistryAccess;"
+          },
+          {
+            "nme": "getUpdateCause",
+            "acc": 1,
+            "dsc": "()Lglitchcore/event/TagsUpdatedEvent$UpdateCause;"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 18,
+            "nme": "registryAccess",
+            "dsc": "Lnet/minecraft/core/RegistryAccess;"
+          },
+          {
+            "acc": 18,
+            "nme": "updateCause",
+            "dsc": "Lglitchcore/event/TagsUpdatedEvent$UpdateCause;"
+          }
+        ]
+      },
+      "glitchcore/forge/handlers/LevelRenderEventHandler.class": {
+        "ver": 61,
+        "acc": 33,
+        "nme": "glitchcore/forge/handlers/LevelRenderEventHandler",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "onRender",
+            "acc": 9,
+            "dsc": "(Lnet/minecraftforge/client/event/RenderLevelStageEvent;)V",
+            "vanns": [
+              {
+                "dsc": "Lnet/minecraftforge/eventbus/api/SubscribeEvent;"
+              }
+            ]
+          },
+          {
+            "nme": "fireStage",
+            "acc": 10,
+            "dsc": "(Lglitchcore/event/client/LevelRenderEvent$Stage;Lnet/minecraftforge/client/event/RenderLevelStageEvent;)V"
+          }
+        ],
+        "flds": [],
+        "vanns": [
+          {
+            "dsc": "Lnet/minecraftforge/fml/common/Mod$EventBusSubscriber;",
+            "vals": [
+              "value",
+              [
+                [
+                  "Lnet/minecraftforge/api/distmarker/Dist;",
+                  "CLIENT"
+                ]
+              ],
+              "bus",
+              [
+                "Lnet/minecraftforge/fml/common/Mod$EventBusSubscriber$Bus;",
+                "FORGE"
+              ]
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

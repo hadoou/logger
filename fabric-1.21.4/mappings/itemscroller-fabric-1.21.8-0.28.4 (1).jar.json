@@ -1,0 +1,5769 @@
+{
+  "md5": "6738d879c7046ae27964111b0ce00da4",
+  "sha2": "929e62bf82e05cfe2f7a8cadf71595acf6f5b498",
+  "sha256": "90e8c6bd36ba3f65a32a9bf4395db2f5873cd6290635fbe480cb53e4025e149c",
+  "contents": {
+    "classes": {
+      "fi/dy/masa/itemscroller/villager/IMerchantScreenHandler.class": {
+        "ver": 65,
+        "acc": 1537,
+        "nme": "fi/dy/masa/itemscroller/villager/IMerchantScreenHandler",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "itemscroller$getOriginalList",
+            "acc": 1025,
+            "dsc": "()Lnet/minecraft/class_1916;"
+          }
+        ],
+        "flds": []
+      },
+      "fi/dy/masa/itemscroller/recipes/RecipeUtils$Type.class": {
+        "ver": 65,
+        "acc": 16433,
+        "nme": "fi/dy/masa/itemscroller/recipes/RecipeUtils$Type",
+        "super": "java/lang/Enum",
+        "mthds": [
+          {
+            "nme": "values",
+            "acc": 9,
+            "dsc": "()[Lfi/dy/masa/itemscroller/recipes/RecipeUtils$Type;"
+          },
+          {
+            "nme": "valueOf",
+            "acc": 9,
+            "dsc": "(Ljava/lang/String;)Lfi/dy/masa/itemscroller/recipes/RecipeUtils$Type;"
+          },
+          {
+            "nme": "<init>",
+            "acc": 2,
+            "dsc": "(Ljava/lang/String;I)V",
+            "sig": "()V"
+          },
+          {
+            "nme": "fromRecipeDisplay",
+            "acc": 9,
+            "dsc": "(Lnet/minecraft/class_10295;)Lfi/dy/masa/itemscroller/recipes/RecipeUtils$Type;"
+          },
+          {
+            "nme": "$values",
+            "acc": 4106,
+            "dsc": "()[Lfi/dy/masa/itemscroller/recipes/RecipeUtils$Type;"
+          },
+          {
+            "nme": "<clinit>",
+            "acc": 8,
+            "dsc": "()V"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 16409,
+            "nme": "FURNACE",
+            "dsc": "Lfi/dy/masa/itemscroller/recipes/RecipeUtils$Type;"
+          },
+          {
+            "acc": 16409,
+            "nme": "SHAPED",
+            "dsc": "Lfi/dy/masa/itemscroller/recipes/RecipeUtils$Type;"
+          },
+          {
+            "acc": 16409,
+            "nme": "SHAPELESS",
+            "dsc": "Lfi/dy/masa/itemscroller/recipes/RecipeUtils$Type;"
+          },
+          {
+            "acc": 16409,
+            "nme": "SMITHING",
+            "dsc": "Lfi/dy/masa/itemscroller/recipes/RecipeUtils$Type;"
+          },
+          {
+            "acc": 16409,
+            "nme": "STONECUTTER",
+            "dsc": "Lfi/dy/masa/itemscroller/recipes/RecipeUtils$Type;"
+          },
+          {
+            "acc": 16409,
+            "nme": "UNKNOWN",
+            "dsc": "Lfi/dy/masa/itemscroller/recipes/RecipeUtils$Type;"
+          },
+          {
+            "acc": 4122,
+            "nme": "$VALUES",
+            "dsc": "[Lfi/dy/masa/itemscroller/recipes/RecipeUtils$Type;"
+          }
+        ]
+      },
+      "fi/dy/masa/itemscroller/mixin/recipe/MixinRecipeBookWidget.class": {
+        "ver": 65,
+        "acc": 33,
+        "nme": "fi/dy/masa/itemscroller/mixin/recipe/MixinRecipeBookWidget",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          }
+        ],
+        "flds": [],
+        "invanns": [
+          {
+            "dsc": "Lorg/spongepowered/asm/mixin/Mixin;",
+            "vals": [
+              "value",
+              [
+                {
+                  "itrlNme": "net/minecraft/class_507"
+                }
+              ]
+            ]
+          }
+        ]
+      },
+      "fi/dy/masa/itemscroller/mixin/recipe/MixinAbstractCraftingRecipeBookWidget.class": {
+        "ver": 65,
+        "acc": 33,
+        "nme": "fi/dy/masa/itemscroller/mixin/recipe/MixinAbstractCraftingRecipeBookWidget",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          }
+        ],
+        "flds": [],
+        "invanns": [
+          {
+            "dsc": "Lorg/spongepowered/asm/mixin/Mixin;",
+            "vals": [
+              "value",
+              [
+                {
+                  "itrlNme": "net/minecraft/class_9933"
+                }
+              ]
+            ]
+          }
+        ]
+      },
+      "fi/dy/masa/itemscroller/mixin/screen/MixinHandledScreen.class": {
+        "ver": 65,
+        "acc": 33,
+        "nme": "fi/dy/masa/itemscroller/mixin/screen/MixinHandledScreen",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "itemscroller_ignore_bundleTooltipsForScrolling",
+            "acc": 2,
+            "dsc": "(Lnet/minecraft/class_1799;Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfoReturnable;)V",
+            "sig": "(Lnet/minecraft/class_1799;Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfoReturnable<Ljava/util/List<Lnet/minecraft/class_2561;>;>;)V",
+            "vanns": [
+              {
+                "dsc": "Lorg/spongepowered/asm/mixin/injection/Inject;",
+                "vals": [
+                  "method",
+                  [
+                    "getTooltipFromItem"
+                  ],
+                  "at",
+                  [
+                    {
+                      "desc": "Lorg/spongepowered/asm/mixin/injection/At;",
+                      "values": [
+                        "value",
+                        "HEAD"
+                      ],
+                      "api": 589824
+                    }
+                  ]
+                ]
+              }
+            ]
+          }
+        ],
+        "flds": [],
+        "invanns": [
+          {
+            "dsc": "Lorg/spongepowered/asm/mixin/Mixin;",
+            "vals": [
+              "value",
+              [
+                {
+                  "itrlNme": "net/minecraft/class_465"
+                }
+              ]
+            ]
+          }
+        ]
+      },
+      "fi/dy/masa/itemscroller/mixin/item/IMixinSlot.class": {
+        "ver": 65,
+        "acc": 1537,
+        "nme": "fi/dy/masa/itemscroller/mixin/item/IMixinSlot",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "itemscroller_getSlotIndex",
+            "acc": 1025,
+            "dsc": "()I",
+            "vanns": [
+              {
+                "dsc": "Lorg/spongepowered/asm/mixin/gen/Accessor;",
+                "vals": [
+                  "value",
+                  "index"
+                ]
+              }
+            ]
+          }
+        ],
+        "flds": [],
+        "invanns": [
+          {
+            "dsc": "Lorg/spongepowered/asm/mixin/Mixin;",
+            "vals": [
+              "value",
+              [
+                {
+                  "itrlNme": "net/minecraft/class_1735"
+                }
+              ]
+            ]
+          }
+        ]
+      },
+      "fi/dy/masa/itemscroller/event/WorldLoadListener.class": {
+        "ver": 65,
+        "acc": 33,
+        "nme": "fi/dy/masa/itemscroller/event/WorldLoadListener",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "onWorldLoadPre",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/class_638;Lnet/minecraft/class_638;Lnet/minecraft/class_310;)V"
+          },
+          {
+            "nme": "onWorldLoadPost",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/class_638;Lnet/minecraft/class_638;Lnet/minecraft/class_310;)V"
+          },
+          {
+            "nme": "writeData",
+            "acc": 2,
+            "dsc": "(Lnet/minecraft/class_5455;)V"
+          },
+          {
+            "nme": "readStoredData",
+            "acc": 2,
+            "dsc": "(Lnet/minecraft/class_5455;)V"
+          }
+        ],
+        "flds": []
+      },
+      "fi/dy/masa/itemscroller/util/SortingCategory$Entry.class": {
+        "ver": 65,
+        "acc": 16433,
+        "nme": "fi/dy/masa/itemscroller/util/SortingCategory$Entry",
+        "super": "java/lang/Enum",
+        "mthds": [
+          {
+            "nme": "values",
+            "acc": 9,
+            "dsc": "()[Lfi/dy/masa/itemscroller/util/SortingCategory$Entry;"
+          },
+          {
+            "nme": "valueOf",
+            "acc": 9,
+            "dsc": "(Ljava/lang/String;)Lfi/dy/masa/itemscroller/util/SortingCategory$Entry;"
+          },
+          {
+            "nme": "<init>",
+            "acc": 2,
+            "dsc": "(Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;)V",
+            "sig": "(Ljava/lang/String;Ljava/lang/String;)V"
+          },
+          {
+            "nme": "method_15434",
+            "acc": 1,
+            "dsc": "()Ljava/lang/String;"
+          },
+          {
+            "nme": "getStringValue",
+            "acc": 1,
+            "dsc": "()Ljava/lang/String;"
+          },
+          {
+            "nme": "getDisplayName",
+            "acc": 1,
+            "dsc": "()Ljava/lang/String;"
+          },
+          {
+            "nme": "fromString",
+            "acc": 9,
+            "dsc": "(Ljava/lang/String;)Lfi/dy/masa/itemscroller/util/SortingCategory$Entry;",
+            "vanns": [
+              {
+                "dsc": "Ljavax/annotation/Nullable;"
+              }
+            ]
+          },
+          {
+            "nme": "$values",
+            "acc": 4106,
+            "dsc": "()[Lfi/dy/masa/itemscroller/util/SortingCategory$Entry;"
+          },
+          {
+            "nme": "<clinit>",
+            "acc": 8,
+            "dsc": "()V"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 16409,
+            "nme": "BUILDING_BLOCKS",
+            "dsc": "Lfi/dy/masa/itemscroller/util/SortingCategory$Entry;"
+          },
+          {
+            "acc": 16409,
+            "nme": "COLORED_BLOCKS",
+            "dsc": "Lfi/dy/masa/itemscroller/util/SortingCategory$Entry;"
+          },
+          {
+            "acc": 16409,
+            "nme": "NATURAL",
+            "dsc": "Lfi/dy/masa/itemscroller/util/SortingCategory$Entry;"
+          },
+          {
+            "acc": 16409,
+            "nme": "FUNCTIONAL",
+            "dsc": "Lfi/dy/masa/itemscroller/util/SortingCategory$Entry;"
+          },
+          {
+            "acc": 16409,
+            "nme": "REDSTONE",
+            "dsc": "Lfi/dy/masa/itemscroller/util/SortingCategory$Entry;"
+          },
+          {
+            "acc": 16409,
+            "nme": "TOOLS",
+            "dsc": "Lfi/dy/masa/itemscroller/util/SortingCategory$Entry;"
+          },
+          {
+            "acc": 16409,
+            "nme": "COMBAT",
+            "dsc": "Lfi/dy/masa/itemscroller/util/SortingCategory$Entry;"
+          },
+          {
+            "acc": 16409,
+            "nme": "FOOD_AND_DRINK",
+            "dsc": "Lfi/dy/masa/itemscroller/util/SortingCategory$Entry;"
+          },
+          {
+            "acc": 16409,
+            "nme": "INGREDIENTS",
+            "dsc": "Lfi/dy/masa/itemscroller/util/SortingCategory$Entry;"
+          },
+          {
+            "acc": 16409,
+            "nme": "SPAWN_EGGS",
+            "dsc": "Lfi/dy/masa/itemscroller/util/SortingCategory$Entry;"
+          },
+          {
+            "acc": 16409,
+            "nme": "OPERATOR",
+            "dsc": "Lfi/dy/masa/itemscroller/util/SortingCategory$Entry;"
+          },
+          {
+            "acc": 16409,
+            "nme": "OTHER",
+            "dsc": "Lfi/dy/masa/itemscroller/util/SortingCategory$Entry;"
+          },
+          {
+            "acc": 25,
+            "nme": "CODEC",
+            "dsc": "Lnet/minecraft/class_3542$class_7292;",
+            "sig": "Lnet/minecraft/class_3542$class_7292<Lfi/dy/masa/itemscroller/util/SortingCategory$Entry;>;"
+          },
+          {
+            "acc": 25,
+            "nme": "VALUES",
+            "dsc": "Lcom/google/common/collect/ImmutableList;",
+            "sig": "Lcom/google/common/collect/ImmutableList<Lfi/dy/masa/itemscroller/util/SortingCategory$Entry;>;"
+          },
+          {
+            "acc": 18,
+            "nme": "configKey",
+            "dsc": "Ljava/lang/String;"
+          },
+          {
+            "acc": 18,
+            "nme": "translationKey",
+            "dsc": "Ljava/lang/String;"
+          },
+          {
+            "acc": 4122,
+            "nme": "$VALUES",
+            "dsc": "[Lfi/dy/masa/itemscroller/util/SortingCategory$Entry;"
+          }
+        ]
+      },
+      "fi/dy/masa/itemscroller/util/MoveType.class": {
+        "ver": 65,
+        "acc": 16433,
+        "nme": "fi/dy/masa/itemscroller/util/MoveType",
+        "super": "java/lang/Enum",
+        "mthds": [
+          {
+            "nme": "values",
+            "acc": 9,
+            "dsc": "()[Lfi/dy/masa/itemscroller/util/MoveType;"
+          },
+          {
+            "nme": "valueOf",
+            "acc": 9,
+            "dsc": "(Ljava/lang/String;)Lfi/dy/masa/itemscroller/util/MoveType;"
+          },
+          {
+            "nme": "<init>",
+            "acc": 2,
+            "dsc": "(Ljava/lang/String;I)V",
+            "sig": "()V"
+          },
+          {
+            "nme": "$values",
+            "acc": 4106,
+            "dsc": "()[Lfi/dy/masa/itemscroller/util/MoveType;"
+          },
+          {
+            "nme": "<clinit>",
+            "acc": 8,
+            "dsc": "()V"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 16409,
+            "nme": "NONE",
+            "dsc": "Lfi/dy/masa/itemscroller/util/MoveType;"
+          },
+          {
+            "acc": 16409,
+            "nme": "MOVE_TO_OTHER",
+            "dsc": "Lfi/dy/masa/itemscroller/util/MoveType;"
+          },
+          {
+            "acc": 16409,
+            "nme": "MOVE_TO_THIS",
+            "dsc": "Lfi/dy/masa/itemscroller/util/MoveType;"
+          },
+          {
+            "acc": 16409,
+            "nme": "MOVE_UP",
+            "dsc": "Lfi/dy/masa/itemscroller/util/MoveType;"
+          },
+          {
+            "acc": 16409,
+            "nme": "MOVE_DOWN",
+            "dsc": "Lfi/dy/masa/itemscroller/util/MoveType;"
+          },
+          {
+            "acc": 16409,
+            "nme": "DROP",
+            "dsc": "Lfi/dy/masa/itemscroller/util/MoveType;"
+          },
+          {
+            "acc": 4122,
+            "nme": "$VALUES",
+            "dsc": "[Lfi/dy/masa/itemscroller/util/MoveType;"
+          }
+        ]
+      },
+      "fi/dy/masa/itemscroller/util/MoveAmount.class": {
+        "ver": 65,
+        "acc": 16433,
+        "nme": "fi/dy/masa/itemscroller/util/MoveAmount",
+        "super": "java/lang/Enum",
+        "mthds": [
+          {
+            "nme": "values",
+            "acc": 9,
+            "dsc": "()[Lfi/dy/masa/itemscroller/util/MoveAmount;"
+          },
+          {
+            "nme": "valueOf",
+            "acc": 9,
+            "dsc": "(Ljava/lang/String;)Lfi/dy/masa/itemscroller/util/MoveAmount;"
+          },
+          {
+            "nme": "<init>",
+            "acc": 2,
+            "dsc": "(Ljava/lang/String;I)V",
+            "sig": "()V"
+          },
+          {
+            "nme": "$values",
+            "acc": 4106,
+            "dsc": "()[Lfi/dy/masa/itemscroller/util/MoveAmount;"
+          },
+          {
+            "nme": "<clinit>",
+            "acc": 8,
+            "dsc": "()V"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 16409,
+            "nme": "NONE",
+            "dsc": "Lfi/dy/masa/itemscroller/util/MoveAmount;"
+          },
+          {
+            "acc": 16409,
+            "nme": "MOVE_ONE",
+            "dsc": "Lfi/dy/masa/itemscroller/util/MoveAmount;"
+          },
+          {
+            "acc": 16409,
+            "nme": "LEAVE_ONE",
+            "dsc": "Lfi/dy/masa/itemscroller/util/MoveAmount;"
+          },
+          {
+            "acc": 16409,
+            "nme": "FULL_STACKS",
+            "dsc": "Lfi/dy/masa/itemscroller/util/MoveAmount;"
+          },
+          {
+            "acc": 16409,
+            "nme": "ALL_MATCHING",
+            "dsc": "Lfi/dy/masa/itemscroller/util/MoveAmount;"
+          },
+          {
+            "acc": 16409,
+            "nme": "EVERYTHING",
+            "dsc": "Lfi/dy/masa/itemscroller/util/MoveAmount;"
+          },
+          {
+            "acc": 4122,
+            "nme": "$VALUES",
+            "dsc": "[Lfi/dy/masa/itemscroller/util/MoveAmount;"
+          }
+        ]
+      },
+      "fi/dy/masa/itemscroller/util/SortingMethod.class": {
+        "ver": 65,
+        "acc": 16433,
+        "nme": "fi/dy/masa/itemscroller/util/SortingMethod",
+        "super": "java/lang/Enum",
+        "mthds": [
+          {
+            "nme": "values",
+            "acc": 9,
+            "dsc": "()[Lfi/dy/masa/itemscroller/util/SortingMethod;"
+          },
+          {
+            "nme": "valueOf",
+            "acc": 9,
+            "dsc": "(Ljava/lang/String;)Lfi/dy/masa/itemscroller/util/SortingMethod;"
+          },
+          {
+            "nme": "<init>",
+            "acc": 2,
+            "dsc": "(Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;)V",
+            "sig": "(Ljava/lang/String;Ljava/lang/String;)V"
+          },
+          {
+            "nme": "method_15434",
+            "acc": 1,
+            "dsc": "()Ljava/lang/String;"
+          },
+          {
+            "nme": "getStringValue",
+            "acc": 1,
+            "dsc": "()Ljava/lang/String;"
+          },
+          {
+            "nme": "getDisplayName",
+            "acc": 1,
+            "dsc": "()Ljava/lang/String;"
+          },
+          {
+            "nme": "cycle",
+            "acc": 1,
+            "dsc": "(Z)Lfi/dy/masa/malilib/config/IConfigOptionListEntry;"
+          },
+          {
+            "nme": "fromString",
+            "acc": 1,
+            "dsc": "(Ljava/lang/String;)Lfi/dy/masa/itemscroller/util/SortingMethod;"
+          },
+          {
+            "nme": "fromStringStatic",
+            "acc": 9,
+            "dsc": "(Ljava/lang/String;)Lfi/dy/masa/itemscroller/util/SortingMethod;"
+          },
+          {
+            "nme": "fromString",
+            "acc": 4161,
+            "dsc": "(Ljava/lang/String;)Lfi/dy/masa/malilib/config/IConfigOptionListEntry;"
+          },
+          {
+            "nme": "$values",
+            "acc": 4106,
+            "dsc": "()[Lfi/dy/masa/itemscroller/util/SortingMethod;"
+          },
+          {
+            "nme": "<clinit>",
+            "acc": 8,
+            "dsc": "()V"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 16409,
+            "nme": "CATEGORY_NAME",
+            "dsc": "Lfi/dy/masa/itemscroller/util/SortingMethod;"
+          },
+          {
+            "acc": 16409,
+            "nme": "CATEGORY_COUNT",
+            "dsc": "Lfi/dy/masa/itemscroller/util/SortingMethod;"
+          },
+          {
+            "acc": 16409,
+            "nme": "CATEGORY_RARITY",
+            "dsc": "Lfi/dy/masa/itemscroller/util/SortingMethod;"
+          },
+          {
+            "acc": 16409,
+            "nme": "CATEGORY_RAWID",
+            "dsc": "Lfi/dy/masa/itemscroller/util/SortingMethod;"
+          },
+          {
+            "acc": 16409,
+            "nme": "ITEM_NAME",
+            "dsc": "Lfi/dy/masa/itemscroller/util/SortingMethod;"
+          },
+          {
+            "acc": 16409,
+            "nme": "ITEM_COUNT",
+            "dsc": "Lfi/dy/masa/itemscroller/util/SortingMethod;"
+          },
+          {
+            "acc": 16409,
+            "nme": "ITEM_RARITY",
+            "dsc": "Lfi/dy/masa/itemscroller/util/SortingMethod;"
+          },
+          {
+            "acc": 16409,
+            "nme": "ITEM_RAWID",
+            "dsc": "Lfi/dy/masa/itemscroller/util/SortingMethod;"
+          },
+          {
+            "acc": 25,
+            "nme": "CODEC",
+            "dsc": "Lnet/minecraft/class_3542$class_7292;",
+            "sig": "Lnet/minecraft/class_3542$class_7292<Lfi/dy/masa/itemscroller/util/SortingMethod;>;"
+          },
+          {
+            "acc": 25,
+            "nme": "VALUES",
+            "dsc": "Lcom/google/common/collect/ImmutableList;",
+            "sig": "Lcom/google/common/collect/ImmutableList<Lfi/dy/masa/itemscroller/util/SortingMethod;>;"
+          },
+          {
+            "acc": 18,
+            "nme": "configString",
+            "dsc": "Ljava/lang/String;"
+          },
+          {
+            "acc": 18,
+            "nme": "translationKey",
+            "dsc": "Ljava/lang/String;"
+          },
+          {
+            "acc": 4122,
+            "nme": "$VALUES",
+            "dsc": "[Lfi/dy/masa/itemscroller/util/SortingMethod;"
+          }
+        ]
+      },
+      "fi/dy/masa/itemscroller/mixin/MixinClientPlayerInteractionManager.class": {
+        "ver": 65,
+        "acc": 33,
+        "nme": "fi/dy/masa/itemscroller/mixin/MixinClientPlayerInteractionManager",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "cancelWindowClicksWhileReplayingBufferedPackets",
+            "acc": 2,
+            "dsc": "(Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V",
+            "vanns": [
+              {
+                "dsc": "Lorg/spongepowered/asm/mixin/injection/Inject;",
+                "vals": [
+                  "method",
+                  [
+                    "clickSlot"
+                  ],
+                  "at",
+                  [
+                    {
+                      "desc": "Lorg/spongepowered/asm/mixin/injection/At;",
+                      "values": [
+                        "value",
+                        "HEAD"
+                      ],
+                      "api": 589824
+                    }
+                  ],
+                  "cancellable",
+                  true
+                ]
+              }
+            ]
+          },
+          {
+            "nme": "bufferClickPacketsAndCancel",
+            "acc": 2,
+            "dsc": "(Lnet/minecraft/class_634;Lnet/minecraft/class_2596;)V",
+            "sig": "(Lnet/minecraft/class_634;Lnet/minecraft/class_2596<*>;)V",
+            "vanns": [
+              {
+                "dsc": "Lorg/spongepowered/asm/mixin/injection/Redirect;",
+                "vals": [
+                  "method",
+                  [
+                    "clickSlot"
+                  ],
+                  "at",
+                  {
+                    "desc": "Lorg/spongepowered/asm/mixin/injection/At;",
+                    "values": [
+                      "value",
+                      "INVOKE",
+                      "target",
+                      "Lnet/minecraft/client/network/ClientPlayNetworkHandler;sendPacket(Lnet/minecraft/network/packet/Packet;)V"
+                    ],
+                    "api": 589824
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "flds": [],
+        "invanns": [
+          {
+            "dsc": "Lorg/spongepowered/asm/mixin/Mixin;",
+            "vals": [
+              "value",
+              [
+                {
+                  "itrlNme": "net/minecraft/class_636"
+                }
+              ]
+            ]
+          }
+        ]
+      },
+      "fi/dy/masa/itemscroller/gui/ItemScrollerIcons.class": {
+        "ver": 65,
+        "acc": 16433,
+        "nme": "fi/dy/masa/itemscroller/gui/ItemScrollerIcons",
+        "super": "java/lang/Enum",
+        "mthds": [
+          {
+            "nme": "values",
+            "acc": 9,
+            "dsc": "()[Lfi/dy/masa/itemscroller/gui/ItemScrollerIcons;"
+          },
+          {
+            "nme": "valueOf",
+            "acc": 9,
+            "dsc": "(Ljava/lang/String;)Lfi/dy/masa/itemscroller/gui/ItemScrollerIcons;"
+          },
+          {
+            "nme": "<init>",
+            "acc": 2,
+            "dsc": "(Ljava/lang/String;IIIII)V",
+            "sig": "(IIII)V"
+          },
+          {
+            "nme": "<init>",
+            "acc": 2,
+            "dsc": "(Ljava/lang/String;IIIIIII)V",
+            "sig": "(IIIIII)V"
+          },
+          {
+            "nme": "getWidth",
+            "acc": 1,
+            "dsc": "()I"
+          },
+          {
+            "nme": "getHeight",
+            "acc": 1,
+            "dsc": "()I"
+          },
+          {
+            "nme": "getU",
+            "acc": 1,
+            "dsc": "()I"
+          },
+          {
+            "nme": "getV",
+            "acc": 1,
+            "dsc": "()I"
+          },
+          {
+            "nme": "renderAt",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/class_332;IIFZZ)V"
+          },
+          {
+            "nme": "getTexture",
+            "acc": 1,
+            "dsc": "()Lnet/minecraft/class_2960;"
+          },
+          {
+            "nme": "$values",
+            "acc": 4106,
+            "dsc": "()[Lfi/dy/masa/itemscroller/gui/ItemScrollerIcons;"
+          },
+          {
+            "nme": "<clinit>",
+            "acc": 8,
+            "dsc": "()V"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 16409,
+            "nme": "TRADE_ARROW_AVAILABLE",
+            "dsc": "Lfi/dy/masa/itemscroller/gui/ItemScrollerIcons;"
+          },
+          {
+            "acc": 16409,
+            "nme": "TRADE_ARROW_LOCKED",
+            "dsc": "Lfi/dy/masa/itemscroller/gui/ItemScrollerIcons;"
+          },
+          {
+            "acc": 16409,
+            "nme": "SCROLL_BAR_6",
+            "dsc": "Lfi/dy/masa/itemscroller/gui/ItemScrollerIcons;"
+          },
+          {
+            "acc": 16409,
+            "nme": "STAR_5_YELLOW",
+            "dsc": "Lfi/dy/masa/itemscroller/gui/ItemScrollerIcons;"
+          },
+          {
+            "acc": 16409,
+            "nme": "STAR_5_PURPLE",
+            "dsc": "Lfi/dy/masa/itemscroller/gui/ItemScrollerIcons;"
+          },
+          {
+            "acc": 25,
+            "nme": "TEXTURE",
+            "dsc": "Lnet/minecraft/class_2960;"
+          },
+          {
+            "acc": 18,
+            "nme": "u",
+            "dsc": "I"
+          },
+          {
+            "acc": 18,
+            "nme": "v",
+            "dsc": "I"
+          },
+          {
+            "acc": 18,
+            "nme": "w",
+            "dsc": "I"
+          },
+          {
+            "acc": 18,
+            "nme": "h",
+            "dsc": "I"
+          },
+          {
+            "acc": 18,
+            "nme": "hoverOffU",
+            "dsc": "I"
+          },
+          {
+            "acc": 18,
+            "nme": "hoverOffV",
+            "dsc": "I"
+          },
+          {
+            "acc": 4122,
+            "nme": "$VALUES",
+            "dsc": "[Lfi/dy/masa/itemscroller/gui/ItemScrollerIcons;"
+          }
+        ]
+      },
+      "fi/dy/masa/itemscroller/mixin/MixinClientPlayNetworkHandler.class": {
+        "ver": 65,
+        "acc": 33,
+        "nme": "fi/dy/masa/itemscroller/mixin/MixinClientPlayNetworkHandler",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "onPong",
+            "acc": 2,
+            "dsc": "(Lnet/minecraft/class_2617;Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V",
+            "vanns": [
+              {
+                "dsc": "Lorg/spongepowered/asm/mixin/injection/Inject;",
+                "vals": [
+                  "method",
+                  [
+                    "onStatistics"
+                  ],
+                  "at",
+                  [
+                    {
+                      "desc": "Lorg/spongepowered/asm/mixin/injection/At;",
+                      "values": [
+                        "value",
+                        "RETURN"
+                      ],
+                      "api": 589824
+                    }
+                  ],
+                  "cancellable",
+                  true
+                ]
+              }
+            ]
+          },
+          {
+            "nme": "onScreenHandlerSlotUpdate",
+            "acc": 2,
+            "dsc": "(Lnet/minecraft/class_2653;Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V",
+            "vanns": [
+              {
+                "dsc": "Lorg/spongepowered/asm/mixin/injection/Inject;",
+                "vals": [
+                  "method",
+                  [
+                    "onScreenHandlerSlotUpdate"
+                  ],
+                  "at",
+                  [
+                    {
+                      "desc": "Lorg/spongepowered/asm/mixin/injection/At;",
+                      "values": [
+                        "value",
+                        "RETURN"
+                      ],
+                      "api": 589824
+                    }
+                  ]
+                ]
+              }
+            ]
+          },
+          {
+            "nme": "onCraftFailedResponse",
+            "acc": 2,
+            "dsc": "(Lnet/minecraft/class_2695;Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V",
+            "vanns": [
+              {
+                "dsc": "Lorg/spongepowered/asm/mixin/injection/Inject;",
+                "vals": [
+                  "method",
+                  [
+                    "onCraftFailedResponse"
+                  ],
+                  "at",
+                  [
+                    {
+                      "desc": "Lorg/spongepowered/asm/mixin/injection/At;",
+                      "values": [
+                        "value",
+                        "INVOKE",
+                        "target",
+                        "Lnet/minecraft/network/NetworkThreadUtils;forceMainThread(Lnet/minecraft/network/packet/Packet;Lnet/minecraft/network/listener/PacketListener;Lnet/minecraft/util/thread/ThreadExecutor;)V",
+                        "shift",
+                        [
+                          "Lorg/spongepowered/asm/mixin/injection/At$Shift;",
+                          "AFTER"
+                        ]
+                      ],
+                      "api": 589824
+                    }
+                  ]
+                ]
+              }
+            ]
+          },
+          {
+            "nme": "onInventory",
+            "acc": 2,
+            "dsc": "(Lnet/minecraft/class_2649;Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V",
+            "vanns": [
+              {
+                "dsc": "Lorg/spongepowered/asm/mixin/injection/Inject;",
+                "vals": [
+                  "method",
+                  [
+                    "onInventory"
+                  ],
+                  "at",
+                  [
+                    {
+                      "desc": "Lorg/spongepowered/asm/mixin/injection/At;",
+                      "values": [
+                        "value",
+                        "INVOKE",
+                        "target",
+                        "Lnet/minecraft/network/NetworkThreadUtils;forceMainThread(Lnet/minecraft/network/packet/Packet;Lnet/minecraft/network/listener/PacketListener;Lnet/minecraft/util/thread/ThreadExecutor;)V",
+                        "shift",
+                        [
+                          "Lorg/spongepowered/asm/mixin/injection/At$Shift;",
+                          "AFTER"
+                        ]
+                      ],
+                      "api": 589824
+                    }
+                  ],
+                  "cancellable",
+                  true
+                ]
+              }
+            ]
+          },
+          {
+            "nme": "onScreenHandlerSlotUpdateInvokeMainThread",
+            "acc": 2,
+            "dsc": "(Lnet/minecraft/class_2653;Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V",
+            "vanns": [
+              {
+                "dsc": "Lorg/spongepowered/asm/mixin/injection/Inject;",
+                "vals": [
+                  "method",
+                  [
+                    "onScreenHandlerSlotUpdate"
+                  ],
+                  "at",
+                  [
+                    {
+                      "desc": "Lorg/spongepowered/asm/mixin/injection/At;",
+                      "values": [
+                        "value",
+                        "INVOKE",
+                        "target",
+                        "Lnet/minecraft/network/NetworkThreadUtils;forceMainThread(Lnet/minecraft/network/packet/Packet;Lnet/minecraft/network/listener/PacketListener;Lnet/minecraft/util/thread/ThreadExecutor;)V",
+                        "shift",
+                        [
+                          "Lorg/spongepowered/asm/mixin/injection/At$Shift;",
+                          "AFTER"
+                        ]
+                      ],
+                      "api": 589824
+                    }
+                  ],
+                  "cancellable",
+                  true
+                ]
+              }
+            ]
+          }
+        ],
+        "flds": [],
+        "invanns": [
+          {
+            "dsc": "Lorg/spongepowered/asm/mixin/Mixin;",
+            "vals": [
+              "value",
+              [
+                {
+                  "itrlNme": "net/minecraft/class_634"
+                }
+              ]
+            ]
+          }
+        ]
+      },
+      "fi/dy/masa/itemscroller/compat/modmenu/ModMenuImpl.class": {
+        "ver": 65,
+        "acc": 33,
+        "nme": "fi/dy/masa/itemscroller/compat/modmenu/ModMenuImpl",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "getModConfigScreenFactory",
+            "acc": 1,
+            "dsc": "()Lcom/terraformersmc/modmenu/api/ConfigScreenFactory;",
+            "sig": "()Lcom/terraformersmc/modmenu/api/ConfigScreenFactory<*>;"
+          },
+          {
+            "nme": "lambda$getModConfigScreenFactory$0",
+            "acc": 4106,
+            "dsc": "(Lnet/minecraft/class_437;)Lnet/minecraft/class_437;"
+          }
+        ],
+        "flds": []
+      },
+      "fi/dy/masa/itemscroller/mixin/screen/MixinMerchantScreen.class": {
+        "ver": 65,
+        "acc": 1057,
+        "nme": "fi/dy/masa/itemscroller/mixin/screen/MixinMerchantScreen",
+        "super": "net/minecraft/class_465",
+        "mthds": [
+          {
+            "nme": "method_20220",
+            "acc": 1028,
+            "dsc": "(I)Z",
+            "vanns": [
+              {
+                "dsc": "Lorg/spongepowered/asm/mixin/Shadow;"
+              }
+            ]
+          },
+          {
+            "nme": "<init>",
+            "acc": 2,
+            "dsc": "(Lnet/minecraft/class_1728;Lnet/minecraft/class_1661;Lnet/minecraft/class_2561;)V"
+          },
+          {
+            "nme": "fixRenderScrollBar",
+            "acc": 2,
+            "dsc": "(Lnet/minecraft/class_332;IIFLorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V",
+            "vanns": [
+              {
+                "dsc": "Lorg/spongepowered/asm/mixin/injection/Inject;",
+                "vals": [
+                  "method",
+                  [
+                    "render"
+                  ],
+                  "at",
+                  [
+                    {
+                      "desc": "Lorg/spongepowered/asm/mixin/injection/At;",
+                      "values": [
+                        "value",
+                        "INVOKE",
+                        "target",
+                        "Lnet/minecraft/client/gui/screen/ingame/MerchantScreen;renderScrollbar(Lnet/minecraft/client/gui/DrawContext;IILnet/minecraft/village/TradeOfferList;)V"
+                      ],
+                      "api": 589824
+                    }
+                  ]
+                ]
+              }
+            ]
+          },
+          {
+            "nme": "onMouseScrollPost",
+            "acc": 2,
+            "dsc": "(DDDDLorg/spongepowered/asm/mixin/injection/callback/CallbackInfoReturnable;)V",
+            "sig": "(DDDDLorg/spongepowered/asm/mixin/injection/callback/CallbackInfoReturnable<Ljava/lang/Boolean;>;)V",
+            "vanns": [
+              {
+                "dsc": "Lorg/spongepowered/asm/mixin/injection/Inject;",
+                "vals": [
+                  "method",
+                  [
+                    "mouseScrolled"
+                  ],
+                  "at",
+                  [
+                    {
+                      "desc": "Lorg/spongepowered/asm/mixin/injection/At;",
+                      "values": [
+                        "value",
+                        "RETURN"
+                      ],
+                      "api": 589824
+                    }
+                  ]
+                ]
+              }
+            ]
+          },
+          {
+            "nme": "onMouseDragPost",
+            "acc": 2,
+            "dsc": "(DDIDDLorg/spongepowered/asm/mixin/injection/callback/CallbackInfoReturnable;)V",
+            "sig": "(DDIDDLorg/spongepowered/asm/mixin/injection/callback/CallbackInfoReturnable<Ljava/lang/Boolean;>;)V",
+            "vanns": [
+              {
+                "dsc": "Lorg/spongepowered/asm/mixin/injection/Inject;",
+                "vals": [
+                  "method",
+                  [
+                    "mouseDragged"
+                  ],
+                  "at",
+                  [
+                    {
+                      "desc": "Lorg/spongepowered/asm/mixin/injection/At;",
+                      "values": [
+                        "value",
+                        "RETURN"
+                      ],
+                      "api": 589824
+                    }
+                  ]
+                ]
+              }
+            ]
+          },
+          {
+            "nme": "onMouseClicked",
+            "acc": 2,
+            "dsc": "(DDILorg/spongepowered/asm/mixin/injection/callback/CallbackInfoReturnable;)V",
+            "sig": "(DDILorg/spongepowered/asm/mixin/injection/callback/CallbackInfoReturnable<Ljava/lang/Boolean;>;)V",
+            "vanns": [
+              {
+                "dsc": "Lorg/spongepowered/asm/mixin/injection/Inject;",
+                "vals": [
+                  "method",
+                  [
+                    "mouseClicked"
+                  ],
+                  "at",
+                  [
+                    {
+                      "desc": "Lorg/spongepowered/asm/mixin/injection/At;",
+                      "values": [
+                        "value",
+                        "RETURN"
+                      ],
+                      "api": 589824
+                    }
+                  ],
+                  "cancellable",
+                  true
+                ]
+              }
+            ]
+          },
+          {
+            "nme": "fixRecipeIndex",
+            "acc": 2,
+            "dsc": "(Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V",
+            "vanns": [
+              {
+                "dsc": "Lorg/spongepowered/asm/mixin/injection/Inject;",
+                "vals": [
+                  "method",
+                  [
+                    "syncRecipeIndex"
+                  ],
+                  "at",
+                  [
+                    {
+                      "desc": "Lorg/spongepowered/asm/mixin/injection/At;",
+                      "values": [
+                        "value",
+                        "HEAD"
+                      ],
+                      "api": 589824
+                    }
+                  ],
+                  "cancellable",
+                  true
+                ]
+              }
+            ]
+          },
+          {
+            "nme": "renderFavoriteMarker",
+            "acc": 2,
+            "dsc": "(Lnet/minecraft/class_332;IIFLorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V",
+            "vanns": [
+              {
+                "dsc": "Lorg/spongepowered/asm/mixin/injection/Inject;",
+                "vals": [
+                  "method",
+                  [
+                    "render"
+                  ],
+                  "at",
+                  [
+                    {
+                      "desc": "Lorg/spongepowered/asm/mixin/injection/At;",
+                      "values": [
+                        "value",
+                        "FIELD",
+                        "target",
+                        "Lnet/minecraft/client/gui/screen/ingame/MerchantScreen;offers:[Lnet/minecraft/client/gui/screen/ingame/MerchantScreen$WidgetButtonPage;"
+                      ],
+                      "api": 589824
+                    }
+                  ]
+                ]
+              }
+            ]
+          },
+          {
+            "nme": "getClampedIndex",
+            "acc": 2,
+            "dsc": "(I)I",
+            "vanns": [
+              {
+                "dsc": "Lorg/spongepowered/asm/mixin/Unique;"
+              }
+            ]
+          },
+          {
+            "nme": "getHoveredTradeButtonIndex",
+            "acc": 2,
+            "dsc": "(DD)I",
+            "vanns": [
+              {
+                "dsc": "Lorg/spongepowered/asm/mixin/Unique;"
+              }
+            ]
+          }
+        ],
+        "flds": [
+          {
+            "acc": 2,
+            "nme": "favoriteData",
+            "dsc": "Lfi/dy/masa/itemscroller/villager/FavoriteData;"
+          },
+          {
+            "acc": 2,
+            "nme": "field_19161",
+            "dsc": "I"
+          },
+          {
+            "acc": 0,
+            "nme": "field_19163",
+            "dsc": "I"
+          },
+          {
+            "acc": 2,
+            "nme": "indexStartOffsetLast",
+            "dsc": "I"
+          }
+        ],
+        "invanns": [
+          {
+            "dsc": "Lorg/spongepowered/asm/mixin/Mixin;",
+            "vals": [
+              "value",
+              [
+                {
+                  "itrlNme": "net/minecraft/class_492"
+                }
+              ]
+            ]
+          }
+        ]
+      },
+      "fi/dy/masa/itemscroller/event/InputHandler.class": {
+        "ver": 65,
+        "acc": 33,
+        "nme": "fi/dy/masa/itemscroller/event/InputHandler",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "addKeysToMap",
+            "acc": 1,
+            "dsc": "(Lfi/dy/masa/malilib/hotkeys/IKeybindManager;)V"
+          },
+          {
+            "nme": "addHotkeys",
+            "acc": 1,
+            "dsc": "(Lfi/dy/masa/malilib/hotkeys/IKeybindManager;)V"
+          },
+          {
+            "nme": "onKeyInput",
+            "acc": 1,
+            "dsc": "(IIIZ)Z"
+          },
+          {
+            "nme": "onMouseScroll",
+            "acc": 1,
+            "dsc": "(IID)Z"
+          },
+          {
+            "nme": "onMouseClick",
+            "acc": 1,
+            "dsc": "(IIIZ)Z"
+          },
+          {
+            "nme": "handleInput",
+            "acc": 2,
+            "dsc": "(IZD)Z"
+          },
+          {
+            "nme": "handleInputImpl",
+            "acc": 2,
+            "dsc": "(IZDLnet/minecraft/class_310;)Z"
+          },
+          {
+            "nme": "onMouseMove",
+            "acc": 1,
+            "dsc": "(II)V"
+          },
+          {
+            "nme": "handleDragging",
+            "acc": 2,
+            "dsc": "(Lnet/minecraft/class_465;Lnet/minecraft/class_310;IIZ)Z",
+            "sig": "(Lnet/minecraft/class_465<*>;Lnet/minecraft/class_310;IIZ)Z"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 18,
+            "nme": "callbacks",
+            "dsc": "Lfi/dy/masa/itemscroller/event/KeybindCallbacks;"
+          }
+        ]
+      },
+      "fi/dy/masa/itemscroller/config/Hotkeys.class": {
+        "ver": 65,
+        "acc": 33,
+        "nme": "fi/dy/masa/itemscroller/config/Hotkeys",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "<clinit>",
+            "acc": 8,
+            "dsc": "()V"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 26,
+            "nme": "GUI_RELAXED",
+            "dsc": "Lfi/dy/masa/malilib/hotkeys/KeybindSettings;"
+          },
+          {
+            "acc": 26,
+            "nme": "GUI_RELAXED_CANCEL",
+            "dsc": "Lfi/dy/masa/malilib/hotkeys/KeybindSettings;"
+          },
+          {
+            "acc": 26,
+            "nme": "GUI_NO_ORDER",
+            "dsc": "Lfi/dy/masa/malilib/hotkeys/KeybindSettings;"
+          },
+          {
+            "acc": 26,
+            "nme": "HOTKEYS_KEY",
+            "dsc": "Ljava/lang/String;",
+            "val": "itemscroller.config.hotkeys"
+          },
+          {
+            "acc": 25,
+            "nme": "OPEN_CONFIG_GUI",
+            "dsc": "Lfi/dy/masa/malilib/config/options/ConfigHotkey;"
+          },
+          {
+            "acc": 25,
+            "nme": "CRAFT_EVERYTHING",
+            "dsc": "Lfi/dy/masa/malilib/config/options/ConfigHotkey;"
+          },
+          {
+            "acc": 25,
+            "nme": "DROP_ALL_MATCHING",
+            "dsc": "Lfi/dy/masa/malilib/config/options/ConfigHotkey;"
+          },
+          {
+            "acc": 25,
+            "nme": "MASS_CRAFT",
+            "dsc": "Lfi/dy/masa/malilib/config/options/ConfigHotkey;"
+          },
+          {
+            "acc": 25,
+            "nme": "MASS_CRAFT_TOGGLE",
+            "dsc": "Lfi/dy/masa/malilib/config/options/ConfigHotkey;"
+          },
+          {
+            "acc": 25,
+            "nme": "MOVE_CRAFT_RESULTS",
+            "dsc": "Lfi/dy/masa/malilib/config/options/ConfigHotkey;"
+          },
+          {
+            "acc": 25,
+            "nme": "RECIPE_VIEW",
+            "dsc": "Lfi/dy/masa/malilib/config/options/ConfigHotkey;"
+          },
+          {
+            "acc": 25,
+            "nme": "SLOT_DEBUG",
+            "dsc": "Lfi/dy/masa/malilib/config/options/ConfigHotkey;"
+          },
+          {
+            "acc": 25,
+            "nme": "STORE_RECIPE",
+            "dsc": "Lfi/dy/masa/malilib/config/options/ConfigHotkey;"
+          },
+          {
+            "acc": 25,
+            "nme": "THROW_CRAFT_RESULTS",
+            "dsc": "Lfi/dy/masa/malilib/config/options/ConfigHotkey;"
+          },
+          {
+            "acc": 25,
+            "nme": "TOGGLE_MOD_ON_OFF",
+            "dsc": "Lfi/dy/masa/malilib/config/options/ConfigHotkey;"
+          },
+          {
+            "acc": 25,
+            "nme": "VILLAGER_TRADE_FAVORITES",
+            "dsc": "Lfi/dy/masa/malilib/config/options/ConfigHotkey;"
+          },
+          {
+            "acc": 25,
+            "nme": "KEY_DRAG_DROP_LEAVE_ONE",
+            "dsc": "Lfi/dy/masa/malilib/config/options/ConfigHotkey;"
+          },
+          {
+            "acc": 25,
+            "nme": "KEY_DRAG_DROP_SINGLE",
+            "dsc": "Lfi/dy/masa/malilib/config/options/ConfigHotkey;"
+          },
+          {
+            "acc": 25,
+            "nme": "KEY_DRAG_DROP_STACKS",
+            "dsc": "Lfi/dy/masa/malilib/config/options/ConfigHotkey;"
+          },
+          {
+            "acc": 25,
+            "nme": "KEY_DRAG_LEAVE_ONE",
+            "dsc": "Lfi/dy/masa/malilib/config/options/ConfigHotkey;"
+          },
+          {
+            "acc": 25,
+            "nme": "KEY_DRAG_MATCHING",
+            "dsc": "Lfi/dy/masa/malilib/config/options/ConfigHotkey;"
+          },
+          {
+            "acc": 25,
+            "nme": "KEY_DRAG_MOVE_ONE",
+            "dsc": "Lfi/dy/masa/malilib/config/options/ConfigHotkey;"
+          },
+          {
+            "acc": 25,
+            "nme": "KEY_DRAG_FULL_STACKS",
+            "dsc": "Lfi/dy/masa/malilib/config/options/ConfigHotkey;"
+          },
+          {
+            "acc": 25,
+            "nme": "KEY_MOVE_EVERYTHING",
+            "dsc": "Lfi/dy/masa/malilib/config/options/ConfigHotkey;"
+          },
+          {
+            "acc": 25,
+            "nme": "KEY_WS_MOVE_DOWN_LEAVE_ONE",
+            "dsc": "Lfi/dy/masa/malilib/config/options/ConfigHotkey;"
+          },
+          {
+            "acc": 25,
+            "nme": "KEY_WS_MOVE_DOWN_MATCHING",
+            "dsc": "Lfi/dy/masa/malilib/config/options/ConfigHotkey;"
+          },
+          {
+            "acc": 25,
+            "nme": "KEY_WS_MOVE_DOWN_SINGLE",
+            "dsc": "Lfi/dy/masa/malilib/config/options/ConfigHotkey;"
+          },
+          {
+            "acc": 25,
+            "nme": "KEY_WS_MOVE_DOWN_STACKS",
+            "dsc": "Lfi/dy/masa/malilib/config/options/ConfigHotkey;"
+          },
+          {
+            "acc": 25,
+            "nme": "KEY_WS_MOVE_UP_LEAVE_ONE",
+            "dsc": "Lfi/dy/masa/malilib/config/options/ConfigHotkey;"
+          },
+          {
+            "acc": 25,
+            "nme": "KEY_WS_MOVE_UP_MATCHING",
+            "dsc": "Lfi/dy/masa/malilib/config/options/ConfigHotkey;"
+          },
+          {
+            "acc": 25,
+            "nme": "KEY_WS_MOVE_UP_SINGLE",
+            "dsc": "Lfi/dy/masa/malilib/config/options/ConfigHotkey;"
+          },
+          {
+            "acc": 25,
+            "nme": "KEY_WS_MOVE_UP_STACKS",
+            "dsc": "Lfi/dy/masa/malilib/config/options/ConfigHotkey;"
+          },
+          {
+            "acc": 25,
+            "nme": "MODIFIER_MOVE_EVERYTHING",
+            "dsc": "Lfi/dy/masa/malilib/config/options/ConfigHotkey;"
+          },
+          {
+            "acc": 25,
+            "nme": "MODIFIER_MOVE_MATCHING",
+            "dsc": "Lfi/dy/masa/malilib/config/options/ConfigHotkey;"
+          },
+          {
+            "acc": 25,
+            "nme": "MODIFIER_MOVE_STACK",
+            "dsc": "Lfi/dy/masa/malilib/config/options/ConfigHotkey;"
+          },
+          {
+            "acc": 25,
+            "nme": "MODIFIER_TOGGLE_VILLAGER_GLOBAL_FAVORITE",
+            "dsc": "Lfi/dy/masa/malilib/config/options/ConfigHotkey;"
+          },
+          {
+            "acc": 25,
+            "nme": "SORT_INVENTORY",
+            "dsc": "Lfi/dy/masa/malilib/config/options/ConfigHotkey;"
+          },
+          {
+            "acc": 25,
+            "nme": "HOTKEY_LIST",
+            "dsc": "Ljava/util/List;",
+            "sig": "Ljava/util/List<Lfi/dy/masa/malilib/config/options/ConfigHotkey;>;"
+          }
+        ]
+      },
+      "fi/dy/masa/itemscroller/event/KeybindCallbacks.class": {
+        "ver": 65,
+        "acc": 33,
+        "nme": "fi/dy/masa/itemscroller/event/KeybindCallbacks",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "getInstance",
+            "acc": 9,
+            "dsc": "()Lfi/dy/masa/itemscroller/event/KeybindCallbacks;"
+          },
+          {
+            "nme": "<init>",
+            "acc": 2,
+            "dsc": "()V"
+          },
+          {
+            "nme": "setCallbacks",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "functionalityEnabled",
+            "acc": 1,
+            "dsc": "()Z"
+          },
+          {
+            "nme": "onKeyAction",
+            "acc": 1,
+            "dsc": "(Lfi/dy/masa/malilib/hotkeys/KeyAction;Lfi/dy/masa/malilib/hotkeys/IKeybind;)Z"
+          },
+          {
+            "nme": "onKeyActionImpl",
+            "acc": 2,
+            "dsc": "(Lfi/dy/masa/malilib/hotkeys/KeyAction;Lfi/dy/masa/malilib/hotkeys/IKeybind;)Z"
+          },
+          {
+            "nme": "onClientTick",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/class_310;)V"
+          },
+          {
+            "nme": "onPacket",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/class_2653;)V"
+          },
+          {
+            "nme": "lambda$onClientTick$0",
+            "acc": 4106,
+            "dsc": "(Lnet/minecraft/class_310;Lnet/minecraft/class_2596;)Z"
+          },
+          {
+            "nme": "<clinit>",
+            "acc": 8,
+            "dsc": "()V"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 26,
+            "nme": "INSTANCE",
+            "dsc": "Lfi/dy/masa/itemscroller/event/KeybindCallbacks;"
+          },
+          {
+            "acc": 4,
+            "nme": "massCraftTicker",
+            "dsc": "I"
+          },
+          {
+            "acc": 2,
+            "nme": "recipeBookClicks",
+            "dsc": "Z"
+          }
+        ]
+      },
+      "fi/dy/masa/itemscroller/mixin/screen/IMixinMerchantScreen.class": {
+        "ver": 65,
+        "acc": 1537,
+        "nme": "fi/dy/masa/itemscroller/mixin/screen/IMixinMerchantScreen",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "itemscroller_getSelectedMerchantRecipe",
+            "acc": 1025,
+            "dsc": "()I",
+            "vanns": [
+              {
+                "dsc": "Lorg/spongepowered/asm/mixin/gen/Accessor;",
+                "vals": [
+                  "value",
+                  "selectedIndex"
+                ]
+              }
+            ]
+          }
+        ],
+        "flds": [],
+        "invanns": [
+          {
+            "dsc": "Lorg/spongepowered/asm/mixin/Mixin;",
+            "vals": [
+              "value",
+              [
+                {
+                  "itrlNme": "net/minecraft/class_492"
+                }
+              ]
+            ]
+          }
+        ]
+      },
+      "fi/dy/masa/itemscroller/InitHandler.class": {
+        "ver": 65,
+        "acc": 33,
+        "nme": "fi/dy/masa/itemscroller/InitHandler",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "registerModHandlers",
+            "acc": 1,
+            "dsc": "()V"
+          }
+        ],
+        "flds": []
+      },
+      "fi/dy/masa/itemscroller/recipes/CraftingHandler$SlotRange.class": {
+        "ver": 65,
+        "acc": 33,
+        "nme": "fi/dy/masa/itemscroller/recipes/CraftingHandler$SlotRange",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "(II)V"
+          },
+          {
+            "nme": "getFirst",
+            "acc": 1,
+            "dsc": "()I"
+          },
+          {
+            "nme": "getLast",
+            "acc": 1,
+            "dsc": "()I"
+          },
+          {
+            "nme": "getSlotCount",
+            "acc": 1,
+            "dsc": "()I"
+          },
+          {
+            "nme": "contains",
+            "acc": 1,
+            "dsc": "(I)Z"
+          },
+          {
+            "nme": "toString",
+            "acc": 1,
+            "dsc": "()Ljava/lang/String;"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 18,
+            "nme": "first",
+            "dsc": "I"
+          },
+          {
+            "acc": 18,
+            "nme": "last",
+            "dsc": "I"
+          }
+        ]
+      },
+      "fi/dy/masa/itemscroller/util/ClickPacketBuffer.class": {
+        "ver": 65,
+        "acc": 33,
+        "nme": "fi/dy/masa/itemscroller/util/ClickPacketBuffer",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "reset",
+            "acc": 9,
+            "dsc": "()V"
+          },
+          {
+            "nme": "getBufferedActionsCount",
+            "acc": 9,
+            "dsc": "()I"
+          },
+          {
+            "nme": "shouldBufferClickPackets",
+            "acc": 9,
+            "dsc": "()Z"
+          },
+          {
+            "nme": "shouldCancelWindowClicks",
+            "acc": 9,
+            "dsc": "()Z"
+          },
+          {
+            "nme": "setShouldBufferClickPackets",
+            "acc": 9,
+            "dsc": "(Z)V"
+          },
+          {
+            "nme": "bufferPacket",
+            "acc": 9,
+            "dsc": "(Lnet/minecraft/class_2596;)V",
+            "sig": "(Lnet/minecraft/class_2596<*>;)V"
+          },
+          {
+            "nme": "sendBufferedPackets",
+            "acc": 9,
+            "dsc": "(I)V"
+          },
+          {
+            "nme": "<clinit>",
+            "acc": 8,
+            "dsc": "()V"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 26,
+            "nme": "BUFFER",
+            "dsc": "Ljava/util/Queue;",
+            "sig": "Ljava/util/Queue<Lnet/minecraft/class_2596<*>;>;"
+          },
+          {
+            "acc": 10,
+            "nme": "shouldBufferPackets",
+            "dsc": "Z"
+          },
+          {
+            "acc": 10,
+            "nme": "hasBufferedPackets",
+            "dsc": "Z"
+          }
+        ]
+      },
+      "fi/dy/masa/itemscroller/util/InputUtils.class": {
+        "ver": 65,
+        "acc": 33,
+        "nme": "fi/dy/masa/itemscroller/util/InputUtils",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "isRecipeViewOpen",
+            "acc": 9,
+            "dsc": "()Z"
+          },
+          {
+            "nme": "canShiftDropItems",
+            "acc": 9,
+            "dsc": "(Lnet/minecraft/class_465;Lnet/minecraft/class_310;II)Z",
+            "sig": "(Lnet/minecraft/class_465<*>;Lnet/minecraft/class_310;II)Z"
+          },
+          {
+            "nme": "getDragMoveAction",
+            "acc": 9,
+            "dsc": "(Lfi/dy/masa/malilib/hotkeys/IKeybind;)Lfi/dy/masa/itemscroller/util/MoveAction;"
+          },
+          {
+            "nme": "isActionKeyActive",
+            "acc": 9,
+            "dsc": "(Lfi/dy/masa/itemscroller/util/MoveAction;)Z"
+          },
+          {
+            "nme": "getMoveAmount",
+            "acc": 9,
+            "dsc": "(Lfi/dy/masa/itemscroller/util/MoveAction;)Lfi/dy/masa/itemscroller/util/MoveAmount;"
+          },
+          {
+            "nme": "isAttack",
+            "acc": 9,
+            "dsc": "(I)Z"
+          },
+          {
+            "nme": "isUse",
+            "acc": 9,
+            "dsc": "(I)Z"
+          },
+          {
+            "nme": "isPickBlock",
+            "acc": 9,
+            "dsc": "(I)Z"
+          }
+        ],
+        "flds": []
+      },
+      "fi/dy/masa/itemscroller/mixin/MixinStatusEffectsDisplay.class": {
+        "ver": 65,
+        "acc": 1057,
+        "nme": "fi/dy/masa/itemscroller/mixin/MixinStatusEffectsDisplay",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "preventPotionEffectRendering",
+            "acc": 2,
+            "dsc": "(Lnet/minecraft/class_332;IILorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V",
+            "vanns": [
+              {
+                "dsc": "Lorg/spongepowered/asm/mixin/injection/Inject;",
+                "vals": [
+                  "method",
+                  [
+                    "drawStatusEffects(Lnet/minecraft/client/gui/DrawContext;II)V"
+                  ],
+                  "at",
+                  [
+                    {
+                      "desc": "Lorg/spongepowered/asm/mixin/injection/At;",
+                      "values": [
+                        "value",
+                        "HEAD"
+                      ],
+                      "api": 589824
+                    }
+                  ],
+                  "cancellable",
+                  true
+                ]
+              }
+            ]
+          }
+        ],
+        "flds": [],
+        "invanns": [
+          {
+            "dsc": "Lorg/spongepowered/asm/mixin/Mixin;",
+            "vals": [
+              "value",
+              [
+                {
+                  "itrlNme": "net/minecraft/class_485"
+                }
+              ]
+            ]
+          }
+        ]
+      },
+      "fi/dy/masa/itemscroller/mixin/recipe/IMixinCraftingResultSlot.class": {
+        "ver": 65,
+        "acc": 1537,
+        "nme": "fi/dy/masa/itemscroller/mixin/recipe/IMixinCraftingResultSlot",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "itemscroller_getCraftingInventory",
+            "acc": 1025,
+            "dsc": "()Lnet/minecraft/class_8566;",
+            "vanns": [
+              {
+                "dsc": "Lorg/spongepowered/asm/mixin/gen/Accessor;",
+                "vals": [
+                  "value",
+                  "input"
+                ]
+              }
+            ]
+          }
+        ],
+        "flds": [],
+        "invanns": [
+          {
+            "dsc": "Lorg/spongepowered/asm/mixin/Mixin;",
+            "vals": [
+              "value",
+              [
+                {
+                  "itrlNme": "net/minecraft/class_1734"
+                }
+              ]
+            ]
+          }
+        ]
+      },
+      "fi/dy/masa/itemscroller/util/InputUtils$1.class": {
+        "ver": 65,
+        "acc": 4128,
+        "nme": "fi/dy/masa/itemscroller/util/InputUtils$1",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<clinit>",
+            "acc": 8,
+            "dsc": "()V"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 4120,
+            "nme": "$SwitchMap$fi$dy$masa$itemscroller$util$MoveAction",
+            "dsc": "[I"
+          }
+        ]
+      },
+      "fi/dy/masa/itemscroller/villager/FavoriteData.class": {
+        "ver": 65,
+        "acc": 33,
+        "nme": "fi/dy/masa/itemscroller/villager/FavoriteData",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "(Lit/unimi/dsi/fastutil/ints/IntArrayList;Z)V"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 17,
+            "nme": "favorites",
+            "dsc": "Lit/unimi/dsi/fastutil/ints/IntArrayList;"
+          },
+          {
+            "acc": 17,
+            "nme": "isGlobal",
+            "dsc": "Z"
+          }
+        ]
+      },
+      "fi/dy/masa/itemscroller/mixin/item/MixinItemStack.class": {
+        "ver": 65,
+        "acc": 1057,
+        "nme": "fi/dy/masa/itemscroller/mixin/item/MixinItemStack",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "dontCap",
+            "acc": 2,
+            "dsc": "(ILorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V",
+            "vanns": [
+              {
+                "dsc": "Lorg/spongepowered/asm/mixin/injection/Inject;",
+                "vals": [
+                  "method",
+                  [
+                    "capCount"
+                  ],
+                  "at",
+                  [
+                    {
+                      "desc": "Lorg/spongepowered/asm/mixin/injection/At;",
+                      "values": [
+                        "value",
+                        "HEAD"
+                      ],
+                      "api": 589824
+                    }
+                  ],
+                  "cancellable",
+                  true
+                ]
+              }
+            ]
+          },
+          {
+            "nme": "getMaxCount",
+            "acc": 2,
+            "dsc": "(Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfoReturnable;)V",
+            "sig": "(Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfoReturnable<Ljava/lang/Integer;>;)V",
+            "vanns": [
+              {
+                "dsc": "Lorg/spongepowered/asm/mixin/injection/Inject;",
+                "vals": [
+                  "method",
+                  [
+                    "getMaxCount"
+                  ],
+                  "at",
+                  [
+                    {
+                      "desc": "Lorg/spongepowered/asm/mixin/injection/At;",
+                      "values": [
+                        "value",
+                        "HEAD"
+                      ],
+                      "api": 589824
+                    }
+                  ],
+                  "cancellable",
+                  true
+                ]
+              }
+            ]
+          }
+        ],
+        "flds": [],
+        "invanns": [
+          {
+            "dsc": "Lorg/spongepowered/asm/mixin/Mixin;",
+            "vals": [
+              "value",
+              [
+                {
+                  "itrlNme": "net/minecraft/class_1799"
+                }
+              ]
+            ]
+          }
+        ]
+      },
+      "fi/dy/masa/itemscroller/mixin/recipe/MixinClientRecipeBook.class": {
+        "ver": 65,
+        "acc": 33,
+        "nme": "fi/dy/masa/itemscroller/mixin/recipe/MixinClientRecipeBook",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "itemscroller_addToRecipeBook",
+            "acc": 2,
+            "dsc": "(Lnet/minecraft/class_10297;Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V",
+            "vanns": [
+              {
+                "dsc": "Lorg/spongepowered/asm/mixin/injection/Inject;",
+                "vals": [
+                  "method",
+                  [
+                    "add"
+                  ],
+                  "at",
+                  [
+                    {
+                      "desc": "Lorg/spongepowered/asm/mixin/injection/At;",
+                      "values": [
+                        "value",
+                        "RETURN"
+                      ],
+                      "api": 589824
+                    }
+                  ]
+                ]
+              }
+            ]
+          }
+        ],
+        "flds": [],
+        "invanns": [
+          {
+            "dsc": "Lorg/spongepowered/asm/mixin/Mixin;",
+            "vals": [
+              "value",
+              [
+                {
+                  "itrlNme": "net/minecraft/class_299"
+                }
+              ]
+            ]
+          }
+        ]
+      },
+      "fi/dy/masa/itemscroller/recipes/CraftingHandler$CraftingOutputSlot.class": {
+        "ver": 65,
+        "acc": 33,
+        "nme": "fi/dy/masa/itemscroller/recipes/CraftingHandler$CraftingOutputSlot",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 2,
+            "dsc": "(Ljava/lang/Class;Ljava/lang/Class;I)V",
+            "sig": "(Ljava/lang/Class<+Lnet/minecraft/class_465<*>;>;Ljava/lang/Class<+Lnet/minecraft/class_1735;>;I)V"
+          },
+          {
+            "nme": "from",
+            "acc": 9,
+            "dsc": "(Lnet/minecraft/class_465;Lnet/minecraft/class_1735;)Lfi/dy/masa/itemscroller/recipes/CraftingHandler$CraftingOutputSlot;",
+            "sig": "(Lnet/minecraft/class_465<*>;Lnet/minecraft/class_1735;)Lfi/dy/masa/itemscroller/recipes/CraftingHandler$CraftingOutputSlot;"
+          },
+          {
+            "nme": "getGuiClass",
+            "acc": 1,
+            "dsc": "()Ljava/lang/Class;",
+            "sig": "()Ljava/lang/Class<+Lnet/minecraft/class_465<*>;>;"
+          },
+          {
+            "nme": "getSlotClass",
+            "acc": 1,
+            "dsc": "()Ljava/lang/Class;",
+            "sig": "()Ljava/lang/Class<+Lnet/minecraft/class_1735;>;"
+          },
+          {
+            "nme": "getSlotNumber",
+            "acc": 1,
+            "dsc": "()I"
+          },
+          {
+            "nme": "matches",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/class_465;Lnet/minecraft/class_1735;I)Z",
+            "sig": "(Lnet/minecraft/class_465<*>;Lnet/minecraft/class_1735;I)Z"
+          },
+          {
+            "nme": "hashCode",
+            "acc": 1,
+            "dsc": "()I"
+          },
+          {
+            "nme": "equals",
+            "acc": 1,
+            "dsc": "(Ljava/lang/Object;)Z"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 18,
+            "nme": "guiClass",
+            "dsc": "Ljava/lang/Class;",
+            "sig": "Ljava/lang/Class<+Lnet/minecraft/class_465<*>;>;"
+          },
+          {
+            "acc": 18,
+            "nme": "slotClass",
+            "dsc": "Ljava/lang/Class;",
+            "sig": "Ljava/lang/Class<+Lnet/minecraft/class_1735;>;"
+          },
+          {
+            "acc": 18,
+            "nme": "outputSlot",
+            "dsc": "I"
+          }
+        ]
+      },
+      "fi/dy/masa/itemscroller/mixin/screen/MixinMerchantScreenHandler.class": {
+        "ver": 65,
+        "acc": 1057,
+        "nme": "fi/dy/masa/itemscroller/mixin/screen/MixinMerchantScreenHandler",
+        "super": "net/minecraft/class_1703",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 4,
+            "dsc": "(Lnet/minecraft/class_3917;I)V",
+            "sig": "(Lnet/minecraft/class_3917<*>;I)V"
+          },
+          {
+            "nme": "replaceTradeList",
+            "acc": 2,
+            "dsc": "(Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfoReturnable;)V",
+            "sig": "(Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfoReturnable<Lnet/minecraft/class_1916;>;)V",
+            "vanns": [
+              {
+                "dsc": "Lorg/spongepowered/asm/mixin/injection/Inject;",
+                "vals": [
+                  "method",
+                  [
+                    "getRecipes"
+                  ],
+                  "at",
+                  [
+                    {
+                      "desc": "Lorg/spongepowered/asm/mixin/injection/At;",
+                      "values": [
+                        "value",
+                        "HEAD"
+                      ],
+                      "api": 589824
+                    }
+                  ],
+                  "cancellable",
+                  true
+                ]
+              }
+            ]
+          },
+          {
+            "nme": "onTradeListSet",
+            "acc": 2,
+            "dsc": "(Lnet/minecraft/class_1916;Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V",
+            "vanns": [
+              {
+                "dsc": "Lorg/spongepowered/asm/mixin/injection/Inject;",
+                "vals": [
+                  "method",
+                  [
+                    "setOffers"
+                  ],
+                  "at",
+                  [
+                    {
+                      "desc": "Lorg/spongepowered/asm/mixin/injection/At;",
+                      "values": [
+                        "value",
+                        "HEAD"
+                      ],
+                      "api": 589824
+                    }
+                  ]
+                ]
+              }
+            ]
+          },
+          {
+            "nme": "itemscroller$getOriginalList",
+            "acc": 1,
+            "dsc": "()Lnet/minecraft/class_1916;"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 2,
+            "nme": "field_7863",
+            "dsc": "Lnet/minecraft/class_1915;"
+          },
+          {
+            "acc": 2,
+            "nme": "customList",
+            "dsc": "Lnet/minecraft/class_1916;"
+          }
+        ],
+        "invanns": [
+          {
+            "dsc": "Lorg/spongepowered/asm/mixin/Mixin;",
+            "vals": [
+              "value",
+              [
+                {
+                  "itrlNme": "net/minecraft/class_1728"
+                }
+              ]
+            ]
+          }
+        ]
+      },
+      "fi/dy/masa/itemscroller/gui/GuiConfigs$ButtonListener.class": {
+        "ver": 65,
+        "acc": 32,
+        "nme": "fi/dy/masa/itemscroller/gui/GuiConfigs$ButtonListener",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "(Lfi/dy/masa/itemscroller/gui/GuiConfigs$ConfigGuiTab;Lfi/dy/masa/itemscroller/gui/GuiConfigs;)V"
+          },
+          {
+            "nme": "actionPerformedWithButton",
+            "acc": 1,
+            "dsc": "(Lfi/dy/masa/malilib/gui/button/ButtonBase;I)V"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 18,
+            "nme": "parent",
+            "dsc": "Lfi/dy/masa/itemscroller/gui/GuiConfigs;"
+          },
+          {
+            "acc": 18,
+            "nme": "tab",
+            "dsc": "Lfi/dy/masa/itemscroller/gui/GuiConfigs$ConfigGuiTab;"
+          }
+        ]
+      },
+      "fi/dy/masa/itemscroller/mixin/screen/MixinScreen.class": {
+        "ver": 65,
+        "acc": 1057,
+        "nme": "fi/dy/masa/itemscroller/mixin/screen/MixinScreen",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "itemscroller_onDrawScreenPost",
+            "acc": 2,
+            "dsc": "(Lnet/minecraft/class_332;IIFLorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V",
+            "vanns": [
+              {
+                "dsc": "Lorg/spongepowered/asm/mixin/injection/Inject;",
+                "vals": [
+                  "method",
+                  [
+                    "renderWithTooltip"
+                  ],
+                  "at",
+                  [
+                    {
+                      "desc": "Lorg/spongepowered/asm/mixin/injection/At;",
+                      "values": [
+                        "value",
+                        "TAIL"
+                      ],
+                      "api": 589824
+                    }
+                  ]
+                ]
+              }
+            ]
+          }
+        ],
+        "flds": [
+          {
+            "acc": 4,
+            "nme": "field_22787",
+            "dsc": "Lnet/minecraft/class_310;"
+          }
+        ],
+        "invanns": [
+          {
+            "dsc": "Lorg/spongepowered/asm/mixin/Mixin;",
+            "vals": [
+              "value",
+              [
+                {
+                  "itrlNme": "net/minecraft/class_437"
+                }
+              ]
+            ]
+          }
+        ]
+      },
+      "fi/dy/masa/itemscroller/util/InventoryUtils$1.class": {
+        "ver": 65,
+        "acc": 4128,
+        "nme": "fi/dy/masa/itemscroller/util/InventoryUtils$1",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<clinit>",
+            "acc": 8,
+            "dsc": "()V"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 4120,
+            "nme": "$SwitchMap$fi$dy$masa$itemscroller$util$MoveAction",
+            "dsc": "[I"
+          }
+        ]
+      },
+      "fi/dy/masa/itemscroller/event/RenderEventHandler.class": {
+        "ver": 65,
+        "acc": 33,
+        "nme": "fi/dy/masa/itemscroller/event/RenderEventHandler",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "instance",
+            "acc": 9,
+            "dsc": "()Lfi/dy/masa/itemscroller/event/RenderEventHandler;"
+          },
+          {
+            "nme": "renderRecipeView",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/class_332;Lnet/minecraft/class_310;II)V"
+          },
+          {
+            "nme": "onDrawScreenPost",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/class_332;Lnet/minecraft/class_310;II)V"
+          },
+          {
+            "nme": "calculateRecipePositions",
+            "acc": 2,
+            "dsc": "(Lnet/minecraft/class_465;)V",
+            "sig": "(Lnet/minecraft/class_465<*>;)V"
+          },
+          {
+            "nme": "renderHoverTooltip",
+            "acc": 2,
+            "dsc": "(Lnet/minecraft/class_332;IILfi/dy/masa/itemscroller/recipes/RecipePattern;Lnet/minecraft/class_465;)V",
+            "sig": "(Lnet/minecraft/class_332;IILfi/dy/masa/itemscroller/recipes/RecipePattern;Lnet/minecraft/class_465<*>;)V"
+          },
+          {
+            "nme": "getHoveredRecipeId",
+            "acc": 1,
+            "dsc": "(IILfi/dy/masa/itemscroller/recipes/RecipeStorage;Lnet/minecraft/class_465;)I",
+            "sig": "(IILfi/dy/masa/itemscroller/recipes/RecipeStorage;Lnet/minecraft/class_465<*>;)I"
+          },
+          {
+            "nme": "renderStoredRecipeStack",
+            "acc": 2,
+            "dsc": "(Lnet/minecraft/class_332;Lnet/minecraft/class_1799;IIILnet/minecraft/class_465;Z)V",
+            "sig": "(Lnet/minecraft/class_332;Lnet/minecraft/class_1799;IIILnet/minecraft/class_465<*>;Z)V"
+          },
+          {
+            "nme": "renderRecipeItems",
+            "acc": 2,
+            "dsc": "(Lnet/minecraft/class_332;Lfi/dy/masa/itemscroller/recipes/RecipePattern;ILnet/minecraft/class_465;)V",
+            "sig": "(Lnet/minecraft/class_332;Lfi/dy/masa/itemscroller/recipes/RecipePattern;ILnet/minecraft/class_465<*>;)V"
+          },
+          {
+            "nme": "getHoveredRecipeIngredient",
+            "acc": 2,
+            "dsc": "(IILfi/dy/masa/itemscroller/recipes/RecipePattern;ILnet/minecraft/class_465;)Lnet/minecraft/class_1799;",
+            "sig": "(IILfi/dy/masa/itemscroller/recipes/RecipePattern;ILnet/minecraft/class_465<*>;)Lnet/minecraft/class_1799;"
+          },
+          {
+            "nme": "renderStackAt",
+            "acc": 2,
+            "dsc": "(Lnet/minecraft/class_332;Lnet/minecraft/class_1799;IIZ)V"
+          },
+          {
+            "nme": "<clinit>",
+            "acc": 8,
+            "dsc": "()V"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 26,
+            "nme": "INSTANCE",
+            "dsc": "Lfi/dy/masa/itemscroller/event/RenderEventHandler;"
+          },
+          {
+            "acc": 18,
+            "nme": "mc",
+            "dsc": "Lnet/minecraft/class_310;"
+          },
+          {
+            "acc": 2,
+            "nme": "recipeListX",
+            "dsc": "I"
+          },
+          {
+            "acc": 2,
+            "nme": "recipeListY",
+            "dsc": "I"
+          },
+          {
+            "acc": 2,
+            "nme": "recipesPerColumn",
+            "dsc": "I"
+          },
+          {
+            "acc": 2,
+            "nme": "columnWidth",
+            "dsc": "I"
+          },
+          {
+            "acc": 2,
+            "nme": "columns",
+            "dsc": "I"
+          },
+          {
+            "acc": 2,
+            "nme": "numberTextWidth",
+            "dsc": "I"
+          },
+          {
+            "acc": 2,
+            "nme": "gapColumn",
+            "dsc": "I"
+          },
+          {
+            "acc": 2,
+            "nme": "entryHeight",
+            "dsc": "I"
+          },
+          {
+            "acc": 2,
+            "nme": "scale",
+            "dsc": "D"
+          }
+        ]
+      },
+      "fi/dy/masa/itemscroller/mixin/screen/MixinCraftingScreenHandler.class": {
+        "ver": 65,
+        "acc": 1057,
+        "nme": "fi/dy/masa/itemscroller/mixin/screen/MixinCraftingScreenHandler",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "onSlotChangedCraftingGrid",
+            "acc": 2,
+            "dsc": "(Lnet/minecraft/class_1263;Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V",
+            "vanns": [
+              {
+                "dsc": "Lorg/spongepowered/asm/mixin/injection/Inject;",
+                "vals": [
+                  "method",
+                  [
+                    "onContentChanged"
+                  ],
+                  "at",
+                  [
+                    {
+                      "desc": "Lorg/spongepowered/asm/mixin/injection/At;",
+                      "values": [
+                        "value",
+                        "RETURN"
+                      ],
+                      "api": 589824
+                    }
+                  ]
+                ]
+              }
+            ]
+          },
+          {
+            "nme": "onUpdateResult",
+            "acc": 10,
+            "dsc": "(Lnet/minecraft/class_1703;Lnet/minecraft/class_3218;Lnet/minecraft/class_1657;Lnet/minecraft/class_8566;Lnet/minecraft/class_1731;Lnet/minecraft/class_8786;Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V",
+            "sig": "(Lnet/minecraft/class_1703;Lnet/minecraft/class_3218;Lnet/minecraft/class_1657;Lnet/minecraft/class_8566;Lnet/minecraft/class_1731;Lnet/minecraft/class_8786<Lnet/minecraft/class_3955;>;Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V",
+            "vanns": [
+              {
+                "dsc": "Lorg/spongepowered/asm/mixin/injection/Inject;",
+                "vals": [
+                  "method",
+                  [
+                    "updateResult"
+                  ],
+                  "at",
+                  [
+                    {
+                      "desc": "Lorg/spongepowered/asm/mixin/injection/At;",
+                      "values": [
+                        "value",
+                        "RETURN"
+                      ],
+                      "api": 589824
+                    }
+                  ]
+                ]
+              }
+            ]
+          }
+        ],
+        "flds": [
+          {
+            "acc": 2,
+            "nme": "field_7797",
+            "dsc": "Lnet/minecraft/class_1657;"
+          }
+        ],
+        "invanns": [
+          {
+            "dsc": "Lorg/spongepowered/asm/mixin/Mixin;",
+            "vals": [
+              "value",
+              [
+                {
+                  "itrlNme": "net/minecraft/class_1714"
+                }
+              ]
+            ]
+          }
+        ]
+      },
+      "fi/dy/masa/itemscroller/recipes/RecipeStorage.class": {
+        "ver": 65,
+        "acc": 33,
+        "nme": "fi/dy/masa/itemscroller/recipes/RecipeStorage",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "getInstance",
+            "acc": 9,
+            "dsc": "()Lfi/dy/masa/itemscroller/recipes/RecipeStorage;"
+          },
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "(I)V"
+          },
+          {
+            "nme": "reset",
+            "acc": 1,
+            "dsc": "(Z)V"
+          },
+          {
+            "nme": "initRecipes",
+            "acc": 2,
+            "dsc": "()V"
+          },
+          {
+            "nme": "clearRecipes",
+            "acc": 2,
+            "dsc": "()V"
+          },
+          {
+            "nme": "getSelection",
+            "acc": 1,
+            "dsc": "()I"
+          },
+          {
+            "nme": "changeSelectedRecipe",
+            "acc": 1,
+            "dsc": "(I)V"
+          },
+          {
+            "nme": "scrollSelection",
+            "acc": 1,
+            "dsc": "(Z)V"
+          },
+          {
+            "nme": "getFirstVisibleRecipeId",
+            "acc": 1,
+            "dsc": "()I"
+          },
+          {
+            "nme": "getTotalRecipeCount",
+            "acc": 1,
+            "dsc": "()I"
+          },
+          {
+            "nme": "getRecipeCountPerPage",
+            "acc": 1,
+            "dsc": "()I"
+          },
+          {
+            "nme": "getCurrentRecipePage",
+            "acc": 1,
+            "dsc": "()I"
+          },
+          {
+            "nme": "getRecipe",
+            "acc": 1,
+            "dsc": "(I)Lfi/dy/masa/itemscroller/recipes/RecipePattern;",
+            "vanns": [
+              {
+                "dsc": "Ljavax/annotation/Nonnull;"
+              }
+            ]
+          },
+          {
+            "nme": "getSelectedRecipe",
+            "acc": 1,
+            "dsc": "()Lfi/dy/masa/itemscroller/recipes/RecipePattern;",
+            "vanns": [
+              {
+                "dsc": "Ljavax/annotation/Nonnull;"
+              }
+            ]
+          },
+          {
+            "nme": "storeCraftingRecipeToCurrentSelection",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/class_1735;Lnet/minecraft/class_465;ZZLnet/minecraft/class_310;)V",
+            "sig": "(Lnet/minecraft/class_1735;Lnet/minecraft/class_465<*>;ZZLnet/minecraft/class_310;)V"
+          },
+          {
+            "nme": "storeCraftingRecipe",
+            "acc": 1,
+            "dsc": "(ILnet/minecraft/class_1735;Lnet/minecraft/class_465;ZZLnet/minecraft/class_310;)V",
+            "sig": "(ILnet/minecraft/class_1735;Lnet/minecraft/class_465<*>;ZZLnet/minecraft/class_310;)V"
+          },
+          {
+            "nme": "clearRecipe",
+            "acc": 1,
+            "dsc": "(I)V"
+          },
+          {
+            "nme": "onAddToRecipeBook",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/class_10297;)V"
+          },
+          {
+            "nme": "readFromNBT",
+            "acc": 2,
+            "dsc": "(Lnet/minecraft/class_2487;Lnet/minecraft/class_5455;)V"
+          },
+          {
+            "nme": "writeToNBT",
+            "acc": 2,
+            "dsc": "(Lnet/minecraft/class_5455;)Lnet/minecraft/class_2487;"
+          },
+          {
+            "nme": "getFileName",
+            "acc": 2,
+            "dsc": "()Ljava/lang/String;"
+          },
+          {
+            "nme": "getSaveDirAsPath",
+            "acc": 2,
+            "dsc": "()Ljava/nio/file/Path;"
+          },
+          {
+            "nme": "readFromDisk",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/class_5455;)V"
+          },
+          {
+            "nme": "writeToDisk",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/class_5455;)V"
+          },
+          {
+            "nme": "<clinit>",
+            "acc": 8,
+            "dsc": "()V"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 26,
+            "nme": "MAX_PAGES",
+            "dsc": "I",
+            "val": 8
+          },
+          {
+            "acc": 26,
+            "nme": "MAX_RECIPES",
+            "dsc": "I",
+            "val": 18
+          },
+          {
+            "acc": 26,
+            "nme": "INSTANCE",
+            "dsc": "Lfi/dy/masa/itemscroller/recipes/RecipeStorage;"
+          },
+          {
+            "acc": 18,
+            "nme": "recipes",
+            "dsc": "[Lfi/dy/masa/itemscroller/recipes/RecipePattern;"
+          },
+          {
+            "acc": 2,
+            "nme": "selected",
+            "dsc": "I"
+          },
+          {
+            "acc": 2,
+            "nme": "dirty",
+            "dsc": "Z"
+          }
+        ]
+      },
+      "fi/dy/masa/itemscroller/villager/VillagerUtils.class": {
+        "ver": 65,
+        "acc": 33,
+        "nme": "fi/dy/masa/itemscroller/villager/VillagerUtils",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "switchToTradeByVisibleIndex",
+            "acc": 9,
+            "dsc": "(I)Z"
+          },
+          {
+            "nme": "getRealTradeIndexFor",
+            "acc": 9,
+            "dsc": "(ILnet/minecraft/class_1728;)I"
+          },
+          {
+            "nme": "buildCustomTradeList",
+            "acc": 9,
+            "dsc": "(Lnet/minecraft/class_1916;)Lnet/minecraft/class_1916;"
+          },
+          {
+            "nme": "getGlobalFavoritesFor",
+            "acc": 9,
+            "dsc": "(Lnet/minecraft/class_1916;Ljava/util/Collection;)Lit/unimi/dsi/fastutil/ints/IntArrayList;",
+            "sig": "(Lnet/minecraft/class_1916;Ljava/util/Collection<Lfi/dy/masa/itemscroller/villager/TradeType;>;)Lit/unimi/dsi/fastutil/ints/IntArrayList;"
+          }
+        ],
+        "flds": []
+      },
+      "fi/dy/masa/itemscroller/util/SortingCategory.class": {
+        "ver": 65,
+        "acc": 33,
+        "nme": "fi/dy/masa/itemscroller/util/SortingCategory",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "buildDisplayContext",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/class_310;)Lnet/minecraft/class_1761$class_8128;",
+            "vanns": [
+              {
+                "dsc": "Ljavax/annotation/Nullable;"
+              }
+            ]
+          },
+          {
+            "nme": "fromItemStack",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/class_1799;)Lfi/dy/masa/itemscroller/util/SortingCategory$Entry;"
+          },
+          {
+            "nme": "fromItemGroup",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/class_1761;)Lfi/dy/masa/itemscroller/util/SortingCategory$Entry;",
+            "vanns": [
+              {
+                "dsc": "Ljavax/annotation/Nullable;"
+              }
+            ]
+          },
+          {
+            "nme": "getDefaultEntries",
+            "acc": 1,
+            "dsc": "()Lcom/google/common/collect/ImmutableList;",
+            "sig": "()Lcom/google/common/collect/ImmutableList<Lfi/dy/masa/malilib/config/IConfigLockedListEntry;>;"
+          },
+          {
+            "nme": "fromString",
+            "acc": 1,
+            "dsc": "(Ljava/lang/String;)Lfi/dy/masa/malilib/config/IConfigLockedListEntry;",
+            "vanns": [
+              {
+                "dsc": "Ljavax/annotation/Nullable;"
+              }
+            ]
+          },
+          {
+            "nme": "lambda$buildDisplayContext$1",
+            "acc": 4106,
+            "dsc": "(Lnet/minecraft/class_1761$class_8128;Lnet/minecraft/class_1761;)V"
+          },
+          {
+            "nme": "lambda$buildDisplayContext$0",
+            "acc": 4106,
+            "dsc": "(Lnet/minecraft/class_1761;)Z"
+          },
+          {
+            "nme": "<clinit>",
+            "acc": 8,
+            "dsc": "()V"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 25,
+            "nme": "INSTANCE",
+            "dsc": "Lfi/dy/masa/itemscroller/util/SortingCategory;"
+          },
+          {
+            "acc": 1,
+            "nme": "VALUES",
+            "dsc": "Lcom/google/common/collect/ImmutableList;",
+            "sig": "Lcom/google/common/collect/ImmutableList<Lfi/dy/masa/itemscroller/util/SortingCategory$Entry;>;"
+          }
+        ]
+      },
+      "fi/dy/masa/itemscroller/ItemScroller.class": {
+        "ver": 65,
+        "acc": 33,
+        "nme": "fi/dy/masa/itemscroller/ItemScroller",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "onInitialize",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "debugLog",
+            "acc": 137,
+            "dsc": "(Ljava/lang/String;[Ljava/lang/Object;)V"
+          },
+          {
+            "nme": "<clinit>",
+            "acc": 8,
+            "dsc": "()V"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 25,
+            "nme": "LOGGER",
+            "dsc": "Lorg/apache/logging/log4j/Logger;"
+          }
+        ]
+      },
+      "fi/dy/masa/itemscroller/Reference.class": {
+        "ver": 65,
+        "acc": 33,
+        "nme": "fi/dy/masa/itemscroller/Reference",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "<clinit>",
+            "acc": 8,
+            "dsc": "()V"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 25,
+            "nme": "MOD_ID",
+            "dsc": "Ljava/lang/String;",
+            "val": "itemscroller"
+          },
+          {
+            "acc": 25,
+            "nme": "MOD_NAME",
+            "dsc": "Ljava/lang/String;",
+            "val": "Item Scroller"
+          },
+          {
+            "acc": 25,
+            "nme": "MOD_VERSION",
+            "dsc": "Ljava/lang/String;"
+          },
+          {
+            "acc": 25,
+            "nme": "MC_VERSION",
+            "dsc": "Ljava/lang/String;"
+          },
+          {
+            "acc": 25,
+            "nme": "MOD_TYPE",
+            "dsc": "Ljava/lang/String;",
+            "val": "fabric"
+          },
+          {
+            "acc": 25,
+            "nme": "MOD_STRING",
+            "dsc": "Ljava/lang/String;"
+          }
+        ]
+      },
+      "fi/dy/masa/itemscroller/config/Configs$Generic.class": {
+        "ver": 65,
+        "acc": 33,
+        "nme": "fi/dy/masa/itemscroller/config/Configs$Generic",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "<clinit>",
+            "acc": 8,
+            "dsc": "()V"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 25,
+            "nme": "CARPET_CTRL_Q_CRAFTING",
+            "dsc": "Lfi/dy/masa/malilib/config/options/ConfigBoolean;"
+          },
+          {
+            "acc": 25,
+            "nme": "CLIENT_CRAFTING_FIX",
+            "dsc": "Lfi/dy/masa/malilib/config/options/ConfigBoolean;"
+          },
+          {
+            "acc": 25,
+            "nme": "CRAFTING_RENDER_RECIPE_ITEMS",
+            "dsc": "Lfi/dy/masa/malilib/config/options/ConfigBoolean;"
+          },
+          {
+            "acc": 25,
+            "nme": "DEBUG_MESSAGES",
+            "dsc": "Lfi/dy/masa/malilib/config/options/ConfigBoolean;"
+          },
+          {
+            "acc": 25,
+            "nme": "MOD_MAIN_TOGGLE",
+            "dsc": "Lfi/dy/masa/malilib/config/options/ConfigBoolean;"
+          },
+          {
+            "acc": 25,
+            "nme": "MASS_CRAFT_INHIBIT_MID_UPDATES",
+            "dsc": "Lfi/dy/masa/malilib/config/options/ConfigBoolean;"
+          },
+          {
+            "acc": 25,
+            "nme": "MASS_CRAFT_INTERVAL",
+            "dsc": "Lfi/dy/masa/malilib/config/options/ConfigInteger;"
+          },
+          {
+            "acc": 25,
+            "nme": "MASS_CRAFT_ITERATIONS",
+            "dsc": "Lfi/dy/masa/malilib/config/options/ConfigInteger;"
+          },
+          {
+            "acc": 25,
+            "nme": "MASS_CRAFT_SWAPS",
+            "dsc": "Lfi/dy/masa/malilib/config/options/ConfigBoolean;"
+          },
+          {
+            "acc": 25,
+            "nme": "MASS_CRAFT_RECIPE_BOOK",
+            "dsc": "Lfi/dy/masa/malilib/config/options/ConfigBoolean;"
+          },
+          {
+            "acc": 25,
+            "nme": "MASS_CRAFT_HOLD",
+            "dsc": "Lfi/dy/masa/malilib/config/options/ConfigBoolean;"
+          },
+          {
+            "acc": 25,
+            "nme": "PACKET_RATE_LIMIT",
+            "dsc": "Lfi/dy/masa/malilib/config/options/ConfigInteger;"
+          },
+          {
+            "acc": 25,
+            "nme": "SCROLL_CRAFT_STORE_RECIPES_TO_FILE",
+            "dsc": "Lfi/dy/masa/malilib/config/options/ConfigBoolean;"
+          },
+          {
+            "acc": 25,
+            "nme": "SCROLL_CRAFT_RECIPE_FILE_GLOBAL",
+            "dsc": "Lfi/dy/masa/malilib/config/options/ConfigBoolean;"
+          },
+          {
+            "acc": 25,
+            "nme": "RATE_LIMIT_CLICK_PACKETS",
+            "dsc": "Lfi/dy/masa/malilib/config/options/ConfigBoolean;"
+          },
+          {
+            "acc": 25,
+            "nme": "REVERSE_SCROLL_DIRECTION_SINGLE",
+            "dsc": "Lfi/dy/masa/malilib/config/options/ConfigBoolean;"
+          },
+          {
+            "acc": 25,
+            "nme": "REVERSE_SCROLL_DIRECTION_STACKS",
+            "dsc": "Lfi/dy/masa/malilib/config/options/ConfigBoolean;"
+          },
+          {
+            "acc": 25,
+            "nme": "USE_RECIPE_CACHING",
+            "dsc": "Lfi/dy/masa/malilib/config/options/ConfigBoolean;"
+          },
+          {
+            "acc": 25,
+            "nme": "SLOT_POSITION_AWARE_SCROLL_DIRECTION",
+            "dsc": "Lfi/dy/masa/malilib/config/options/ConfigBoolean;"
+          },
+          {
+            "acc": 25,
+            "nme": "VILLAGER_TRADE_USE_GLOBAL_FAVORITES",
+            "dsc": "Lfi/dy/masa/malilib/config/options/ConfigBoolean;"
+          },
+          {
+            "acc": 25,
+            "nme": "VILLAGER_TRADE_LIST_REMEMBER_SCROLL",
+            "dsc": "Lfi/dy/masa/malilib/config/options/ConfigBoolean;"
+          },
+          {
+            "acc": 25,
+            "nme": "SORT_INVENTORY_TOGGLE",
+            "dsc": "Lfi/dy/masa/malilib/config/options/ConfigBoolean;"
+          },
+          {
+            "acc": 25,
+            "nme": "SORT_ASSUME_EMPTY_BOX_STACKS",
+            "dsc": "Lfi/dy/masa/malilib/config/options/ConfigBoolean;"
+          },
+          {
+            "acc": 25,
+            "nme": "SORT_SHULKER_BOXES_AT_END",
+            "dsc": "Lfi/dy/masa/malilib/config/options/ConfigBoolean;"
+          },
+          {
+            "acc": 25,
+            "nme": "SORT_SHULKER_BOXES_INVERTED",
+            "dsc": "Lfi/dy/masa/malilib/config/options/ConfigBoolean;"
+          },
+          {
+            "acc": 25,
+            "nme": "SORT_BUNDLES_AT_END",
+            "dsc": "Lfi/dy/masa/malilib/config/options/ConfigBoolean;"
+          },
+          {
+            "acc": 25,
+            "nme": "SORT_BUNDLES_INVERTED",
+            "dsc": "Lfi/dy/masa/malilib/config/options/ConfigBoolean;"
+          },
+          {
+            "acc": 25,
+            "nme": "SORT_TOP_PRIORITY_INVENTORY",
+            "dsc": "Lfi/dy/masa/malilib/config/options/ConfigStringList;"
+          },
+          {
+            "acc": 25,
+            "nme": "SORT_BOTTOM_PRIORITY_INVENTORY",
+            "dsc": "Lfi/dy/masa/malilib/config/options/ConfigStringList;"
+          },
+          {
+            "acc": 25,
+            "nme": "SORT_METHOD_DEFAULT",
+            "dsc": "Lfi/dy/masa/malilib/config/options/ConfigOptionList;"
+          },
+          {
+            "acc": 25,
+            "nme": "SORT_CATEGORY_ORDER",
+            "dsc": "Lfi/dy/masa/malilib/config/options/ConfigLockedList;"
+          },
+          {
+            "acc": 25,
+            "nme": "OPTIONS",
+            "dsc": "Lcom/google/common/collect/ImmutableList;",
+            "sig": "Lcom/google/common/collect/ImmutableList<Lfi/dy/masa/malilib/config/IConfigBase;>;"
+          }
+        ]
+      },
+      "fi/dy/masa/itemscroller/mixin/recipe/IMixinIngredient.class": {
+        "ver": 65,
+        "acc": 1537,
+        "nme": "fi/dy/masa/itemscroller/mixin/recipe/IMixinIngredient",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "itemscroller_getEntries",
+            "acc": 1025,
+            "dsc": "()Lnet/minecraft/class_6885;",
+            "sig": "()Lnet/minecraft/class_6885<Lnet/minecraft/class_1792;>;",
+            "vanns": [
+              {
+                "dsc": "Lorg/spongepowered/asm/mixin/gen/Accessor;",
+                "vals": [
+                  "value",
+                  "entries"
+                ]
+              }
+            ]
+          }
+        ],
+        "flds": [],
+        "invanns": [
+          {
+            "dsc": "Lorg/spongepowered/asm/mixin/Mixin;",
+            "vals": [
+              "value",
+              [
+                {
+                  "itrlNme": "net/minecraft/class_1856"
+                }
+              ]
+            ]
+          }
+        ]
+      },
+      "fi/dy/masa/itemscroller/mixin/screen/IMixinAbstractCraftingScreenHandler.class": {
+        "ver": 65,
+        "acc": 1537,
+        "nme": "fi/dy/masa/itemscroller/mixin/screen/IMixinAbstractCraftingScreenHandler",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "itemscroller_getCraftingInventory",
+            "acc": 1025,
+            "dsc": "()Lnet/minecraft/class_8566;",
+            "vanns": [
+              {
+                "dsc": "Lorg/spongepowered/asm/mixin/gen/Accessor;",
+                "vals": [
+                  "value",
+                  "craftingInventory"
+                ]
+              }
+            ]
+          },
+          {
+            "nme": "itemscroller_getCraftingResultInventory",
+            "acc": 1025,
+            "dsc": "()Lnet/minecraft/class_1731;",
+            "vanns": [
+              {
+                "dsc": "Lorg/spongepowered/asm/mixin/gen/Accessor;",
+                "vals": [
+                  "value",
+                  "craftingResultInventory"
+                ]
+              }
+            ]
+          }
+        ],
+        "flds": [],
+        "invanns": [
+          {
+            "dsc": "Lorg/spongepowered/asm/mixin/Mixin;",
+            "vals": [
+              "value",
+              [
+                {
+                  "itrlNme": "net/minecraft/class_9884"
+                }
+              ]
+            ]
+          }
+        ]
+      },
+      "fi/dy/masa/itemscroller/config/Configs.class": {
+        "ver": 65,
+        "acc": 33,
+        "nme": "fi/dy/masa/itemscroller/config/Configs",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "loadFromFile",
+            "acc": 9,
+            "dsc": "()V"
+          },
+          {
+            "nme": "saveToFile",
+            "acc": 9,
+            "dsc": "()V"
+          },
+          {
+            "nme": "load",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "save",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "getStrings",
+            "acc": 10,
+            "dsc": "(Lcom/google/gson/JsonObject;Ljava/util/Set;Ljava/lang/String;)V",
+            "sig": "(Lcom/google/gson/JsonObject;Ljava/util/Set<Ljava/lang/String;>;Ljava/lang/String;)V"
+          },
+          {
+            "nme": "writeStrings",
+            "acc": 10,
+            "dsc": "(Lcom/google/gson/JsonObject;Ljava/util/Set;Ljava/lang/String;)V",
+            "sig": "(Lcom/google/gson/JsonObject;Ljava/util/Set<Ljava/lang/String;>;Ljava/lang/String;)V"
+          },
+          {
+            "nme": "<clinit>",
+            "acc": 8,
+            "dsc": "()V"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 26,
+            "nme": "CONFIG_FILE_NAME",
+            "dsc": "Ljava/lang/String;",
+            "val": "itemscroller.json"
+          },
+          {
+            "acc": 26,
+            "nme": "DEFAULT_TOP_SORTING",
+            "dsc": "Lcom/google/common/collect/ImmutableList;",
+            "sig": "Lcom/google/common/collect/ImmutableList<Ljava/lang/String;>;"
+          },
+          {
+            "acc": 26,
+            "nme": "DEFAULT_BOTTOM_SORTING",
+            "dsc": "Lcom/google/common/collect/ImmutableList;",
+            "sig": "Lcom/google/common/collect/ImmutableList<Ljava/lang/String;>;"
+          },
+          {
+            "acc": 26,
+            "nme": "GENERIC_KEY",
+            "dsc": "Ljava/lang/String;",
+            "val": "itemscroller.config.generic"
+          },
+          {
+            "acc": 26,
+            "nme": "TOGGLES_KEY",
+            "dsc": "Ljava/lang/String;",
+            "val": "itemscroller.config.toggles"
+          },
+          {
+            "acc": 25,
+            "nme": "GUI_BLACKLIST",
+            "dsc": "Ljava/util/Set;",
+            "sig": "Ljava/util/Set<Ljava/lang/String;>;"
+          },
+          {
+            "acc": 25,
+            "nme": "SLOT_BLACKLIST",
+            "dsc": "Ljava/util/Set;",
+            "sig": "Ljava/util/Set<Ljava/lang/String;>;"
+          }
+        ]
+      },
+      "fi/dy/masa/itemscroller/recipes/RecipeUtils.class": {
+        "ver": 65,
+        "acc": 131105,
+        "nme": "fi/dy/masa/itemscroller/recipes/RecipeUtils",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "getRecipeCategoryId",
+            "acc": 9,
+            "dsc": "(Lnet/minecraft/class_10355;)Ljava/lang/String;"
+          },
+          {
+            "nme": "getRecipeCategoryFromId",
+            "acc": 9,
+            "dsc": "(Ljava/lang/String;)Lnet/minecraft/class_10355;",
+            "vanns": [
+              {
+                "dsc": "Ljavax/annotation/Nullable;"
+              }
+            ]
+          },
+          {
+            "nme": "compareStacksAndIngredients",
+            "acc": 9,
+            "dsc": "(Ljava/util/List;Ljava/util/List;ILfi/dy/masa/itemscroller/recipes/RecipeUtils$Type;)Z",
+            "sig": "(Ljava/util/List<Lnet/minecraft/class_1799;>;Ljava/util/List<Lnet/minecraft/class_1856;>;ILfi/dy/masa/itemscroller/recipes/RecipeUtils$Type;)Z"
+          },
+          {
+            "nme": "compareShapedRecipe",
+            "acc": 9,
+            "dsc": "(Ljava/util/List;Ljava/util/List;)Z",
+            "sig": "(Ljava/util/List<Lnet/minecraft/class_1799;>;Ljava/util/List<Lnet/minecraft/class_1856;>;)Z"
+          },
+          {
+            "nme": "compareShapelessRecipe",
+            "acc": 9,
+            "dsc": "(Ljava/util/List;Ljava/util/List;)Z",
+            "sig": "(Ljava/util/List<Lnet/minecraft/class_1799;>;Ljava/util/List<Lnet/minecraft/class_1856;>;)Z"
+          },
+          {
+            "nme": "checkMatchingItemsEach",
+            "acc": 10,
+            "dsc": "(Lnet/minecraft/class_1799;IILnet/minecraft/class_1856;)Z"
+          },
+          {
+            "nme": "areStacksEqual",
+            "acc": 9,
+            "dsc": "(Lnet/minecraft/class_1799;Lnet/minecraft/class_1799;)Z"
+          },
+          {
+            "nme": "dumpStacks",
+            "acc": 10,
+            "dsc": "(Ljava/util/List;Ljava/lang/String;)V",
+            "sig": "(Ljava/util/List<Lnet/minecraft/class_1799;>;Ljava/lang/String;)V"
+          },
+          {
+            "nme": "dumpIngs",
+            "acc": 10,
+            "dsc": "(Ljava/util/List;Ljava/lang/String;)V",
+            "sig": "(Ljava/util/List<Lnet/minecraft/class_1856;>;Ljava/lang/String;)V"
+          }
+        ],
+        "flds": [],
+        "vanns": [
+          {
+            "dsc": "Ljava/lang/Deprecated;",
+            "vals": [
+              "forRemoval",
+              true
+            ]
+          }
+        ]
+      },
+      "fi/dy/masa/itemscroller/mixin/screen/IMixinScreenWithHandler.class": {
+        "ver": 65,
+        "acc": 1537,
+        "nme": "fi/dy/masa/itemscroller/mixin/screen/IMixinScreenWithHandler",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "itemscroller_getSlotAtPositionInvoker",
+            "acc": 1025,
+            "dsc": "(DD)Lnet/minecraft/class_1735;",
+            "vanns": [
+              {
+                "dsc": "Lorg/spongepowered/asm/mixin/gen/Invoker;",
+                "vals": [
+                  "value",
+                  "getSlotAt"
+                ]
+              }
+            ]
+          },
+          {
+            "nme": "itemscroller_handleMouseClickInvoker",
+            "acc": 1025,
+            "dsc": "(Lnet/minecraft/class_1735;IILnet/minecraft/class_1713;)V",
+            "vanns": [
+              {
+                "dsc": "Lorg/spongepowered/asm/mixin/gen/Invoker;",
+                "vals": [
+                  "value",
+                  "onMouseClick"
+                ]
+              }
+            ]
+          },
+          {
+            "nme": "itemscroller_getHoveredSlot",
+            "acc": 1025,
+            "dsc": "()Lnet/minecraft/class_1735;",
+            "vanns": [
+              {
+                "dsc": "Lorg/spongepowered/asm/mixin/gen/Accessor;",
+                "vals": [
+                  "value",
+                  "focusedSlot"
+                ]
+              }
+            ]
+          },
+          {
+            "nme": "itemscroller_getGuiLeft",
+            "acc": 1025,
+            "dsc": "()I",
+            "vanns": [
+              {
+                "dsc": "Lorg/spongepowered/asm/mixin/gen/Accessor;",
+                "vals": [
+                  "value",
+                  "x"
+                ]
+              }
+            ]
+          },
+          {
+            "nme": "itemscroller_getGuiTop",
+            "acc": 1025,
+            "dsc": "()I",
+            "vanns": [
+              {
+                "dsc": "Lorg/spongepowered/asm/mixin/gen/Accessor;",
+                "vals": [
+                  "value",
+                  "y"
+                ]
+              }
+            ]
+          },
+          {
+            "nme": "itemscroller_getBackgroundWidth",
+            "acc": 1025,
+            "dsc": "()I",
+            "vanns": [
+              {
+                "dsc": "Lorg/spongepowered/asm/mixin/gen/Accessor;",
+                "vals": [
+                  "value",
+                  "backgroundWidth"
+                ]
+              }
+            ]
+          },
+          {
+            "nme": "itemscroller_getBackgroundHeight",
+            "acc": 1025,
+            "dsc": "()I",
+            "vanns": [
+              {
+                "dsc": "Lorg/spongepowered/asm/mixin/gen/Accessor;",
+                "vals": [
+                  "value",
+                  "backgroundHeight"
+                ]
+              }
+            ]
+          }
+        ],
+        "flds": [],
+        "invanns": [
+          {
+            "dsc": "Lorg/spongepowered/asm/mixin/Mixin;",
+            "vals": [
+              "value",
+              [
+                {
+                  "itrlNme": "net/minecraft/class_465"
+                }
+              ]
+            ]
+          }
+        ]
+      },
+      "fi/dy/masa/itemscroller/recipes/CraftingHandler.class": {
+        "ver": 65,
+        "acc": 33,
+        "nme": "fi/dy/masa/itemscroller/recipes/CraftingHandler",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "clearDefinitions",
+            "acc": 9,
+            "dsc": "()V"
+          },
+          {
+            "nme": "addCraftingGridDefinition",
+            "acc": 9,
+            "dsc": "(Ljava/lang/String;Ljava/lang/String;ILfi/dy/masa/itemscroller/recipes/CraftingHandler$SlotRange;)Z"
+          },
+          {
+            "nme": "isCraftingGui",
+            "acc": 9,
+            "dsc": "(Lnet/minecraft/class_437;)Z"
+          },
+          {
+            "nme": "getCraftingGridSlots",
+            "acc": 9,
+            "dsc": "(Lnet/minecraft/class_465;Lnet/minecraft/class_1735;)Lfi/dy/masa/itemscroller/recipes/CraftingHandler$SlotRange;",
+            "sig": "(Lnet/minecraft/class_465<*>;Lnet/minecraft/class_1735;)Lfi/dy/masa/itemscroller/recipes/CraftingHandler$SlotRange;",
+            "vanns": [
+              {
+                "dsc": "Ljavax/annotation/Nullable;"
+              }
+            ]
+          },
+          {
+            "nme": "getFirstCraftingOutputSlotForGui",
+            "acc": 9,
+            "dsc": "(Lnet/minecraft/class_465;)Lnet/minecraft/class_1735;",
+            "sig": "(Lnet/minecraft/class_465<+Lnet/minecraft/class_1703;>;)Lnet/minecraft/class_1735;",
+            "vanns": [
+              {
+                "dsc": "Ljavax/annotation/Nullable;"
+              }
+            ]
+          },
+          {
+            "nme": "<clinit>",
+            "acc": 8,
+            "dsc": "()V"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 26,
+            "nme": "CRAFTING_GRID_SLOTS",
+            "dsc": "Ljava/util/Map;",
+            "sig": "Ljava/util/Map<Lfi/dy/masa/itemscroller/recipes/CraftingHandler$CraftingOutputSlot;Lfi/dy/masa/itemscroller/recipes/CraftingHandler$SlotRange;>;"
+          },
+          {
+            "acc": 26,
+            "nme": "CRAFTING_GUIS",
+            "dsc": "Ljava/util/Set;",
+            "sig": "Ljava/util/Set<Ljava/lang/Class<+Lnet/minecraft/class_465<*>;>;>;"
+          }
+        ]
+      },
+      "fi/dy/masa/itemscroller/gui/GuiConfigs.class": {
+        "ver": 65,
+        "acc": 33,
+        "nme": "fi/dy/masa/itemscroller/gui/GuiConfigs",
+        "super": "fi/dy/masa/malilib/gui/GuiConfigsBase",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "initGui",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "createButton",
+            "acc": 2,
+            "dsc": "(IIILfi/dy/masa/itemscroller/gui/GuiConfigs$ConfigGuiTab;)I"
+          },
+          {
+            "nme": "getConfigWidth",
+            "acc": 4,
+            "dsc": "()I"
+          },
+          {
+            "nme": "getConfigs",
+            "acc": 1,
+            "dsc": "()Ljava/util/List;",
+            "sig": "()Ljava/util/List<Lfi/dy/masa/malilib/gui/GuiConfigsBase$ConfigOptionWrapper;>;"
+          },
+          {
+            "nme": "access$000",
+            "acc": 4104,
+            "dsc": "(Lfi/dy/masa/itemscroller/gui/GuiConfigs;)V"
+          },
+          {
+            "nme": "access$100",
+            "acc": 4104,
+            "dsc": "(Lfi/dy/masa/itemscroller/gui/GuiConfigs;)Lfi/dy/masa/malilib/gui/widgets/WidgetListBase;"
+          },
+          {
+            "nme": "<clinit>",
+            "acc": 8,
+            "dsc": "()V"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 10,
+            "nme": "tab",
+            "dsc": "Lfi/dy/masa/itemscroller/gui/GuiConfigs$ConfigGuiTab;"
+          }
+        ]
+      },
+      "fi/dy/masa/itemscroller/util/ItemType.class": {
+        "ver": 65,
+        "acc": 65585,
+        "nme": "fi/dy/masa/itemscroller/util/ItemType",
+        "super": "java/lang/Record",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/class_1799;)V"
+          },
+          {
+            "nme": "hashCode",
+            "acc": 1,
+            "dsc": "()I"
+          },
+          {
+            "nme": "equals",
+            "acc": 1,
+            "dsc": "(Ljava/lang/Object;)Z"
+          },
+          {
+            "nme": "getSlotsPerItem",
+            "acc": 9,
+            "dsc": "([Lnet/minecraft/class_1799;)Ljava/util/Map;",
+            "sig": "([Lnet/minecraft/class_1799;)Ljava/util/Map<Lfi/dy/masa/itemscroller/util/ItemType;Lit/unimi/dsi/fastutil/ints/IntArrayList;>;"
+          },
+          {
+            "nme": "toString",
+            "acc": 17,
+            "dsc": "()Ljava/lang/String;"
+          },
+          {
+            "nme": "stack",
+            "acc": 1,
+            "dsc": "()Lnet/minecraft/class_1799;"
+          },
+          {
+            "nme": "lambda$getSlotsPerItem$0",
+            "acc": 4106,
+            "dsc": "(Lfi/dy/masa/itemscroller/util/ItemType;)Lit/unimi/dsi/fastutil/ints/IntArrayList;"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 18,
+            "nme": "stack",
+            "dsc": "Lnet/minecraft/class_1799;"
+          }
+        ]
+      },
+      "fi/dy/masa/itemscroller/util/MoveAction.class": {
+        "ver": 65,
+        "acc": 16433,
+        "nme": "fi/dy/masa/itemscroller/util/MoveAction",
+        "super": "java/lang/Enum",
+        "mthds": [
+          {
+            "nme": "values",
+            "acc": 9,
+            "dsc": "()[Lfi/dy/masa/itemscroller/util/MoveAction;"
+          },
+          {
+            "nme": "valueOf",
+            "acc": 9,
+            "dsc": "(Ljava/lang/String;)Lfi/dy/masa/itemscroller/util/MoveAction;"
+          },
+          {
+            "nme": "<init>",
+            "acc": 2,
+            "dsc": "(Ljava/lang/String;I)V",
+            "sig": "()V"
+          },
+          {
+            "nme": "$values",
+            "acc": 4106,
+            "dsc": "()[Lfi/dy/masa/itemscroller/util/MoveAction;"
+          },
+          {
+            "nme": "<clinit>",
+            "acc": 8,
+            "dsc": "()V"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 16409,
+            "nme": "NONE",
+            "dsc": "Lfi/dy/masa/itemscroller/util/MoveAction;"
+          },
+          {
+            "acc": 16409,
+            "nme": "SCROLL_TO_OTHER_MOVE_ONE",
+            "dsc": "Lfi/dy/masa/itemscroller/util/MoveAction;"
+          },
+          {
+            "acc": 16409,
+            "nme": "SCROLL_TO_OTHER_STACKS",
+            "dsc": "Lfi/dy/masa/itemscroller/util/MoveAction;"
+          },
+          {
+            "acc": 16409,
+            "nme": "SCROLL_TO_OTHER_MATCHING",
+            "dsc": "Lfi/dy/masa/itemscroller/util/MoveAction;"
+          },
+          {
+            "acc": 16409,
+            "nme": "SCROLL_TO_OTHER_EVERYTHING",
+            "dsc": "Lfi/dy/masa/itemscroller/util/MoveAction;"
+          },
+          {
+            "acc": 16409,
+            "nme": "SCROLL_TO_THIS_MOVE_ONE",
+            "dsc": "Lfi/dy/masa/itemscroller/util/MoveAction;"
+          },
+          {
+            "acc": 16409,
+            "nme": "SCROLL_TO_THIS_STACKS",
+            "dsc": "Lfi/dy/masa/itemscroller/util/MoveAction;"
+          },
+          {
+            "acc": 16409,
+            "nme": "SCROLL_TO_THIS_MATCHING",
+            "dsc": "Lfi/dy/masa/itemscroller/util/MoveAction;"
+          },
+          {
+            "acc": 16409,
+            "nme": "MOVE_TO_OTHER_MOVE_ONE",
+            "dsc": "Lfi/dy/masa/itemscroller/util/MoveAction;"
+          },
+          {
+            "acc": 16409,
+            "nme": "MOVE_TO_OTHER_LEAVE_ONE",
+            "dsc": "Lfi/dy/masa/itemscroller/util/MoveAction;"
+          },
+          {
+            "acc": 16409,
+            "nme": "MOVE_TO_OTHER_STACKS",
+            "dsc": "Lfi/dy/masa/itemscroller/util/MoveAction;"
+          },
+          {
+            "acc": 16409,
+            "nme": "MOVE_TO_OTHER_MATCHING",
+            "dsc": "Lfi/dy/masa/itemscroller/util/MoveAction;"
+          },
+          {
+            "acc": 16409,
+            "nme": "MOVE_TO_OTHER_EVERYTHING",
+            "dsc": "Lfi/dy/masa/itemscroller/util/MoveAction;"
+          },
+          {
+            "acc": 16409,
+            "nme": "MOVE_UP_MOVE_ONE",
+            "dsc": "Lfi/dy/masa/itemscroller/util/MoveAction;"
+          },
+          {
+            "acc": 16409,
+            "nme": "MOVE_UP_LEAVE_ONE",
+            "dsc": "Lfi/dy/masa/itemscroller/util/MoveAction;"
+          },
+          {
+            "acc": 16409,
+            "nme": "MOVE_UP_STACKS",
+            "dsc": "Lfi/dy/masa/itemscroller/util/MoveAction;"
+          },
+          {
+            "acc": 16409,
+            "nme": "MOVE_UP_MATCHING",
+            "dsc": "Lfi/dy/masa/itemscroller/util/MoveAction;"
+          },
+          {
+            "acc": 16409,
+            "nme": "MOVE_DOWN_MOVE_ONE",
+            "dsc": "Lfi/dy/masa/itemscroller/util/MoveAction;"
+          },
+          {
+            "acc": 16409,
+            "nme": "MOVE_DOWN_LEAVE_ONE",
+            "dsc": "Lfi/dy/masa/itemscroller/util/MoveAction;"
+          },
+          {
+            "acc": 16409,
+            "nme": "MOVE_DOWN_STACKS",
+            "dsc": "Lfi/dy/masa/itemscroller/util/MoveAction;"
+          },
+          {
+            "acc": 16409,
+            "nme": "MOVE_DOWN_MATCHING",
+            "dsc": "Lfi/dy/masa/itemscroller/util/MoveAction;"
+          },
+          {
+            "acc": 16409,
+            "nme": "DROP_ONE",
+            "dsc": "Lfi/dy/masa/itemscroller/util/MoveAction;"
+          },
+          {
+            "acc": 16409,
+            "nme": "DROP_LEAVE_ONE",
+            "dsc": "Lfi/dy/masa/itemscroller/util/MoveAction;"
+          },
+          {
+            "acc": 16409,
+            "nme": "DROP_STACKS",
+            "dsc": "Lfi/dy/masa/itemscroller/util/MoveAction;"
+          },
+          {
+            "acc": 16409,
+            "nme": "DROP_ALL_MATCHING",
+            "dsc": "Lfi/dy/masa/itemscroller/util/MoveAction;"
+          },
+          {
+            "acc": 4122,
+            "nme": "$VALUES",
+            "dsc": "[Lfi/dy/masa/itemscroller/util/MoveAction;"
+          }
+        ]
+      },
+      "fi/dy/masa/itemscroller/mixin/recipe/IMixinRecipeBookWidget.class": {
+        "ver": 65,
+        "acc": 1537,
+        "nme": "fi/dy/masa/itemscroller/mixin/recipe/IMixinRecipeBookWidget",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "itemscroller_getGhostRecipe",
+            "acc": 1025,
+            "dsc": "()Lnet/minecraft/class_9934;",
+            "vanns": [
+              {
+                "dsc": "Lorg/spongepowered/asm/mixin/gen/Accessor;",
+                "vals": [
+                  "value",
+                  "ghostRecipe"
+                ]
+              }
+            ]
+          },
+          {
+            "nme": "itemscroller_getSelectedRecipe",
+            "acc": 1025,
+            "dsc": "()Lnet/minecraft/class_10298;",
+            "vanns": [
+              {
+                "dsc": "Lorg/spongepowered/asm/mixin/gen/Accessor;",
+                "vals": [
+                  "value",
+                  "selectedRecipe"
+                ]
+              }
+            ]
+          }
+        ],
+        "flds": [],
+        "invanns": [
+          {
+            "dsc": "Lorg/spongepowered/asm/mixin/Mixin;",
+            "vals": [
+              "value",
+              [
+                {
+                  "itrlNme": "net/minecraft/class_507"
+                }
+              ]
+            ]
+          }
+        ]
+      },
+      "fi/dy/masa/itemscroller/util/AccessorUtils.class": {
+        "ver": 65,
+        "acc": 33,
+        "nme": "fi/dy/masa/itemscroller/util/AccessorUtils",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "getSlotUnderMouse",
+            "acc": 9,
+            "dsc": "(Lnet/minecraft/class_465;)Lnet/minecraft/class_1735;",
+            "sig": "(Lnet/minecraft/class_465<*>;)Lnet/minecraft/class_1735;",
+            "vanns": [
+              {
+                "dsc": "Ljavax/annotation/Nullable;"
+              }
+            ]
+          },
+          {
+            "nme": "getSlotAtPosition",
+            "acc": 9,
+            "dsc": "(Lnet/minecraft/class_465;II)Lnet/minecraft/class_1735;",
+            "sig": "(Lnet/minecraft/class_465<*>;II)Lnet/minecraft/class_1735;",
+            "vanns": [
+              {
+                "dsc": "Ljavax/annotation/Nullable;"
+              }
+            ]
+          },
+          {
+            "nme": "handleMouseClick",
+            "acc": 9,
+            "dsc": "(Lnet/minecraft/class_465;Lnet/minecraft/class_1735;IILnet/minecraft/class_1713;)V",
+            "sig": "(Lnet/minecraft/class_465<*>;Lnet/minecraft/class_1735;IILnet/minecraft/class_1713;)V"
+          },
+          {
+            "nme": "getGuiLeft",
+            "acc": 9,
+            "dsc": "(Lnet/minecraft/class_465;)I",
+            "sig": "(Lnet/minecraft/class_465<*>;)I"
+          },
+          {
+            "nme": "getGuiTop",
+            "acc": 9,
+            "dsc": "(Lnet/minecraft/class_465;)I",
+            "sig": "(Lnet/minecraft/class_465<*>;)I"
+          },
+          {
+            "nme": "getGuiXSize",
+            "acc": 9,
+            "dsc": "(Lnet/minecraft/class_465;)I",
+            "sig": "(Lnet/minecraft/class_465<*>;)I"
+          },
+          {
+            "nme": "getGuiYSize",
+            "acc": 9,
+            "dsc": "(Lnet/minecraft/class_465;)I",
+            "sig": "(Lnet/minecraft/class_465<*>;)I"
+          },
+          {
+            "nme": "getSelectedMerchantRecipe",
+            "acc": 9,
+            "dsc": "(Lnet/minecraft/class_492;)I"
+          },
+          {
+            "nme": "getSlotIndex",
+            "acc": 9,
+            "dsc": "(Lnet/minecraft/class_1735;)I"
+          }
+        ],
+        "flds": []
+      },
+      "fi/dy/masa/itemscroller/villager/TradeType.class": {
+        "ver": 65,
+        "acc": 33,
+        "nme": "fi/dy/masa/itemscroller/villager/TradeType",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/class_1792;Lnet/minecraft/class_1792;Lnet/minecraft/class_1792;)V"
+          },
+          {
+            "nme": "matchesTrade",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/class_1914;)Z"
+          },
+          {
+            "nme": "toTag",
+            "acc": 1,
+            "dsc": "()Lnet/minecraft/class_2487;"
+          },
+          {
+            "nme": "fromTag",
+            "acc": 9,
+            "dsc": "(Lnet/minecraft/class_2487;)Lfi/dy/masa/itemscroller/villager/TradeType;",
+            "vanns": [
+              {
+                "dsc": "Ljavax/annotation/Nullable;"
+              }
+            ]
+          },
+          {
+            "nme": "getItemForName",
+            "acc": 9,
+            "dsc": "(Ljava/lang/String;)Lnet/minecraft/class_1792;"
+          },
+          {
+            "nme": "getNameForItem",
+            "acc": 9,
+            "dsc": "(Lnet/minecraft/class_1792;)Ljava/lang/String;"
+          },
+          {
+            "nme": "equals",
+            "acc": 1,
+            "dsc": "(Ljava/lang/Object;)Z"
+          },
+          {
+            "nme": "hashCode",
+            "acc": 1,
+            "dsc": "()I"
+          },
+          {
+            "nme": "of",
+            "acc": 9,
+            "dsc": "(Lnet/minecraft/class_1914;)Lfi/dy/masa/itemscroller/villager/TradeType;"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 17,
+            "nme": "buyItem1",
+            "dsc": "Lnet/minecraft/class_1792;"
+          },
+          {
+            "acc": 17,
+            "nme": "buyItem2",
+            "dsc": "Lnet/minecraft/class_1792;"
+          },
+          {
+            "acc": 17,
+            "nme": "sellItem",
+            "dsc": "Lnet/minecraft/class_1792;"
+          }
+        ]
+      },
+      "fi/dy/masa/itemscroller/mixin/recipe/IMixinClientRecipeBook.class": {
+        "ver": 65,
+        "acc": 1537,
+        "nme": "fi/dy/masa/itemscroller/mixin/recipe/IMixinClientRecipeBook",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "itemscroller_getRecipeMap",
+            "acc": 1025,
+            "dsc": "()Ljava/util/Map;",
+            "sig": "()Ljava/util/Map<Lnet/minecraft/class_10298;Lnet/minecraft/class_10297;>;",
+            "vanns": [
+              {
+                "dsc": "Lorg/spongepowered/asm/mixin/gen/Accessor;",
+                "vals": [
+                  "value",
+                  "recipes"
+                ]
+              }
+            ]
+          }
+        ],
+        "flds": [],
+        "invanns": [
+          {
+            "dsc": "Lorg/spongepowered/asm/mixin/Mixin;",
+            "vals": [
+              "value",
+              [
+                {
+                  "itrlNme": "net/minecraft/class_299"
+                }
+              ]
+            ]
+          }
+        ]
+      },
+      "fi/dy/masa/itemscroller/recipes/RecipePattern.class": {
+        "ver": 65,
+        "acc": 33,
+        "nme": "fi/dy/masa/itemscroller/recipes/RecipePattern",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "ensureRecipeSize",
+            "acc": 1,
+            "dsc": "(I)V"
+          },
+          {
+            "nme": "clearRecipe",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "ensureRecipeSizeAndClearRecipe",
+            "acc": 1,
+            "dsc": "(I)V"
+          },
+          {
+            "nme": "lookupVanillaRecipe",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/class_1937;)Lnet/minecraft/class_1860;",
+            "sig": "<T::Lnet/minecraft/class_9695;>(Lnet/minecraft/class_1937;)Lnet/minecraft/class_1860<TT;>;",
+            "vanns": [
+              {
+                "dsc": "Ljavax/annotation/Nullable;"
+              }
+            ]
+          },
+          {
+            "nme": "storeIdFromClientRecipeBook",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/class_310;)V"
+          },
+          {
+            "nme": "storeNetworkRecipeId",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/class_10298;)V"
+          },
+          {
+            "nme": "storeRecipeDisplayEntry",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/class_10297;)V"
+          },
+          {
+            "nme": "storeRecipeCategory",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/class_10355;)V"
+          },
+          {
+            "nme": "storeRecipeType",
+            "acc": 1,
+            "dsc": "(Lfi/dy/masa/malilib/util/game/RecipeBookUtils$Type;)V"
+          },
+          {
+            "nme": "getNetworkRecipeId",
+            "acc": 1,
+            "dsc": "()Lnet/minecraft/class_10298;",
+            "vanns": [
+              {
+                "dsc": "Ljavax/annotation/Nullable;"
+              }
+            ]
+          },
+          {
+            "nme": "getRecipeDisplayEntry",
+            "acc": 1,
+            "dsc": "()Lnet/minecraft/class_10297;",
+            "vanns": [
+              {
+                "dsc": "Ljavax/annotation/Nullable;"
+              }
+            ]
+          },
+          {
+            "nme": "getRecipeCategory",
+            "acc": 1,
+            "dsc": "()Lnet/minecraft/class_10355;",
+            "vanns": [
+              {
+                "dsc": "Ljavax/annotation/Nullable;"
+              }
+            ]
+          },
+          {
+            "nme": "getRecipeType",
+            "acc": 1,
+            "dsc": "()Lfi/dy/masa/malilib/util/game/RecipeBookUtils$Type;",
+            "vanns": [
+              {
+                "dsc": "Ljavax/annotation/Nullable;"
+              }
+            ]
+          },
+          {
+            "nme": "matchRecipeCategory",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/class_10355;)Z"
+          },
+          {
+            "nme": "matchRecipeType",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/class_10297;)Z"
+          },
+          {
+            "nme": "matchClientRecipeBook",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/class_310;)Lcom/llamalad7/mixinextras/lib/apache/commons/tuple/Pair;",
+            "sig": "(Lnet/minecraft/class_310;)Lcom/llamalad7/mixinextras/lib/apache/commons/tuple/Pair<Lnet/minecraft/class_10298;Lnet/minecraft/class_10297;>;",
+            "vanns": [
+              {
+                "dsc": "Ljavax/annotation/Nullable;"
+              }
+            ]
+          },
+          {
+            "nme": "storeCraftingRecipe",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/class_1735;Lnet/minecraft/class_465;ZZLnet/minecraft/class_310;)V",
+            "sig": "(Lnet/minecraft/class_1735;Lnet/minecraft/class_465<+Lnet/minecraft/class_1703;>;ZZLnet/minecraft/class_310;)V"
+          },
+          {
+            "nme": "storeSelectedRecipeIdFromGui",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/class_465;)V",
+            "sig": "(Lnet/minecraft/class_465<+Lnet/minecraft/class_1703;>;)V"
+          },
+          {
+            "nme": "copyRecipeFrom",
+            "acc": 1,
+            "dsc": "(Lfi/dy/masa/itemscroller/recipes/RecipePattern;)V"
+          },
+          {
+            "nme": "readFromNBT",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/class_2487;Lnet/minecraft/class_5455;)V"
+          },
+          {
+            "nme": "writeToNBT",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/class_5455;)Lnet/minecraft/class_2487;",
+            "vanns": [
+              {
+                "dsc": "Ljavax/annotation/Nonnull;"
+              }
+            ]
+          },
+          {
+            "nme": "getResult",
+            "acc": 1,
+            "dsc": "()Lnet/minecraft/class_1799;"
+          },
+          {
+            "nme": "getRecipeLength",
+            "acc": 1,
+            "dsc": "()I"
+          },
+          {
+            "nme": "getRecipeItems",
+            "acc": 1,
+            "dsc": "()[Lnet/minecraft/class_1799;"
+          },
+          {
+            "nme": "isEmpty",
+            "acc": 1,
+            "dsc": "()Z"
+          },
+          {
+            "nme": "countRecipeItems",
+            "acc": 1,
+            "dsc": "()I"
+          },
+          {
+            "nme": "isValid",
+            "acc": 1,
+            "dsc": "()Z"
+          },
+          {
+            "nme": "getVanillaRecipeEntry",
+            "acc": 1,
+            "dsc": "()Lnet/minecraft/class_8786;",
+            "sig": "()Lnet/minecraft/class_8786<*>;",
+            "vanns": [
+              {
+                "dsc": "Ljavax/annotation/Nullable;"
+              }
+            ]
+          },
+          {
+            "nme": "getVanillaRecipe",
+            "acc": 1,
+            "dsc": "()Lnet/minecraft/class_1860;",
+            "sig": "<T::Lnet/minecraft/class_9695;>()Lnet/minecraft/class_1860<TT;>;",
+            "vanns": [
+              {
+                "dsc": "Ljavax/annotation/Nullable;"
+              }
+            ]
+          }
+        ],
+        "flds": [
+          {
+            "acc": 2,
+            "nme": "result",
+            "dsc": "Lnet/minecraft/class_1799;"
+          },
+          {
+            "acc": 2,
+            "nme": "recipe",
+            "dsc": "[Lnet/minecraft/class_1799;"
+          },
+          {
+            "acc": 2,
+            "nme": "vanillaRecipe",
+            "dsc": "Lnet/minecraft/class_8786;",
+            "sig": "Lnet/minecraft/class_8786<*>;"
+          },
+          {
+            "acc": 2,
+            "nme": "networkRecipeId",
+            "dsc": "Lnet/minecraft/class_10298;"
+          },
+          {
+            "acc": 2,
+            "nme": "displayEntry",
+            "dsc": "Lnet/minecraft/class_10297;"
+          },
+          {
+            "acc": 2,
+            "nme": "category",
+            "dsc": "Lnet/minecraft/class_10355;"
+          },
+          {
+            "acc": 2,
+            "nme": "recipeType",
+            "dsc": "Lfi/dy/masa/malilib/util/game/RecipeBookUtils$Type;"
+          },
+          {
+            "acc": 2,
+            "nme": "recipeSaveTime",
+            "dsc": "J"
+          }
+        ]
+      },
+      "fi/dy/masa/itemscroller/villager/VillagerDataStorage.class": {
+        "ver": 65,
+        "acc": 33,
+        "nme": "fi/dy/masa/itemscroller/villager/VillagerDataStorage",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "getInstance",
+            "acc": 9,
+            "dsc": "()Lfi/dy/masa/itemscroller/villager/VillagerDataStorage;"
+          },
+          {
+            "nme": "setLastInteractedUUID",
+            "acc": 1,
+            "dsc": "(Ljava/util/UUID;)V"
+          },
+          {
+            "nme": "getDataForLastInteractionTarget",
+            "acc": 1,
+            "dsc": "()Lfi/dy/masa/itemscroller/villager/VillagerData;",
+            "vanns": [
+              {
+                "dsc": "Ljavax/annotation/Nullable;"
+              }
+            ]
+          },
+          {
+            "nme": "getDataFor",
+            "acc": 1,
+            "dsc": "(Ljava/util/UUID;Z)Lfi/dy/masa/itemscroller/villager/VillagerData;"
+          },
+          {
+            "nme": "setTradeListPosition",
+            "acc": 1,
+            "dsc": "(I)V"
+          },
+          {
+            "nme": "toggleFavorite",
+            "acc": 1,
+            "dsc": "(I)V"
+          },
+          {
+            "nme": "toggleGlobalFavorite",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/class_1914;)V"
+          },
+          {
+            "nme": "getFavoritesForCurrentVillager",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/class_1728;)Lfi/dy/masa/itemscroller/villager/FavoriteData;"
+          },
+          {
+            "nme": "getFavoritesForCurrentVillager",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/class_1916;)Lfi/dy/masa/itemscroller/villager/FavoriteData;"
+          },
+          {
+            "nme": "readFromNBT",
+            "acc": 2,
+            "dsc": "(Lnet/minecraft/class_2487;)V"
+          },
+          {
+            "nme": "writeToNBT",
+            "acc": 2,
+            "dsc": "()Lnet/minecraft/class_2487;"
+          },
+          {
+            "nme": "getFileName",
+            "acc": 2,
+            "dsc": "()Ljava/lang/String;"
+          },
+          {
+            "nme": "getSaveDirPath",
+            "acc": 2,
+            "dsc": "()Ljava/nio/file/Path;"
+          },
+          {
+            "nme": "readFromDisk",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "writeToDisk",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "<clinit>",
+            "acc": 8,
+            "dsc": "()V"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 26,
+            "nme": "INSTANCE",
+            "dsc": "Lfi/dy/masa/itemscroller/villager/VillagerDataStorage;"
+          },
+          {
+            "acc": 18,
+            "nme": "data",
+            "dsc": "Ljava/util/Map;",
+            "sig": "Ljava/util/Map<Ljava/util/UUID;Lfi/dy/masa/itemscroller/villager/VillagerData;>;"
+          },
+          {
+            "acc": 18,
+            "nme": "globalFavorites",
+            "dsc": "Ljava/util/List;",
+            "sig": "Ljava/util/List<Lfi/dy/masa/itemscroller/villager/TradeType;>;"
+          },
+          {
+            "acc": 2,
+            "nme": "lastInteractedUUID",
+            "dsc": "Ljava/util/UUID;"
+          },
+          {
+            "acc": 2,
+            "nme": "dirty",
+            "dsc": "Z"
+          }
+        ]
+      },
+      "fi/dy/masa/itemscroller/mixin/screen/IMixinRecipeBookScreen.class": {
+        "ver": 65,
+        "acc": 1537,
+        "nme": "fi/dy/masa/itemscroller/mixin/screen/IMixinRecipeBookScreen",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "itemscroller_getRecipeBookWidget",
+            "acc": 1025,
+            "dsc": "()Lnet/minecraft/class_507;",
+            "sig": "()Lnet/minecraft/class_507<*>;",
+            "vanns": [
+              {
+                "dsc": "Lorg/spongepowered/asm/mixin/gen/Accessor;",
+                "vals": [
+                  "value",
+                  "recipeBook"
+                ]
+              }
+            ]
+          }
+        ],
+        "flds": [],
+        "invanns": [
+          {
+            "dsc": "Lorg/spongepowered/asm/mixin/Mixin;",
+            "vals": [
+              "value",
+              [
+                {
+                  "itrlNme": "net/minecraft/class_10260"
+                }
+              ]
+            ]
+          }
+        ]
+      },
+      "fi/dy/masa/itemscroller/config/Configs$Toggles.class": {
+        "ver": 65,
+        "acc": 33,
+        "nme": "fi/dy/masa/itemscroller/config/Configs$Toggles",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "<clinit>",
+            "acc": 8,
+            "dsc": "()V"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 25,
+            "nme": "CRAFTING_FEATURES",
+            "dsc": "Lfi/dy/masa/malilib/config/options/ConfigBoolean;"
+          },
+          {
+            "acc": 25,
+            "nme": "DROP_MATCHING",
+            "dsc": "Lfi/dy/masa/malilib/config/options/ConfigBoolean;"
+          },
+          {
+            "acc": 25,
+            "nme": "RIGHT_CLICK_CRAFT_STACK",
+            "dsc": "Lfi/dy/masa/malilib/config/options/ConfigBoolean;"
+          },
+          {
+            "acc": 25,
+            "nme": "SCROLL_EVERYTHING",
+            "dsc": "Lfi/dy/masa/malilib/config/options/ConfigBoolean;"
+          },
+          {
+            "acc": 25,
+            "nme": "SCROLL_MATCHING",
+            "dsc": "Lfi/dy/masa/malilib/config/options/ConfigBoolean;"
+          },
+          {
+            "acc": 25,
+            "nme": "SCROLL_SINGLE",
+            "dsc": "Lfi/dy/masa/malilib/config/options/ConfigBoolean;"
+          },
+          {
+            "acc": 25,
+            "nme": "SCROLL_STACKS",
+            "dsc": "Lfi/dy/masa/malilib/config/options/ConfigBoolean;"
+          },
+          {
+            "acc": 25,
+            "nme": "SCROLL_STACKS_FALLBACK",
+            "dsc": "Lfi/dy/masa/malilib/config/options/ConfigBoolean;"
+          },
+          {
+            "acc": 25,
+            "nme": "SCROLL_VILLAGER",
+            "dsc": "Lfi/dy/masa/malilib/config/options/ConfigBoolean;"
+          },
+          {
+            "acc": 25,
+            "nme": "SHIFT_DROP_ITEMS",
+            "dsc": "Lfi/dy/masa/malilib/config/options/ConfigBoolean;"
+          },
+          {
+            "acc": 25,
+            "nme": "SHIFT_PLACE_ITEMS",
+            "dsc": "Lfi/dy/masa/malilib/config/options/ConfigBoolean;"
+          },
+          {
+            "acc": 25,
+            "nme": "VILLAGER_TRADE_FEATURES",
+            "dsc": "Lfi/dy/masa/malilib/config/options/ConfigBoolean;"
+          },
+          {
+            "acc": 25,
+            "nme": "OPTIONS",
+            "dsc": "Lcom/google/common/collect/ImmutableList;",
+            "sig": "Lcom/google/common/collect/ImmutableList<Lfi/dy/masa/malilib/config/IConfigValue;>;"
+          }
+        ]
+      },
+      "fi/dy/masa/itemscroller/gui/GuiConfigs$ConfigGuiTab.class": {
+        "ver": 65,
+        "acc": 16433,
+        "nme": "fi/dy/masa/itemscroller/gui/GuiConfigs$ConfigGuiTab",
+        "super": "java/lang/Enum",
+        "mthds": [
+          {
+            "nme": "values",
+            "acc": 9,
+            "dsc": "()[Lfi/dy/masa/itemscroller/gui/GuiConfigs$ConfigGuiTab;"
+          },
+          {
+            "nme": "valueOf",
+            "acc": 9,
+            "dsc": "(Ljava/lang/String;)Lfi/dy/masa/itemscroller/gui/GuiConfigs$ConfigGuiTab;"
+          },
+          {
+            "nme": "<init>",
+            "acc": 2,
+            "dsc": "(Ljava/lang/String;ILjava/lang/String;)V",
+            "sig": "(Ljava/lang/String;)V"
+          },
+          {
+            "nme": "getDisplayName",
+            "acc": 1,
+            "dsc": "()Ljava/lang/String;"
+          },
+          {
+            "nme": "$values",
+            "acc": 4106,
+            "dsc": "()[Lfi/dy/masa/itemscroller/gui/GuiConfigs$ConfigGuiTab;"
+          },
+          {
+            "nme": "<clinit>",
+            "acc": 8,
+            "dsc": "()V"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 16409,
+            "nme": "GENERIC",
+            "dsc": "Lfi/dy/masa/itemscroller/gui/GuiConfigs$ConfigGuiTab;"
+          },
+          {
+            "acc": 16409,
+            "nme": "TOGGLES",
+            "dsc": "Lfi/dy/masa/itemscroller/gui/GuiConfigs$ConfigGuiTab;"
+          },
+          {
+            "acc": 16409,
+            "nme": "HOTKEYS",
+            "dsc": "Lfi/dy/masa/itemscroller/gui/GuiConfigs$ConfigGuiTab;"
+          },
+          {
+            "acc": 18,
+            "nme": "translationKey",
+            "dsc": "Ljava/lang/String;"
+          },
+          {
+            "acc": 25,
+            "nme": "VALUES",
+            "dsc": "Lcom/google/common/collect/ImmutableList;",
+            "sig": "Lcom/google/common/collect/ImmutableList<Lfi/dy/masa/itemscroller/gui/GuiConfigs$ConfigGuiTab;>;"
+          },
+          {
+            "acc": 4122,
+            "nme": "$VALUES",
+            "dsc": "[Lfi/dy/masa/itemscroller/gui/GuiConfigs$ConfigGuiTab;"
+          }
+        ]
+      },
+      "fi/dy/masa/itemscroller/util/InventoryUtils$SlotVerticalSorterSlotNumbers.class": {
+        "ver": 65,
+        "acc": 32,
+        "nme": "fi/dy/masa/itemscroller/util/InventoryUtils$SlotVerticalSorterSlotNumbers",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/class_1703;Z)V"
+          },
+          {
+            "nme": "compare",
+            "acc": 1,
+            "dsc": "(II)I"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 18,
+            "nme": "container",
+            "dsc": "Lnet/minecraft/class_1703;"
+          },
+          {
+            "acc": 18,
+            "nme": "topToBottom",
+            "dsc": "Z"
+          }
+        ]
+      },
+      "fi/dy/masa/itemscroller/util/InventoryUtils.class": {
+        "ver": 65,
+        "acc": 33,
+        "nme": "fi/dy/masa/itemscroller/util/InventoryUtils",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "setInhibitCraftingOutputUpdate",
+            "acc": 9,
+            "dsc": "(Z)V"
+          },
+          {
+            "nme": "setIgnoreScrollingInsideOfBundles",
+            "acc": 9,
+            "dsc": "(Z)V"
+          },
+          {
+            "nme": "onSlotChangedCraftingGrid",
+            "acc": 9,
+            "dsc": "(Lnet/minecraft/class_1657;Lnet/minecraft/class_8566;Lnet/minecraft/class_1731;)V"
+          },
+          {
+            "nme": "updateCraftingOutputSlot",
+            "acc": 9,
+            "dsc": "(Lnet/minecraft/class_1735;)V"
+          },
+          {
+            "nme": "updateCraftingOutputSlot",
+            "acc": 9,
+            "dsc": "(Lnet/minecraft/class_1657;Lnet/minecraft/class_8566;Lnet/minecraft/class_1731;Z)V"
+          },
+          {
+            "nme": "getStackString",
+            "acc": 9,
+            "dsc": "(Lnet/minecraft/class_1799;)Ljava/lang/String;"
+          },
+          {
+            "nme": "debugPrintSlotInfo",
+            "acc": 9,
+            "dsc": "(Lnet/minecraft/class_465;Lnet/minecraft/class_1735;)V",
+            "sig": "(Lnet/minecraft/class_465<+Lnet/minecraft/class_1703;>;Lnet/minecraft/class_1735;)V"
+          },
+          {
+            "nme": "isValidSlot",
+            "acc": 10,
+            "dsc": "(Lnet/minecraft/class_1735;Lnet/minecraft/class_465;Z)Z",
+            "sig": "(Lnet/minecraft/class_1735;Lnet/minecraft/class_465<+Lnet/minecraft/class_1703;>;Z)Z"
+          },
+          {
+            "nme": "isCraftingSlot",
+            "acc": 9,
+            "dsc": "(Lnet/minecraft/class_465;Lnet/minecraft/class_1735;)Z",
+            "sig": "(Lnet/minecraft/class_465<+Lnet/minecraft/class_1703;>;Lnet/minecraft/class_1735;)Z"
+          },
+          {
+            "nme": "inventoryExistsAbove",
+            "acc": 10,
+            "dsc": "(Lnet/minecraft/class_1735;Lnet/minecraft/class_1703;)Z"
+          },
+          {
+            "nme": "canShiftPlaceItems",
+            "acc": 9,
+            "dsc": "(Lnet/minecraft/class_465;)Z",
+            "sig": "(Lnet/minecraft/class_465<+Lnet/minecraft/class_1703;>;)Z"
+          },
+          {
+            "nme": "tryMoveItems",
+            "acc": 9,
+            "dsc": "(Lnet/minecraft/class_465;Lfi/dy/masa/itemscroller/recipes/RecipeStorage;Z)Z",
+            "sig": "(Lnet/minecraft/class_465<+Lnet/minecraft/class_1703;>;Lfi/dy/masa/itemscroller/recipes/RecipeStorage;Z)Z"
+          },
+          {
+            "nme": "dragMoveItems",
+            "acc": 9,
+            "dsc": "(Lnet/minecraft/class_465;Lfi/dy/masa/itemscroller/util/MoveAction;IIZ)Z",
+            "sig": "(Lnet/minecraft/class_465<+Lnet/minecraft/class_1703;>;Lfi/dy/masa/itemscroller/util/MoveAction;IIZ)Z"
+          },
+          {
+            "nme": "stopDragging",
+            "acc": 9,
+            "dsc": "()V"
+          },
+          {
+            "nme": "dragMoveFromSlotAtPosition",
+            "acc": 10,
+            "dsc": "(Lnet/minecraft/class_465;IILfi/dy/masa/itemscroller/util/MoveAction;)Z",
+            "sig": "(Lnet/minecraft/class_465<+Lnet/minecraft/class_1703;>;IILfi/dy/masa/itemscroller/util/MoveAction;)Z"
+          },
+          {
+            "nme": "dragMoveFromSlotAtPositionCreative",
+            "acc": 10,
+            "dsc": "(Lnet/minecraft/class_465;IILfi/dy/masa/itemscroller/util/MoveAction;)Z",
+            "sig": "(Lnet/minecraft/class_465<+Lnet/minecraft/class_1703;>;IILfi/dy/masa/itemscroller/util/MoveAction;)Z"
+          },
+          {
+            "nme": "dropStacks",
+            "acc": 9,
+            "dsc": "(Lnet/minecraft/class_465;Lnet/minecraft/class_1799;Lnet/minecraft/class_1735;Z)V",
+            "sig": "(Lnet/minecraft/class_465<+Lnet/minecraft/class_1703;>;Lnet/minecraft/class_1799;Lnet/minecraft/class_1735;Z)V"
+          },
+          {
+            "nme": "dropAllMatchingStacks",
+            "acc": 9,
+            "dsc": "(Lnet/minecraft/class_465;Lnet/minecraft/class_1799;)V",
+            "sig": "(Lnet/minecraft/class_465<+Lnet/minecraft/class_1703;>;Lnet/minecraft/class_1799;)V"
+          },
+          {
+            "nme": "shiftDropItems",
+            "acc": 9,
+            "dsc": "(Lnet/minecraft/class_465;)Z",
+            "sig": "(Lnet/minecraft/class_465<+Lnet/minecraft/class_1703;>;)Z"
+          },
+          {
+            "nme": "shiftPlaceItems",
+            "acc": 9,
+            "dsc": "(Lnet/minecraft/class_1735;Lnet/minecraft/class_465;)Z",
+            "sig": "(Lnet/minecraft/class_1735;Lnet/minecraft/class_465<+Lnet/minecraft/class_1703;>;)Z"
+          },
+          {
+            "nme": "storeSourceSlotCandidate",
+            "acc": 9,
+            "dsc": "(Lnet/minecraft/class_1735;Lnet/minecraft/class_465;)V",
+            "sig": "(Lnet/minecraft/class_1735;Lnet/minecraft/class_465<*>;)V"
+          },
+          {
+            "nme": "checkForItemPickup",
+            "acc": 9,
+            "dsc": "(Lnet/minecraft/class_465;)V",
+            "sig": "(Lnet/minecraft/class_465<*>;)V"
+          },
+          {
+            "nme": "tryMoveItemsVillager",
+            "acc": 10,
+            "dsc": "(Lnet/minecraft/class_492;Lnet/minecraft/class_1735;ZZ)Z"
+          },
+          {
+            "nme": "villagerClearTradeInputSlots",
+            "acc": 9,
+            "dsc": "()V"
+          },
+          {
+            "nme": "villagerTradeEverythingPossibleWithTrade",
+            "acc": 9,
+            "dsc": "(I)V"
+          },
+          {
+            "nme": "villagerTradeEverythingPossibleWithAllFavoritedTrades",
+            "acc": 9,
+            "dsc": "()Z"
+          },
+          {
+            "nme": "tryMoveSingleItemToOtherInventory",
+            "acc": 10,
+            "dsc": "(Lnet/minecraft/class_1735;Lnet/minecraft/class_465;)Z",
+            "sig": "(Lnet/minecraft/class_1735;Lnet/minecraft/class_465<+Lnet/minecraft/class_1703;>;)Z"
+          },
+          {
+            "nme": "tryMoveAllButOneItemToOtherInventory",
+            "acc": 10,
+            "dsc": "(Lnet/minecraft/class_1735;Lnet/minecraft/class_465;)Z",
+            "sig": "(Lnet/minecraft/class_1735;Lnet/minecraft/class_465<+Lnet/minecraft/class_1703;>;)Z"
+          },
+          {
+            "nme": "tryMoveSingleItemToThisInventory",
+            "acc": 10,
+            "dsc": "(Lnet/minecraft/class_1735;Lnet/minecraft/class_465;)Z",
+            "sig": "(Lnet/minecraft/class_1735;Lnet/minecraft/class_465<+Lnet/minecraft/class_1703;>;)Z"
+          },
+          {
+            "nme": "tryMoveStacks",
+            "acc": 9,
+            "dsc": "(Lnet/minecraft/class_1735;Lnet/minecraft/class_465;ZZZ)V",
+            "sig": "(Lnet/minecraft/class_1735;Lnet/minecraft/class_465<+Lnet/minecraft/class_1703;>;ZZZ)V"
+          },
+          {
+            "nme": "tryMoveStacks",
+            "acc": 10,
+            "dsc": "(Lnet/minecraft/class_1799;Lnet/minecraft/class_1735;Lnet/minecraft/class_465;ZZZ)V",
+            "sig": "(Lnet/minecraft/class_1799;Lnet/minecraft/class_1735;Lnet/minecraft/class_465<+Lnet/minecraft/class_1703;>;ZZZ)V"
+          },
+          {
+            "nme": "tryMoveItemsToMerchantBuySlots",
+            "acc": 10,
+            "dsc": "(Lnet/minecraft/class_492;Z)V"
+          },
+          {
+            "nme": "fillBuySlot",
+            "acc": 10,
+            "dsc": "(Lnet/minecraft/class_465;ILnet/minecraft/class_1799;Z)V",
+            "sig": "(Lnet/minecraft/class_465<+Lnet/minecraft/class_1703;>;ILnet/minecraft/class_1799;Z)V"
+          },
+          {
+            "nme": "handleRecipeClick",
+            "acc": 9,
+            "dsc": "(Lnet/minecraft/class_465;Lnet/minecraft/class_310;Lfi/dy/masa/itemscroller/recipes/RecipeStorage;IZZZZ)V",
+            "sig": "(Lnet/minecraft/class_465<+Lnet/minecraft/class_1703;>;Lnet/minecraft/class_310;Lfi/dy/masa/itemscroller/recipes/RecipeStorage;IZZZZ)V"
+          },
+          {
+            "nme": "tryMoveItemsToFirstCraftingGrid",
+            "acc": 9,
+            "dsc": "(Lfi/dy/masa/itemscroller/recipes/RecipePattern;Lnet/minecraft/class_465;Z)V",
+            "sig": "(Lfi/dy/masa/itemscroller/recipes/RecipePattern;Lnet/minecraft/class_465<+Lnet/minecraft/class_1703;>;Z)V"
+          },
+          {
+            "nme": "loadRecipeItemsToGridForOutputSlotUnderMouse",
+            "acc": 9,
+            "dsc": "(Lfi/dy/masa/itemscroller/recipes/RecipePattern;Lnet/minecraft/class_465;)V",
+            "sig": "(Lfi/dy/masa/itemscroller/recipes/RecipePattern;Lnet/minecraft/class_465<+Lnet/minecraft/class_1703;>;)V"
+          },
+          {
+            "nme": "loadRecipeItemsToGridForOutputSlot",
+            "acc": 10,
+            "dsc": "(Lfi/dy/masa/itemscroller/recipes/RecipePattern;Lnet/minecraft/class_465;Lnet/minecraft/class_1735;)V",
+            "sig": "(Lfi/dy/masa/itemscroller/recipes/RecipePattern;Lnet/minecraft/class_465<+Lnet/minecraft/class_1703;>;Lnet/minecraft/class_1735;)V"
+          },
+          {
+            "nme": "tryMoveItemsCrafting",
+            "acc": 10,
+            "dsc": "(Lfi/dy/masa/itemscroller/recipes/RecipeStorage;Lnet/minecraft/class_1735;Lnet/minecraft/class_465;ZZZ)Z",
+            "sig": "(Lfi/dy/masa/itemscroller/recipes/RecipeStorage;Lnet/minecraft/class_1735;Lnet/minecraft/class_465<+Lnet/minecraft/class_1703;>;ZZZ)Z"
+          },
+          {
+            "nme": "craftAsManyItemsAsPossible",
+            "acc": 10,
+            "dsc": "(Lfi/dy/masa/itemscroller/recipes/RecipePattern;Lnet/minecraft/class_1735;Lnet/minecraft/class_465;)V",
+            "sig": "(Lfi/dy/masa/itemscroller/recipes/RecipePattern;Lnet/minecraft/class_1735;Lnet/minecraft/class_465<+Lnet/minecraft/class_1703;>;)V"
+          },
+          {
+            "nme": "clearFirstCraftingGridOfItems",
+            "acc": 9,
+            "dsc": "(Lfi/dy/masa/itemscroller/recipes/RecipePattern;Lnet/minecraft/class_465;Z)V",
+            "sig": "(Lfi/dy/masa/itemscroller/recipes/RecipePattern;Lnet/minecraft/class_465<+Lnet/minecraft/class_1703;>;Z)V"
+          },
+          {
+            "nme": "clearFirstCraftingGridOfAllItems",
+            "acc": 9,
+            "dsc": "(Lnet/minecraft/class_465;)V",
+            "sig": "(Lnet/minecraft/class_465<+Lnet/minecraft/class_1703;>;)V"
+          },
+          {
+            "nme": "clearCraftingGridOfItems",
+            "acc": 10,
+            "dsc": "(Lfi/dy/masa/itemscroller/recipes/RecipePattern;Lnet/minecraft/class_465;Lfi/dy/masa/itemscroller/recipes/CraftingHandler$SlotRange;Z)Z",
+            "sig": "(Lfi/dy/masa/itemscroller/recipes/RecipePattern;Lnet/minecraft/class_465<+Lnet/minecraft/class_1703;>;Lfi/dy/masa/itemscroller/recipes/CraftingHandler$SlotRange;Z)Z"
+          },
+          {
+            "nme": "clearCraftingGridOfAllItems",
+            "acc": 10,
+            "dsc": "(Lnet/minecraft/class_465;Lfi/dy/masa/itemscroller/recipes/CraftingHandler$SlotRange;)Z",
+            "sig": "(Lnet/minecraft/class_465<+Lnet/minecraft/class_1703;>;Lfi/dy/masa/itemscroller/recipes/CraftingHandler$SlotRange;)Z"
+          },
+          {
+            "nme": "tryMoveItemsToCraftingGridSlots",
+            "acc": 10,
+            "dsc": "(Lfi/dy/masa/itemscroller/recipes/RecipePattern;Lnet/minecraft/class_1735;Lnet/minecraft/class_465;Z)Z",
+            "sig": "(Lfi/dy/masa/itemscroller/recipes/RecipePattern;Lnet/minecraft/class_1735;Lnet/minecraft/class_465<+Lnet/minecraft/class_1703;>;Z)Z"
+          },
+          {
+            "nme": "fillCraftingGrid",
+            "acc": 10,
+            "dsc": "(Lnet/minecraft/class_465;Lnet/minecraft/class_1735;Lnet/minecraft/class_1799;Lit/unimi/dsi/fastutil/ints/IntArrayList;)V",
+            "sig": "(Lnet/minecraft/class_465<+Lnet/minecraft/class_1703;>;Lnet/minecraft/class_1735;Lnet/minecraft/class_1799;Lit/unimi/dsi/fastutil/ints/IntArrayList;)V"
+          },
+          {
+            "nme": "rightClickCraftOneStack",
+            "acc": 9,
+            "dsc": "(Lnet/minecraft/class_465;)V",
+            "sig": "(Lnet/minecraft/class_465<+Lnet/minecraft/class_1703;>;)V"
+          },
+          {
+            "nme": "craftEverythingPossibleWithCurrentRecipe",
+            "acc": 9,
+            "dsc": "(Lfi/dy/masa/itemscroller/recipes/RecipePattern;Lnet/minecraft/class_465;)V",
+            "sig": "(Lfi/dy/masa/itemscroller/recipes/RecipePattern;Lnet/minecraft/class_465<+Lnet/minecraft/class_1703;>;)V"
+          },
+          {
+            "nme": "moveAllCraftingResultsToOtherInventory",
+            "acc": 9,
+            "dsc": "(Lfi/dy/masa/itemscroller/recipes/RecipePattern;Lnet/minecraft/class_465;)V",
+            "sig": "(Lfi/dy/masa/itemscroller/recipes/RecipePattern;Lnet/minecraft/class_465<+Lnet/minecraft/class_1703;>;)V"
+          },
+          {
+            "nme": "throwAllCraftingResultsToGround",
+            "acc": 9,
+            "dsc": "(Lfi/dy/masa/itemscroller/recipes/RecipePattern;Lnet/minecraft/class_465;)V",
+            "sig": "(Lfi/dy/masa/itemscroller/recipes/RecipePattern;Lnet/minecraft/class_465<+Lnet/minecraft/class_1703;>;)V"
+          },
+          {
+            "nme": "throwAllNonRecipeItemsToGround",
+            "acc": 9,
+            "dsc": "(Lfi/dy/masa/itemscroller/recipes/RecipePattern;Lnet/minecraft/class_465;)V",
+            "sig": "(Lfi/dy/masa/itemscroller/recipes/RecipePattern;Lnet/minecraft/class_465<+Lnet/minecraft/class_1703;>;)V"
+          },
+          {
+            "nme": "setCraftingGridContentsUsingSwaps",
+            "acc": 9,
+            "dsc": "(Lnet/minecraft/class_465;Lnet/minecraft/class_1661;Lfi/dy/masa/itemscroller/recipes/RecipePattern;Lnet/minecraft/class_1735;)V",
+            "sig": "(Lnet/minecraft/class_465<+Lnet/minecraft/class_1703;>;Lnet/minecraft/class_1661;Lfi/dy/masa/itemscroller/recipes/RecipePattern;Lnet/minecraft/class_1735;)V"
+          },
+          {
+            "nme": "putSingleItemIntoSlots",
+            "acc": 10,
+            "dsc": "(Lnet/minecraft/class_465;Lit/unimi/dsi/fastutil/ints/IntArrayList;I)I",
+            "sig": "(Lnet/minecraft/class_465<+Lnet/minecraft/class_1703;>;Lit/unimi/dsi/fastutil/ints/IntArrayList;I)I"
+          },
+          {
+            "nme": "moveOneSetOfItemsFromSlotToPlayerInventory",
+            "acc": 9,
+            "dsc": "(Lnet/minecraft/class_465;Lnet/minecraft/class_1735;)V",
+            "sig": "(Lnet/minecraft/class_465<+Lnet/minecraft/class_1703;>;Lnet/minecraft/class_1735;)V"
+          },
+          {
+            "nme": "moveOneRecipeItemIntoCraftingGrid",
+            "acc": 10,
+            "dsc": "(Lnet/minecraft/class_465;Lnet/minecraft/class_1735;Lnet/minecraft/class_1799;Lit/unimi/dsi/fastutil/ints/IntArrayList;)V",
+            "sig": "(Lnet/minecraft/class_465<+Lnet/minecraft/class_1703;>;Lnet/minecraft/class_1735;Lnet/minecraft/class_1799;Lit/unimi/dsi/fastutil/ints/IntArrayList;)V"
+          },
+          {
+            "nme": "moveItemFromCursorToSlots",
+            "acc": 10,
+            "dsc": "(Lnet/minecraft/class_465;Lit/unimi/dsi/fastutil/ints/IntArrayList;)Z",
+            "sig": "(Lnet/minecraft/class_465<+Lnet/minecraft/class_1703;>;Lit/unimi/dsi/fastutil/ints/IntArrayList;)Z"
+          },
+          {
+            "nme": "moveItemsFromInventory",
+            "acc": 10,
+            "dsc": "(Lnet/minecraft/class_465;ILnet/minecraft/class_1263;Lnet/minecraft/class_1799;Z)V",
+            "sig": "(Lnet/minecraft/class_465<+Lnet/minecraft/class_1703;>;ILnet/minecraft/class_1263;Lnet/minecraft/class_1799;Z)V"
+          },
+          {
+            "nme": "getSlotNumberOfLargestMatchingStackFromDifferentInventory",
+            "acc": 10,
+            "dsc": "(Lnet/minecraft/class_1703;Lnet/minecraft/class_1735;Lnet/minecraft/class_1799;)I"
+          },
+          {
+            "nme": "getSlotNumberOfSmallestStackFromDifferentInventory",
+            "acc": 10,
+            "dsc": "(Lnet/minecraft/class_1703;Lnet/minecraft/class_1735;Lnet/minecraft/class_1799;I)I"
+          },
+          {
+            "nme": "getSlotNumbersOfMatchingStacks",
+            "acc": 10,
+            "dsc": "(Lnet/minecraft/class_1703;Lnet/minecraft/class_1735;ZLnet/minecraft/class_1799;ZZZ)Lit/unimi/dsi/fastutil/ints/IntArrayList;"
+          },
+          {
+            "nme": "getSlotNumbersOfMatchingStacks",
+            "acc": 10,
+            "dsc": "(Lnet/minecraft/class_1703;Lnet/minecraft/class_1799;Z)Lit/unimi/dsi/fastutil/ints/IntArrayList;"
+          },
+          {
+            "nme": "getPlayerInventoryIndexWithItem",
+            "acc": 9,
+            "dsc": "(Lnet/minecraft/class_1799;Lnet/minecraft/class_1661;)I"
+          },
+          {
+            "nme": "getSlotNumbersOfEmptySlots",
+            "acc": 10,
+            "dsc": "(Lnet/minecraft/class_1703;Lnet/minecraft/class_1735;ZZZ)Lit/unimi/dsi/fastutil/ints/IntArrayList;"
+          },
+          {
+            "nme": "getSlotNumbersOfEmptySlotsInPlayerInventory",
+            "acc": 10,
+            "dsc": "(Lnet/minecraft/class_1703;Z)Lit/unimi/dsi/fastutil/ints/IntArrayList;"
+          },
+          {
+            "nme": "areStacksEqual",
+            "acc": 9,
+            "dsc": "(Lnet/minecraft/class_1799;Lnet/minecraft/class_1799;)Z"
+          },
+          {
+            "nme": "areSlotsInSameInventory",
+            "acc": 10,
+            "dsc": "(Lnet/minecraft/class_1735;Lnet/minecraft/class_1735;)Z"
+          },
+          {
+            "nme": "areSlotsInSameInventory",
+            "acc": 10,
+            "dsc": "(Lnet/minecraft/class_1735;Lnet/minecraft/class_1735;Z)Z"
+          },
+          {
+            "nme": "getOriginalStacks",
+            "acc": 10,
+            "dsc": "(Lnet/minecraft/class_1703;)[Lnet/minecraft/class_1799;"
+          },
+          {
+            "nme": "restoreOriginalStacks",
+            "acc": 10,
+            "dsc": "(Lnet/minecraft/class_1703;[Lnet/minecraft/class_1799;)V"
+          },
+          {
+            "nme": "getTargetSlot",
+            "acc": 10,
+            "dsc": "(Lnet/minecraft/class_1703;[Lnet/minecraft/class_1799;)I"
+          },
+          {
+            "nme": "clickSlotsToMoveItemsFromSlot",
+            "acc": 10,
+            "dsc": "(Lnet/minecraft/class_1735;Lnet/minecraft/class_465;Z)V",
+            "sig": "(Lnet/minecraft/class_1735;Lnet/minecraft/class_465<+Lnet/minecraft/class_1703;>;Z)V"
+          },
+          {
+            "nme": "clickSlotsToMoveSingleItem",
+            "acc": 10,
+            "dsc": "(Lnet/minecraft/class_465;II)Z",
+            "sig": "(Lnet/minecraft/class_465<+Lnet/minecraft/class_1703;>;II)Z"
+          },
+          {
+            "nme": "clickSlotsToMoveSingleItemByShiftClick",
+            "acc": 10,
+            "dsc": "(Lnet/minecraft/class_465;I)Z",
+            "sig": "(Lnet/minecraft/class_465<+Lnet/minecraft/class_1703;>;I)Z"
+          },
+          {
+            "nme": "clickSlotsToMoveItems",
+            "acc": 10,
+            "dsc": "(Lnet/minecraft/class_465;II)Z",
+            "sig": "(Lnet/minecraft/class_465<+Lnet/minecraft/class_1703;>;II)Z"
+          },
+          {
+            "nme": "dropStacksUntilEmpty",
+            "acc": 9,
+            "dsc": "(Lnet/minecraft/class_465;I)V",
+            "sig": "(Lnet/minecraft/class_465<+Lnet/minecraft/class_1703;>;I)V"
+          },
+          {
+            "nme": "dropStacksWhileHasItem",
+            "acc": 9,
+            "dsc": "(Lnet/minecraft/class_465;ILnet/minecraft/class_1799;)V",
+            "sig": "(Lnet/minecraft/class_465<+Lnet/minecraft/class_1703;>;ILnet/minecraft/class_1799;)V"
+          },
+          {
+            "nme": "shiftClickSlotWithCheck",
+            "acc": 10,
+            "dsc": "(Lnet/minecraft/class_465;I)Z",
+            "sig": "(Lnet/minecraft/class_465<+Lnet/minecraft/class_1703;>;I)Z"
+          },
+          {
+            "nme": "tryMoveItemsVertically",
+            "acc": 9,
+            "dsc": "(Lnet/minecraft/class_465;Lnet/minecraft/class_1735;ZLfi/dy/masa/itemscroller/util/MoveAmount;)Z",
+            "sig": "(Lnet/minecraft/class_465<+Lnet/minecraft/class_1703;>;Lnet/minecraft/class_1735;ZLfi/dy/masa/itemscroller/util/MoveAmount;)Z"
+          },
+          {
+            "nme": "moveMatchingStacksToSlots",
+            "acc": 10,
+            "dsc": "(Lnet/minecraft/class_465;Lnet/minecraft/class_1735;Z)V",
+            "sig": "(Lnet/minecraft/class_465<+Lnet/minecraft/class_1703;>;Lnet/minecraft/class_1735;Z)V"
+          },
+          {
+            "nme": "moveStackToSlots",
+            "acc": 10,
+            "dsc": "(Lnet/minecraft/class_465;Lnet/minecraft/class_1735;Lit/unimi/dsi/fastutil/ints/IntArrayList;Z)Lnet/minecraft/class_1735;",
+            "sig": "(Lnet/minecraft/class_465<+Lnet/minecraft/class_1703;>;Lnet/minecraft/class_1735;Lit/unimi/dsi/fastutil/ints/IntArrayList;Z)Lnet/minecraft/class_1735;"
+          },
+          {
+            "nme": "moveOneItemToFirstValidSlot",
+            "acc": 10,
+            "dsc": "(Lnet/minecraft/class_465;Lnet/minecraft/class_1735;Lit/unimi/dsi/fastutil/ints/IntArrayList;)V",
+            "sig": "(Lnet/minecraft/class_465<+Lnet/minecraft/class_1703;>;Lnet/minecraft/class_1735;Lit/unimi/dsi/fastutil/ints/IntArrayList;)V"
+          },
+          {
+            "nme": "getVerticallyFurthestSuitableSlotsForStackInSlot",
+            "acc": 10,
+            "dsc": "(Lnet/minecraft/class_1703;Lnet/minecraft/class_1735;Z)Lit/unimi/dsi/fastutil/ints/IntArrayList;"
+          },
+          {
+            "nme": "tryClearCursor",
+            "acc": 9,
+            "dsc": "(Lnet/minecraft/class_465;)V",
+            "sig": "(Lnet/minecraft/class_465<+Lnet/minecraft/class_1703;>;)V"
+          },
+          {
+            "nme": "resetLastSlotNumber",
+            "acc": 9,
+            "dsc": "()V"
+          },
+          {
+            "nme": "getActiveMoveAction",
+            "acc": 9,
+            "dsc": "()Lfi/dy/masa/itemscroller/util/MoveAction;"
+          },
+          {
+            "nme": "sortInventory",
+            "acc": 9,
+            "dsc": "(Lnet/minecraft/class_465;)V",
+            "sig": "(Lnet/minecraft/class_465<*>;)V"
+          },
+          {
+            "nme": "trySort",
+            "acc": 10,
+            "dsc": "(Lnet/minecraft/class_465;IIZI)V",
+            "sig": "(Lnet/minecraft/class_465<*>;IIZI)V"
+          },
+          {
+            "nme": "quickSort",
+            "acc": 10,
+            "dsc": "(Lnet/minecraft/class_465;IIZI)V",
+            "sig": "(Lnet/minecraft/class_465<*>;IIZI)V"
+          },
+          {
+            "nme": "compareStacks",
+            "acc": 10,
+            "dsc": "(Lnet/minecraft/class_1799;Lnet/minecraft/class_1799;)I"
+          },
+          {
+            "nme": "getCustomPriority",
+            "acc": 10,
+            "dsc": "(Lnet/minecraft/class_1799;)I"
+          },
+          {
+            "nme": "onPong",
+            "acc": 9,
+            "dsc": "(Lnet/minecraft/class_2617;)Z"
+          },
+          {
+            "nme": "isShulkerBox",
+            "acc": 9,
+            "dsc": "(Lnet/minecraft/class_1799;)Z"
+          },
+          {
+            "nme": "isEmptyShulkerBox",
+            "acc": 10,
+            "dsc": "(Lnet/minecraft/class_1799;)Z"
+          },
+          {
+            "nme": "isBundle",
+            "acc": 10,
+            "dsc": "(Lnet/minecraft/class_1799;)Z"
+          },
+          {
+            "nme": "isEmptyBundle",
+            "acc": 10,
+            "dsc": "(Lnet/minecraft/class_1799;)Z"
+          },
+          {
+            "nme": "stackMaxSize",
+            "acc": 9,
+            "dsc": "(Lnet/minecraft/class_1799;Z)I"
+          },
+          {
+            "nme": "addStackTo",
+            "acc": 10,
+            "dsc": "(Lnet/minecraft/class_465;Lnet/minecraft/class_1735;Lnet/minecraft/class_1735;)Z",
+            "sig": "(Lnet/minecraft/class_465<+Lnet/minecraft/class_1703;>;Lnet/minecraft/class_1735;Lnet/minecraft/class_1735;)Z"
+          },
+          {
+            "nme": "tryMergeItems",
+            "acc": 10,
+            "dsc": "(Lnet/minecraft/class_465;II)V",
+            "sig": "(Lnet/minecraft/class_465<*>;II)V"
+          },
+          {
+            "nme": "clickSlot",
+            "acc": 9,
+            "dsc": "(Lnet/minecraft/class_465;IILnet/minecraft/class_1713;)V",
+            "sig": "(Lnet/minecraft/class_465<+Lnet/minecraft/class_1703;>;IILnet/minecraft/class_1713;)V"
+          },
+          {
+            "nme": "clickSlot",
+            "acc": 9,
+            "dsc": "(Lnet/minecraft/class_465;Lnet/minecraft/class_1735;IILnet/minecraft/class_1713;)V",
+            "sig": "(Lnet/minecraft/class_465<+Lnet/minecraft/class_1703;>;Lnet/minecraft/class_1735;IILnet/minecraft/class_1713;)V"
+          },
+          {
+            "nme": "leftClickSlot",
+            "acc": 9,
+            "dsc": "(Lnet/minecraft/class_465;Lnet/minecraft/class_1735;I)V",
+            "sig": "(Lnet/minecraft/class_465<+Lnet/minecraft/class_1703;>;Lnet/minecraft/class_1735;I)V"
+          },
+          {
+            "nme": "rightClickSlot",
+            "acc": 9,
+            "dsc": "(Lnet/minecraft/class_465;Lnet/minecraft/class_1735;I)V",
+            "sig": "(Lnet/minecraft/class_465<+Lnet/minecraft/class_1703;>;Lnet/minecraft/class_1735;I)V"
+          },
+          {
+            "nme": "shiftClickSlot",
+            "acc": 9,
+            "dsc": "(Lnet/minecraft/class_465;Lnet/minecraft/class_1735;I)V",
+            "sig": "(Lnet/minecraft/class_465<+Lnet/minecraft/class_1703;>;Lnet/minecraft/class_1735;I)V"
+          },
+          {
+            "nme": "leftClickSlot",
+            "acc": 9,
+            "dsc": "(Lnet/minecraft/class_465;I)V",
+            "sig": "(Lnet/minecraft/class_465<+Lnet/minecraft/class_1703;>;I)V"
+          },
+          {
+            "nme": "rightClickSlot",
+            "acc": 9,
+            "dsc": "(Lnet/minecraft/class_465;I)V",
+            "sig": "(Lnet/minecraft/class_465<+Lnet/minecraft/class_1703;>;I)V"
+          },
+          {
+            "nme": "shiftClickSlot",
+            "acc": 9,
+            "dsc": "(Lnet/minecraft/class_465;I)V",
+            "sig": "(Lnet/minecraft/class_465<+Lnet/minecraft/class_1703;>;I)V"
+          },
+          {
+            "nme": "dropItemsFromCursor",
+            "acc": 9,
+            "dsc": "(Lnet/minecraft/class_465;)V",
+            "sig": "(Lnet/minecraft/class_465<+Lnet/minecraft/class_1703;>;)V"
+          },
+          {
+            "nme": "dropItem",
+            "acc": 9,
+            "dsc": "(Lnet/minecraft/class_465;I)V",
+            "sig": "(Lnet/minecraft/class_465<+Lnet/minecraft/class_1703;>;I)V"
+          },
+          {
+            "nme": "dropStack",
+            "acc": 9,
+            "dsc": "(Lnet/minecraft/class_465;I)V",
+            "sig": "(Lnet/minecraft/class_465<+Lnet/minecraft/class_1703;>;I)V"
+          },
+          {
+            "nme": "swapSlots",
+            "acc": 9,
+            "dsc": "(Lnet/minecraft/class_465;II)V",
+            "sig": "(Lnet/minecraft/class_465<+Lnet/minecraft/class_1703;>;II)V"
+          },
+          {
+            "nme": "dragSplitItemsIntoSlots",
+            "acc": 10,
+            "dsc": "(Lnet/minecraft/class_465;Lit/unimi/dsi/fastutil/ints/IntArrayList;)V",
+            "sig": "(Lnet/minecraft/class_465<+Lnet/minecraft/class_1703;>;Lit/unimi/dsi/fastutil/ints/IntArrayList;)V"
+          },
+          {
+            "nme": "isStackEmpty",
+            "acc": 9,
+            "dsc": "(Lnet/minecraft/class_1799;)Z"
+          },
+          {
+            "nme": "getStackSize",
+            "acc": 9,
+            "dsc": "(Lnet/minecraft/class_1799;)I"
+          },
+          {
+            "nme": "setStackSize",
+            "acc": 9,
+            "dsc": "(Lnet/minecraft/class_1799;I)V"
+          },
+          {
+            "nme": "copyStack",
+            "acc": 9,
+            "dsc": "(Lnet/minecraft/class_1799;Z)Lnet/minecraft/class_1799;"
+          },
+          {
+            "nme": "lambda$quickSort$7",
+            "acc": 4106,
+            "dsc": "(Ljava/lang/Integer;)Ljava/lang/Integer;"
+          },
+          {
+            "nme": "lambda$quickSort$6",
+            "acc": 4106,
+            "dsc": "(Ljava/util/List;Ljava/lang/Integer;)Ljava/lang/Integer;"
+          },
+          {
+            "nme": "lambda$quickSort$5",
+            "acc": 4106,
+            "dsc": "(Ljava/util/ArrayList;Ljava/util/List;I)Ljava/lang/String;"
+          },
+          {
+            "nme": "lambda$quickSort$4",
+            "acc": 4106,
+            "dsc": "(Lit/unimi/dsi/fastutil/Pair;Lit/unimi/dsi/fastutil/Pair;)I"
+          },
+          {
+            "nme": "lambda$quickSort$3",
+            "acc": 4106,
+            "dsc": "(ILit/unimi/dsi/fastutil/Pair;)I"
+          },
+          {
+            "nme": "lambda$quickSort$2",
+            "acc": 4106,
+            "dsc": "(ZLit/unimi/dsi/fastutil/Pair;)Z"
+          },
+          {
+            "nme": "lambda$quickSort$1",
+            "acc": 4106,
+            "dsc": "(Lnet/minecraft/class_1703;II)Lit/unimi/dsi/fastutil/Pair;"
+          },
+          {
+            "nme": "lambda$sortInventory$0",
+            "acc": 4106,
+            "dsc": "(Lnet/minecraft/class_465;Lit/unimi/dsi/fastutil/Pair;ZI)V"
+          },
+          {
+            "nme": "<clinit>",
+            "acc": 8,
+            "dsc": "()V"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 26,
+            "nme": "DRAGGED_SLOTS",
+            "dsc": "Ljava/util/Set;",
+            "sig": "Ljava/util/Set<Ljava/lang/Integer;>;"
+          },
+          {
+            "acc": 26,
+            "nme": "SERVER_SYNC_MAGIC",
+            "dsc": "I",
+            "val": 45510
+          },
+          {
+            "acc": 9,
+            "nme": "dontUpdateRecipeBook",
+            "dsc": "I"
+          },
+          {
+            "acc": 10,
+            "nme": "sourceSlotCandidate",
+            "dsc": "Ljava/lang/ref/WeakReference;",
+            "sig": "Ljava/lang/ref/WeakReference<Lnet/minecraft/class_1735;>;"
+          },
+          {
+            "acc": 10,
+            "nme": "sourceSlot",
+            "dsc": "Ljava/lang/ref/WeakReference;",
+            "sig": "Ljava/lang/ref/WeakReference<Lnet/minecraft/class_1735;>;"
+          },
+          {
+            "acc": 10,
+            "nme": "stackInCursorLast",
+            "dsc": "Lnet/minecraft/class_1799;"
+          },
+          {
+            "acc": 12,
+            "nme": "lastRecipe",
+            "dsc": "Lnet/minecraft/class_3955;"
+          },
+          {
+            "acc": 10,
+            "nme": "activeMoveAction",
+            "dsc": "Lfi/dy/masa/itemscroller/util/MoveAction;"
+          },
+          {
+            "acc": 10,
+            "nme": "lastPosX",
+            "dsc": "I"
+          },
+          {
+            "acc": 10,
+            "nme": "lastPosY",
+            "dsc": "I"
+          },
+          {
+            "acc": 10,
+            "nme": "slotNumberLast",
+            "dsc": "I"
+          },
+          {
+            "acc": 10,
+            "nme": "inhibitCraftResultUpdate",
+            "dsc": "Z"
+          },
+          {
+            "acc": 10,
+            "nme": "selectedSlotUpdateTask",
+            "dsc": "Ljava/lang/Runnable;"
+          },
+          {
+            "acc": 9,
+            "nme": "assumeEmptyShulkerStacking",
+            "dsc": "Z"
+          },
+          {
+            "acc": 10,
+            "nme": "topSortingPriorityList",
+            "dsc": "Ljava/util/List;",
+            "sig": "Ljava/util/List<Ljava/lang/String;>;"
+          },
+          {
+            "acc": 10,
+            "nme": "bottomSortingPriorityList",
+            "dsc": "Ljava/util/List;",
+            "sig": "Ljava/util/List<Ljava/lang/String;>;"
+          },
+          {
+            "acc": 9,
+            "nme": "bufferInvUpdates",
+            "dsc": "Z"
+          },
+          {
+            "acc": 9,
+            "nme": "invUpdatesBuffer",
+            "dsc": "Ljava/util/List;",
+            "sig": "Ljava/util/List<Lnet/minecraft/class_2596<Lnet/minecraft/class_2602;>;>;"
+          },
+          {
+            "acc": 10,
+            "nme": "displayContext",
+            "dsc": "Lnet/minecraft/class_1761$class_8128;"
+          },
+          {
+            "acc": 9,
+            "nme": "ignoreScrollingInsideOfBundles",
+            "dsc": "Z"
+          },
+          {
+            "acc": 25,
+            "nme": "EMPTY_STACK",
+            "dsc": "Lnet/minecraft/class_1799;"
+          }
+        ]
+      },
+      "fi/dy/masa/itemscroller/villager/VillagerData.class": {
+        "ver": 65,
+        "acc": 33,
+        "nme": "fi/dy/masa/itemscroller/villager/VillagerData",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 0,
+            "dsc": "(Ljava/util/UUID;)V"
+          },
+          {
+            "nme": "getUUID",
+            "acc": 1,
+            "dsc": "()Ljava/util/UUID;"
+          },
+          {
+            "nme": "getTradeListPosition",
+            "acc": 1,
+            "dsc": "()I"
+          },
+          {
+            "nme": "setTradeListPosition",
+            "acc": 0,
+            "dsc": "(I)V"
+          },
+          {
+            "nme": "toggleFavorite",
+            "acc": 0,
+            "dsc": "(I)V"
+          },
+          {
+            "nme": "getFavorites",
+            "acc": 0,
+            "dsc": "()Lit/unimi/dsi/fastutil/ints/IntArrayList;"
+          },
+          {
+            "nme": "toNBT",
+            "acc": 1,
+            "dsc": "()Lnet/minecraft/class_2487;"
+          },
+          {
+            "nme": "fromNBT",
+            "acc": 9,
+            "dsc": "(Lnet/minecraft/class_2487;)Lfi/dy/masa/itemscroller/villager/VillagerData;",
+            "vanns": [
+              {
+                "dsc": "Ljavax/annotation/Nullable;"
+              }
+            ]
+          }
+        ],
+        "flds": [
+          {
+            "acc": 18,
+            "nme": "uuid",
+            "dsc": "Ljava/util/UUID;"
+          },
+          {
+            "acc": 18,
+            "nme": "favorites",
+            "dsc": "Lit/unimi/dsi/fastutil/ints/IntArrayList;"
+          },
+          {
+            "acc": 2,
+            "nme": "tradeListPosition",
+            "dsc": "I"
+          }
+        ]
+      }
+    }
+  }
+}

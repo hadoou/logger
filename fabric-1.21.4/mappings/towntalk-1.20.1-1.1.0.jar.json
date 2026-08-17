@@ -1,0 +1,197 @@
+{
+  "md5": "aa2c6394fe1e033698219bfd5ad62b49",
+  "sha2": "03e6488b9e762888d1d187d5cf73a60695b63c52",
+  "sha256": "7ba6ab6ff1422b9175c3a7f232309db2c82d3ca3787547c79da7839cd78c262f",
+  "contents": {
+    "classes": {
+      "com/ldtteam/towntalk/generation/DefaultSoundProvider.class": {
+        "ver": 61,
+        "acc": 33,
+        "nme": "com/ldtteam/towntalk/generation/DefaultSoundProvider",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/data/DataGenerator;)V"
+          },
+          {
+            "nme": "m_213708_",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/data/CachedOutput;)Ljava/util/concurrent/CompletableFuture;",
+            "sig": "(Lnet/minecraft/data/CachedOutput;)Ljava/util/concurrent/CompletableFuture<*>;"
+          },
+          {
+            "nme": "m_6055_",
+            "acc": 1,
+            "dsc": "()Ljava/lang/String;",
+            "invanns": [
+              {
+                "dsc": "Lorg/jetbrains/annotations/NotNull;"
+              }
+            ]
+          },
+          {
+            "nme": "parseCategories",
+            "acc": 2,
+            "dsc": "(Ljava/nio/file/Path;Ljava/util/Map;)V",
+            "sig": "(Ljava/nio/file/Path;Ljava/util/Map<Ljava/lang/String;Ljava/util/List<Ljava/nio/file/Path;>;>;)V",
+            "exs": [
+              "java/io/IOException"
+            ]
+          },
+          {
+            "nme": "lambda$parseCategories$1",
+            "acc": 4106,
+            "dsc": "(Ljava/nio/file/Path;)Z"
+          },
+          {
+            "nme": "lambda$run$0",
+            "acc": 4106,
+            "dsc": "(Ljava/util/Map$Entry;)Ljava/util/List;"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 26,
+            "nme": "GENERAL_PREFIX",
+            "dsc": "Ljava/lang/String;",
+            "val": "general"
+          },
+          {
+            "acc": 26,
+            "nme": "CRAFTER_PREFIX",
+            "dsc": "Ljava/lang/String;",
+            "val": "crafter"
+          },
+          {
+            "acc": 26,
+            "nme": "EMPLOYED_PREFIX",
+            "dsc": "Ljava/lang/String;",
+            "val": "employed"
+          },
+          {
+            "acc": 18,
+            "nme": "generator",
+            "dsc": "Lnet/minecraft/data/DataGenerator;"
+          },
+          {
+            "acc": 18,
+            "nme": "directoriesToTraverse",
+            "dsc": "Ljava/util/List;",
+            "sig": "Ljava/util/List<Lcom/ldtteam/towntalk/generation/DefaultSoundProvider$DirectorySpec;>;"
+          }
+        ]
+      },
+      "com/ldtteam/towntalk/TownTalk.class": {
+        "ver": 61,
+        "acc": 33,
+        "nme": "com/ldtteam/towntalk/TownTalk",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "dataGeneratorSetup",
+            "acc": 1,
+            "dsc": "(Lnet/minecraftforge/data/event/GatherDataEvent;)V"
+          },
+          {
+            "nme": "addResourcePack",
+            "acc": 1,
+            "dsc": "(Lnet/minecraftforge/event/AddPackFindersEvent;)V"
+          },
+          {
+            "nme": "lambda$addResourcePack$1",
+            "acc": 4106,
+            "dsc": "(Lnet/minecraft/server/packs/repository/Pack;Ljava/util/function/Consumer;)V"
+          },
+          {
+            "nme": "lambda$addResourcePack$0",
+            "acc": 4106,
+            "dsc": "(Ljava/nio/file/Path;Ljava/lang/String;)Lnet/minecraft/server/packs/PackResources;"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 0,
+            "nme": "logger",
+            "dsc": "Lorg/apache/logging/log4j/Logger;"
+          }
+        ],
+        "vanns": [
+          {
+            "dsc": "Lnet/minecraftforge/fml/common/Mod;",
+            "vals": [
+              "value",
+              "towntalk"
+            ]
+          }
+        ]
+      },
+      "com/ldtteam/towntalk/generation/DefaultSoundProvider$DirectorySpec.class": {
+        "ver": 61,
+        "acc": 65584,
+        "nme": "com/ldtteam/towntalk/generation/DefaultSoundProvider$DirectorySpec",
+        "super": "java/lang/Record",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 2,
+            "dsc": "(Ljava/lang/String;ZZ)V"
+          },
+          {
+            "nme": "toString",
+            "acc": 17,
+            "dsc": "()Ljava/lang/String;"
+          },
+          {
+            "nme": "hashCode",
+            "acc": 17,
+            "dsc": "()I"
+          },
+          {
+            "nme": "equals",
+            "acc": 17,
+            "dsc": "(Ljava/lang/Object;)Z"
+          },
+          {
+            "nme": "name",
+            "acc": 1,
+            "dsc": "()Ljava/lang/String;"
+          },
+          {
+            "nme": "isJob",
+            "acc": 1,
+            "dsc": "()Z"
+          },
+          {
+            "nme": "isCrafter",
+            "acc": 1,
+            "dsc": "()Z"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 18,
+            "nme": "name",
+            "dsc": "Ljava/lang/String;"
+          },
+          {
+            "acc": 18,
+            "nme": "isJob",
+            "dsc": "Z"
+          },
+          {
+            "acc": 18,
+            "nme": "isCrafter",
+            "dsc": "Z"
+          }
+        ]
+      }
+    }
+  }
+}

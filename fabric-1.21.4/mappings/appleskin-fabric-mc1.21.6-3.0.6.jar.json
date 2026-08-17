@@ -1,0 +1,2495 @@
+{
+  "md5": "f6af0fd74f25c8b19da49e5e34c79fc4",
+  "sha2": "18fc3a8be56c802e3515ed3e2b6376eb00cd3eaf",
+  "sha256": "b82abe586851ba6dbb9bcd4d9270fbddcd519e855ea7bffe933ed45ab5158e21",
+  "contents": {
+    "classes": {
+      "squeek/appleskin/helpers/FoodHelper.class": {
+        "ver": 65,
+        "acc": 33,
+        "nme": "squeek/appleskin/helpers/FoodHelper",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "isFood",
+            "acc": 9,
+            "dsc": "(Lnet/minecraft/class_1799;)Z"
+          },
+          {
+            "nme": "canConsume",
+            "acc": 9,
+            "dsc": "(Lnet/minecraft/class_1657;Lnet/minecraft/class_4174;)Z"
+          },
+          {
+            "nme": "getDefaultFoodValues",
+            "acc": 9,
+            "dsc": "(Lnet/minecraft/class_1799;)Lsqueek/appleskin/helpers/ConsumableFood;"
+          },
+          {
+            "nme": "query",
+            "acc": 9,
+            "dsc": "(Lnet/minecraft/class_1799;Lnet/minecraft/class_1657;)Lsqueek/appleskin/helpers/FoodHelper$QueriedFoodResult;",
+            "invanns": [
+              {
+                "dsc": "Lorg/jetbrains/annotations/Nullable;"
+              }
+            ]
+          },
+          {
+            "nme": "isRotten",
+            "acc": 9,
+            "dsc": "(Lnet/minecraft/class_10124;)Z"
+          },
+          {
+            "nme": "getEstimatedHealthIncrement",
+            "acc": 9,
+            "dsc": "(Lnet/minecraft/class_1657;Lsqueek/appleskin/helpers/ConsumableFood;)F"
+          },
+          {
+            "nme": "getEstimatedHealthIncrement",
+            "acc": 9,
+            "dsc": "(IFF)F"
+          },
+          {
+            "nme": "<clinit>",
+            "acc": 8,
+            "dsc": "()V"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 9,
+            "nme": "EMPTY_FOOD_COMPONENT",
+            "dsc": "Lnet/minecraft/class_4174;"
+          },
+          {
+            "acc": 9,
+            "nme": "DEFAULT_CONSUMABLE_COMPONENT",
+            "dsc": "Lnet/minecraft/class_10124;"
+          },
+          {
+            "acc": 9,
+            "nme": "REGEN_EXHAUSTION_INCREMENT",
+            "dsc": "F"
+          },
+          {
+            "acc": 9,
+            "nme": "MAX_EXHAUSTION",
+            "dsc": "F"
+          }
+        ]
+      },
+      "squeek/appleskin/helpers/TextureHelper.class": {
+        "ver": 65,
+        "acc": 33,
+        "nme": "squeek/appleskin/helpers/TextureHelper",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "getFoodTexture",
+            "acc": 9,
+            "dsc": "(ZLsqueek/appleskin/helpers/TextureHelper$FoodType;)Lnet/minecraft/class_2960;"
+          },
+          {
+            "nme": "getHeartTexture",
+            "acc": 9,
+            "dsc": "(ZLsqueek/appleskin/helpers/TextureHelper$HeartType;)Lnet/minecraft/class_2960;"
+          },
+          {
+            "nme": "<clinit>",
+            "acc": 8,
+            "dsc": "()V"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 25,
+            "nme": "MOD_ICONS",
+            "dsc": "Lnet/minecraft/class_2960;"
+          },
+          {
+            "acc": 25,
+            "nme": "HUNGER_OUTLINE_SPRITE",
+            "dsc": "Lnet/minecraft/class_2960;"
+          },
+          {
+            "acc": 25,
+            "nme": "FOOD_EMPTY_HUNGER_TEXTURE",
+            "dsc": "Lnet/minecraft/class_2960;"
+          },
+          {
+            "acc": 25,
+            "nme": "FOOD_HALF_HUNGER_TEXTURE",
+            "dsc": "Lnet/minecraft/class_2960;"
+          },
+          {
+            "acc": 25,
+            "nme": "FOOD_FULL_HUNGER_TEXTURE",
+            "dsc": "Lnet/minecraft/class_2960;"
+          },
+          {
+            "acc": 25,
+            "nme": "FOOD_EMPTY_TEXTURE",
+            "dsc": "Lnet/minecraft/class_2960;"
+          },
+          {
+            "acc": 25,
+            "nme": "FOOD_HALF_TEXTURE",
+            "dsc": "Lnet/minecraft/class_2960;"
+          },
+          {
+            "acc": 25,
+            "nme": "FOOD_FULL_TEXTURE",
+            "dsc": "Lnet/minecraft/class_2960;"
+          },
+          {
+            "acc": 25,
+            "nme": "HEART_CONTAINER",
+            "dsc": "Lnet/minecraft/class_2960;"
+          },
+          {
+            "acc": 25,
+            "nme": "HEART_HARDCORE_CONTAINER",
+            "dsc": "Lnet/minecraft/class_2960;"
+          },
+          {
+            "acc": 25,
+            "nme": "HEART_FULL",
+            "dsc": "Lnet/minecraft/class_2960;"
+          },
+          {
+            "acc": 25,
+            "nme": "HEART_HARDCORE_FULL",
+            "dsc": "Lnet/minecraft/class_2960;"
+          },
+          {
+            "acc": 25,
+            "nme": "HEART_HALF",
+            "dsc": "Lnet/minecraft/class_2960;"
+          },
+          {
+            "acc": 25,
+            "nme": "HEART_HARDCORE_HALF",
+            "dsc": "Lnet/minecraft/class_2960;"
+          }
+        ]
+      },
+      "squeek/appleskin/AppleSkin.class": {
+        "ver": 65,
+        "acc": 33,
+        "nme": "squeek/appleskin/AppleSkin",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "onInitializeClient",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "lambda$onInitializeClient$0",
+            "acc": 4106,
+            "dsc": "(Lnet/fabricmc/loader/api/entrypoint/EntrypointContainer;)V"
+          },
+          {
+            "nme": "<clinit>",
+            "acc": 8,
+            "dsc": "()V"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 25,
+            "nme": "LOGGER",
+            "dsc": "Lorg/apache/logging/log4j/Logger;"
+          }
+        ]
+      },
+      "squeek/appleskin/api/event/TooltipOverlayEvent$Pre.class": {
+        "ver": 65,
+        "acc": 33,
+        "nme": "squeek/appleskin/api/event/TooltipOverlayEvent$Pre",
+        "super": "squeek/appleskin/api/event/TooltipOverlayEvent",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/class_1799;Lnet/minecraft/class_4174;Lnet/minecraft/class_4174;)V"
+          },
+          {
+            "nme": "<clinit>",
+            "acc": 8,
+            "dsc": "()V"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 9,
+            "nme": "EVENT",
+            "dsc": "Lnet/fabricmc/fabric/api/event/Event;",
+            "sig": "Lnet/fabricmc/fabric/api/event/Event<Lsqueek/appleskin/api/handler/EventHandler<Lsqueek/appleskin/api/event/TooltipOverlayEvent$Pre;>;>;"
+          }
+        ]
+      },
+      "squeek/appleskin/helpers/ExhaustionHelper.class": {
+        "ver": 65,
+        "acc": 33,
+        "nme": "squeek/appleskin/helpers/ExhaustionHelper",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "getExhaustion",
+            "acc": 9,
+            "dsc": "(Lnet/minecraft/class_1657;)F"
+          },
+          {
+            "nme": "setExhaustion",
+            "acc": 9,
+            "dsc": "(Lnet/minecraft/class_1657;F)V"
+          }
+        ],
+        "flds": []
+      },
+      "squeek/appleskin/mixin/InGameHudMixin.class": {
+        "ver": 65,
+        "acc": 33,
+        "nme": "squeek/appleskin/mixin/InGameHudMixin",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "renderFoodPre",
+            "acc": 2,
+            "dsc": "(Lnet/minecraft/class_332;Lnet/minecraft/class_1657;IILorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V",
+            "vanns": [
+              {
+                "dsc": "Lorg/spongepowered/asm/mixin/injection/Inject;",
+                "vals": [
+                  "at",
+                  [
+                    {
+                      "desc": "Lorg/spongepowered/asm/mixin/injection/At;",
+                      "values": [
+                        "value",
+                        "HEAD"
+                      ],
+                      "api": 589824
+                    }
+                  ],
+                  "method",
+                  [
+                    "renderFood"
+                  ]
+                ]
+              }
+            ]
+          },
+          {
+            "nme": "renderFoodPost",
+            "acc": 2,
+            "dsc": "(Lnet/minecraft/class_332;Lnet/minecraft/class_1657;IILorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V",
+            "vanns": [
+              {
+                "dsc": "Lorg/spongepowered/asm/mixin/injection/Inject;",
+                "vals": [
+                  "at",
+                  [
+                    {
+                      "desc": "Lorg/spongepowered/asm/mixin/injection/At;",
+                      "values": [
+                        "value",
+                        "RETURN"
+                      ],
+                      "api": 589824
+                    }
+                  ],
+                  "method",
+                  [
+                    "renderFood"
+                  ]
+                ]
+              }
+            ]
+          },
+          {
+            "nme": "renderHealthPost",
+            "acc": 2,
+            "dsc": "(Lnet/minecraft/class_332;Lnet/minecraft/class_1657;IIIIFIIIZLorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V",
+            "vanns": [
+              {
+                "dsc": "Lorg/spongepowered/asm/mixin/injection/Inject;",
+                "vals": [
+                  "at",
+                  [
+                    {
+                      "desc": "Lorg/spongepowered/asm/mixin/injection/At;",
+                      "values": [
+                        "value",
+                        "RETURN"
+                      ],
+                      "api": 589824
+                    }
+                  ],
+                  "method",
+                  [
+                    "renderHealthBar"
+                  ]
+                ]
+              }
+            ]
+          }
+        ],
+        "flds": [],
+        "invanns": [
+          {
+            "dsc": "Lorg/spongepowered/asm/mixin/Mixin;",
+            "vals": [
+              "value",
+              [
+                {
+                  "itrlNme": "net/minecraft/class_329"
+                }
+              ]
+            ]
+          }
+        ]
+      },
+      "squeek/appleskin/helpers/KeyHelper.class": {
+        "ver": 65,
+        "acc": 33,
+        "nme": "squeek/appleskin/helpers/KeyHelper",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "isCtrlKeyDown",
+            "acc": 9,
+            "dsc": "()Z"
+          },
+          {
+            "nme": "isShiftKeyDown",
+            "acc": 9,
+            "dsc": "()Z"
+          }
+        ],
+        "flds": []
+      },
+      "squeek/appleskin/mixin/ItemStackMixin.class": {
+        "ver": 65,
+        "acc": 33,
+        "nme": "squeek/appleskin/mixin/ItemStackMixin",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "getTooltipFromItem",
+            "acc": 2,
+            "dsc": "(Lnet/minecraft/class_1792$class_9635;Lnet/minecraft/class_1657;Lnet/minecraft/class_1836;Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfoReturnable;)V",
+            "sig": "(Lnet/minecraft/class_1792$class_9635;Lnet/minecraft/class_1657;Lnet/minecraft/class_1836;Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfoReturnable<Ljava/util/List<Lnet/minecraft/class_2561;>;>;)V",
+            "vanns": [
+              {
+                "dsc": "Lorg/spongepowered/asm/mixin/injection/Inject;",
+                "vals": [
+                  "at",
+                  [
+                    {
+                      "desc": "Lorg/spongepowered/asm/mixin/injection/At;",
+                      "values": [
+                        "value",
+                        "RETURN"
+                      ],
+                      "api": 589824
+                    }
+                  ],
+                  "method",
+                  [
+                    "getTooltip"
+                  ]
+                ]
+              }
+            ]
+          }
+        ],
+        "flds": [],
+        "invanns": [
+          {
+            "dsc": "Lorg/spongepowered/asm/mixin/Mixin;",
+            "vals": [
+              "value",
+              [
+                {
+                  "itrlNme": "net/minecraft/class_1799"
+                }
+              ]
+            ]
+          }
+        ]
+      },
+      "squeek/appleskin/api/event/FoodValuesEvent.class": {
+        "ver": 65,
+        "acc": 33,
+        "nme": "squeek/appleskin/api/event/FoodValuesEvent",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/class_1657;Lnet/minecraft/class_1799;Lnet/minecraft/class_4174;Lnet/minecraft/class_4174;)V"
+          },
+          {
+            "nme": "<clinit>",
+            "acc": 8,
+            "dsc": "()V"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 1,
+            "nme": "defaultFoodComponent",
+            "dsc": "Lnet/minecraft/class_4174;"
+          },
+          {
+            "acc": 1,
+            "nme": "modifiedFoodComponent",
+            "dsc": "Lnet/minecraft/class_4174;"
+          },
+          {
+            "acc": 17,
+            "nme": "itemStack",
+            "dsc": "Lnet/minecraft/class_1799;"
+          },
+          {
+            "acc": 17,
+            "nme": "player",
+            "dsc": "Lnet/minecraft/class_1657;"
+          },
+          {
+            "acc": 9,
+            "nme": "EVENT",
+            "dsc": "Lnet/fabricmc/fabric/api/event/Event;",
+            "sig": "Lnet/fabricmc/fabric/api/event/Event<Lsqueek/appleskin/api/handler/EventHandler<Lsqueek/appleskin/api/event/FoodValuesEvent;>;>;"
+          }
+        ]
+      },
+      "squeek/appleskin/client/TooltipOverlayHandler$FoodOverlay.class": {
+        "ver": 65,
+        "acc": 33,
+        "nme": "squeek/appleskin/client/TooltipOverlayHandler$FoodOverlay",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 0,
+            "dsc": "(Lnet/minecraft/class_1799;Lnet/minecraft/class_4174;Lnet/minecraft/class_4174;Lnet/minecraft/class_10124;Lnet/minecraft/class_1657;)V"
+          },
+          {
+            "nme": "shouldRenderHungerBars",
+            "acc": 0,
+            "dsc": "()Z"
+          },
+          {
+            "nme": "method_32661",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/class_327;)I"
+          },
+          {
+            "nme": "method_32664",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/class_327;)I"
+          },
+          {
+            "nme": "method_32666",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/class_327;IIIILnet/minecraft/class_332;)V"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 2,
+            "nme": "defaultFood",
+            "dsc": "Lnet/minecraft/class_4174;"
+          },
+          {
+            "acc": 2,
+            "nme": "modifiedFood",
+            "dsc": "Lnet/minecraft/class_4174;"
+          },
+          {
+            "acc": 2,
+            "nme": "consumableComponent",
+            "dsc": "Lnet/minecraft/class_10124;"
+          },
+          {
+            "acc": 2,
+            "nme": "biggestHunger",
+            "dsc": "I"
+          },
+          {
+            "acc": 2,
+            "nme": "biggestSaturationIncrement",
+            "dsc": "F"
+          },
+          {
+            "acc": 2,
+            "nme": "hungerBars",
+            "dsc": "I"
+          },
+          {
+            "acc": 2,
+            "nme": "hungerBarsText",
+            "dsc": "Ljava/lang/String;"
+          },
+          {
+            "acc": 2,
+            "nme": "saturationBars",
+            "dsc": "I"
+          },
+          {
+            "acc": 2,
+            "nme": "saturationBarsText",
+            "dsc": "Ljava/lang/String;"
+          },
+          {
+            "acc": 2,
+            "nme": "itemStack",
+            "dsc": "Lnet/minecraft/class_1799;"
+          }
+        ]
+      },
+      "squeek/appleskin/mixin/DebugHudMixin.class": {
+        "ver": 65,
+        "acc": 33,
+        "nme": "squeek/appleskin/mixin/DebugHudMixin",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "getLeftText",
+            "acc": 4,
+            "dsc": "(Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfoReturnable;)V",
+            "sig": "(Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfoReturnable<Ljava/util/List<Ljava/lang/String;>;>;)V",
+            "vanns": [
+              {
+                "dsc": "Lorg/spongepowered/asm/mixin/injection/Inject;",
+                "vals": [
+                  "at",
+                  [
+                    {
+                      "desc": "Lorg/spongepowered/asm/mixin/injection/At;",
+                      "values": [
+                        "value",
+                        "RETURN"
+                      ],
+                      "api": 589824
+                    }
+                  ],
+                  "method",
+                  [
+                    "getLeftText"
+                  ]
+                ]
+              }
+            ]
+          }
+        ],
+        "flds": [],
+        "invanns": [
+          {
+            "dsc": "Lorg/spongepowered/asm/mixin/Mixin;",
+            "vals": [
+              "value",
+              [
+                {
+                  "itrlNme": "net/minecraft/class_340"
+                }
+              ]
+            ]
+          }
+        ]
+      },
+      "squeek/appleskin/network/SyncHandler.class": {
+        "ver": 65,
+        "acc": 33,
+        "nme": "squeek/appleskin/network/SyncHandler",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "init",
+            "acc": 9,
+            "dsc": "()V"
+          },
+          {
+            "nme": "onPlayerUpdate",
+            "acc": 9,
+            "dsc": "(Lnet/minecraft/class_3222;)V"
+          },
+          {
+            "nme": "onPlayerLoggedIn",
+            "acc": 9,
+            "dsc": "(Lnet/minecraft/class_3222;)V"
+          },
+          {
+            "nme": "onServerWorldTick",
+            "acc": 9,
+            "dsc": "(Lnet/minecraft/class_3218;)V"
+          },
+          {
+            "nme": "<clinit>",
+            "acc": 8,
+            "dsc": "()V"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 26,
+            "nme": "lastSaturationLevels",
+            "dsc": "Ljava/util/Map;",
+            "sig": "Ljava/util/Map<Ljava/util/UUID;Ljava/lang/Float;>;"
+          },
+          {
+            "acc": 26,
+            "nme": "lastExhaustionLevels",
+            "dsc": "Ljava/util/Map;",
+            "sig": "Ljava/util/Map<Ljava/util/UUID;Ljava/lang/Float;>;"
+          },
+          {
+            "acc": 10,
+            "nme": "naturalRegeneration",
+            "dsc": "Z"
+          }
+        ]
+      },
+      "squeek/appleskin/api/event/HUDOverlayEvent.class": {
+        "ver": 65,
+        "acc": 33,
+        "nme": "squeek/appleskin/api/event/HUDOverlayEvent",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 2,
+            "dsc": "(IILnet/minecraft/class_332;)V"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 1,
+            "nme": "x",
+            "dsc": "I"
+          },
+          {
+            "acc": 1,
+            "nme": "y",
+            "dsc": "I"
+          },
+          {
+            "acc": 1,
+            "nme": "context",
+            "dsc": "Lnet/minecraft/class_332;"
+          },
+          {
+            "acc": 1,
+            "nme": "isCanceled",
+            "dsc": "Z"
+          }
+        ]
+      },
+      "squeek/appleskin/client/TooltipOverlayHandler$EmptyText.class": {
+        "ver": 65,
+        "acc": 1056,
+        "nme": "squeek/appleskin/client/TooltipOverlayHandler$EmptyText",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 0,
+            "dsc": "()V"
+          },
+          {
+            "nme": "method_10866",
+            "acc": 1,
+            "dsc": "()Lnet/minecraft/class_2583;"
+          },
+          {
+            "nme": "method_10851",
+            "acc": 1,
+            "dsc": "()Lnet/minecraft/class_7417;"
+          },
+          {
+            "nme": "method_10855",
+            "acc": 1,
+            "dsc": "()Ljava/util/List;",
+            "sig": "()Ljava/util/List<Lnet/minecraft/class_2561;>;"
+          },
+          {
+            "nme": "<clinit>",
+            "acc": 8,
+            "dsc": "()V"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 8,
+            "nme": "emptySiblings",
+            "dsc": "Ljava/util/List;",
+            "sig": "Ljava/util/List<Lnet/minecraft/class_2561;>;"
+          }
+        ]
+      },
+      "squeek/appleskin/api/handler/EventHandler.class": {
+        "ver": 65,
+        "acc": 1537,
+        "nme": "squeek/appleskin/api/handler/EventHandler",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "createArrayBacked",
+            "acc": 9,
+            "dsc": "()Lnet/fabricmc/fabric/api/event/Event;",
+            "sig": "<T:Ljava/lang/Object;>()Lnet/fabricmc/fabric/api/event/Event<Lsqueek/appleskin/api/handler/EventHandler<TT;>;>;"
+          },
+          {
+            "nme": "interact",
+            "acc": 1025,
+            "dsc": "(Ljava/lang/Object;)V",
+            "sig": "(TIEvent;)V"
+          },
+          {
+            "nme": "lambda$createArrayBacked$1",
+            "acc": 4106,
+            "dsc": "([Lsqueek/appleskin/api/handler/EventHandler;)Lsqueek/appleskin/api/handler/EventHandler;"
+          },
+          {
+            "nme": "lambda$createArrayBacked$0",
+            "acc": 4106,
+            "dsc": "([Lsqueek/appleskin/api/handler/EventHandler;Ljava/lang/Object;)V"
+          }
+        ],
+        "flds": []
+      },
+      "squeek/appleskin/api/event/TooltipOverlayEvent$Render.class": {
+        "ver": 65,
+        "acc": 33,
+        "nme": "squeek/appleskin/api/event/TooltipOverlayEvent$Render",
+        "super": "squeek/appleskin/api/event/TooltipOverlayEvent",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/class_1799;IILnet/minecraft/class_332;Lnet/minecraft/class_4174;Lnet/minecraft/class_4174;)V"
+          },
+          {
+            "nme": "<clinit>",
+            "acc": 8,
+            "dsc": "()V"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 1,
+            "nme": "x",
+            "dsc": "I"
+          },
+          {
+            "acc": 1,
+            "nme": "y",
+            "dsc": "I"
+          },
+          {
+            "acc": 1,
+            "nme": "context",
+            "dsc": "Lnet/minecraft/class_332;"
+          },
+          {
+            "acc": 9,
+            "nme": "EVENT",
+            "dsc": "Lnet/fabricmc/fabric/api/event/Event;",
+            "sig": "Lnet/fabricmc/fabric/api/event/Event<Lsqueek/appleskin/api/handler/EventHandler<Lsqueek/appleskin/api/event/TooltipOverlayEvent$Render;>;>;"
+          }
+        ]
+      },
+      "squeek/appleskin/helpers/TextureHelper$FoodType.class": {
+        "ver": 65,
+        "acc": 16433,
+        "nme": "squeek/appleskin/helpers/TextureHelper$FoodType",
+        "super": "java/lang/Enum",
+        "mthds": [
+          {
+            "nme": "values",
+            "acc": 9,
+            "dsc": "()[Lsqueek/appleskin/helpers/TextureHelper$FoodType;"
+          },
+          {
+            "nme": "valueOf",
+            "acc": 9,
+            "dsc": "(Ljava/lang/String;)Lsqueek/appleskin/helpers/TextureHelper$FoodType;"
+          },
+          {
+            "nme": "<init>",
+            "acc": 2,
+            "dsc": "(Ljava/lang/String;I)V",
+            "sig": "()V"
+          },
+          {
+            "nme": "$values",
+            "acc": 4106,
+            "dsc": "()[Lsqueek/appleskin/helpers/TextureHelper$FoodType;"
+          },
+          {
+            "nme": "<clinit>",
+            "acc": 8,
+            "dsc": "()V"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 16409,
+            "nme": "EMPTY",
+            "dsc": "Lsqueek/appleskin/helpers/TextureHelper$FoodType;"
+          },
+          {
+            "acc": 16409,
+            "nme": "HALF",
+            "dsc": "Lsqueek/appleskin/helpers/TextureHelper$FoodType;"
+          },
+          {
+            "acc": 16409,
+            "nme": "FULL",
+            "dsc": "Lsqueek/appleskin/helpers/TextureHelper$FoodType;"
+          },
+          {
+            "acc": 4122,
+            "nme": "$VALUES",
+            "dsc": "[Lsqueek/appleskin/helpers/TextureHelper$FoodType;"
+          }
+        ]
+      },
+      "squeek/appleskin/api/event/HUDOverlayEvent$HungerRestored.class": {
+        "ver": 65,
+        "acc": 33,
+        "nme": "squeek/appleskin/api/event/HUDOverlayEvent$HungerRestored",
+        "super": "squeek/appleskin/api/event/HUDOverlayEvent",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "(ILnet/minecraft/class_1799;Lnet/minecraft/class_4174;IILnet/minecraft/class_332;)V"
+          },
+          {
+            "nme": "<clinit>",
+            "acc": 8,
+            "dsc": "()V"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 17,
+            "nme": "foodComponent",
+            "dsc": "Lnet/minecraft/class_4174;"
+          },
+          {
+            "acc": 17,
+            "nme": "itemStack",
+            "dsc": "Lnet/minecraft/class_1799;"
+          },
+          {
+            "acc": 17,
+            "nme": "currentFoodLevel",
+            "dsc": "I"
+          },
+          {
+            "acc": 9,
+            "nme": "EVENT",
+            "dsc": "Lnet/fabricmc/fabric/api/event/Event;",
+            "sig": "Lnet/fabricmc/fabric/api/event/Event<Lsqueek/appleskin/api/handler/EventHandler<Lsqueek/appleskin/api/event/HUDOverlayEvent$HungerRestored;>;>;"
+          }
+        ]
+      },
+      "squeek/appleskin/client/TooltipOverlayHandler$FoodOverlayTextComponent.class": {
+        "ver": 65,
+        "acc": 33,
+        "nme": "squeek/appleskin/client/TooltipOverlayHandler$FoodOverlayTextComponent",
+        "super": "squeek/appleskin/client/TooltipOverlayHandler$EmptyText",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 0,
+            "dsc": "(Lsqueek/appleskin/client/TooltipOverlayHandler$FoodOverlay;)V"
+          },
+          {
+            "nme": "method_30937",
+            "acc": 1,
+            "dsc": "()Lnet/minecraft/class_5481;"
+          },
+          {
+            "nme": "accept",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/class_5224;)Z"
+          },
+          {
+            "nme": "method_10855",
+            "acc": 4161,
+            "dsc": "()Ljava/util/List;"
+          },
+          {
+            "nme": "method_10851",
+            "acc": 4161,
+            "dsc": "()Lnet/minecraft/class_7417;"
+          },
+          {
+            "nme": "method_10866",
+            "acc": 4161,
+            "dsc": "()Lnet/minecraft/class_2583;"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 1,
+            "nme": "foodOverlay",
+            "dsc": "Lsqueek/appleskin/client/TooltipOverlayHandler$FoodOverlay;"
+          }
+        ]
+      },
+      "squeek/appleskin/network/ClientSyncHandler.class": {
+        "ver": 65,
+        "acc": 33,
+        "nme": "squeek/appleskin/network/ClientSyncHandler",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "init",
+            "acc": 9,
+            "dsc": "()V",
+            "invanns": [
+              {
+                "dsc": "Lnet/fabricmc/api/Environment;",
+                "vals": [
+                  "value",
+                  [
+                    "Lnet/fabricmc/api/EnvType;",
+                    "CLIENT"
+                  ]
+                ]
+              }
+            ]
+          },
+          {
+            "nme": "lambda$init$4",
+            "acc": 4106,
+            "dsc": "(Lsqueek/appleskin/network/NaturalRegenerationSyncPayload;Lnet/fabricmc/fabric/api/client/networking/v1/ClientPlayNetworking$Context;)V"
+          },
+          {
+            "nme": "lambda$init$3",
+            "acc": 4106,
+            "dsc": "(Lsqueek/appleskin/network/SaturationSyncPayload;Lnet/fabricmc/fabric/api/client/networking/v1/ClientPlayNetworking$Context;)V"
+          },
+          {
+            "nme": "lambda$init$2",
+            "acc": 4106,
+            "dsc": "(Lnet/fabricmc/fabric/api/client/networking/v1/ClientPlayNetworking$Context;Lsqueek/appleskin/network/SaturationSyncPayload;)V"
+          },
+          {
+            "nme": "lambda$init$1",
+            "acc": 4106,
+            "dsc": "(Lsqueek/appleskin/network/ExhaustionSyncPayload;Lnet/fabricmc/fabric/api/client/networking/v1/ClientPlayNetworking$Context;)V"
+          },
+          {
+            "nme": "lambda$init$0",
+            "acc": 4106,
+            "dsc": "(Lnet/fabricmc/fabric/api/client/networking/v1/ClientPlayNetworking$Context;Lsqueek/appleskin/network/ExhaustionSyncPayload;)V"
+          },
+          {
+            "nme": "<clinit>",
+            "acc": 8,
+            "dsc": "()V"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 9,
+            "nme": "naturalRegeneration",
+            "dsc": "Z"
+          }
+        ]
+      },
+      "squeek/appleskin/client/REITooltipPlugin.class": {
+        "ver": 65,
+        "acc": 33,
+        "nme": "squeek/appleskin/client/REITooltipPlugin",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "registerEntryRenderers",
+            "acc": 1,
+            "dsc": "(Lme/shedaniel/rei/api/client/entry/renderer/EntryRendererRegistry;)V"
+          },
+          {
+            "nme": "lambda$registerEntryRenderers$0",
+            "acc": 4106,
+            "dsc": "(Lme/shedaniel/rei/api/common/entry/EntryStack;Lme/shedaniel/math/Point;Lme/shedaniel/rei/api/client/gui/widgets/Tooltip;)Lme/shedaniel/rei/api/client/gui/widgets/Tooltip;"
+          }
+        ],
+        "flds": []
+      },
+      "squeek/appleskin/helpers/ColorHelper.class": {
+        "ver": 65,
+        "acc": 33,
+        "nme": "squeek/appleskin/helpers/ColorHelper",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "argbFromRGBA",
+            "acc": 9,
+            "dsc": "(FFFF)I"
+          }
+        ],
+        "flds": []
+      },
+      "squeek/appleskin/client/TooltipOverlayHandler$FoodOutline.class": {
+        "ver": 65,
+        "acc": 16432,
+        "nme": "squeek/appleskin/client/TooltipOverlayHandler$FoodOutline",
+        "super": "java/lang/Enum",
+        "mthds": [
+          {
+            "nme": "values",
+            "acc": 9,
+            "dsc": "()[Lsqueek/appleskin/client/TooltipOverlayHandler$FoodOutline;"
+          },
+          {
+            "nme": "valueOf",
+            "acc": 9,
+            "dsc": "(Ljava/lang/String;)Lsqueek/appleskin/client/TooltipOverlayHandler$FoodOutline;"
+          },
+          {
+            "nme": "<init>",
+            "acc": 2,
+            "dsc": "(Ljava/lang/String;I)V",
+            "sig": "()V"
+          },
+          {
+            "nme": "argb",
+            "acc": 1,
+            "dsc": "()I"
+          },
+          {
+            "nme": "get",
+            "acc": 9,
+            "dsc": "(III)Lsqueek/appleskin/client/TooltipOverlayHandler$FoodOutline;"
+          },
+          {
+            "nme": "$values",
+            "acc": 4106,
+            "dsc": "()[Lsqueek/appleskin/client/TooltipOverlayHandler$FoodOutline;"
+          },
+          {
+            "nme": "<clinit>",
+            "acc": 8,
+            "dsc": "()V"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 16409,
+            "nme": "NEGATIVE",
+            "dsc": "Lsqueek/appleskin/client/TooltipOverlayHandler$FoodOutline;"
+          },
+          {
+            "acc": 16409,
+            "nme": "EXTRA",
+            "dsc": "Lsqueek/appleskin/client/TooltipOverlayHandler$FoodOutline;"
+          },
+          {
+            "acc": 16409,
+            "nme": "NORMAL",
+            "dsc": "Lsqueek/appleskin/client/TooltipOverlayHandler$FoodOutline;"
+          },
+          {
+            "acc": 16409,
+            "nme": "PARTIAL",
+            "dsc": "Lsqueek/appleskin/client/TooltipOverlayHandler$FoodOutline;"
+          },
+          {
+            "acc": 16409,
+            "nme": "MISSING",
+            "dsc": "Lsqueek/appleskin/client/TooltipOverlayHandler$FoodOutline;"
+          },
+          {
+            "acc": 4122,
+            "nme": "$VALUES",
+            "dsc": "[Lsqueek/appleskin/client/TooltipOverlayHandler$FoodOutline;"
+          }
+        ]
+      },
+      "squeek/appleskin/api/event/HUDOverlayEvent$HealthRestored.class": {
+        "ver": 65,
+        "acc": 33,
+        "nme": "squeek/appleskin/api/event/HUDOverlayEvent$HealthRestored",
+        "super": "squeek/appleskin/api/event/HUDOverlayEvent",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "(FLnet/minecraft/class_1799;Lnet/minecraft/class_4174;IILnet/minecraft/class_332;)V"
+          },
+          {
+            "nme": "<clinit>",
+            "acc": 8,
+            "dsc": "()V"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 17,
+            "nme": "foodComponent",
+            "dsc": "Lnet/minecraft/class_4174;"
+          },
+          {
+            "acc": 17,
+            "nme": "itemStack",
+            "dsc": "Lnet/minecraft/class_1799;"
+          },
+          {
+            "acc": 17,
+            "nme": "modifiedHealth",
+            "dsc": "F"
+          },
+          {
+            "acc": 9,
+            "nme": "EVENT",
+            "dsc": "Lnet/fabricmc/fabric/api/event/Event;",
+            "sig": "Lnet/fabricmc/fabric/api/event/Event<Lsqueek/appleskin/api/handler/EventHandler<Lsqueek/appleskin/api/event/HUDOverlayEvent$HealthRestored;>;>;"
+          }
+        ]
+      },
+      "squeek/appleskin/helpers/ExhaustionHelper$ExhaustionManipulator.class": {
+        "ver": 65,
+        "acc": 1537,
+        "nme": "squeek/appleskin/helpers/ExhaustionHelper$ExhaustionManipulator",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "getExhaustion",
+            "acc": 1025,
+            "dsc": "()F"
+          },
+          {
+            "nme": "setExhaustion",
+            "acc": 1025,
+            "dsc": "(F)V"
+          }
+        ],
+        "flds": []
+      },
+      "squeek/appleskin/ModConfig.class": {
+        "ver": 65,
+        "acc": 33,
+        "nme": "squeek/appleskin/ModConfig",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "init",
+            "acc": 9,
+            "dsc": "()V"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 9,
+            "nme": "INSTANCE",
+            "dsc": "Lsqueek/appleskin/ModConfig;"
+          },
+          {
+            "acc": 1,
+            "nme": "showFoodValuesInTooltip",
+            "dsc": "Z"
+          },
+          {
+            "acc": 1,
+            "nme": "showFoodValuesInTooltipAlways",
+            "dsc": "Z"
+          },
+          {
+            "acc": 1,
+            "nme": "showSaturationHudOverlay",
+            "dsc": "Z"
+          },
+          {
+            "acc": 1,
+            "nme": "showFoodValuesHudOverlay",
+            "dsc": "Z"
+          },
+          {
+            "acc": 1,
+            "nme": "showFoodValuesHudOverlayWhenOffhand",
+            "dsc": "Z"
+          },
+          {
+            "acc": 1,
+            "nme": "showFoodExhaustionHudUnderlay",
+            "dsc": "Z"
+          },
+          {
+            "acc": 1,
+            "nme": "showFoodHealthHudOverlay",
+            "dsc": "Z"
+          },
+          {
+            "acc": 1,
+            "nme": "showFoodDebugInfo",
+            "dsc": "Z"
+          },
+          {
+            "acc": 1,
+            "nme": "showVanillaAnimationsOverlay",
+            "dsc": "Z"
+          },
+          {
+            "acc": 1,
+            "nme": "maxHudOverlayFlashAlpha",
+            "dsc": "F"
+          }
+        ],
+        "vanns": [
+          {
+            "dsc": "Lme/shedaniel/autoconfig/annotation/Config;",
+            "vals": [
+              "name",
+              "appleskin"
+            ]
+          }
+        ]
+      },
+      "squeek/appleskin/client/DebugInfoHandler.class": {
+        "ver": 65,
+        "acc": 33,
+        "nme": "squeek/appleskin/client/DebugInfoHandler",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "init",
+            "acc": 9,
+            "dsc": "()V"
+          },
+          {
+            "nme": "onTextRender",
+            "acc": 1,
+            "dsc": "(Ljava/util/List;)V",
+            "sig": "(Ljava/util/List<Ljava/lang/String;>;)V"
+          },
+          {
+            "nme": "<clinit>",
+            "acc": 8,
+            "dsc": "()V"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 9,
+            "nme": "INSTANCE",
+            "dsc": "Lsqueek/appleskin/client/DebugInfoHandler;"
+          },
+          {
+            "acc": 26,
+            "nme": "saturationDF",
+            "dsc": "Ljava/text/DecimalFormat;"
+          },
+          {
+            "acc": 26,
+            "nme": "exhaustionValDF",
+            "dsc": "Ljava/text/DecimalFormat;"
+          },
+          {
+            "acc": 26,
+            "nme": "exhaustionMaxDF",
+            "dsc": "Ljava/text/DecimalFormat;"
+          }
+        ]
+      },
+      "squeek/appleskin/AppleSkinCommon.class": {
+        "ver": 65,
+        "acc": 33,
+        "nme": "squeek/appleskin/AppleSkinCommon",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "onInitialize",
+            "acc": 1,
+            "dsc": "()V"
+          }
+        ],
+        "flds": []
+      },
+      "squeek/appleskin/gui/ModMenuIntegration.class": {
+        "ver": 65,
+        "acc": 33,
+        "nme": "squeek/appleskin/gui/ModMenuIntegration",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "getModConfigScreenFactory",
+            "acc": 1,
+            "dsc": "()Lcom/terraformersmc/modmenu/api/ConfigScreenFactory;",
+            "sig": "()Lcom/terraformersmc/modmenu/api/ConfigScreenFactory<*>;"
+          },
+          {
+            "nme": "lambda$getModConfigScreenFactory$0",
+            "acc": 4106,
+            "dsc": "(Lnet/minecraft/class_437;)Lnet/minecraft/class_437;"
+          }
+        ],
+        "flds": [],
+        "invanns": [
+          {
+            "dsc": "Lnet/fabricmc/api/Environment;",
+            "vals": [
+              "value",
+              [
+                "Lnet/fabricmc/api/EnvType;",
+                "CLIENT"
+              ]
+            ]
+          }
+        ]
+      },
+      "squeek/appleskin/client/HUDOverlayHandler$HeldFoodCache.class": {
+        "ver": 65,
+        "acc": 33,
+        "nme": "squeek/appleskin/client/HUDOverlayHandler$HeldFoodCache",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "query",
+            "acc": 4,
+            "dsc": "(Lnet/minecraft/class_1657;)V"
+          },
+          {
+            "nme": "result",
+            "acc": 1,
+            "dsc": "(ILnet/minecraft/class_1657;)Lsqueek/appleskin/helpers/FoodHelper$QueriedFoodResult;"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 4,
+            "nme": "result",
+            "dsc": "Lsqueek/appleskin/helpers/FoodHelper$QueriedFoodResult;"
+          },
+          {
+            "acc": 1,
+            "nme": "lastGuiTick",
+            "dsc": "I"
+          }
+        ]
+      },
+      "squeek/appleskin/api/event/HUDOverlayEvent$Saturation.class": {
+        "ver": 65,
+        "acc": 33,
+        "nme": "squeek/appleskin/api/event/HUDOverlayEvent$Saturation",
+        "super": "squeek/appleskin/api/event/HUDOverlayEvent",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "(FIILnet/minecraft/class_332;)V"
+          },
+          {
+            "nme": "<clinit>",
+            "acc": 8,
+            "dsc": "()V"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 17,
+            "nme": "saturationLevel",
+            "dsc": "F"
+          },
+          {
+            "acc": 9,
+            "nme": "EVENT",
+            "dsc": "Lnet/fabricmc/fabric/api/event/Event;",
+            "sig": "Lnet/fabricmc/fabric/api/event/Event<Lsqueek/appleskin/api/handler/EventHandler<Lsqueek/appleskin/api/event/HUDOverlayEvent$Saturation;>;>;"
+          }
+        ]
+      },
+      "squeek/appleskin/client/HUDOverlayHandler$OffsetsCache.class": {
+        "ver": 65,
+        "acc": 32,
+        "nme": "squeek/appleskin/client/HUDOverlayHandler$OffsetsCache",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 2,
+            "dsc": "()V"
+          },
+          {
+            "nme": "generate",
+            "acc": 4,
+            "dsc": "(ILnet/minecraft/class_1657;)V"
+          },
+          {
+            "nme": "healthBarOffsets",
+            "acc": 1,
+            "dsc": "(ILnet/minecraft/class_1657;)Ljava/util/Vector;",
+            "sig": "(ILnet/minecraft/class_1657;)Ljava/util/Vector<Lsqueek/appleskin/util/IntPoint;>;"
+          },
+          {
+            "nme": "foodBarOffsets",
+            "acc": 1,
+            "dsc": "(ILnet/minecraft/class_1657;)Ljava/util/Vector;",
+            "sig": "(ILnet/minecraft/class_1657;)Ljava/util/Vector<Lsqueek/appleskin/util/IntPoint;>;"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 20,
+            "nme": "foodBarOffsets",
+            "dsc": "Ljava/util/Vector;",
+            "sig": "Ljava/util/Vector<Lsqueek/appleskin/util/IntPoint;>;"
+          },
+          {
+            "acc": 20,
+            "nme": "healthBarOffsets",
+            "dsc": "Ljava/util/Vector;",
+            "sig": "Ljava/util/Vector<Lsqueek/appleskin/util/IntPoint;>;"
+          },
+          {
+            "acc": 1,
+            "nme": "lastGuiTick",
+            "dsc": "I"
+          },
+          {
+            "acc": 20,
+            "nme": "random",
+            "dsc": "Ljava/util/Random;"
+          }
+        ]
+      },
+      "squeek/appleskin/api/AppleSkinApi.class": {
+        "ver": 65,
+        "acc": 1537,
+        "nme": "squeek/appleskin/api/AppleSkinApi",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "registerEvents",
+            "acc": 1025,
+            "dsc": "()V"
+          }
+        ],
+        "flds": []
+      },
+      "squeek/appleskin/helpers/ConsumableFood.class": {
+        "ver": 65,
+        "acc": 65585,
+        "nme": "squeek/appleskin/helpers/ConsumableFood",
+        "super": "java/lang/Record",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/class_4174;Lnet/minecraft/class_10124;)V"
+          },
+          {
+            "nme": "toString",
+            "acc": 17,
+            "dsc": "()Ljava/lang/String;"
+          },
+          {
+            "nme": "hashCode",
+            "acc": 17,
+            "dsc": "()I"
+          },
+          {
+            "nme": "equals",
+            "acc": 17,
+            "dsc": "(Ljava/lang/Object;)Z"
+          },
+          {
+            "nme": "food",
+            "acc": 1,
+            "dsc": "()Lnet/minecraft/class_4174;"
+          },
+          {
+            "nme": "consumable",
+            "acc": 1,
+            "dsc": "()Lnet/minecraft/class_10124;"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 18,
+            "nme": "food",
+            "dsc": "Lnet/minecraft/class_4174;"
+          },
+          {
+            "acc": 18,
+            "nme": "consumable",
+            "dsc": "Lnet/minecraft/class_10124;"
+          }
+        ]
+      },
+      "squeek/appleskin/mixin/TooltipComponentMixin.class": {
+        "ver": 65,
+        "acc": 1537,
+        "nme": "squeek/appleskin/mixin/TooltipComponentMixin",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "AppleSkin_of",
+            "acc": 10,
+            "dsc": "(Lnet/minecraft/class_5481;Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfoReturnable;)V",
+            "sig": "(Lnet/minecraft/class_5481;Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfoReturnable<Lnet/minecraft/class_5684;>;)V",
+            "vanns": [
+              {
+                "dsc": "Lorg/spongepowered/asm/mixin/injection/Inject;",
+                "vals": [
+                  "at",
+                  [
+                    {
+                      "desc": "Lorg/spongepowered/asm/mixin/injection/At;",
+                      "values": [
+                        "value",
+                        "HEAD"
+                      ],
+                      "api": 589824
+                    }
+                  ],
+                  "method",
+                  [
+                    "of(Lnet/minecraft/text/OrderedText;)Lnet/minecraft/client/gui/tooltip/TooltipComponent;"
+                  ],
+                  "cancellable",
+                  true
+                ]
+              }
+            ]
+          },
+          {
+            "nme": "AppleSkin_ofData",
+            "acc": 10,
+            "dsc": "(Lnet/minecraft/class_5632;Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfoReturnable;)V",
+            "sig": "(Lnet/minecraft/class_5632;Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfoReturnable<Lnet/minecraft/class_5684;>;)V",
+            "vanns": [
+              {
+                "dsc": "Lorg/spongepowered/asm/mixin/injection/Inject;",
+                "vals": [
+                  "at",
+                  [
+                    {
+                      "desc": "Lorg/spongepowered/asm/mixin/injection/At;",
+                      "values": [
+                        "value",
+                        "HEAD"
+                      ],
+                      "api": 589824
+                    }
+                  ],
+                  "method",
+                  [
+                    "of(Lnet/minecraft/item/tooltip/TooltipData;)Lnet/minecraft/client/gui/tooltip/TooltipComponent;"
+                  ],
+                  "cancellable",
+                  true
+                ]
+              }
+            ]
+          }
+        ],
+        "flds": [],
+        "invanns": [
+          {
+            "dsc": "Lorg/spongepowered/asm/mixin/Mixin;",
+            "vals": [
+              "value",
+              [
+                {
+                  "itrlNme": "net/minecraft/class_5684"
+                }
+              ]
+            ]
+          }
+        ]
+      },
+      "squeek/appleskin/helpers/FoodHelper$QueriedFoodResult.class": {
+        "ver": 65,
+        "acc": 33,
+        "nme": "squeek/appleskin/helpers/FoodHelper$QueriedFoodResult",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/class_4174;Lnet/minecraft/class_4174;Lnet/minecraft/class_10124;Lnet/minecraft/class_1799;)V"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 1,
+            "nme": "defaultFoodComponent",
+            "dsc": "Lnet/minecraft/class_4174;"
+          },
+          {
+            "acc": 1,
+            "nme": "modifiedFoodComponent",
+            "dsc": "Lnet/minecraft/class_4174;"
+          },
+          {
+            "acc": 1,
+            "nme": "consumableComponent",
+            "dsc": "Lnet/minecraft/class_10124;"
+          },
+          {
+            "acc": 17,
+            "nme": "itemStack",
+            "dsc": "Lnet/minecraft/class_1799;"
+          }
+        ]
+      },
+      "squeek/appleskin/network/SaturationSyncPayload.class": {
+        "ver": 65,
+        "acc": 65585,
+        "nme": "squeek/appleskin/network/SaturationSyncPayload",
+        "super": "java/lang/Record",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/class_2540;)V"
+          },
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "(F)V"
+          },
+          {
+            "nme": "write",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/class_2540;)V"
+          },
+          {
+            "nme": "getSaturation",
+            "acc": 1,
+            "dsc": "()F"
+          },
+          {
+            "nme": "method_56479",
+            "acc": 1,
+            "dsc": "()Lnet/minecraft/class_8710$class_9154;",
+            "sig": "()Lnet/minecraft/class_8710$class_9154<+Lnet/minecraft/class_8710;>;"
+          },
+          {
+            "nme": "toString",
+            "acc": 17,
+            "dsc": "()Ljava/lang/String;"
+          },
+          {
+            "nme": "hashCode",
+            "acc": 17,
+            "dsc": "()I"
+          },
+          {
+            "nme": "equals",
+            "acc": 17,
+            "dsc": "(Ljava/lang/Object;)Z"
+          },
+          {
+            "nme": "saturation",
+            "acc": 1,
+            "dsc": "()F"
+          },
+          {
+            "nme": "<clinit>",
+            "acc": 8,
+            "dsc": "()V"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 18,
+            "nme": "saturation",
+            "dsc": "F"
+          },
+          {
+            "acc": 25,
+            "nme": "CODEC",
+            "dsc": "Lnet/minecraft/class_9139;",
+            "sig": "Lnet/minecraft/class_9139<Lnet/minecraft/class_2540;Lsqueek/appleskin/network/SaturationSyncPayload;>;"
+          },
+          {
+            "acc": 25,
+            "nme": "ID",
+            "dsc": "Lnet/minecraft/class_8710$class_9154;",
+            "sig": "Lnet/minecraft/class_8710$class_9154<Lsqueek/appleskin/network/SaturationSyncPayload;>;"
+          }
+        ]
+      },
+      "squeek/appleskin/network/NaturalRegenerationSyncPayload.class": {
+        "ver": 65,
+        "acc": 65585,
+        "nme": "squeek/appleskin/network/NaturalRegenerationSyncPayload",
+        "super": "java/lang/Record",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/class_2540;)V"
+          },
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "(Z)V"
+          },
+          {
+            "nme": "write",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/class_2540;)V"
+          },
+          {
+            "nme": "method_56479",
+            "acc": 1,
+            "dsc": "()Lnet/minecraft/class_8710$class_9154;",
+            "sig": "()Lnet/minecraft/class_8710$class_9154<+Lnet/minecraft/class_8710;>;"
+          },
+          {
+            "nme": "toString",
+            "acc": 17,
+            "dsc": "()Ljava/lang/String;"
+          },
+          {
+            "nme": "hashCode",
+            "acc": 17,
+            "dsc": "()I"
+          },
+          {
+            "nme": "equals",
+            "acc": 17,
+            "dsc": "(Ljava/lang/Object;)Z"
+          },
+          {
+            "nme": "naturalRegeneration",
+            "acc": 1,
+            "dsc": "()Z"
+          },
+          {
+            "nme": "<clinit>",
+            "acc": 8,
+            "dsc": "()V"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 18,
+            "nme": "naturalRegeneration",
+            "dsc": "Z"
+          },
+          {
+            "acc": 25,
+            "nme": "CODEC",
+            "dsc": "Lnet/minecraft/class_9139;",
+            "sig": "Lnet/minecraft/class_9139<Lnet/minecraft/class_2540;Lsqueek/appleskin/network/NaturalRegenerationSyncPayload;>;"
+          },
+          {
+            "acc": 25,
+            "nme": "ID",
+            "dsc": "Lnet/minecraft/class_8710$class_9154;",
+            "sig": "Lnet/minecraft/class_8710$class_9154<Lsqueek/appleskin/network/NaturalRegenerationSyncPayload;>;"
+          }
+        ]
+      },
+      "squeek/appleskin/network/ExhaustionSyncPayload.class": {
+        "ver": 65,
+        "acc": 65585,
+        "nme": "squeek/appleskin/network/ExhaustionSyncPayload",
+        "super": "java/lang/Record",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/class_2540;)V"
+          },
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "(F)V"
+          },
+          {
+            "nme": "write",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/class_2540;)V"
+          },
+          {
+            "nme": "getExhaustion",
+            "acc": 1,
+            "dsc": "()F"
+          },
+          {
+            "nme": "method_56479",
+            "acc": 1,
+            "dsc": "()Lnet/minecraft/class_8710$class_9154;",
+            "sig": "()Lnet/minecraft/class_8710$class_9154<+Lnet/minecraft/class_8710;>;"
+          },
+          {
+            "nme": "toString",
+            "acc": 17,
+            "dsc": "()Ljava/lang/String;"
+          },
+          {
+            "nme": "hashCode",
+            "acc": 17,
+            "dsc": "()I"
+          },
+          {
+            "nme": "equals",
+            "acc": 17,
+            "dsc": "(Ljava/lang/Object;)Z"
+          },
+          {
+            "nme": "exhaustion",
+            "acc": 1,
+            "dsc": "()F"
+          },
+          {
+            "nme": "<clinit>",
+            "acc": 8,
+            "dsc": "()V"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 18,
+            "nme": "exhaustion",
+            "dsc": "F"
+          },
+          {
+            "acc": 25,
+            "nme": "CODEC",
+            "dsc": "Lnet/minecraft/class_9139;",
+            "sig": "Lnet/minecraft/class_9139<Lnet/minecraft/class_2540;Lsqueek/appleskin/network/ExhaustionSyncPayload;>;"
+          },
+          {
+            "acc": 25,
+            "nme": "ID",
+            "dsc": "Lnet/minecraft/class_8710$class_9154;",
+            "sig": "Lnet/minecraft/class_8710$class_9154<Lsqueek/appleskin/network/ExhaustionSyncPayload;>;"
+          }
+        ]
+      },
+      "squeek/appleskin/mixin/PlayerManagerMixin.class": {
+        "ver": 65,
+        "acc": 33,
+        "nme": "squeek/appleskin/mixin/PlayerManagerMixin",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "onPlayerConnect",
+            "acc": 2,
+            "dsc": "(Lnet/minecraft/class_2535;Lnet/minecraft/class_3222;Lnet/minecraft/class_8792;Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V",
+            "vanns": [
+              {
+                "dsc": "Lorg/spongepowered/asm/mixin/injection/Inject;",
+                "vals": [
+                  "at",
+                  [
+                    {
+                      "desc": "Lorg/spongepowered/asm/mixin/injection/At;",
+                      "values": [
+                        "value",
+                        "TAIL"
+                      ],
+                      "api": 589824
+                    }
+                  ],
+                  "method",
+                  [
+                    "onPlayerConnect"
+                  ]
+                ]
+              }
+            ]
+          }
+        ],
+        "flds": [],
+        "invanns": [
+          {
+            "dsc": "Lorg/spongepowered/asm/mixin/Mixin;",
+            "vals": [
+              "value",
+              [
+                {
+                  "itrlNme": "net/minecraft/class_3324"
+                }
+              ]
+            ]
+          }
+        ]
+      },
+      "squeek/appleskin/helpers/TextureHelper$HeartType.class": {
+        "ver": 65,
+        "acc": 16433,
+        "nme": "squeek/appleskin/helpers/TextureHelper$HeartType",
+        "super": "java/lang/Enum",
+        "mthds": [
+          {
+            "nme": "values",
+            "acc": 9,
+            "dsc": "()[Lsqueek/appleskin/helpers/TextureHelper$HeartType;"
+          },
+          {
+            "nme": "valueOf",
+            "acc": 9,
+            "dsc": "(Ljava/lang/String;)Lsqueek/appleskin/helpers/TextureHelper$HeartType;"
+          },
+          {
+            "nme": "<init>",
+            "acc": 2,
+            "dsc": "(Ljava/lang/String;I)V",
+            "sig": "()V"
+          },
+          {
+            "nme": "$values",
+            "acc": 4106,
+            "dsc": "()[Lsqueek/appleskin/helpers/TextureHelper$HeartType;"
+          },
+          {
+            "nme": "<clinit>",
+            "acc": 8,
+            "dsc": "()V"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 16409,
+            "nme": "CONTAINER",
+            "dsc": "Lsqueek/appleskin/helpers/TextureHelper$HeartType;"
+          },
+          {
+            "acc": 16409,
+            "nme": "FULL",
+            "dsc": "Lsqueek/appleskin/helpers/TextureHelper$HeartType;"
+          },
+          {
+            "acc": 16409,
+            "nme": "HALF",
+            "dsc": "Lsqueek/appleskin/helpers/TextureHelper$HeartType;"
+          },
+          {
+            "acc": 4122,
+            "nme": "$VALUES",
+            "dsc": "[Lsqueek/appleskin/helpers/TextureHelper$HeartType;"
+          }
+        ]
+      },
+      "squeek/appleskin/api/event/HUDOverlayEvent$Exhaustion.class": {
+        "ver": 65,
+        "acc": 33,
+        "nme": "squeek/appleskin/api/event/HUDOverlayEvent$Exhaustion",
+        "super": "squeek/appleskin/api/event/HUDOverlayEvent",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "(FIILnet/minecraft/class_332;)V"
+          },
+          {
+            "nme": "<clinit>",
+            "acc": 8,
+            "dsc": "()V"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 17,
+            "nme": "exhaustion",
+            "dsc": "F"
+          },
+          {
+            "acc": 9,
+            "nme": "EVENT",
+            "dsc": "Lnet/fabricmc/fabric/api/event/Event;",
+            "sig": "Lnet/fabricmc/fabric/api/event/Event<Lsqueek/appleskin/api/handler/EventHandler<Lsqueek/appleskin/api/event/HUDOverlayEvent$Exhaustion;>;>;"
+          }
+        ]
+      },
+      "squeek/appleskin/mixin/ServerPlayerEntityMixin.class": {
+        "ver": 65,
+        "acc": 1057,
+        "nme": "squeek/appleskin/mixin/ServerPlayerEntityMixin",
+        "super": "net/minecraft/class_1297",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/class_1299;Lnet/minecraft/class_1937;)V",
+            "sig": "(Lnet/minecraft/class_1299<*>;Lnet/minecraft/class_1937;)V"
+          },
+          {
+            "nme": "onUpdate",
+            "acc": 0,
+            "dsc": "(Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V",
+            "vanns": [
+              {
+                "dsc": "Lorg/spongepowered/asm/mixin/injection/Inject;",
+                "vals": [
+                  "at",
+                  [
+                    {
+                      "desc": "Lorg/spongepowered/asm/mixin/injection/At;",
+                      "values": [
+                        "value",
+                        "HEAD"
+                      ],
+                      "api": 589824
+                    }
+                  ],
+                  "method",
+                  [
+                    "tick"
+                  ]
+                ]
+              }
+            ]
+          }
+        ],
+        "flds": [],
+        "invanns": [
+          {
+            "dsc": "Lorg/spongepowered/asm/mixin/Mixin;",
+            "vals": [
+              "value",
+              [
+                {
+                  "itrlNme": "net/minecraft/class_3222"
+                }
+              ]
+            ]
+          }
+        ]
+      },
+      "squeek/appleskin/api/event/TooltipOverlayEvent.class": {
+        "ver": 65,
+        "acc": 33,
+        "nme": "squeek/appleskin/api/event/TooltipOverlayEvent",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 2,
+            "dsc": "(Lnet/minecraft/class_1799;Lnet/minecraft/class_4174;Lnet/minecraft/class_4174;)V"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 17,
+            "nme": "defaultFood",
+            "dsc": "Lnet/minecraft/class_4174;"
+          },
+          {
+            "acc": 17,
+            "nme": "modifiedFood",
+            "dsc": "Lnet/minecraft/class_4174;"
+          },
+          {
+            "acc": 17,
+            "nme": "itemStack",
+            "dsc": "Lnet/minecraft/class_1799;"
+          },
+          {
+            "acc": 1,
+            "nme": "isCanceled",
+            "dsc": "Z"
+          }
+        ]
+      },
+      "squeek/appleskin/mixin/HungerManagerMixin.class": {
+        "ver": 65,
+        "acc": 33,
+        "nme": "squeek/appleskin/mixin/HungerManagerMixin",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "setExhaustion",
+            "acc": 1,
+            "dsc": "(F)V"
+          },
+          {
+            "nme": "getExhaustion",
+            "acc": 1,
+            "dsc": "()F"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 2,
+            "nme": "field_7752",
+            "dsc": "F"
+          }
+        ],
+        "invanns": [
+          {
+            "dsc": "Lorg/spongepowered/asm/mixin/Mixin;",
+            "vals": [
+              "value",
+              [
+                {
+                  "itrlNme": "net/minecraft/class_1702"
+                }
+              ]
+            ]
+          }
+        ]
+      },
+      "squeek/appleskin/client/HUDOverlayHandler.class": {
+        "ver": 65,
+        "acc": 33,
+        "nme": "squeek/appleskin/client/HUDOverlayHandler",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "init",
+            "acc": 9,
+            "dsc": "()V"
+          },
+          {
+            "nme": "onPreRenderFood",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/class_332;Lnet/minecraft/class_1657;II)V"
+          },
+          {
+            "nme": "onRenderFood",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/class_332;Lnet/minecraft/class_1657;II)V"
+          },
+          {
+            "nme": "onRenderHealth",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/class_332;Lnet/minecraft/class_1657;IIIIFIIIZ)V"
+          },
+          {
+            "nme": "drawSaturationOverlay",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/class_332;FFLnet/minecraft/class_310;IIFI)V"
+          },
+          {
+            "nme": "drawHungerOverlay",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/class_332;IILnet/minecraft/class_310;IIFZI)V"
+          },
+          {
+            "nme": "drawHealthOverlay",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/class_332;FFLnet/minecraft/class_310;IIFI)V"
+          },
+          {
+            "nme": "drawExhaustionOverlay",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/class_332;FIIF)V"
+          },
+          {
+            "nme": "drawSaturationOverlay",
+            "acc": 2,
+            "dsc": "(Lsqueek/appleskin/api/event/HUDOverlayEvent$Saturation;Lnet/minecraft/class_310;FFI)V"
+          },
+          {
+            "nme": "drawHungerOverlay",
+            "acc": 2,
+            "dsc": "(Lsqueek/appleskin/api/event/HUDOverlayEvent$HungerRestored;Lnet/minecraft/class_310;IFZI)V"
+          },
+          {
+            "nme": "drawHealthOverlay",
+            "acc": 2,
+            "dsc": "(Lsqueek/appleskin/api/event/HUDOverlayEvent$HealthRestored;Lnet/minecraft/class_310;FI)V"
+          },
+          {
+            "nme": "drawExhaustionOverlay",
+            "acc": 2,
+            "dsc": "(Lsqueek/appleskin/api/event/HUDOverlayEvent$Exhaustion;F)V"
+          },
+          {
+            "nme": "shouldRenderAnyOverlays",
+            "acc": 2,
+            "dsc": "()Z"
+          },
+          {
+            "nme": "onClientTick",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "resetFlash",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "shouldShowEstimatedHealth",
+            "acc": 2,
+            "dsc": "(Lnet/minecraft/class_1657;I)Z"
+          },
+          {
+            "nme": "<clinit>",
+            "acc": 8,
+            "dsc": "()V"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 9,
+            "nme": "INSTANCE",
+            "dsc": "Lsqueek/appleskin/client/HUDOverlayHandler;"
+          },
+          {
+            "acc": 2,
+            "nme": "unclampedFlashAlpha",
+            "dsc": "F"
+          },
+          {
+            "acc": 2,
+            "nme": "flashAlpha",
+            "dsc": "F"
+          },
+          {
+            "acc": 2,
+            "nme": "alphaDir",
+            "dsc": "B"
+          },
+          {
+            "acc": 2,
+            "nme": "needDisableBlend",
+            "dsc": "Z"
+          },
+          {
+            "acc": 17,
+            "nme": "barOffsets",
+            "dsc": "Lsqueek/appleskin/client/HUDOverlayHandler$OffsetsCache;"
+          },
+          {
+            "acc": 17,
+            "nme": "heldFood",
+            "dsc": "Lsqueek/appleskin/client/HUDOverlayHandler$HeldFoodCache;"
+          },
+          {
+            "acc": 4120,
+            "nme": "$assertionsDisabled",
+            "dsc": "Z"
+          }
+        ]
+      },
+      "squeek/appleskin/client/TooltipOverlayHandler.class": {
+        "ver": 65,
+        "acc": 33,
+        "nme": "squeek/appleskin/client/TooltipOverlayHandler",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "init",
+            "acc": 9,
+            "dsc": "()V"
+          },
+          {
+            "nme": "onItemTooltip",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/class_1799;Lnet/minecraft/class_1657;Lnet/minecraft/class_1792$class_9635;Lnet/minecraft/class_1836;Ljava/util/List;)V"
+          },
+          {
+            "nme": "onRenderTooltip",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/class_332;Lsqueek/appleskin/client/TooltipOverlayHandler$FoodOverlay;IILnet/minecraft/class_327;)V"
+          },
+          {
+            "nme": "shouldShowTooltip",
+            "acc": 2,
+            "dsc": "(Lnet/minecraft/class_1799;Lnet/minecraft/class_1836;)Z"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 9,
+            "nme": "INSTANCE",
+            "dsc": "Lsqueek/appleskin/client/TooltipOverlayHandler;"
+          }
+        ]
+      },
+      "squeek/appleskin/mixin/MinecraftClientMixin.class": {
+        "ver": 65,
+        "acc": 33,
+        "nme": "squeek/appleskin/mixin/MinecraftClientMixin",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "onTick",
+            "acc": 0,
+            "dsc": "(Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V",
+            "vanns": [
+              {
+                "dsc": "Lorg/spongepowered/asm/mixin/injection/Inject;",
+                "vals": [
+                  "at",
+                  [
+                    {
+                      "desc": "Lorg/spongepowered/asm/mixin/injection/At;",
+                      "values": [
+                        "value",
+                        "HEAD"
+                      ],
+                      "api": 589824
+                    }
+                  ],
+                  "method",
+                  [
+                    "tick"
+                  ]
+                ]
+              }
+            ]
+          }
+        ],
+        "flds": [],
+        "invanns": [
+          {
+            "dsc": "Lorg/spongepowered/asm/mixin/Mixin;",
+            "vals": [
+              "value",
+              [
+                {
+                  "itrlNme": "net/minecraft/class_310"
+                }
+              ]
+            ]
+          }
+        ]
+      },
+      "squeek/appleskin/util/IntPoint.class": {
+        "ver": 65,
+        "acc": 33,
+        "nme": "squeek/appleskin/util/IntPoint",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 1,
+            "nme": "x",
+            "dsc": "I"
+          },
+          {
+            "acc": 1,
+            "nme": "y",
+            "dsc": "I"
+          }
+        ]
+      }
+    }
+  }
+}

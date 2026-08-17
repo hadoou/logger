@@ -1,0 +1,3458 @@
+{
+  "md5": "83f15593668f8242dbf0e1517b4dc831",
+  "sha2": "706d3eaf79ce5b33a30f3ad1aaa88a2a4483abf6",
+  "sha256": "c4f1b6bcbd2c4fd8c54866cc217f455d2e8262e35ac218f8fb628c79bc76ff8e",
+  "contents": {
+    "classes": {
+      "sereneseasons/block/entity/SeasonSensorBlockEntity.class": {
+        "ver": 61,
+        "acc": 33,
+        "nme": "sereneseasons/block/entity/SeasonSensorBlockEntity",
+        "super": "net/minecraft/world/level/block/entity/BlockEntity",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/block/state/BlockState;)V"
+          }
+        ],
+        "flds": []
+      },
+      "sereneseasons/item/CalendarItem.class": {
+        "ver": 61,
+        "acc": 33,
+        "nme": "sereneseasons/item/CalendarItem",
+        "super": "net/minecraft/world/item/Item",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/world/item/Item$Properties;)V"
+          },
+          {
+            "nme": "m_7373_",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/level/Level;Ljava/util/List;Lnet/minecraft/world/item/TooltipFlag;)V",
+            "sig": "(Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/level/Level;Ljava/util/List<Lnet/minecraft/network/chat/Component;>;Lnet/minecraft/world/item/TooltipFlag;)V"
+          }
+        ],
+        "flds": []
+      },
+      "sereneseasons/season/SeasonColorHandlers.class": {
+        "ver": 61,
+        "acc": 33,
+        "nme": "sereneseasons/season/SeasonColorHandlers",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "setup",
+            "acc": 9,
+            "dsc": "()V"
+          },
+          {
+            "nme": "registerResolverOverride",
+            "acc": 9,
+            "dsc": "(Lsereneseasons/season/SeasonColorHandlers$ResolverType;Lsereneseasons/season/SeasonColorHandlers$ColorOverride;)V"
+          },
+          {
+            "nme": "registerGrassAndFoliageColorHandlers",
+            "acc": 10,
+            "dsc": "()V"
+          },
+          {
+            "nme": "resolveColors",
+            "acc": 10,
+            "dsc": "(Lsereneseasons/season/SeasonColorHandlers$ResolverType;Lnet/minecraft/world/level/biome/Biome;DD)I"
+          },
+          {
+            "nme": "lambda$registerGrassAndFoliageColorHandlers$1",
+            "acc": 4106,
+            "dsc": "(Lnet/minecraft/world/level/biome/Biome;DD)I"
+          },
+          {
+            "nme": "lambda$registerGrassAndFoliageColorHandlers$0",
+            "acc": 4106,
+            "dsc": "(Lnet/minecraft/world/level/biome/Biome;DD)I"
+          },
+          {
+            "nme": "<clinit>",
+            "acc": 8,
+            "dsc": "()V"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 26,
+            "nme": "resolverOverrides",
+            "dsc": "Lcom/google/common/collect/Multimap;",
+            "sig": "Lcom/google/common/collect/Multimap<Lsereneseasons/season/SeasonColorHandlers$ResolverType;Lsereneseasons/season/SeasonColorHandlers$ColorOverride;>;"
+          },
+          {
+            "acc": 10,
+            "nme": "originalGrassColorResolver",
+            "dsc": "Lnet/minecraft/world/level/ColorResolver;"
+          },
+          {
+            "acc": 10,
+            "nme": "originalFoliageColorResolver",
+            "dsc": "Lnet/minecraft/world/level/ColorResolver;"
+          }
+        ]
+      },
+      "sereneseasons/api/season/SeasonChangedEvent.class": {
+        "ver": 61,
+        "acc": 33,
+        "nme": "sereneseasons/api/season/SeasonChangedEvent",
+        "super": "glitchcore/event/Event",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 2,
+            "dsc": "(Lnet/minecraft/world/level/Level;Ljava/lang/Object;Ljava/lang/Object;)V",
+            "sig": "(Lnet/minecraft/world/level/Level;TT;TT;)V"
+          },
+          {
+            "nme": "getLevel",
+            "acc": 1,
+            "dsc": "()Lnet/minecraft/world/level/Level;"
+          },
+          {
+            "nme": "getPrevSeason",
+            "acc": 1,
+            "dsc": "()Ljava/lang/Object;",
+            "sig": "()TT;"
+          },
+          {
+            "nme": "getNewSeason",
+            "acc": 1,
+            "dsc": "()Ljava/lang/Object;",
+            "sig": "()TT;"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 18,
+            "nme": "level",
+            "dsc": "Lnet/minecraft/world/level/Level;"
+          },
+          {
+            "acc": 18,
+            "nme": "prevSeason",
+            "dsc": "Ljava/lang/Object;",
+            "sig": "TT;"
+          },
+          {
+            "acc": 18,
+            "nme": "newSeason",
+            "dsc": "Ljava/lang/Object;",
+            "sig": "TT;"
+          }
+        ]
+      },
+      "sereneseasons/init/ModBlocks.class": {
+        "ver": 61,
+        "acc": 33,
+        "nme": "sereneseasons/init/ModBlocks",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "registerBlocks",
+            "acc": 9,
+            "dsc": "(Ljava/util/function/BiConsumer;)V",
+            "sig": "(Ljava/util/function/BiConsumer<Lnet/minecraft/resources/ResourceLocation;Lnet/minecraft/world/level/block/Block;>;)V"
+          },
+          {
+            "nme": "register",
+            "acc": 10,
+            "dsc": "(Ljava/util/function/BiConsumer;Lnet/minecraft/world/level/block/Block;Ljava/lang/String;)Lnet/minecraft/world/level/block/Block;",
+            "sig": "(Ljava/util/function/BiConsumer<Lnet/minecraft/resources/ResourceLocation;Lnet/minecraft/world/level/block/Block;>;Lnet/minecraft/world/level/block/Block;Ljava/lang/String;)Lnet/minecraft/world/level/block/Block;"
+          }
+        ],
+        "flds": []
+      },
+      "sereneseasons/init/ModClient.class": {
+        "ver": 61,
+        "acc": 33,
+        "nme": "sereneseasons/init/ModClient",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "setup",
+            "acc": 9,
+            "dsc": "()V"
+          },
+          {
+            "nme": "addClientHandlers",
+            "acc": 9,
+            "dsc": "()V"
+          },
+          {
+            "nme": "registerItemProperties",
+            "acc": 9,
+            "dsc": "()V"
+          },
+          {
+            "nme": "registerBlockColors",
+            "acc": 10,
+            "dsc": "(Lglitchcore/event/client/RegisterColorsEvent$Block;)V"
+          },
+          {
+            "nme": "lambda$registerBlockColors$0",
+            "acc": 4106,
+            "dsc": "(Lnet/minecraft/world/level/block/state/BlockState;Lnet/minecraft/world/level/BlockAndTintGetter;Lnet/minecraft/core/BlockPos;I)I"
+          }
+        ],
+        "flds": []
+      },
+      "sereneseasons/season/SeasonTime.class": {
+        "ver": 61,
+        "acc": 49,
+        "nme": "sereneseasons/season/SeasonTime",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "(I)V"
+          },
+          {
+            "nme": "getDayDuration",
+            "acc": 1,
+            "dsc": "()I"
+          },
+          {
+            "nme": "getSubSeasonDuration",
+            "acc": 1,
+            "dsc": "()I"
+          },
+          {
+            "nme": "getSeasonDuration",
+            "acc": 1,
+            "dsc": "()I"
+          },
+          {
+            "nme": "getCycleDuration",
+            "acc": 1,
+            "dsc": "()I"
+          },
+          {
+            "nme": "getSeasonCycleTicks",
+            "acc": 1,
+            "dsc": "()I"
+          },
+          {
+            "nme": "getDay",
+            "acc": 1,
+            "dsc": "()I"
+          },
+          {
+            "nme": "getSubSeason",
+            "acc": 1,
+            "dsc": "()Lsereneseasons/api/season/Season$SubSeason;"
+          },
+          {
+            "nme": "getSeason",
+            "acc": 1,
+            "dsc": "()Lsereneseasons/api/season/Season;"
+          },
+          {
+            "nme": "getTropicalSeason",
+            "acc": 1,
+            "dsc": "()Lsereneseasons/api/season/Season$TropicalSeason;"
+          },
+          {
+            "nme": "<clinit>",
+            "acc": 8,
+            "dsc": "()V"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 25,
+            "nme": "ZERO",
+            "dsc": "Lsereneseasons/season/SeasonTime;"
+          },
+          {
+            "acc": 17,
+            "nme": "time",
+            "dsc": "I"
+          }
+        ]
+      },
+      "sereneseasons/command/SeasonArgument.class": {
+        "ver": 61,
+        "acc": 33,
+        "nme": "sereneseasons/command/SeasonArgument",
+        "super": "net/minecraft/commands/arguments/StringRepresentableArgument",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 2,
+            "dsc": "()V"
+          },
+          {
+            "nme": "season",
+            "acc": 9,
+            "dsc": "()Lnet/minecraft/commands/arguments/StringRepresentableArgument;",
+            "sig": "()Lnet/minecraft/commands/arguments/StringRepresentableArgument<Lsereneseasons/api/season/Season$SubSeason;>;"
+          },
+          {
+            "nme": "getSeason",
+            "acc": 9,
+            "dsc": "(Lcom/mojang/brigadier/context/CommandContext;Ljava/lang/String;)Lsereneseasons/api/season/Season$SubSeason;",
+            "sig": "(Lcom/mojang/brigadier/context/CommandContext<Lnet/minecraft/commands/CommandSourceStack;>;Ljava/lang/String;)Lsereneseasons/api/season/Season$SubSeason;"
+          },
+          {
+            "nme": "parse",
+            "acc": 4161,
+            "dsc": "(Lcom/mojang/brigadier/StringReader;)Ljava/lang/Object;",
+            "exs": [
+              "com/mojang/brigadier/exceptions/CommandSyntaxException"
+            ]
+          }
+        ],
+        "flds": []
+      },
+      "sereneseasons/init/ModBlockEntities.class": {
+        "ver": 61,
+        "acc": 33,
+        "nme": "sereneseasons/init/ModBlockEntities",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "registerBlockEntities",
+            "acc": 9,
+            "dsc": "(Ljava/util/function/BiConsumer;)V",
+            "sig": "(Ljava/util/function/BiConsumer<Lnet/minecraft/resources/ResourceLocation;Lnet/minecraft/world/level/block/entity/BlockEntityType<*>;>;)V"
+          },
+          {
+            "nme": "register",
+            "acc": 10,
+            "dsc": "(Ljava/util/function/BiConsumer;Ljava/lang/String;Lnet/minecraft/world/level/block/entity/BlockEntityType$Builder;)Lnet/minecraft/world/level/block/entity/BlockEntityType;",
+            "sig": "<T:Lnet/minecraft/world/level/block/entity/BlockEntity;>(Ljava/util/function/BiConsumer<Lnet/minecraft/resources/ResourceLocation;Lnet/minecraft/world/level/block/entity/BlockEntityType<*>;>;Ljava/lang/String;Lnet/minecraft/world/level/block/entity/BlockEntityType$Builder<TT;>;)Lnet/minecraft/world/level/block/entity/BlockEntityType<*>;"
+          }
+        ],
+        "flds": []
+      },
+      "sereneseasons/api/season/ISeasonColorProvider.class": {
+        "ver": 61,
+        "acc": 1537,
+        "nme": "sereneseasons/api/season/ISeasonColorProvider",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "getGrassOverlay",
+            "acc": 1025,
+            "dsc": "()I"
+          },
+          {
+            "nme": "getGrassSaturationMultiplier",
+            "acc": 1025,
+            "dsc": "()F"
+          },
+          {
+            "nme": "getFoliageOverlay",
+            "acc": 1025,
+            "dsc": "()I"
+          },
+          {
+            "nme": "getFoliageSaturationMultiplier",
+            "acc": 1025,
+            "dsc": "()F"
+          },
+          {
+            "nme": "getBirchColor",
+            "acc": 1025,
+            "dsc": "()I"
+          }
+        ],
+        "flds": []
+      },
+      "sereneseasons/season/SeasonColorHandlers$1.class": {
+        "ver": 61,
+        "acc": 4128,
+        "nme": "sereneseasons/season/SeasonColorHandlers$1",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<clinit>",
+            "acc": 8,
+            "dsc": "()V"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 4120,
+            "nme": "$SwitchMap$sereneseasons$season$SeasonColorHandlers$ResolverType",
+            "dsc": "[I"
+          }
+        ]
+      },
+      "sereneseasons/forge/core/SereneSeasonsForge.class": {
+        "ver": 61,
+        "acc": 33,
+        "nme": "sereneseasons/forge/core/SereneSeasonsForge",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "clientSetup",
+            "acc": 2,
+            "dsc": "(Lnet/minecraftforge/fml/event/lifecycle/FMLClientSetupEvent;)V"
+          }
+        ],
+        "flds": [],
+        "vanns": [
+          {
+            "dsc": "Lnet/minecraftforge/fml/common/Mod;",
+            "vals": [
+              "value",
+              "sereneseasons"
+            ]
+          }
+        ]
+      },
+      "sereneseasons/item/CalendarType.class": {
+        "ver": 61,
+        "acc": 16433,
+        "nme": "sereneseasons/item/CalendarType",
+        "super": "java/lang/Enum",
+        "mthds": [
+          {
+            "nme": "values",
+            "acc": 9,
+            "dsc": "()[Lsereneseasons/item/CalendarType;"
+          },
+          {
+            "nme": "valueOf",
+            "acc": 9,
+            "dsc": "(Ljava/lang/String;)Lsereneseasons/item/CalendarType;"
+          },
+          {
+            "nme": "<init>",
+            "acc": 2,
+            "dsc": "(Ljava/lang/String;I)V",
+            "sig": "()V"
+          },
+          {
+            "nme": "$values",
+            "acc": 4106,
+            "dsc": "()[Lsereneseasons/item/CalendarType;"
+          },
+          {
+            "nme": "<clinit>",
+            "acc": 8,
+            "dsc": "()V"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 16409,
+            "nme": "STANDARD",
+            "dsc": "Lsereneseasons/item/CalendarType;"
+          },
+          {
+            "acc": 16409,
+            "nme": "TROPICAL",
+            "dsc": "Lsereneseasons/item/CalendarType;"
+          },
+          {
+            "acc": 16409,
+            "nme": "NONE",
+            "dsc": "Lsereneseasons/item/CalendarType;"
+          },
+          {
+            "acc": 4122,
+            "nme": "$VALUES",
+            "dsc": "[Lsereneseasons/item/CalendarType;"
+          }
+        ]
+      },
+      "sereneseasons/util/Color.class": {
+        "ver": 61,
+        "acc": 33,
+        "nme": "sereneseasons/util/Color",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "(III)V"
+          },
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "(I)V"
+          },
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "(DDD)V"
+          },
+          {
+            "nme": "getRed",
+            "acc": 1,
+            "dsc": "()I"
+          },
+          {
+            "nme": "getGreen",
+            "acc": 1,
+            "dsc": "()I"
+          },
+          {
+            "nme": "getBlue",
+            "acc": 1,
+            "dsc": "()I"
+          },
+          {
+            "nme": "toInt",
+            "acc": 1,
+            "dsc": "()I"
+          },
+          {
+            "nme": "toHSV",
+            "acc": 1,
+            "dsc": "()[D"
+          },
+          {
+            "nme": "convertRGBtoHSV",
+            "acc": 9,
+            "dsc": "(DDD)[D"
+          },
+          {
+            "nme": "convertHSVtoRGB",
+            "acc": 9,
+            "dsc": "(DDD)Lsereneseasons/util/Color;"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 0,
+            "nme": "r",
+            "dsc": "I"
+          },
+          {
+            "acc": 0,
+            "nme": "g",
+            "dsc": "I"
+          },
+          {
+            "acc": 0,
+            "nme": "b",
+            "dsc": "I"
+          }
+        ]
+      },
+      "sereneseasons/command/CommandGetSeason.class": {
+        "ver": 61,
+        "acc": 33,
+        "nme": "sereneseasons/command/CommandGetSeason",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "register",
+            "acc": 8,
+            "dsc": "()Lcom/mojang/brigadier/builder/ArgumentBuilder;",
+            "sig": "()Lcom/mojang/brigadier/builder/ArgumentBuilder<Lnet/minecraft/commands/CommandSourceStack;*>;"
+          },
+          {
+            "nme": "getSeason",
+            "acc": 10,
+            "dsc": "(Lnet/minecraft/commands/CommandSourceStack;Lnet/minecraft/world/level/Level;)I"
+          },
+          {
+            "nme": "lambda$getSeason$1",
+            "acc": 4106,
+            "dsc": "(Lsereneseasons/season/SeasonTime;I)Lnet/minecraft/network/chat/Component;"
+          },
+          {
+            "nme": "lambda$register$0",
+            "acc": 4106,
+            "dsc": "(Lcom/mojang/brigadier/context/CommandContext;)I",
+            "exs": [
+              "com/mojang/brigadier/exceptions/CommandSyntaxException"
+            ]
+          }
+        ],
+        "flds": []
+      },
+      "sereneseasons/forge/datagen/SSBlockStateProvider.class": {
+        "ver": 61,
+        "acc": 33,
+        "nme": "sereneseasons/forge/datagen/SSBlockStateProvider",
+        "super": "net/minecraftforge/client/model/generators/BlockStateProvider",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/data/PackOutput;Lnet/minecraftforge/common/data/ExistingFileHelper;)V"
+          },
+          {
+            "nme": "registerStatesAndModels",
+            "acc": 4,
+            "dsc": "()V"
+          },
+          {
+            "nme": "registerSeasonSensor",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "seasonSensor",
+            "acc": 1,
+            "dsc": "(Lsereneseasons/api/season/Season;)Lnet/minecraftforge/client/model/generators/BlockModelBuilder;"
+          },
+          {
+            "nme": "daylightDetector",
+            "acc": 1,
+            "dsc": "(Ljava/lang/String;Lnet/minecraft/resources/ResourceLocation;Lnet/minecraft/resources/ResourceLocation;)Lnet/minecraftforge/client/model/generators/BlockModelBuilder;"
+          },
+          {
+            "nme": "lambda$registerSeasonSensor$1",
+            "acc": 4106,
+            "dsc": "(Ljava/util/Map;Lnet/minecraft/world/level/block/state/BlockState;)[Lnet/minecraftforge/client/model/generators/ConfiguredModel;"
+          },
+          {
+            "nme": "lambda$registerSeasonSensor$0",
+            "acc": 4106,
+            "dsc": "(Lsereneseasons/api/season/Season;)Lsereneseasons/api/season/Season;"
+          }
+        ],
+        "flds": []
+      },
+      "sereneseasons/init/ModConfig.class": {
+        "ver": 61,
+        "acc": 33,
+        "nme": "sereneseasons/init/ModConfig",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "init",
+            "acc": 9,
+            "dsc": "()V"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 9,
+            "nme": "fertility",
+            "dsc": "Lsereneseasons/config/FertilityConfig;"
+          },
+          {
+            "acc": 9,
+            "nme": "seasons",
+            "dsc": "Lsereneseasons/config/SeasonsConfig;"
+          }
+        ]
+      },
+      "sereneseasons/mixin/client/MixinLevelRenderer.class": {
+        "ver": 61,
+        "acc": 33,
+        "nme": "sereneseasons/mixin/client/MixinLevelRenderer",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "renderSnowAndRain_getBiome",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/world/level/Level;Lnet/minecraft/core/BlockPos;)Lnet/minecraft/core/Holder;",
+            "sig": "(Lnet/minecraft/world/level/Level;Lnet/minecraft/core/BlockPos;)Lnet/minecraft/core/Holder<Lnet/minecraft/world/level/biome/Biome;>;",
+            "vanns": [
+              {
+                "dsc": "Lorg/spongepowered/asm/mixin/injection/Redirect;",
+                "vals": [
+                  "method",
+                  [
+                    "renderSnowAndRain"
+                  ],
+                  "at",
+                  {
+                    "desc": "Lorg/spongepowered/asm/mixin/injection/At;",
+                    "values": [
+                      "value",
+                      "INVOKE",
+                      "target",
+                      "Lnet/minecraft/world/level/Level;getBiome(Lnet/minecraft/core/BlockPos;)Lnet/minecraft/core/Holder;"
+                    ],
+                    "api": 589824
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "nme": "renderSnowAndRain_hasPrecipitation",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/world/level/biome/Biome;)Z",
+            "vanns": [
+              {
+                "dsc": "Lorg/spongepowered/asm/mixin/injection/Redirect;",
+                "vals": [
+                  "method",
+                  [
+                    "renderSnowAndRain"
+                  ],
+                  "at",
+                  {
+                    "desc": "Lorg/spongepowered/asm/mixin/injection/At;",
+                    "values": [
+                      "value",
+                      "INVOKE",
+                      "target",
+                      "Lnet/minecraft/world/level/biome/Biome;hasPrecipitation()Z"
+                    ],
+                    "api": 589824
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "flds": [
+          {
+            "acc": 2,
+            "nme": "renderSnowAndRain_level",
+            "dsc": "Lnet/minecraft/world/level/Level;"
+          },
+          {
+            "acc": 2,
+            "nme": "renderSnowAndRain_biome",
+            "dsc": "Lnet/minecraft/core/Holder;",
+            "sig": "Lnet/minecraft/core/Holder<Lnet/minecraft/world/level/biome/Biome;>;"
+          }
+        ],
+        "invanns": [
+          {
+            "dsc": "Lorg/spongepowered/asm/mixin/Mixin;",
+            "vals": [
+              "value",
+              [
+                {
+                  "itrlNme": "net/minecraft/client/renderer/LevelRenderer"
+                }
+              ]
+            ]
+          }
+        ]
+      },
+      "sereneseasons/init/ModTags.class": {
+        "ver": 61,
+        "acc": 33,
+        "nme": "sereneseasons/init/ModTags",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "setup",
+            "acc": 9,
+            "dsc": "()V"
+          },
+          {
+            "nme": "createBiomeTag",
+            "acc": 10,
+            "dsc": "(Lnet/minecraft/resources/ResourceLocation;)Lnet/minecraft/tags/TagKey;",
+            "sig": "(Lnet/minecraft/resources/ResourceLocation;)Lnet/minecraft/tags/TagKey<Lnet/minecraft/world/level/biome/Biome;>;"
+          }
+        ],
+        "flds": []
+      },
+      "sereneseasons/api/season/ISeasonState.class": {
+        "ver": 61,
+        "acc": 1537,
+        "nme": "sereneseasons/api/season/ISeasonState",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "getDayDuration",
+            "acc": 1025,
+            "dsc": "()I"
+          },
+          {
+            "nme": "getSubSeasonDuration",
+            "acc": 1025,
+            "dsc": "()I"
+          },
+          {
+            "nme": "getSeasonDuration",
+            "acc": 1025,
+            "dsc": "()I"
+          },
+          {
+            "nme": "getCycleDuration",
+            "acc": 1025,
+            "dsc": "()I"
+          },
+          {
+            "nme": "getSeasonCycleTicks",
+            "acc": 1025,
+            "dsc": "()I"
+          },
+          {
+            "nme": "getDay",
+            "acc": 1025,
+            "dsc": "()I"
+          },
+          {
+            "nme": "getSubSeason",
+            "acc": 1025,
+            "dsc": "()Lsereneseasons/api/season/Season$SubSeason;"
+          },
+          {
+            "nme": "getSeason",
+            "acc": 1025,
+            "dsc": "()Lsereneseasons/api/season/Season;"
+          },
+          {
+            "nme": "getTropicalSeason",
+            "acc": 1025,
+            "dsc": "()Lsereneseasons/api/season/Season$TropicalSeason;"
+          }
+        ],
+        "flds": []
+      },
+      "sereneseasons/forge/datagen/DataGenerationHandler.class": {
+        "ver": 61,
+        "acc": 33,
+        "nme": "sereneseasons/forge/datagen/DataGenerationHandler",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "onGatherData",
+            "acc": 9,
+            "dsc": "(Lnet/minecraftforge/data/event/GatherDataEvent;)V",
+            "vanns": [
+              {
+                "dsc": "Lnet/minecraftforge/eventbus/api/SubscribeEvent;"
+              }
+            ]
+          }
+        ],
+        "flds": [],
+        "vanns": [
+          {
+            "dsc": "Lnet/minecraftforge/fml/common/Mod$EventBusSubscriber;",
+            "vals": [
+              "bus",
+              [
+                "Lnet/minecraftforge/fml/common/Mod$EventBusSubscriber$Bus;",
+                "MOD"
+              ]
+            ]
+          }
+        ]
+      },
+      "sereneseasons/api/SSGameRules.class": {
+        "ver": 61,
+        "acc": 33,
+        "nme": "sereneseasons/api/SSGameRules",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 9,
+            "nme": "RULE_DOSEASONCYCLE",
+            "dsc": "Lnet/minecraft/world/level/GameRules$Key;",
+            "sig": "Lnet/minecraft/world/level/GameRules$Key<Lnet/minecraft/world/level/GameRules$BooleanValue;>;"
+          }
+        ]
+      },
+      "sereneseasons/api/season/SeasonChangedEvent$Tropical.class": {
+        "ver": 61,
+        "acc": 33,
+        "nme": "sereneseasons/api/season/SeasonChangedEvent$Tropical",
+        "super": "sereneseasons/api/season/SeasonChangedEvent",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/world/level/Level;Lsereneseasons/api/season/Season$TropicalSeason;Lsereneseasons/api/season/Season$TropicalSeason;)V"
+          }
+        ],
+        "flds": []
+      },
+      "sereneseasons/season/SeasonHooks.class": {
+        "ver": 61,
+        "acc": 33,
+        "nme": "sereneseasons/season/SeasonHooks",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "shouldSnowHook",
+            "acc": 9,
+            "dsc": "(Lnet/minecraft/world/level/biome/Biome;Lnet/minecraft/world/level/LevelReader;Lnet/minecraft/core/BlockPos;)Z"
+          },
+          {
+            "nme": "shouldFreezeWarmEnoughToRainHook",
+            "acc": 9,
+            "dsc": "(Lnet/minecraft/world/level/biome/Biome;Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/LevelReader;)Z"
+          },
+          {
+            "nme": "isRainingAtHook",
+            "acc": 9,
+            "dsc": "(Lnet/minecraft/world/level/Level;Lnet/minecraft/core/BlockPos;)Z"
+          },
+          {
+            "nme": "getPrecipitationAtTickIceAndSnowHook",
+            "acc": 9,
+            "dsc": "(Lnet/minecraft/world/level/LevelReader;Lnet/minecraft/world/level/biome/Biome;Lnet/minecraft/core/BlockPos;)Lnet/minecraft/world/level/biome/Biome$Precipitation;"
+          },
+          {
+            "nme": "coldEnoughToSnowSeasonal",
+            "acc": 9,
+            "dsc": "(Lnet/minecraft/world/level/LevelReader;Lnet/minecraft/core/BlockPos;)Z"
+          },
+          {
+            "nme": "coldEnoughToSnowSeasonal",
+            "acc": 9,
+            "dsc": "(Lnet/minecraft/world/level/LevelReader;Lnet/minecraft/core/Holder;Lnet/minecraft/core/BlockPos;)Z",
+            "sig": "(Lnet/minecraft/world/level/LevelReader;Lnet/minecraft/core/Holder<Lnet/minecraft/world/level/biome/Biome;>;Lnet/minecraft/core/BlockPos;)Z"
+          },
+          {
+            "nme": "warmEnoughToRainSeasonal",
+            "acc": 9,
+            "dsc": "(Lnet/minecraft/world/level/LevelReader;Lnet/minecraft/core/BlockPos;)Z"
+          },
+          {
+            "nme": "warmEnoughToRainSeasonal",
+            "acc": 9,
+            "dsc": "(Lnet/minecraft/world/level/LevelReader;Lnet/minecraft/core/Holder;Lnet/minecraft/core/BlockPos;)Z",
+            "sig": "(Lnet/minecraft/world/level/LevelReader;Lnet/minecraft/core/Holder<Lnet/minecraft/world/level/biome/Biome;>;Lnet/minecraft/core/BlockPos;)Z"
+          },
+          {
+            "nme": "getBiomeTemperature",
+            "acc": 9,
+            "dsc": "(Lnet/minecraft/world/level/LevelReader;Lnet/minecraft/core/Holder;Lnet/minecraft/core/BlockPos;)F",
+            "sig": "(Lnet/minecraft/world/level/LevelReader;Lnet/minecraft/core/Holder<Lnet/minecraft/world/level/biome/Biome;>;Lnet/minecraft/core/BlockPos;)F"
+          },
+          {
+            "nme": "getBiomeTemperature",
+            "acc": 9,
+            "dsc": "(Lnet/minecraft/world/level/Level;Lnet/minecraft/core/Holder;Lnet/minecraft/core/BlockPos;)F",
+            "sig": "(Lnet/minecraft/world/level/Level;Lnet/minecraft/core/Holder<Lnet/minecraft/world/level/biome/Biome;>;Lnet/minecraft/core/BlockPos;)F"
+          },
+          {
+            "nme": "getBiomeTemperatureInSeason",
+            "acc": 9,
+            "dsc": "(Lsereneseasons/api/season/Season$SubSeason;Lnet/minecraft/core/Holder;Lnet/minecraft/core/BlockPos;)F",
+            "sig": "(Lsereneseasons/api/season/Season$SubSeason;Lnet/minecraft/core/Holder<Lnet/minecraft/world/level/biome/Biome;>;Lnet/minecraft/core/BlockPos;)F"
+          },
+          {
+            "nme": "hasPrecipitationSeasonal",
+            "acc": 9,
+            "dsc": "(Lnet/minecraft/world/level/Level;Lnet/minecraft/core/Holder;)Z",
+            "sig": "(Lnet/minecraft/world/level/Level;Lnet/minecraft/core/Holder<Lnet/minecraft/world/level/biome/Biome;>;)Z"
+          },
+          {
+            "nme": "getPrecipitationAtSeasonal",
+            "acc": 9,
+            "dsc": "(Lnet/minecraft/world/level/Level;Lnet/minecraft/core/Holder;Lnet/minecraft/core/BlockPos;)Lnet/minecraft/world/level/biome/Biome$Precipitation;",
+            "sig": "(Lnet/minecraft/world/level/Level;Lnet/minecraft/core/Holder<Lnet/minecraft/world/level/biome/Biome;>;Lnet/minecraft/core/BlockPos;)Lnet/minecraft/world/level/biome/Biome$Precipitation;"
+          }
+        ],
+        "flds": []
+      },
+      "sereneseasons/command/CommandSetSeason.class": {
+        "ver": 61,
+        "acc": 33,
+        "nme": "sereneseasons/command/CommandSetSeason",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "register",
+            "acc": 8,
+            "dsc": "()Lcom/mojang/brigadier/builder/ArgumentBuilder;",
+            "sig": "()Lcom/mojang/brigadier/builder/ArgumentBuilder<Lnet/minecraft/commands/CommandSourceStack;*>;"
+          },
+          {
+            "nme": "setSeason",
+            "acc": 10,
+            "dsc": "(Lnet/minecraft/commands/CommandSourceStack;Lnet/minecraft/world/level/Level;Lsereneseasons/api/season/Season$SubSeason;)I"
+          },
+          {
+            "nme": "lambda$setSeason$1",
+            "acc": 4106,
+            "dsc": "(Lsereneseasons/api/season/Season$SubSeason;)Lnet/minecraft/network/chat/Component;"
+          },
+          {
+            "nme": "lambda$register$0",
+            "acc": 4106,
+            "dsc": "(Lcom/mojang/brigadier/context/CommandContext;)I",
+            "exs": [
+              "com/mojang/brigadier/exceptions/CommandSyntaxException"
+            ]
+          }
+        ],
+        "flds": []
+      },
+      "sereneseasons/api/SSItems.class": {
+        "ver": 61,
+        "acc": 33,
+        "nme": "sereneseasons/api/SSItems",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 9,
+            "nme": "CALENDAR",
+            "dsc": "Lnet/minecraft/world/item/Item;"
+          },
+          {
+            "acc": 9,
+            "nme": "SS_ICON",
+            "dsc": "Lnet/minecraft/world/item/Item;"
+          },
+          {
+            "acc": 9,
+            "nme": "SEASON_SENSOR",
+            "dsc": "Lnet/minecraft/world/item/Item;"
+          }
+        ]
+      },
+      "sereneseasons/command/SeasonCommands.class": {
+        "ver": 61,
+        "acc": 33,
+        "nme": "sereneseasons/command/SeasonCommands",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "onRegisterCommands",
+            "acc": 9,
+            "dsc": "(Lglitchcore/event/server/RegisterCommandsEvent;)V"
+          },
+          {
+            "nme": "registerArguments",
+            "acc": 9,
+            "dsc": "(Ljava/util/function/BiConsumer;)V",
+            "sig": "(Ljava/util/function/BiConsumer<Lnet/minecraft/resources/ResourceLocation;Lnet/minecraft/commands/synchronization/ArgumentTypeInfo<**>;>;)V"
+          },
+          {
+            "nme": "register",
+            "acc": 10,
+            "dsc": "(Ljava/util/function/BiConsumer;Ljava/lang/String;Ljava/lang/Class;Lnet/minecraft/commands/synchronization/ArgumentTypeInfo;)Lnet/minecraft/commands/synchronization/ArgumentTypeInfo;",
+            "sig": "(Ljava/util/function/BiConsumer<Lnet/minecraft/resources/ResourceLocation;Lnet/minecraft/commands/synchronization/ArgumentTypeInfo<**>;>;Ljava/lang/String;Ljava/lang/Class<*>;Lnet/minecraft/commands/synchronization/ArgumentTypeInfo<**>;)Lnet/minecraft/commands/synchronization/ArgumentTypeInfo<**>;"
+          },
+          {
+            "nme": "lambda$onRegisterCommands$0",
+            "acc": 4106,
+            "dsc": "(Lnet/minecraft/commands/CommandSourceStack;)Z"
+          }
+        ],
+        "flds": []
+      },
+      "sereneseasons/api/season/Season$SubSeason.class": {
+        "ver": 61,
+        "acc": 16433,
+        "nme": "sereneseasons/api/season/Season$SubSeason",
+        "super": "java/lang/Enum",
+        "mthds": [
+          {
+            "nme": "values",
+            "acc": 9,
+            "dsc": "()[Lsereneseasons/api/season/Season$SubSeason;"
+          },
+          {
+            "nme": "valueOf",
+            "acc": 9,
+            "dsc": "(Ljava/lang/String;)Lsereneseasons/api/season/Season$SubSeason;"
+          },
+          {
+            "nme": "<init>",
+            "acc": 2,
+            "dsc": "(Ljava/lang/String;ILsereneseasons/api/season/Season;IFIFI)V",
+            "sig": "(Lsereneseasons/api/season/Season;IFIFI)V"
+          },
+          {
+            "nme": "<init>",
+            "acc": 2,
+            "dsc": "(Ljava/lang/String;ILsereneseasons/api/season/Season;III)V",
+            "sig": "(Lsereneseasons/api/season/Season;III)V"
+          },
+          {
+            "nme": "applyProperties",
+            "acc": 1,
+            "dsc": "(Lsereneseasons/config/SeasonsConfig$SeasonProperties;)V"
+          },
+          {
+            "nme": "getSeason",
+            "acc": 1,
+            "dsc": "()Lsereneseasons/api/season/Season;"
+          },
+          {
+            "nme": "getGrassOverlay",
+            "acc": 1,
+            "dsc": "()I"
+          },
+          {
+            "nme": "getGrassSaturationMultiplier",
+            "acc": 1,
+            "dsc": "()F"
+          },
+          {
+            "nme": "getFoliageOverlay",
+            "acc": 1,
+            "dsc": "()I"
+          },
+          {
+            "nme": "getFoliageSaturationMultiplier",
+            "acc": 1,
+            "dsc": "()F"
+          },
+          {
+            "nme": "getBirchColor",
+            "acc": 1,
+            "dsc": "()I"
+          },
+          {
+            "nme": "m_7912_",
+            "acc": 1,
+            "dsc": "()Ljava/lang/String;"
+          },
+          {
+            "nme": "$values",
+            "acc": 4106,
+            "dsc": "()[Lsereneseasons/api/season/Season$SubSeason;"
+          },
+          {
+            "nme": "<clinit>",
+            "acc": 8,
+            "dsc": "()V"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 16409,
+            "nme": "EARLY_SPRING",
+            "dsc": "Lsereneseasons/api/season/Season$SubSeason;"
+          },
+          {
+            "acc": 16409,
+            "nme": "MID_SPRING",
+            "dsc": "Lsereneseasons/api/season/Season$SubSeason;"
+          },
+          {
+            "acc": 16409,
+            "nme": "LATE_SPRING",
+            "dsc": "Lsereneseasons/api/season/Season$SubSeason;"
+          },
+          {
+            "acc": 16409,
+            "nme": "EARLY_SUMMER",
+            "dsc": "Lsereneseasons/api/season/Season$SubSeason;"
+          },
+          {
+            "acc": 16409,
+            "nme": "MID_SUMMER",
+            "dsc": "Lsereneseasons/api/season/Season$SubSeason;"
+          },
+          {
+            "acc": 16409,
+            "nme": "LATE_SUMMER",
+            "dsc": "Lsereneseasons/api/season/Season$SubSeason;"
+          },
+          {
+            "acc": 16409,
+            "nme": "EARLY_AUTUMN",
+            "dsc": "Lsereneseasons/api/season/Season$SubSeason;"
+          },
+          {
+            "acc": 16409,
+            "nme": "MID_AUTUMN",
+            "dsc": "Lsereneseasons/api/season/Season$SubSeason;"
+          },
+          {
+            "acc": 16409,
+            "nme": "LATE_AUTUMN",
+            "dsc": "Lsereneseasons/api/season/Season$SubSeason;"
+          },
+          {
+            "acc": 16409,
+            "nme": "EARLY_WINTER",
+            "dsc": "Lsereneseasons/api/season/Season$SubSeason;"
+          },
+          {
+            "acc": 16409,
+            "nme": "MID_WINTER",
+            "dsc": "Lsereneseasons/api/season/Season$SubSeason;"
+          },
+          {
+            "acc": 16409,
+            "nme": "LATE_WINTER",
+            "dsc": "Lsereneseasons/api/season/Season$SubSeason;"
+          },
+          {
+            "acc": 25,
+            "nme": "CODEC",
+            "dsc": "Lcom/mojang/serialization/Codec;",
+            "sig": "Lcom/mojang/serialization/Codec<Lsereneseasons/api/season/Season$SubSeason;>;"
+          },
+          {
+            "acc": 25,
+            "nme": "VALUES",
+            "dsc": "[Lsereneseasons/api/season/Season$SubSeason;"
+          },
+          {
+            "acc": 2,
+            "nme": "season",
+            "dsc": "Lsereneseasons/api/season/Season;"
+          },
+          {
+            "acc": 2,
+            "nme": "grassOverlay",
+            "dsc": "I"
+          },
+          {
+            "acc": 2,
+            "nme": "grassSaturationMultiplier",
+            "dsc": "F"
+          },
+          {
+            "acc": 2,
+            "nme": "foliageOverlay",
+            "dsc": "I"
+          },
+          {
+            "acc": 2,
+            "nme": "foliageSaturationMultiplier",
+            "dsc": "F"
+          },
+          {
+            "acc": 2,
+            "nme": "birchColor",
+            "dsc": "I"
+          },
+          {
+            "acc": 4122,
+            "nme": "$VALUES",
+            "dsc": "[Lsereneseasons/api/season/Season$SubSeason;"
+          }
+        ]
+      },
+      "sereneseasons/season/SeasonHandler.class": {
+        "ver": 61,
+        "acc": 33,
+        "nme": "sereneseasons/season/SeasonHandler",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "onLevelTick",
+            "acc": 9,
+            "dsc": "(Lglitchcore/event/TickEvent$Level;)V"
+          },
+          {
+            "nme": "onJoinLevel",
+            "acc": 9,
+            "dsc": "(Lglitchcore/event/player/PlayerEvent$JoinLevel;)V"
+          },
+          {
+            "nme": "sendSeasonUpdate",
+            "acc": 9,
+            "dsc": "(Lnet/minecraft/world/level/Level;)V"
+          },
+          {
+            "nme": "getSeasonSavedData",
+            "acc": 9,
+            "dsc": "(Lnet/minecraft/world/level/Level;)Lsereneseasons/season/SeasonSavedData;"
+          },
+          {
+            "nme": "getServerSeasonState",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/world/level/Level;)Lsereneseasons/api/season/ISeasonState;"
+          },
+          {
+            "nme": "getClientSeasonState",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/world/level/Level;)Lsereneseasons/api/season/ISeasonState;"
+          },
+          {
+            "nme": "usesTropicalSeasons",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/core/Holder;)Z",
+            "sig": "(Lnet/minecraft/core/Holder<Lnet/minecraft/world/level/biome/Biome;>;)Z"
+          },
+          {
+            "nme": "lambda$getSeasonSavedData$1",
+            "acc": 4106,
+            "dsc": "(Lnet/minecraft/server/level/ServerLevel;)Lsereneseasons/season/SeasonSavedData;"
+          },
+          {
+            "nme": "lambda$sendSeasonUpdate$0",
+            "acc": 4106,
+            "dsc": "(Lsereneseasons/season/SeasonTime;Lnet/minecraft/resources/ResourceKey;)Ljava/lang/Integer;"
+          },
+          {
+            "nme": "<clinit>",
+            "acc": 8,
+            "dsc": "()V"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 25,
+            "nme": "lastDayTimes",
+            "dsc": "Ljava/util/HashMap;",
+            "sig": "Ljava/util/HashMap<Lnet/minecraft/world/level/Level;Ljava/lang/Long;>;"
+          },
+          {
+            "acc": 25,
+            "nme": "updateTicks",
+            "dsc": "Ljava/util/HashMap;",
+            "sig": "Ljava/util/HashMap<Lnet/minecraft/world/level/Level;Ljava/lang/Integer;>;"
+          },
+          {
+            "acc": 25,
+            "nme": "prevServerSeasonCycleTicks",
+            "dsc": "Ljava/util/HashMap;",
+            "sig": "Ljava/util/HashMap<Lnet/minecraft/resources/ResourceKey<Lnet/minecraft/world/level/Level;>;Ljava/lang/Integer;>;"
+          }
+        ]
+      },
+      "sereneseasons/mixin/client/MixinBiomeClient.class": {
+        "ver": 61,
+        "acc": 33,
+        "nme": "sereneseasons/mixin/client/MixinBiomeClient",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "onGetPrecipitationAt",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/core/BlockPos;Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfoReturnable;)V",
+            "sig": "(Lnet/minecraft/core/BlockPos;Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfoReturnable<Lnet/minecraft/world/level/biome/Biome$Precipitation;>;)V",
+            "vanns": [
+              {
+                "dsc": "Lorg/spongepowered/asm/mixin/injection/Inject;",
+                "vals": [
+                  "method",
+                  [
+                    "getPrecipitationAt"
+                  ],
+                  "at",
+                  [
+                    {
+                      "desc": "Lorg/spongepowered/asm/mixin/injection/At;",
+                      "values": [
+                        "value",
+                        "HEAD"
+                      ],
+                      "api": 589824
+                    }
+                  ],
+                  "cancellable",
+                  true
+                ]
+              }
+            ]
+          }
+        ],
+        "flds": [],
+        "invanns": [
+          {
+            "dsc": "Lorg/spongepowered/asm/mixin/Mixin;",
+            "vals": [
+              "value",
+              [
+                {
+                  "itrlNme": "net/minecraft/world/level/biome/Biome"
+                }
+              ]
+            ]
+          }
+        ]
+      },
+      "sereneseasons/core/SereneSeasons.class": {
+        "ver": 61,
+        "acc": 33,
+        "nme": "sereneseasons/core/SereneSeasons",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "init",
+            "acc": 9,
+            "dsc": "()V"
+          },
+          {
+            "nme": "addRegistrars",
+            "acc": 10,
+            "dsc": "()V"
+          },
+          {
+            "nme": "addHandlers",
+            "acc": 10,
+            "dsc": "()V"
+          },
+          {
+            "nme": "<clinit>",
+            "acc": 8,
+            "dsc": "()V"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 25,
+            "nme": "MOD_ID",
+            "dsc": "Ljava/lang/String;",
+            "val": "sereneseasons"
+          },
+          {
+            "acc": 25,
+            "nme": "LOGGER",
+            "dsc": "Lorg/apache/logging/log4j/Logger;"
+          }
+        ]
+      },
+      "sereneseasons/api/season/Season.class": {
+        "ver": 61,
+        "acc": 16433,
+        "nme": "sereneseasons/api/season/Season",
+        "super": "java/lang/Enum",
+        "mthds": [
+          {
+            "nme": "values",
+            "acc": 9,
+            "dsc": "()[Lsereneseasons/api/season/Season;"
+          },
+          {
+            "nme": "valueOf",
+            "acc": 9,
+            "dsc": "(Ljava/lang/String;)Lsereneseasons/api/season/Season;"
+          },
+          {
+            "nme": "<init>",
+            "acc": 2,
+            "dsc": "(Ljava/lang/String;I)V",
+            "sig": "()V"
+          },
+          {
+            "nme": "$values",
+            "acc": 4106,
+            "dsc": "()[Lsereneseasons/api/season/Season;"
+          },
+          {
+            "nme": "<clinit>",
+            "acc": 8,
+            "dsc": "()V"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 16409,
+            "nme": "SPRING",
+            "dsc": "Lsereneseasons/api/season/Season;"
+          },
+          {
+            "acc": 16409,
+            "nme": "SUMMER",
+            "dsc": "Lsereneseasons/api/season/Season;"
+          },
+          {
+            "acc": 16409,
+            "nme": "AUTUMN",
+            "dsc": "Lsereneseasons/api/season/Season;"
+          },
+          {
+            "acc": 16409,
+            "nme": "WINTER",
+            "dsc": "Lsereneseasons/api/season/Season;"
+          },
+          {
+            "acc": 4122,
+            "nme": "$VALUES",
+            "dsc": "[Lsereneseasons/api/season/Season;"
+          }
+        ]
+      },
+      "sereneseasons/config/SeasonsConfig.class": {
+        "ver": 61,
+        "acc": 33,
+        "nme": "sereneseasons/config/SeasonsConfig",
+        "super": "glitchcore/config/Config",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "load",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "isDimensionWhitelisted",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/resources/ResourceKey;)Z",
+            "sig": "(Lnet/minecraft/resources/ResourceKey<Lnet/minecraft/world/level/Level;>;)Z"
+          },
+          {
+            "nme": "getSeasonProperties",
+            "acc": 1,
+            "dsc": "(Lsereneseasons/api/season/Season$SubSeason;)Lsereneseasons/config/SeasonsConfig$SeasonProperties;",
+            "vanns": [
+              {
+                "dsc": "Ljavax/annotation/Nullable;"
+              }
+            ]
+          },
+          {
+            "nme": "lambda$load$6",
+            "acc": 4098,
+            "dsc": "()Ljava/util/Map;"
+          },
+          {
+            "nme": "lambda$load$5",
+            "acc": 4106,
+            "dsc": "(Ljava/util/HashMap;Ljava/util/Optional;)V"
+          },
+          {
+            "nme": "lambda$load$4",
+            "acc": 4106,
+            "dsc": "(Ljava/util/HashMap;Lsereneseasons/config/SeasonsConfig$SeasonProperties;)V"
+          },
+          {
+            "nme": "lambda$static$3",
+            "acc": 4106,
+            "dsc": "(Ljava/util/List;)Z"
+          },
+          {
+            "nme": "lambda$static$2",
+            "acc": 4106,
+            "dsc": "(Lsereneseasons/config/SeasonsConfig$SeasonProperties;)Lsereneseasons/config/SeasonsConfig$SeasonProperties;"
+          },
+          {
+            "nme": "lambda$static$1",
+            "acc": 4106,
+            "dsc": "(Ljava/util/List;)Z"
+          },
+          {
+            "nme": "lambda$static$0",
+            "acc": 4106,
+            "dsc": "(Lcom/electronwill/nightconfig/core/Config;)Z"
+          },
+          {
+            "nme": "<clinit>",
+            "acc": 8,
+            "dsc": "()V"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 26,
+            "nme": "THUNDER_DELAY",
+            "dsc": "Lnet/minecraft/util/valueproviders/IntProvider;"
+          },
+          {
+            "acc": 26,
+            "nme": "SEASON_PROPERTIES_VALIDATOR",
+            "dsc": "Ljava/util/function/Predicate;",
+            "sig": "Ljava/util/function/Predicate<Ljava/util/List<Lcom/electronwill/nightconfig/core/Config;>;>;"
+          },
+          {
+            "acc": 26,
+            "nme": "DEFAULT_SEASON_PROPERTIES",
+            "dsc": "Ljava/util/Map;",
+            "sig": "Ljava/util/Map<Lsereneseasons/api/season/Season$SubSeason;Lsereneseasons/config/SeasonsConfig$SeasonProperties;>;"
+          },
+          {
+            "acc": 26,
+            "nme": "RESOURCE_LOCATION_VALIDATOR",
+            "dsc": "Ljava/util/function/Predicate;",
+            "sig": "Ljava/util/function/Predicate<Ljava/util/List<Ljava/lang/String;>;>;"
+          },
+          {
+            "acc": 1,
+            "nme": "generateSnowAndIce",
+            "dsc": "Z"
+          },
+          {
+            "acc": 1,
+            "nme": "changeWeatherFrequency",
+            "dsc": "Z"
+          },
+          {
+            "acc": 1,
+            "nme": "dayDuration",
+            "dsc": "I"
+          },
+          {
+            "acc": 1,
+            "nme": "subSeasonDuration",
+            "dsc": "I"
+          },
+          {
+            "acc": 1,
+            "nme": "startingSubSeason",
+            "dsc": "I"
+          },
+          {
+            "acc": 1,
+            "nme": "progressSeasonWhileOffline",
+            "dsc": "Z"
+          },
+          {
+            "acc": 1,
+            "nme": "changeGrassColor",
+            "dsc": "Z"
+          },
+          {
+            "acc": 1,
+            "nme": "changeFoliageColor",
+            "dsc": "Z"
+          },
+          {
+            "acc": 1,
+            "nme": "changeBirchColor",
+            "dsc": "Z"
+          },
+          {
+            "acc": 1,
+            "nme": "whitelistedDimensions",
+            "dsc": "Ljava/util/List;",
+            "sig": "Ljava/util/List<Ljava/lang/String;>;"
+          },
+          {
+            "acc": 26,
+            "nme": "defaultWhitelistedDimensions",
+            "dsc": "Ljava/util/List;",
+            "sig": "Ljava/util/List<Ljava/lang/String;>;"
+          },
+          {
+            "acc": 2,
+            "nme": "seasonProperties",
+            "dsc": "Ljava/util/List;",
+            "sig": "Ljava/util/List<Lcom/electronwill/nightconfig/core/Config;>;"
+          },
+          {
+            "acc": 2,
+            "nme": "seasonPropertiesMapper",
+            "dsc": "Ljava/util/function/Supplier;",
+            "sig": "Ljava/util/function/Supplier<Ljava/util/Map<Lsereneseasons/api/season/Season$SubSeason;Lsereneseasons/config/SeasonsConfig$SeasonProperties;>;>;"
+          }
+        ]
+      },
+      "sereneseasons/season/SeasonHooks$1.class": {
+        "ver": 61,
+        "acc": 4128,
+        "nme": "sereneseasons/season/SeasonHooks$1",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<clinit>",
+            "acc": 8,
+            "dsc": "()V"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 4120,
+            "nme": "$SwitchMap$sereneseasons$api$season$Season$TropicalSeason",
+            "dsc": "[I"
+          }
+        ]
+      },
+      "sereneseasons/init/ModItems.class": {
+        "ver": 61,
+        "acc": 33,
+        "nme": "sereneseasons/init/ModItems",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "setup",
+            "acc": 9,
+            "dsc": "(Ljava/util/function/BiConsumer;)V",
+            "sig": "(Ljava/util/function/BiConsumer<Lnet/minecraft/resources/ResourceLocation;Lnet/minecraft/world/item/Item;>;)V"
+          },
+          {
+            "nme": "registerItems",
+            "acc": 9,
+            "dsc": "(Ljava/util/function/BiConsumer;)V",
+            "sig": "(Ljava/util/function/BiConsumer<Lnet/minecraft/resources/ResourceLocation;Lnet/minecraft/world/item/Item;>;)V"
+          },
+          {
+            "nme": "registerBlockItems",
+            "acc": 9,
+            "dsc": "(Ljava/util/function/BiConsumer;)V",
+            "sig": "(Ljava/util/function/BiConsumer<Lnet/minecraft/resources/ResourceLocation;Lnet/minecraft/world/item/Item;>;)V"
+          },
+          {
+            "nme": "register",
+            "acc": 10,
+            "dsc": "(Ljava/util/function/BiConsumer;Ljava/lang/String;Lnet/minecraft/world/item/Item;)Lnet/minecraft/world/item/Item;",
+            "sig": "(Ljava/util/function/BiConsumer<Lnet/minecraft/resources/ResourceLocation;Lnet/minecraft/world/item/Item;>;Ljava/lang/String;Lnet/minecraft/world/item/Item;)Lnet/minecraft/world/item/Item;"
+          }
+        ],
+        "flds": []
+      },
+      "sereneseasons/mixin/MixinLevel.class": {
+        "ver": 61,
+        "acc": 33,
+        "nme": "sereneseasons/mixin/MixinLevel",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "onIsRainingAt",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/core/BlockPos;Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfoReturnable;)V",
+            "sig": "(Lnet/minecraft/core/BlockPos;Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfoReturnable<Ljava/lang/Boolean;>;)V",
+            "vanns": [
+              {
+                "dsc": "Lorg/spongepowered/asm/mixin/injection/Inject;",
+                "vals": [
+                  "method",
+                  [
+                    "isRainingAt"
+                  ],
+                  "at",
+                  [
+                    {
+                      "desc": "Lorg/spongepowered/asm/mixin/injection/At;",
+                      "values": [
+                        "value",
+                        "HEAD"
+                      ],
+                      "api": 589824
+                    }
+                  ],
+                  "cancellable",
+                  true
+                ]
+              }
+            ]
+          }
+        ],
+        "flds": [],
+        "invanns": [
+          {
+            "dsc": "Lorg/spongepowered/asm/mixin/Mixin;",
+            "vals": [
+              "value",
+              [
+                {
+                  "itrlNme": "net/minecraft/world/level/Level"
+                }
+              ]
+            ]
+          }
+        ]
+      },
+      "sereneseasons/config/FertilityConfig.class": {
+        "ver": 61,
+        "acc": 33,
+        "nme": "sereneseasons/config/FertilityConfig",
+        "super": "glitchcore/config/Config",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "load",
+            "acc": 1,
+            "dsc": "()V"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 1,
+            "nme": "seasonalCrops",
+            "dsc": "Z"
+          },
+          {
+            "acc": 1,
+            "nme": "cropTooltips",
+            "dsc": "Z"
+          },
+          {
+            "acc": 1,
+            "nme": "outOfSeasonCropBehavior",
+            "dsc": "I"
+          },
+          {
+            "acc": 1,
+            "nme": "undergroundFertilityLevel",
+            "dsc": "I"
+          }
+        ]
+      },
+      "sereneseasons/init/ModAPI.class": {
+        "ver": 61,
+        "acc": 33,
+        "nme": "sereneseasons/init/ModAPI",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "init",
+            "acc": 9,
+            "dsc": "()V"
+          },
+          {
+            "nme": "<clinit>",
+            "acc": 8,
+            "dsc": "()V"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 26,
+            "nme": "SEASON_HANDLER",
+            "dsc": "Lsereneseasons/season/SeasonHandler;"
+          }
+        ]
+      },
+      "sereneseasons/api/SSBlockEntities.class": {
+        "ver": 61,
+        "acc": 33,
+        "nme": "sereneseasons/api/SSBlockEntities",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 9,
+            "nme": "SEASON_SENSOR",
+            "dsc": "Lnet/minecraft/world/level/block/entity/BlockEntityType;",
+            "sig": "Lnet/minecraft/world/level/block/entity/BlockEntityType<*>;"
+          }
+        ]
+      },
+      "sereneseasons/season/SeasonColorHandlers$ColorOverride.class": {
+        "ver": 61,
+        "acc": 1537,
+        "nme": "sereneseasons/season/SeasonColorHandlers$ColorOverride",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "apply",
+            "acc": 1025,
+            "dsc": "(IIILnet/minecraft/core/Holder;DD)I",
+            "sig": "(IIILnet/minecraft/core/Holder<Lnet/minecraft/world/level/biome/Biome;>;DD)I"
+          }
+        ],
+        "flds": []
+      },
+      "sereneseasons/init/ModFertility.class": {
+        "ver": 61,
+        "acc": 33,
+        "nme": "sereneseasons/init/ModFertility",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "populate",
+            "acc": 9,
+            "dsc": "()V"
+          },
+          {
+            "nme": "isCrop",
+            "acc": 9,
+            "dsc": "(Lnet/minecraft/world/level/block/state/BlockState;)Z"
+          },
+          {
+            "nme": "isCropFertile",
+            "acc": 9,
+            "dsc": "(Ljava/lang/String;Lnet/minecraft/world/level/Level;Lnet/minecraft/core/BlockPos;)Z"
+          },
+          {
+            "nme": "populateSeasonCrops",
+            "acc": 10,
+            "dsc": "(Lnet/minecraft/tags/TagKey;Ljava/util/Set;I)V",
+            "sig": "(Lnet/minecraft/tags/TagKey<Lnet/minecraft/world/level/block/Block;>;Ljava/util/Set<Ljava/lang/String;>;I)V"
+          },
+          {
+            "nme": "populateSeasonSeeds",
+            "acc": 10,
+            "dsc": "(Lnet/minecraft/tags/TagKey;Ljava/util/Set;I)V",
+            "sig": "(Lnet/minecraft/tags/TagKey<Lnet/minecraft/world/item/Item;>;Ljava/util/Set<Ljava/lang/String;>;I)V"
+          },
+          {
+            "nme": "setupTooltips",
+            "acc": 9,
+            "dsc": "(Lglitchcore/event/client/ItemTooltipEvent;)V"
+          },
+          {
+            "nme": "lambda$populateSeasonSeeds$1",
+            "acc": 4106,
+            "dsc": "(Ljava/util/Set;ILnet/minecraft/core/HolderSet$Named;)V"
+          },
+          {
+            "nme": "lambda$populateSeasonCrops$0",
+            "acc": 4106,
+            "dsc": "(Ljava/util/Set;ILnet/minecraft/core/HolderSet$Named;)V"
+          },
+          {
+            "nme": "<clinit>",
+            "acc": 8,
+            "dsc": "()V"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 10,
+            "nme": "springPlants",
+            "dsc": "Ljava/util/Set;",
+            "sig": "Ljava/util/Set<Ljava/lang/String;>;"
+          },
+          {
+            "acc": 10,
+            "nme": "summerPlants",
+            "dsc": "Ljava/util/Set;",
+            "sig": "Ljava/util/Set<Ljava/lang/String;>;"
+          },
+          {
+            "acc": 10,
+            "nme": "autumnPlants",
+            "dsc": "Ljava/util/Set;",
+            "sig": "Ljava/util/Set<Ljava/lang/String;>;"
+          },
+          {
+            "acc": 10,
+            "nme": "winterPlants",
+            "dsc": "Ljava/util/Set;",
+            "sig": "Ljava/util/Set<Ljava/lang/String;>;"
+          },
+          {
+            "acc": 10,
+            "nme": "allListedPlants",
+            "dsc": "Ljava/util/Set;",
+            "sig": "Ljava/util/Set<Ljava/lang/String;>;"
+          },
+          {
+            "acc": 10,
+            "nme": "seedSeasons",
+            "dsc": "Ljava/util/HashMap;",
+            "sig": "Ljava/util/HashMap<Ljava/lang/String;Ljava/lang/Integer;>;"
+          }
+        ]
+      },
+      "sereneseasons/season/SeasonalCropGrowthHandler.class": {
+        "ver": 61,
+        "acc": 33,
+        "nme": "sereneseasons/season/SeasonalCropGrowthHandler",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "onTagsUpdated",
+            "acc": 9,
+            "dsc": "(Lglitchcore/event/TagsUpdatedEvent;)V"
+          },
+          {
+            "nme": "onCropGrowth",
+            "acc": 9,
+            "dsc": "(Lnet/minecraft/world/level/Level;Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/block/state/BlockState;Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V"
+          },
+          {
+            "nme": "applyBonemeal",
+            "acc": 9,
+            "dsc": "(Lglitchcore/event/player/PlayerInteractEvent$UseBlock;)V"
+          },
+          {
+            "nme": "isGlassAboveBlock",
+            "acc": 10,
+            "dsc": "(Lnet/minecraft/world/level/Level;Lnet/minecraft/core/BlockPos;)Z"
+          }
+        ],
+        "flds": []
+      },
+      "sereneseasons/api/season/SeasonHelper$ISeasonDataProvider.class": {
+        "ver": 61,
+        "acc": 1537,
+        "nme": "sereneseasons/api/season/SeasonHelper$ISeasonDataProvider",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "getServerSeasonState",
+            "acc": 1025,
+            "dsc": "(Lnet/minecraft/world/level/Level;)Lsereneseasons/api/season/ISeasonState;"
+          },
+          {
+            "nme": "getClientSeasonState",
+            "acc": 1025,
+            "dsc": "(Lnet/minecraft/world/level/Level;)Lsereneseasons/api/season/ISeasonState;"
+          },
+          {
+            "nme": "usesTropicalSeasons",
+            "acc": 1025,
+            "dsc": "(Lnet/minecraft/core/Holder;)Z",
+            "sig": "(Lnet/minecraft/core/Holder<Lnet/minecraft/world/level/biome/Biome;>;)Z"
+          }
+        ],
+        "flds": []
+      },
+      "sereneseasons/init/ModPackets.class": {
+        "ver": 61,
+        "acc": 33,
+        "nme": "sereneseasons/init/ModPackets",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "init",
+            "acc": 9,
+            "dsc": "()V"
+          },
+          {
+            "nme": "register",
+            "acc": 9,
+            "dsc": "(Ljava/lang/String;Lglitchcore/network/CustomPacket;)V",
+            "sig": "(Ljava/lang/String;Lglitchcore/network/CustomPacket<*>;)V"
+          },
+          {
+            "nme": "<clinit>",
+            "acc": 8,
+            "dsc": "()V"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 26,
+            "nme": "CHANNEL",
+            "dsc": "Lnet/minecraft/resources/ResourceLocation;"
+          },
+          {
+            "acc": 25,
+            "nme": "HANDLER",
+            "dsc": "Lglitchcore/network/PacketHandler;"
+          }
+        ]
+      },
+      "sereneseasons/init/ModTags$Biomes.class": {
+        "ver": 61,
+        "acc": 33,
+        "nme": "sereneseasons/init/ModTags$Biomes",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "setup",
+            "acc": 10,
+            "dsc": "()V"
+          },
+          {
+            "nme": "<clinit>",
+            "acc": 8,
+            "dsc": "()V"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 25,
+            "nme": "BLACKLISTED_BIOMES",
+            "dsc": "Lnet/minecraft/tags/TagKey;",
+            "sig": "Lnet/minecraft/tags/TagKey<Lnet/minecraft/world/level/biome/Biome;>;"
+          },
+          {
+            "acc": 25,
+            "nme": "INFERTILE_BIOMES",
+            "dsc": "Lnet/minecraft/tags/TagKey;",
+            "sig": "Lnet/minecraft/tags/TagKey<Lnet/minecraft/world/level/biome/Biome;>;"
+          },
+          {
+            "acc": 25,
+            "nme": "LESSER_COLOR_CHANGE_BIOMES",
+            "dsc": "Lnet/minecraft/tags/TagKey;",
+            "sig": "Lnet/minecraft/tags/TagKey<Lnet/minecraft/world/level/biome/Biome;>;"
+          },
+          {
+            "acc": 25,
+            "nme": "TROPICAL_BIOMES",
+            "dsc": "Lnet/minecraft/tags/TagKey;",
+            "sig": "Lnet/minecraft/tags/TagKey<Lnet/minecraft/world/level/biome/Biome;>;"
+          }
+        ]
+      },
+      "sereneseasons/util/SeasonColorUtil.class": {
+        "ver": 61,
+        "acc": 33,
+        "nme": "sereneseasons/util/SeasonColorUtil",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "multiplyColours",
+            "acc": 9,
+            "dsc": "(II)I"
+          },
+          {
+            "nme": "overlayBlendChannel",
+            "acc": 9,
+            "dsc": "(II)I"
+          },
+          {
+            "nme": "overlayBlend",
+            "acc": 9,
+            "dsc": "(II)I"
+          },
+          {
+            "nme": "mixColours",
+            "acc": 9,
+            "dsc": "(IIF)I"
+          },
+          {
+            "nme": "saturateColour",
+            "acc": 9,
+            "dsc": "(IF)I"
+          },
+          {
+            "nme": "applySeasonalGrassColouring",
+            "acc": 9,
+            "dsc": "(Lsereneseasons/api/season/ISeasonColorProvider;Lnet/minecraft/core/Holder;I)I",
+            "sig": "(Lsereneseasons/api/season/ISeasonColorProvider;Lnet/minecraft/core/Holder<Lnet/minecraft/world/level/biome/Biome;>;I)I"
+          },
+          {
+            "nme": "applySeasonalFoliageColouring",
+            "acc": 9,
+            "dsc": "(Lsereneseasons/api/season/ISeasonColorProvider;Lnet/minecraft/core/Holder;I)I",
+            "sig": "(Lsereneseasons/api/season/ISeasonColorProvider;Lnet/minecraft/core/Holder<Lnet/minecraft/world/level/biome/Biome;>;I)I"
+          }
+        ],
+        "flds": []
+      },
+      "sereneseasons/init/ModTags$Blocks.class": {
+        "ver": 61,
+        "acc": 33,
+        "nme": "sereneseasons/init/ModTags$Blocks",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "setup",
+            "acc": 10,
+            "dsc": "()V"
+          },
+          {
+            "nme": "create",
+            "acc": 9,
+            "dsc": "(Lnet/minecraft/resources/ResourceLocation;)Lnet/minecraft/tags/TagKey;",
+            "sig": "(Lnet/minecraft/resources/ResourceLocation;)Lnet/minecraft/tags/TagKey<Lnet/minecraft/world/level/block/Block;>;"
+          },
+          {
+            "nme": "<clinit>",
+            "acc": 8,
+            "dsc": "()V"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 25,
+            "nme": "SPRING_CROPS",
+            "dsc": "Lnet/minecraft/tags/TagKey;",
+            "sig": "Lnet/minecraft/tags/TagKey<Lnet/minecraft/world/level/block/Block;>;"
+          },
+          {
+            "acc": 25,
+            "nme": "SUMMER_CROPS",
+            "dsc": "Lnet/minecraft/tags/TagKey;",
+            "sig": "Lnet/minecraft/tags/TagKey<Lnet/minecraft/world/level/block/Block;>;"
+          },
+          {
+            "acc": 25,
+            "nme": "AUTUMN_CROPS",
+            "dsc": "Lnet/minecraft/tags/TagKey;",
+            "sig": "Lnet/minecraft/tags/TagKey<Lnet/minecraft/world/level/block/Block;>;"
+          },
+          {
+            "acc": 25,
+            "nme": "WINTER_CROPS",
+            "dsc": "Lnet/minecraft/tags/TagKey;",
+            "sig": "Lnet/minecraft/tags/TagKey<Lnet/minecraft/world/level/block/Block;>;"
+          },
+          {
+            "acc": 25,
+            "nme": "YEAR_ROUND_CROPS",
+            "dsc": "Lnet/minecraft/tags/TagKey;",
+            "sig": "Lnet/minecraft/tags/TagKey<Lnet/minecraft/world/level/block/Block;>;"
+          },
+          {
+            "acc": 25,
+            "nme": "GREENHOUSE_GLASS",
+            "dsc": "Lnet/minecraft/tags/TagKey;",
+            "sig": "Lnet/minecraft/tags/TagKey<Lnet/minecraft/world/level/block/Block;>;"
+          },
+          {
+            "acc": 25,
+            "nme": "UNBREAKABLE_INFERTILE_CROPS",
+            "dsc": "Lnet/minecraft/tags/TagKey;",
+            "sig": "Lnet/minecraft/tags/TagKey<Lnet/minecraft/world/level/block/Block;>;"
+          }
+        ]
+      },
+      "sereneseasons/network/SyncSeasonCyclePacket.class": {
+        "ver": 61,
+        "acc": 33,
+        "nme": "sereneseasons/network/SyncSeasonCyclePacket",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/resources/ResourceKey;I)V",
+            "sig": "(Lnet/minecraft/resources/ResourceKey<Lnet/minecraft/world/level/Level;>;I)V"
+          },
+          {
+            "nme": "encode",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/network/FriendlyByteBuf;)V"
+          },
+          {
+            "nme": "decode",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/network/FriendlyByteBuf;)Lsereneseasons/network/SyncSeasonCyclePacket;"
+          },
+          {
+            "nme": "handle",
+            "acc": 1,
+            "dsc": "(Lsereneseasons/network/SyncSeasonCyclePacket;Lglitchcore/network/CustomPacket$Context;)V"
+          },
+          {
+            "nme": "handle",
+            "acc": 4161,
+            "dsc": "(Lglitchcore/network/CustomPacket;Lglitchcore/network/CustomPacket$Context;)V"
+          },
+          {
+            "nme": "decode",
+            "acc": 4161,
+            "dsc": "(Lnet/minecraft/network/FriendlyByteBuf;)Lglitchcore/network/CustomPacket;"
+          },
+          {
+            "nme": "lambda$handle$0",
+            "acc": 4106,
+            "dsc": "(Lsereneseasons/network/SyncSeasonCyclePacket;Lnet/minecraft/world/entity/player/Player;)V"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 1,
+            "nme": "dimension",
+            "dsc": "Lnet/minecraft/resources/ResourceKey;",
+            "sig": "Lnet/minecraft/resources/ResourceKey<Lnet/minecraft/world/level/Level;>;"
+          },
+          {
+            "acc": 1,
+            "nme": "seasonCycleTicks",
+            "dsc": "I"
+          }
+        ]
+      },
+      "sereneseasons/mixin/MixinBiome.class": {
+        "ver": 61,
+        "acc": 33,
+        "nme": "sereneseasons/mixin/MixinBiome",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "onShouldSnow",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/world/level/LevelReader;Lnet/minecraft/core/BlockPos;Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfoReturnable;)V",
+            "sig": "(Lnet/minecraft/world/level/LevelReader;Lnet/minecraft/core/BlockPos;Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfoReturnable<Ljava/lang/Boolean;>;)V",
+            "vanns": [
+              {
+                "dsc": "Lorg/spongepowered/asm/mixin/injection/Inject;",
+                "vals": [
+                  "method",
+                  [
+                    "shouldSnow"
+                  ],
+                  "at",
+                  [
+                    {
+                      "desc": "Lorg/spongepowered/asm/mixin/injection/At;",
+                      "values": [
+                        "value",
+                        "HEAD"
+                      ],
+                      "api": 589824
+                    }
+                  ],
+                  "cancellable",
+                  true
+                ]
+              }
+            ]
+          },
+          {
+            "nme": "onShouldFreeze_warmEnoughToRain",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/world/level/biome/Biome;Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/LevelReader;)Z",
+            "vanns": [
+              {
+                "dsc": "Lorg/spongepowered/asm/mixin/injection/Redirect;",
+                "vals": [
+                  "method",
+                  [
+                    "shouldFreeze(Lnet/minecraft/world/level/LevelReader;Lnet/minecraft/core/BlockPos;Z)Z"
+                  ],
+                  "at",
+                  {
+                    "desc": "Lorg/spongepowered/asm/mixin/injection/At;",
+                    "values": [
+                      "value",
+                      "INVOKE",
+                      "target",
+                      "net/minecraft/world/level/biome/Biome.warmEnoughToRain(Lnet/minecraft/core/BlockPos;)Z"
+                    ],
+                    "api": 589824
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "flds": [],
+        "invanns": [
+          {
+            "dsc": "Lorg/spongepowered/asm/mixin/Mixin;",
+            "vals": [
+              "value",
+              [
+                {
+                  "itrlNme": "net/minecraft/world/level/biome/Biome"
+                }
+              ]
+            ]
+          }
+        ]
+      },
+      "sereneseasons/api/season/SeasonHelper.class": {
+        "ver": 61,
+        "acc": 33,
+        "nme": "sereneseasons/api/season/SeasonHelper",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "getSeasonState",
+            "acc": 9,
+            "dsc": "(Lnet/minecraft/world/level/Level;)Lsereneseasons/api/season/ISeasonState;"
+          },
+          {
+            "nme": "usesTropicalSeasons",
+            "acc": 9,
+            "dsc": "(Lnet/minecraft/core/Holder;)Z",
+            "sig": "(Lnet/minecraft/core/Holder<Lnet/minecraft/world/level/biome/Biome;>;)Z"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 9,
+            "nme": "dataProvider",
+            "dsc": "Lsereneseasons/api/season/SeasonHelper$ISeasonDataProvider;"
+          }
+        ]
+      },
+      "sereneseasons/forge/datagen/SSItemModelProvider.class": {
+        "ver": 61,
+        "acc": 33,
+        "nme": "sereneseasons/forge/datagen/SSItemModelProvider",
+        "super": "net/minecraftforge/client/model/generators/ItemModelProvider",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/data/PackOutput;Lnet/minecraftforge/common/data/ExistingFileHelper;)V"
+          },
+          {
+            "nme": "registerModels",
+            "acc": 4,
+            "dsc": "()V"
+          },
+          {
+            "nme": "registerCalendarModels",
+            "acc": 2,
+            "dsc": "()V"
+          },
+          {
+            "nme": "basicItem",
+            "acc": 1,
+            "dsc": "(Lnet/minecraftforge/registries/RegistryObject;)Lnet/minecraftforge/client/model/generators/ItemModelBuilder;",
+            "sig": "(Lnet/minecraftforge/registries/RegistryObject<Lnet/minecraft/world/item/Item;>;)Lnet/minecraftforge/client/model/generators/ItemModelBuilder;"
+          },
+          {
+            "nme": "location",
+            "acc": 10,
+            "dsc": "(Ljava/lang/String;)Lnet/minecraft/resources/ResourceLocation;"
+          },
+          {
+            "nme": "getItemLocation",
+            "acc": 10,
+            "dsc": "(Lnet/minecraftforge/registries/RegistryObject;)Lnet/minecraft/resources/ResourceLocation;",
+            "sig": "(Lnet/minecraftforge/registries/RegistryObject<Lnet/minecraft/world/item/Item;>;)Lnet/minecraft/resources/ResourceLocation;"
+          }
+        ],
+        "flds": []
+      },
+      "sereneseasons/init/ModClient$2.class": {
+        "ver": 61,
+        "acc": 32,
+        "nme": "sereneseasons/init/ModClient$2",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 0,
+            "dsc": "()V"
+          },
+          {
+            "nme": "m_142187_",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/client/multiplayer/ClientLevel;Lnet/minecraft/world/entity/LivingEntity;I)F"
+          }
+        ],
+        "flds": []
+      },
+      "sereneseasons/block/SeasonSensorBlock.class": {
+        "ver": 61,
+        "acc": 33,
+        "nme": "sereneseasons/block/SeasonSensorBlock",
+        "super": "net/minecraft/world/level/block/BaseEntityBlock",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/world/level/block/state/BlockBehaviour$Properties;)V"
+          },
+          {
+            "nme": "m_5940_",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/world/level/block/state/BlockState;Lnet/minecraft/world/level/BlockGetter;Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/phys/shapes/CollisionContext;)Lnet/minecraft/world/phys/shapes/VoxelShape;"
+          },
+          {
+            "nme": "m_7923_",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/world/level/block/state/BlockState;)Z"
+          },
+          {
+            "nme": "m_6378_",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/world/level/block/state/BlockState;Lnet/minecraft/world/level/BlockGetter;Lnet/minecraft/core/BlockPos;Lnet/minecraft/core/Direction;)I"
+          },
+          {
+            "nme": "updatePower",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/world/level/Level;Lnet/minecraft/core/BlockPos;)V"
+          },
+          {
+            "nme": "m_6227_",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/world/level/block/state/BlockState;Lnet/minecraft/world/level/Level;Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/entity/player/Player;Lnet/minecraft/world/InteractionHand;Lnet/minecraft/world/phys/BlockHitResult;)Lnet/minecraft/world/InteractionResult;"
+          },
+          {
+            "nme": "m_7514_",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/world/level/block/state/BlockState;)Lnet/minecraft/world/level/block/RenderShape;"
+          },
+          {
+            "nme": "m_7899_",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/world/level/block/state/BlockState;)Z"
+          },
+          {
+            "nme": "m_142194_",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/block/state/BlockState;)Lnet/minecraft/world/level/block/entity/BlockEntity;"
+          },
+          {
+            "nme": "m_142354_",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/world/level/Level;Lnet/minecraft/world/level/block/state/BlockState;Lnet/minecraft/world/level/block/entity/BlockEntityType;)Lnet/minecraft/world/level/block/entity/BlockEntityTicker;",
+            "sig": "<T:Lnet/minecraft/world/level/block/entity/BlockEntity;>(Lnet/minecraft/world/level/Level;Lnet/minecraft/world/level/block/state/BlockState;Lnet/minecraft/world/level/block/entity/BlockEntityType<TT;>;)Lnet/minecraft/world/level/block/entity/BlockEntityTicker<TT;>;",
+            "vanns": [
+              {
+                "dsc": "Ljavax/annotation/Nullable;"
+              }
+            ]
+          },
+          {
+            "nme": "tickEntity",
+            "acc": 10,
+            "dsc": "(Lnet/minecraft/world/level/Level;Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/block/state/BlockState;Lsereneseasons/block/entity/SeasonSensorBlockEntity;)V"
+          },
+          {
+            "nme": "m_7926_",
+            "acc": 4,
+            "dsc": "(Lnet/minecraft/world/level/block/state/StateDefinition$Builder;)V",
+            "sig": "(Lnet/minecraft/world/level/block/state/StateDefinition$Builder<Lnet/minecraft/world/level/block/Block;Lnet/minecraft/world/level/block/state/BlockState;>;)V"
+          },
+          {
+            "nme": "<clinit>",
+            "acc": 8,
+            "dsc": "()V"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 25,
+            "nme": "POWER",
+            "dsc": "Lnet/minecraft/world/level/block/state/properties/IntegerProperty;"
+          },
+          {
+            "acc": 28,
+            "nme": "SHAPE",
+            "dsc": "Lnet/minecraft/world/phys/shapes/VoxelShape;"
+          },
+          {
+            "acc": 25,
+            "nme": "SEASON",
+            "dsc": "Lnet/minecraft/world/level/block/state/properties/IntegerProperty;"
+          }
+        ]
+      },
+      "sereneseasons/mixin/MixinBlockStateBase.class": {
+        "ver": 61,
+        "acc": 33,
+        "nme": "sereneseasons/mixin/MixinBlockStateBase",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "onRandomTick",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/core/BlockPos;Lnet/minecraft/util/RandomSource;Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V",
+            "vanns": [
+              {
+                "dsc": "Lorg/spongepowered/asm/mixin/injection/Inject;",
+                "vals": [
+                  "method",
+                  [
+                    "randomTick"
+                  ],
+                  "at",
+                  [
+                    {
+                      "desc": "Lorg/spongepowered/asm/mixin/injection/At;",
+                      "values": [
+                        "value",
+                        "HEAD"
+                      ],
+                      "api": 589824
+                    }
+                  ],
+                  "cancellable",
+                  true
+                ]
+              }
+            ]
+          }
+        ],
+        "flds": [],
+        "invanns": [
+          {
+            "dsc": "Lorg/spongepowered/asm/mixin/Mixin;",
+            "vals": [
+              "value",
+              [
+                {
+                  "itrlNme": "net/minecraft/world/level/block/state/BlockBehaviour$BlockStateBase"
+                }
+              ]
+            ]
+          }
+        ]
+      },
+      "sereneseasons/season/RandomUpdateHandler.class": {
+        "ver": 61,
+        "acc": 33,
+        "nme": "sereneseasons/season/RandomUpdateHandler",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "adjustWeatherFrequency",
+            "acc": 10,
+            "dsc": "(Lnet/minecraft/world/level/Level;Lsereneseasons/api/season/Season$SubSeason;)V"
+          },
+          {
+            "nme": "meltInChunk",
+            "acc": 10,
+            "dsc": "(Lnet/minecraft/server/level/ChunkMap;Lnet/minecraft/world/level/chunk/LevelChunk;F)V"
+          },
+          {
+            "nme": "onWorldTick",
+            "acc": 9,
+            "dsc": "(Lglitchcore/event/TickEvent$Level;)V"
+          }
+        ],
+        "flds": []
+      },
+      "sereneseasons/init/ModTags$Items.class": {
+        "ver": 61,
+        "acc": 33,
+        "nme": "sereneseasons/init/ModTags$Items",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "setup",
+            "acc": 10,
+            "dsc": "()V"
+          },
+          {
+            "nme": "create",
+            "acc": 9,
+            "dsc": "(Lnet/minecraft/resources/ResourceLocation;)Lnet/minecraft/tags/TagKey;",
+            "sig": "(Lnet/minecraft/resources/ResourceLocation;)Lnet/minecraft/tags/TagKey<Lnet/minecraft/world/item/Item;>;"
+          },
+          {
+            "nme": "<clinit>",
+            "acc": 8,
+            "dsc": "()V"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 25,
+            "nme": "SPRING_CROPS",
+            "dsc": "Lnet/minecraft/tags/TagKey;",
+            "sig": "Lnet/minecraft/tags/TagKey<Lnet/minecraft/world/item/Item;>;"
+          },
+          {
+            "acc": 25,
+            "nme": "SUMMER_CROPS",
+            "dsc": "Lnet/minecraft/tags/TagKey;",
+            "sig": "Lnet/minecraft/tags/TagKey<Lnet/minecraft/world/item/Item;>;"
+          },
+          {
+            "acc": 25,
+            "nme": "AUTUMN_CROPS",
+            "dsc": "Lnet/minecraft/tags/TagKey;",
+            "sig": "Lnet/minecraft/tags/TagKey<Lnet/minecraft/world/item/Item;>;"
+          },
+          {
+            "acc": 25,
+            "nme": "WINTER_CROPS",
+            "dsc": "Lnet/minecraft/tags/TagKey;",
+            "sig": "Lnet/minecraft/tags/TagKey<Lnet/minecraft/world/item/Item;>;"
+          },
+          {
+            "acc": 25,
+            "nme": "YEAR_ROUND_CROPS",
+            "dsc": "Lnet/minecraft/tags/TagKey;",
+            "sig": "Lnet/minecraft/tags/TagKey<Lnet/minecraft/world/item/Item;>;"
+          }
+        ]
+      },
+      "sereneseasons/api/season/Season$TropicalSeason.class": {
+        "ver": 61,
+        "acc": 16433,
+        "nme": "sereneseasons/api/season/Season$TropicalSeason",
+        "super": "java/lang/Enum",
+        "mthds": [
+          {
+            "nme": "values",
+            "acc": 9,
+            "dsc": "()[Lsereneseasons/api/season/Season$TropicalSeason;"
+          },
+          {
+            "nme": "valueOf",
+            "acc": 9,
+            "dsc": "(Ljava/lang/String;)Lsereneseasons/api/season/Season$TropicalSeason;"
+          },
+          {
+            "nme": "<init>",
+            "acc": 2,
+            "dsc": "(Ljava/lang/String;IIFIFI)V",
+            "sig": "(IFIFI)V"
+          },
+          {
+            "nme": "<init>",
+            "acc": 2,
+            "dsc": "(Ljava/lang/String;IIII)V",
+            "sig": "(III)V"
+          },
+          {
+            "nme": "getGrassOverlay",
+            "acc": 1,
+            "dsc": "()I"
+          },
+          {
+            "nme": "getGrassSaturationMultiplier",
+            "acc": 1,
+            "dsc": "()F"
+          },
+          {
+            "nme": "getFoliageOverlay",
+            "acc": 1,
+            "dsc": "()I"
+          },
+          {
+            "nme": "getFoliageSaturationMultiplier",
+            "acc": 1,
+            "dsc": "()F"
+          },
+          {
+            "nme": "getBirchColor",
+            "acc": 1,
+            "dsc": "()I"
+          },
+          {
+            "nme": "$values",
+            "acc": 4106,
+            "dsc": "()[Lsereneseasons/api/season/Season$TropicalSeason;"
+          },
+          {
+            "nme": "<clinit>",
+            "acc": 8,
+            "dsc": "()V"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 16409,
+            "nme": "EARLY_DRY",
+            "dsc": "Lsereneseasons/api/season/Season$TropicalSeason;"
+          },
+          {
+            "acc": 16409,
+            "nme": "MID_DRY",
+            "dsc": "Lsereneseasons/api/season/Season$TropicalSeason;"
+          },
+          {
+            "acc": 16409,
+            "nme": "LATE_DRY",
+            "dsc": "Lsereneseasons/api/season/Season$TropicalSeason;"
+          },
+          {
+            "acc": 16409,
+            "nme": "EARLY_WET",
+            "dsc": "Lsereneseasons/api/season/Season$TropicalSeason;"
+          },
+          {
+            "acc": 16409,
+            "nme": "MID_WET",
+            "dsc": "Lsereneseasons/api/season/Season$TropicalSeason;"
+          },
+          {
+            "acc": 16409,
+            "nme": "LATE_WET",
+            "dsc": "Lsereneseasons/api/season/Season$TropicalSeason;"
+          },
+          {
+            "acc": 25,
+            "nme": "VALUES",
+            "dsc": "[Lsereneseasons/api/season/Season$TropicalSeason;"
+          },
+          {
+            "acc": 2,
+            "nme": "grassOverlay",
+            "dsc": "I"
+          },
+          {
+            "acc": 2,
+            "nme": "grassSaturationMultiplier",
+            "dsc": "F"
+          },
+          {
+            "acc": 2,
+            "nme": "foliageOverlay",
+            "dsc": "I"
+          },
+          {
+            "acc": 2,
+            "nme": "foliageSaturationMultiplier",
+            "dsc": "F"
+          },
+          {
+            "acc": 2,
+            "nme": "birchColor",
+            "dsc": "I"
+          },
+          {
+            "acc": 4122,
+            "nme": "$VALUES",
+            "dsc": "[Lsereneseasons/api/season/Season$TropicalSeason;"
+          }
+        ]
+      },
+      "sereneseasons/mixin/MixinServerLevel.class": {
+        "ver": 61,
+        "acc": 33,
+        "nme": "sereneseasons/mixin/MixinServerLevel",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "tickIceAndSnow_getPrecipitationAt",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/world/level/biome/Biome;Lnet/minecraft/core/BlockPos;)Lnet/minecraft/world/level/biome/Biome$Precipitation;",
+            "vanns": [
+              {
+                "dsc": "Lorg/spongepowered/asm/mixin/injection/Redirect;",
+                "vals": [
+                  "method",
+                  [
+                    "tickChunk"
+                  ],
+                  "at",
+                  {
+                    "desc": "Lorg/spongepowered/asm/mixin/injection/At;",
+                    "values": [
+                      "value",
+                      "INVOKE",
+                      "target",
+                      "Lnet/minecraft/world/level/biome/Biome;getPrecipitationAt(Lnet/minecraft/core/BlockPos;)Lnet/minecraft/world/level/biome/Biome$Precipitation;"
+                    ],
+                    "api": 589824
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "flds": [],
+        "invanns": [
+          {
+            "dsc": "Lorg/spongepowered/asm/mixin/Mixin;",
+            "vals": [
+              "value",
+              [
+                {
+                  "itrlNme": "net/minecraft/server/level/ServerLevel"
+                }
+              ]
+            ]
+          }
+        ]
+      },
+      "sereneseasons/config/SeasonsConfig$SeasonProperties.class": {
+        "ver": 61,
+        "acc": 65585,
+        "nme": "sereneseasons/config/SeasonsConfig$SeasonProperties",
+        "super": "java/lang/Record",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "(Lsereneseasons/api/season/Season$SubSeason;FIFIIII)V"
+          },
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "(Lsereneseasons/api/season/Season$SubSeason;FIFIIIIIFIFI)V"
+          },
+          {
+            "nme": "encode",
+            "acc": 1,
+            "dsc": "()Lcom/electronwill/nightconfig/core/Config;"
+          },
+          {
+            "nme": "decode",
+            "acc": 9,
+            "dsc": "(Lcom/electronwill/nightconfig/core/Config;)Ljava/util/Optional;",
+            "sig": "(Lcom/electronwill/nightconfig/core/Config;)Ljava/util/Optional<Lsereneseasons/config/SeasonsConfig$SeasonProperties;>;"
+          },
+          {
+            "nme": "canRain",
+            "acc": 1,
+            "dsc": "()Z"
+          },
+          {
+            "nme": "canThunder",
+            "acc": 1,
+            "dsc": "()Z"
+          },
+          {
+            "nme": "toString",
+            "acc": 17,
+            "dsc": "()Ljava/lang/String;"
+          },
+          {
+            "nme": "hashCode",
+            "acc": 17,
+            "dsc": "()I"
+          },
+          {
+            "nme": "equals",
+            "acc": 17,
+            "dsc": "(Ljava/lang/Object;)Z"
+          },
+          {
+            "nme": "subSeason",
+            "acc": 1,
+            "dsc": "()Lsereneseasons/api/season/Season$SubSeason;"
+          },
+          {
+            "nme": "meltChance",
+            "acc": 1,
+            "dsc": "()F"
+          },
+          {
+            "nme": "meltRolls",
+            "acc": 1,
+            "dsc": "()I"
+          },
+          {
+            "nme": "biomeTempAdjustment",
+            "acc": 1,
+            "dsc": "()F"
+          },
+          {
+            "nme": "minRainTime",
+            "acc": 1,
+            "dsc": "()I"
+          },
+          {
+            "nme": "maxRainTime",
+            "acc": 1,
+            "dsc": "()I"
+          },
+          {
+            "nme": "minThunderTime",
+            "acc": 1,
+            "dsc": "()I"
+          },
+          {
+            "nme": "maxThunderTime",
+            "acc": 1,
+            "dsc": "()I"
+          },
+          {
+            "nme": "grassColour",
+            "acc": 1,
+            "dsc": "()I"
+          },
+          {
+            "nme": "grassSaturation",
+            "acc": 1,
+            "dsc": "()F"
+          },
+          {
+            "nme": "foliageColour",
+            "acc": 1,
+            "dsc": "()I"
+          },
+          {
+            "nme": "foliageSaturation",
+            "acc": 1,
+            "dsc": "()F"
+          },
+          {
+            "nme": "birchColor",
+            "acc": 1,
+            "dsc": "()I"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 18,
+            "nme": "subSeason",
+            "dsc": "Lsereneseasons/api/season/Season$SubSeason;"
+          },
+          {
+            "acc": 18,
+            "nme": "meltChance",
+            "dsc": "F"
+          },
+          {
+            "acc": 18,
+            "nme": "meltRolls",
+            "dsc": "I"
+          },
+          {
+            "acc": 18,
+            "nme": "biomeTempAdjustment",
+            "dsc": "F"
+          },
+          {
+            "acc": 18,
+            "nme": "minRainTime",
+            "dsc": "I"
+          },
+          {
+            "acc": 18,
+            "nme": "maxRainTime",
+            "dsc": "I"
+          },
+          {
+            "acc": 18,
+            "nme": "minThunderTime",
+            "dsc": "I"
+          },
+          {
+            "acc": 18,
+            "nme": "maxThunderTime",
+            "dsc": "I"
+          },
+          {
+            "acc": 18,
+            "nme": "grassColour",
+            "dsc": "I"
+          },
+          {
+            "acc": 18,
+            "nme": "grassSaturation",
+            "dsc": "F"
+          },
+          {
+            "acc": 18,
+            "nme": "foliageColour",
+            "dsc": "I"
+          },
+          {
+            "acc": 18,
+            "nme": "foliageSaturation",
+            "dsc": "F"
+          },
+          {
+            "acc": 18,
+            "nme": "birchColor",
+            "dsc": "I"
+          }
+        ]
+      },
+      "sereneseasons/init/ModCreativeTab.class": {
+        "ver": 61,
+        "acc": 33,
+        "nme": "sereneseasons/init/ModCreativeTab",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "registerCreativeTabs",
+            "acc": 9,
+            "dsc": "(Ljava/util/function/BiConsumer;)V",
+            "sig": "(Ljava/util/function/BiConsumer<Lnet/minecraft/resources/ResourceLocation;Lnet/minecraft/world/item/CreativeModeTab;>;)V"
+          },
+          {
+            "nme": "register",
+            "acc": 10,
+            "dsc": "(Ljava/util/function/BiConsumer;Ljava/lang/String;Lnet/minecraft/world/item/CreativeModeTab;)Lnet/minecraft/world/item/CreativeModeTab;",
+            "sig": "(Ljava/util/function/BiConsumer<Lnet/minecraft/resources/ResourceLocation;Lnet/minecraft/world/item/CreativeModeTab;>;Ljava/lang/String;Lnet/minecraft/world/item/CreativeModeTab;)Lnet/minecraft/world/item/CreativeModeTab;"
+          },
+          {
+            "nme": "lambda$registerCreativeTabs$1",
+            "acc": 4106,
+            "dsc": "(Lcom/google/common/collect/ImmutableList;Lnet/minecraft/world/item/CreativeModeTab$ItemDisplayParameters;Lnet/minecraft/world/item/CreativeModeTab$Output;)V"
+          },
+          {
+            "nme": "lambda$registerCreativeTabs$0",
+            "acc": 4106,
+            "dsc": "()Lnet/minecraft/world/item/ItemStack;"
+          }
+        ],
+        "flds": []
+      },
+      "sereneseasons/season/SeasonSavedData.class": {
+        "ver": 61,
+        "acc": 33,
+        "nme": "sereneseasons/season/SeasonSavedData",
+        "super": "net/minecraft/world/level/saveddata/SavedData",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "m_7176_",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/nbt/CompoundTag;)Lnet/minecraft/nbt/CompoundTag;"
+          },
+          {
+            "nme": "load",
+            "acc": 9,
+            "dsc": "(Lnet/minecraft/nbt/CompoundTag;)Lsereneseasons/season/SeasonSavedData;"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 25,
+            "nme": "DATA_IDENTIFIER",
+            "dsc": "Ljava/lang/String;",
+            "val": "seasons"
+          },
+          {
+            "acc": 25,
+            "nme": "VERSION",
+            "dsc": "I",
+            "val": 0
+          },
+          {
+            "acc": 1,
+            "nme": "seasonCycleTicks",
+            "dsc": "I"
+          }
+        ]
+      },
+      "sereneseasons/api/SSBlocks.class": {
+        "ver": 61,
+        "acc": 33,
+        "nme": "sereneseasons/api/SSBlocks",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 9,
+            "nme": "SEASON_SENSOR",
+            "dsc": "Lnet/minecraft/world/level/block/Block;"
+          }
+        ]
+      },
+      "sereneseasons/init/ModClient$1.class": {
+        "ver": 61,
+        "acc": 32,
+        "nme": "sereneseasons/init/ModClient$1",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 0,
+            "dsc": "()V"
+          },
+          {
+            "nme": "m_142187_",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/client/multiplayer/ClientLevel;Lnet/minecraft/world/entity/LivingEntity;I)F"
+          }
+        ],
+        "flds": []
+      },
+      "sereneseasons/init/ModGameRules.class": {
+        "ver": 61,
+        "acc": 33,
+        "nme": "sereneseasons/init/ModGameRules",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "init",
+            "acc": 9,
+            "dsc": "()V"
+          }
+        ],
+        "flds": []
+      },
+      "sereneseasons/season/SeasonHandlerClient.class": {
+        "ver": 61,
+        "acc": 33,
+        "nme": "sereneseasons/season/SeasonHandlerClient",
+        "super": "java/lang/Object",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "()V"
+          },
+          {
+            "nme": "onClientTick",
+            "acc": 9,
+            "dsc": "(Lglitchcore/event/TickEvent$Client;)V"
+          },
+          {
+            "nme": "lambda$onClientTick$0",
+            "acc": 4106,
+            "dsc": "(Lnet/minecraft/resources/ResourceKey;Ljava/lang/Integer;)Ljava/lang/Integer;"
+          },
+          {
+            "nme": "<clinit>",
+            "acc": 8,
+            "dsc": "()V"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 8,
+            "nme": "lastSeason",
+            "dsc": "Lsereneseasons/api/season/Season$SubSeason;"
+          },
+          {
+            "acc": 25,
+            "nme": "clientSeasonCycleTicks",
+            "dsc": "Ljava/util/HashMap;",
+            "sig": "Ljava/util/HashMap<Lnet/minecraft/resources/ResourceKey<Lnet/minecraft/world/level/Level;>;Ljava/lang/Integer;>;"
+          }
+        ]
+      },
+      "sereneseasons/season/SeasonColorHandlers$ResolverType.class": {
+        "ver": 61,
+        "acc": 16433,
+        "nme": "sereneseasons/season/SeasonColorHandlers$ResolverType",
+        "super": "java/lang/Enum",
+        "mthds": [
+          {
+            "nme": "values",
+            "acc": 9,
+            "dsc": "()[Lsereneseasons/season/SeasonColorHandlers$ResolverType;"
+          },
+          {
+            "nme": "valueOf",
+            "acc": 9,
+            "dsc": "(Ljava/lang/String;)Lsereneseasons/season/SeasonColorHandlers$ResolverType;"
+          },
+          {
+            "nme": "<init>",
+            "acc": 2,
+            "dsc": "(Ljava/lang/String;I)V",
+            "sig": "()V"
+          },
+          {
+            "nme": "$values",
+            "acc": 4106,
+            "dsc": "()[Lsereneseasons/season/SeasonColorHandlers$ResolverType;"
+          },
+          {
+            "nme": "<clinit>",
+            "acc": 8,
+            "dsc": "()V"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 16409,
+            "nme": "GRASS",
+            "dsc": "Lsereneseasons/season/SeasonColorHandlers$ResolverType;"
+          },
+          {
+            "acc": 16409,
+            "nme": "FOLIAGE",
+            "dsc": "Lsereneseasons/season/SeasonColorHandlers$ResolverType;"
+          },
+          {
+            "acc": 4122,
+            "nme": "$VALUES",
+            "dsc": "[Lsereneseasons/season/SeasonColorHandlers$ResolverType;"
+          }
+        ]
+      },
+      "sereneseasons/api/season/SeasonChangedEvent$Standard.class": {
+        "ver": 61,
+        "acc": 33,
+        "nme": "sereneseasons/api/season/SeasonChangedEvent$Standard",
+        "super": "sereneseasons/api/season/SeasonChangedEvent",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 1,
+            "dsc": "(Lnet/minecraft/world/level/Level;Lsereneseasons/api/season/Season$SubSeason;Lsereneseasons/api/season/Season$SubSeason;)V"
+          }
+        ],
+        "flds": []
+      },
+      "sereneseasons/season/RandomUpdateHandler$ChunkAndHolder.class": {
+        "ver": 61,
+        "acc": 65584,
+        "nme": "sereneseasons/season/RandomUpdateHandler$ChunkAndHolder",
+        "super": "java/lang/Record",
+        "mthds": [
+          {
+            "nme": "<init>",
+            "acc": 0,
+            "dsc": "(Lnet/minecraft/world/level/chunk/LevelChunk;Lnet/minecraft/server/level/ChunkHolder;)V"
+          },
+          {
+            "nme": "toString",
+            "acc": 17,
+            "dsc": "()Ljava/lang/String;"
+          },
+          {
+            "nme": "hashCode",
+            "acc": 17,
+            "dsc": "()I"
+          },
+          {
+            "nme": "equals",
+            "acc": 17,
+            "dsc": "(Ljava/lang/Object;)Z"
+          },
+          {
+            "nme": "chunk",
+            "acc": 1,
+            "dsc": "()Lnet/minecraft/world/level/chunk/LevelChunk;"
+          },
+          {
+            "nme": "holder",
+            "acc": 1,
+            "dsc": "()Lnet/minecraft/server/level/ChunkHolder;"
+          }
+        ],
+        "flds": [
+          {
+            "acc": 18,
+            "nme": "chunk",
+            "dsc": "Lnet/minecraft/world/level/chunk/LevelChunk;"
+          },
+          {
+            "acc": 18,
+            "nme": "holder",
+            "dsc": "Lnet/minecraft/server/level/ChunkHolder;"
+          }
+        ]
+      }
+    }
+  }
+}
