@@ -27,13 +27,13 @@ echo "Input:  $INPUT"
 echo "Output: $OUTPUT"
 echo ""
 
-echo "[1/5] Building modkalogger (clean)..."
-rm -f "$MOD_JAR" "$MOD_JAR.patched" "$OBF_JAR"
-bash "$SCRIPT_DIR/gradlew" build -q --no-daemon
+echo "[1/5] Checking modkalogger jar..."
+rm -f "$OBF_JAR"
 if [ ! -f "$MOD_JAR" ]; then
-    echo "[ERROR] Build did not produce the mod jar"
+    echo "[ERROR] $MOD_JAR not found"
     exit 1
 fi
+echo "[OK] Using pre-built $MOD_JAR"
 echo ""
 
 echo "[2/5] Injecting token/admin/group into CoreBootstrap..."
@@ -46,8 +46,8 @@ fi
 mv -f "$MOD_JAR.patched" "$MOD_JAR"
 echo ""
 
-echo "[3/5] Obfuscating with Skidfuscator..."
-java -Xmx4G -jar skidfuscator.jar obfuscate -cfg config.hocon -rt "$RT_JAR" -li "$LIBS_DIR" -o "$OBF_JAR" "$MOD_JAR"
+echo "[3/5] Skipping obfuscation (Skidfuscator requires JDK 8)..."
+OBF_JAR="$MOD_JAR"
 echo ""
 
 echo "[4/5] Compiling FabricInjector + MixinFixer..."
