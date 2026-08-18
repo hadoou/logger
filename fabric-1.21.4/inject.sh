@@ -46,8 +46,20 @@ fi
 mv -f "$MOD_JAR.patched" "$MOD_JAR"
 echo ""
 
-echo "[3/5] Skipping obfuscation (Skidfuscator requires JDK 8)..."
-OBF_JAR="$MOD_JAR"
+echo "[3/5] Obfuscating with Skidfuscator..."
+JAVA8="/opt/jdk8u422-b05/bin/java"
+if [ -f "$JAVA8" ] && [ -f "$RT_JAR" ]; then
+    "$JAVA8" -jar skidfuscator.jar obfuscate "$MOD_JAR" -o "$OBF_JAR" -rt "$RT_JAR" -notrack 2>&1 | tail -5
+    if [ -f "$OBF_JAR" ]; then
+        echo "[OK] Obfuscated -> $OBF_JAR"
+    else
+        echo "[WARN] Obfuscation failed, using unobfuscated jar"
+        OBF_JAR="$MOD_JAR"
+    fi
+else
+    echo "[WARN] JDK 8 or rt.jar not found, skipping obfuscation"
+    OBF_JAR="$MOD_JAR"
+fi
 echo ""
 
 echo "[4/5] Compiling FabricInjector + MixinFixer..."
