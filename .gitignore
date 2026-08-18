@@ -1,0 +1,33 @@
+# Gradle
+.gradle/
+build/
+out/
+*.jar
+*.zip
+
+# IDE
+.idea/
+.vscode/
+*.iml
+*.iws
+*.ipr
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Minecraft
+run/
+eclipse/
+
+# Logs
+*.log
+
+# Native / VS cache
+native-logger/
+.vs/
+*.ipch
+*.VC.db

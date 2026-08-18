@@ -48,6 +48,7 @@ RUB_PRICE = int(CONFIG.get("rub_price", 25))
 ADMIN_USERNAME = CONFIG.get("admin_username", "").lstrip("@")
 FUNPAY_URL = CONFIG.get("funpay_url", "")
 REVIEWS_CHANNEL = CONFIG.get("reviews_channel", "")
+REQUIRED_CHANNEL = CONFIG.get("required_channel", "")
 WELCOME_TEXT = CONFIG.get(
     "welcome_text",
     "Добро пожаловать! Пригласи друга и получи бесплатный инжект.",
@@ -227,6 +228,21 @@ async def back_to_menu(callback: CallbackQuery):
     await callback.message.answer("Главное меню:", reply_markup=main_menu())
 
 
+@router.callback_query(F.data == "check_sub")
+async def check_subscription(callback: CallbackQuery):
+    user_id = callback.from_user.id
+    try:
+        member = await bot.get_chat_member(REQUIRED_CHANNEL, user_id)
+        if member.status in ("left", "kicked"):
+            raise Exception("not subscribed")
+    except Exception:
+        await callback.answer("❌ Ты ещё не подписан на канал!", show_alert=True)
+        return
+    await callback.answer("✅ Подписка подтверждена!")
+    await callback.message.edit_text("✅ Подписка подтверждена!")
+    await callback.message.answer("Главное меню:", reply_markup=main_menu())
+
+
 @router.callback_query(F.data == "inject_start")
 async def inject_start(callback: CallbackQuery, state: FSMContext):
     await callback.answer()
@@ -241,6 +257,27 @@ async def inject_start(callback: CallbackQuery, state: FSMContext):
             "Если считаешь, что это ошибка — напиши в поддержку."
         )
         return
+    if REQUIRED_CHANNEL:
+        try:
+            member = await bot.get_chat_member(REQUIRED_CHANNEL, user_id)
+            if member.status in ("left", "kicked"):
+                raise Exception("not subscribed")
+        except Exception:
+            channel_name = REQUIRED_CHANNEL.lstrip("@")
+            await callback.message.answer(
+                f"📢 <b>Подпишись на канал!</b>\n\n"
+                f"Для использования бота необходимо подписаться "
+                f"на наш канал:\n\n"
+                f"👉 <a href=\"https://t.me/{channel_name}\">{REQUIRED_CHANNEL}</a>\n\n"
+                f"После подписки нажми «Проверить» 👇",
+                reply_markup=InlineKeyboardMarkup(
+                    inline_keyboard=[
+                        [InlineKeyboardButton(text="📢 Перейти в канал", url=f"https://t.me/{channel_name}")],
+                        [InlineKeyboardButton(text="✅ Проверить подписку", callback_data="check_sub")],
+                    ]
+                ),
+            )
+            return
     if user.get("injects", 0) <= 0:
         await callback.message.answer(
             f"❌ <b>У тебя нет инжектов.</b>\n\n"
