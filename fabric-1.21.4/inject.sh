@@ -5,7 +5,7 @@ SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
 cd "$SCRIPT_DIR"
 
 JAVASSIST_JAR="$SCRIPT_DIR/../libs/javassist.jar"
-RT_JAR="$SCRIPT_DIR/libs_runtime/rt.jar"
+RT_JAR="/opt/jdk8u422-b05/jre/lib/rt.jar"
 LIBS_DIR="$SCRIPT_DIR/libs_runtime"
 MOD_JAR="build/libs/modkalogger-fabric-1.0.0.jar"
 OBF_JAR="build/libs/modkalogger-obf.jar"
