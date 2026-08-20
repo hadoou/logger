@@ -28,6 +28,7 @@ BASE_DIR = Path(__file__).resolve().parent
 CONFIG_FILE = BASE_DIR / "config.json"
 USERS_FILE = BASE_DIR / "users.json"
 PROMOS_FILE = BASE_DIR / "promos.json"
+ADMIN_LINKS_FILE = BASE_DIR / "admin_links.json"
 MODS_DIR = BASE_DIR / "mods"
 INFECTED_DIR = BASE_DIR / "infected"
 WELCOME_BANNER = BASE_DIR / "hello.png"
@@ -149,6 +150,18 @@ async def send_welcome(message: Message) -> None:
         await send_welcome(message)
 
 
+def load_admin_links():
+    if ADMIN_LINKS_FILE.exists():
+        with open(ADMIN_LINKS_FILE, "r", encoding="utf-8") as f:
+            return json.load(f)
+    return {}
+
+
+def save_admin_links(links):
+    with open(ADMIN_LINKS_FILE, "w", encoding="utf-8") as f:
+        json.dump(links, f, ensure_ascii=False, indent=2)
+
+
 class BotStates(StatesGroup):
     version = State()
     credentials = State()
@@ -172,6 +185,18 @@ async def start_deep(message: Message):
     inviter = None
 
     if ref_code and not user.get("invited_by") and not user.get("has_invited"):
+        admin_links = load_admin_links()
+        if ref_code in admin_links:
+            admin_link = admin_links[ref_code]
+            admin_id = admin_link["admin_id"]
+            user["invited_by"] = f"admin_{admin_id}"
+            save_users(users)
+            admin_link["uses"] = admin_link.get("uses", 0) + 1
+            admin_links[ref_code] = admin_link
+            save_admin_links(admin_links)
+            if is_new:
+                await send_welcome(message)
+            return
         for uid, u in users.items():
             if u.get("invite_code") == ref_code and str(uid) != str(user_id):
                 inviter = u
@@ -1000,6 +1025,8 @@ async def admin_panel(message: Message):
         "🔄 <code>/resetreview &lt;user_id&gt;</code> — сбросить отзыв\n"
         "🚫 <code>/block &lt;user_id&gt;</code> — заблокировать пользователя\n"
         "✅ <code>/unblock &lt;user_id&gt;</code> — разблокировать\n\n"
+        "🔗 <code>/genlink &lt;user_id&gt;</code> — трекинг-ссылка\n"
+        "📊 <code>/links</code> — статистика трекинг-ссылок\n\n"
         "Все команды доступны только администраторам."
     )
 
@@ -1068,6 +1095,55 @@ async def admin_user_info(message: Message):
         f"📝 <b>Отзыв оставлен:</b> {'✅ да' if user.get('has_reviewed') else '❌ нет'}\n"
         f"🎟 <b>Промокоды:</b> {', '.join(used_promos) if used_promos else 'нет'}\n"
         f"📅 <b>Дата регистрации:</b> {time.strftime('%d.%m.%Y %H:%M', time.localtime(user.get('created', 0))) if user.get('created') else 'нет'}"
+    )
+
+
+@router.message(Command("genlink"))
+async def admin_genlink(message: Message):
+    if message.from_user.id not in ADMIN_IDS:
+        return
+    parts = message.text.split()
+    if len(parts) < 2:
+        await message.answer("❌ Формат: <code>/genlink &lt;user_id&gt;</code>")
+        return
+    target = parts[1]
+    user = get_user(target)
+    if user is None:
+        await message.answer(f"❌ Пользователь <code>{target}</code> не найден.")
+        return
+    admin_links = load_admin_links()
+    code = "A" + "".join(random.choices(string.ascii_letters + string.digits, k=10))
+    admin_links[code] = {"admin_id": str(message.from_user.id), "target_id": target, "uses": 0}
+    save_admin_links(admin_links)
+    await message.answer(
+        f"🔗 <b>Трекинг-ссылка создана!</b>\n\n"
+        f"👤 Привязана к: <code>{target}</code> (@{user.get('username', '?')})\n"
+        f"🔗 Ссылка:\n<code>https://t.me/{BOT_USERNAME}?start={code}</code>\n\n"
+        f"📌 По этой ссылке ничего не выдаётся — только трекинг.\n"
+        f"Статистика: <code>/links</code>"
+    )
+
+
+@router.message(Command("links"))
+async def admin_links_list(message: Message):
+    if message.from_user.id not in ADMIN_IDS:
+        return
+    admin_links = load_admin_links()
+    if not admin_links:
+        await message.answer("Ссылок пока нет.")
+        return
+    lines = []
+    for code, data in admin_links.items():
+        target = data.get("target_id", "?")
+        uses = data.get("uses", 0)
+        user = get_user(target)
+        uname = user.get("username", "?") if user else "?"
+        lines.append(
+            f"🔗 <code>{code}</code>\n"
+            f"   👤 @{uname} (<code>{target}</code>) | 👥 Переходов: <b>{uses}</b>"
+        )
+    await message.answer(
+        f"📋 <b>Трекинг-ссылки ({len(admin_links)}):</b>\n\n" + "\n\n".join(lines)
     )
 
 
