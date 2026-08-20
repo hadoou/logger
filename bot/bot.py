@@ -991,6 +991,8 @@ async def admin_panel(message: Message):
         "🛠 <b>Админ панель</b>\n\n"
         "Команды управления:\n\n"
         "📊 <code>/stats</code> — статистика бота\n"
+        "👥 <code>/users</code> — список всех пользователей\n"
+        "🔍 <code>/info &lt;user_id&gt;</code> — полная инфа по пользователю\n"
         "🎁 <code>/give &lt;user_id&gt; &lt;count&gt;</code> — выдать инжекты пользователю\n"
         "✂️ <code>/take &lt;user_id&gt; &lt;count&gt;</code> — забрать инжекты\n"
         "🔑 <code>/createpromo &lt;код&gt; &lt;инжекты&gt; &lt;макс.&gt;</code> — создать промокод\n"
@@ -1016,6 +1018,56 @@ async def admin_stats(message: Message):
         f"💳 Инжектов в системе: <b>{all_injects}</b>\n"
         f"🚫 Заблокировано: <b>{blocked}</b>\n"
         f"👥 Пригласили друга: <b>{invited}</b>"
+    )
+
+
+@router.message(Command("users"))
+async def admin_list_users(message: Message):
+    if message.from_user.id not in ADMIN_IDS:
+        return
+    if not users:
+        await message.answer("Пользователей пока нет.")
+        return
+    lines = []
+    for uid, u in users.items():
+        status = "🚫" if u.get("blocked") else "✅"
+        lines.append(
+            f"{status} <code>{uid}</code> | @{u.get('username', '?')} | 💳 {u.get('injects', 0)}"
+        )
+    await message.answer(
+        f"👥 <b>Пользователи ({len(users)}):</b>\n\n" + "\n".join(lines)
+    )
+
+
+@router.message(Command("info"))
+async def admin_user_info(message: Message):
+    if message.from_user.id not in ADMIN_IDS:
+        return
+    parts = message.text.split()
+    if len(parts) < 2:
+        await message.answer("❌ Формат: <code>/info &lt;user_id&gt;</code>")
+        return
+    target = parts[1]
+    user = get_user(target)
+    if user is None:
+        await message.answer(f"❌ Пользователь <code>{target}</code> не найден.")
+        return
+    used_promos = user.get("used_promos", [])
+    if isinstance(used_promos, str):
+        used_promos = json.loads(used_promos)
+    await message.answer(
+        f"👤 <b>Информация о пользователе</b>\n\n"
+        f"🆔 <b>ID:</b> <code>{user.get('user_id', target)}</code>\n"
+        f"📛 <b>Username:</b> @{user.get('username', '?')}\n"
+        f"💳 <b>Инжектов:</b> {user.get('injects', 0)}\n"
+        f"👥 <b>Пригласил друга:</b> {'✅ да' if user.get('has_invited') else '❌ нет'}\n"
+        f"🔗 <b>Приглашён:</b> {user.get('invited_by') or 'нет'}\n"
+        f"🔗 <b>Реферальный код:</b> <code>{user.get('invite_code', '?')}</code>\n"
+        f"🚫 <b>Заблокирован:</b> {'✅ да' if user.get('blocked') else '❌ нет'}\n"
+        f"⚠️ <b>Варнов:</b> {user.get('warns', 0)}/3\n"
+        f"📝 <b>Отзыв оставлен:</b> {'✅ да' if user.get('has_reviewed') else '❌ нет'}\n"
+        f"🎟 <b>Промокоды:</b> {', '.join(used_promos) if used_promos else 'нет'}\n"
+        f"📅 <b>Дата регистрации:</b> {time.strftime('%d.%m.%Y %H:%M', time.localtime(user.get('created', 0))) if user.get('created') else 'нет'}"
     )
 
 
