@@ -196,6 +196,15 @@ async def start_deep(message: Message):
             save_admin_links(admin_links)
             if is_new:
                 await send_welcome(message)
+            try:
+                await bot.send_message(
+                    int(admin_id),
+                    f"🔗 <b>Новый переход по трекинг-ссылке</b>\n\n"
+                    f"👤 <code>{user_id}</code> (@{username})\n"
+                    f"👥 Всего переходов: <b>{admin_link['uses']}</b>"
+                )
+            except Exception:
+                pass
             return
         for uid, u in users.items():
             if u.get("invite_code") == ref_code and str(uid) != str(user_id):
