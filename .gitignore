@@ -23,6 +23,12 @@ Thumbs.db
 run/
 eclipse/
 
+# Bot data (local only)
+bot/users.json
+bot/promos.json
+bot/mods/
+bot/infected/
+
 # Logs
 *.log
 

