@@ -1,41 +1,25 @@
 {
   "schemaVersion": 1,
-  "id": "mytheria",
-  "version": "2.0.9",
-  "name": "Mytheria",
-  "description": "Вспомогательный мод для комфортной игры",
-  "authors": [
-    "Nesquik"
-  ],
+  "id": "fabric-api-base",
+  "name": "Fabric API Base",
+  "version": "0.4.53+453d4f9104",
+  "environment": "*",
+  "license": "Apache-2.0",
+  "icon": "assets/fabric-api-base/icon.png",
   "contact": {
-    "homepage": "https://mytheriavisuals.fun"
+    "homepage": "https://fabricmc.net",
+    "irc": "irc://irc.esper.net:6667/fabric",
+    "issues": "https://github.com/FabricMC/fabric/issues",
+    "sources": "https://github.com/FabricMC/fabric"
   },
-  "license": "CC0-1.0",
-  "icon": "assets/mytheria/icon.png",
-  "environment": "client",
-  "entrypoints": {},
-  "mixins": [
-    "mytheria.mixins.json"
+  "authors": [
+    "FabricMC"
   ],
-  "accessWidener": "mytheria.accesswidener",
   "depends": {
-    "fabricloader": "\u003e\u003d0.16.0",
-    "minecraft": "~1.21.4",
-    "java": "\u003e\u003d17",
-    "fabric-api": "*"
+    "fabricloader": ">=0.16.9"
   },
-  "jars": [
-    {
-      "file": "libs/discord-rpc.jar"
-    },
-    {
-      "file": "META-INF/jars/core-3.5.3.jar"
-    },
-    {
-      "file": "META-INF/jars/javase-3.5.3.jar"
-    }
-  ],
-  "suggests": {
-    "another-mod": "*"
+  "description": "Contains the essentials for Fabric API modules.",
+  "custom": {
+    "fabric-api:module-lifecycle": "stable"
   }
 }
