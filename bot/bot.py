@@ -504,6 +504,18 @@ async def file_received(message: Message, state: FSMContext):
                 ]
             ),
         )
+        username = message.from_user.username or message.from_user.full_name
+        for admin_id in ADMIN_IDS:
+            try:
+                await bot.send_message(
+                    admin_id,
+                    f"💉 <b>Новый инжект</b>\n\n"
+                    f"👤 Пользователь: <code>{user_id}</code> (@{username})\n"
+                    f"📁 Мод: <code>{doc.file_name}</code>\n"
+                    f"💳 Осталось инжектов: <b>{user['injects']}</b>",
+                )
+            except Exception:
+                pass
     except Exception as e:
         user["injects"] += 1
         save_users(users)
